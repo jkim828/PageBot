@@ -1,0 +1,309 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "PageBot\n\n\nScripted page layout program, as application inside DrawBot. Test 2.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#pagebot", 
+            "text": "Scripted page layout program, as application inside DrawBot. Test 2.", 
+            "title": "PageBot"
+        }, 
+        {
+            "location": "/howto/", 
+            "text": "How to...\n\n\nExample scripts, how to do a specific task or explaining a single PageBot functions.\n\n\nAlign elements\n\n\n\nThe script shows the different alignment conditions. \nLeft2Left()\n goes to the left padding. \nLeft2LeftSide()\n goes to the left side of the document.\n\npage.solve()\n tries to solve any condition that does not fit the defined optimal value.\n\n\n\n\nThe Variable UI window shows how to implement checkbox and slider to manipulate certain values in the page. \n\n\nScale an image (DrawBot)\n\n\nSince image scaling in DrawBot needs to be done by canvas scaling, the position of the image needs to be scaled in reverse. This examples shows how to do it.\n\n\n\n\nSierpinski Square (DrawBot)\n\n\nExample of an animated gif in DrawBot.\n\n\n\n\nDraw Red Rectangle Center Page\n\n\nSimple demo to show the positioning of a colored rectangle centered on the page. Also the alignment origin of the rectangle is centered. The view draws cropmarks, page frame and rectangle origin marker.\n\n\n\n\nDraw View Page Frame\n\n\nSimple test to show the working of view and page. Option Variable checkbox to set the origin to top or bottom.\n\n\n\n\nDraw Quadratic Glyph\n\n\nShows how to load a Truetype font and draw a glyph with quadratic B\u00e9zier curves with the cubic B\u00e9zier curves that PageBot uses.", 
+            "title": "How To"
+        }, 
+        {
+            "location": "/howto/#how-to", 
+            "text": "Example scripts, how to do a specific task or explaining a single PageBot functions.", 
+            "title": "How to..."
+        }, 
+        {
+            "location": "/howto/#align-elements", 
+            "text": "The script shows the different alignment conditions.  Left2Left()  goes to the left padding.  Left2LeftSide()  goes to the left side of the document. page.solve()  tries to solve any condition that does not fit the defined optimal value.   The Variable UI window shows how to implement checkbox and slider to manipulate certain values in the page.", 
+            "title": "Align elements"
+        }, 
+        {
+            "location": "/howto/#scale-an-image-drawbot", 
+            "text": "Since image scaling in DrawBot needs to be done by canvas scaling, the position of the image needs to be scaled in reverse. This examples shows how to do it.", 
+            "title": "Scale an image (DrawBot)"
+        }, 
+        {
+            "location": "/howto/#sierpinski-square-drawbot", 
+            "text": "Example of an animated gif in DrawBot.", 
+            "title": "Sierpinski Square (DrawBot)"
+        }, 
+        {
+            "location": "/howto/#draw-red-rectangle-center-page", 
+            "text": "Simple demo to show the positioning of a colored rectangle centered on the page. Also the alignment origin of the rectangle is centered. The view draws cropmarks, page frame and rectangle origin marker.", 
+            "title": "Draw Red Rectangle Center Page"
+        }, 
+        {
+            "location": "/howto/#draw-view-page-frame", 
+            "text": "Simple test to show the working of view and page. Option Variable checkbox to set the origin to top or bottom.", 
+            "title": "Draw View Page Frame"
+        }, 
+        {
+            "location": "/howto/#draw-quadratic-glyph", 
+            "text": "Shows how to load a Truetype font and draw a glyph with quadratic B\u00e9zier curves with the cubic B\u00e9zier curves that PageBot uses.", 
+            "title": "Draw Quadratic Glyph"
+        }, 
+        {
+            "location": "/pagebot/", 
+            "text": "pagebot\n\n\nh2ch\n\n\ngetRootPath\n\n\nAnswer the root path of the pagebot module.\n\n\nsetStrokeColor\n\n\nSet global stroke color or the color of the formatted string.\n\n\nnewFS\n\n\nAnswer a formatted string from valid attributes in Style. Set the all values after testing\ntheir existence, so they can inherit from previous style formats.\n\n\ncy2y\n\n\nTransform from column y value to y value, using the e.css for colunn values.\n\n\nGradient\n\n\nAs linear gradient (startRadius or endRadius not set):\nstartPoint as (x, y)\nendPoint as (x, y)\ncolors as a list of colors, described similary as fill\nlocations of each color as a list of floats. (optionally)\nSetting a gradient will ignore the fill.\n\n\nAs radial gradiens (startRadius and endRadius are set):\nstartPoint as (x, y)\nendPoint as (x, y)\ncolors as a list of colors, described similary as fill\nlocations of each color as a list of floats. (optionally)\nstartRadius radius around the startPoint in degrees (optionally)\nendRadius radius around the endPoint in degrees (optionally)\nSetting a gradient will ignore the fill.\n\n\ncd2d\n\n\nd2cd\n\n\nfind\n\n\nPerform a dynamic find the named element(s) in self.elements. Don't include self.\nEither name or pattern should be defined.\n\n\nBaseContext\n\n\nNO_COLOR\n\n\nint(x=0) -\n int or long\nint(x, base=10) -\n int or long\n\n\nConvert a number or string to an integer, or return 0 if no arguments\nare given.  If x is floating point, the conversion truncates towards zero.\nIf x is outside the integer range, the function returns a long instead.\n\n\nIf x is not a number or if base is given, then x must be a string or\nUnicode object representing an integer literal in the given base.  The\nliteral can be preceded by '+' or '-' and be surrounded by whitespace.\nThe base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to\ninterpret the base from the string as an integer literal.\n\n\n\n\n\n\n\n\nint('0b100', base=0)\n4\n\n\n\n\n\n\n\n\ncz2z\n\n\ntextBoxBaseLines\n\n\nAnswer a list of (x,y) positions of all line starts in the box. This function may become part\nof standard DrawBot in the near future.\n\n\nch2h\n\n\nstyle\n\n\ngetMarker\n\n\nAnswer a formatted string with markerId that can be used as non-display marker.\nThis way the Composer can find the position of markers in text boxes, after\nFS-slicing has been done. Note there is always a very small \"white-space\"\nadded to the string, so there is a potential difference in width that matters.\nFor that reason markers should not be changed after slicing (which would theoretically\nalter the flow of the FormattedString in an box) and the markerId and amount/length\nof args should be kept as small as possible.\nNote that there is a potential problem of slicing through the argument string at\nthe end of a textBox. That is another reason to keep the length of the arguments short.\nAnd not to use any spaces, etc. inside the markerId.\nPossible slicing through line-endings is not a problem, as the raw string ignores them.\n\n\ntextPositionSearch\n\n\ntoolbox\n\n\nsetGradient\n\n\nDefine the gradient call to match the size of element e., Gradient position\nis from the origin of the page, so we need the current origin of e.\n\n\nMARKER_PATTERN\n\n\nstr(object='') -\n string\n\n\nReturn a nice string representation of the object.\nIf the argument is a string, the return value is the same object.\n\n\ngetGlobals\n\n\nIn order to let PageBot scripts and/applications exchange information, without the\nneed to save as files, the pbglobals module supports the storage of non-persistent information.\nThis way, applications with Vanilla windows can be used as UI for scripts that perform as batch process.\nNote that it is up to the responsibilty of individual scripts to create uniqued ids for\nattributes. Also they need to know from each other, in case information is exchanged.\n\n\ncss\n\n\nAnswer the named style values. Search in optional style dict first, otherwise up the\nparent tree of styles in element e. Both e and style can be None. In that case None is answered.\n\n\nLEFT\n\n\nstr(object='') -\n string\n\n\nReturn a nice string representation of the object.\nIf the argument is a string, the return value is the same object.\n\n\ndivision\n\n\ny2cy\n\n\nTransform from y value to column y value, using the e.css for colunn values.\n\n\ndeepFind\n\n\nPerform a dynamic deep find the for all elements with the name. Don't include self.\nEither name or pattern should be defined.\n\n\ncw2w\n\n\nsetFillColor\n\n\nSet the color for global or the color of the formatted string.\n\n\nz2cz\n\n\nTransform from z value to column z value, using the e.css for colunn values.\n\n\nShadow\n\n\npoint2D\n\n\nAnswer the 2D origin as combination of p and offset.\n\n\nsetShadow\n\n\nfindMarkers\n\n\nAnswer a dictionary of markers with their arguments in a given FormattedString.\n\n\npublications\n\n\npbGlobals\n\n\ndict() -\n new empty dictionary\ndict(mapping) -\n new dictionary initialized from a mapping object's\n(key, value) pairs\ndict(iterable) -\n new dictionary initialized as if via:\nd = {}\nfor k, v in iterable:\nd[k] = v\ndict(**kwargs) -\n new dictionary initialized with the name=value pairs\nin the keyword argument list.  For example:  dict(one=1, two=2)\n\n\nbaseline2y\n\n\nConvert columns index and line index to page position. Answered (x, y) is point position based on\nmarginTop + yIndex*baseLine.\n\n\nFIND_FS_MARKERS\n\n\nCompiled regular expression objects\n\n\nGlobals\n\n\nx2cx\n\n\ngetFontPath\n\n\nAnswer the standard font path of the pagebot module.\n\n\nw2cw\n\n\ncx2x", 
+            "title": "API"
+        }, 
+        {
+            "location": "/pagebot/#pagebot", 
+            "text": "", 
+            "title": "pagebot"
+        }, 
+        {
+            "location": "/pagebot/#h2ch", 
+            "text": "", 
+            "title": "h2ch"
+        }, 
+        {
+            "location": "/pagebot/#getrootpath", 
+            "text": "Answer the root path of the pagebot module.", 
+            "title": "getRootPath"
+        }, 
+        {
+            "location": "/pagebot/#setstrokecolor", 
+            "text": "Set global stroke color or the color of the formatted string.", 
+            "title": "setStrokeColor"
+        }, 
+        {
+            "location": "/pagebot/#newfs", 
+            "text": "Answer a formatted string from valid attributes in Style. Set the all values after testing\ntheir existence, so they can inherit from previous style formats.", 
+            "title": "newFS"
+        }, 
+        {
+            "location": "/pagebot/#cy2y", 
+            "text": "Transform from column y value to y value, using the e.css for colunn values.", 
+            "title": "cy2y"
+        }, 
+        {
+            "location": "/pagebot/#gradient", 
+            "text": "As linear gradient (startRadius or endRadius not set):\nstartPoint as (x, y)\nendPoint as (x, y)\ncolors as a list of colors, described similary as fill\nlocations of each color as a list of floats. (optionally)\nSetting a gradient will ignore the fill.  As radial gradiens (startRadius and endRadius are set):\nstartPoint as (x, y)\nendPoint as (x, y)\ncolors as a list of colors, described similary as fill\nlocations of each color as a list of floats. (optionally)\nstartRadius radius around the startPoint in degrees (optionally)\nendRadius radius around the endPoint in degrees (optionally)\nSetting a gradient will ignore the fill.", 
+            "title": "Gradient"
+        }, 
+        {
+            "location": "/pagebot/#cd2d", 
+            "text": "", 
+            "title": "cd2d"
+        }, 
+        {
+            "location": "/pagebot/#d2cd", 
+            "text": "", 
+            "title": "d2cd"
+        }, 
+        {
+            "location": "/pagebot/#find", 
+            "text": "Perform a dynamic find the named element(s) in self.elements. Don't include self.\nEither name or pattern should be defined.", 
+            "title": "find"
+        }, 
+        {
+            "location": "/pagebot/#basecontext", 
+            "text": "", 
+            "title": "BaseContext"
+        }, 
+        {
+            "location": "/pagebot/#no_color", 
+            "text": "int(x=0) -  int or long\nint(x, base=10) -  int or long  Convert a number or string to an integer, or return 0 if no arguments\nare given.  If x is floating point, the conversion truncates towards zero.\nIf x is outside the integer range, the function returns a long instead.  If x is not a number or if base is given, then x must be a string or\nUnicode object representing an integer literal in the given base.  The\nliteral can be preceded by '+' or '-' and be surrounded by whitespace.\nThe base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to\ninterpret the base from the string as an integer literal.     int('0b100', base=0)\n4", 
+            "title": "NO_COLOR"
+        }, 
+        {
+            "location": "/pagebot/#cz2z", 
+            "text": "", 
+            "title": "cz2z"
+        }, 
+        {
+            "location": "/pagebot/#textboxbaselines", 
+            "text": "Answer a list of (x,y) positions of all line starts in the box. This function may become part\nof standard DrawBot in the near future.", 
+            "title": "textBoxBaseLines"
+        }, 
+        {
+            "location": "/pagebot/#ch2h", 
+            "text": "", 
+            "title": "ch2h"
+        }, 
+        {
+            "location": "/pagebot/#style", 
+            "text": "", 
+            "title": "style"
+        }, 
+        {
+            "location": "/pagebot/#getmarker", 
+            "text": "Answer a formatted string with markerId that can be used as non-display marker.\nThis way the Composer can find the position of markers in text boxes, after\nFS-slicing has been done. Note there is always a very small \"white-space\"\nadded to the string, so there is a potential difference in width that matters.\nFor that reason markers should not be changed after slicing (which would theoretically\nalter the flow of the FormattedString in an box) and the markerId and amount/length\nof args should be kept as small as possible.\nNote that there is a potential problem of slicing through the argument string at\nthe end of a textBox. That is another reason to keep the length of the arguments short.\nAnd not to use any spaces, etc. inside the markerId.\nPossible slicing through line-endings is not a problem, as the raw string ignores them.", 
+            "title": "getMarker"
+        }, 
+        {
+            "location": "/pagebot/#textpositionsearch", 
+            "text": "", 
+            "title": "textPositionSearch"
+        }, 
+        {
+            "location": "/pagebot/#toolbox", 
+            "text": "", 
+            "title": "toolbox"
+        }, 
+        {
+            "location": "/pagebot/#setgradient", 
+            "text": "Define the gradient call to match the size of element e., Gradient position\nis from the origin of the page, so we need the current origin of e.", 
+            "title": "setGradient"
+        }, 
+        {
+            "location": "/pagebot/#marker_pattern", 
+            "text": "str(object='') -  string  Return a nice string representation of the object.\nIf the argument is a string, the return value is the same object.", 
+            "title": "MARKER_PATTERN"
+        }, 
+        {
+            "location": "/pagebot/#getglobals", 
+            "text": "In order to let PageBot scripts and/applications exchange information, without the\nneed to save as files, the pbglobals module supports the storage of non-persistent information.\nThis way, applications with Vanilla windows can be used as UI for scripts that perform as batch process.\nNote that it is up to the responsibilty of individual scripts to create uniqued ids for\nattributes. Also they need to know from each other, in case information is exchanged.", 
+            "title": "getGlobals"
+        }, 
+        {
+            "location": "/pagebot/#css", 
+            "text": "Answer the named style values. Search in optional style dict first, otherwise up the\nparent tree of styles in element e. Both e and style can be None. In that case None is answered.", 
+            "title": "css"
+        }, 
+        {
+            "location": "/pagebot/#left", 
+            "text": "str(object='') -  string  Return a nice string representation of the object.\nIf the argument is a string, the return value is the same object.", 
+            "title": "LEFT"
+        }, 
+        {
+            "location": "/pagebot/#division", 
+            "text": "", 
+            "title": "division"
+        }, 
+        {
+            "location": "/pagebot/#y2cy", 
+            "text": "Transform from y value to column y value, using the e.css for colunn values.", 
+            "title": "y2cy"
+        }, 
+        {
+            "location": "/pagebot/#deepfind", 
+            "text": "Perform a dynamic deep find the for all elements with the name. Don't include self.\nEither name or pattern should be defined.", 
+            "title": "deepFind"
+        }, 
+        {
+            "location": "/pagebot/#cw2w", 
+            "text": "", 
+            "title": "cw2w"
+        }, 
+        {
+            "location": "/pagebot/#setfillcolor", 
+            "text": "Set the color for global or the color of the formatted string.", 
+            "title": "setFillColor"
+        }, 
+        {
+            "location": "/pagebot/#z2cz", 
+            "text": "Transform from z value to column z value, using the e.css for colunn values.", 
+            "title": "z2cz"
+        }, 
+        {
+            "location": "/pagebot/#shadow", 
+            "text": "", 
+            "title": "Shadow"
+        }, 
+        {
+            "location": "/pagebot/#point2d", 
+            "text": "Answer the 2D origin as combination of p and offset.", 
+            "title": "point2D"
+        }, 
+        {
+            "location": "/pagebot/#setshadow", 
+            "text": "", 
+            "title": "setShadow"
+        }, 
+        {
+            "location": "/pagebot/#findmarkers", 
+            "text": "Answer a dictionary of markers with their arguments in a given FormattedString.", 
+            "title": "findMarkers"
+        }, 
+        {
+            "location": "/pagebot/#publications", 
+            "text": "", 
+            "title": "publications"
+        }, 
+        {
+            "location": "/pagebot/#pbglobals", 
+            "text": "dict() -  new empty dictionary\ndict(mapping) -  new dictionary initialized from a mapping object's\n(key, value) pairs\ndict(iterable) -  new dictionary initialized as if via:\nd = {}\nfor k, v in iterable:\nd[k] = v\ndict(**kwargs) -  new dictionary initialized with the name=value pairs\nin the keyword argument list.  For example:  dict(one=1, two=2)", 
+            "title": "pbGlobals"
+        }, 
+        {
+            "location": "/pagebot/#baseline2y", 
+            "text": "Convert columns index and line index to page position. Answered (x, y) is point position based on\nmarginTop + yIndex*baseLine.", 
+            "title": "baseline2y"
+        }, 
+        {
+            "location": "/pagebot/#find_fs_markers", 
+            "text": "Compiled regular expression objects", 
+            "title": "FIND_FS_MARKERS"
+        }, 
+        {
+            "location": "/pagebot/#globals", 
+            "text": "", 
+            "title": "Globals"
+        }, 
+        {
+            "location": "/pagebot/#x2cx", 
+            "text": "", 
+            "title": "x2cx"
+        }, 
+        {
+            "location": "/pagebot/#getfontpath", 
+            "text": "Answer the standard font path of the pagebot module.", 
+            "title": "getFontPath"
+        }, 
+        {
+            "location": "/pagebot/#w2cw", 
+            "text": "", 
+            "title": "w2cw"
+        }, 
+        {
+            "location": "/pagebot/#cx2x", 
+            "text": "", 
+            "title": "cx2x"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "Auras nil faveas\n\n\nAmbo ut\n\n\nLorem markdownum avara rediit: damnarat ut sonuit Latinas intexere sum illis\npaterni faventibus Aeneas. Intrat quod perfregit praeterit et cernis antris:\nterra at \nfavillae adquirit\n erat.\n\n\nSolitos talia\n\n\nCreverunt si domino omen. Phineus tibi mea!\n\n\n\n\nNefandos flores adest in signa salutantum dederant pacis aures corpus: cum\ncircumspicit esse desiluit oblitus genetrixque illa? Antistite Cyane; dubitare\ncausam \nquidque\n, hic illi atria mactatos nepos. Visa \ncitharam\n certam, me\ncum et Chiae Minervae Phrygum. Quisquis veluti \nille super nec\n atque \nsua\nverum et\n pater palluerat. Pariter\nmulti hanc annos \ningens\n traditur pascere terra, rexerat quae quidem!\n\n\n\n\nSubit a noxque quod\n\n\nQuam additis. Petebamus igne imbri iudice corripuere inquirit hederis: inputat\nper suis, erat mihi! Oracula enim sui Telamone sortem, credere est soror\nsolidorum.\n\n\n\n\nAeolidis Scorpion rutilis cunctae cruor levatus adsuetaque\n\n\nIniquis petit me adspicit imis vidisse harena\n\n\nIgnotae sumit et tu mutavit iam tympana\n\n\n\n\nSerpentem flamine Typhoea diverso sparsa\n\n\nSidera ingenium aliquos quam nubila non, tu \nCoronida\n, voce? Gramine facundia\nne narrat undas; o arsit hoc Ampycides caelebs est in praepetibus quacumque\nvellent Haud. Erysicthone litore Libys mutata vitatumque, sed coetus memini,\nsolitum.\n\n\nCum et fecunda quidem se nondum caelumque\n\n\nUndis ubi saepe, nec Europa enim formae non reclusit. Ante medium mea ocius \nea\nsacraque\n non dextram pennas amictus et posset. Terunt sibi cum deficiunt!\n\n\nAliisque figentem in illius ut cognovit mater! Festum a voverat prosilit somni\nmovet continui vidi in corpora fraudem ferenda \ncaret\n, est vix celeremque\ndiurnis petit. Dabitis ilia! Quam se votis; vix nova sub nec radiis dubium.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/about/#auras-nil-faveas", 
+            "text": "", 
+            "title": "Auras nil faveas"
+        }, 
+        {
+            "location": "/about/#ambo-ut", 
+            "text": "Lorem markdownum avara rediit: damnarat ut sonuit Latinas intexere sum illis\npaterni faventibus Aeneas. Intrat quod perfregit praeterit et cernis antris:\nterra at  favillae adquirit  erat.", 
+            "title": "Ambo ut"
+        }, 
+        {
+            "location": "/about/#solitos-talia", 
+            "text": "Creverunt si domino omen. Phineus tibi mea!   Nefandos flores adest in signa salutantum dederant pacis aures corpus: cum\ncircumspicit esse desiluit oblitus genetrixque illa? Antistite Cyane; dubitare\ncausam  quidque , hic illi atria mactatos nepos. Visa  citharam  certam, me\ncum et Chiae Minervae Phrygum. Quisquis veluti  ille super nec  atque  sua\nverum et  pater palluerat. Pariter\nmulti hanc annos  ingens  traditur pascere terra, rexerat quae quidem!", 
+            "title": "Solitos talia"
+        }, 
+        {
+            "location": "/about/#subit-a-noxque-quod", 
+            "text": "Quam additis. Petebamus igne imbri iudice corripuere inquirit hederis: inputat\nper suis, erat mihi! Oracula enim sui Telamone sortem, credere est soror\nsolidorum.   Aeolidis Scorpion rutilis cunctae cruor levatus adsuetaque  Iniquis petit me adspicit imis vidisse harena  Ignotae sumit et tu mutavit iam tympana", 
+            "title": "Subit a noxque quod"
+        }, 
+        {
+            "location": "/about/#serpentem-flamine-typhoea-diverso-sparsa", 
+            "text": "Sidera ingenium aliquos quam nubila non, tu  Coronida , voce? Gramine facundia\nne narrat undas; o arsit hoc Ampycides caelebs est in praepetibus quacumque\nvellent Haud. Erysicthone litore Libys mutata vitatumque, sed coetus memini,\nsolitum.", 
+            "title": "Serpentem flamine Typhoea diverso sparsa"
+        }, 
+        {
+            "location": "/about/#cum-et-fecunda-quidem-se-nondum-caelumque", 
+            "text": "Undis ubi saepe, nec Europa enim formae non reclusit. Ante medium mea ocius  ea\nsacraque  non dextram pennas amictus et posset. Terunt sibi cum deficiunt!  Aliisque figentem in illius ut cognovit mater! Festum a voverat prosilit somni\nmovet continui vidi in corpora fraudem ferenda  caret , est vix celeremque\ndiurnis petit. Dabitis ilia! Quam se votis; vix nova sub nec radiis dubium.", 
+            "title": "Cum et fecunda quidem se nondum caelumque"
+        }
+    ]
+}
