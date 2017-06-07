@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>API - PageBot</title>
+  <title>Home - PageBot</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "API";
-    var mkdocs_page_input_path = "pagebot.md";
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "pagebot/index.md";
     var mkdocs_page_url = "/pagebot/";
   </script>
   
@@ -57,108 +57,767 @@
     <a class="" href="../howto/">How To</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">API</a>
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Home</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#pagebot">pagebot</a></li>
+    <li class="toctree-l3"><a href="#pagebot">pagebot</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#h2ch">h2ch</a></li>
+            <li><a class="toctree-l4" href="#classes">Classes</a></li>
         
-            <li><a class="toctree-l3" href="#getrootpath">getRootPath</a></li>
+            <li><a class="toctree-l4" href="#modules">Modules</a></li>
         
-            <li><a class="toctree-l3" href="#setstrokecolor">setStrokeColor</a></li>
-        
-            <li><a class="toctree-l3" href="#newfs">newFS</a></li>
-        
-            <li><a class="toctree-l3" href="#cy2y">cy2y</a></li>
-        
-            <li><a class="toctree-l3" href="#gradient">Gradient</a></li>
-        
-            <li><a class="toctree-l3" href="#cd2d">cd2d</a></li>
-        
-            <li><a class="toctree-l3" href="#d2cd">d2cd</a></li>
-        
-            <li><a class="toctree-l3" href="#find">find</a></li>
-        
-            <li><a class="toctree-l3" href="#basecontext">BaseContext</a></li>
-        
-            <li><a class="toctree-l3" href="#no_color">NO_COLOR</a></li>
-        
-            <li><a class="toctree-l3" href="#cz2z">cz2z</a></li>
-        
-            <li><a class="toctree-l3" href="#textboxbaselines">textBoxBaseLines</a></li>
-        
-            <li><a class="toctree-l3" href="#ch2h">ch2h</a></li>
-        
-            <li><a class="toctree-l3" href="#style">style</a></li>
-        
-            <li><a class="toctree-l3" href="#getmarker">getMarker</a></li>
-        
-            <li><a class="toctree-l3" href="#textpositionsearch">textPositionSearch</a></li>
-        
-            <li><a class="toctree-l3" href="#toolbox">toolbox</a></li>
-        
-            <li><a class="toctree-l3" href="#setgradient">setGradient</a></li>
-        
-            <li><a class="toctree-l3" href="#marker_pattern">MARKER_PATTERN</a></li>
-        
-            <li><a class="toctree-l3" href="#getglobals">getGlobals</a></li>
-        
-            <li><a class="toctree-l3" href="#css">css</a></li>
-        
-            <li><a class="toctree-l3" href="#left">LEFT</a></li>
-        
-            <li><a class="toctree-l3" href="#division">division</a></li>
-        
-            <li><a class="toctree-l3" href="#y2cy">y2cy</a></li>
-        
-            <li><a class="toctree-l3" href="#deepfind">deepFind</a></li>
-        
-            <li><a class="toctree-l3" href="#cw2w">cw2w</a></li>
-        
-            <li><a class="toctree-l3" href="#setfillcolor">setFillColor</a></li>
-        
-            <li><a class="toctree-l3" href="#z2cz">z2cz</a></li>
-        
-            <li><a class="toctree-l3" href="#shadow">Shadow</a></li>
-        
-            <li><a class="toctree-l3" href="#point2d">point2D</a></li>
-        
-            <li><a class="toctree-l3" href="#setshadow">setShadow</a></li>
-        
-            <li><a class="toctree-l3" href="#findmarkers">findMarkers</a></li>
-        
-            <li><a class="toctree-l3" href="#publications">publications</a></li>
-        
-            <li><a class="toctree-l3" href="#pbglobals">pbGlobals</a></li>
-        
-            <li><a class="toctree-l3" href="#baseline2y">baseline2y</a></li>
-        
-            <li><a class="toctree-l3" href="#find_fs_markers">FIND_FS_MARKERS</a></li>
-        
-            <li><a class="toctree-l3" href="#globals">Globals</a></li>
-        
-            <li><a class="toctree-l3" href="#x2cx">x2cx</a></li>
-        
-            <li><a class="toctree-l3" href="#getfontpath">getFontPath</a></li>
-        
-            <li><a class="toctree-l3" href="#w2cw">w2cw</a></li>
-        
-            <li><a class="toctree-l3" href="#cx2x">cx2x</a></li>
+            <li><a class="toctree-l4" href="#functions">Functions</a></li>
         
         </ul>
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="composer/">Composer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="document/">Document</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="style/">Style</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="typesetter/">Typesetter</a>
+                </li>
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../about/">About</a>
+    <span class="caption-text">pagebot/md</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="md/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="md/footnotes/">Footnotes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="md/literature/">Literature</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="elements/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/element/">Element</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbgalley/">Pbgalley</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbimage/">Pbimage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbline/">Pbline</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pboval/">Pboval</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbpage/">Pbpage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbpolygon/">Pbpolygon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbrect/">Pbrect</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbruler/">Pbruler</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbtable/">Pbtable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbtext/">Pbtext</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/pbtextbox/">Pbtextbox</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements/paths</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="elements/paths/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/paths/glyphpath/">Glyphpath</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/paths/pbpath/">Pbpath</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements/variablefonts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="elements/variablefonts/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/variablefonts/variablecircle/">Variablecircle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/variablefonts/variablecube/">Variablecube</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/variablefonts/variablecube2/">Variablecube2</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/variablefonts/variableeditor/">Variableeditor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/variablefonts/variableglyphs/">Variableglyphs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/variablefonts/variablescatter/">Variablescatter</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements/views</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="elements/views/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/views/defaultview/">Defaultview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/views/htmlcssview/">Htmlcssview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/views/kirbyview/">Kirbyview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/views/singleview/">Singleview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/views/thumbview/">Thumbview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="elements/views/view/">View</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/builders</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="builders/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="builders/basebuilder/">Basebuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="builders/mdblogbuilder/">Mdblogbuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/builders/kirby</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="builders/kirby/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="builders/kirby/kirbybuilder/">Kirbybuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/builders/htmlcss</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="builders/htmlcss/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="builders/htmlcss/basehtmlcssbuilder/">Basehtmlcssbuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="builders/htmlcss/gridbuilder/">Gridbuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="builders/htmlcss/simplebuilder/">Simplebuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="builders/htmlcss/simplehtmlcssbuilder/">Simplehtmlcssbuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="contributions/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/adobe</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="contributions/adobe/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/adobe/kerndump</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="contributions/adobe/kerndump/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/adobe/kerndump/dumpKerningFeatureFromOTF/">dumpKerningFeatureFromOTF</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/adobe/kerndump/getKerningPairsFromOTF/">getKerningPairsFromOTF</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/filibuster</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/blurb/">Blurb</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/blurbwriter/">Blurbwriter</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/test/">Test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/titlecase/">Titlecase</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/filibuster/content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/aerospace/">Aerospace</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/articles/">Articles</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/auction/">Auction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/automotive/">Automotive</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/book_reference/">Book reference</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/boymechanic/">Boymechanic</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/classified/">Classified</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/commercial/">Commercial</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/corporate/">Corporate</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/creditcard/">Creditcard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/designarticle/">Designarticle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/entertainment/">Entertainment</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/event/">Event</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/filenames/">Filenames</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/filibuster/">Filibuster</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/financial/">Financial</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/general/">General</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/geography/">Geography</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/horoscope/">Horoscope</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/internet/">Internet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/jargon/">Jargon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/journalism/">Journalism</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/legal/">Legal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/letterror/">Letterror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/literature/">Literature</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/living/">Living</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/medical/">Medical</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/modernmedia/">Modernmedia</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/music/">Music</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/names/">Names</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/navigation/">Navigation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/news/">News</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/politics/">Politics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/portal/">Portal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/quotations/">Quotations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/realestate/">Realestate</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/reviews/">Reviews</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/sciences/">Sciences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/sports/">Sports</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/staff/">Staff</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/superheroes/">Superheroes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="contributions/filibuster/content/twitter/">Twitter</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/interaction</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="interaction/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="interaction/variables/">Variables</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/publications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="publications/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="publications/pagebotdoc/">Pagebotdoc</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="publications/poster/">Poster</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="publications/publication/">Publication</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="publications/singlepage/">Singlepage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="publications/typespecimen/">Typespecimen</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/toolbox</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="toolbox/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="toolbox/dating/">Dating</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="toolbox/drawparts/">Drawparts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="toolbox/markers/">Markers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="toolbox/mathematics/">Mathematics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="toolbox/timemark/">Timemark</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="toolbox/transform3d/">Transform3d</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="toolbox/transformer/">Transformer</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/designspacemodel/">Designspacemodel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/otlTools/">otlTools</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/svg2drawbot/">Svg2drawbot</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/ttftools/">Ttftools</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/varfontdesignspace/">Varfontdesignspace</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/variablefontbuilder/">Variablefontbuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox/analyzers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/analyzers/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/analyzers/contour/">Contour</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/analyzers/glyphanalyzer-TNBITS/">glyphanalyzer TNBITS</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/analyzers/glyphanalyzer/">Glyphanalyzer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/analyzers/point/">Point</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/analyzers/pointcontext/">Pointcontext</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/analyzers/pointcontextlist/">Pointcontextlist</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/analyzers/segment/">Segment</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox/objects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/objects/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/objects/family/">Family</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/objects/font/">Font</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/objects/fontinfo/">Fontinfo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/objects/glyph/">Glyph</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox/unicodes</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/unicodes/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/unicodes/unicoderanges/">Unicoderanges</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="fonttoolbox/unicodes/unicoderangesdata/">Unicoderangesdata</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/conditions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="conditions/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="conditions/align/">Align</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="conditions/condition/">Condition</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="conditions/floating/">Floating</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="conditions/flow/">Flow</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="conditions/score/">Score</a>
+                </li>
+    </ul>
 	    </li>
           
         </ul>
@@ -182,8 +841,12 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
+        
+          <li>pagebot &raquo;</li>
+        
+      
     
-    <li>API</li>
+    <li>Home</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/typenetwork/PageBot/"> Edit on PageBot</a>
@@ -196,17 +859,37 @@
             <div class="section">
               
                 <h1 id="pagebot">pagebot</h1>
-<h2 id="h2ch">h2ch</h2>
-<h2 id="getrootpath">getRootPath</h2>
+<h2 id="classes">Classes</h2>
+<ul>
+<li><a href="./composer">pagebot.composer</a></li>
+<li><a href="./document">pagebot.document</a></li>
+<li><a href="./style">pagebot.style</a></li>
+<li><a href="./typesetter">pagebot.typesetter</a></li>
+</ul>
+<h2 id="modules">Modules</h2>
+<ul>
+<li><a href="./md">pagebot.md</a></li>
+<li><a href="./elements">pagebot.elements</a></li>
+<li><a href="./builders">pagebot.builders</a></li>
+<li><a href="./contributions">pagebot.contributions</a></li>
+<li><a href="./interaction">pagebot.interaction</a></li>
+<li><a href="./publications">pagebot.publications</a></li>
+<li><a href="./toolbox">pagebot.toolbox</a></li>
+<li><a href="./fonttoolbox">pagebot.fonttoolbox</a></li>
+<li><a href="./conditions">pagebot.conditions</a></li>
+</ul>
+<h2 id="functions">Functions</h2>
+<h3 id="function-h2ch">function h2ch</h3>
+<h3 id="function-getrootpath">function getRootPath</h3>
 <p>Answer the root path of the pagebot module.</p>
-<h2 id="setstrokecolor">setStrokeColor</h2>
+<h3 id="function-setstrokecolor">function setStrokeColor</h3>
 <p>Set global stroke color or the color of the formatted string.</p>
-<h2 id="newfs">newFS</h2>
+<h3 id="function-newfs">function newFS</h3>
 <p>Answer a formatted string from valid attributes in Style. Set the all values after testing
 their existence, so they can inherit from previous style formats.</p>
-<h2 id="cy2y">cy2y</h2>
+<h3 id="function-cy2y">function cy2y</h3>
 <p>Transform from column y value to y value, using the e.css for colunn values.</p>
-<h2 id="gradient">Gradient</h2>
+<h3 id="gradient">Gradient</h3>
 <p>As linear gradient (startRadius or endRadius not set):
 startPoint as (x, y)
 endPoint as (x, y)
@@ -221,13 +904,13 @@ locations of each color as a list of floats. (optionally)
 startRadius radius around the startPoint in degrees (optionally)
 endRadius radius around the endPoint in degrees (optionally)
 Setting a gradient will ignore the fill.</p>
-<h2 id="cd2d">cd2d</h2>
-<h2 id="d2cd">d2cd</h2>
-<h2 id="find">find</h2>
+<h3 id="function-cd2d">function cd2d</h3>
+<h3 id="function-d2cd">function d2cd</h3>
+<h3 id="function-find">function find</h3>
 <p>Perform a dynamic find the named element(s) in self.elements. Don't include self.
 Either name or pattern should be defined.</p>
-<h2 id="basecontext">BaseContext</h2>
-<h2 id="no_color">NO_COLOR</h2>
+<h3 id="basecontext">BaseContext</h3>
+<h3 id="no_color">NO_COLOR</h3>
 <p>int(x=0) -&gt; int or long
 int(x, base=10) -&gt; int or long</p>
 <p>Convert a number or string to an integer, or return 0 if no arguments
@@ -238,21 +921,15 @@ Unicode object representing an integer literal in the given base.  The
 literal can be preceded by '+' or '-' and be surrounded by whitespace.
 The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
 interpret the base from the string as an integer literal.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>int('0b100', base=0)
-4</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="cz2z">cz2z</h2>
-<h2 id="textboxbaselines">textBoxBaseLines</h2>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+4
+</code></pre>
+<h3 id="function-cz2z">function cz2z</h3>
+<h3 id="function-textboxbaselines">function textBoxBaseLines</h3>
 <p>Answer a list of (x,y) positions of all line starts in the box. This function may become part
 of standard DrawBot in the near future.</p>
-<h2 id="ch2h">ch2h</h2>
-<h2 id="style">style</h2>
-<h2 id="getmarker">getMarker</h2>
+<h3 id="function-ch2h">function ch2h</h3>
+<h3 id="function-getmarker">function getMarker</h3>
 <p>Answer a formatted string with markerId that can be used as non-display marker.
 This way the Composer can find the position of markers in text boxes, after
 FS-slicing has been done. Note there is always a very small "white-space"
@@ -264,47 +941,45 @@ Note that there is a potential problem of slicing through the argument string at
 the end of a textBox. That is another reason to keep the length of the arguments short.
 And not to use any spaces, etc. inside the markerId.
 Possible slicing through line-endings is not a problem, as the raw string ignores them.</p>
-<h2 id="textpositionsearch">textPositionSearch</h2>
-<h2 id="toolbox">toolbox</h2>
-<h2 id="setgradient">setGradient</h2>
+<h3 id="function-textpositionsearch">function textPositionSearch</h3>
+<h3 id="function-setgradient">function setGradient</h3>
 <p>Define the gradient call to match the size of element e., Gradient position
 is from the origin of the page, so we need the current origin of e.</p>
-<h2 id="marker_pattern">MARKER_PATTERN</h2>
+<h3 id="marker_pattern">MARKER_PATTERN</h3>
 <p>str(object='') -&gt; string</p>
 <p>Return a nice string representation of the object.
 If the argument is a string, the return value is the same object.</p>
-<h2 id="getglobals">getGlobals</h2>
+<h3 id="function-getglobals">function getGlobals</h3>
 <p>In order to let PageBot scripts and/applications exchange information, without the
 need to save as files, the pbglobals module supports the storage of non-persistent information.
 This way, applications with Vanilla windows can be used as UI for scripts that perform as batch process.
 Note that it is up to the responsibilty of individual scripts to create uniqued ids for
 attributes. Also they need to know from each other, in case information is exchanged.</p>
-<h2 id="css">css</h2>
+<h3 id="function-css">function css</h3>
 <p>Answer the named style values. Search in optional style dict first, otherwise up the
 parent tree of styles in element e. Both e and style can be None. In that case None is answered.</p>
-<h2 id="left">LEFT</h2>
+<h3 id="left">LEFT</h3>
 <p>str(object='') -&gt; string</p>
 <p>Return a nice string representation of the object.
 If the argument is a string, the return value is the same object.</p>
-<h2 id="division">division</h2>
-<h2 id="y2cy">y2cy</h2>
+<h3 id="division">division</h3>
+<h3 id="function-y2cy">function y2cy</h3>
 <p>Transform from y value to column y value, using the e.css for colunn values.</p>
-<h2 id="deepfind">deepFind</h2>
+<h3 id="function-deepfind">function deepFind</h3>
 <p>Perform a dynamic deep find the for all elements with the name. Don't include self.
 Either name or pattern should be defined.</p>
-<h2 id="cw2w">cw2w</h2>
-<h2 id="setfillcolor">setFillColor</h2>
+<h3 id="function-cw2w">function cw2w</h3>
+<h3 id="function-setfillcolor">function setFillColor</h3>
 <p>Set the color for global or the color of the formatted string.</p>
-<h2 id="z2cz">z2cz</h2>
+<h3 id="function-z2cz">function z2cz</h3>
 <p>Transform from z value to column z value, using the e.css for colunn values.</p>
-<h2 id="shadow">Shadow</h2>
-<h2 id="point2d">point2D</h2>
+<h3 id="shadow">Shadow</h3>
+<h3 id="function-point2d">function point2D</h3>
 <p>Answer the 2D origin as combination of p and offset.</p>
-<h2 id="setshadow">setShadow</h2>
-<h2 id="findmarkers">findMarkers</h2>
+<h3 id="function-setshadow">function setShadow</h3>
+<h3 id="function-findmarkers">function findMarkers</h3>
 <p>Answer a dictionary of markers with their arguments in a given FormattedString.</p>
-<h2 id="publications">publications</h2>
-<h2 id="pbglobals">pbGlobals</h2>
+<h3 id="pbglobals">pbGlobals</h3>
 <p>dict() -&gt; new empty dictionary
 dict(mapping) -&gt; new dictionary initialized from a mapping object's
 (key, value) pairs
@@ -314,17 +989,18 @@ for k, v in iterable:
 d[k] = v
 dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
 in the keyword argument list.  For example:  dict(one=1, two=2)</p>
-<h2 id="baseline2y">baseline2y</h2>
+<h3 id="function-baseline2y">function baseline2y</h3>
 <p>Convert columns index and line index to page position. Answered (x, y) is point position based on
 marginTop + yIndex*baseLine.</p>
-<h2 id="find_fs_markers">FIND_FS_MARKERS</h2>
+<h3 id="find_fs_markers">FIND_FS_MARKERS</h3>
 <p>Compiled regular expression objects</p>
-<h2 id="globals">Globals</h2>
-<h2 id="x2cx">x2cx</h2>
-<h2 id="getfontpath">getFontPath</h2>
+<h3 id="globals">Globals</h3>
+<h3 id="function-x2cx">function x2cx</h3>
+<p>Transform from y value to column y value, using the e.css for colunn values.</p>
+<h3 id="function-getfontpath">function getFontPath</h3>
 <p>Answer the standard font path of the pagebot module.</p>
-<h2 id="w2cw">w2cw</h2>
-<h2 id="cx2x">cx2x</h2>
+<h3 id="function-w2cw">function w2cw</h3>
+<h3 id="function-cx2x">function cx2x</h3>
               
             </div>
           </div>
@@ -332,10 +1008,10 @@ marginTop + yIndex*baseLine.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="composer/" class="btn btn-neutral float-right" title="Composer">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../howto/" class="btn btn-neutral" title="How To"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -361,10 +1037,10 @@ marginTop + yIndex*baseLine.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../howto/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../about/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="composer/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

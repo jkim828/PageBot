@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Transformer - PageBot</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Transformer";
+    var mkdocs_page_input_path = "pagebot/toolbox/transformer.md";
+    var mkdocs_page_url = "/pagebot/toolbox/transformer/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> PageBot</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../howto/">How To</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../about/">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../composer/">Composer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../document/">Document</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../style/">Style</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../typesetter/">Typesetter</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/md</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../md/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../md/footnotes/">Footnotes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../md/literature/">Literature</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../elements/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/element/">Element</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbgalley/">Pbgalley</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbimage/">Pbimage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbline/">Pbline</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pboval/">Pboval</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbpage/">Pbpage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbpolygon/">Pbpolygon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbrect/">Pbrect</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbruler/">Pbruler</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbtable/">Pbtable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbtext/">Pbtext</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/pbtextbox/">Pbtextbox</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements/paths</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../elements/paths/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/paths/glyphpath/">Glyphpath</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/paths/pbpath/">Pbpath</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements/variablefonts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../elements/variablefonts/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/variablefonts/variablecircle/">Variablecircle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/variablefonts/variablecube/">Variablecube</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/variablefonts/variablecube2/">Variablecube2</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/variablefonts/variableeditor/">Variableeditor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/variablefonts/variableglyphs/">Variableglyphs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/variablefonts/variablescatter/">Variablescatter</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements/views</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../elements/views/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/views/defaultview/">Defaultview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/views/htmlcssview/">Htmlcssview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/views/kirbyview/">Kirbyview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/views/singleview/">Singleview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/views/thumbview/">Thumbview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../elements/views/view/">View</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/builders</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../builders/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../builders/basebuilder/">Basebuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../builders/mdblogbuilder/">Mdblogbuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/builders/kirby</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../builders/kirby/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../builders/kirby/kirbybuilder/">Kirbybuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/builders/htmlcss</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../builders/htmlcss/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../builders/htmlcss/basehtmlcssbuilder/">Basehtmlcssbuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../builders/htmlcss/gridbuilder/">Gridbuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../builders/htmlcss/simplebuilder/">Simplebuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../builders/htmlcss/simplehtmlcssbuilder/">Simplehtmlcssbuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../contributions/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/adobe</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../contributions/adobe/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/adobe/kerndump</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../contributions/adobe/kerndump/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/adobe/kerndump/dumpKerningFeatureFromOTF/">dumpKerningFeatureFromOTF</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/adobe/kerndump/getKerningPairsFromOTF/">getKerningPairsFromOTF</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/filibuster</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/blurb/">Blurb</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/blurbwriter/">Blurbwriter</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/test/">Test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/titlecase/">Titlecase</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/filibuster/content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/aerospace/">Aerospace</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/articles/">Articles</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/auction/">Auction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/automotive/">Automotive</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/book_reference/">Book reference</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/boymechanic/">Boymechanic</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/classified/">Classified</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/commercial/">Commercial</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/corporate/">Corporate</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/creditcard/">Creditcard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/designarticle/">Designarticle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/entertainment/">Entertainment</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/event/">Event</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/filenames/">Filenames</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/filibuster/">Filibuster</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/financial/">Financial</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/general/">General</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/geography/">Geography</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/horoscope/">Horoscope</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/internet/">Internet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/jargon/">Jargon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/journalism/">Journalism</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/legal/">Legal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/letterror/">Letterror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/literature/">Literature</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/living/">Living</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/medical/">Medical</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/modernmedia/">Modernmedia</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/music/">Music</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/names/">Names</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/navigation/">Navigation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/news/">News</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/politics/">Politics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/portal/">Portal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/quotations/">Quotations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/realestate/">Realestate</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/reviews/">Reviews</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/sciences/">Sciences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/sports/">Sports</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/staff/">Staff</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/superheroes/">Superheroes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../contributions/filibuster/content/twitter/">Twitter</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/interaction</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../interaction/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../interaction/variables/">Variables</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/publications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../publications/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../publications/pagebotdoc/">Pagebotdoc</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../publications/poster/">Poster</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../publications/publication/">Publication</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../publications/singlepage/">Singlepage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../publications/typespecimen/">Typespecimen</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/toolbox</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dating/">Dating</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drawparts/">Drawparts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../markers/">Markers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../mathematics/">Mathematics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../timemark/">Timemark</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../transform3d/">Transform3d</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Transformer</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#toolboxtransformer">toolbox.transformer</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#xxxyyyzzzagency_fb-bold0001646411ufo-becomes-agency_fb-bold">xxx/yyy/zzz/Agency_FB-Bold.0001646411.ufo becomes Agency_FB-Bold</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#function-readunicodes">function readUnicodes</a></li>
+        
+            <li><a class="toctree-l4" href="#function-fixed2float">function fixed2Float</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asintordefault">function asIntOrDefault</a></li>
+        
+            <li><a class="toctree-l4" href="#function-path2fontname">function path2FontName</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#xxxyyyzzzagency_fb-bold0001646411ufo-becomes-agency_fb-bold_1">xxx/yyy/zzz/Agency_FB-Bold.0001646411.ufo becomes Agency_FB-Bold</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#function-hex2char">function hex2char</a></li>
+        
+            <li><a class="toctree-l4" href="#function-commastring2integerlist">function commaString2IntegerList</a></li>
+        
+            <li><a class="toctree-l4" href="#function-obj2styleid">function obj2StyleId</a></li>
+        
+            <li><a class="toctree-l4" href="#function-writeunicodes">function writeUnicodes</a></li>
+        
+            <li><a class="toctree-l4" href="#function-interpolate">function interpolate</a></li>
+        
+            <li><a class="toctree-l4" href="#function-bool2int">function bool2Int</a></li>
+        
+            <li><a class="toctree-l4" href="#function-path2parentpath">function path2ParentPath</a></li>
+        
+            <li><a class="toctree-l4" href="#function-field2floq">function field2Floq</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asintorvalue">function asIntOrValue</a></li>
+        
+            <li><a class="toctree-l4" href="#function-isuniquelist">function isUniqueList</a></li>
+        
+            <li><a class="toctree-l4" href="#function-obj2styleids">function obj2StyleIds</a></li>
+        
+            <li><a class="toctree-l4" href="#whitespace">WHITESPACE</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asnumber">function asNumber</a></li>
+        
+            <li><a class="toctree-l4" href="#function-list2spacedstring">function list2SpacedString</a></li>
+        
+            <li><a class="toctree-l4" href="#function-string2wordskey">function string2WordsKey</a></li>
+        
+            <li><a class="toctree-l4" href="#plainwords">PLAINWORDS</a></li>
+        
+            <li><a class="toctree-l4" href="#function-arabic2romannumerals">function arabic2RomanNumerals</a></li>
+        
+            <li><a class="toctree-l4" href="#function-words2wordskey">function words2WordsKey</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asformatted">function asFormatted</a></li>
+        
+            <li><a class="toctree-l4" href="#function-strippedstring">function strippedString</a></li>
+        
+            <li><a class="toctree-l4" href="#function-value2fixed">function value2Fixed</a></li>
+        
+            <li><a class="toctree-l4" href="#function-bash">function bash</a></li>
+        
+            <li><a class="toctree-l4" href="#function-floq2field">function floq2Field</a></li>
+        
+            <li><a class="toctree-l4" href="#function-idcommastring2idset">function idCommaString2IdSet</a></li>
+        
+            <li><a class="toctree-l4" href="#function-lessgreen">function lessGreen</a></li>
+        
+            <li><a class="toctree-l4" href="#function-json2dict">function json2Dict</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asid">function asId</a></li>
+        
+            <li><a class="toctree-l4" href="#function-font2id">function font2ID</a></li>
+        
+            <li><a class="toctree-l4" href="#function-pointoffset">function pointOffset</a></li>
+        
+            <li><a class="toctree-l4" href="#function-list2json">function list2Json</a></li>
+        
+            <li><a class="toctree-l4" href="#function-hex2dec">function hex2dec</a></li>
+        
+            <li><a class="toctree-l4" href="#function-font2filename">function font2FileName</a></li>
+        
+            <li><a class="toctree-l4" href="#function-font2name">function font2Name</a></li>
+        
+            <li><a class="toctree-l4" href="#function-seconds2date">function seconds2Date</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asint">function asInt</a></li>
+        
+            <li><a class="toctree-l4" href="#function-darker">function darker</a></li>
+        
+            <li><a class="toctree-l4" href="#function-path2fontid">function path2FontId</a></li>
+        
+            <li><a class="toctree-l4" href="#function-list2commastring">function list2CommaString</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asroundedorzerostring">function asRoundedOrZeroString</a></li>
+        
+            <li><a class="toctree-l4" href="#function-stringlist2strippedlist">function stringList2StrippedList</a></li>
+        
+            <li><a class="toctree-l4" href="#function-filtervalue2int">function filterValue2Int</a></li>
+        
+            <li><a class="toctree-l4" href="#function-uniqueid">function uniqueID</a></li>
+        
+            <li><a class="toctree-l4" href="#function-formatbinaryforttx">function formatBinaryForTTX</a></li>
+        
+            <li><a class="toctree-l4" href="#function-isint">function isInt</a></li>
+        
+            <li><a class="toctree-l4" href="#function-isuniquedict">function isUniqueDict</a></li>
+        
+            <li><a class="toctree-l4" href="#function-font2familyid">function font2FamilyID</a></li>
+        
+            <li><a class="toctree-l4" href="#function-dict2json">function dict2Json</a></li>
+        
+            <li><a class="toctree-l4" href="#function-dec2hex">function dec2hex</a></li>
+        
+            <li><a class="toctree-l4" href="#function-shrink">function shrink</a></li>
+        
+            <li><a class="toctree-l4" href="#function-lessred">function lessRed</a></li>
+        
+            <li><a class="toctree-l4" href="#function-date2seconds">function date2Seconds</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asroundedint">function asRoundedInt</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asdict">function asDict</a></li>
+        
+            <li><a class="toctree-l4" href="#function-json2list">function json2List</a></li>
+        
+            <li><a class="toctree-l4" href="#function-font2path">function font2Path</a></li>
+        
+            <li><a class="toctree-l4" href="#function-index2pointid">function index2PointId</a></li>
+        
+            <li><a class="toctree-l4" href="#function-lessblue">function lessBlue</a></li>
+        
+            <li><a class="toctree-l4" href="#function-font2stylename">function font2StyleName</a></li>
+        
+            <li><a class="toctree-l4" href="#function-asbool">function asBool</a></li>
+        
+            <li><a class="toctree-l4" href="#function-fontname2familyname">function fontName2FamilyName</a></li>
+        
+            <li><a class="toctree-l4" href="#roman_numeral_values">ROMAN_NUMERAL_VALUES</a></li>
+        
+            <li><a class="toctree-l4" href="#function-int2bool">function int2Bool</a></li>
+        
+            <li><a class="toctree-l4" href="#function-module2path">function module2Path</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/designspacemodel/">Designspacemodel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/otlTools/">otlTools</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/svg2drawbot/">Svg2drawbot</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/ttftools/">Ttftools</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/varfontdesignspace/">Varfontdesignspace</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/variablefontbuilder/">Variablefontbuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox/analyzers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/analyzers/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/analyzers/contour/">Contour</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/analyzers/glyphanalyzer-TNBITS/">glyphanalyzer TNBITS</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/analyzers/glyphanalyzer/">Glyphanalyzer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/analyzers/point/">Point</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/analyzers/pointcontext/">Pointcontext</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/analyzers/pointcontextlist/">Pointcontextlist</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/analyzers/segment/">Segment</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox/objects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/objects/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/objects/family/">Family</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/objects/font/">Font</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/objects/fontinfo/">Fontinfo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/objects/glyph/">Glyph</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox/unicodes</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/unicodes/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/unicodes/unicoderanges/">Unicoderanges</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../fonttoolbox/unicodes/unicoderangesdata/">Unicoderangesdata</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/conditions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../conditions/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../conditions/align/">Align</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../conditions/condition/">Condition</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../conditions/floating/">Floating</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../conditions/flow/">Flow</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../conditions/score/">Score</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">PageBot</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>pagebot/toolbox &raquo;</li>
+        
+      
+    
+    <li>Transformer</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/typenetwork/PageBot/"> Edit on PageBot</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="toolboxtransformer">toolbox.transformer</h1>
+<h2 id="functions">Functions</h2>
+<h3 id="function-asnumberornone">function asNumberOrNone</h3>
+<h3 id="function-none2empty">function none2Empty</h3>
+<h3 id="function-moreblue">function moreBlue</h3>
+<h3 id="function-reversedict">function reverseDict</h3>
+<h3 id="function-asstring">function asString</h3>
+<h3 id="function-point3d">function point3D</h3>
+<p>Answer p as 3D point. If it already is a list of 3 elements, then don't change
+and answer the original.</p>
+<h3 id="function-path2scriptid">function path2ScriptId</h3>
+<p>Answer the scriptId, derived from the <strong>file</strong> of the main source.</p>
+<h3 id="function-asstringorempty">function asStringOrEmpty</h3>
+<h3 id="function-makeuniquelist">function makeUniqueList</h3>
+<h3 id="function-removewhitespace">function removeWhiteSpace</h3>
+<p>Vacuum s by removing all white space.</p>
+<h3 id="function-moregreen">function moreGreen</h3>
+<h3 id="function-path2hintpath">function path2HintPath</h3>
+<h3 id="function-path2name">function path2Name</h3>
+<p><doc>Answers the file name part of the path.</doc></p>
+<h3 id="function-string2plainwords">function string2PlainWords</h3>
+<h3 id="function-asfloat">function asFloat</h3>
+<h3 id="function-font2naked">function font2Naked</h3>
+<h3 id="function-list2stringlist">function list2StringList</h3>
+<h3 id="function-point2s">function point2S</h3>
+<p>Answer the point as string of rounded integers. Ignore z value if it is 0.</p>
+<h3 id="function-list2string">function list2String</h3>
+<h3 id="function-fontname2stylename">function fontName2StyleName</h3>
+<h3 id="function-asset">function asSet</h3>
+<h3 id="function-lighter">function lighter</h3>
+<h3 id="function-family2ufoqueryname">function family2UfoQueryName</h3>
+<h3 id="function-path2formatpath">function path2FormatPath</h3>
+<p>Answers the path where the extension is changed to format If format is
+None, then the extension is removed.</p>
+<h3 id="function-point2d">function point2D</h3>
+<p>Answer the 2D origin as combination of p and offset.</p>
+<h3 id="function-font2familyname">function font2FamilyName</h3>
+<h3 id="function-writeunicode">function writeUnicode</h3>
+<p><doc>Takes a unicode string and returns a decimal integer.</doc></p>
+<h3 id="function-astuple">function asTuple</h3>
+<h3 id="function-commastring2list">function commaString2List</h3>
+<h3 id="function-value2idcommastring">function value2IdCommaString</h3>
+<p>Transform a list with numbers into a comma separated string. This can be used to convert a list of record ids
+into a SQL compatible list of ids, without integers showing up as @1234L@.</p>
+<h3 id="function-asfloatornone">function asFloatOrNone</h3>
+<h3 id="function-readunicode">function readUnicode</h3>
+<p><doc>Takes a decimal integer and returns a unicode string.</doc></p>
+<h3 id="function-font2ufoqueryname">function font2UfoQueryName</h3>
+<h3 id="function-morered">function moreRed</h3>
+<h3 id="function-float2fixed">function float2Fixed</h3>
+<p><doc>The @float2Fixed@ method translates a float into a 1/64 pixel unit-value.</doc></p>
+<h3 id="function-asintornone">function asIntOrNone</h3>
+<h3 id="function-path2glyphidname">function path2GlyphIdName</h3>
+<p><doc>Take that file part of the path, and get the chunk until the first
+period to remove the extension, version numbers and the database download
+ID.</p>
+<p>/xxx/yyy/zzz/Agency_FB-Compressed.ufo becomes Agency_FB-Compressed
+/xxx/yyy/zzz/Agency_FB-Compressed.version01.ufo becomes Agency_FB-Compressed</p>
+<h1 id="xxxyyyzzzagency_fb-bold0001646411ufo-becomes-agency_fb-bold">xxx/yyy/zzz/Agency_FB-Bold.0001646411.ufo becomes Agency_FB-Bold</h1>
+<p></doc></p>
+<pre><code>&gt;&gt;&gt; path2FontName('/xxx/yyy/zzz/Agency_FB-Compressed.ufo')
+'Agency_FB-Compressed'
+
+&gt;&gt;&gt; path2FontName('/xxx/yyy/zzz/Agency_FB-Compressed.version01.ufo')
+'Agency_FB-Compressed'
+
+&gt;&gt;&gt; path2FontName('#xxx/yyy/zzz/Agency_FB-Bold.0001646411.ufo')
+'Agency_FB-Bold'
+</code></pre>
+<h3 id="function-readunicodes">function readUnicodes</h3>
+<p><doc>takes a list of robofab friendly integers and returns a string of unicodes.</doc></p>
+<h3 id="function-fixed2float">function fixed2Float</h3>
+<p><doc>The @fixed2Float@ method translates a fixed 1/64 pixel-unit value to float.</doc></p>
+<h3 id="function-asintordefault">function asIntOrDefault</h3>
+<h3 id="function-path2fontname">function path2FontName</h3>
+<p><doc>Take that file part of the path, and get the chunk until the first
+period to remove the extension, version numbers and the database download
+ID.</p>
+<p>/xxx/yyy/zzz/Agency_FB-Compressed.ufo becomes Agency_FB-Compressed
+/xxx/yyy/zzz/Agency_FB-Compressed.version01.ufo becomes Agency_FB-Compressed</p>
+<h1 id="xxxyyyzzzagency_fb-bold0001646411ufo-becomes-agency_fb-bold_1">xxx/yyy/zzz/Agency_FB-Bold.0001646411.ufo becomes Agency_FB-Bold</h1>
+<p></doc></p>
+<pre><code>&gt;&gt;&gt; path2FontName('/xxx/yyy/zzz/Agency_FB-Compressed.ufo')
+'Agency_FB-Compressed'
+
+&gt;&gt;&gt; path2FontName('/xxx/yyy/zzz/Agency_FB-Compressed.version01.ufo')
+'Agency_FB-Compressed'
+
+&gt;&gt;&gt; path2FontName('#xxx/yyy/zzz/Agency_FB-Bold.0001646411.ufo')
+'Agency_FB-Bold'
+</code></pre>
+<h3 id="function-hex2char">function hex2char</h3>
+<h3 id="function-commastring2integerlist">function commaString2IntegerList</h3>
+<h3 id="function-obj2styleid">function obj2StyleId</h3>
+<p>Make sure s is styleId format, other recursively transform into string with space separators.
+Parts can be CSS-like #id and .class identifiers.
+Note that this may change in the future if more compatibility with CSS is necessary.</p>
+<h3 id="function-writeunicodes">function writeUnicodes</h3>
+<p><doc>Takes a list of unicode strings and returns a list of robofab-friendly integers.</doc></p>
+<h3 id="function-interpolate">function interpolate</h3>
+<p>Answer the interpolated value of factor v between a and b. If doRound is True (default is False), then
+round the result before answering it.</p>
+<h3 id="function-bool2int">function bool2Int</h3>
+<h3 id="function-path2parentpath">function path2ParentPath</h3>
+<pre><code>&gt;&gt;&gt; path2ParentPath('/xxx/yyy/zzz/')
+'/xxx/yyy/zzz'
+
+&gt;&gt;&gt; path2ParentPath('/xxx/yyy/zzz')
+'/xxx/yyy'
+
+&gt;&gt;&gt; path2ParentPath('/xxx/yyy/zzz.gif')
+'/xxx/yyy'
+</code></pre>
+<h3 id="function-field2floq">function field2Floq</h3>
+<h3 id="function-asintorvalue">function asIntOrValue</h3>
+<h3 id="function-isuniquelist">function isUniqueList</h3>
+<h3 id="function-obj2styleids">function obj2StyleIds</h3>
+<h3 id="whitespace">WHITESPACE</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="function-asnumber">function asNumber</h3>
+<h3 id="function-list2spacedstring">function list2SpacedString</h3>
+<h3 id="function-string2wordskey">function string2WordsKey</h3>
+<h3 id="plainwords">PLAINWORDS</h3>
+<p>Compiled regular expression objects</p>
+<h3 id="function-arabic2romannumerals">function arabic2RomanNumerals</h3>
+<p><doc>Return the roman numeral representing n. Should work for n in (1, 4999). Borrowed from Nick Montfort.</doc></p>
+<h3 id="function-words2wordskey">function words2WordsKey</h3>
+<h3 id="function-asformatted">function asFormatted</h3>
+<h3 id="function-strippedstring">function strippedString</h3>
+<h3 id="function-value2fixed">function value2Fixed</h3>
+<h3 id="function-bash">function bash</h3>
+<p><doc>Runs a command in the bash shell.</doc></p>
+<h3 id="function-floq2field">function floq2Field</h3>
+<h3 id="function-idcommastring2idset">function idCommaString2IdSet</h3>
+<p>Transform a string with comma separated items into a set of id integers.</p>
+<h3 id="function-lessgreen">function lessGreen</h3>
+<h3 id="function-json2dict">function json2Dict</h3>
+<h3 id="function-asid">function asId</h3>
+<p>The <em>asId</em> method transforms the <em>value</em> attribute either to an instance of @
+long@ or to @None@, so it can be used as <em>id</em> field in a @Record@
+instance. If the value cannot be converted, then the optional <em>default</em> (default value is @0
+@) is answered.</p>
+<h3 id="function-font2id">function font2ID</h3>
+<p>Answer the unique record/adapter ID of the font/style. This can be the unique database record id
+or the unique file path. For now we just answer the file path.</p>
+<h3 id="function-pointoffset">function pointOffset</h3>
+<p>Answer new 3D point, shifted by offset.</p>
+<h3 id="function-list2json">function list2Json</h3>
+<h3 id="function-hex2dec">function hex2dec</h3>
+<h3 id="function-font2filename">function font2FileName</h3>
+<p>Answer the font file name. In case of a new unsaved font,
+answer <em>"Untitled"</em>.</p>
+<h3 id="function-font2name">function font2Name</h3>
+<h3 id="function-seconds2date">function seconds2Date</h3>
+<p>Answer TTF seconds converted to a datetime instance.</p>
+<h3 id="function-asint">function asInt</h3>
+<h3 id="function-darker">function darker</h3>
+<h3 id="function-path2fontid">function path2FontId</h3>
+<p><doc>Answers the font ID for the font associated with this path. If the path does not exist, or if the font name
+is invalid, then answer None.<doc></p>
+<h3 id="function-list2commastring">function list2CommaString</h3>
+<h3 id="function-asroundedorzerostring">function asRoundedOrZeroString</h3>
+<h3 id="function-stringlist2strippedlist">function stringList2StrippedList</h3>
+<h3 id="function-filtervalue2int">function filterValue2Int</h3>
+<p>Filter all numeric characters from the string and answer the resulting integer.
+Answer 0 if no digits are found. If s is already a number, then answer it as rounded int.</p>
+<h3 id="function-uniqueid">function uniqueID</h3>
+<h3 id="function-formatbinaryforttx">function formatBinaryForTTX</h3>
+<h3 id="function-isint">function isInt</h3>
+<h3 id="function-isuniquedict">function isUniqueDict</h3>
+<h3 id="function-font2familyid">function font2FamilyID</h3>
+<p>Answer the unique record/adapter ID of the family of <em>font</em>. This can be the unique database
+record id of the font parent or the unique directory path of the font. For now we just answer the
+the location of the family plist file.
+Special situation is if the font is not saved yet. In that case it does not have a path.</p>
+<h3 id="function-dict2json">function dict2Json</h3>
+<h3 id="function-dec2hex">function dec2hex</h3>
+<h3 id="function-shrink">function shrink</h3>
+<h3 id="function-lessred">function lessRed</h3>
+<h3 id="function-date2seconds">function date2Seconds</h3>
+<p>Answer the datetime converted to TTF seconds.</p>
+<h3 id="function-asroundedint">function asRoundedInt</h3>
+<h3 id="function-asdict">function asDict</h3>
+<p>Answer the value as dict as root. If the value itself is not a dict,
+answer it as dict(value=value). For lower levels than root, answer
+the plain value if is it a string or a number. Basic classed don't get
+translated when not called as root.
+All other objects are called by value.asDict()
+If the object cannot handle that method, then convert it to string.</p>
+<h3 id="function-json2list">function json2List</h3>
+<h3 id="function-font2path">function font2Path</h3>
+<h3 id="function-index2pointid">function index2PointId</h3>
+<h3 id="function-lessblue">function lessBlue</h3>
+<h3 id="function-font2stylename">function font2StyleName</h3>
+<h3 id="function-asbool">function asBool</h3>
+<h3 id="function-fontname2familyname">function fontName2FamilyName</h3>
+<p>For now take the chunk up till "-" in the filename and ignore the family name as set in the font.info
+Also make sure that the extension is removed, if the font has no "-" it isn't name. Relay-Medium_Italic.ufo
+becomes Relay. ThisFont.ufo becomes ThisFont.</p>
+<h3 id="roman_numeral_values">ROMAN_NUMERAL_VALUES</h3>
+<p>dict() -&gt; new empty dictionary
+dict(mapping) -&gt; new dictionary initialized from a mapping object's
+(key, value) pairs
+dict(iterable) -&gt; new dictionary initialized as if via:
+d = {}
+for k, v in iterable:
+d[k] = v
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
+in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<h3 id="function-int2bool">function int2Bool</h3>
+<h3 id="function-module2path">function module2Path</h3>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../fonttoolbox/" class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../transform3d/" class="btn btn-neutral" title="Transform3d"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../transform3d/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../fonttoolbox/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

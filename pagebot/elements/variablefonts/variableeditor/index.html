@@ -1,0 +1,2625 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>Variableeditor - PageBot</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Variableeditor";
+    var mkdocs_page_input_path = "pagebot/elements/variablefonts/variableeditor.md";
+    var mkdocs_page_url = "/pagebot/elements/variablefonts/variableeditor/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> PageBot</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../../howto/">How To</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../../about/">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../composer/">Composer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../document/">Document</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../style/">Style</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../typesetter/">Typesetter</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/md</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../md/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../md/footnotes/">Footnotes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../md/literature/">Literature</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../element/">Element</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbgalley/">Pbgalley</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbimage/">Pbimage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbline/">Pbline</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pboval/">Pboval</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbpage/">Pbpage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbpolygon/">Pbpolygon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbrect/">Pbrect</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbruler/">Pbruler</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbtable/">Pbtable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbtext/">Pbtext</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pbtextbox/">Pbtextbox</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements/paths</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../paths/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../paths/glyphpath/">Glyphpath</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../paths/pbpath/">Pbpath</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements/variablefonts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../variablecircle/">Variablecircle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../variablecube/">Variablecube</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../variablecube2/">Variablecube2</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Variableeditor</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#elementsvariablefontsvariableeditor">elements.variablefonts.variableeditor</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#getting-the-length-of-the-list">Getting the length of the List.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#retrieving-an-item-or-items-from-a-list">Retrieving an item or items from a List.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#setting-an-item-in-a-list">Setting an item in a List.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#deleting-an-item-at-an-index-in-a-list">Deleting an item at an index in a List.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#appending-an-item-to-a-list">Appending an item to a List.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#removing-the-first-occurance-of-an-item-in-a-list">Removing the first occurance of an item in a List.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#getting-the-index-for-the-first-occurance-of-an-item-in-a-list">Getting the index for the first occurance of an item in a List.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#inserting-an-item-into-a-list">Inserting an item into a List.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#extending-a-list">Extending a List.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#iterating-over-a-list">Iterating over a List.</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#imageview">ImageView</a></li>
+        
+            <li><a class="toctree-l4" href="#scrollview">ScrollView</a></li>
+        
+            <li><a class="toctree-l4" href="#progressspinner">ProgressSpinner</a></li>
+        
+            <li><a class="toctree-l4" href="#button">Button</a></li>
+        
+            <li><a class="toctree-l4" href="#objectbrowser">ObjectBrowser</a></li>
+        
+            <li><a class="toctree-l4" href="#pathcontrol">PathControl</a></li>
+        
+            <li><a class="toctree-l4" href="#texteditor">TextEditor</a></li>
+        
+            <li><a class="toctree-l4" href="#function-getfont">function getFont</a></li>
+        
+            <li><a class="toctree-l4" href="#textbox">TextBox</a></li>
+        
+            <li><a class="toctree-l4" href="#splitview">SplitView</a></li>
+        
+            <li><a class="toctree-l4" href="#imagebutton">ImageButton</a></li>
+        
+            <li><a class="toctree-l4" href="#squarebutton">SquareButton</a></li>
+        
+            <li><a class="toctree-l4" href="#vanillabaseobject">VanillaBaseObject</a></li>
+        
+            <li><a class="toctree-l4" href="#segmentedbutton">SegmentedButton</a></li>
+        
+            <li><a class="toctree-l4" href="#progressbar">ProgressBar</a></li>
+        
+            <li><a class="toctree-l4" href="#vanillaerror">VanillaError</a></li>
+        
+            <li><a class="toctree-l4" href="#verticalline">VerticalLine</a></li>
+        
+            <li><a class="toctree-l4" href="#function-tagtoint">function tagToInt</a></li>
+        
+            <li><a class="toctree-l4" href="#function-popupbuttonlistcell">function PopUpButtonListCell</a></li>
+        
+            <li><a class="toctree-l4" href="#function-sliderlistcell">function SliderListCell</a></li>
+        
+            <li><a class="toctree-l4" href="#searchbox">SearchBox</a></li>
+        
+            <li><a class="toctree-l4" href="#levelindicator">LevelIndicator</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../variableglyphs/">Variableglyphs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../variablescatter/">Variablescatter</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/elements/views</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../views/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../views/defaultview/">Defaultview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../views/htmlcssview/">Htmlcssview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../views/kirbyview/">Kirbyview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../views/singleview/">Singleview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../views/thumbview/">Thumbview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../views/view/">View</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/builders</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../builders/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../builders/basebuilder/">Basebuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../builders/mdblogbuilder/">Mdblogbuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/builders/kirby</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../builders/kirby/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../builders/kirby/kirbybuilder/">Kirbybuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/builders/htmlcss</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../builders/htmlcss/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../builders/htmlcss/basehtmlcssbuilder/">Basehtmlcssbuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../builders/htmlcss/gridbuilder/">Gridbuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../builders/htmlcss/simplebuilder/">Simplebuilder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../builders/htmlcss/simplehtmlcssbuilder/">Simplehtmlcssbuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../contributions/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/adobe</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../contributions/adobe/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/adobe/kerndump</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../contributions/adobe/kerndump/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/adobe/kerndump/dumpKerningFeatureFromOTF/">dumpKerningFeatureFromOTF</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/adobe/kerndump/getKerningPairsFromOTF/">getKerningPairsFromOTF</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/filibuster</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/blurb/">Blurb</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/blurbwriter/">Blurbwriter</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/test/">Test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/titlecase/">Titlecase</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/contributions/filibuster/content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/aerospace/">Aerospace</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/articles/">Articles</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/auction/">Auction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/automotive/">Automotive</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/book_reference/">Book reference</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/boymechanic/">Boymechanic</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/classified/">Classified</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/commercial/">Commercial</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/corporate/">Corporate</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/creditcard/">Creditcard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/designarticle/">Designarticle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/entertainment/">Entertainment</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/event/">Event</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/filenames/">Filenames</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/filibuster/">Filibuster</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/financial/">Financial</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/general/">General</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/geography/">Geography</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/horoscope/">Horoscope</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/internet/">Internet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/jargon/">Jargon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/journalism/">Journalism</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/legal/">Legal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/letterror/">Letterror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/literature/">Literature</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/living/">Living</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/medical/">Medical</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/modernmedia/">Modernmedia</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/music/">Music</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/names/">Names</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/navigation/">Navigation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/news/">News</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/politics/">Politics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/portal/">Portal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/quotations/">Quotations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/realestate/">Realestate</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/reviews/">Reviews</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/sciences/">Sciences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/sports/">Sports</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/staff/">Staff</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/superheroes/">Superheroes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../contributions/filibuster/content/twitter/">Twitter</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/interaction</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../interaction/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../interaction/variables/">Variables</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/publications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../publications/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../publications/pagebotdoc/">Pagebotdoc</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../publications/poster/">Poster</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../publications/publication/">Publication</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../publications/singlepage/">Singlepage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../publications/typespecimen/">Typespecimen</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/toolbox</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../toolbox/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../toolbox/dating/">Dating</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../toolbox/drawparts/">Drawparts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../toolbox/markers/">Markers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../toolbox/mathematics/">Mathematics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../toolbox/timemark/">Timemark</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../toolbox/transform3d/">Transform3d</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../toolbox/transformer/">Transformer</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/designspacemodel/">Designspacemodel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/otlTools/">otlTools</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/svg2drawbot/">Svg2drawbot</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/ttftools/">Ttftools</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/varfontdesignspace/">Varfontdesignspace</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/variablefontbuilder/">Variablefontbuilder</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox/analyzers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/analyzers/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/analyzers/contour/">Contour</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/analyzers/glyphanalyzer-TNBITS/">glyphanalyzer TNBITS</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/analyzers/glyphanalyzer/">Glyphanalyzer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/analyzers/point/">Point</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/analyzers/pointcontext/">Pointcontext</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/analyzers/pointcontextlist/">Pointcontextlist</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/analyzers/segment/">Segment</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox/objects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/objects/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/objects/family/">Family</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/objects/font/">Font</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/objects/fontinfo/">Fontinfo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/objects/glyph/">Glyph</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/fonttoolbox/unicodes</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/unicodes/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/unicodes/unicoderanges/">Unicoderanges</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../fonttoolbox/unicodes/unicoderangesdata/">Unicoderangesdata</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">pagebot/conditions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../conditions/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../conditions/align/">Align</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../conditions/condition/">Condition</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../conditions/floating/">Floating</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../conditions/flow/">Flow</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../conditions/score/">Score</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">PageBot</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>pagebot/elements/variablefonts &raquo;</li>
+        
+      
+    
+    <li>Variableeditor</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/typenetwork/PageBot/"> Edit on PageBot</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="elementsvariablefontsvariableeditor">elements.variablefonts.variableeditor</h1>
+<h2 id="functions">Functions</h2>
+<h3 id="datepicker">DatePicker</h3>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the date picker control.</p>
+<p>+-------------------------------------+
+| <strong>Standard Dimensions - Text Mode</strong> |
++---------+---+-----------------------+
+| Regular | H | 22|
++---------+---+-----------------------+
+| Small   | H | 19|
++---------+---+-----------------------+
+| Mini| H | 16|
++---------+---+-----------------------+</p>
+<p>+------------------------------------------+
+| <strong>Standard Dimensions - Graphical Mode</strong> |
++--------------------+---------------------+
+| Calendar and Clock | 227w 148h   |
++--------------------+---------------------+
+| Calendar   | 139w 148h   |
++--------------------+---------------------+
+| Clock  | 122w 123h   |
++--------------------+---------------------+</p>
+<p><strong>date</strong> A <em>NSDate</em> object representing the date and time that should be set in the control.</p>
+<p><strong>minDate</strong> A <em>NSDate</em> object representing the lowest date and time that can be set in the control.</p>
+<p><strong>maxDate</strong> A <em>NSDate</em> object representing the highest date and time that can be set in the control.</p>
+<p><strong>showStepper</strong> A boolean indicating if the thumb stepper should be shown in text mode.</p>
+<p><strong>mode</strong> A string representing the desired mode for the date picker control. The options are:</p>
+<p>+-------------+
+| "text"  |
++-------------+
+| "graphical" |
++-------------+</p>
+<p><strong>timeDisplay</strong> A string representing the desired time units that should be displayed in the
+date picker control. The options are:</p>
+<p>+--------------------+-------------------------------+
+| None   | Do not display time.  |
++--------------------+-------------------------------+
+| "hourMinute"   | Display hour and minute.  |
++--------------------+-------------------------------+
+| "hourMinuteSecond" | Display hour, minute, second. |
++--------------------+-------------------------------+</p>
+<p><strong>dateDisplay</strong> A string representing the desired date units that should be displayed in the
+date picker control. The options are:</p>
+<p>+----------------+------------------------------+
+| None   | Do not display date. |
++----------------+------------------------------+
+| "yearMonth"| Display year and month.  |
++----------------+------------------------------+
+| "yearMonthDay" | Display year, month and day. |
++----------------+------------------------------+</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the date picker control. This only
+applies in text mode. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="floatingwindow">FloatingWindow</h3>
+<p>A window that floats above all other windows.</p>
+<p>To add a control to a window, simply set it as an attribute of the window.</p>
+<p>from vanilla import *</p>
+<p>class FloatingWindowDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = FloatingWindow((200, 70), "FloatingWindow Demo")
+self.w.myButton = Button((10, 10, -10, 20), "My Button")
+self.w.myTextBox = TextBox((10, 40, -10, 17), "My Text Box")
+self.w.open()</p>
+<p>FloatingWindowDemo()</p>
+<p>No special naming is required for the attributes. However, each attribute
+must have a unique name.</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position
+and size of the window. It may also be a tuple of form <em>(width, height)</em>.
+In this case, the window will be positioned on screen automatically.</p>
+<p><strong>title</strong> The title to be set in the title bar of the window.</p>
+<p><strong>minSize</strong> Tuple of the form <em>(width, height)</em> representing the minimum size
+that the window can be resized to.</p>
+<p><strong>maxSize</strong> Tuple of the form <em>(width, height)</em> representing the maximum size
+that the window can be resized to.</p>
+<p><strong>textured</strong> Boolean value representing if the window should have a textured
+appearance or not.</p>
+<p><strong>autosaveName</strong> A string representing a unique name for the window. If given,
+this name will be used to store the window position and size in the application
+preferences.</p>
+<p><strong>closable</strong> Boolean value representing if the window should have a close button
+in the title bar.</p>
+<p><strong>screen</strong> A <code>NSScreen &lt;http://tinyurl.com/NSScreen&gt;</code>_ object indicating the screen that
+the window should be drawn to. When None the window will be drawn to the main screen.</p>
+<h3 id="checkbox">CheckBox</h3>
+<h3 id="group">Group</h3>
+<p>An invisible container for controls.</p>
+<p>To add a control to a group, simply set it as an attribute of the group.::</p>
+<p>from vanilla import *</p>
+<p>class GroupDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((150, 50))
+self.w.group = Group((10, 10, -10, -10))
+self.w.group.text = TextBox((0, 0, -0, -0),
+"This is a group")
+self.w.open()</p>
+<p>GroupDemo()</p>
+<p>No special naming is required for the attributes. However, each attribute must have a unique name.</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the group.</p>
+<p><strong>blendingMode</strong> The blending mode for the window. These are the possible options:</p>
+<p>+----------------+-------------------------------------------+
+| None   | No special blending.  |
++----------------+-------------------------------------------+
+| "behindWindow" | Blend with the content behind the window. |
++----------------+-------------------------------------------+
+| "withinWindow" | Blend with the content within the window. |
++----------------+-------------------------------------------+</p>
+<h3 id="popupbutton">PopUpButton</h3>
+<p>A button which, when selected, displays a list of items for the user to choose from.::</p>
+<p>from vanilla import *</p>
+<p>class PopUpButtonDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 40))
+self.w.popUpButton = PopUpButton((10, 10, -10, 20),
+  ["A", "B", "C"],
+  callback=self.popUpButtonCallback)
+self.w.open()</p>
+<p>def popUpButtonCallback(self, sender):
+print "pop up button selection!", sender.get()</p>
+<p>PopUpButtonDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and
+size of the pop up button. The size of the button sould match the appropriate value
+for the given <em>sizeStyle</em>.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---------+---+-----------+
+| Regular | H | 20|
++---------+---+-----------+
+| Small   | H | 17|
++---------+---+-----------+
+| Mini| H | 15|
++---------+---+-----------+</p>
+<p><strong>items</strong> A list of items to appear in the pop up list.</p>
+<p><strong>callback</strong> The method to be called when the user selects an item in the pop up list.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the pop up button. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="function-imagelistcell">function ImageListCell</h3>
+<p><strong>horizontalAlignment</strong> A string representing the desired horizontal
+alignment of the image in the view. The options are:</p>
+<p>+-------------+-------------------------+
+| "left"  | Image is aligned left.  |
++-------------+-------------------------+
+| "right" | Image is aligned right. |
++-------------+-------------------------+
+| "center"| Image is centered.  |
++-------------+-------------------------+</p>
+<p><strong>verticalAlignment</strong> A string representing the desired vertical alignment
+of the image in the view. The options are:</p>
+<p>+-------------+--------------------------+
+| "top"   | Image is aligned top.|
++-------------+--------------------------+
+| "bottom"| Image is aligned bottom. |
++-------------+--------------------------+
+| "center"| Image is centered.   |
++-------------+--------------------------+</p>
+<p><strong>scale</strong> A string representing the desired scale style of the image in the
+view. The options are:</p>
+<p>+----------------+----------------------------------------------+
+| "porportional" | Proportionally scale the image to fit in the |
+|| view if it is larger than the view.  |
++----------------+----------------------------------------------+
+| "fit"  | Distort the proportions of the image until   |
+|| it fits exactly in the view. |
++----------------+----------------------------------------------+
+| "none" | Do not scale the image.  |
++----------------+----------------------------------------------+</p>
+<p>Example::</p>
+<p>from AppKit import *
+from vanilla import *</p>
+<p>class ImageListCellDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 100))
+self.w.myList = List((0, 0, -0, -0),
+[
+{"image": NSImage.imageNamed_("NSActionTemplate")},
+{"image": NSImage.imageNamed_("NSRefreshTemplate")}
+],
+columnDescriptions=[
+{"title": "image", "cell": ImageListCell()}
+])
+self.w.open()</p>
+<p>ImageListCellDemo()</p>
+<h3 id="vanillabasecontrol">VanillaBaseControl</h3>
+<h3 id="edittext">EditText</h3>
+<p>Standard short text entry control.::</p>
+<p>from vanilla import *</p>
+<p>class EditTextDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 42))
+self.w.editText = EditText((10, 10, -10, 22),
+callback=self.editTextCallback)
+self.w.open()</p>
+<p>def editTextCallback(self, sender):
+print "text entry!", sender.get()</p>
+<p>EditTextDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the text entry control.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---------+---+-----------+
+| Regular | H | 22|
++---------+---+-----------+
+| Small   | H | 19|
++---------+---+-----------+
+| Mini| H | 16|
++---------+---+-----------+</p>
+<p><strong>text</strong> An object representing the contents of the text entry control. If no formatter has been assigned to the control,
+this should be a string. If a formatter has been assigned, this should be an object of the type that the formatter expects.</p>
+<p><strong>callback</strong> The method to be called when the user enters text.</p>
+<p><strong>continuous</strong> If True, the callback (if any) will be called upon each keystroke, if False, only call the callback when
+editing finishes. Default is True.</p>
+<p><strong>readOnly</strong> Boolean representing if the text can be edited or not.</p>
+<p><strong>formatter</strong> An <code>NSFormatter &lt;http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSFormatter_Class/index.html&gt;</code>_
+for controlling the display and input of the text entry.</p>
+<p><strong>placeholder</strong> A placeholder string to be shown when the text entry control is empty.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the text entry control. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="tabs">Tabs</h3>
+<p>A drawer attached to a window. Drawers are capable of containing controls.</p>
+<p>To add a control to a tab, simply set it as an attribute of the tab.::</p>
+<p>from vanilla import *</p>
+<p>class TabDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((250, 100))
+self.w.tabs = Tabs((10, 10, -10, -10), ["Tab One", "Tab Two"])
+tab1 = self.w.tabs[0]
+tab1.text = TextBox((10, 10, -10, -10), "This is tab 1")
+tab2 = self.w.tabs[1]
+tab2.text = TextBox((10, 10, -10, -10), "This is tab 2")
+self.w.open()</p>
+<p>TabDemo()</p>
+<p>No special naming is required for the attributes. However, each attribute
+must have a unique name.</p>
+<p>To retrieve a particular tab, access it by index:::</p>
+<p>myTab = self.w.tabs[0]</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position
+and size of the tabs.</p>
+<p><strong>titles</strong> An ordered list of tab titles.</p>
+<p><strong>callback</strong> The method to be called when the user selects a new tab.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the tabs.
+The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="function-checkboxlistcell">function CheckBoxListCell</h3>
+<p>An object that displays a check box in a List column.</p>
+<p><strong>This object should only be used in the <em>columnDescriptions</em>
+argument during the construction of a List.</strong></p>
+<p><strong>title</strong> The title to be set in <em>all</em> items in the List column.</p>
+<p>Example::</p>
+<p>from vanilla import *</p>
+<p>class CheckBoxListCellDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 100))
+self.w.myList = List((0, 0, -0, -0),
+ [{"value": True}, {"value": False}],
+ columnDescriptions=[{"title": "value", "cell": CheckBoxListCell()}],
+ editCallback=self.editCallback)
+self.w.open()</p>
+<p>def editCallback(self, sender):
+print sender.get()</p>
+<p>CheckBoxListCellDemo()</p>
+<h3 id="window">Window</h3>
+<p>A window capable of containing controls.</p>
+<p>To add a control to a window, simply set it as an attribute of the window.::</p>
+<p>from vanilla import *</p>
+<p>class WindowDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((200, 70), "Window Demo")
+self.w.myButton = Button((10, 10, -10, 20), "My Button")
+self.w.myTextBox = TextBox((10, 40, -10, 17), "My Text Box")
+self.w.open()</p>
+<p>WindowDemo()</p>
+<p>No special naming is required for the attributes. However, each attribute
+must have a unique name.</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and
+size of the window. It may also be a tuple of form <em>(width, height)</em>. In this case,
+the window will be positioned on screen automatically.</p>
+<p><strong>title</strong> The title to be set in the title bar of the window.</p>
+<p><strong>minSize</strong> Tuple of the form <em>(width, height)</em> representing the minimum size that
+the window can be resized to.</p>
+<p><strong>maxSize</strong> Tuple of the form <em>(width, height)</em> representing the maximum size that
+the window can be resized to.</p>
+<p><strong>textured</strong> Boolean value representing if the window should have a textured
+appearance or not.</p>
+<p><strong>autosaveName</strong> A string representing a unique name for the window. If given,
+this name will be used to store the window position and size in the application preferences.</p>
+<p><strong>closable</strong> Boolean value representing if the window should have a close button in the
+title bar.</p>
+<p><strong>miniaturizable</strong> Boolean value representing if the window should have a minimize button
+in the title bar.</p>
+<p><strong>initiallyVisible</strong> Boolean value representing if the window will be initially visible.
+Default is <em>True</em>. If <em>False</em>, you can show the window later by calling <code>window.show()</code>.</p>
+<p><strong>fullScreenMode</strong> An indication of the full screen mode. These are the options:</p>
+<p>+---------------+---------------------------------------------------------------+
+| <em>None</em>| The window does not allow full screen.|
++---------------+---------------------------------------------------------------+
+| <em>"primary"</em>   | Corresponds to NSWindowCollectionBehaviorFullScreenPrimary.   |
++---------------+---------------------------------------------------------------+
+| <em>"auxiliary"</em> | Corresponds to NSWindowCollectionBehaviorFullScreenAuxiliary. |
++---------------+---------------------------------------------------------------+</p>
+<p><strong>titleVisible</strong> Boolean value indicating if the window title should be displayed.</p>
+<p><strong>fullSizeContentView</strong> Boolean value indicating if the content view should be the
+full size of the window, including the area underneath the titlebar and toolbar.</p>
+<p><strong>screen</strong> A <code>NSScreen &lt;http://tinyurl.com/NSScreen&gt;</code>_ object indicating the screen that
+the window should be drawn to. When None the window will be drawn to the main screen.</p>
+<h3 id="radiogroup">RadioGroup</h3>
+<p>A collection of radio buttons.::</p>
+<p>from vanilla import *</p>
+<p>class RadioGroupDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 60))
+self.w.radioGroup = RadioGroup((10, 10, -10, 40),
+["Option 1", "Option 2"],
+callback=self.radioGroupCallback)
+self.w.open()</p>
+<p>def radioGroupCallback(self, sender):
+print "radio group edit!", sender.get()</p>
+<p>RadioGroupDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing
+the position and size of the radio group.</p>
+<p><strong>titles</strong> A list of titles to be shown next to the radio buttons.</p>
+<p><strong>isVertical</strong> Boolean representing if the radio group is
+vertical or horizontal.</p>
+<p><strong>callback</strong> The method to be caled when a radio button is selected.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the radio group.
+The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="popover">Popover</h3>
+<p>A popover capable of containing controls.</p>
+<p><strong>size</strong> Tuple of form <em>(width, height)</em> representing the size of the content
+in the popover.</p>
+<p><strong>size</strong> The parent view that the popover should pop out from. This can be either
+a vanilla object or an instance of NSView or NSView subclass.</p>
+<p><strong>preferredEdge</strong> The edge of the parent view that you want the popover
+to pop out from. These are the options:
++------------+
+| <em>"left"</em>   |
++------------+
+| <em>"right"</em>  |
++------------+
+| <em>"top"</em>|
++------------+
+| <em>"bottom"</em> |
++------------+</p>
+<p><strong>behavior</strong> The desired behavior of the popover. These are the options:
++------------------------+-----------------------------------------------------+
+| <em>"applicationDefined"</em> | Corresponds to NSPopoverBehaviorApplicationDefined. |
++------------------------+-----------------------------------------------------+
+| <em>"transient"</em>  | Corresponds to NSPopoverBehaviorTransient.  |
++------------------------+-----------------------------------------------------+
+| <em>"semitransient"</em>  | Corresponds to NSPopoverBehaviorSemitransient.  |
++------------------------+-----------------------------------------------------+</p>
+<h3 id="sheet">Sheet</h3>
+<p>A window that is attached to another window.</p>
+<p>To add a control to a sheet, simply set it as an attribute of the sheet.::</p>
+<p>from vanilla import *</p>
+<p>class SheetDemo(object):</p>
+<p>def <strong>init</strong>(self, parentWindow):
+self.w = Sheet((200, 70), parentWindow)
+self.w.myButton = Button((10, 10, -10, 20), "My Button")
+self.w.myTextBox = TextBox((10, 40, -10, 17), "My Text Box")
+self.w.open()</p>
+<p>SheetDemo()</p>
+<p>No special naming is required for the attributes. However, each attribute
+must have a unique name.</p>
+<p><strong>posSize</strong> Tuple of form <em>(width, height)</em> representing the size of the sheet.</p>
+<p><strong>parentWindow</strong> The window that the sheet should be attached to.</p>
+<p><strong>minSize</strong> Tuple of the form <em>(width, height)</em> representing the minimum size that
+the sheet can be resized to.</p>
+<p><strong>maxSize</strong> Tuple of the form <em>(width, height)</em> representing the maximum size that
+the sheet can be resized to.</p>
+<p><strong>autosaveName</strong> A string representing a unique name for the sheet. If given,
+this name will be used to store the sheet size in the application preferences.</p>
+<h3 id="function-segmentedbuttonlistcell">function SegmentedButtonListCell</h3>
+<p><strong>segmentDescriptions</strong> An ordered list of dictionaries describing the segments.</p>
+<p>+------------------------+--------------------------------------------------------------------------------------------------+
+| title (optional)   | The title of the segment.|
++------------------------+--------------------------------------------------------------------------------------------------+
+| imagePath (optional)   | A file path to an image to display in the segment.   |
++------------------------+--------------------------------------------------------------------------------------------------+
+| imageNamed (optional)  | The name of an image already loaded as a <em>NSImage</em> by the application to display in the segment. |
++------------------------+--------------------------------------------------------------------------------------------------+
+| imageObject (optional) | A <em>NSImage</em> object to display in the segment.|
++------------------------+--------------------------------------------------------------------------------------------------+</p>
+<p>Note: when using this cell in a List, the <code>binding</code> in the
+column description must be set to <code>selectedIndex</code>.</p>
+<p>Example::</p>
+<p>from vanilla import *</p>
+<p>class SegmentedButtonListCellDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 100))
+self.w.myList = List((0, 0, -0, -0),
+[{"value": 0}, {"value": 1}],
+columnDescriptions=[
+{
+"title": "value",
+"cell": SegmentedButtonListCell([dict(title="0"), dict(title="1")]),
+"binding": "selectedIndex"
+}
+],
+editCallback=self.editCallback)
+self.w.open()</p>
+<p>def editCallback(self, sender):
+print sender.get()</p>
+<p>SegmentedButtonListCellDemo()</p>
+<h3 id="colorwell">ColorWell</h3>
+<p>A control that allows for showing and choosing a color value.</p>
+<p>ColorWell objects handle
+<code>NSColor &lt;http://developer.apple.com/documentation/Cocoa/Reference/ApplicationKit/Classes/NSColor_Class/index.html&gt;</code>_
+objects.::
+from AppKit import NSColor
+from vanilla import *</p>
+<p>class ColorWellDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 50))
+self.w.colorWell = ColorWell((10, 10, -10, -10),
+callback=self.colorWellEdit,
+color=NSColor.redColor())
+self.w.open()</p>
+<p>def colorWellEdit(self, sender):
+print "color well edit!", sender.get()</p>
+<p>ColorWellDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the color well.</p>
+<p><strong>callback</strong> The method to be caled when the user selects a new color.</p>
+<p><strong>color</strong> A <em>NSColor</em> object. If <em>None</em> is given, the color shown will be white.</p>
+<h3 id="horizontalline">HorizontalLine</h3>
+<p>A horizontal line.::</p>
+<p>from vanilla import *</p>
+<p>class HorizontalLineDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 20))
+self.w.line = HorizontalLine((10, 10, -10, 1))
+self.w.open()</p>
+<p>HorizontalLineDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the line.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---+---------------------+
+| H | 1   |
++---+---------------------+</p>
+<h3 id="helpbutton">HelpButton</h3>
+<p>A standard help button.::</p>
+<p>from vanilla import *</p>
+<p>class HelpButtonDemo(object):</p>
+<p>def <strong>init</strong>(self):
+ self.w = Window((90, 40))
+ self.w.button = HelpButton((10, 10, 21, 20),
+callback=self.buttonCallback)
+ self.w.open()</p>
+<p>def buttonCallback(self, sender):
+ print "help button hit!"</p>
+<p>HelpButtonDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and
+size of the button. The size of the button sould match the standard dimensions.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++--------+----------------+
+| Width  | 21 |
++--------+----------------+
+| Height | 20 |
++--------+----------------+</p>
+<p><strong>callback</strong> The method to be called when the user presses the button.</p>
+<h3 id="function-getaxisinfo">function getAxisInfo</h3>
+<h3 id="drawer">Drawer</h3>
+<p>A drawer attached to a window. Drawers are capable of containing controls.</p>
+<p>To add a control to a drawer, simply set it as an attribute of the drawer.::</p>
+<p>from vanilla import *</p>
+<p>class DrawerDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((200, 200))
+self.w.button = Button((10, 10, -10, 20), "Toggle Drawer",
+callback=self.toggleDrawer)
+self.d = Drawer((100, 150), self.w)
+self.d.textBox = TextBox((10, 10, -10, -10),
+"This is a drawer.")
+self.w.open()
+self.d.open()</p>
+<p>def toggleDrawer(self, sender):
+self.d.toggle()</p>
+<p>DrawerDemo()</p>
+<p>No special naming is required for the attributes. However, each attribute must have a unique name.</p>
+<p><strong>size</strong> Tuple of form <em>(width, height)</em> representing the size of the drawer.</p>
+<p><strong>parentWindow</strong> The window that the drawer should be attached to.</p>
+<p><strong>minSize</strong> Tuple of form <em>(width, height)</em> representing the minimum size of the drawer.</p>
+<p><strong>maxSize</strong> Tuple of form <em>(width, height)</em> representing the maximum size of the drawer.</p>
+<p><strong>preferredEdge</strong> The preferred edge of the window that the drawe should be attached to. If the
+drawer cannot be opened on the preferred edge, it will be opened on the opposite edge. The options are:</p>
+<p>+----------+
+| "left"   |
++----------+
+| "right"  |
++----------+
+| "top"|
++----------+
+| "bottom" |
++----------+</p>
+<p><strong>forceEdge</strong> Boolean representing if the drawer should <em>always</em> be opened on the preferred edge.</p>
+<p><strong>leadingOffset</strong> Distance between the top or left edge of the drawer and the parent window.</p>
+<p><strong>trailingOffset</strong> Distance between the bottom or right edge of the drawer and the parent window.</p>
+<h3 id="function-inttotag">function intToTag</h3>
+<h3 id="combobox">ComboBox</h3>
+<p>A text entry control that allows direct text entry or selection for a list of options.::</p>
+<p>from vanilla import *</p>
+<p>class ComboBoxDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 41))
+self.w.comboBox = ComboBox((10, 10, -10, 21),
+["AA", "BB", "CC", "DD"],
+callback=self.comboBoxCallback)
+self.w.open()</p>
+<p>def comboBoxCallback(self, sender):
+print "combo box entry!", sender.get()</p>
+<p>ComboBoxDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the
+combo box control. The size of the combo box sould match the appropriate value for the given <em>sizeStyle</em>.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---------+---+-----------+
+| Regular | H | 21|
++---------+---+-----------+
+| Small   | H | 17|
++---------+---+-----------+
+| Mini| H | 14|
++---------+---+-----------+</p>
+<p><strong>items</strong> The items to be displayed in the combo box.</p>
+<p><strong>completes</strong> Boolean representing if the combo box auto completes entered text.</p>
+<p><strong>continuous</strong> If True, the callback (if any) will be called upon each keystroke, if False, only call the callback when
+editing finishes or after item selection. Default is False.</p>
+<p><strong>callback</strong> The method to be called when the user enters text.</p>
+<p><strong>formatter</strong> An <code>NSFormatter &lt;http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSFormatter_Class/index.html&gt;</code>_
+for controlling the display and input of the combo box.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the combo box. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="secureedittext">SecureEditText</h3>
+<p>Standard secure text entry control.::</p>
+<p>from vanilla import *</p>
+<p>class SecureEditTextDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 42))
+self.w.secureEditText = SecureEditText((10, 10, -10, 22),
+callback=self.secureEditTextCallback)
+self.w.open()</p>
+<p>def secureEditTextCallback(self, sender):
+print "text entry!", sender.get()</p>
+<p>SecureEditTextDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the text entry control.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---------+---+-----------+
+| Regular | H | 22|
++---------+---+-----------+
+| Small   | H | 19|
++---------+---+-----------+
+| Mini| H | 16|
++---------+---+-----------+</p>
+<p><strong>text</strong> An object representing the contents of the text entry control. If no formatter has been assigned to the control,
+this should be a string. If a formatter has been assigned, this should be an object of the type that the formatter expects.</p>
+<p><strong>callback</strong> The method to be called when the user enters text.</p>
+<p><strong>continuous</strong> If True, the callback (if any) will be called upon each keystroke, if False, only call the callback when
+editing finishes. Default is True.</p>
+<p><strong>readOnly</strong> Boolean representing if the text can be edited or not.</p>
+<p><strong>formatter</strong> An <code>NSFormatter &lt;http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSFormatter_Class/index.html&gt;</code>_
+for controlling the display and input of the text entry.</p>
+<p><strong>placeholder</strong> A placeholder string to be shown when the text entry control is empty.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the text entry control. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="actionbutton">ActionButton</h3>
+<p>An Action Button with a menu.</p>
+<p>from vanilla import *</p>
+<p>class ActionPopUpButtonDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 40))</p>
+<p>items = [
+dict(title="first", callback=self.firstCallback),
+dict(title="second", callback=self.secondCallback),
+dict(title="third", items=[
+dict(title="sub first", callback=self.subFirstCallback)
+])
+]</p>
+<p>self.w.actionPopUpButton = ActionButton((10, 10, 30, 20),
+  items,
+  )
+self.w.open()</p>
+<p>def firstCallback(self, sender):
+print "first"</p>
+<p>def secondCallback(self, sender):
+print "second"</p>
+<p>def subFirstCallback(self, sender):
+print "sub first"</p>
+<p>ActionPopUpButtonDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and
+size of the pop up button. The size of the button sould match the appropriate value
+for the given <em>sizeStyle</em>.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---------+---+-----------+
+| Regular | H | 20|
++---------+---+-----------+
+| Small   | H | 17|
++---------+---+-----------+
+| Mini| H | 15|
++---------+---+-----------+</p>
+<p><strong>items</strong> A list of items to appear in the pop up list as dictionaries. Optionally an item could be a NSMenuItem. 
+when an item is set to "----" will be a menu item separator.</p>
+<p>+------------+--------------------------------------------------------------------------------+
+| "title"*   | The title of the item. |
++------------+--------------------------------------------------------------------------------+
+| "callback" | The callback fo the item.  |
++------------+--------------------------------------------------------------------------------+
+| "items"| Each item could have sub menu's, as list of dictionaries with the same format. |
++------------+--------------------------------------------------------------------------------+</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the pop up button. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<p><strong>bordered</strong> Boolean representing if the button should be bordered.</p>
+<h3 id="slider">Slider</h3>
+<p>A standard slider control. Sliders can be vertical or horizontal and
+they can show tick marks or not show tick marks.::</p>
+<p>from vanilla import *</p>
+<p>class SliderDemo(object):</p>
+<p>def <strong>init</strong>(self):
+ self.w = Window((200, 43))
+ self.w.slider = Slider((10, 10, -10, 23),
+tickMarkCount=10,
+callback=self.sliderCallback)
+ self.w.open()</p>
+<p>def sliderCallback(self, sender):
+ print "slider edit!", sender.get()</p>
+<p>SliderDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and
+size of the slider. The size of the slider sould match the appropriate value for
+the given <em>sizeStyle</em>.</p>
+<p>+---------------------------+
+| <strong>Standard Dimensions</strong>   |
++---------------------------+
+| <em>without ticks</em>   |
++---------+---+----+---+----+
+| Regular | W | 15 | H | 15 |
++---------+---+----+---+----+
+| Small   | W | 12 | H | 11 |
++---------+---+----+---+----+
+| Mini| W | 10 | H | 10 |
++---------+---+----+---+----+
+| <em>with ticks</em>  |
++---------+---+----+---+----+
+| Regular | W | 24 | H | 23 |
++---------+---+----+---+----+
+| Small   | W | 17 | H | 17 |
++---------+---+----+---+----+
+| Mini| W | 16 | H | 16 |
++---------+---+----+---+----+</p>
+<p><strong>minValue</strong> The minimum value allowed by the slider.</p>
+<p><strong>maxValue</strong> The maximum value allowed by the slider.</p>
+<p><strong>value</strong> The initial value of the slider.</p>
+<p><strong>tickMarkCount</strong> The number of tick marcks to be displayed on the slider.
+If <em>None</em> is given, no tick marks will be displayed.</p>
+<p><strong>stopOnTickMarks</strong> Boolean representing if the slider knob should only
+stop on the tick marks.</p>
+<p><strong>continuous</strong> Boolean representing if the assigned callback should be
+called during slider editing. If <em>False</em> is given, the callback will be
+called after the editing has finished.</p>
+<p><strong>callback</strong> The method to be called when the slider has been edited.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the slider.
+The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="splitview2">SplitView2</h3>
+<p>View that can be split into two or more subviews with dividers.::</p>
+<p>from vanilla import *</p>
+<p>class SplitViewDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((200, 200), "SplitView Demo", minSize=(100, 100))
+list1 = List((0, 0, -0, 100), ["A", "B", "C"])
+list2 = List((0, 0, -0, 100), ["a", "b", "c"])
+paneDescriptors = [
+dict(view=list1, identifier="pane1"),
+dict(view=list2, identifier="pane2"),
+]
+self.w.splitView = SplitView((0, 0, -0, -0), paneDescriptors)
+self.w.open()</p>
+<p>SplitViewDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing
+the position and size of the split view.</p>
+<p><strong>paneDescriptions</strong> An ordered list of dictionaries describing the
+subviews, or "panes". Those dictionaries can have the following keys:</p>
+<p>+-----------------------+-----------------------------------------------------------------------------+
+| <em>view</em>| A view, either a Vanilla object or a NSView. Required.  |
++-----------------------+-----------------------------------------------------------------------------+
+| <em>"identifier"</em>| A string identifying the pane. Required.|
++-----------------------+-----------------------------------------------------------------------------+
+| <em>"size"</em>  | The initial size of the pane. Optional. |
++-----------------------+-----------------------------------------------------------------------------+
+| <em>"minSize"</em>   | The minimum size of the pane. Optional. The default is 0.   |
++-----------------------+-----------------------------------------------------------------------------+
+| <em>"maxSize"</em>   | The maximum size of the pane. Optional. The default is no maximum size. |
++-----------------------+-----------------------------------------------------------------------------+
+| <em>"canCollapse"</em>   | Boolean indicating if the pane can collapse. Optional. The default is True. |
++-----------------------+-----------------------------------------------------------------------------+
+| <em>"resizeFlexibility"</em> | Boolean indicating if the pane can adjust its size automatically when the   |
+|   | SplitView size changes. Optional. The default is True unless the pane has a |
+|   | fixed size. |
++-----------------------+-----------------------------------------------------------------------------+</p>
+<p><strong>isVertical</strong> Boolean representing if the split view is vertical.
+Default is <em>True</em>.</p>
+<p><strong>dividerStyle</strong> String representing the style of the divider.
+These are the options:
++----------+
+| splitter |
++----------+
+| thin |
++----------+
+| thick|
++----------+
+| None |
++----------+</p>
+<p><strong>dividerThickness</strong> An integer representing the desired thickness of the divider.</p>
+<p><strong>dividerColor</strong> A NSColor that should be used to paint the divider.</p>
+<p><strong>autosaveName</strong> The autosave name for the SplitView.</p>
+<h3 id="varfonttexteditor">VarFontTextEditor</h3>
+<h3 id="box">Box</h3>
+<p>A bordered container for other controls.</p>
+<p>To add a control to a box, simply set it as an attribute of the box.::</p>
+<p>from vanilla import *</p>
+<p>class BoxDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((150, 70))
+self.w.box = Box((10, 10, -10, -10))
+self.w.box.text = TextBox((10, 10, -10, -10), "This is a box")
+self.w.open()</p>
+<p>BoxDemo()</p>
+<p>No special naming is required for the attributes. However, each attribute must have a unique name.</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the box.</p>
+<p><strong>title</strong> The title to be displayed dabove the box. Pass <em>None</em> if no title is desired.</p>
+<h3 id="gradientbutton">GradientButton</h3>
+<h3 id="function-levelindicatorlistcell">function LevelIndicatorListCell</h3>
+<p>An object that displays a level indicator in a List column.</p>
+<p><strong>This object should only be used in the <em>columnDescriptions</em> argument
+during the construction of a List.</strong>::</p>
+<p>from vanilla import *</p>
+<p>class LevelIndicatorListCellDemo(object):</p>
+<p>def <strong>init</strong>(self):
+ self.w = Window((340, 140))
+ items = [
+ {"discrete": 3, "continuous": 4, "rating": 1, "relevancy": 9},
+ {"discrete": 8, "continuous": 3, "rating": 5, "relevancy": 5},
+ {"discrete": 3, "continuous": 7, "rating": 3, "relevancy": 4},
+ {"discrete": 2, "continuous": 5, "rating": 4, "relevancy": 7},
+ {"discrete": 6, "continuous": 9, "rating": 3, "relevancy": 2},
+ {"discrete": 4, "continuous": 0, "rating": 6, "relevancy": 8},
+ ]
+ columnDescriptions = [
+ {"title": "discrete",
+ "cell": LevelIndicatorListCell(style="discrete", warningValue=7, criticalValue=9)},
+ {"title": "continuous", 
+ "cell": LevelIndicatorListCell(style="continuous", warningValue=7, criticalValue=9)},
+ {"title": "rating",
+ "cell": LevelIndicatorListCell(style="rating", maxValue=6)},
+ {"title": "relevancy",
+ "cell": LevelIndicatorListCell(style="relevancy")},
+ ]
+ self.w.list = List((0, 0, -0, -0), items=items,
+columnDescriptions=columnDescriptions)
+ self.w.open()</p>
+<p>LevelIndicatorListCellDemo()</p>
+<p><strong>style</strong> The style of the level indicator. The options are:</p>
+<p>+--------------+-----------------------------------------+
+| "continuous" | A continuous bar.   |
++--------------+-----------------------------------------+
+| "discrete"   | A segmented bar.|
++--------------+-----------------------------------------+
+| "rating" | A row of stars. Similar to the rating   |
+|  | indicator in iTunes.|
++--------------+-----------------------------------------+
+| "relevancy"  | A row of lines. Similar to the search   |
+|  | result relevancy indicator in Mail. |
++--------------+-----------------------------------------+</p>
+<p><strong>minValue</strong> The minimum value allowed by the level indicator.</p>
+<p><strong>maxValue</strong> The maximum value allowed by the level indicator.</p>
+<p><strong>warningValue</strong> The value at which the filled portions of the
+level indicator should display the warning color. Applies only to
+discrete and continuous level indicators.</p>
+<p><strong>criticalValue</strong> The value at which the filled portions of the
+level indicator should display the critical color. Applies only to
+discrete and continuous level indicators.</p>
+<h3 id="hudfloatingwindow">HUDFloatingWindow</h3>
+<p>A window that floats above all other windows and has the HUD appearance.</p>
+<p>To add a control to a window, simply set it as an attribute of the window.</p>
+<p>from vanilla import *</p>
+<p>class HUDFloatingWindowDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = HUDFloatingWindow((200, 70), "HUDFloatingWindow Demo")
+self.w.myButton = Button((10, 10, -10, 20), "My Button")
+self.w.myTextBox = TextBox((10, 40, -10, 17), "My Text Box")
+self.w.open()</p>
+<p>HUDFloatingWindowDemo()</p>
+<p>No special naming is required for the attributes. However, each attribute
+must have a unique name.</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position
+and size of the window. It may also be a tuple of form <em>(width, height)</em>.
+In this case, the window will be positioned on screen automatically.</p>
+<p><strong>title</strong> The title to be set in the title bar of the window.</p>
+<p><strong>minSize</strong> Tuple of the form <em>(width, height)</em> representing the minimum size
+that the window can be resized to.</p>
+<p><strong>maxSize</strong> Tuple of the form <em>(width, height)</em> representing the maximum size
+that the window can be resized to.</p>
+<p><strong>textured</strong> Boolean value representing if the window should have a textured
+appearance or not.</p>
+<p><strong>autosaveName</strong> A string representing a unique name for the window. If given,
+this name will be used to store the window position and size in the application
+preferences.</p>
+<p><strong>closable</strong> Boolean value representing if the window should have a close button
+in the title bar.</p>
+<p><strong>screen</strong> A <code>NSScreen &lt;http://tinyurl.com/NSScreen&gt;</code>_ object indicating the screen that
+the window should be drawn to. When None the window will be drawn to the main screen.</p>
+<h3 id="list">List</h3>
+<p>A control that shows a list of items. These lists can contain one or more columns.</p>
+<p>A single column example::</p>
+<p>from vanilla import *</p>
+<p>class ListDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 100))
+self.w.myList = List((0, 0, -0, -0), ["A", "B", "C"],
+ selectionCallback=self.selectionCallback)
+self.w.open()</p>
+<p>def selectionCallback(self, sender):
+print sender.getSelection()</p>
+<p>ListDemo()</p>
+<p>A mutliple column example::</p>
+<p>from vanilla import *</p>
+<p>class ListDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 100))
+self.w.myList = List((0, 0, -0, -0),
+ [{"One": "A", "Two": "a"}, {"One": "B", "Two": "b"}],
+ columnDescriptions=[{"title": "One"}, {"title": "Two"}],
+ selectionCallback=self.selectionCallback)
+self.w.open()</p>
+<p>def selectionCallback(self, sender):
+print sender.getSelection()</p>
+<p>ListDemo()</p>
+<p>List objects behave like standard Python lists. For xample, given this List:::</p>
+<p>self.w.myList = List((10, 10, 200, 100), ["A", "B", "C"])</p>
+<p>The following Python list methods work:::</p>
+<h1 id="getting-the-length-of-the-list">Getting the length of the List.</h1>
+<pre><code>&gt;&gt;&gt; len(self.w.myList)
+3
+</code></pre>
+<h1 id="retrieving-an-item-or-items-from-a-list">Retrieving an item or items from a List.</h1>
+<pre><code>&gt;&gt;&gt; self.w.myList[1]
+"B"
+
+&gt;&gt;&gt; self.w.myList[:2]
+["A", "B"]
+</code></pre>
+<h1 id="setting-an-item-in-a-list">Setting an item in a List.</h1>
+<pre><code>&gt;&gt;&gt; self.w.myList[1] = "XYZ"
+&gt;&gt;&gt; self.w.myList.get()
+["A", "XYZ", "C"]
+</code></pre>
+<h1 id="deleting-an-item-at-an-index-in-a-list">Deleting an item at an index in a List.</h1>
+<pre><code>&gt;&gt;&gt; del self.w.myList[1]
+&gt;&gt;&gt; self.w.myList.get()
+["A", "C"]
+</code></pre>
+<h1 id="appending-an-item-to-a-list">Appending an item to a List.</h1>
+<pre><code>&gt;&gt;&gt; self.w.myList.append("Z")
+&gt;&gt;&gt; self.w.myList.get()
+["A", "B", "C", "Z"]
+</code></pre>
+<h1 id="removing-the-first-occurance-of-an-item-in-a-list">Removing the first occurance of an item in a List.</h1>
+<pre><code>&gt;&gt;&gt; self.w.myList.remove("A")
+&gt;&gt;&gt; self.w.myList.get()
+["B", "C"]
+</code></pre>
+<h1 id="getting-the-index-for-the-first-occurance-of-an-item-in-a-list">Getting the index for the first occurance of an item in a List.</h1>
+<pre><code>&gt;&gt;&gt; self.w.myList.index("B")
+1
+</code></pre>
+<h1 id="inserting-an-item-into-a-list">Inserting an item into a List.</h1>
+<pre><code>&gt;&gt;&gt; self.w.myList.insert(1, "XYZ")
+&gt;&gt;&gt; self.w.myList.get()
+["A", "XYZ", "B", "C"]
+</code></pre>
+<h1 id="extending-a-list">Extending a List.</h1>
+<pre><code>&gt;&gt;&gt; self.w.myList.extend(["X", "Y", "Z"])
+&gt;&gt;&gt; self.w.myList.get()
+["A", "B", "C", "X", "Y", "Z"]
+</code></pre>
+<h1 id="iterating-over-a-list">Iterating over a List.</h1>
+<pre><code>&gt;&gt;&gt; for i in self.w.myList:
+&gt;&gt;&gt; i
+"A"
+</code></pre>
+<p>"B"
+"C"</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the
+position and size of the list.</p>
+<p><strong>items</strong> The items to be displayed in the list. In the case of multiple
+column lists, this should be a list of dictionaries with the data for
+each column keyed by the column key as defined in columnDescriptions.
+If you intend to use a dataSource, <em>items</em> must be <em>None</em>.</p>
+<p><strong>dataSource</strong> A Cocoa object supporting the <em>NSTableDataSource</em>
+protocol. If <em>dataSource</em> is given, <em>items</em> must be <em>None</em>.</p>
+<p><strong>columnDescriptions</strong> An ordered list of dictionaries describing the
+columns. This is only necessary for multiple column lists.</p>
+<p>+--------------------------------+--------------------------------------------------------------------------------+
+| <em>"title"</em>  | The title to appear in the column header.  |
++--------------------------------+--------------------------------------------------------------------------------+
+| <em>"key"</em> (optional) | The key from which this column should get  |
+|| its data from each dictionary in <em>items</em>. If   |
+|| nothing is given, the key will be the string   |
+|| given in <em>title</em>.  |
++--------------------------------+--------------------------------------------------------------------------------+
+| <em>"formatter"</em> (optional)   | An <code>NSFormatter</code> <a href="http://tinyurl.com/NSFormatter">http://tinyurl.com/NSFormatter</a><code>_|
+|| for cntrolling the display and input of the|
+|| column's cells.|
++--------------------------------+--------------------------------------------------------------------------------+
+| *"cell"* (optional)| A cell type to be displayed in the column. |
+|| If nothing is given, a text cell is used.  |
++--------------------------------+--------------------------------------------------------------------------------+
+| *"editable"* (optional)| Enable or disable editing in the column. If|
+|| nothing is given, it will follow the   |
+|| editability of the rest of the list.   |
++--------------------------------+--------------------------------------------------------------------------------+
+| *"width"* (optional)   | The width of the column.   |
++--------------------------------+--------------------------------------------------------------------------------+
+| *"minWidth"* (optional)| The minimum width of the column. The fallback is</code>width<code>.  |
++--------------------------------+--------------------------------------------------------------------------------+
+| *"maxWidth"* (optional)| The maximum width of the column. The fallback is</code>width<code>.  |
++--------------------------------+--------------------------------------------------------------------------------+
+| *"allowsSorting"* (optional)   | A boolean representing that this column allows the user|
+|| to sort the table by clicking the column's header. |
+|| The fallback is</code>True<code>. If a List is set to disallow   |
+|| sorting the column level settings will be ignored  |
++--------------------------------+--------------------------------------------------------------------------------+
+| *"typingSensitive"* (optional) | A boolean representing that this column|
+|| should be the column that responds to user |
+|| key input. Only one column can be flagged as   |
+|| True. If no column is flagged, the first   |
+|| column will automatically be flagged.  |
++--------------------------------+--------------------------------------------------------------------------------+
+| *binding* (optional)   | A string indicating which</code>binding object <a href="http://tinyurl.com/CocoaBindings">http://tinyurl.com/CocoaBindings</a>`_ |
+|| the column's cell should be bound to. By   |
+|| default, this is "value." You should only  |
+|| override this in very specific cases.  |
++--------------------------------+--------------------------------------------------------------------------------+</p>
+<p><strong>showColumnTitles</strong> Boolean representing if the column titles should be shown or not.
+Column titles will not be shown in single column lists.</p>
+<p><strong>selectionCallback</strong> Callback to be called when the selection in the list changes.</p>
+<p><strong>doubleClickCallback</strong> Callback to be called when an item is double clicked.</p>
+<p><strong>editCallback</strong> Callback to be called after an item has been edited.</p>
+<p><strong>enableDelete</strong> A boolean representing if items in the list can be deleted via the interface.</p>
+<p><strong>enableTypingSensitivity</strong> A boolean representing if typing in the list will jump to the
+closest match as the entered keystrokes. <em>Available only in single column lists.</em></p>
+<p><strong>allowsMultipleSelection</strong> A boolean representing if the list allows more than one item to be selected.</p>
+<p><strong>allowsEmptySelection</strong> A boolean representing if the list allows zero items to be selected.</p>
+<p><strong>allowsSorting</strong> A boolean indicating if the list allows user sorting by clicking column headers.</p>
+<p><strong>drawVerticalLines</strong> Boolean representing if vertical lines should be drawn in the list.</p>
+<p><strong>drawHorizontalLines</strong> Boolean representing if horizontal lines should be drawn in the list.</p>
+<p><strong>drawFocusRing</strong> Boolean representing if the standard focus ring should be drawn when the list is selected.</p>
+<p><strong>rowHeight</strong> The height of the rows in the list.</p>
+<p><strong>autohidesScrollers</strong> Boolean representing if scrollbars should automatically be hidden if possible.</p>
+<p><strong>selfDropSettings</strong> A dictionary defining the drop settings when the source of the drop
+is this list. The dictionary form is described below.</p>
+<p><strong>selfWindowDropSettings</strong> A dictionary defining the drop settings when the source of the drop
+is contained the same document as this list. The dictionary form is described below.</p>
+<p><strong>selfDocumentDropSettings</strong> A dictionary defining the drop settings when the source of the drop
+is contained the same window as this list. The dictionary form is described below.</p>
+<p><strong>selfApplicationDropSettings</strong> A dictionary defining the drop settings when the source of the drop
+is contained the same application as this list. The dictionary form is described below.</p>
+<p><strong>otherApplicationDropSettings</strong> A dictionary defining the drop settings when the source of the drop
+is contained an application other than the one that contains this list. The dictionary form is described below.</p>
+<p>The drop settings dictionaries should be of this form:</p>
+<p>+-----------------------------------+--------------------------------------------------------------------+
+| <em>type</em>| A single drop type indicating what drop types the list accepts.|
+|   | For example, NSFilenamesPboardType or "MyCustomPboardType".|
++-----------------------------------+--------------------------------------------------------------------+
+| <em>operation</em> (optional)| A "drag operation <a href="http://tinyurl.com/NSDraggingIn">http://tinyurl.com/NSDraggingIn</a>`<em> that |
+|   | the list accepts. The default is <em>NSDragOperationCopy</em>.|
++-----------------------------------+--------------------------------------------------------------------+
+| <em>allowDropBetweenRows</em> (optional) | A boolean indicating if the list accepts drops between rows.   |
+|   | The default is True.   |
++-----------------------------------+--------------------------------------------------------------------+
+| <em>allowDropOnRow</em> (optional)   | A boolean indicating if the list accepts drops on rows.|
+|   | The default is False.  |
++-----------------------------------+--------------------------------------------------------------------+
+| <em>callback</em>| Callback to be called when a drop is proposed and when a drop  |
+|   | is to occur. This method should return a boolean representing  |
+|   | if the drop is acceptable or not. This method must accept <em>sender</em> |
+|   | and <em>dropInfo</em> arguments. The _dropInfo</em> will be a dictionary as   |
+|   | described below.   |
++-----------------------------------+--------------------------------------------------------------------+</p>
+<p>The dropInfo dictionary passed to drop callbacks will be of this form:</p>
+<p>+--------------+--------------------------------------------------------------------------------------------+
+| <em>data</em>   | The data proposed for the drop. This data will be of the type specified by dropDataFormat. |
++--------------+--------------------------------------------------------------------------------------------+
+| <em>rowIndex</em>   | The row where the drop is proposed.|
++--------------+--------------------------------------------------------------------------------------------+
+| <em>source</em> | The source from which items are being dragged. If this object is wrapped by Vanilla, the   |
+|  | Vanilla object will be passed as the source.   |
++--------------+--------------------------------------------------------------------------------------------+
+| <em>dropOnRow</em>  | A boolean representing if the row is being dropped on. If this is False, the drop should   |
+|  | occur between rows.|
++--------------+--------------------------------------------------------------------------------------------+
+| <em>isProposal</em> | A boolean representing if this call is simply proposing the drop or if it is time to   |
+|  | accept the drop.   |
++--------------+--------------------------------------------------------------------------------------------+</p>
+<h3 id="imageview">ImageView</h3>
+<p>A view that displays an image.</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing
+the position and size of the view.</p>
+<p><strong>horizontalAlignment</strong> A string representing the desired horizontal
+alignment of the image in the view. The options are:</p>
+<p>+-------------+-------------------------+
+| "left"  | Image is aligned left.  |
++-------------+-------------------------+
+| "right" | Image is aligned right. |
++-------------+-------------------------+
+| "center"| Image is centered.  |
++-------------+-------------------------+</p>
+<p><strong>verticalAlignment</strong> A string representing the desired vertical alignment
+of the image in the view. The options are:</p>
+<p>+-------------+--------------------------+
+| "top"   | Image is aligned top.|
++-------------+--------------------------+
+| "bottom"| Image is aligned bottom. |
++-------------+--------------------------+
+| "center"| Image is centered.   |
++-------------+--------------------------+</p>
+<p><strong>scale</strong> A string representing the desired scale style of the image in the
+view. The options are:</p>
+<p>+----------------+----------------------------------------------+
+| "porportional" | Proportionally scale the image to fit in the |
+|| view if it is larger than the view.  |
++----------------+----------------------------------------------+
+| "fit"  | Distort the proportions of the image until   |
+|| it fits exactly in the view. |
++----------------+----------------------------------------------+
+| "none" | Do not scale the image.  |
++----------------+----------------------------------------------+</p>
+<h3 id="scrollview">ScrollView</h3>
+<p>A view with scrollers for containing another view.::</p>
+<p>from AppKit import NSView, NSColor, NSRectFill
+from vanilla import *</p>
+<p>class DemoView(NSView):</p>
+<p>def drawRect_(self, rect):
+NSColor.redColor().set()
+NSRectFill(self.bounds())</p>
+<p>class ScrollViewDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((200, 200))
+self.view = DemoView.alloc().init()
+self.view.setFrame_(((0, 0), (300, 300)))
+self.w.scrollView = ScrollView((10, 10, -10, -10),
+self.view)
+self.w.open()</p>
+<p>ScrollViewDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the
+position and size of the scroll view.</p>
+<p><strong>nsView</strong> A <em>NSView</em> object.</p>
+<p><strong>hasHorizontalScroller</strong> Boolean representing if the scroll view has
+horizontal scrollers.</p>
+<p><strong>hasVerticalScroller</strong> Boolean representing if the scroll view has
+vertical scrollers.</p>
+<p><strong>autohidesScrollers</strong> Boolean representing if the scroll view auto-hides
+its scrollers.</p>
+<p><strong>backgroundColor</strong> A <em>NSColor</em> object representing the background
+color of the scroll view.</p>
+<p><strong>drawsBackground</strong> Boolean representing if the background should be drawn.</p>
+<h3 id="progressspinner">ProgressSpinner</h3>
+<p>An animated, spinning progress indicator.::</p>
+<p>from vanilla import *</p>
+<p>class ProgressSpinnerDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((80, 52))
+self.w.spinner = ProgressSpinner((24, 10, 32, 32),
+displayWhenStopped=True)
+self.w.spinner.start()
+self.w.open()</p>
+<p>ProgressSpinnerDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the
+position and size of the spinner. The size of the spinner sould match the
+appropriate value for the given <em>sizeStyle</em>.</p>
+<p>+---------------------------+
+| <strong>Standard Dimensions</strong>   |
++---------+---+----+---+----+
+| Regular | W | 32 | H | 32 |
++---------+---+----+---+----+
+| Small   | W | 16 | H | 16 |
++---------+---+----+---+----+</p>
+<p><strong>displayWhenStopped</strong> Boolean representing if the spiiner should be
+displayed when it is not spinning.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the spinner.
+The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+</p>
+<h3 id="button">Button</h3>
+<p>A standard button.::</p>
+<p>from vanilla import *</p>
+<p>class ButtonDemo(object):</p>
+<p>def <strong>init</strong>(self):
+ self.w = Window((100, 40))
+ self.w.button = Button((10, 10, -10, 20), "A Button",
+callback=self.buttonCallback)
+ self.w.open()</p>
+<p>def buttonCallback(self, sender):
+ print "button hit!"</p>
+<p>ButtonDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position
+and size of the button. The size of the button sould match the appropriate value
+for the given <em>sizeStyle</em>.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++=========+===+===========+
+| Regular | H | 20|
++---------+---+-----------+
+| Small   | H | 17|
++---------+---+-----------+
+| Mini| H | 14|
++---------+---+-----------+</p>
+<p><strong>title</strong> The text to be displayed on the button. Pass <em>None</em> is no title is desired.</p>
+<p><strong>callback</strong> The method to be called when the user presses the button.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the button. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="objectbrowser">ObjectBrowser</h3>
+<p>An object browser.</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and
+size of the browser.</p>
+<p><strong>obj</strong> The object to be displayed.</p>
+<h3 id="pathcontrol">PathControl</h3>
+<p>A path control.</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position
+and size of the control. The size of the control sould match the appropriate value
+for the given <em>sizeStyle</em>.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++=========+===+===========+
+| Regular | H | 22|
++---------+---+-----------+
+| Small   | H | 20|
++---------+---+-----------+
+| Mini| H | 18|
++---------+---+-----------+</p>
+<p><strong>url</strong> The url to be displayed in the control. This should be a NSURL object.</p>
+<p><strong>editable</strong> A boolean indicating if this control is editable or not.</p>
+<p><strong>callback</strong> The method to be called when the user presses the control.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the button. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="texteditor">TextEditor</h3>
+<p>Standard long text entry control.::</p>
+<p>from vanilla import *</p>
+<p>class TextEditorDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((200, 200))
+self.w.textEditor = TextEditor((10, 10, -10, 22),
+callback=self.textEditorCallback)
+self.w.open()</p>
+<p>def textEditorCallback(self, sender):
+print "text entry!", sender.get()</p>
+<p>TextEditorDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing
+the position and size of the text entry control.</p>
+<p><strong>text</strong> The text to be displayed in the text entry control.</p>
+<p><strong>callback</strong> The method to be called when the user presses the text
+entry control.</p>
+<p><strong>readOnly</strong> Boolean representing if the text can be edited or not.</p>
+<p><strong>checksSpelling</strong> Boolean representing if spelling should be automatically
+checked or not.</p>
+<h3 id="function-getfont">function getFont</h3>
+<h3 id="textbox">TextBox</h3>
+<p>A rectangle containing static text.::</p>
+<p>from vanilla import *</p>
+<p>class TextBoxDemo(object):</p>
+<p>def <strong>init</strong>(self):
+ self.w = Window((100, 37))
+ self.w.textBox = TextBox((10, 10, -10, 17), "A TextBox")
+ self.w.open()</p>
+<p>TextBoxDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing
+the position and size of the text box.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---------+---+-----------+
+| Regular | H | 17|
++---------+---+-----------+
+| Small   | H | 14|
++---------+---+-----------+
+| Mini| H | 12|
++---------+---+-----------+</p>
+<p><strong>text</strong> The text to be displayed in the text box. If the object is a
+<em>NSAttributedString</em>, the attributes will be used for display.</p>
+<p><strong>alignment</strong> A string representing the desired visual alignment of the
+text in the text box. The options are:</p>
+<p>+-------------+-----------------------------------------------------+
+| "left"  | Text is aligned left.   |
++-------------+-----------------------------------------------------+
+| "right" | Text is aligned right.  |
++-------------+-----------------------------------------------------+
+| "center"| Text is centered.   |
++-------------+-----------------------------------------------------+
+| "justified" | Text is justified.  |
++-------------+-----------------------------------------------------+
+| "natural"   | Follows the natural alignment of the text's script. |
++-------------+-----------------------------------------------------+</p>
+<p><strong>selectable</strong> Boolean representing if the text is selectable or not.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the button.
+The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="splitview">SplitView</h3>
+<p>View that can be split into two or more subviews with dividers.::</p>
+<p>from vanilla import *</p>
+<p>class SplitViewDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((200, 200), "SplitView Demo", minSize=(100, 100))
+list1 = List((0, 0, -0, 100), ["A", "B", "C"])
+list2 = List((0, 0, -0, 100), ["a", "b", "c"])
+paneDescriptors = [
+dict(view=list1, identifier="pane1"),
+dict(view=list2, identifier="pane2"),
+]
+self.w.splitView = SplitView((0, 0, -0, -0), paneDescriptors)
+self.w.open()</p>
+<p>SplitViewDemo()</p>
+<p>The wrapped object is an <code>RBSplitView &lt;http://www.brockerhoff.net/src/rbs.html&gt;</code>_ object.</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing
+the position and size of the split view.</p>
+<p><strong>paneDescriptions</strong> An ordered list of dictionaries describing the
+subviews, or "panes". Those dictionaries can have the following keys:</p>
+<p>+-----------------+-----------------------------------------------------------------------------+
+| <em>view</em>  | A view, either a Vanilla object or a NSView. Required.  |
++-----------------+-----------------------------------------------------------------------------+
+| <em>"identifier"</em>  | A string identifying the pane. Required.|
++-----------------+-----------------------------------------------------------------------------+
+| <em>"size"</em>| The initial size of the pane. Optional. |
++-----------------+-----------------------------------------------------------------------------+
+| <em>"minSize"</em> | The minimum size of the pane. Optional. The default is 1.   |
++-----------------+-----------------------------------------------------------------------------+
+| <em>"maxSize"</em> | The maximum size of the pane. Optional. The default is no maximum size. |
++-----------------+-----------------------------------------------------------------------------+
+| <em>"canCollapse"</em> | Boolean indicating if the pane can collapse. Optional. The default is True. |
++-----------------+-----------------------------------------------------------------------------+</p>
+<p><strong>isVertical</strong> Boolean representing if the split view is vertical.
+Default is <em>True</em>.</p>
+<h3 id="imagebutton">ImageButton</h3>
+<p>A button with an image.::</p>
+<p>from vanilla import *</p>
+<p>class ImageButtonDemo(object):</p>
+<p>def <strong>init</strong>(self):
+ path = "/path/to/an/image"
+ self.w = Window((50, 50))
+ self.w.button = ImageButton((10, 10, 30, 30), imagePath=path,
+callback=self.buttonCallback)
+ self.w.open()</p>
+<p>def buttonCallback(self, sender):
+ print "button hit!"</p>
+<p>ImageButtonDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the button.</p>
+<p><strong>title</strong> The text to be displayed on the button. Pass <em>None</em> is no title is desired.</p>
+<p><strong>bordered</strong> Boolean representing if the button should be bordered.</p>
+<p><strong>imagePath</strong> A file path to an image.</p>
+<p><strong>imageNamed</strong> The name of an image already load as a <em>NSImage</em> by the application.</p>
+<p><strong>imageObject</strong> A <em>NSImage</em> object.</p>
+<p><em>Only one of imagePath, imageNamed, imageObject should be set.</em></p>
+<p><strong>imagePosition</strong> The position of the image relative to the title. The options are:</p>
+<p>+----------+
+| "top"|
++----------+
+| "bottom" |
++----------+
+| "left"   |
++----------+
+| "right"  |
++----------+</p>
+<p><strong>callback</strong> The method to be called when the user presses the button.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the button. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="squarebutton">SquareButton</h3>
+<p>A standard square button.::</p>
+<p>from vanilla import *</p>
+<p>class SquareButtonDemo(object):</p>
+<p>def <strong>init</strong>(self):
+ self.w = Window((200, 100))
+ self.w.button = SquareButton((10, 10, -10, -10), "A Button",
+callback=self.buttonCallback)
+ self.w.open()</p>
+<p>def buttonCallback(self, sender):
+ print "button hit!"</p>
+<p>SquareButtonDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the button.</p>
+<p><strong>title</strong> The text to be displayed on the button. Pass <em>None</em> is no title is desired.</p>
+<p><strong>callback</strong> The method to be called when the user presses the button.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the button. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="vanillabaseobject">VanillaBaseObject</h3>
+<h3 id="segmentedbutton">SegmentedButton</h3>
+<p>A standard segmented button.::</p>
+<p>from vanilla import *</p>
+<p>class SegmentedButtonDemo(object):</p>
+<p>def <strong>init</strong>(self):
+ self.w = Window((100, 40))
+ self.w.button = SegmentedButton((10, 10, -10, 20),
+ [dict(title="A"), dict(title="B"), dict(title="C")],
+callback=self.buttonCallback)
+ self.w.open()</p>
+<p>def buttonCallback(self, sender):
+ print "button hit!"</p>
+<p>SegmentedButtonDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position
+and size of the segmented button. The size of the segmented button sould match
+the appropriate value for the given <em>sizeStyle</em>.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++=========+===+===========+
+| Regular | H | 21|
++---------+---+-----------+
+| Small   | H | 18|
++---------+---+-----------+
+| Mini| H | 15|
++---------+---+-----------+</p>
+<p><strong>segmentDescriptions</strong> An ordered list of dictionaries describing the segments.</p>
+<p>+------------------------+--------------------------------------------------------------------------------------------------+
+| width (optional)   | The desired width of the segment.|
++------------------------+--------------------------------------------------------------------------------------------------+
+| title (optional)   | The title of the segment.|
++------------------------+--------------------------------------------------------------------------------------------------+
+| enabled (optional) | The enabled state of the segment. The default is <code>True</code>. |
++------------------------+--------------------------------------------------------------------------------------------------+
+| imagePath (optional)   | A file path to an image to display in the segment.   |
++------------------------+--------------------------------------------------------------------------------------------------+
+| imageNamed (optional)  | The name of an image already loaded as a <em>NSImage</em> by the application to display in the segment. |
++------------------------+--------------------------------------------------------------------------------------------------+
+| imageObject (optional) | A <em>NSImage</em> object to display in the segment.|
++------------------------+--------------------------------------------------------------------------------------------------+</p>
+<p><strong>callback</strong> The method to be called when the user presses the segmented button.</p>
+<p><strong>selectionStyle</strong> The selection style in the segmented button.</p>
+<p>+-----------+---------------------------------------------+
+| one   | Only one segment may be selected.   |
++-----------+---------------------------------------------+
+| any   | Any number of segments may be selected. |
++-----------+---------------------------------------------+
+| momentary | A segmented is only selected when tracking. |
++-----------+---------------------------------------------+</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the segmented button. The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="progressbar">ProgressBar</h3>
+<p>A standard progress bar.::</p>
+<p>from vanilla import *</p>
+<p>class ProgressBarDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((200, 65))
+self.w.bar = ProgressBar((10, 10, -10, 16))
+self.w.button = Button((10, 35, -10, 20), "Go!",
+callback=self.showProgress)
+self.w.open()</p>
+<p>def showProgress(self, sender):
+import time
+self.w.bar.set(0)
+for i in range(10):
+self.w.bar.increment(10)
+time.sleep(.2)</p>
+<p>ProgressBarDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing
+the position and size of the progress bar. The height of the progress
+bar sould match the appropriate value for the given <em>sizeStyle</em>.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---------+---+-----------+
+| Regular | H | 16|
++---------+---+-----------+
+| Small   | H | 10|
++---------+---+-----------+</p>
+<p><strong>minValue</strong> The minimum value of the progress bar.</p>
+<p><strong>maxValue</strong> The maximum value of the progress bar.</p>
+<p><strong>isIndeterminate</strong> Boolean representing if the progress bar is indeterminate.
+Determinate progress bars show how much of the task has been completed.
+Indeterminate progress bars simply show that the application is busy.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the pregress bar.
+The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+</p>
+<h3 id="vanillaerror">VanillaError</h3>
+<h3 id="verticalline">VerticalLine</h3>
+<p>A vertical line.::</p>
+<p>from vanilla import *</p>
+<p>class VerticalLineDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((80, 100))
+self.w.line = VerticalLine((40, 10, 1, -10))
+self.w.open()</p>
+<p>VerticalLineDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position and size of the line.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---+---------------------+
+| V | 1   |
++---+---------------------+</p>
+<h3 id="function-tagtoint">function tagToInt</h3>
+<h3 id="function-popupbuttonlistcell">function PopUpButtonListCell</h3>
+<p>An object that displays a pop up list in a List column.</p>
+<p><strong>This object should only be used in the <em>columnDescriptions</em>
+argument during the construction of a List.</strong></p>
+<p><strong>items</strong> The items that should appear in the pop up list.</p>
+<p>Note: when using this cell in a List, the <code>binding</code> in the
+column description must be set to <code>selectedValue</code>.</p>
+<p>Example::</p>
+<p>from vanilla import *</p>
+<p>class PopUpButtonListCellDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 100))
+self.w.myList = List((0, 0, -0, -0),
+[{"value": "A"}, {"value": "B"}],
+columnDescriptions=[
+{"title": "value", "cell": PopUpButtonListCell(["A", "B", "C"]), "binding": "selectedValue"}
+],
+editCallback=self.editCallback)
+self.w.open()</p>
+<p>def editCallback(self, sender):
+print sender.get()</p>
+<p>PopUpButtonListCellDemo()</p>
+<h3 id="function-sliderlistcell">function SliderListCell</h3>
+<p>An object that displays a slider in a List column.</p>
+<p><strong>This object should only be used in the <em>columnDescriptions</em>
+argument during the construction of a List.</strong></p>
+<p><strong>minValue</strong> The minimum value for the slider.</p>
+<p><strong>maxValue</strong> The maximum value for the slider.</p>
+<p><strong>tickMarkCount</strong> The number of tick marcks to be displayed on the slider.
+If <em>None</em> is given, no tick marks will be displayed.</p>
+<p><strong>stopOnTickMarks</strong> Boolean representing if the slider knob should only
+stop on the tick marks.</p>
+<p>Example::</p>
+<p>from vanilla import *</p>
+<p>class SliderListCellDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((200, 100))
+self.w.myList = List((0, 0, -0, -0),
+[{"value1": 30, "value2": 70}],
+columnDescriptions=[
+{"title": "value1", "cell": SliderListCell()},
+{"title": "value2", "cell": SliderListCell(tickMarkCount=10)},
+],
+editCallback=self.editCallback)
+self.w.open()</p>
+<p>def editCallback(self, sender):
+print sender.get()</p>
+<p>SliderListCellDemo()</p>
+<h3 id="searchbox">SearchBox</h3>
+<p>A text entry field similar to the search field in Safari.::</p>
+<p>from vanilla import *</p>
+<p>class SearchBoxDemo(object):</p>
+<p>def <strong>init</strong>(self):
+self.w = Window((100, 42))
+self.w.searchBox = SearchBox((10, 10, -10, 22),
+callback=self.searchBoxCallback)
+self.w.open()</p>
+<p>def searchBoxCallback(self, sender):
+print "search box entry!", sender.get()</p>
+<p>SearchBoxDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing
+the position and size of the search box.</p>
+<p>+-------------------------+
+| <strong>Standard Dimensions</strong> |
++---------+---+-----------+
+| Regular | H | 22|
++---------+---+-----------+
+| Small   | H | 19|
++---------+---+-----------+
+| Mini| H | 15|
++---------+---+-----------+</p>
+<p><strong>text</strong> The text to be displayed in the search box.</p>
+<p><strong>callback</strong> The method to be called when the user presses the search box.</p>
+<p><strong>formatter</strong> A <code>NSFormatter &lt;http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSFormatter_Class/index.html&gt;</code>_
+for controlling the display and input of the text entry.</p>
+<p><strong>placeholder</strong> A placeholder string to be shown when the text entry
+control is empty.</p>
+<p><strong>sizeStyle</strong> A string representing the desired size style of the search box.
+The options are:</p>
+<p>+-----------+
+| "regular" |
++-----------+
+| "small"   |
++-----------+
+| "mini"|
++-----------+</p>
+<h3 id="levelindicator">LevelIndicator</h3>
+<p>A control which shows a value on a linear scale.::</p>
+<p>from vanilla import *</p>
+<p>class LevelIndicatorDemo(object):</p>
+<p>def <strong>init</strong>(self):
+ self.w = Window((200, 68))
+ self.w.discreteIndicator = LevelIndicator(
+(10, 10, -10, 18), callback=self.levelIndicatorCallback)
+ self.w.continuousIndicator = LevelIndicator(
+(10, 40, -10, 18), style="continuous",
+callback=self.levelIndicatorCallback)
+ self.w.open()</p>
+<p>def levelIndicatorCallback(self, sender):
+ print "level indicator edit!", sender.get()</p>
+<p>LevelIndicatorDemo()</p>
+<p><strong>posSize</strong> Tuple of form <em>(left, top, width, height)</em> representing the position
+and size of the level indicator.</p>
+<p>+-------------------------------+
+| <strong>Standard Dimensions()</strong> |
++-------------------------------+
+| <em>discrete without ticks</em>  |
++-------------------------------+
+| H | 18|
++-------------------------------+
+| <em>discrete with minor ticks</em>   |
++-------------------------------+
+| H | 22|
++-------------------------------+
+| <em>discrete with major ticks</em>   |
++-------------------------------+
+| H | 25|
++-------------------------------+
+| <em>continuous without ticks</em>|
++-------------------------------+
+| H | 16|
++-------------------------------+
+| <em>continuous with minor ticks</em> |
++-------------------------------+
+| H | 20|
++-------------------------------+
+| <em>continuous with major ticks</em> |
++-------------------------------+
+| H | 23|
++-------------------------------+</p>
+<p><strong>style</strong> The style of the level indicator. The options are:</p>
+<p>+--------------+-------------------+
+| "continuous" | A continuous bar. |
++--------------+-------------------+
+| "discrete"   | A segmented bar.  |
++--------------+-------------------+</p>
+<p><strong>value</strong> The initial value of the level indicator.</p>
+<p><strong>minValue</strong> The minimum value allowed by the level indicator.</p>
+<p><strong>maxValue</strong> The maximum value allowed by the level indicator.</p>
+<p><strong>warningValue</strong> The value at which the filled portions of the
+level indicator should display the warning color.</p>
+<p><strong>criticalValue</strong> The value at which the filled portions of the
+level indicator should display the critical color.</p>
+<p><strong>tickMarkPosition</strong> The position of the tick marks in relation
+to the level indicator. The options are:</p>
+<p>+---------+
+| "above" |
++---------+
+| "below" |
++---------+</p>
+<p><strong>minorTickMarkCount</strong> The number of minor tick marcks to be displayed
+on the level indicator. If <em>None</em> is given, no minor tick marks will be displayed.</p>
+<p><strong>majorTickMarkCount</strong> The number of major tick marcks to be displayed on the level
+indicator. If <em>None</em> is given, no major tick marks will be displayed.</p>
+<p><strong>callback</strong> The method to be called when the level indicator has been edited.
+If no callback is given, the level indicator will not be editable.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../variableglyphs/" class="btn btn-neutral float-right" title="Variableglyphs">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../variablecube2/" class="btn btn-neutral" title="Variablecube2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../variablecube2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../variableglyphs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../../js/theme.js"></script>
+
+</body>
+</html>
