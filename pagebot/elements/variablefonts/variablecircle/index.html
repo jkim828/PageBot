@@ -1933,295 +1933,295 @@
                 <h1 id="elementsvariablefontsvariablecircle">elements.variablefonts.variablecircle</h1>
 <h3 id="class-element">class Element</h3>
 <h3 id="int-min95width">int MIN_WIDTH</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="class-ttfont">class TTFont</h3>
-<p>The main font object. It manages file input and output, and offers
-    a convenient way of accessing tables.
-    Tables will be only decompiled when necessary, ie. when they're actually
-    accessed. This means that simple operations can be extremely fast.</p>
+<p>The main font object. It manages file input and output, and offers<br />
+    a convenient way of accessing tables.<br />
+    Tables will be only decompiled when necessary, ie. when they're actually<br />
+    accessed. This means that simple operations can be extremely fast.  </p>
 <h3 id="class-9595class9595">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="def-9595contains9595">def __contains__</h3>
 <h3 id="wrapper95descriptor-9595delattr9595">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="def-9595delitem9595">def __delitem__</h3>
 <h3 id="dictproxy-9595dict9595">dictproxy __dict__</h3>
 <h3 id="str-9595doc9595">str __doc__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="method95descriptor-9595format9595">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="def-9595getitem9595">def __getitem__</h3>
 <h3 id="wrapper95descriptor-9595hash9595">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595">def __init__</h3>
-<p>The constructor can be called with a few different arguments.
-        When reading a font from disk, 'file' should be either a pathname
-        pointing to a file, or a readable file object.</p>
-<pre><code>    It we're running on a Macintosh, 'res_name_or_index' maybe an sfnt
-    resource name or an sfnt resource index number or zero. The latter
-    case will cause TTLib to autodetect whether the file is a flat file
-    or a suitcase. (If it's a suitcase, only the first 'sfnt' resource
+<p>The constructor can be called with a few different arguments.<br />
+        When reading a font from disk, 'file' should be either a pathname<br />
+        pointing to a file, or a readable file object.  </p>
+<pre><code>    It we're running on a Macintosh, 'res_name_or_index' maybe an sfnt  
+    resource name or an sfnt resource index number or zero. The latter  
+    case will cause TTLib to autodetect whether the file is a flat file  
+    or a suitcase. (If it's a suitcase, only the first 'sfnt' resource  
     will be read!)
 
-    The 'checkChecksums' argument is used to specify how sfnt
-    checksums are treated upon reading a file from disk:
-        0: don't check (default)
-        1: check, print warnings if a wrong checksum is found
+    The 'checkChecksums' argument is used to specify how sfnt  
+    checksums are treated upon reading a file from disk:  
+        0: don't check (default)  
+        1: check, print warnings if a wrong checksum is found  
         2: check, raise an exception if a wrong checksum is found.
 
-    The TTFont constructor can also be called without a 'file'
-    argument: this is the way to create a new empty font.
-    In this case you can optionally supply the 'sfntVersion' argument,
+    The TTFont constructor can also be called without a 'file'  
+    argument: this is the way to create a new empty font.  
+    In this case you can optionally supply the 'sfntVersion' argument,  
     and a 'flavor' which can be None, 'woff', or 'woff2'.
 
-    If the recalcBBoxes argument is false, a number of things will *not*
-    be recalculated upon save/compile:
-        1) glyph bounding boxes
-        2) maxp font bounding box
-        3) hhea min/max values
-    (1) is needed for certain kinds of CJK fonts (ask Werner Lemberg ;-).
-    Additionally, upon importing an TTX file, this option cause glyphs
-    to be compiled right away. This should reduce memory consumption
-    greatly, and therefore should have some impact on the time needed
+    If the recalcBBoxes argument is false, a number of things will *not*  
+    be recalculated upon save/compile:  
+        1) glyph bounding boxes  
+        2) maxp font bounding box  
+        3) hhea min/max values  
+    (1) is needed for certain kinds of CJK fonts (ask Werner Lemberg ;-).  
+    Additionally, upon importing an TTX file, this option cause glyphs  
+    to be compiled right away. This should reduce memory consumption  
+    greatly, and therefore should have some impact on the time needed  
     to parse/compile large fonts.
 
-    If the recalcTimestamp argument is false, the modified timestamp in the
+    If the recalcTimestamp argument is false, the modified timestamp in the  
     'head' table will *not* be recalculated upon save/compile.
 
-    If the allowVID argument is set to true, then virtual GID's are
-    supported. Asking for a glyph ID with a glyph name or GID that is not in
-    the font will return a virtual GID.   This is valid for GSUB and cmap
-    tables. For SING glyphlets, the cmap table is used to specify Unicode
-    values for virtual GI's used in GSUB/GPOS rules. If the gid N is requested
-    and does not exist in the font, or the glyphname has the form glyphN
-    and does not exist in the font, then N is used as the virtual GID.
-    Else, the first virtual GID is assigned as 0x1000 -1; for subsequent new
+    If the allowVID argument is set to true, then virtual GID's are  
+    supported. Asking for a glyph ID with a glyph name or GID that is not in  
+    the font will return a virtual GID.   This is valid for GSUB and cmap  
+    tables. For SING glyphlets, the cmap table is used to specify Unicode  
+    values for virtual GI's used in GSUB/GPOS rules. If the gid N is requested  
+    and does not exist in the font, or the glyphname has the form glyphN  
+    and does not exist in the font, then N is used as the virtual GID.  
+    Else, the first virtual GID is assigned as 0x1000 -1; for subsequent new  
     virtual GIDs, the next is one less than the previous.
 
-    If ignoreDecompileErrors is set to True, exceptions raised in
-    individual tables during decompilation will be ignored, falling
-    back to the DefaultTable implementation, which simply keeps the
+    If ignoreDecompileErrors is set to True, exceptions raised in  
+    individual tables during decompilation will be ignored, falling  
+    back to the DefaultTable implementation, which simply keeps the  
     binary data.
 
-    If lazy is set to True, many data structures are loaded lazily, upon
-    access only.  If it is set to False, many data structures are loaded
+    If lazy is set to True, many data structures are loaded lazily, upon  
+    access only.  If it is set to False, many data structures are loaded  
     immediately.  The default is lazy=None which is somewhere in between.
 </code></pre>
 <h3 id="def-9595len9595">def __len__</h3>
 <h3 id="str-9595module9595">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
-<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)</p>
+<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
 <h3 id="wrapper95descriptor-9595setattr9595">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="def-9595setitem9595">def __setitem__</h3>
 <h3 id="method95descriptor-9595sizeof9595">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95buildreverseglyphorderdict">def _buildReverseGlyphOrderDict</h3>
 <h3 id="def-95getglyphnamesfromcmap">def _getGlyphNamesFromCmap</h3>
 <h3 id="def-95makeglyphname">def _makeGlyphName</h3>
 <h3 id="def-95tabletoxml">def _tableToXML</h3>
 <h3 id="def-95writetable">def _writeTable</h3>
-<p>Internal helper function for self.save(). Keeps track of
-        inter-table dependencies.</p>
+<p>Internal helper function for self.save(). Keeps track of<br />
+        inter-table dependencies.  </p>
 <h3 id="def-close">def close</h3>
-<p>If we still have a reader object, close it.</p>
+<p>If we still have a reader object, close it.  </p>
 <h3 id="def-get">def get</h3>
 <h3 id="def-getglyphid">def getGlyphID</h3>
 <h3 id="def-getglyphname">def getGlyphName</h3>
 <h3 id="def-getglyphnames">def getGlyphNames</h3>
-<p>Get a list of glyph names, sorted alphabetically.</p>
+<p>Get a list of glyph names, sorted alphabetically.  </p>
 <h3 id="def-getglyphnames2">def getGlyphNames2</h3>
-<p>Get a list of glyph names, sorted alphabetically,
-        but not case sensitive.</p>
+<p>Get a list of glyph names, sorted alphabetically,<br />
+        but not case sensitive.  </p>
 <h3 id="def-getglyphorder">def getGlyphOrder</h3>
 <h3 id="def-getglyphset">def getGlyphSet</h3>
-<p>Return a generic GlyphSet, which is a dict-like object
-        mapping glyph names to glyph objects. The returned glyph objects
-        have a .draw() method that supports the Pen protocol, and will
-        have an attribute named 'width'.</p>
-<pre><code>    If the font is CFF-based, the outlines will be taken from the 'CFF '
-    table. Otherwise the outlines will be taken from the 'glyf' table.
-    If the font contains both a 'CFF ' and a 'glyf' table, you can use
+<p>Return a generic GlyphSet, which is a dict-like object<br />
+        mapping glyph names to glyph objects. The returned glyph objects<br />
+        have a .draw() method that supports the Pen protocol, and will<br />
+        have an attribute named 'width'.  </p>
+<pre><code>    If the font is CFF-based, the outlines will be taken from the 'CFF '  
+    table. Otherwise the outlines will be taken from the 'glyf' table.  
+    If the font contains both a 'CFF ' and a 'glyf' table, you can use  
     the 'preferCFF' argument to specify which one should be taken.
 </code></pre>
 <h3 id="def-getreverseglyphmap">def getReverseGlyphMap</h3>
 <h3 id="def-gettabledata">def getTableData</h3>
-<p>Returns raw table data, whether compiled or directly read from disk.</p>
+<p>Returns raw table data, whether compiled or directly read from disk.  </p>
 <h3 id="def-has95key">def has_key</h3>
 <h3 id="def-importxml">def importXML</h3>
-<p>Import a TTX file (an XML-based text format), so as to recreate
-        a font object.</p>
+<p>Import a TTX file (an XML-based text format), so as to recreate<br />
+        a font object.  </p>
 <h3 id="def-isloaded">def isLoaded</h3>
-<p>Return true if the table identified by 'tag' has been
-        decompiled and loaded into memory.</p>
+<p>Return true if the table identified by 'tag' has been<br />
+        decompiled and loaded into memory.  </p>
 <h3 id="def-keys">def keys</h3>
 <h3 id="def-savexml">def saveXML</h3>
-<p>Export the font as TTX (an XML-based text file), or as a series of text
-        files when splitTables is true. In the latter case, the 'fileOrPath'
-        argument should be a path to a directory.
-        The 'tables' argument must either be false (dump all tables) or a
-        list of tables to dump. The 'skipTables' argument may be a list of tables
-        to skip, but only when the 'tables' argument is false.</p>
+<p>Export the font as TTX (an XML-based text file), or as a series of text<br />
+        files when splitTables is true. In the latter case, the 'fileOrPath'<br />
+        argument should be a path to a directory.<br />
+        The 'tables' argument must either be false (dump all tables) or a<br />
+        list of tables to dump. The 'skipTables' argument may be a list of tables<br />
+        to skip, but only when the 'tables' argument is false.  </p>
 <h3 id="def-setglyphorder">def setGlyphOrder</h3>
 <h3 id="class-variablecircle">class VariableCircle</h3>
-<p>Interpret the content of the self.font variable font and draw a circle info graphic on that info.
-Information is derived from the Variable Font and automatic converted into
-an info-grapgic, showing a simplified model of the design space.
-To show all possible interpoaltion, it would need to visualize an n-dimensional
-space (where n is the amount of axes in the font). In the simplified model
-all axes are represented as spikes/needles on a wheel, where the amount of
-penetration in the neutral glyph defined the influence of that axis.
-In that respect is it not much better than a list of sliders, but at least this
-model allows to show interactions between axes, by putting them on another 
-angle on the circle.</p>
+<p>Interpret the content of the self.font variable font and draw a circle info graphic on that info.<br />
+Information is derived from the Variable Font and automatic converted into<br />
+an info-grapgic, showing a simplified model of the design space.<br />
+To show all possible interpoaltion, it would need to visualize an n-dimensional<br />
+space (where n is the amount of axes in the font). In the simplified model<br />
+all axes are represented as spikes/needles on a wheel, where the amount of<br />
+penetration in the neutral glyph defined the influence of that axis.<br />
+In that respect is it not much better than a list of sliders, but at least this<br />
+model allows to show interactions between axes, by putting them on another <br />
+angle on the circle.  </p>
 <h3 id="int-default95font95size">int DEFAULT_FONT_SIZE</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="int-r">int R</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="def-xxxgetexpandedtimemarks">def XXXgetExpandedTimeMarks</h3>
-<p>Answer a new interpolated TimeState instance, from the enclosing time states for t.</p>
+<p>Answer a new interpolated TimeState instance, from the enclosing time states for t.  </p>
 <h3 id="def-xxxgetflows">def XXXgetFlows</h3>
-<p>Answer the set of flow element sequences on the page.</p>
+<p>Answer the set of flow element sequences on the page.  </p>
 <h3 id="def-xxxgetnextflowbox">def XXXgetNextFlowBox</h3>
-<p>Answer the next textBox that tb is pointing to. This can be on the same page or a next
-page, depending how the page (and probably its template) is defined.</p>
+<p>Answer the next textBox that tb is pointing to. This can be on the same page or a next<br />
+page, depending how the page (and probably its template) is defined.  </p>
 <h3 id="class-9595class9595_1">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595delattr9595_1">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595_1">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="method95descriptor-9595format9595_1">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_1">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="def-9595getitem9595_1">def __getitem__</h3>
-<p>Answer the element with eId. Raise a KeyError if the element does not exist.</p>
+<p>Answer the element with eId. Raise a KeyError if the element does not exist.  </p>
 <h3 id="wrapper95descriptor-9595hash9595_1">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595_1">def __init__</h3>
 <h3 id="def-9595len9595_1">def __len__</h3>
-<p>Answer total amount of elements, placed or not.</p>
+<p>Answer total amount of elements, placed or not.  </p>
 <h3 id="str-9595module9595_1">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595_1">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_1">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_1">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="def-9595repr9595">def __repr__</h3>
 <h3 id="wrapper95descriptor-9595setattr9595_1">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="def-9595setitem9595_1">def __setitem__</h3>
 <h3 id="method95descriptor-9595sizeof9595_1">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_1">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_1">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_1">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95angle2xy">def _angle2XY</h3>
-<p>Answer the XY position for a given angled (degrees) and r, located on the origin.</p>
+<p>Answer the XY position for a given angled (degrees) and r, located on the origin.  </p>
 <h3 id="def-95applyalignment">def _applyAlignment</h3>
-<p>Answer the p according to the alignment status in the css.</p>
+<p>Answer the p according to the alignment status in the css.  </p>
 <h3 id="def-95applyorigin">def _applyOrigin</h3>
-<p>If self.originTop is False, then the y-value is interpreted as mathematics, 
-starting at the bottom of the parent element, moving up.
-If the flag is True, then move from top down, where the origin of the element becomes
-top-left of the parent.</p>
+<p>If self.originTop is False, then the y-value is interpreted as mathematics, <br />
+starting at the bottom of the parent element, moving up.<br />
+If the flag is True, then move from top down, where the origin of the element becomes<br />
+top-left of the parent.  </p>
 <h3 id="def-95applyrotation">def _applyRotation</h3>
-<p>Apply the rotation for angle, where (mx, my) is the rotation center.</p>
+<p>Apply the rotation for angle, where (mx, my) is the rotation center.  </p>
 <h3 id="def-95applyscale">def _applyScale</h3>
-<p>Apply the scale, if both self.scaleX and self.scaleY are set. Use this
-method paired with self._restoreScale(). The (x, y) answered as reversed scaled tuple,
-so drawing elements can still draw on "real size", while the other element is in scaled mode.</p>
+<p>Apply the scale, if both self.scaleX and self.scaleY are set. Use this<br />
+method paired with self._restoreScale(). The (x, y) answered as reversed scaled tuple,<br />
+so drawing elements can still draw on "real size", while the other element is in scaled mode.  </p>
 <h3 id="def-95borderdict">def _borderDict</h3>
 <h3 id="def-95drawelements">def _drawElements</h3>
-<p>Recursively draw all elements of self on their own relative position in the main canvas,</p>
+<p>Recursively draw all elements of self on their own relative position in the main canvas,  </p>
 <h3 id="def-95drawfontcircle">def _drawFontCircle</h3>
 <h3 id="def-95drawglyphmarker">def _drawGlyphMarker</h3>
 <h3 id="def-95get95ancestors">def _get_ancestors</h3>
 <h3 id="def-95get95back">def _get_back</h3>
 <h3 id="def-95get95block">def _get_block</h3>
-<p>Answer the vacuum bounding box around all child elements in 2D</p>
+<p>Answer the vacuum bounding box around all child elements in 2D  </p>
 <h3 id="def-95get95block3d">def _get_block3D</h3>
-<p>Answer the vacuum 3D bounding box around all child elements.</p>
+<p>Answer the vacuum 3D bounding box around all child elements.  </p>
 <h3 id="def-95get95borderbottom">def _get_borderBottom</h3>
 <h3 id="def-95get95borderleft">def _get_borderLeft</h3>
 <h3 id="def-95get95borderright">def _get_borderRight</h3>
@@ -2229,9 +2229,9 @@ so drawing elements can still draw on "real size", while the other element is in
 <h3 id="def-95get95borders">def _get_borders</h3>
 <h3 id="def-95get95bottom">def _get_bottom</h3>
 <h3 id="def-95get95box">def _get_box</h3>
-<p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.</p>
+<p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
 <h3 id="def-95get95box3d">def _get_box3D</h3>
-<p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.</p>
+<p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.  </p>
 <h3 id="def-95get95cd">def _get_cd</h3>
 <h3 id="def-95get95center">def _get_center</h3>
 <h3 id="def-95get95ch">def _get_ch</h3>
@@ -2241,7 +2241,7 @@ so drawing elements can still draw on "real size", while the other element is in
 <h3 id="def-95get95cz">def _get_cz</h3>
 <h3 id="def-95get95d">def _get_d</h3>
 <h3 id="def-95get95doc">def _get_doc</h3>
-<p>Answer the root Document of this element, looking upward in the ancestor tree.</p>
+<p>Answer the root Document of this element, looking upward in the ancestor tree.  </p>
 <h3 id="def-95get95eid">def _get_eId</h3>
 <h3 id="def-95get95elementids">def _get_elementIds</h3>
 <h3 id="def-95get95elements">def _get_elements</h3>
@@ -2254,7 +2254,7 @@ so drawing elements can still draw on "real size", while the other element is in
 <h3 id="def-95get95h">def _get_h</h3>
 <h3 id="def-95get95left">def _get_left</h3>
 <h3 id="def-95get95lib">def _get_lib</h3>
-<p>Answer the shared document.lib dictionary, used for share global entry by elements.</p>
+<p>Answer the shared document.lib dictionary, used for share global entry by elements.  </p>
 <h3 id="def-95get95mback">def _get_mBack</h3>
 <h3 id="def-95get95mbottom">def _get_mBottom</h3>
 <h3 id="def-95get95mfront">def _get_mFront</h3>
@@ -2264,10 +2264,10 @@ so drawing elements can still draw on "real size", while the other element is in
 <h3 id="def-95get95margin">def _get_margin</h3>
 <h3 id="def-95get95margin3d">def _get_margin3D</h3>
 <h3 id="def-95get95marginblock3d">def _get_marginBlock3D</h3>
-<p>Answer the vacuum 3D bounding box around all child elements.</p>
+<p>Answer the vacuum 3D bounding box around all child elements.  </p>
 <h3 id="def-95get95marginbox">def _get_marginBox</h3>
-<p>Calculate the margin position and margin resized box of the element, after applying the
-option style margin.</p>
+<p>Calculate the margin position and margin resized box of the element, after applying the<br />
+option style margin.  </p>
 <h3 id="def-95get95maxd">def _get_maxD</h3>
 <h3 id="def-95get95maxh">def _get_maxH</h3>
 <h3 id="def-95get95maxw">def _get_maxW</h3>
@@ -2286,21 +2286,21 @@ option style margin.</p>
 <h3 id="def-95get95mzf">def _get_mzf</h3>
 <h3 id="def-95get95opoint">def _get_oPoint</h3>
 <h3 id="def-95get95origintop">def _get_originTop</h3>
-<p>Answer the style flag if all point y values should measure top-down (typographic page
-orientation), instead of bottom-up (mathematical orientation). For Y-axis only. 
-The axes in X and Z directions are fixed.</p>
+<p>Answer the style flag if all point y values should measure top-down (typographic page<br />
+orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
+The axes in X and Z directions are fixed.  </p>
 <h3 id="def-95get95originsblock">def _get_originsBlock</h3>
 <h3 id="def-95get95originsblock3d">def _get_originsBlock3D</h3>
-<p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.</p>
+<p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
 <h3 id="def-95get95paddedblock3d">def _get_paddedBlock3D</h3>
-<p>Answer the vacuum 3D bounding box around all child elements, 
-subtracting their paddings. Sizes cannot become nextive.</p>
+<p>Answer the vacuum 3D bounding box around all child elements, <br />
+subtracting their paddings. Sizes cannot become nextive.  </p>
 <h3 id="def-95get95paddedbox">def _get_paddedBox</h3>
-<p>Calculate the padded position and padded resized box of the element, after applying the
-style padding. Answered format (x, y, w, h).</p>
+<p>Calculate the padded position and padded resized box of the element, after applying the<br />
+style padding. Answered format (x, y, w, h).  </p>
 <h3 id="def-95get95paddedbox3d">def _get_paddedBox3D</h3>
-<p>Calculate the padded position and padded resized box in 3D of the lement, after applying
-the style padding. Answered format (x, y, z, w, h, d).</p>
+<p>Calculate the padded position and padded resized box in 3D of the lement, after applying<br />
+the style padding. Answered format (x, y, z, w, h, d).  </p>
 <h3 id="def-95get95padding">def _get_padding</h3>
 <h3 id="def-95get95padding3d">def _get_padding3D</h3>
 <h3 id="def-95get95parent">def _get_parent</h3>
@@ -2326,12 +2326,12 @@ the style padding. Answered format (x, y, z, w, h, d).</p>
 <h3 id="def-95get95siblings">def _get_siblings</h3>
 <h3 id="def-95get95size">def _get_size</h3>
 <h3 id="def-95get95t">def _get_t</h3>
-<p>The self.t status is the time status, interpolating between the values in 
-self.tStyles[t1] and self.tStyles[t2] where t1 &lt;= t &lt;= t2 and these styles contain
-the requested parameters.</p>
+<p>The self.t status is the time status, interpolating between the values in <br />
+self.tStyles[t1] and self.tStyles[t2] where t1 &lt;= t &lt;= t2 and these styles contain<br />
+the requested parameters.  </p>
 <h3 id="def-95get95template">def _get_template</h3>
 <h3 id="def-95get95top">def _get_top</h3>
-<p>Answer the top position (relative to self.parent) of self.</p>
+<p>Answer the top position (relative to self.parent) of self.  </p>
 <h3 id="def-95get95w">def _get_w</h3>
 <h3 id="def-95get95x">def _get_x</h3>
 <h3 id="def-95get95xalign">def _get_xAlign</h3>
@@ -2340,10 +2340,10 @@ the requested parameters.</p>
 <h3 id="def-95get95z">def _get_z</h3>
 <h3 id="def-95get95zalign">def _get_zAlign</h3>
 <h3 id="def-95restorerotation">def _restoreRotation</h3>
-<p>Reset graphics state from rotation mode.</p>
+<p>Reset graphics state from rotation mode.  </p>
 <h3 id="def-95restorescale">def _restoreScale</h3>
-<p>Reset graphics state from svaed scale mode. Make sure to match the call of self._applyScale.
-If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the restore.</p>
+<p>Reset graphics state from svaed scale mode. Make sure to match the call of self._applyScale.<br />
+If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the restore.  </p>
 <h3 id="def-95set95back">def _set_back</h3>
 <h3 id="def-95set95borderbottom">def _set_borderBottom</h3>
 <h3 id="def-95set95borderleft">def _set_borderLeft</h3>
@@ -2411,7 +2411,7 @@ If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the res
 <h3 id="def-95set95t">def _set_t</h3>
 <h3 id="def-95set95template">def _set_template</h3>
 <h3 id="def-95set95top">def _set_top</h3>
-<p>Shift the element so self.top == y.</p>
+<p>Shift the element so self.top == y.  </p>
 <h3 id="def-95set95w">def _set_w</h3>
 <h3 id="def-95set95x">def _set_x</h3>
 <h3 id="def-95set95xalign">def _set_xAlign</h3>
@@ -2424,18 +2424,18 @@ If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the res
 <h3 id="def-95validatezalign">def _validateZAlign</h3>
 <h3 id="property-ancestors">property ancestors</h3>
 <h3 id="def-appendelement">def appendElement</h3>
-<p>Add element to the list of child elements. Note that elements can be added multiple times.
-If the element is alread placed in another container, then remove it from its current parent.
-This relation and position is lost. The position e is supposed to be filled already in local position.</p>
+<p>Add element to the list of child elements. Note that elements can be added multiple times.<br />
+If the element is alread placed in another container, then remove it from its current parent.<br />
+This relation and position is lost. The position e is supposed to be filled already in local position.  </p>
 <h3 id="def-appendtimemark">def appendTimeMark</h3>
 <h3 id="def-applytemplate">def applyTemplate</h3>
-<p>Copy relevant info from template: w, h, elements, style, conditions when element is created.
-Don't call later.</p>
+<p>Copy relevant info from template: w, h, elements, style, conditions when element is created.<br />
+Don't call later.  </p>
 <h3 id="property-back">property back</h3>
 <h3 id="property-block">property block</h3>
-<p>Answer the vacuum bounding box around all child elements in 2D</p>
+<p>Answer the vacuum bounding box around all child elements in 2D  </p>
 <h3 id="property-block3d">property block3D</h3>
-<p>Answer the vacuum 3D bounding box around all child elements.</p>
+<p>Answer the vacuum 3D bounding box around all child elements.  </p>
 <h3 id="property-border">property border</h3>
 <h3 id="property-borderbottom">property borderBottom</h3>
 <h3 id="property-borderleft">property borderLeft</h3>
@@ -2449,9 +2449,9 @@ Don't call later.</p>
 <h3 id="def-bottom2middlesides">def bottom2MiddleSides</h3>
 <h3 id="def-bottom2top">def bottom2Top</h3>
 <h3 id="property-box">property box</h3>
-<p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.</p>
+<p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
 <h3 id="property-box3d">property box3D</h3>
-<p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.</p>
+<p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.  </p>
 <h3 id="property-cd">property cd</h3>
 <h3 id="property-center">property center</h3>
 <h3 id="def-center2center">def center2Center</h3>
@@ -2462,12 +2462,12 @@ Don't call later.</p>
 <h3 id="def-center2rightside">def center2RightSide</h3>
 <h3 id="property-ch">property ch</h3>
 <h3 id="def-clearelements">def clearElements</h3>
-<p>Properly initializes self._elements and self._eIds. 
-Any existing elements get their parent weakrefs become None and will garbage collect.</p>
+<p>Properly initializes self._elements and self._eIds. <br />
+Any existing elements get their parent weakrefs become None and will garbage collect.  </p>
 <h3 id="def-css">def css</h3>
-<p>In case we are looking for a plain css value, cascading from the main ancestor styles
-of self, then follow the parent links until document or root, if self does not contain
-the requested value.</p>
+<p>In case we are looking for a plain css value, cascading from the main ancestor styles<br />
+of self, then follow the parent links until document or root, if self does not contain<br />
+the requested value.  </p>
 <h3 id="property-cw">property cw</h3>
 <h3 id="property-cx">property cx</h3>
 <h3 id="property-cy">property cy</h3>
@@ -2475,18 +2475,18 @@ the requested value.</p>
 <h3 id="property-d">property d</h3>
 <h3 id="def-deepcopy">def deepCopy</h3>
 <h3 id="property-doc">property doc</h3>
-<p>Answer the root Document of this element, looking upward in the ancestor tree.</p>
+<p>Answer the root Document of this element, looking upward in the ancestor tree.  </p>
 <h3 id="def-draw">def draw</h3>
-<p>Draw the circle info-graphic, showing most info about the variable font as can be interpreted from the file.</p>
+<p>Draw the circle info-graphic, showing most info about the variable font as can be interpreted from the file.  </p>
 <h3 id="def-drawframe">def drawFrame</h3>
-<p>Draw fill of the rectangular element space.
-The self.css('fill') defines the color of the element background.
-Instead of the DrawBot stroke and strokeWidth attributes, use
-borders or (borderTop, borderRight, borderBottom, borderLeft) attributes.</p>
+<p>Draw fill of the rectangular element space.<br />
+The self.css('fill') defines the color of the element background.<br />
+Instead of the DrawBot stroke and strokeWidth attributes, use<br />
+borders or (borderTop, borderRight, borderBottom, borderLeft) attributes.  </p>
 <h3 id="property-eid">property eId</h3>
 <h3 id="property-elementids">property elementIds</h3>
 <h3 id="def-evaluate">def evaluate</h3>
-<p>Evaluate the content of element e with the total sum of conditions.</p>
+<p>Evaluate the content of element e with the total sum of conditions.  </p>
 <h3 id="def-fit2bottom">def fit2Bottom</h3>
 <h3 id="def-fit2bottomside">def fit2BottomSide</h3>
 <h3 id="def-fit2left">def fit2Left</h3>
@@ -2502,64 +2502,64 @@ borders or (borderTop, borderRight, borderBottom, borderLeft) attributes.</p>
 <h3 id="def-float2right">def float2Right</h3>
 <h3 id="def-float2rightside">def float2RightSide</h3>
 <h3 id="def-float2top">def float2Top</h3>
-<p>Float the element upward, until top hits the parent top padding.
-Include margin to decide if it fits.</p>
+<p>Float the element upward, until top hits the parent top padding.<br />
+Include margin to decide if it fits.  </p>
 <h3 id="def-float2topside">def float2TopSide</h3>
 <h3 id="property-front">property front</h3>
 <h3 id="property-gd">property gd</h3>
 <h3 id="def-getelement">def getElement</h3>
-<p>Answer the page element, if it has a unique element Id. Answer None if the eId does not exist as child.</p>
+<p>Answer the page element, if it has a unique element Id. Answer None if the eId does not exist as child.  </p>
 <h3 id="def-getelementbyname">def getElementByName</h3>
-<p>Answer the first element in the offspring list that fits the name. Answer None if it cannot be found</p>
+<p>Answer the first element in the offspring list that fits the name. Answer None if it cannot be found  </p>
 <h3 id="def-getelementinfostring">def getElementInfoString</h3>
-<p>Answer a single string with info about the element. Default is to show the posiiton
-and size (in points and columns). This method can be redefined by inheriting elements
-that want to show additional information.</p>
+<p>Answer a single string with info about the element. Default is to show the posiiton<br />
+and size (in points and columns). This method can be redefined by inheriting elements<br />
+that want to show additional information.  </p>
 <h3 id="def-getelementpage">def getElementPage</h3>
-<p>Recursively answer the page of this element. This can be several layers above self.</p>
+<p>Recursively answer the page of this element. This can be several layers above self.  </p>
 <h3 id="def-getelementsatpoint">def getElementsAtPoint</h3>
-<p>Answer the list with elements that fit the point. Note None in the point will match any
-value in the element position. Where None in the element position with not fit any xyz of the point.</p>
+<p>Answer the list with elements that fit the point. Note None in the point will match any<br />
+value in the element position. Where None in the element position with not fit any xyz of the point.  </p>
 <h3 id="def-getelementsposition">def getElementsPosition</h3>
-<p>Answer the dictionary of elements that have eIds and their positions.</p>
+<p>Answer the dictionary of elements that have eIds and their positions.  </p>
 <h3 id="def-getfloatbottomside">def getFloatBottomSide</h3>
-<p>Answer the max y that can float to bottom, without overlapping previous sibling elements.
-This means we are just looking at the vertical projection of (self.left, self.right).
-Note that the y may be outside the parent box. Only elements with identical z-value are compared.
-Comparison of available spave, includes the margins of the elements.</p>
+<p>Answer the max y that can float to bottom, without overlapping previous sibling elements.<br />
+This means we are just looking at the vertical projection of (self.left, self.right).<br />
+Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
+Comparison of available spave, includes the margins of the elements.  </p>
 <h3 id="def-getfloatleftside">def getFloatLeftSide</h3>
-<p>Answer the max x that can float to the left, without overlapping previous sibling elements.
-This means we are just looking at the horizontal projection of (self.top, self.bottom).
-Note that the x may be outside the parent box. Only elements with identical z-value are compared.
-Comparison of available spave, includes the margins of the elements.</p>
+<p>Answer the max x that can float to the left, without overlapping previous sibling elements.<br />
+This means we are just looking at the horizontal projection of (self.top, self.bottom).<br />
+Note that the x may be outside the parent box. Only elements with identical z-value are compared.<br />
+Comparison of available spave, includes the margins of the elements.  </p>
 <h3 id="def-getfloatrightside">def getFloatRightSide</h3>
-<p>Answer the max Y that can float to the right, without overlapping previous sibling elements.
-This means we are just looking at the vertical projection of (self.left, self.right).
-Note that the y may be outside the parent box. Only elements with identical z-value are compared.
-Comparison of available spave, includes the margins of the elements.</p>
+<p>Answer the max Y that can float to the right, without overlapping previous sibling elements.<br />
+This means we are just looking at the vertical projection of (self.left, self.right).<br />
+Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
+Comparison of available spave, includes the margins of the elements.  </p>
 <h3 id="def-getfloattopside">def getFloatTopSide</h3>
-<p>Answer the max y that can float to top, without overlapping previous sibling elements.
-This means we are just looking at the vertical projection between (self.left, self.right).
-Note that the y may be outside the parent box. Only elements with identical z-value are compared.
-Comparison of available spave, includes the margins of the elements.</p>
+<p>Answer the max y that can float to top, without overlapping previous sibling elements.<br />
+This means we are just looking at the vertical projection between (self.left, self.right).<br />
+Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
+Comparison of available spave, includes the margins of the elements.  </p>
 <h3 id="def-getmaxsize">def getMaxSize</h3>
 <h3 id="def-getminsize">def getMinSize</h3>
-<p>Answer the (minW, minH) of this element.</p>
+<p>Answer the (minW, minH) of this element.  </p>
 <h3 id="def-getminsize3d">def getMinSize3D</h3>
-<p>Answer the (minW, minH, minD) of this element.</p>
+<p>Answer the (minW, minH, minD) of this element.  </p>
 <h3 id="def-getnamedstyle">def getNamedStyle</h3>
-<p>In case we are looking for a named style (e.g. used by the Typesetter to build a stack
-of cascading tag style, then query the ancestors for the named style. Default behavior
-of all elements is that they pass the request on to the root, which is nornally the document.</p>
+<p>In case we are looking for a named style (e.g. used by the Typesetter to build a stack<br />
+of cascading tag style, then query the ancestors for the named style. Default behavior<br />
+of all elements is that they pass the request on to the root, which is nornally the document.  </p>
 <h3 id="def-getpositions">def getPositions</h3>
-<p>"Answer the dictionary of positions of elements. 
-Key is the local point of the child element. Value is list of elements.</p>
+<p>"Answer the dictionary of positions of elements. <br />
+Key is the local point of the child element. Value is list of elements.  </p>
 <h3 id="def-getsize">def getSize</h3>
-<p>Answer the size of the element by calling properties self.w and self.h.
-This allows element to dynamically calculate the size if necessary, by redefining the
-self.w and/or self.h properties.</p>
+<p>Answer the size of the element by calling properties self.w and self.h.<br />
+This allows element to dynamically calculate the size if necessary, by redefining the<br />
+self.w and/or self.h properties.  </p>
 <h3 id="def-getsize3d">def getSize3D</h3>
-<p>Answer the 3D size of the element.</p>
+<p>Answer the 3D size of the element.  </p>
 <h3 id="property-gh">property gh</h3>
 <h3 id="property-gutter">property gutter</h3>
 <h3 id="property-gutter3d">property gutter3D</h3>
@@ -2585,10 +2585,10 @@ self.w and/or self.h properties.</p>
 <h3 id="def-isfloatontop">def isFloatOnTop</h3>
 <h3 id="def-isfloatontopside">def isFloatOnTopSide</h3>
 <h3 id="int-isflow">int isFlow</h3>
-<p>bool(x) -&gt; bool</p>
-<p>Returns True when the argument x is true, False otherwise.
-The builtins True and False are the only two instances of the class bool.
-The class bool is a subclass of the class int, and cannot be subclassed.</p>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="def-isleftoncenter">def isLeftOnCenter</h3>
 <h3 id="def-isleftoncentersides">def isLeftOnCenterSides</h3>
 <h3 id="def-isleftonleft">def isLeftOnLeft</h3>
@@ -2614,10 +2614,10 @@ The class bool is a subclass of the class int, and cannot be subclassed.</p>
 <h3 id="def-isoriginontopside">def isOriginOnTopSide</h3>
 <h3 id="def-isoverflow">def isOverflow</h3>
 <h3 id="int-ispage">int isPage</h3>
-<p>bool(x) -&gt; bool</p>
-<p>Returns True when the argument x is true, False otherwise.
-The builtins True and False are the only two instances of the class bool.
-The class bool is a subclass of the class int, and cannot be subclassed.</p>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="def-isrightoncenter">def isRightOnCenter</h3>
 <h3 id="def-isrightoncentersides">def isRightOnCenterSides</h3>
 <h3 id="def-isrightonleft">def isRightOnLeft</h3>
@@ -2625,7 +2625,7 @@ The class bool is a subclass of the class int, and cannot be subclassed.</p>
 <h3 id="def-isrightonrightside">def isRightOnRightSide</h3>
 <h3 id="def-isschrunkonblockleft">def isSchrunkOnBlockLeft</h3>
 <h3 id="def-isshrunkonblockbottom">def isShrunkOnBlockBottom</h3>
-<p>Test if the bottom of self is shrunk to the bottom position of the block.</p>
+<p>Test if the bottom of self is shrunk to the bottom position of the block.  </p>
 <h3 id="def-isshrunkonblockbottomside">def isShrunkOnBlockBottomSide</h3>
 <h3 id="def-isshrunkonblockleftside">def isShrunkOnBlockLeftSide</h3>
 <h3 id="def-isshrunkonblockright">def isShrunkOnBlockRight</h3>
@@ -2633,15 +2633,15 @@ The class bool is a subclass of the class int, and cannot be subclassed.</p>
 <h3 id="def-isshrunkonblocktop">def isShrunkOnBlockTop</h3>
 <h3 id="def-isshrunkonblocktopside">def isShrunkOnBlockTopSide</h3>
 <h3 id="int-istext">int isText</h3>
-<p>bool(x) -&gt; bool</p>
-<p>Returns True when the argument x is true, False otherwise.
-The builtins True and False are the only two instances of the class bool.
-The class bool is a subclass of the class int, and cannot be subclassed.</p>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="int-istextbox">int isTextBox</h3>
-<p>bool(x) -&gt; bool</p>
-<p>Returns True when the argument x is true, False otherwise.
-The builtins True and False are the only two instances of the class bool.
-The class bool is a subclass of the class int, and cannot be subclassed.</p>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="def-istoponbottom">def isTopOnBottom</h3>
 <h3 id="def-istoponmiddle">def isTopOnMiddle</h3>
 <h3 id="def-istoponmiddlesides">def isTopOnMiddleSides</h3>
@@ -2663,10 +2663,10 @@ The class bool is a subclass of the class int, and cannot be subclassed.</p>
 <h3 id="property-margin">property margin</h3>
 <h3 id="property-margin3d">property margin3D</h3>
 <h3 id="property-marginblock3d">property marginBlock3D</h3>
-<p>Answer the vacuum 3D bounding box around all child elements.</p>
+<p>Answer the vacuum 3D bounding box around all child elements.  </p>
 <h3 id="property-marginbox">property marginBox</h3>
-<p>Calculate the margin position and margin resized box of the element, after applying the
-option style margin.</p>
+<p>Calculate the margin position and margin resized box of the element, after applying the<br />
+option style margin.  </p>
 <h3 id="property-maxd">property maxD</h3>
 <h3 id="property-maxh">property maxH</h3>
 <h3 id="property-maxw">property maxW</h3>
@@ -2703,24 +2703,24 @@ option style margin.</p>
 <h3 id="def-origin2top">def origin2Top</h3>
 <h3 id="def-origin2topside">def origin2TopSide</h3>
 <h3 id="property-origintop">property originTop</h3>
-<p>Answer the style flag if all point y values should measure top-down (typographic page
-orientation), instead of bottom-up (mathematical orientation). For Y-axis only. 
-The axes in X and Z directions are fixed.</p>
+<p>Answer the style flag if all point y values should measure top-down (typographic page<br />
+orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
+The axes in X and Z directions are fixed.  </p>
 <h3 id="property-originsblock">property originsBlock</h3>
 <h3 id="property-originsblock3d">property originsBlock3D</h3>
-<p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.</p>
+<p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
 <h3 id="def-overflow2next">def overflow2Next</h3>
-<p>Try to fix if there is overflow. Default behavior is to do nothing. This method
-is redefined by inheriting classed, such as TextBox, that can have overflow of text.</p>
+<p>Try to fix if there is overflow. Default behavior is to do nothing. This method<br />
+is redefined by inheriting classed, such as TextBox, that can have overflow of text.  </p>
 <h3 id="property-paddedblock3d">property paddedBlock3D</h3>
-<p>Answer the vacuum 3D bounding box around all child elements, 
-subtracting their paddings. Sizes cannot become nextive.</p>
+<p>Answer the vacuum 3D bounding box around all child elements, <br />
+subtracting their paddings. Sizes cannot become nextive.  </p>
 <h3 id="property-paddedbox">property paddedBox</h3>
-<p>Calculate the padded position and padded resized box of the element, after applying the
-style padding. Answered format (x, y, w, h).</p>
+<p>Calculate the padded position and padded resized box of the element, after applying the<br />
+style padding. Answered format (x, y, w, h).  </p>
 <h3 id="property-paddedbox3d">property paddedBox3D</h3>
-<p>Calculate the padded position and padded resized box in 3D of the lement, after applying
-the style padding. Answered format (x, y, z, w, h, d).</p>
+<p>Calculate the padded position and padded resized box in 3D of the lement, after applying<br />
+the style padding. Answered format (x, y, z, w, h, d).  </p>
 <h3 id="property-padding">property padding</h3>
 <h3 id="property-padding3d">property padding3D</h3>
 <h3 id="property-parent">property parent</h3>
@@ -2736,7 +2736,7 @@ the style padding. Answered format (x, y, z, w, h, d).</p>
 <h3 id="property-pzb">property pzb</h3>
 <h3 id="property-pzf">property pzf</h3>
 <h3 id="def-removeelement">def removeElement</h3>
-<p>If the element is placed in self, then remove it. Don't touch the position.</p>
+<p>If the element is placed in self, then remove it. Don't touch the position.  </p>
 <h3 id="property-right">property right</h3>
 <h3 id="def-right2center">def right2Center</h3>
 <h3 id="def-right2centersides">def right2CenterSides</h3>
@@ -2750,13 +2750,13 @@ the style padding. Answered format (x, y, z, w, h, d).</p>
 <h3 id="property-scaley">property scaleY</h3>
 <h3 id="property-scalez">property scaleZ</h3>
 <h3 id="def-setelementbyindex">def setElementByIndex</h3>
-<p>Replace the element, if there is already one at index. Otherwise append it to self.elements
-and answer the index number that it got.</p>
+<p>Replace the element, if there is already one at index. Otherwise append it to self.elements<br />
+and answer the index number that it got.  </p>
 <h3 id="def-setmaxsize">def setMaxSize</h3>
 <h3 id="def-setminsize">def setMinSize</h3>
 <h3 id="def-setsize">def setSize</h3>
-<p>Set the size of the element by calling by properties self.w and self.h. 
-If set, then overwrite access from style width and height. self.d is optional attribute.</p>
+<p>Set the size of the element by calling by properties self.w and self.h. <br />
+If set, then overwrite access from style width and height. self.d is optional attribute.  </p>
 <h3 id="property-show">property show</h3>
 <h3 id="def-shrink2blockbottom">def shrink2BlockBottom</h3>
 <h3 id="def-shrink2blockbottomside">def shrink2BlockBottomSide</h3>
@@ -2768,10 +2768,10 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="def-shrink2blocktopside">def shrink2BlockTopSide</h3>
 <h3 id="property-siblings">property siblings</h3>
 <h3 id="def-solve">def solve</h3>
-<p>Evaluate the content of element e with the total sum of conditions.</p>
+<p>Evaluate the content of element e with the total sum of conditions.  </p>
 <h3 id="property-template">property template</h3>
 <h3 id="property-top">property top</h3>
-<p>Answer the top position (relative to self.parent) of self.</p>
+<p>Answer the top position (relative to self.parent) of self.  </p>
 <h3 id="def-top2bottom">def top2Bottom</h3>
 <h3 id="def-top2middle">def top2Middle</h3>
 <h3 id="def-top2middlesides">def top2MiddleSides</h3>
@@ -2785,53 +2785,53 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="property-z">property z</h3>
 <h3 id="property-zalign">property zAlign</h3>
 <h3 id="dict-9595builtins9595">dict __builtins__</h3>
-<p>dict() -&gt; new empty dictionary
-dict(mapping) -&gt; new dictionary initialized from a mapping object's
-(key, value) pairs
-dict(iterable) -&gt; new dictionary initialized as if via:
-d = {}
-for k, v in iterable:
-d[k] = v
-dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
-in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<p>dict() -&gt; new empty dictionary<br />
+dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
+(key, value) pairs<br />
+dict(iterable) -&gt; new dictionary initialized as if via:<br />
+d = {}<br />
+for k, v in iterable:<br />
+d[k] = v<br />
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
+in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="9595doc9595">__doc__</h3>
 <h3 id="str-9595file9595">str __file__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595name9595">str __name__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595package9595">str __package__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="instance-division">instance division</h3>
 <h3 id="def-drawglyphpath">def drawGlyphPath</h3>
 <h3 id="def-generateinstance">def generateInstance</h3>
-<p>Instantiate an instance of a variable font at the specified location.
-Keyword arguments:
-varfilename -- a variable font file path
-location -- a dictionary of axis tag and value {"wght": 0.75, "wdth": -0.5}</p>
+<p>Instantiate an instance of a variable font at the specified location.<br />
+Keyword arguments:<br />
+varfilename -- a variable font file path<br />
+location -- a dictionary of axis tag and value {"wght": 0.75, "wdth": -0.5}  </p>
 <h3 id="def-getvarlocation">def getVarLocation</h3>
-<p>Translate the normalized location dict (all values between 0 and 1) to what the font expects
-by its min/max values for each axis.</p>
+<p>Translate the normalized location dict (all values between 0 and 1) to what the font expects<br />
+by its min/max values for each axis.  </p>
 <h3 id="def-getvariablefont">def getVariableFont</h3>
-<p>The variablesFontPath refers to the file of the source variable font.
-The nLocation is dictionary axis locations of the instance with values between (0, 1000), e.g.
-{"wght": 0, "wdth": 1000}</p>
+<p>The variablesFontPath refers to the file of the source variable font.<br />
+The nLocation is dictionary axis locations of the instance with values between (0, 1000), e.g.<br />
+{"wght": 0, "wdth": 1000}  </p>
 <h3 id="def-makestyle">def makeStyle</h3>
-<p>Make style from a copy of style dict (providing all necessary default values for the
-element to operate) and then overwrite these values with any specific arguments.
-If style is None, then create a new style dict. In that case all the element style values need
-to be defined by argument. The calling element must test if its minimum set
-(such as self.w and self.h) are properly defined.</p>
+<p>Make style from a copy of style dict (providing all necessary default values for the<br />
+element to operate) and then overwrite these values with any specific arguments.<br />
+If style is None, then create a new style dict. In that case all the element style values need<br />
+to be defined by argument. The calling element must test if its minimum set<br />
+(such as self.w and self.h) are properly defined.  </p>
 <h3 id="def-newfs">def newFS</h3>
-<p>Answer a formatted string from valid attributes in Style. Set the all values after testing
-their existence, so they can inherit from previous style formats.</p>
+<p>Answer a formatted string from valid attributes in Style. Set the all values after testing<br />
+their existence, so they can inherit from previous style formats.  </p>
 <h3 id="def-pointoffset">def pointOffset</h3>
-<p>Answer new 3D point, shifted by offset.</p>
+<p>Answer new 3D point, shifted by offset.  </p>
               
             </div>
           </div>

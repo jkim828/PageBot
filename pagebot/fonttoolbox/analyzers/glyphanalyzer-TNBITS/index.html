@@ -2358,127 +2358,127 @@
               
                 <h1 id="fonttoolboxanalyzersglyphanalyzer-tnbits">fonttoolbox.analyzers.glyphanalyzer-TNBITS</h1>
 <h3 id="str-anchor95top">str ANCHOR_TOP</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="class-bar">class Bar</h3>
 <h3 id="class-boundingbox">class BoundingBox</h3>
 <h3 id="classobj-component">classobj Component</h3>
 <h3 id="class-constants">class Constants</h3>
 <h3 id="class-counter">class Counter</h3>
 <h3 id="int-debug">int DEBUG</h3>
-<p>bool(x) -&gt; bool</p>
-<p>Returns True when the argument x is true, False otherwise.
-The builtins True and False are the only two instances of the class bool.
-The class bool is a subclass of the class int, and cannot be subclassed.</p>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="int-down">int DOWN</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="class-defconglyph">class DefconGlyph</h3>
-<p>This object represents a glyph and it contains contour, component, anchor
-and other assorted bits data about the glyph.</p>
-<p><strong>This object posts the following notifications:</strong></p>
-<p>============================
-Name
-============================
-Glyph.Changed
-Glyph.BeginUndo
-Glyph.EndUndo
-Glyph.BeginRedo
-Glyph.EndRedo
-Glyph.NameWillChange
-Glyph.NameChanged
-Glyph.UnicodesChanged
-Glyph.WidthChanged
-Glyph.HeightChanged
-Glyph.NoteChanged
-Glyph.LibChanged
-Glyph.ImageChanged
-Glyph.ImageWillBeDeleted
-Glyph.ContourWillBeAdded
-Glyph.ContourWillBeDeleted
-Glyph.ContoursChanged
-Glyph.ComponentWillBeAdded
-Glyph.ComponentWillBeDeleted
-Glyph.ComponentsChanged
-Glyph.AnchorWillBeAdded
-Glyph.AnchorWillBeDeleted
-Glyph.AnchorsChanged
-Glyph.GuidelineWillBeAdded
-Glyph.GuidelineWillBeDeleted
-Glyph.GuidelinesChanged
-Glyph.MarkColorChanged
-Glyph.VerticalOriginChanged
-============================</p>
-<p>The Glyph object has list like behavior. This behavior allows you to interact
-with contour data directly. For example, to get a particular contour::</p>
-<p>contour = glyph[0]</p>
-<p>To iterate over all contours::</p>
-<p>for contour in glyph:</p>
-<p>To get the number of contours::</p>
-<p>contourCount = len(glyph)</p>
-<p>To interact with components or anchors in a similar way,
-use the <code>components</code> and <code>anchors</code> attributes.</p>
+<p>This object represents a glyph and it contains contour, component, anchor<br />
+and other assorted bits data about the glyph.  </p>
+<p><strong>This object posts the following notifications:</strong>  </p>
+<p>============================<br />
+Name<br />
+============================<br />
+Glyph.Changed<br />
+Glyph.BeginUndo<br />
+Glyph.EndUndo<br />
+Glyph.BeginRedo<br />
+Glyph.EndRedo<br />
+Glyph.NameWillChange<br />
+Glyph.NameChanged<br />
+Glyph.UnicodesChanged<br />
+Glyph.WidthChanged<br />
+Glyph.HeightChanged<br />
+Glyph.NoteChanged<br />
+Glyph.LibChanged<br />
+Glyph.ImageChanged<br />
+Glyph.ImageWillBeDeleted<br />
+Glyph.ContourWillBeAdded<br />
+Glyph.ContourWillBeDeleted<br />
+Glyph.ContoursChanged<br />
+Glyph.ComponentWillBeAdded<br />
+Glyph.ComponentWillBeDeleted<br />
+Glyph.ComponentsChanged<br />
+Glyph.AnchorWillBeAdded<br />
+Glyph.AnchorWillBeDeleted<br />
+Glyph.AnchorsChanged<br />
+Glyph.GuidelineWillBeAdded<br />
+Glyph.GuidelineWillBeDeleted<br />
+Glyph.GuidelinesChanged<br />
+Glyph.MarkColorChanged<br />
+Glyph.VerticalOriginChanged<br />
+============================  </p>
+<p>The Glyph object has list like behavior. This behavior allows you to interact<br />
+with contour data directly. For example, to get a particular contour::  </p>
+<p>contour = glyph[0]  </p>
+<p>To iterate over all contours::  </p>
+<p>for contour in glyph:  </p>
+<p>To get the number of contours::  </p>
+<p>contourCount = len(glyph)  </p>
+<p>To interact with components or anchors in a similar way,<br />
+use the <code>components</code> and <code>anchors</code> attributes.  </p>
 <h3 id="class-9595class9595">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="def-9595contains9595">def __contains__</h3>
 <h3 id="def-9595del9595">def __del__</h3>
 <h3 id="wrapper95descriptor-9595delattr9595">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595">dictproxy __dict__</h3>
 <h3 id="str-9595doc9595">str __doc__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="method95descriptor-9595format9595">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="def-9595getitem9595">def __getitem__</h3>
 <h3 id="wrapper95descriptor-9595hash9595">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595">def __init__</h3>
 <h3 id="def-9595iter9595">def __iter__</h3>
 <h3 id="def-9595len9595">def __len__</h3>
 <h3 id="str-9595module9595">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
-<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)</p>
+<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
 <h3 id="wrapper95descriptor-9595setattr9595">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="method95descriptor-9595sizeof9595">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95anchorchanged">def _anchorChanged</h3>
 <h3 id="def-95componentbaseglyphdatachanged">def _componentBaseGlyphDataChanged</h3>
 <h3 id="def-95componentchanged">def _componentChanged</h3>
@@ -2526,15 +2526,15 @@ overrides the normal algorithm (and the outcome is cached).</p>
 <h3 id="def-95libcontentchanged">def _libContentChanged</h3>
 <h3 id="def-95makerepresentationsubkey">def _makeRepresentationSubKey</h3>
 <h3 id="def-95serialize">def _serialize</h3>
-<p>A helper function for the defcon objects.</p>
-<p>Return a dict where the keys are the keys in getters and the values
-are the results of the getter functions</p>
-<p>getters is a list of tuples:
-[
-(:str:key, :callable:getter_function)
-]</p>
-<p>if a whitelist is not None: the key must be in whitelist
-if a blacklist is not None: the key must not be in blacklist</p>
+<p>A helper function for the defcon objects.  </p>
+<p>Return a dict where the keys are the keys in getters and the values<br />
+are the results of the getter functions  </p>
+<p>getters is a list of tuples:<br />
+[<br />
+(:str:key, :callable:getter_function)<br />
+]  </p>
+<p>if a whitelist is not None: the key must be in whitelist<br />
+if a blacklist is not None: the key must not be in blacklist  </p>
 <h3 id="def-95set95anchors">def _set_anchors</h3>
 <h3 id="def-95set95bottommargin">def _set_bottomMargin</h3>
 <h3 id="def-95set95dirty">def _set_dirty</h3>
@@ -2554,55 +2554,55 @@ if a blacklist is not None: the key must not be in blacklist</p>
 <h3 id="def-95set95verticalorigin">def _set_verticalOrigin</h3>
 <h3 id="def-95set95width">def _set_width</h3>
 <h3 id="def-addobserver">def addObserver</h3>
-<p>Add an observer to this object's notification dispatcher.</p>
+<p>Add an observer to this object's notification dispatcher.  </p>
 <ul>
-<li><strong>observer</strong> An object that can be referenced with weakref.</li>
-<li><strong>methodName</strong> A string representing the method to be called
-  when the notification is posted.</li>
-<li><strong>notification</strong> The notification that the observer should
-  be notified of.</li>
+<li><strong>observer</strong> An object that can be referenced with weakref.  </li>
+<li><strong>methodName</strong> A string representing the method to be called<br />
+  when the notification is posted.  </li>
+<li><strong>notification</strong> The notification that the observer should<br />
+  be notified of.  </li>
 </ul>
-<p>The method that will be called as a result of the action
-must accept a single <em>notification</em> argument. This will
-be a :class:<code>defcon.tools.notifications.Notification</code> object.</p>
-<p>This is a convenience method that does the same thing as::</p>
-<p>dispatcher = anObject.dispatcher
-dispatcher.addObserver(observer=observer, methodName=methodName,
-notification=notification, observable=anObject)</p>
+<p>The method that will be called as a result of the action<br />
+must accept a single <em>notification</em> argument. This will<br />
+be a :class:<code>defcon.tools.notifications.Notification</code> object.  </p>
+<p>This is a convenience method that does the same thing as::  </p>
+<p>dispatcher = anObject.dispatcher<br />
+dispatcher.addObserver(observer=observer, methodName=methodName,<br />
+notification=notification, observable=anObject)  </p>
 <h3 id="property-anchorclass">property anchorClass</h3>
-<p>The class used for anchors.</p>
+<p>The class used for anchors.  </p>
 <h3 id="def-anchorindex">def anchorIndex</h3>
-<p>Get the index for <strong>anchor</strong>.</p>
+<p>Get the index for <strong>anchor</strong>.  </p>
 <h3 id="property-anchors">property anchors</h3>
-<p>An ordered list of :class:<code>Anchor</code> objects stored in the glyph.</p>
+<p>An ordered list of :class:<code>Anchor</code> objects stored in the glyph.  </p>
 <h3 id="def-appendanchor">def appendAnchor</h3>
-<p>Append <strong>anchor</strong> to the glyph. The anchor must be a defcon
-:class:<code>Anchor</code> object or a subclass of that object. An error
-will be raised if the anchor's identifier conflicts with any of
-the identifiers within the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Append <strong>anchor</strong> to the glyph. The anchor must be a defcon<br />
+:class:<code>Anchor</code> object or a subclass of that object. An error<br />
+will be raised if the anchor's identifier conflicts with any of<br />
+the identifiers within the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-appendcomponent">def appendComponent</h3>
-<p>Append <strong>component</strong> to the glyph. The component must be a defcon
-:class:<code>Component</code> object or a subclass of that object. An error
-will be raised if the component's identifier conflicts with any of
-the identifiers within the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Append <strong>component</strong> to the glyph. The component must be a defcon<br />
+:class:<code>Component</code> object or a subclass of that object. An error<br />
+will be raised if the component's identifier conflicts with any of<br />
+the identifiers within the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-appendcontour">def appendContour</h3>
-<p>Append <strong>contour</strong> to the glyph. The contour must be a defcon
-:class:<code>Contour</code> object or a subclass of that object. An error
-will be raised if the contour's identifier or a point identifier
-conflicts with any of the identifiers within the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Append <strong>contour</strong> to the glyph. The contour must be a defcon<br />
+:class:<code>Contour</code> object or a subclass of that object. An error<br />
+will be raised if the contour's identifier or a point identifier<br />
+conflicts with any of the identifiers within the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-appendguideline">def appendGuideline</h3>
-<p>Append <strong>guideline</strong> to the glyph. The guideline must be a defcon
-:class:<code>Guideline</code> object or a subclass of that object. An error
-will be raised if the guideline's identifier conflicts with any of
-the identifiers within the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Append <strong>guideline</strong> to the glyph. The guideline must be a defcon<br />
+:class:<code>Guideline</code> object or a subclass of that object. An error<br />
+will be raised if the guideline's identifier conflicts with any of<br />
+the identifiers within the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="str-beginredonotificationname">str beginRedoNotificationName</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-beginselfanchornotificationobservation">def beginSelfAnchorNotificationObservation</h3>
 <h3 id="def-beginselfcomponentnotificationobservation">def beginSelfComponentNotificationObservation</h3>
 <h3 id="def-beginselfcontournotificationobservation">def beginSelfContourNotificationObservation</h3>
@@ -2611,119 +2611,119 @@ If the argument is a string, the return value is the same object.</p>
 <h3 id="def-beginselflibnotificationobservation">def beginSelfLibNotificationObservation</h3>
 <h3 id="def-beginselfnotificationobservation">def beginSelfNotificationObservation</h3>
 <h3 id="str-beginundonotificationname">str beginUndoNotificationName</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="property-bottommargin">property bottomMargin</h3>
-<p>The bottom margin of the glyph. Setting this post <em>Glyph.HeightChanged</em> and <em>Glyph.Changed</em> notifications among others.</p>
+<p>The bottom margin of the glyph. Setting this post <em>Glyph.HeightChanged</em> and <em>Glyph.Changed</em> notifications among others.  </p>
 <h3 id="property-bounds">property bounds</h3>
-<p>The bounds of the glyph's outline expressed as a tuple of form (xMin, yMin, xMax, yMax).</p>
+<p>The bounds of the glyph's outline expressed as a tuple of form (xMin, yMin, xMax, yMax).  </p>
 <h3 id="def-canredo">def canRedo</h3>
-<p>Returns a boolean indicating whether the undo manager is able to
-perform a redo.</p>
+<p>Returns a boolean indicating whether the undo manager is able to<br />
+perform a redo.  </p>
 <h3 id="def-canundo">def canUndo</h3>
-<p>Returns a boolean indicating whether the undo manager is able to
-perform an undo.</p>
+<p>Returns a boolean indicating whether the undo manager is able to<br />
+perform an undo.  </p>
 <h3 id="str-changenotificationname">str changeNotificationName</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-clear">def clear</h3>
-<p>Clear all contours, components, anchors and guidelines from the glyph.</p>
-<p>This posts a <em>Glyph.Changed</em> notification.</p>
+<p>Clear all contours, components, anchors and guidelines from the glyph.  </p>
+<p>This posts a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-clearanchors">def clearAnchors</h3>
-<p>Clear all anchors from the glyph.</p>
-<p>This posts a <em>Glyph.Changed</em> notification.</p>
+<p>Clear all anchors from the glyph.  </p>
+<p>This posts a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-clearcomponents">def clearComponents</h3>
-<p>Clear all components from the glyph.</p>
-<p>This posts a <em>Glyph.Changed</em> notification.</p>
+<p>Clear all components from the glyph.  </p>
+<p>This posts a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-clearcontours">def clearContours</h3>
-<p>Clear all contours from the glyph.</p>
-<p>This posts a <em>Glyph.Changed</em> notification.</p>
+<p>Clear all contours from the glyph.  </p>
+<p>This posts a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-clearguidelines">def clearGuidelines</h3>
-<p>Clear all guidelines from the glyph.</p>
-<p>This posts a <em>Glyph.Changed</em> notification.</p>
+<p>Clear all guidelines from the glyph.  </p>
+<p>This posts a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-clearimage">def clearImage</h3>
 <h3 id="property-componentclass">property componentClass</h3>
-<p>The class used for components.</p>
+<p>The class used for components.  </p>
 <h3 id="def-componentindex">def componentIndex</h3>
-<p>Get the index for <strong>component</strong>.</p>
+<p>Get the index for <strong>component</strong>.  </p>
 <h3 id="property-components">property components</h3>
-<p>An ordered list of :class:<code>Component</code> objects stored in the glyph.</p>
+<p>An ordered list of :class:<code>Component</code> objects stored in the glyph.  </p>
 <h3 id="property-contourclass">property contourClass</h3>
-<p>The class used for contours.</p>
+<p>The class used for contours.  </p>
 <h3 id="def-contourindex">def contourIndex</h3>
-<p>Get the index for <strong>contour</strong>.</p>
+<p>Get the index for <strong>contour</strong>.  </p>
 <h3 id="property-controlpointbounds">property controlPointBounds</h3>
-<p>The control bounds of all points in the glyph. This only measures the point positions, it does not measure curves. So, curves without points at the extrema will not be properly measured.</p>
+<p>The control bounds of all points in the glyph. This only measures the point positions, it does not measure curves. So, curves without points at the extrema will not be properly measured.  </p>
 <h3 id="def-copydatafromglyph">def copyDataFromGlyph</h3>
-<p>Copy data from <strong>glyph</strong>. This copies the following data:</p>
-<p>==========
-width
-height
-unicodes
-note
-image
-contours
-components
-anchors
-guidelines
-lib
-==========</p>
-<p>The name attribute is purposefully omitted.</p>
+<p>Copy data from <strong>glyph</strong>. This copies the following data:  </p>
+<p>==========<br />
+width<br />
+height<br />
+unicodes<br />
+note<br />
+image<br />
+contours<br />
+components<br />
+anchors<br />
+guidelines<br />
+lib<br />
+==========  </p>
+<p>The name attribute is purposefully omitted.  </p>
 <h3 id="def-decomposeallcomponents">def decomposeAllComponents</h3>
-<p>Decompose all components in this glyph. This will preserve the
-identifiers in the incoming contours and points unless there is a
-conflict. In that case, the conflicting incoming identifier will
-be discarded.</p>
-<p>This posts <em>Glyph.ComponentsChanged</em>, <em>Glyph.ContoursChanged</em>
-and <em>Glyph.Changed</em> notifications.</p>
+<p>Decompose all components in this glyph. This will preserve the<br />
+identifiers in the incoming contours and points unless there is a<br />
+conflict. In that case, the conflicting incoming identifier will<br />
+be discarded.  </p>
+<p>This posts <em>Glyph.ComponentsChanged</em>, <em>Glyph.ContoursChanged</em><br />
+and <em>Glyph.Changed</em> notifications.  </p>
 <h3 id="def-decomposecomponent">def decomposeComponent</h3>
-<p>Decompose <strong>component</strong>. This will preserve the identifiers
-in the incoming contours and points unless there is a conflict.
-In that case, the conflicting incoming identifier will be discarded.</p>
-<p>This posts <em>Glyph.ComponentsChanged</em>, <em>Glyph.ContoursChanged</em>
-and <em>Glyph.Changed</em> notifications.</p>
+<p>Decompose <strong>component</strong>. This will preserve the identifiers<br />
+in the incoming contours and points unless there is a conflict.<br />
+In that case, the conflicting incoming identifier will be discarded.  </p>
+<p>This posts <em>Glyph.ComponentsChanged</em>, <em>Glyph.ContoursChanged</em><br />
+and <em>Glyph.Changed</em> notifications.  </p>
 <h3 id="def-deserialize">def deserialize</h3>
 <h3 id="def-destroyallrepresentations">def destroyAllRepresentations</h3>
-<p>Destroy all representations.</p>
+<p>Destroy all representations.  </p>
 <h3 id="def-destroyrepresentation">def destroyRepresentation</h3>
-<p>Destroy the stored representation for <strong>name</strong>
-and <strong>**kwargs</strong>. If no <strong>kwargs</strong> are given,
-any representation with <strong>name</strong> will be destroyed
-regardless of the <strong>kwargs</strong> passed when the
-representation was created.</p>
+<p>Destroy the stored representation for <strong>name</strong><br />
+and <strong>**kwargs</strong>. If no <strong>kwargs</strong> are given,<br />
+any representation with <strong>name</strong> will be destroyed<br />
+regardless of the <strong>kwargs</strong> passed when the<br />
+representation was created.  </p>
 <h3 id="property-dirty">property dirty</h3>
-<p>The dirty state of the object. True if the object has been changed. False if not. Setting this to True will cause the base changed notification to be posted. The object will automatically maintain this attribute and update it as you change the object.</p>
+<p>The dirty state of the object. True if the object has been changed. False if not. Setting this to True will cause the base changed notification to be posted. The object will automatically maintain this attribute and update it as you change the object.  </p>
 <h3 id="def-disablenotifications">def disableNotifications</h3>
-<p>Disable this object's notifications until told to resume them.</p>
+<p>Disable this object's notifications until told to resume them.  </p>
 <ul>
-<li><strong>notification</strong> The specific notification to disable. This is optional.
-  If no <em>notification</em> is given, all notifications will be disabled.</li>
+<li><strong>notification</strong> The specific notification to disable. This is optional.<br />
+  If no <em>notification</em> is given, all notifications will be disabled.  </li>
 </ul>
-<p>This is a convenience method that does the same thing as::</p>
-<p>dispatcher = anObject.dispatcher
-dispatcher.disableNotifications(
-observable=anObject, notification=notification, observer=observer)</p>
+<p>This is a convenience method that does the same thing as::  </p>
+<p>dispatcher = anObject.dispatcher<br />
+dispatcher.disableNotifications(<br />
+observable=anObject, notification=notification, observer=observer)  </p>
 <h3 id="property-dispatcher">property dispatcher</h3>
-<p>The :class:<code>defcon.tools.notifications.NotificationCenter</code> assigned to the parent of this object.</p>
+<p>The :class:<code>defcon.tools.notifications.NotificationCenter</code> assigned to the parent of this object.  </p>
 <h3 id="def-draw">def draw</h3>
-<p>Draw the glyph with <strong>pen</strong>.</p>
+<p>Draw the glyph with <strong>pen</strong>.  </p>
 <h3 id="def-drawpoints">def drawPoints</h3>
-<p>Draw the glyph with <strong>pointPen</strong>.</p>
+<p>Draw the glyph with <strong>pointPen</strong>.  </p>
 <h3 id="def-enablenotifications">def enableNotifications</h3>
-<p>Enable this object's notifications.</p>
+<p>Enable this object's notifications.  </p>
 <ul>
-<li><strong>notification</strong> The specific notification to enable. This is optional.</li>
+<li><strong>notification</strong> The specific notification to enable. This is optional.  </li>
 </ul>
-<p>This is a convenience method that does the same thing as::</p>
-<p>dispatcher = anObject.dispatcher
-dispatcher.enableNotifications(
-observable=anObject, notification=notification, observer=observer)</p>
+<p>This is a convenience method that does the same thing as::  </p>
+<p>dispatcher = anObject.dispatcher<br />
+dispatcher.enableNotifications(<br />
+observable=anObject, notification=notification, observer=observer)  </p>
 <h3 id="str-endredonotificationname">str endRedoNotificationName</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-endselfanchornotificationobservation">def endSelfAnchorNotificationObservation</h3>
 <h3 id="def-endselfcomponentnotificationobservation">def endSelfComponentNotificationObservation</h3>
 <h3 id="def-endselfcontournotificationobservation">def endSelfContourNotificationObservation</h3>
@@ -2732,74 +2732,74 @@ If the argument is a string, the return value is the same object.</p>
 <h3 id="def-endselflibnotificationobservation">def endSelfLibNotificationObservation</h3>
 <h3 id="def-endselfnotificationobservation">def endSelfNotificationObservation</h3>
 <h3 id="str-endundonotificationname">str endUndoNotificationName</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-getdataforserialization">def getDataForSerialization</h3>
 <h3 id="def-getparent">def getParent</h3>
 <h3 id="def-getpen">def getPen</h3>
-<p>Get the pen used to draw into this glyph.</p>
+<p>Get the pen used to draw into this glyph.  </p>
 <h3 id="def-getpointpen">def getPointPen</h3>
-<p>Get the point pen used to draw into this glyph.</p>
+<p>Get the point pen used to draw into this glyph.  </p>
 <h3 id="def-getrepresentation">def getRepresentation</h3>
-<p>Get a representation. <strong>name</strong> must be a registered
-representation name. <strong>**kwargs</strong> will be passed
-to the appropriate representation factory.</p>
+<p>Get a representation. <strong>name</strong> must be a registered<br />
+representation name. <strong>**kwargs</strong> will be passed<br />
+to the appropriate representation factory.  </p>
 <h3 id="property-guidelineclass">property guidelineClass</h3>
-<p>The class used for guidelines.</p>
+<p>The class used for guidelines.  </p>
 <h3 id="def-guidelineindex">def guidelineIndex</h3>
-<p>Get the index for <strong>guideline</strong>.</p>
+<p>Get the index for <strong>guideline</strong>.  </p>
 <h3 id="property-guidelines">property guidelines</h3>
-<p>An ordered list of :class:<code>Guideline</code> objects stored in the glyph. Setting this will post a <em>Glyph.Changed</em> notification along with any notifications posted by the :py:meth:<code>Glyph.appendGuideline</code> and :py:meth:<code>Glyph.clearGuidelines</code> methods.</p>
+<p>An ordered list of :class:<code>Guideline</code> objects stored in the glyph. Setting this will post a <em>Glyph.Changed</em> notification along with any notifications posted by the :py:meth:<code>Glyph.appendGuideline</code> and :py:meth:<code>Glyph.clearGuidelines</code> methods.  </p>
 <h3 id="def-hascachedrepresentation">def hasCachedRepresentation</h3>
-<p>Returns a boolean indicating if a representation for
-<strong>name</strong> and <strong>**kwargs</strong> is cached in the object.</p>
+<p>Returns a boolean indicating if a representation for<br />
+<strong>name</strong> and <strong>**kwargs</strong> is cached in the object.  </p>
 <h3 id="def-hasobserver">def hasObserver</h3>
-<p>Returns a boolean indicating is the <strong>observer</strong> is registered for <strong>notification</strong>.</p>
-<p>This is a convenience method that does the same thing as::</p>
-<p>dispatcher = anObject.dispatcher
-dispatcher.hasObserver(observer=observer,
-notification=notification, observable=anObject)</p>
+<p>Returns a boolean indicating is the <strong>observer</strong> is registered for <strong>notification</strong>.  </p>
+<p>This is a convenience method that does the same thing as::  </p>
+<p>dispatcher = anObject.dispatcher<br />
+dispatcher.hasObserver(observer=observer,<br />
+notification=notification, observable=anObject)  </p>
 <h3 id="def-holdnotifications">def holdNotifications</h3>
-<p>Hold this object's notifications until told to release them.</p>
+<p>Hold this object's notifications until told to release them.  </p>
 <ul>
-<li><strong>notification</strong> The specific notification to hold. This is optional.
-  If no <em>notification</em> is given, all notifications will be held.</li>
+<li><strong>notification</strong> The specific notification to hold. This is optional.<br />
+  If no <em>notification</em> is given, all notifications will be held.  </li>
 </ul>
-<p>This is a convenience method that does the same thing as::</p>
-<p>dispatcher = anObject.dispatcher
-dispatcher.holdNotifications(
-observable=anObject, notification=notification)</p>
+<p>This is a convenience method that does the same thing as::  </p>
+<p>dispatcher = anObject.dispatcher<br />
+dispatcher.holdNotifications(<br />
+observable=anObject, notification=notification)  </p>
 <h3 id="property-identifiers">property identifiers</h3>
-<p>Set of identifiers for the glyph. This is primarily for internal use.</p>
+<p>Set of identifiers for the glyph. This is primarily for internal use.  </p>
 <h3 id="def-insertanchor">def insertAnchor</h3>
-<p>Insert <strong>anchor</strong> into the glyph at index. The anchor
-must be a defcon :class:<code>Anchor</code> object or a subclass
-of that object. An error will be raised if the anchor's
-identifier conflicts with any of the identifiers within
-the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Insert <strong>anchor</strong> into the glyph at index. The anchor<br />
+must be a defcon :class:<code>Anchor</code> object or a subclass<br />
+of that object. An error will be raised if the anchor's<br />
+identifier conflicts with any of the identifiers within<br />
+the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-insertcomponent">def insertComponent</h3>
-<p>Insert <strong>component</strong> into the glyph at index. The component
-must be a defcon :class:<code>Component</code> object or a subclass
-of that object. An error will be raised if the component's
-identifier conflicts with any of the identifiers within
-the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Insert <strong>component</strong> into the glyph at index. The component<br />
+must be a defcon :class:<code>Component</code> object or a subclass<br />
+of that object. An error will be raised if the component's<br />
+identifier conflicts with any of the identifiers within<br />
+the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-insertcontour">def insertContour</h3>
-<p>Insert <strong>contour</strong> into the glyph at index. The contour
-must be a defcon :class:<code>Contour</code> object or a subclass
-of that object. An error will be raised if the contour's
-identifier or a point identifier conflicts with any of
-the identifiers within the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Insert <strong>contour</strong> into the glyph at index. The contour<br />
+must be a defcon :class:<code>Contour</code> object or a subclass<br />
+of that object. An error will be raised if the contour's<br />
+identifier or a point identifier conflicts with any of<br />
+the identifiers within the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-insertguideline">def insertGuideline</h3>
-<p>Insert <strong>guideline</strong> into the glyph at index. The guideline
-must be a defcon :class:<code>Guideline</code> object or a subclass
-of that object. An error will be raised if the guideline's
-identifier conflicts with any of the identifiers within
-the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Insert <strong>guideline</strong> into the glyph at index. The guideline<br />
+must be a defcon :class:<code>Guideline</code> object or a subclass<br />
+of that object. An error will be raised if the guideline's<br />
+identifier conflicts with any of the identifiers within<br />
+the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-instantiateanchor">def instantiateAnchor</h3>
 <h3 id="def-instantiatecomponent">def instantiateComponent</h3>
 <h3 id="def-instantiatecontour">def instantiateContour</h3>
@@ -2807,220 +2807,220 @@ the glyph.</p>
 <h3 id="def-instantiateimage">def instantiateImage</h3>
 <h3 id="def-instantiatelib">def instantiateLib</h3>
 <h3 id="property-layer">property layer</h3>
-<p>The :class:<code>Layer</code> that this glyph belongs to.</p>
+<p>The :class:<code>Layer</code> that this glyph belongs to.  </p>
 <h3 id="property-layerset">property layerSet</h3>
-<p>The :class:<code>LayerSet</code> that this glyph belongs to.</p>
+<p>The :class:<code>LayerSet</code> that this glyph belongs to.  </p>
 <h3 id="property-leftmargin">property leftMargin</h3>
-<p>The left margin of the glyph. Setting this post <em>Glyph.WidthChanged</em> and <em>Glyph.Changed</em> notifications among others.</p>
+<p>The left margin of the glyph. Setting this post <em>Glyph.WidthChanged</em> and <em>Glyph.Changed</em> notifications among others.  </p>
 <h3 id="property-lib">property lib</h3>
-<p>The glyph's :class:<code>Lib</code> object. Setting this will clear any existing lib data and post a <em>Glyph.Changed</em> notification if data was replaced.</p>
+<p>The glyph's :class:<code>Lib</code> object. Setting this will clear any existing lib data and post a <em>Glyph.Changed</em> notification if data was replaced.  </p>
 <h3 id="property-markcolor">property markColor</h3>
-<p>The glyph's mark color. When setting, the value can be a UFO color string, a sequence of (r, g, b, a) or a :class:<code>Color</code> object. Setting this posts <em>Glyph.MarkColorChanged</em> and <em>Glyph.Changed</em> notifications.</p>
+<p>The glyph's mark color. When setting, the value can be a UFO color string, a sequence of (r, g, b, a) or a :class:<code>Color</code> object. Setting this posts <em>Glyph.MarkColorChanged</em> and <em>Glyph.Changed</em> notifications.  </p>
 <h3 id="def-move">def move</h3>
-<p>Move all contours, components and anchors in the glyph
-by <strong>(x, y)</strong>.</p>
-<p>This posts a <em>Glyph.Changed</em> notification.</p>
+<p>Move all contours, components and anchors in the glyph<br />
+by <strong>(x, y)</strong>.  </p>
+<p>This posts a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="property-name">property name</h3>
-<p>The name of the glyph. Setting this posts <em>GLyph.NameChanged</em> and <em>Glyph.NameChanged</em> notifications.</p>
+<p>The name of the glyph. Setting this posts <em>GLyph.NameChanged</em> and <em>Glyph.NameChanged</em> notifications.  </p>
 <h3 id="property-note">property note</h3>
-<p>An arbitrary note for the glyph. Setting this will post a <em>Glyph.Changed</em> notification.</p>
+<p>An arbitrary note for the glyph. Setting this will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="property-pointclass">property pointClass</h3>
-<p>The class used for points.</p>
+<p>The class used for points.  </p>
 <h3 id="def-pointinside">def pointInside</h3>
-<p>Returns a boolean indicating if <strong>(x, y)</strong> is in the
-"black" area of the glyph.</p>
+<p>Returns a boolean indicating if <strong>(x, y)</strong> is in the<br />
+"black" area of the glyph.  </p>
 <h3 id="def-postnotification">def postNotification</h3>
-<p>Post a <strong>notification</strong> through this object's notification dispatcher.</p>
+<p>Post a <strong>notification</strong> through this object's notification dispatcher.  </p>
 <ul>
-<li><strong>notification</strong> The name of the notification.</li>
-<li><strong>data</strong> Arbitrary data that will be stored in the :class:<code>Notification</code> object.</li>
+<li><strong>notification</strong> The name of the notification.  </li>
+<li><strong>data</strong> Arbitrary data that will be stored in the :class:<code>Notification</code> object.  </li>
 </ul>
-<p>This is a convenience method that does the same thing as::</p>
-<p>dispatcher = anObject.dispatcher
-dispatcher.postNotification(
-notification=notification, observable=anObject, data=data)</p>
+<p>This is a convenience method that does the same thing as::  </p>
+<p>dispatcher = anObject.dispatcher<br />
+dispatcher.postNotification(<br />
+notification=notification, observable=anObject, data=data)  </p>
 <h3 id="def-redo">def redo</h3>
-<p>Perform a redo if possible, or return.
-If redo is performed, this will post <em>BaseObject.BeginRedo</em> and <em>BaseObject.EndRedo</em> notifications.</p>
+<p>Perform a redo if possible, or return.<br />
+If redo is performed, this will post <em>BaseObject.BeginRedo</em> and <em>BaseObject.EndRedo</em> notifications.  </p>
 <h3 id="def-releaseheldnotifications">def releaseHeldNotifications</h3>
-<p>Release this object's held notifications.</p>
+<p>Release this object's held notifications.  </p>
 <ul>
-<li><strong>notification</strong> The specific notification to hold. This is optional.</li>
+<li><strong>notification</strong> The specific notification to hold. This is optional.  </li>
 </ul>
-<p>This is a convenience method that does the same thing as::</p>
-<p>dispatcher = anObject.dispatcher
-dispatcher.releaseHeldNotifications(
-observable=anObject, notification=notification)</p>
+<p>This is a convenience method that does the same thing as::  </p>
+<p>dispatcher = anObject.dispatcher<br />
+dispatcher.releaseHeldNotifications(<br />
+observable=anObject, notification=notification)  </p>
 <h3 id="def-removeanchor">def removeAnchor</h3>
-<p>Remove <strong>anchor</strong> from the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Remove <strong>anchor</strong> from the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-removecomponent">def removeComponent</h3>
-<p>Remove <strong>component</strong> from the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Remove <strong>component</strong> from the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-removecontour">def removeContour</h3>
-<p>Remove <strong>contour</strong> from the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Remove <strong>contour</strong> from the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-removeguideline">def removeGuideline</h3>
-<p>Remove <strong>guideline</strong> from the glyph.</p>
-<p>This will post a <em>Glyph.Changed</em> notification.</p>
+<p>Remove <strong>guideline</strong> from the glyph.  </p>
+<p>This will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="def-removeobserver">def removeObserver</h3>
-<p>Remove an observer from this object's notification dispatcher.</p>
+<p>Remove an observer from this object's notification dispatcher.  </p>
 <ul>
-<li><strong>observer</strong> A registered object.</li>
-<li><strong>notification</strong> The notification that the observer was registered
-  to be notified of.</li>
+<li><strong>observer</strong> A registered object.  </li>
+<li><strong>notification</strong> The notification that the observer was registered<br />
+  to be notified of.  </li>
 </ul>
-<p>This is a convenience method that does the same thing as::</p>
-<p>dispatcher = anObject.dispatcher
-dispatcher.removeObserver(observer=observer,
-notification=notification, observable=anObject)</p>
+<p>This is a convenience method that does the same thing as::  </p>
+<p>dispatcher = anObject.dispatcher<br />
+dispatcher.removeObserver(observer=observer,<br />
+notification=notification, observable=anObject)  </p>
 <h3 id="dict-representationfactories">dict representationFactories</h3>
-<p>dict() -&gt; new empty dictionary
-dict(mapping) -&gt; new dictionary initialized from a mapping object's
-(key, value) pairs
-dict(iterable) -&gt; new dictionary initialized as if via:
-d = {}
-for k, v in iterable:
-d[k] = v
-dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
-in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<p>dict() -&gt; new empty dictionary<br />
+dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
+(key, value) pairs<br />
+dict(iterable) -&gt; new dictionary initialized as if via:<br />
+d = {}<br />
+for k, v in iterable:<br />
+d[k] = v<br />
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
+in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="def-representationkeys">def representationKeys</h3>
-<p>Get a list of all representation keys that are
-currently cached.</p>
+<p>Get a list of all representation keys that are<br />
+currently cached.  </p>
 <h3 id="property-rightmargin">property rightMargin</h3>
-<p>The right margin of the glyph. Setting this posts <em>Glyph.WidthChanged</em> and <em>Glyph.Changed</em> notifications among others.</p>
+<p>The right margin of the glyph. Setting this posts <em>Glyph.WidthChanged</em> and <em>Glyph.Changed</em> notifications among others.  </p>
 <h3 id="def-selfnotificationcallback">def selfNotificationCallback</h3>
 <h3 id="def-serialize">def serialize</h3>
 <h3 id="def-setdatafromserialization">def setDataFromSerialization</h3>
 <h3 id="property-topmargin">property topMargin</h3>
-<p>The top margin of the glyph. Setting this posts <em>Glyph.HeightChanged</em>, <em>Glyph.VerticalOriginChanged</em> and <em>Glyph.Changed</em> notifications among others.</p>
+<p>The top margin of the glyph. Setting this posts <em>Glyph.HeightChanged</em>, <em>Glyph.VerticalOriginChanged</em> and <em>Glyph.Changed</em> notifications among others.  </p>
 <h3 id="def-undo">def undo</h3>
-<p>Perform an undo if possible, or return.
-If undo is performed, this will post <em>BaseObject.BeginUndo</em> and <em>BaseObject.EndUndo</em> notifications.</p>
+<p>Perform an undo if possible, or return.<br />
+If undo is performed, this will post <em>BaseObject.BeginUndo</em> and <em>BaseObject.EndUndo</em> notifications.  </p>
 <h3 id="property-undomanager">property undoManager</h3>
-<p>The undo manager assigned to this object.</p>
+<p>The undo manager assigned to this object.  </p>
 <h3 id="property-unicode">property unicode</h3>
-<p>The primary unicode value for the glyph. This is the equivalent of <code>glyph.unicodes[0]</code>. This is a convenience attribute that works with the <code>unicodes</code> attribute.</p>
+<p>The primary unicode value for the glyph. This is the equivalent of <code>glyph.unicodes[0]</code>. This is a convenience attribute that works with the <code>unicodes</code> attribute.  </p>
 <h3 id="property-unicodes">property unicodes</h3>
-<p>The list of unicode values assigned to the glyph. Setting this posts <em>Glyph.UnicodesChanged</em> and <em>Glyph.Changed</em> notifications.</p>
+<p>The list of unicode values assigned to the glyph. Setting this posts <em>Glyph.UnicodesChanged</em> and <em>Glyph.Changed</em> notifications.  </p>
 <h3 id="property-verticalorigin">property verticalOrigin</h3>
-<p>The glyph's vertical origin. Setting this posts <em>Glyph.VerticalOriginChanged</em> and <em>Glyph.Changed</em> notifications.</p>
+<p>The glyph's vertical origin. Setting this posts <em>Glyph.VerticalOriginChanged</em> and <em>Glyph.Changed</em> notifications.  </p>
 <h3 id="class-diagonalstem">class DiagonalStem</h3>
 <h3 id="class-glyphanalyzer">class GlyphAnalyzer</h3>
-<p>The GlyphAnalyzer analyzes the defcon glyph and find key measures
-about its outline or components.</p>
+<p>The GlyphAnalyzer analyzes the defcon glyph and find key measures<br />
+about its outline or components.  </p>
 <h3 id="class-barclass">class BARCLASS</h3>
 <h3 id="class-boundingboxclass">class BOUNDINGBOXCLASS</h3>
 <h3 id="class-c">class C</h3>
 <h3 id="class-counterclass">class COUNTERCLASS</h3>
 <h3 id="set-diacritics">set DIACRITICS</h3>
-<p>set() -&gt; new empty set object
-set(iterable) -&gt; new set object</p>
-<p>Build an unordered collection of unique elements.</p>
+<p>set() -&gt; new empty set object<br />
+set(iterable) -&gt; new set object  </p>
+<p>Build an unordered collection of unique elements.  </p>
 <h3 id="class-diagonalstemclass">class DIAGONALSTEMCLASS</h3>
 <h3 id="int-fuzz">int FUZZ</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="class-horizontalclass">class HORIZONTALCLASS</h3>
-<p><doc>The <code>HOrizontal</code> class is a list of point contexts that share the same y-value
-self.append, self.x, self.y, self.alternates, self.minX, self.maxX
-</doc></p>
+<p><doc>The <code>HOrizontal</code> class is a list of point contexts that share the same y-value<br />
+self.append, self.x, self.y, self.alternates, self.minX, self.maxX<br />
+</doc>  </p>
 <h3 id="class-pointcontextclass">class POINTCONTEXTCLASS</h3>
-<p><doc>The <code>PointContext</code> instance is a <code>Point</code> wrapper, that also takes the 3 points previous
-and next 3 points on the contour. The instance behaves like a normal point <i>p</i>, but additional information is
-available as interpreted from the point context in relation to the neighbor points. The total of 6 points is derived
-from the average construction of a serif, so it is possible to hold (and interpret) an entire serif sequence inside
-one point context.</doc></p>
+<p><doc>The <code>PointContext</code> instance is a <code>Point</code> wrapper, that also takes the 3 points previous<br />
+and next 3 points on the contour. The instance behaves like a normal point <i>p</i>, but additional information is<br />
+available as interpreted from the point context in relation to the neighbor points. The total of 6 points is derived<br />
+from the average construction of a serif, so it is possible to hold (and interpret) an entire serif sequence inside<br />
+one point context.</doc>  </p>
 <h3 id="class-stemclass">class STEMCLASS</h3>
-<p><doc>The <code>Stem</code> class instant takes the CVT related to this stem, and the  left and point <code>Vertical
-</code> instance that stem binds.</doc></p>
+<p><doc>The <code>Stem</code> class instant takes the CVT related to this stem, and the  left and point <code>Vertical<br />
+</code> instance that stem binds.</doc>  </p>
 <h3 id="set-topdiacritics">set TOPDIACRITICS</h3>
-<p>set() -&gt; new empty set object
-set(iterable) -&gt; new set object</p>
-<p>Build an unordered collection of unique elements.</p>
+<p>set() -&gt; new empty set object<br />
+set(iterable) -&gt; new set object  </p>
+<p>Build an unordered collection of unique elements.  </p>
 <h3 id="class-vcounterclass">class VCOUNTERCLASS</h3>
 <h3 id="class-verticalclass">class VERTICALCLASS</h3>
-<p><doc>The <code>Vertical</code> class is a list of point contexts that share the same x-value
-self.append, self.x, self.y, self.alternates, self.minY, self.maxY
-</doc></p>
+<p><doc>The <code>Vertical</code> class is a list of point contexts that share the same x-value<br />
+self.append, self.x, self.y, self.alternates, self.minY, self.maxY<br />
+</doc>  </p>
 <h3 id="class-widthclass">class WIDTHCLASS</h3>
 <h3 id="def-xxxspangray">def XXXspanGray</h3>
-<p>Spanning gray is neither full spanning white or spanning black</p>
+<p>Spanning gray is neither full spanning white or spanning black  </p>
 <h3 id="str-95">str _</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="class-9595class9595_1">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595delattr9595_1">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595_1">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="def-9595eq9595">def __eq__</h3>
-<p>Answers the boolean flag if glyph is the same as the glyph of
-self.</p>
+<p>Answers the boolean flag if glyph is the same as the glyph of<br />
+self.  </p>
 <h3 id="method95descriptor-9595format9595_1">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_1">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="wrapper95descriptor-9595hash9595_1">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595_1">def __init__</h3>
 <h3 id="str-9595module9595_1">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595_1">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_1">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_1">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="def-9595repr9595">def __repr__</h3>
 <h3 id="wrapper95descriptor-9595setattr9595_1">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="method95descriptor-9595sizeof9595_1">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_1">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_1">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_1">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95getdecomposedbasename">def _getDecomposedBaseName</h3>
-<p>Deconstructs the name, starting from the right side, recognizing
-chunks that are diacritics names. Recursively adds as many as possible.
-Once there is no match, the remaining left part must be the base name
-of the glyph. Recursively answers the baseName and the list of found
-diacritics. In the "altBaseName" result attribute. The caller gets
-translated "i" and "j" into "dotlessi" and "dotlessj" info for lc only.
-For capitals and smallcaps the main base name is used.</p>
+<p>Deconstructs the name, starting from the right side, recognizing<br />
+chunks that are diacritics names. Recursively adds as many as possible.<br />
+Once there is no match, the remaining left part must be the base name<br />
+of the glyph. Recursively answers the baseName and the list of found<br />
+diacritics. In the "altBaseName" result attribute. The caller gets<br />
+translated "i" and "j" into "dotlessi" and "dotlessj" info for lc only.<br />
+For capitals and smallcaps the main base name is used.  </p>
 <h3 id="def-95getpointbynamedvalue95leftmargin">def _getPointByNamedValue_leftMargin</h3>
 <h3 id="def-95getpointbynamedvalue95rightmargin">def _getPointByNamedValue_rightMargin</h3>
 <h3 id="def-95getscanlinesumcount">def _getScanLineSumCount</h3>
-<p>Better not to use a for loop, since the step is changing.</p>
+<p>Better not to use a for loop, since the step is changing.  </p>
 <h3 id="def-95get95allbars">def _get_allBars</h3>
 <h3 id="def-95get95allbarscounters">def _get_allBarsCounters</h3>
 <h3 id="def-95get95allbarscounterscomponents">def _get_allBarsCountersComponents</h3>
@@ -3033,82 +3033,82 @@ For capitals and smallcaps the main base name is used.</p>
 <h3 id="def-95get95angledleftmargin">def _get_angledLeftMargin</h3>
 <h3 id="def-95get95angledrightmargin">def _get_angledRightMargin</h3>
 <h3 id="def-95get95averagestemsize">def _get_averageStemSize</h3>
-<p>Answers the average float value of all stems found in the glyph.</p>
+<p>Answers the average float value of all stems found in the glyph.  </p>
 <h3 id="def-95get95bar">def _get_bar</h3>
-<p>Answers the left most bar as <b>Stem</b> instance.</p>
+<p>Answers the left most bar as <b>Stem</b> instance.  </p>
 <h3 id="def-95get95bars">def _get_bars</h3>
 <h3 id="def-95get95boundingbox">def _get_boundingBox</h3>
-<p>Answers the BoundingBox instance, made from Vertical and Horizontal
-instances. The BoundingBox just looks at outlines of the current glyph
-and not to components. The reason is that the BoundingBox keeps
-Vertical/Horizontal/PointContext instances, they should not be passed
-between glyphs. Use the 4-tuple of self.boundings to get the (x1, y1,
-x2, y2) as expanded rect of all nested components.</p>
+<p>Answers the BoundingBox instance, made from Vertical and Horizontal<br />
+instances. The BoundingBox just looks at outlines of the current glyph<br />
+and not to components. The reason is that the BoundingBox keeps<br />
+Vertical/Horizontal/PointContext instances, they should not be passed<br />
+between glyphs. Use the 4-tuple of self.boundings to get the (x1, y1,<br />
+x2, y2) as expanded rect of all nested components.  </p>
 <h3 id="def-95get95boundings">def _get_boundings</h3>
-<p>Answers the tuple bounding box for self, including the component
-proportions. The boundings is a 4-tuple of real values. Initially
-derived from the self.boundingBox (which is make from
-Vertical/Horizontal/PointContext instances) the self.boundings is more
-flexible, because it allows alteration. self.boundings is read-only.
-Expand the boundings by the boundings and offset of all components.</p>
+<p>Answers the tuple bounding box for self, including the component<br />
+proportions. The boundings is a 4-tuple of real values. Initially<br />
+derived from the self.boundingBox (which is make from<br />
+Vertical/Horizontal/PointContext instances) the self.boundings is more<br />
+flexible, because it allows alteration. self.boundings is read-only.<br />
+Expand the boundings by the boundings and offset of all components.  </p>
 <h3 id="def-95get95boundingsornone">def _get_boundingsOrNone</h3>
 <h3 id="def-95get95components_1">def _get_components</h3>
-<p>The @self.components@ method find all components of the glyph. If
-the cache @self._components @ already exists, then answer that.</p>
+<p>The @self.components@ method find all components of the glyph. If<br />
+the cache @self._components @ already exists, then answer that.  </p>
 <h3 id="def-95get95contours">def _get_contours</h3>
 <h3 id="def-95get95decomposedname">def _get_decomposedName</h3>
-<p>Decomposes the glyph name into a dict, holding name, baseName, a
-list of diacritics and a list of extensions, by splitting on
-glyph/accent name patterns. Exceptions to this method are ('Thorn' and
-'thorn').</p>
+<p>Decomposes the glyph name into a dict, holding name, baseName, a<br />
+list of diacritics and a list of extensions, by splitting on<br />
+glyph/accent name patterns. Exceptions to this method are ('Thorn' and<br />
+'thorn').  </p>
 <h3 id="def-95get95diagonal">def _get_diagonal</h3>
 <h3 id="def-95get95diagonalrun">def _get_diagonalRun</h3>
 <h3 id="def-95get95diagonalstems">def _get_diagonalStems</h3>
 <h3 id="def-95get95diagonals">def _get_diagonals</h3>
 <h3 id="def-95get95glyph">def _get_glyph</h3>
 <h3 id="def-95get95glyphpath">def _get_glyphPath</h3>
-<p>Cache the path for fast point inside/outside query.</p>
+<p>Cache the path for fast point inside/outside query.  </p>
 <h3 id="def-95get95hints">def _get_hints</h3>
 <h3 id="def-95get95horizontals">def _get_horizontals</h3>
 <h3 id="def-95get95inflectionpoints">def _get_inflectionPoints</h3>
 <h3 id="def-95get95inflections">def _get_inflections</h3>
 <h3 id="def-95get95leftbasemargin">def _get_leftBaseMargin</h3>
-<p>Answers the left angled margin of the base glyph (referred to by
-the component that has the same base name as self. If there is a
-"dotless"+self.name in the style, then take that as base for accent
-glyphs. This method assumes that the "dotless" right margin and width
-are synced with self. Use the global function syncDotless(glyph) to be
-sure.</p>
+<p>Answers the left angled margin of the base glyph (referred to by<br />
+the component that has the same base name as self. If there is a<br />
+"dotless"+self.name in the style, then take that as base for accent<br />
+glyphs. This method assumes that the "dotless" right margin and width<br />
+are synced with self. Use the global function syncDotless(glyph) to be<br />
+sure.  </p>
 <h3 id="def-95get95leftbeammargin">def _get_leftBeamMargin</h3>
 <h3 id="def-95get95leftmargin_1">def _get_leftMargin</h3>
-<p>Answers the leftMargin value. Use <b>self.boundingBox.minX</b> to
-get the <b>Vertical</b> instance that defines the left margin. This way
-the point contexts involved can be queried. If there are no outlines
-(<b>self.boundingBox is None</b>, then answer 0 by definition
-(compatible with RoboFont)). Answers default 0 if glyph does not exist
-in the style.</p>
+<p>Answers the leftMargin value. Use <b>self.boundingBox.minX</b> to<br />
+get the <b>Vertical</b> instance that defines the left margin. This way<br />
+the point contexts involved can be queried. If there are no outlines<br />
+(<b>self.boundingBox is None</b>, then answer 0 by definition<br />
+(compatible with RoboFont)). Answers default 0 if glyph does not exist<br />
+in the style.  </p>
 <h3 id="def-95get95maxbar">def _get_maxBar</h3>
-<p>Answers the maximal bar of all bars found in the glyph.</p>
+<p>Answers the maximal bar of all bars found in the glyph.  </p>
 <h3 id="def-95get95maxroundbar">def _get_maxRoundBar</h3>
-<p>Answers the maximum round bar of all round bars found in the
-glyph.</p>
+<p>Answers the maximum round bar of all round bars found in the<br />
+glyph.  </p>
 <h3 id="def-95get95maxroundstem">def _get_maxRoundStem</h3>
-<p>Answers the maximal round stem of all round stems found in the glyph.</p>
+<p>Answers the maximal round stem of all round stems found in the glyph.  </p>
 <h3 id="def-95get95maxstem">def _get_maxStem</h3>
-<p>Answers the maximal stem of all stems found in the glyph.</p>
+<p>Answers the maximal stem of all stems found in the glyph.  </p>
 <h3 id="def-95get95maxx">def _get_maxX</h3>
 <h3 id="def-95get95maxxpoint">def _get_maxXPoint</h3>
 <h3 id="def-95get95maxy">def _get_maxY</h3>
 <h3 id="def-95get95maxypoint">def _get_maxYPoint</h3>
 <h3 id="def-95get95minbar">def _get_minBar</h3>
-<p>Answers the minimal bar of all bars found in the glyph.</p>
+<p>Answers the minimal bar of all bars found in the glyph.  </p>
 <h3 id="def-95get95minroundbar">def _get_minRoundBar</h3>
-<p>Answers the minimum round bar of all round bars found in the
-glyph.</p>
+<p>Answers the minimum round bar of all round bars found in the<br />
+glyph.  </p>
 <h3 id="def-95get95minroundstem">def _get_minRoundStem</h3>
-<p>Answers the minimal round stem of all round stems found in the glyph.</p>
+<p>Answers the minimal round stem of all round stems found in the glyph.  </p>
 <h3 id="def-95get95minstem">def _get_minStem</h3>
-<p>Answers the minimal stem of all stems found in the glyph.</p>
+<p>Answers the minimal stem of all stems found in the glyph.  </p>
 <h3 id="def-95get95minx">def _get_minX</h3>
 <h3 id="def-95get95minxpoint">def _get_minXPoint</h3>
 <h3 id="def-95get95miny">def _get_minY</h3>
@@ -3117,58 +3117,58 @@ glyph.</p>
 <h3 id="def-95get95parent">def _get_parent</h3>
 <h3 id="def-95get95pointcontexts">def _get_pointContexts</h3>
 <h3 id="def-95get95relevantheight">def _get_relevantHeight</h3>
-<p>Answers the height of the group that fits best on the basename glyph of self.</p>
+<p>Answers the height of the group that fits best on the basename glyph of self.  </p>
 <h3 id="def-95get95rightbasemargin">def _get_rightBaseMargin</h3>
-<p>Answers the right angled margin of the base glyph (referred to by
-the component that has the same base name as self. If there is a
-"dotless"+self.name in the style, then take that as base for accent
-glyphs. This method assumed that the "dotless" left margin and width
-are synced with self. Use the global function syncDotless(glyph) to be
-sure.</p>
+<p>Answers the right angled margin of the base glyph (referred to by<br />
+the component that has the same base name as self. If there is a<br />
+"dotless"+self.name in the style, then take that as base for accent<br />
+glyphs. This method assumed that the "dotless" left margin and width<br />
+are synced with self. Use the global function syncDotless(glyph) to be<br />
+sure.  </p>
 <h3 id="def-95get95rightbeammargin">def _get_rightBeamMargin</h3>
 <h3 id="def-95get95rightmargin_1">def _get_rightMargin</h3>
-<p>Answers the rightMargin value. Use <b>self.boundingBox.maxX</b> to
-get the <b>Vertical</b> instance that defines the right margin. This
-way the point contexts involved can be queried. If there are no
-outlines (<b>self.boundingBox is None</b>, then answer 0 by definition
-(compatible with RoboFont)). Answers default 0 if glyph does not exist
-in the style.</p>
+<p>Answers the rightMargin value. Use <b>self.boundingBox.maxX</b> to<br />
+get the <b>Vertical</b> instance that defines the right margin. This<br />
+way the point contexts involved can be queried. If there are no<br />
+outlines (<b>self.boundingBox is None</b>, then answer 0 by definition<br />
+(compatible with RoboFont)). Answers default 0 if glyph does not exist<br />
+in the style.  </p>
 <h3 id="def-95get95roundbar">def _get_roundBar</h3>
-<p>Use the left round bar, if there are multiple in the glyph.</p>
+<p>Use the left round bar, if there are multiple in the glyph.  </p>
 <h3 id="def-95get95roundbars">def _get_roundBars</h3>
 <h3 id="def-95get95roundovershoots">def _get_roundOvershoots</h3>
 <h3 id="def-95get95roundstem">def _get_roundStem</h3>
-<p>Use the left round stem, if there are multiple in the glyph.</p>
+<p>Use the left round stem, if there are multiple in the glyph.  </p>
 <h3 id="def-95get95roundstems">def _get_roundStems</h3>
 <h3 id="def-95get95serifs">def _get_serifs</h3>
 <h3 id="def-95get95sidebearings">def _get_sideBearings</h3>
 <h3 id="def-95get95stem">def _get_stem</h3>
-<p>Answers the left most stem as <b>Stem</b> instance.</p>
+<p>Answers the left most stem as <b>Stem</b> instance.  </p>
 <h3 id="def-95get95stems">def _get_stems</h3>
 <h3 id="def-95get95straightroundbars">def _get_straightRoundBars</h3>
-<p>Bars that are round extreme on one side and straight on the other
-side.</p>
+<p>Bars that are round extreme on one side and straight on the other<br />
+side.  </p>
 <h3 id="def-95get95straightroundstems">def _get_straightRoundStems</h3>
-<p>Stems that are round extreme on one side and straight on the other
-side.</p>
+<p>Stems that are round extreme on one side and straight on the other<br />
+side.  </p>
 <h3 id="def-95get95style">def _get_style</h3>
 <h3 id="def-95get95terminals">def _get_terminals</h3>
-<p>Terminals are recognizes stem and bar endings where the point contexts are connected.</p>
+<p>Terminals are recognizes stem and bar endings where the point contexts are connected.  </p>
 <h3 id="def-95get95unitsperem">def _get_unitsPerEm</h3>
-<p>Answers the units per em for this font. Identical to
-<b>self.style.info.unitsPerEm</b>.</p>
+<p>Answers the units per em for this font. Identical to<br />
+<b>self.style.info.unitsPerEm</b>.  </p>
 <h3 id="def-95get95vacuumebox">def _get_vacuumeBox</h3>
-<p>The @getVacuumeBox@ answers the vacuumed box around all points
-that are located in the rectangle @(minX, minY, maxX, maxY)@. This way
-it is possible to get the vacuume box for all points, but also from a
-selection of points inside the given area, including the transformed
-component references. The tricky thing is what to do with letters like
-"V". We we'll also cut across the letter on x-height and takes these
-points into the comparison as well.</p>
+<p>The @getVacuumeBox@ answers the vacuumed box around all points<br />
+that are located in the rectangle @(minX, minY, maxX, maxY)@. This way<br />
+it is possible to get the vacuume box for all points, but also from a<br />
+selection of points inside the given area, including the transformed<br />
+component references. The tricky thing is what to do with letters like<br />
+"V". We we'll also cut across the letter on x-height and takes these<br />
+points into the comparison as well.  </p>
 <h3 id="def-95get95verticals">def _get_verticals</h3>
 <h3 id="def-95get95width_1">def _get_width</h3>
-<p>Answers the glyph width. This method is for compatibility reason,
-there is no <b>PointContext</b> involved.</p>
+<p>Answers the glyph width. This method is for compatibility reason,<br />
+there is no <b>PointContext</b> involved.  </p>
 <h3 id="def-95set95angledleftmargin">def _set_angledLeftMargin</h3>
 <h3 id="def-95set95angledrightmargin">def _set_angledRightMargin</h3>
 <h3 id="def-95set95leftbasemargin">def _set_leftBaseMargin</h3>
@@ -3188,365 +3188,365 @@ there is no <b>PointContext</b> involved.</p>
 <h3 id="property-allstemscounterscomponents">property allStemsCountersComponents</h3>
 <h3 id="property-allverticalcounters">property allVerticalCounters</h3>
 <h3 id="str-anchorname">str anchorName</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-anchory">str anchorY</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="property-angledboundings">property angledBoundings</h3>
 <h3 id="property-angledleftmargin">property angledLeftMargin</h3>
 <h3 id="property-angledrightmargin">property angledRightMargin</h3>
 <h3 id="property-averagestemsize">property averageStemSize</h3>
-<p>Answers the average float value of all stems found in the glyph.</p>
+<p>Answers the average float value of all stems found in the glyph.  </p>
 <h3 id="property-bar">property bar</h3>
-<p>Answers the left most bar as <b>Stem</b> instance.</p>
+<p>Answers the left most bar as <b>Stem</b> instance.  </p>
 <h3 id="property-bars">property bars</h3>
 <h3 id="property-boundingbox">property boundingBox</h3>
-<p>Answers the BoundingBox instance, made from Vertical and Horizontal
-instances. The BoundingBox just looks at outlines of the current glyph
-and not to components. The reason is that the BoundingBox keeps
-Vertical/Horizontal/PointContext instances, they should not be passed
-between glyphs. Use the 4-tuple of self.boundings to get the (x1, y1,
-x2, y2) as expanded rect of all nested components.</p>
+<p>Answers the BoundingBox instance, made from Vertical and Horizontal<br />
+instances. The BoundingBox just looks at outlines of the current glyph<br />
+and not to components. The reason is that the BoundingBox keeps<br />
+Vertical/Horizontal/PointContext instances, they should not be passed<br />
+between glyphs. Use the 4-tuple of self.boundings to get the (x1, y1,<br />
+x2, y2) as expanded rect of all nested components.  </p>
 <h3 id="property-boundings">property boundings</h3>
-<p>Answers the tuple bounding box for self, including the component
-proportions. The boundings is a 4-tuple of real values. Initially
-derived from the self.boundingBox (which is make from
-Vertical/Horizontal/PointContext instances) the self.boundings is more
-flexible, because it allows alteration. self.boundings is read-only.
-Expand the boundings by the boundings and offset of all components.</p>
+<p>Answers the tuple bounding box for self, including the component<br />
+proportions. The boundings is a 4-tuple of real values. Initially<br />
+derived from the self.boundingBox (which is make from<br />
+Vertical/Horizontal/PointContext instances) the self.boundings is more<br />
+flexible, because it allows alteration. self.boundings is read-only.<br />
+Expand the boundings by the boundings and offset of all components.  </p>
 <h3 id="property-boundingsornone">property boundingsOrNone</h3>
 <h3 id="property-components_1">property components</h3>
-<p>The @self.components@ method find all components of the glyph. If
-the cache @self._components @ already exists, then answer that.</p>
+<p>The @self.components@ method find all components of the glyph. If<br />
+the cache @self._components @ already exists, then answer that.  </p>
 <h3 id="property-composites">property composites</h3>
-<p>The @self.components@ method find all components of the glyph. If
-the cache @self._components @ already exists, then answer that.</p>
+<p>The @self.components@ method find all components of the glyph. If<br />
+the cache @self._components @ already exists, then answer that.  </p>
 <h3 id="property-contours">property contours</h3>
 <h3 id="def-coveredinblack">def coveredInBlack</h3>
-<p>The fast glyphPath test always answers <b>True</b> if the point is
-exact on the contour.  So we'll test the "+" shape (not a square) that
-is one unit around the point. All must be black to decide if the point
-<b>(x, y)</b> is black.</p>
+<p>The fast glyphPath test always answers <b>True</b> if the point is<br />
+exact on the contour.  So we'll test the "+" shape (not a square) that<br />
+is one unit around the point. All must be black to decide if the point<br />
+<b>(x, y)</b> is black.  </p>
 <h3 id="def-coveredinwhite">def coveredInWhite</h3>
-<p>The fast glyphPath test always answers <b>True</b> if the point is
-exact on the contour.  So we'll test the "+" shape (not square) that is
-one unit around the point. All of the 5 points must be black to decide
-if the point <b>(x, y)</b> is covered in black. Note that this gives a
-difference result than <b>not self.onBlack(x, y)</b>.</p>
+<p>The fast glyphPath test always answers <b>True</b> if the point is<br />
+exact on the contour.  So we'll test the "+" shape (not square) that is<br />
+one unit around the point. All of the 5 points must be black to decide<br />
+if the point <b>(x, y)</b> is covered in black. Note that this gives a<br />
+difference result than <b>not self.onBlack(x, y)</b>.  </p>
 <h3 id="property-decomposedname">property decomposedName</h3>
-<p>Decomposes the glyph name into a dict, holding name, baseName, a
-list of diacritics and a list of extensions, by splitting on
-glyph/accent name patterns. Exceptions to this method are ('Thorn' and
-'thorn').</p>
+<p>Decomposes the glyph name into a dict, holding name, baseName, a<br />
+list of diacritics and a list of extensions, by splitting on<br />
+glyph/accent name patterns. Exceptions to this method are ('Thorn' and<br />
+'thorn').  </p>
 <h3 id="property-diagonal">property diagonal</h3>
 <h3 id="property-diagonalrun">property diagonalRun</h3>
 <h3 id="property-diagonalstems">property diagonalStems</h3>
 <h3 id="property-diagonals">property diagonals</h3>
 <h3 id="def-findbars">def findBars</h3>
-<p>The @findBars@ method finds the bars in the current glyph and
-assigns them as dictionary to @self._bars@. Since we cannot use the CVT
-of the glyph (the analyzer is user to find these values, not to use
-them), we'll make an assumption about the pattern of vertices found. It
-is up to the caller to make sure that the current glyph is relevant in
-the kind of vertices that we are looking for.</p>
+<p>The @findBars@ method finds the bars in the current glyph and<br />
+assigns them as dictionary to @self._bars@. Since we cannot use the CVT<br />
+of the glyph (the analyzer is user to find these values, not to use<br />
+them), we'll make an assumption about the pattern of vertices found. It<br />
+is up to the caller to make sure that the current glyph is relevant in<br />
+the kind of vertices that we are looking for.  </p>
 <h3 id="def-findcomponents">def findComponents</h3>
-<p>The @findComponents@ method answers a list of @Component@ instances
-of the current glyph.</p>
+<p>The @findComponents@ method answers a list of @Component@ instances<br />
+of the current glyph.  </p>
 <h3 id="def-findcomposites">def findComposites</h3>
-<p>The @findComponents@ method answers a list of @Component@ instances
-of the current glyph.</p>
+<p>The @findComponents@ method answers a list of @Component@ instances<br />
+of the current glyph.  </p>
 <h3 id="def-finddiagonals">def findDiagonals</h3>
-<p>Find the dictionary of all point contexts, where the key is the
-normalized integer rounded angle.  Definition of a diagonal is that it
-cannot be a vertical or horizontal.</p>
+<p>Find the dictionary of all point contexts, where the key is the<br />
+normalized integer rounded angle.  Definition of a diagonal is that it<br />
+cannot be a vertical or horizontal.  </p>
 <h3 id="def-findhints">def findHints</h3>
-<p>The @findHints@ method finds the hints (previously floqMemes) in the
-current glyph and assigns them as dictionary to @self._hints@.</p>
+<p>The @findHints@ method finds the hints (previously floqMemes) in the<br />
+current glyph and assigns them as dictionary to @self._hints@.  </p>
 <h3 id="def-findhorizontals">def findHorizontals</h3>
-<p>The @findHorizontals@ method answers a list of horizontals where the
-main point is on curve.</p>
+<p>The @findHorizontals@ method answers a list of horizontals where the<br />
+main point is on curve.  </p>
 <h3 id="def-findinflections">def findInflections</h3>
 <h3 id="def-findnearestblack">def findNearestBlack</h3>
-<p>Make a horizontal beam, and measure the distances to the nearest black, if (x, y) is not black
-from itself.</p>
+<p>Make a horizontal beam, and measure the distances to the nearest black, if (x, y) is not black<br />
+from itself.  </p>
 <h3 id="def-findserifs">def findSerifs</h3>
-<p>The @findSerifs@ method finds serif structures in the glyph. A serif
-structure is defined as a continuous set of points (running from one
-point context to another point context), where the end points have one
-of the following characteristics:</p>
-<ul>
-<li>Start and end with a stem or bar</li>
-<li>Start with a stem or bar and end with a (local) extreme</li>
-<li>Start with a (local) extreme and end with a stem or bar</li>
+<p>The @findSerifs@ method finds serif structures in the glyph. A serif<br />
+structure is defined as a continuous set of points (running from one<br />
+point context to another point context), where the end points have one<br />
+of the following characteristics:  </p>
+<ul>  
+<li>Start and end with a stem or bar</li>  
+<li>Start with a stem or bar and end with a (local) extreme</li>  
+<li>Start with a (local) extreme and end with a stem or bar</li>  
 </ul>
 
 <h3 id="def-findsidebearings">def findSideBearings</h3>
-<p>Initialize the <b>self._boundingBox</b> and answer it for
-convenience of the caller.</p>
+<p>Initialize the <b>self._boundingBox</b> and answer it for<br />
+convenience of the caller.  </p>
 <h3 id="def-findstems">def findStems</h3>
-<p>The @findStems@ method finds the stems in the current glyph and assigns
-them as dictionary to @self._stems@. Since we cannot use the CVT of the
-glyph (the analyzer is used to find these values, not to use them),
-we'll make an assumption about the pattern of vertices found. It is up
-to the caller to make sure that the current glyph is relevant in the
-kind of vertices that we are looking for.<br/></p>
-<p>NOTE: An alternative approach could be to make a Fourier analysis of all
-stem distances of the font, and so find out which are likely to have a
-stem distance.</p>
-<p>Additionally the stems are found by manual hints in the glyph, as
-generated by the Hint Editor. Since these stem definitions not
-necessarily run from point to point (instead an interpolated location
-on a curve or straight line can be used), a special kind of
-PointContext is added there.</p>
+<p>The @findStems@ method finds the stems in the current glyph and assigns<br />
+them as dictionary to @self._stems@. Since we cannot use the CVT of the<br />
+glyph (the analyzer is used to find these values, not to use them),<br />
+we'll make an assumption about the pattern of vertices found. It is up<br />
+to the caller to make sure that the current glyph is relevant in the<br />
+kind of vertices that we are looking for.<br/>  </p>
+<p>NOTE: An alternative approach could be to make a Fourier analysis of all<br />
+stem distances of the font, and so find out which are likely to have a<br />
+stem distance.  </p>
+<p>Additionally the stems are found by manual hints in the glyph, as<br />
+generated by the Hint Editor. Since these stem definitions not<br />
+necessarily run from point to point (instead an interpolated location<br />
+on a curve or straight line can be used), a special kind of<br />
+PointContext is added there.  </p>
 <h3 id="def-findverticals">def findVerticals</h3>
-<p>The @findVerticals@ method answers a list of verticals.</p>
+<p>The @findVerticals@ method answers a list of verticals.  </p>
 <h3 id="def-get">def get</h3>
-<p>Dispatches the attribute name from hook method.</p>
+<p>Dispatches the attribute name from hook method.  </p>
 <h3 id="def-getanalyzer">def getAnalyzer</h3>
-<p>Answers the analyzer of the another glyph, through the parent,
-inside the font of self.</p>
+<p>Answers the analyzer of the another glyph, through the parent,<br />
+inside the font of self.  </p>
 <h3 id="def-getaveragexbyweightedscanlineydistance">def getAverageXByWeightedScanlineYDistance</h3>
-<p>Answers the averaged x value by measuring against black parts of a set
-of scan lines. This way we can calculate the average middle point of
-all scan lines, but weighted against the distance to the target py
-value. The more distance between the target and a scan line, the less
-the black of that line will contribute to the overall average. To
-optimize for speed, the distance to the next scan line is incremented
-getting further away from the starting value py. We calculate upwards
-to the yMax and downwards to the yMin. The contribution of black is
-reducing reciprocal quadratic by the vertical distance, so in practice
-the bottom bar of an L has (almost) no influence on the horizontal
-position of an anchor at the top of the stem. The exception to all
-this, is that is there is a single extreme point with an y that is
-equal to py, then this point is answered. We want o void, e.g. that the
-serifs of C, will answer the x value of that point.</p>
+<p>Answers the averaged x value by measuring against black parts of a set<br />
+of scan lines. This way we can calculate the average middle point of<br />
+all scan lines, but weighted against the distance to the target py<br />
+value. The more distance between the target and a scan line, the less<br />
+the black of that line will contribute to the overall average. To<br />
+optimize for speed, the distance to the next scan line is incremented<br />
+getting further away from the starting value py. We calculate upwards<br />
+to the yMax and downwards to the yMin. The contribution of black is<br />
+reducing reciprocal quadratic by the vertical distance, so in practice<br />
+the bottom bar of an L has (almost) no influence on the horizontal<br />
+position of an anchor at the top of the stem. The exception to all<br />
+this, is that is there is a single extreme point with an y that is<br />
+equal to py, then this point is answered. We want o void, e.g. that the<br />
+serifs of C, will answer the x value of that point.  </p>
 <h3 id="def-getglyph">def getGlyph</h3>
-<p>Answers the glyph with this name. Answers None if it does not
-exist.</p>
+<p>Answers the glyph with this name. Answers None if it does not<br />
+exist.  </p>
 <h3 id="def-getleftwhitescanlines">def getLeftWhiteScanLines</h3>
-<p>Answers the list of left white scan lines from <i>py1</i> to
-<i>py2</i> by <i>step</i>.</p>
+<p>Answers the list of left white scan lines from <i>py1</i> to<br />
+<i>py2</i> by <i>step</i>.  </p>
 <h3 id="def-getpointbynamedvalue">def getPointByNamedValue</h3>
-<p>Answers the value (as point, where x or y depend on the type of value)
-as indicated by name.</p>
+<p>Answers the value (as point, where x or y depend on the type of value)<br />
+as indicated by name.  </p>
 <h3 id="def-getpointcontext">def getPointContext</h3>
-<p>Answers the point context indicated by <i>index</i>. If the index
-is out of range, then answer <b>None</b>.</p>
+<p>Answers the point context indicated by <i>index</i>. If the index<br />
+is out of range, then answer <b>None</b>.  </p>
 <h3 id="def-getpointcontextbyid">def getPointContextByID</h3>
 <h3 id="def-getvacuumebox">def getVacuumeBox</h3>
-<p>The @getVacuumeBox@ answers the vacuumed box around all points
-that are located in the rectangle @(minX, minY, maxX, maxY)@. This way
-it is possible to get the vacuume box for all points, but also from a
-selection of points inside the given area, including the transformed
-component references. The tricky thing is what to do with letters like
-"V". We we'll also cut across the letter on x-height and takes these
-points into the comparison as well.</p>
+<p>The @getVacuumeBox@ answers the vacuumed box around all points<br />
+that are located in the rectangle @(minX, minY, maxX, maxY)@. This way<br />
+it is possible to get the vacuume box for all points, but also from a<br />
+selection of points inside the given area, including the transformed<br />
+component references. The tricky thing is what to do with letters like<br />
+"V". We we'll also cut across the letter on x-height and takes these<br />
+points into the comparison as well.  </p>
 <h3 id="property-glyph">property glyph</h3>
 <h3 id="property-glyphpath">property glyphPath</h3>
-<p>Cache the path for fast point inside/outside query.</p>
+<p>Cache the path for fast point inside/outside query.  </p>
 <h3 id="def-guessanchorposition">def guessAnchorPosition</h3>
-<p>Answers the guessed position (x, y) of the anchor for the glyph of this
-analyzer. There are several options, depending on the content of the
-position attribute. If the position is close to xheight or baseline,
-then answer that y position of the glyph. Otherwise the position is
-answered relative to what x-height would have been. This way the
-accents are assumed to be positioned on x-height and the other vertical
-positions are moving relative to that.</p>
-<p>The <i>position</i> attriibute is one of <b>(C.ANCHORTOP, C.ANCHOR_TOP,
-C.ANCHORBOTTOM, C.ANCHOR_BOTTOM, C.ANCHORCENTER, C.ANCHOR_CENTER)</b>.
-The “_” in the name indicates the position of an accent, which is on
-the opposite side of the glyph anchor.  For the horizontal position the
-context of the point is examined. Since we cannot count on the amount
-of points (a serif with many points would add more value to the
-average, where the shape itself may not be very different.  So the
-measure is done by counting the length and position of horizontal
-"scanlines" and their position to the target point.</p>
+<p>Answers the guessed position (x, y) of the anchor for the glyph of this<br />
+analyzer. There are several options, depending on the content of the<br />
+position attribute. If the position is close to xheight or baseline,<br />
+then answer that y position of the glyph. Otherwise the position is<br />
+answered relative to what x-height would have been. This way the<br />
+accents are assumed to be positioned on x-height and the other vertical<br />
+positions are moving relative to that.  </p>
+<p>The <i>position</i> attriibute is one of <b>(C.ANCHORTOP, C.ANCHOR_TOP,<br />
+C.ANCHORBOTTOM, C.ANCHOR_BOTTOM, C.ANCHORCENTER, C.ANCHOR_CENTER)</b>.<br />
+The “_” in the name indicates the position of an accent, which is on<br />
+the opposite side of the glyph anchor.  For the horizontal position the<br />
+context of the point is examined. Since we cannot count on the amount<br />
+of points (a serif with many points would add more value to the<br />
+average, where the shape itself may not be very different.  So the<br />
+measure is done by counting the length and position of horizontal<br />
+"scanlines" and their position to the target point.  </p>
 <h3 id="def-hascomponents">def hasComponents</h3>
 <h3 id="def-hascomposites">def hasComposites</h3>
 <h3 id="def-hascontours">def hasContours</h3>
-<p>Answers the boolean flag if the glyph has contours.</p>
+<p>Answers the boolean flag if the glyph has contours.  </p>
 <h3 id="property-hints">property hints</h3>
 <h3 id="property-horizontals">property horizontals</h3>
 <h3 id="def-infuzzrange">def inFuzzRange</h3>
 <h3 id="property-inflectionpoints">property inflectionPoints</h3>
 <h3 id="property-inflections">property inflections</h3>
 <h3 id="def-initialize">def initialize</h3>
-<p>Whoever gets called first, this will do the initializing of the
-cached values.</p>
+<p>Whoever gets called first, this will do the initializing of the<br />
+cached values.  </p>
 <h3 id="def-initializecomponents">def initializeComponents</h3>
 <h3 id="def-initializecomposites">def initializeComposites</h3>
 <h3 id="def-initializefuzz">def initializeFuzz</h3>
-<p>The @initializeFuzz@ method answers the @FUZZ@ value: the amount
-that values can be off and still be treated as the same.</p>
+<p>The @initializeFuzz@ method answers the @FUZZ@ value: the amount<br />
+that values can be off and still be treated as the same.  </p>
 <h3 id="def-initializepointcontexts">def initializePointContexts</h3>
 <h3 id="def-intersect">def intersect</h3>
-<p>The @intersect@ method test if the line from @pc0.p@ to @pc1.p@ is
-intersecting with other lines of the glyph. The amount of intersection
-is answered. Since the line also intersects with it’s own points, no
-intersection answers a set of two elements. If optional attribute
-<i>next<i> is @True@ (default is @False@ then test on the next point of
-the point contexts.</p>
+<p>The @intersect@ method test if the line from @pc0.p@ to @pc1.p@ is<br />
+intersecting with other lines of the glyph. The amount of intersection<br />
+is answered. Since the line also intersects with it’s own points, no<br />
+intersection answers a set of two elements. If optional attribute<br />
+<i>next<i> is @True@ (default is @False@ then test on the next point of<br />
+the point contexts.  </p>
 <h3 id="def-intersectline">def intersectLine</h3>
-<p>The @intersectLine@ method answers the intersection points of the
-glyph with the line @ (p1, p2)@.</p>
+<p>The @intersectLine@ method answers the intersection points of the<br />
+glyph with the line @ (p1, p2)@.  </p>
 <h3 id="def-intersectwithline">def intersectWithLine</h3>
 <h3 id="def-isascender">def isAscender</h3>
 <h3 id="def-isbar">def isBar</h3>
-<p>The <b>isBar</b> method takes the point contexts <i>pc0</i> and
-<i>pc1</i> to compare if the can be defined as a “bar”: if two point
-contexts have overlap in the horizontal directions if the line between
-them is entirely on black, and if the lines are not entirely covered in
-black.</p>
+<p>The <b>isBar</b> method takes the point contexts <i>pc0</i> and<br />
+<i>pc1</i> to compare if the can be defined as a “bar”: if two point<br />
+contexts have overlap in the horizontal directions if the line between<br />
+them is entirely on black, and if the lines are not entirely covered in<br />
+black.  </p>
 <h3 id="def-iscapital">def isCapital</h3>
-<p>http://www.fileformat.info/info/unicode/category/index.htm
-http://code.typesupply.com/browser/packages/defcon/trunk/Lib/defcon/objects/uniData.py</p>
+<p>http://www.fileformat.info/info/unicode/category/index.htm<br />
+http://code.typesupply.com/browser/packages/defcon/trunk/Lib/defcon/objects/uniData.py  </p>
 <h3 id="def-iscurve">def isCurve</h3>
 <h3 id="def-isdescender">def isDescender</h3>
 <h3 id="def-isdiagonalstem">def isDiagonalStem</h3>
-<p>Test on more or less parallel.</p>
+<p>Test on more or less parallel.  </p>
 <h3 id="def-isequalshape">def isEqualShape</h3>
-<p>Answers the boolean flag if glyph is the same as the glyph of
-self, ignoring the sidebearings and correcting the position of the
-bounding box on the left side bearing.</p>
+<p>Answers the boolean flag if glyph is the same as the glyph of<br />
+self, ignoring the sidebearings and correcting the position of the<br />
+bounding box on the left side bearing.  </p>
 <h3 id="def-ishorizontalcounter">def isHorizontalCounter</h3>
-<p>Answers the boolean flag is the connection between pc0.x and pc1.x
-is running entirely over white, and they both are some sort of
-horizontal extreme. The connection is a “white stem”.</p>
+<p>Answers the boolean flag is the connection between pc0.x and pc1.x<br />
+is running entirely over white, and they both are some sort of<br />
+horizontal extreme. The connection is a “white stem”.  </p>
 <h3 id="def-isinflection">def isInflection</h3>
-<p><doc>Answer the boolean flag if the point context has an inflection point between the current point and the next
-point.</doc></p>
+<p><doc>Answer the boolean flag if the point context has an inflection point between the current point and the next<br />
+point.</doc>  </p>
 <h3 id="def-islandscape">def isLandscape</h3>
-<p>Bars are supposed to be landscape within the FUZZ range. May not
-work in all extremely wide or narrow glyphs.</p>
+<p>Bars are supposed to be landscape within the FUZZ range. May not<br />
+work in all extremely wide or narrow glyphs.  </p>
 <h3 id="def-isoffcurve">def isOffCurve</h3>
 <h3 id="def-isoncurve">def isOnCurve</h3>
 <h3 id="def-isportrait">def isPortrait</h3>
-<p>Stems are supposed to be portrait  within the FUZZ range. May not
-work in all extremely wide or narrow glyphs. For round stems, always
-answer True.</p>
+<p>Stems are supposed to be portrait  within the FUZZ range. May not<br />
+work in all extremely wide or narrow glyphs. For round stems, always<br />
+answer True.  </p>
 <h3 id="def-isroundbar">def isRoundBar</h3>
 <h3 id="def-isroundstem">def isRoundStem</h3>
-<p>The <b>isRoundStem</b> method answers the boolean flag if the
-<i>pc0</i> and <i>pc1</i> define a round stem. This is @True@ if one of
-both of point contexts are extremes and if both, they must “bend” in
-the same direction.<br/> Also there should be overlap in horizontal
-direction and the point context should span black only.</p>
+<p>The <b>isRoundStem</b> method answers the boolean flag if the<br />
+<i>pc0</i> and <i>pc1</i> define a round stem. This is @True@ if one of<br />
+both of point contexts are extremes and if both, they must “bend” in<br />
+the same direction.<br/> Also there should be overlap in horizontal<br />
+direction and the point context should span black only.  </p>
 <h3 id="def-issamehorizontalroundextreme">def isSameHorizontalRoundExtreme</h3>
-<p>The @isSameHorizontalRoundExtreme@ method answers @True@ if
-<i>pc0</i> and <i>px2</i> are both left or both right round extremes.</p>
+<p>The @isSameHorizontalRoundExtreme@ method answers @True@ if<br />
+<i>pc0</i> and <i>px2</i> are both left or both right round extremes.  </p>
 <h3 id="def-issameverticalroundextreme">def isSameVerticalRoundExtreme</h3>
-<p>The <b>isSameVerticalRoundExtreme</b> method answers @True@ if
-<i>pc0</i> and <i>px2</i> are both top or both bottom round extremes.</p>
+<p>The <b>isSameVerticalRoundExtreme</b> method answers @True@ if<br />
+<i>pc0</i> and <i>px2</i> are both top or both bottom round extremes.  </p>
 <h3 id="def-issmallcap">def isSmallCap</h3>
 <h3 id="def-isstem">def isStem</h3>
-<p>The <b>isStem</b> method takes the point contexts <i>pc0</i> and
-<i>pc1</i> to compare if the can be defined as a “stem”: if they are
-not round extremes, if the two point contexts have overlap in the
-vertical directions (being part of the same window) that runs on black
-and if both lines are not entirely covered in black.</p>
+<p>The <b>isStem</b> method takes the point contexts <i>pc0</i> and<br />
+<i>pc1</i> to compare if the can be defined as a “stem”: if they are<br />
+not round extremes, if the two point contexts have overlap in the<br />
+vertical directions (being part of the same window) that runs on black<br />
+and if both lines are not entirely covered in black.  </p>
 <h3 id="def-isstraightroundbar">def isStraightRoundBar</h3>
-<p>Answers the boolean flag if one of (pc0, pc1) is a straight extreme
-and the other is a curve extreme.  The stem is only valid if the y of
-the curve extreme is between the y of the 2 vertical on-curves.</p>
+<p>Answers the boolean flag if one of (pc0, pc1) is a straight extreme<br />
+and the other is a curve extreme.  The stem is only valid if the y of<br />
+the curve extreme is between the y of the 2 vertical on-curves.  </p>
 <h3 id="def-isstraightroundstem">def isStraightRoundStem</h3>
-<p>Answers the boolean flag if one of (pc0, pc1) is a straight extreme
-and the other is a curve extreme.  The stem is only valid if the y of
-the curve extreme is between the y of the 2 vertical on-curves.</p>
+<p>Answers the boolean flag if one of (pc0, pc1) is a straight extreme<br />
+and the other is a curve extreme.  The stem is only valid if the y of<br />
+the curve extreme is between the y of the 2 vertical on-curves.  </p>
 <h3 id="def-isverticalcounter">def isVerticalCounter</h3>
-<p>Answers the boolean flag is the connection between pc0.y and pc1.y
-is running entirely over white, and they both are some sort of
-horizontal extreme. The connection is a “white bar”.</p>
+<p>Answers the boolean flag is the connection between pc0.y and pc1.y<br />
+is running entirely over white, and they both are some sort of<br />
+horizontal extreme. The connection is a “white bar”.  </p>
 <h3 id="def-isxheight">def isXHeight</h3>
 <h3 id="property-leftbasemargin">property leftBaseMargin</h3>
-<p>Answers the left angled margin of the base glyph (referred to by
-the component that has the same base name as self. If there is a
-"dotless"+self.name in the style, then take that as base for accent
-glyphs. This method assumes that the "dotless" right margin and width
-are synced with self. Use the global function syncDotless(glyph) to be
-sure.</p>
+<p>Answers the left angled margin of the base glyph (referred to by<br />
+the component that has the same base name as self. If there is a<br />
+"dotless"+self.name in the style, then take that as base for accent<br />
+glyphs. This method assumes that the "dotless" right margin and width<br />
+are synced with self. Use the global function syncDotless(glyph) to be<br />
+sure.  </p>
 <h3 id="property-leftbeammargin">property leftBeamMargin</h3>
 <h3 id="property-leftmargin_1">property leftMargin</h3>
-<p>Answers the leftMargin value. Use <b>self.boundingBox.minX</b> to
-get the <b>Vertical</b> instance that defines the left margin. This way
-the point contexts involved can be queried. If there are no outlines
-(<b>self.boundingBox is None</b>, then answer 0 by definition
-(compatible with RoboFont)). Answers default 0 if glyph does not exist
-in the style.</p>
+<p>Answers the leftMargin value. Use <b>self.boundingBox.minX</b> to<br />
+get the <b>Vertical</b> instance that defines the left margin. This way<br />
+the point contexts involved can be queried. If there are no outlines<br />
+(<b>self.boundingBox is None</b>, then answer 0 by definition<br />
+(compatible with RoboFont)). Answers default 0 if glyph does not exist<br />
+in the style.  </p>
 <h3 id="def-lineinblack">def lineInBlack</h3>
-<p>Answers the boolean flag if the line (including the points) is
-totally covered in black.</p>
+<p>Answers the boolean flag if the line (including the points) is<br />
+totally covered in black.  </p>
 <h3 id="def-lineinwhite">def lineInWhite</h3>
-<p>Answers the boolean flag if the line (including the points) is
-totally covered in white.</p>
+<p>Answers the boolean flag if the line (including the points) is<br />
+totally covered in white.  </p>
 <h3 id="def-lineonblack">def lineOnBlack</h3>
-<p>Answers the boolean flag if the line betweep <i>pc0</i> and
-<i>pc1</i> is entirely running on black, except for the end point. To
-test if the line is entirely on black, use <b>self.lineInBlack()</b>.
-If <i>pc1</i> is omitted, then test the line between <i>pc0</i> and the
-next point on the contour.</p>
+<p>Answers the boolean flag if the line betweep <i>pc0</i> and<br />
+<i>pc1</i> is entirely running on black, except for the end point. To<br />
+test if the line is entirely on black, use <b>self.lineInBlack()</b>.<br />
+If <i>pc1</i> is omitted, then test the line between <i>pc0</i> and the<br />
+next point on the contour.  </p>
 <h3 id="def-lineonwhite">def lineOnWhite</h3>
-<p>Answers the boolean flag if the line is just spanning white area.</p>
+<p>Answers the boolean flag if the line is just spanning white area.  </p>
 <h3 id="def-matchbar">def matchBar</h3>
-<p>Find the matching bar that is located on the y positions of p0 and
-p1.  Answers <b>None</b> if not matching stem can be found.</p>
+<p>Find the matching bar that is located on the y positions of p0 and<br />
+p1.  Answers <b>None</b> if not matching stem can be found.  </p>
 <h3 id="def-matchroundbar">def matchRoundBar</h3>
-<p>Find the matching round bar that is located on the y positions of
-p0 and p1. Answers <b>None</b> if not matching stem can be found.</p>
+<p>Find the matching round bar that is located on the y positions of<br />
+p0 and p1. Answers <b>None</b> if not matching stem can be found.  </p>
 <h3 id="def-matchroundstem">def matchRoundStem</h3>
-<p>Find the matching round stem that is located on the x positions of
-p0 and p1. Answers <b>None</b> if not matching stem can be found.</p>
+<p>Find the matching round stem that is located on the x positions of<br />
+p0 and p1. Answers <b>None</b> if not matching stem can be found.  </p>
 <h3 id="def-matchstem">def matchStem</h3>
-<p>Find the matching stem that is located on the x positions of p0 and
-p1. Answers <b>None</b> if not matching stem can be found.</p>
+<p>Find the matching stem that is located on the x positions of p0 and<br />
+p1. Answers <b>None</b> if not matching stem can be found.  </p>
 <h3 id="property-maxbar">property maxBar</h3>
-<p>Answers the maximal bar of all bars found in the glyph.</p>
+<p>Answers the maximal bar of all bars found in the glyph.  </p>
 <h3 id="property-maxroundbar">property maxRoundBar</h3>
-<p>Answers the maximum round bar of all round bars found in the
-glyph.</p>
+<p>Answers the maximum round bar of all round bars found in the<br />
+glyph.  </p>
 <h3 id="property-maxroundstem">property maxRoundStem</h3>
-<p>Answers the maximal round stem of all round stems found in the glyph.</p>
+<p>Answers the maximal round stem of all round stems found in the glyph.  </p>
 <h3 id="property-maxstem">property maxStem</h3>
-<p>Answers the maximal stem of all stems found in the glyph.</p>
+<p>Answers the maximal stem of all stems found in the glyph.  </p>
 <h3 id="property-maxx">property maxX</h3>
 <h3 id="property-maxxpoint">property maxXPoint</h3>
 <h3 id="property-maxy">property maxY</h3>
 <h3 id="property-maxypoint">property maxYPoint</h3>
 <h3 id="def-middlelineonblack">def middleLineOnBlack</h3>
 <h3 id="property-minbar">property minBar</h3>
-<p>Answers the minimal bar of all bars found in the glyph.</p>
+<p>Answers the minimal bar of all bars found in the glyph.  </p>
 <h3 id="property-minroundbar">property minRoundBar</h3>
-<p>Answers the minimum round bar of all round bars found in the
-glyph.</p>
+<p>Answers the minimum round bar of all round bars found in the<br />
+glyph.  </p>
 <h3 id="property-minroundstem">property minRoundStem</h3>
-<p>Answers the minimal round stem of all round stems found in the glyph.</p>
+<p>Answers the minimal round stem of all round stems found in the glyph.  </p>
 <h3 id="property-minstem">property minStem</h3>
-<p>Answers the minimal stem of all stems found in the glyph.</p>
+<p>Answers the minimal stem of all stems found in the glyph.  </p>
 <h3 id="property-minx">property minX</h3>
 <h3 id="property-minxpoint">property minXPoint</h3>
 <h3 id="property-miny">property minY</h3>
 <h3 id="property-minypoint">property minYPoint</h3>
 <h3 id="def-nointersect">def noIntersect</h3>
 <h3 id="def-onblack">def onBlack</h3>
-<p>Answers the boolean flag is the single point <b>(x, y)</b> is on
-black.</p>
+<p>Answers the boolean flag is the single point <b>(x, y)</b> is on<br />
+black.  </p>
 <h3 id="def-onwhite">def onWhite</h3>
-<p>Answers the boolean flag if the single point <b>(x, y)</b> is on
-white.</p>
+<p>Answers the boolean flag if the single point <b>(x, y)</b> is on<br />
+white.  </p>
 <h3 id="def-overlappinglinesinwindowonblack">def overlappingLinesInWindowOnBlack</h3>
-<p>Answers the boolean flag if the vertical span between <i>pc0</i>
-and <i>pc1</i> just spans black area, by stepping from a point on one
-line to a point on the other line. The trick is to fine the right
-points. If the line it too angled (e.g. under certain circumstances the
-line between the middle points is almost parallel to the line, then our
-trick with testing on the blackness the 4 one-unit points around a
-point fails, when the segments is tested close to one of the main
-points. So we need to test on from the middle of the overlapping window
-perpendicular to the other line.</p>
+<p>Answers the boolean flag if the vertical span between <i>pc0</i><br />
+and <i>pc1</i> just spans black area, by stepping from a point on one<br />
+line to a point on the other line. The trick is to fine the right<br />
+points. If the line it too angled (e.g. under certain circumstances the<br />
+line between the middle points is almost parallel to the line, then our<br />
+trick with testing on the blackness the 4 one-unit points around a<br />
+point fails, when the segments is tested close to one of the main<br />
+points. So we need to test on from the middle of the overlapping window<br />
+perpendicular to the other line.  </p>
 <h3 id="def-overlappinglinesinwindowonwhite">def overlappingLinesInWindowOnWhite</h3>
-<p>See <b>self.overlappingLinesInWindowOnBlack</b>.</p>
+<p>See <b>self.overlappingLinesInWindowOnBlack</b>.  </p>
 <h3 id="property-overlappingpoints">property overlappingPoints</h3>
 <h3 id="property-parent">property parent</h3>
 <h3 id="property-pointcontexts">property pointContexts</h3>
@@ -3555,335 +3555,335 @@ perpendicular to the other line.</p>
 <h3 id="def-pointonblack">def pointOnBlack</h3>
 <h3 id="def-pointonwhite">def pointOnWhite</h3>
 <h3 id="property-relevantheight">property relevantHeight</h3>
-<p>Answers the height of the group that fits best on the basename glyph of self.</p>
+<p>Answers the height of the group that fits best on the basename glyph of self.  </p>
 <h3 id="def-reset">def reset</h3>
 <h3 id="def-resetglyph">def resetGlyph</h3>
-<p>Initializes the GlyphAnalyzer from the no-overlap layer. We have
-to decide what happens if it exists but we don't know if it is up to
-date. How slow would it be always to generate a new no-overlap?</p>
+<p>Initializes the GlyphAnalyzer from the no-overlap layer. We have<br />
+to decide what happens if it exists but we don't know if it is up to<br />
+date. How slow would it be always to generate a new no-overlap?  </p>
 <h3 id="property-rightbasemargin">property rightBaseMargin</h3>
-<p>Answers the right angled margin of the base glyph (referred to by
-the component that has the same base name as self. If there is a
-"dotless"+self.name in the style, then take that as base for accent
-glyphs. This method assumed that the "dotless" left margin and width
-are synced with self. Use the global function syncDotless(glyph) to be
-sure.</p>
+<p>Answers the right angled margin of the base glyph (referred to by<br />
+the component that has the same base name as self. If there is a<br />
+"dotless"+self.name in the style, then take that as base for accent<br />
+glyphs. This method assumed that the "dotless" left margin and width<br />
+are synced with self. Use the global function syncDotless(glyph) to be<br />
+sure.  </p>
 <h3 id="property-rightbeammargin">property rightBeamMargin</h3>
 <h3 id="property-rightmargin_1">property rightMargin</h3>
-<p>Answers the rightMargin value. Use <b>self.boundingBox.maxX</b> to
-get the <b>Vertical</b> instance that defines the right margin. This
-way the point contexts involved can be queried. If there are no
-outlines (<b>self.boundingBox is None</b>, then answer 0 by definition
-(compatible with RoboFont)). Answers default 0 if glyph does not exist
-in the style.</p>
+<p>Answers the rightMargin value. Use <b>self.boundingBox.maxX</b> to<br />
+get the <b>Vertical</b> instance that defines the right margin. This<br />
+way the point contexts involved can be queried. If there are no<br />
+outlines (<b>self.boundingBox is None</b>, then answer 0 by definition<br />
+(compatible with RoboFont)). Answers default 0 if glyph does not exist<br />
+in the style.  </p>
 <h3 id="property-roundbar">property roundBar</h3>
-<p>Use the left round bar, if there are multiple in the glyph.</p>
+<p>Use the left round bar, if there are multiple in the glyph.  </p>
 <h3 id="property-roundbars">property roundBars</h3>
 <h3 id="property-roundovershoots">property roundOvershoots</h3>
 <h3 id="property-roundstem">property roundStem</h3>
-<p>Use the left round stem, if there are multiple in the glyph.</p>
+<p>Use the left round stem, if there are multiple in the glyph.  </p>
 <h3 id="property-roundstems">property roundStems</h3>
 <h3 id="property-serifs">property serifs</h3>
 <h3 id="def-show">def show</h3>
 <h3 id="property-sidebearings">property sideBearings</h3>
 <h3 id="def-spanblack">def spanBlack</h3>
-<p>The <b>spanBlack</b> method answers the boolean flag if the number
-of recursive steps between <i>pc0</i> and <i>pc1</i> are on black area
-of the glyph. If step is smaller than the distance between the points,
-then just check in the middle of the line.  The method does not check
-on the end points of the segment, allowing to test these separate
-through <b>self.onBlack</b> or <b>self.coveredInBlack</b>.</p>
+<p>The <b>spanBlack</b> method answers the boolean flag if the number<br />
+of recursive steps between <i>pc0</i> and <i>pc1</i> are on black area<br />
+of the glyph. If step is smaller than the distance between the points,<br />
+then just check in the middle of the line.  The method does not check<br />
+on the end points of the segment, allowing to test these separate<br />
+through <b>self.onBlack</b> or <b>self.coveredInBlack</b>.  </p>
 <h3 id="def-spanroundsonblack">def spanRoundsOnBlack</h3>
-<p>Answers the boolean flag if the line between <i>pc0</i> and
-<i>pc1</i> just spans black area.</p>
+<p>Answers the boolean flag if the line between <i>pc0</i> and<br />
+<i>pc1</i> just spans black area.  </p>
 <h3 id="def-spanwhite">def spanWhite</h3>
-<p>The <b>spanWhite</b> method answers the boolean flag if the number
-of recursive steps between <i>pc0</i> and <i>pc1</i> are all on white
-area of the glyph. If step is smaller than the distance between the
-points, then just check in the middle of the line.</p>
+<p>The <b>spanWhite</b> method answers the boolean flag if the number<br />
+of recursive steps between <i>pc0</i> and <i>pc1</i> are all on white<br />
+area of the glyph. If step is smaller than the distance between the<br />
+points, then just check in the middle of the line.  </p>
 <h3 id="property-stem">property stem</h3>
-<p>Answers the left most stem as <b>Stem</b> instance.</p>
+<p>Answers the left most stem as <b>Stem</b> instance.  </p>
 <h3 id="property-stems">property stems</h3>
 <h3 id="property-straightroundbars">property straightRoundBars</h3>
-<p>Bars that are round extreme on one side and straight on the other
-side.</p>
+<p>Bars that are round extreme on one side and straight on the other<br />
+side.  </p>
 <h3 id="property-straightroundstems">property straightRoundStems</h3>
-<p>Stems that are round extreme on one side and straight on the other
-side.</p>
+<p>Stems that are round extreme on one side and straight on the other<br />
+side.  </p>
 <h3 id="property-terminals">property terminals</h3>
-<p>Terminals are recognizes stem and bar endings where the point contexts are connected.</p>
+<p>Terminals are recognizes stem and bar endings where the point contexts are connected.  </p>
 <h3 id="property-unitsperem">property unitsPerEm</h3>
-<p>Answers the units per em for this font. Identical to
-<b>self.style.info.unitsPerEm</b>.</p>
+<p>Answers the units per em for this font. Identical to<br />
+<b>self.style.info.unitsPerEm</b>.  </p>
 <h3 id="property-vacuumebox">property vacuumeBox</h3>
-<p>The @getVacuumeBox@ answers the vacuumed box around all points
-that are located in the rectangle @(minX, minY, maxX, maxY)@. This way
-it is possible to get the vacuume box for all points, but also from a
-selection of points inside the given area, including the transformed
-component references. The tricky thing is what to do with letters like
-"V". We we'll also cut across the letter on x-height and takes these
-points into the comparison as well.</p>
+<p>The @getVacuumeBox@ answers the vacuumed box around all points<br />
+that are located in the rectangle @(minX, minY, maxX, maxY)@. This way<br />
+it is possible to get the vacuume box for all points, but also from a<br />
+selection of points inside the given area, including the transformed<br />
+component references. The tricky thing is what to do with letters like<br />
+"V". We we'll also cut across the letter on x-height and takes these<br />
+points into the comparison as well.  </p>
 <h3 id="def-validate">def validate</h3>
-<p>Run several tests on the glyph and answer a list with report
-lines.</p>
+<p>Run several tests on the glyph and answer a list with report<br />
+lines.  </p>
 <h3 id="property-verticals">property verticals</h3>
 <h3 id="class-horizontal">class Horizontal</h3>
-<p><doc>The <code>HOrizontal</code> class is a list of point contexts that share the same y-value
-self.append, self.x, self.y, self.alternates, self.minX, self.maxX
-</doc></p>
+<p><doc>The <code>HOrizontal</code> class is a list of point contexts that share the same y-value<br />
+self.append, self.x, self.y, self.alternates, self.minX, self.maxX<br />
+</doc>  </p>
 <h3 id="wrapper95descriptor-9595add9595">wrapper_descriptor __add__</h3>
-<p>x.<strong>add</strong>(y) &lt;==&gt; x+y</p>
+<p>x.<strong>add</strong>(y) &lt;==&gt; x+y  </p>
 <h3 id="class-9595class9595_2">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595contains9595">wrapper_descriptor __contains__</h3>
-<p>x.<strong>contains</strong>(y) &lt;==&gt; y in x</p>
+<p>x.<strong>contains</strong>(y) &lt;==&gt; y in x  </p>
 <h3 id="wrapper95descriptor-9595delattr9595_2">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="wrapper95descriptor-9595delitem9595">wrapper_descriptor __delitem__</h3>
-<p>x.<strong>delitem</strong>(y) &lt;==&gt; del x[y]</p>
+<p>x.<strong>delitem</strong>(y) &lt;==&gt; del x[y]  </p>
 <h3 id="wrapper95descriptor-9595delslice9595">wrapper_descriptor __delslice__</h3>
-<p>x.<strong>delslice</strong>(i, j) &lt;==&gt; del x[i:j]</p>
-<p>Use of negative indices is not supported.</p>
+<p>x.<strong>delslice</strong>(i, j) &lt;==&gt; del x[i:j]  </p>
+<p>Use of negative indices is not supported.  </p>
 <h3 id="dictproxy-9595dict9595_2">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595_1">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="wrapper95descriptor-9595eq9595">wrapper_descriptor __eq__</h3>
-<p>x.<strong>eq</strong>(y) &lt;==&gt; x==y</p>
+<p>x.<strong>eq</strong>(y) &lt;==&gt; x==y  </p>
 <h3 id="method95descriptor-9595format9595_2">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595ge9595">wrapper_descriptor __ge__</h3>
-<p>x.<strong>ge</strong>(y) &lt;==&gt; x&gt;=y</p>
+<p>x.<strong>ge</strong>(y) &lt;==&gt; x&gt;=y  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_2">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="method95descriptor-9595getitem9595">method_descriptor __getitem__</h3>
-<p>x.<strong>getitem</strong>(y) &lt;==&gt; x[y]</p>
+<p>x.<strong>getitem</strong>(y) &lt;==&gt; x[y]  </p>
 <h3 id="wrapper95descriptor-9595getslice9595">wrapper_descriptor __getslice__</h3>
-<p>x.<strong>getslice</strong>(i, j) &lt;==&gt; x[i:j]</p>
-<p>Use of negative indices is not supported.</p>
+<p>x.<strong>getslice</strong>(i, j) &lt;==&gt; x[i:j]  </p>
+<p>Use of negative indices is not supported.  </p>
 <h3 id="wrapper95descriptor-9595gt9595">wrapper_descriptor __gt__</h3>
-<p>x.<strong>gt</strong>(y) &lt;==&gt; x&gt;y</p>
+<p>x.<strong>gt</strong>(y) &lt;==&gt; x&gt;y  </p>
 <h3 id="9595hash9595">__hash__</h3>
 <h3 id="wrapper95descriptor-9595iadd9595">wrapper_descriptor __iadd__</h3>
-<p>x.<strong>iadd</strong>(y) &lt;==&gt; x+=y</p>
+<p>x.<strong>iadd</strong>(y) &lt;==&gt; x+=y  </p>
 <h3 id="wrapper95descriptor-9595imul9595">wrapper_descriptor __imul__</h3>
-<p>x.<strong>imul</strong>(y) &lt;==&gt; x*=y</p>
+<p>x.<strong>imul</strong>(y) &lt;==&gt; x*=y  </p>
 <h3 id="wrapper95descriptor-9595init9595">wrapper_descriptor __init__</h3>
-<p>x.<strong>init</strong>(...) initializes x; see help(type(x)) for signature</p>
+<p>x.<strong>init</strong>(...) initializes x; see help(type(x)) for signature  </p>
 <h3 id="wrapper95descriptor-9595iter9595">wrapper_descriptor __iter__</h3>
-<p>x.<strong>iter</strong>() &lt;==&gt; iter(x)</p>
+<p>x.<strong>iter</strong>() &lt;==&gt; iter(x)  </p>
 <h3 id="wrapper95descriptor-9595le9595">wrapper_descriptor __le__</h3>
-<p>x.<strong>le</strong>(y) &lt;==&gt; x&lt;=y</p>
+<p>x.<strong>le</strong>(y) &lt;==&gt; x&lt;=y  </p>
 <h3 id="wrapper95descriptor-9595len9595">wrapper_descriptor __len__</h3>
-<p>x.<strong>len</strong>() &lt;==&gt; len(x)</p>
+<p>x.<strong>len</strong>() &lt;==&gt; len(x)  </p>
 <h3 id="wrapper95descriptor-9595lt9595">wrapper_descriptor __lt__</h3>
-<p>x.<strong>lt</strong>(y) &lt;==&gt; x&lt;y</p>
+<p>x.<strong>lt</strong>(y) &lt;==&gt; x&lt;y  </p>
 <h3 id="str-9595module9595_2">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="wrapper95descriptor-9595mul9595">wrapper_descriptor __mul__</h3>
-<p>x.<strong>mul</strong>(n) &lt;==&gt; x*n</p>
+<p>x.<strong>mul</strong>(n) &lt;==&gt; x*n  </p>
 <h3 id="wrapper95descriptor-9595ne9595">wrapper_descriptor __ne__</h3>
-<p>x.<strong>ne</strong>(y) &lt;==&gt; x!=y</p>
+<p>x.<strong>ne</strong>(y) &lt;==&gt; x!=y  </p>
 <h3 id="builtin95function95or95method-9595new9595_2">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_2">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_2">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="def-9595repr9595_1">def __repr__</h3>
 <h3 id="method95descriptor-9595reversed9595">method_descriptor __reversed__</h3>
-<p>L.<strong>reversed</strong>() -- return a reverse iterator over the list</p>
+<p>L.<strong>reversed</strong>() -- return a reverse iterator over the list  </p>
 <h3 id="wrapper95descriptor-9595rmul9595">wrapper_descriptor __rmul__</h3>
-<p>x.<strong>rmul</strong>(n) &lt;==&gt; n*x</p>
+<p>x.<strong>rmul</strong>(n) &lt;==&gt; n*x  </p>
 <h3 id="wrapper95descriptor-9595setattr9595_2">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="wrapper95descriptor-9595setitem9595">wrapper_descriptor __setitem__</h3>
-<p>x.<strong>setitem</strong>(i, y) &lt;==&gt; x[i]=y</p>
+<p>x.<strong>setitem</strong>(i, y) &lt;==&gt; x[i]=y  </p>
 <h3 id="wrapper95descriptor-9595setslice9595">wrapper_descriptor __setslice__</h3>
-<p>x.<strong>setslice</strong>(i, j, y) &lt;==&gt; x[i:j]=y</p>
-<p>Use  of negative indices is not supported.</p>
+<p>x.<strong>setslice</strong>(i, j, y) &lt;==&gt; x[i:j]=y  </p>
+<p>Use  of negative indices is not supported.  </p>
 <h3 id="method95descriptor-9595sizeof9595_2">method_descriptor __sizeof__</h3>
-<p>L.<strong>sizeof</strong>() -- size of L in memory, in bytes</p>
+<p>L.<strong>sizeof</strong>() -- size of L in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_2">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_2">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_2">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95get95alternates">def _get_alternates</h3>
-<p>Answer the list of points that are not left or right extremes.</p>
+<p>Answer the list of points that are not left or right extremes.  </p>
 <h3 id="def-95get95maxxpoint_1">def _get_maxXPoint</h3>
 <h3 id="def-95get95minxpoint_1">def _get_minXPoint</h3>
 <h3 id="def-95get95x">def _get_x</h3>
 <h3 id="def-95get95y">def _get_y</h3>
 <h3 id="property-alternates">property alternates</h3>
-<p>Answer the list of points that are not left or right extremes.</p>
+<p>Answer the list of points that are not left or right extremes.  </p>
 <h3 id="def-append">def append</h3>
 <h3 id="method95descriptor-count">method_descriptor count</h3>
-<p>L.count(value) -&gt; integer -- return number of occurrences of value</p>
+<p>L.count(value) -&gt; integer -- return number of occurrences of value  </p>
 <h3 id="method95descriptor-extend">method_descriptor extend</h3>
-<p>L.extend(iterable) -- extend list by appending elements from the iterable</p>
+<p>L.extend(iterable) -- extend list by appending elements from the iterable  </p>
 <h3 id="method95descriptor-index">method_descriptor index</h3>
-<p>L.index(value, [start, [stop]]) -&gt; integer -- return first index of value.
-Raises ValueError if the value is not present.</p>
+<p>L.index(value, [start, [stop]]) -&gt; integer -- return first index of value.<br />
+Raises ValueError if the value is not present.  </p>
 <h3 id="method95descriptor-insert">method_descriptor insert</h3>
-<p>L.insert(index, object) -- insert object before index</p>
+<p>L.insert(index, object) -- insert object before index  </p>
 <h3 id="property-maxxpoint_1">property maxXPoint</h3>
 <h3 id="property-minxpoint_1">property minXPoint</h3>
 <h3 id="method95descriptor-pop">method_descriptor pop</h3>
-<p>L.pop([index]) -&gt; item -- remove and return item at index (default last).
-Raises IndexError if list is empty or index is out of range.</p>
+<p>L.pop([index]) -&gt; item -- remove and return item at index (default last).<br />
+Raises IndexError if list is empty or index is out of range.  </p>
 <h3 id="method95descriptor-remove">method_descriptor remove</h3>
-<p>L.remove(value) -- remove first occurrence of value.
-Raises ValueError if the value is not present.</p>
+<p>L.remove(value) -- remove first occurrence of value.<br />
+Raises ValueError if the value is not present.  </p>
 <h3 id="method95descriptor-reverse">method_descriptor reverse</h3>
-<p>L.reverse() -- reverse <em>IN PLACE</em></p>
+<p>L.reverse() -- reverse <em>IN PLACE</em>  </p>
 <h3 id="method95descriptor-sort">method_descriptor sort</h3>
-<p>L.sort(cmp=None, key=None, reverse=False) -- stable sort <em>IN PLACE</em>;
-cmp(x, y) -&gt; -1, 0, 1</p>
+<p>L.sort(cmp=None, key=None, reverse=False) -- stable sort <em>IN PLACE</em>;<br />
+cmp(x, y) -&gt; -1, 0, 1  </p>
 <h3 id="property-x">property x</h3>
 <h3 id="property-y">property y</h3>
 <h3 id="class-location">class Location</h3>
 <h3 id="class-nakedwrapper">class NakedWrapper</h3>
-<p>Simple wrapper to call RoboFont methods that assume a RoboFont wrapper, where we only
-have the defcon glyph available.</p>
+<p>Simple wrapper to call RoboFont methods that assume a RoboFont wrapper, where we only<br />
+have the defcon glyph available.  </p>
 <h3 id="class-9595class9595_3">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595delattr9595_3">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595_3">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595_2">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="method95descriptor-9595format9595_3">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_3">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="wrapper95descriptor-9595hash9595_2">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595_2">def __init__</h3>
 <h3 id="str-9595module9595_3">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595_3">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_3">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_3">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="wrapper95descriptor-9595repr9595_1">wrapper_descriptor __repr__</h3>
-<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)</p>
+<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
 <h3 id="wrapper95descriptor-9595setattr9595_3">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="method95descriptor-9595sizeof9595_3">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_3">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_3">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_3">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-naked">def naked</h3>
 <h3 id="class-pointanalyzer">class PointAnalyzer</h3>
 <h3 id="class-pointcontext">class PointContext</h3>
-<p><doc>The <code>PointContext</code> instance is a <code>Point</code> wrapper, that also takes the 3 points previous
-and next 3 points on the contour. The instance behaves like a normal point <i>p</i>, but additional information is
-available as interpreted from the point context in relation to the neighbor points. The total of 6 points is derived
-from the average construction of a serif, so it is possible to hold (and interpret) an entire serif sequence inside
-one point context.</doc></p>
+<p><doc>The <code>PointContext</code> instance is a <code>Point</code> wrapper, that also takes the 3 points previous<br />
+and next 3 points on the contour. The instance behaves like a normal point <i>p</i>, but additional information is<br />
+available as interpreted from the point context in relation to the neighbor points. The total of 6 points is derived<br />
+from the average construction of a serif, so it is possible to hold (and interpret) an entire serif sequence inside<br />
+one point context.</doc>  </p>
 <h3 id="int-fuzz_1">int FUZZ</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="int-parallel95tolerance">int PARALLEL_TOLERANCE</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="class-9595class9595_4">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595delattr9595_4">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595_4">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595_3">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="method95descriptor-9595format9595_4">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_4">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="wrapper95descriptor-9595hash9595_3">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595_3">def __init__</h3>
 <h3 id="str-9595module9595_4">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595_4">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_4">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_4">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="def-9595repr9595_2">def __repr__</h3>
 <h3 id="wrapper95descriptor-9595setattr9595_4">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="method95descriptor-9595sizeof9595_4">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_4">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_4">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_4">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95get95angle">def _get_angle</h3>
 <h3 id="def-95get95nextoncurvepoint">def _get_nextOnCurvePoint</h3>
 <h3 id="def-95get95normalizedangle">def _get_normalizedAngle</h3>
@@ -3894,59 +3894,59 @@ overrides the normal algorithm (and the outcome is cached).</p>
 <h3 id="def-95get95y_1">def _get_y</h3>
 <h3 id="property-angle">property angle</h3>
 <h3 id="def-distanceto">def distanceTo</h3>
-<p>Answer the distance of point <i>p</i> to the line of self.</p>
+<p>Answer the distance of point <i>p</i> to the line of self.  </p>
 <h3 id="def-getprojectedpoint">def getProjectedPoint</h3>
-<p>Answer the perpendicular projection of point <i>p</i> in the line segment of <b>self</b>.
-If the projection in not within the range of the line segment, then answer <b>None</b>.</p>
+<p>Answer the perpendicular projection of point <i>p</i> in the line segment of <b>self</b>.<br />
+If the projection in not within the range of the line segment, then answer <b>None</b>.  </p>
 <h3 id="def-getprojectedwindowline">def getProjectedWindowLine</h3>
-<p>Answer a tuple of one of the 4 points of <b>(self.p, self.p1, pc.p, pc.p1)</b>
-that has a projection on the other line and its projection point.
-If no projection exists in the window of the two line segments, then answer 
-<b>(None, None)</b>.</p>
+<p>Answer a tuple of one of the 4 points of <b>(self.p, self.p1, pc.p, pc.p1)</b><br />
+that has a projection on the other line and its projection point.<br />
+If no projection exists in the window of the two line segments, then answer <br />
+<b>(None, None)</b>.  </p>
 <h3 id="def-getprojectedwindowlines">def getProjectedWindowLines</h3>
-<p>Answer all 4 projected window lines. Note that some of them can be <b>None</b>
-is the projects falls outside the window (the overlapping area of a perpendicular line that 
-intersects with both line segments). This method is different from <b>self.getProjectedWindowLine</b>
-as that one only answers one of the projected points that is not <b>None</b>. For efficiency
-reasons only one of the projections is made there. For almost parallel lines all projects are
-more or less identical.</p>
+<p>Answer all 4 projected window lines. Note that some of them can be <b>None</b><br />
+is the projects falls outside the window (the overlapping area of a perpendicular line that <br />
+intersects with both line segments). This method is different from <b>self.getProjectedWindowLine</b><br />
+as that one only answers one of the projected points that is not <b>None</b>. For efficiency<br />
+reasons only one of the projections is made there. For almost parallel lines all projects are<br />
+more or less identical.  </p>
 <h3 id="def-inboundingbox">def inBoundingBox</h3>
 <h3 id="def-indiagonalwindow">def inDiagonalWindow</h3>
-<p>Answer the boolean flag if <i>pc</i> fits in the diagonal window of <b>self</b>.</p>
+<p>Answer the boolean flag if <i>pc</i> fits in the diagonal window of <b>self</b>.  </p>
 <h3 id="def-inhorizontalwindow">def inHorizontalWindow</h3>
-<p><doc>The <code>inHorizontalWindow</code> method checks if there is any overlap in X-direction to make
-the vertical comparison optically define as a "stem".</p>
-<p>Trueself.miny-------------self.maxy
-p.miny----------------p.maxy</p>
-<p>True   self.miny----------------------p.maxy
-p.miny---------------p.maxy</p>
-<p>True   self.miny------------self.maxy
-p.miny-------------------------------p.maxy</p>
-<p>False   self.miny----------self.maxy
-p.miny--------p.maxy</p>
-<p>False   self.miny--------self.maxy
- p.miny------------------------p.maxy</p>
+<p><doc>The <code>inHorizontalWindow</code> method checks if there is any overlap in X-direction to make<br />
+the vertical comparison optically define as a "stem".  </p>
+<p>Trueself.miny-------------self.maxy<br />
+p.miny----------------p.maxy  </p>
+<p>True   self.miny----------------------p.maxy<br />
+p.miny---------------p.maxy  </p>
+<p>True   self.miny------------self.maxy<br />
+p.miny-------------------------------p.maxy  </p>
+<p>False   self.miny----------self.maxy<br />
+p.miny--------p.maxy  </p>
+<p>False   self.miny--------self.maxy<br />
+ p.miny------------------------p.maxy  </p>
 <h3 id="def-inverticalwindow">def inVerticalWindow</h3>
-<p>The <code>inVerticalWindow</code> method checks if there is any overlap in X-direction to make
-the vertical comparison optically define as a "bar".</p>
-<p>Trueself.minx-------------self.maxx
-p.minx----------------p.maxx</p>
-<p>True   self.minx----------------------p.maxx
-p.minx---------------p.maxx</p>
-<p>True   self.minx------------self.maxx
-p.minx-------------------------------p.maxx</p>
-<p>False   self.minx----------self.maxx
-p.minx--------p.maxx</p>
-<p>False   self.minx--------self.maxx
- p.minx------------------------p.maxx</p>
+<p>The <code>inVerticalWindow</code> method checks if there is any overlap in X-direction to make<br />
+the vertical comparison optically define as a "bar".  </p>
+<p>Trueself.minx-------------self.maxx<br />
+p.minx----------------p.maxx  </p>
+<p>True   self.minx----------------------p.maxx<br />
+p.minx---------------p.maxx  </p>
+<p>True   self.minx------------self.maxx<br />
+p.minx-------------------------------p.maxx  </p>
+<p>False   self.minx----------self.maxx<br />
+p.minx--------p.maxx  </p>
+<p>False   self.minx--------self.maxx<br />
+ p.minx------------------------p.maxx  </p>
 <h3 id="def-isbottomroundextreme">def isBottomRoundExtreme</h3>
 <h3 id="def-iscurve_1">def isCurve</h3>
 <h3 id="def-isdiagonal">def isDiagonal</h3>
 <h3 id="def-isdown">def isDown</h3>
 <h3 id="def-ishorizontal">def isHorizontal</h3>
 <h3 id="def-ishorizontalextreme">def isHorizontalExtreme</h3>
-<p><doc>The <code>isHorizontalExtreme</code> method answers the boolean flag if the point context is an extreme
-(such as the side of an O).</doc></p>
+<p><doc>The <code>isHorizontalExtreme</code> method answers the boolean flag if the point context is an extreme<br />
+(such as the side of an O).</doc>  </p>
 <h3 id="def-ishorizontalroundextreme">def isHorizontalRoundExtreme</h3>
 <h3 id="def-isinflection_1">def isInflection</h3>
 <h3 id="def-isleft">def isLeft</h3>
@@ -3956,8 +3956,8 @@ p.minx--------p.maxx</p>
 <h3 id="def-isoffcurve_1">def isOffCurve</h3>
 <h3 id="def-isoncurve_1">def isOnCurve</h3>
 <h3 id="def-isparallel">def isParallel</h3>
-<p>Answer the boolean flag if self is parallel to <i>pc</i> point context. Optional attribute <i>tolerance</i>
-is the margin to interpret point context lines to be parallel. Default is <b>self.PARALLEL_TOLERANCE<b>.</p>
+<p>Answer the boolean flag if self is parallel to <i>pc</i> point context. Optional attribute <i>tolerance</i><br />
+is the margin to interpret point context lines to be parallel. Default is <b>self.PARALLEL_TOLERANCE<b>.  </p>
 <h3 id="def-isprevhorizontal">def isPrevHorizontal</h3>
 <h3 id="def-isprevvertical">def isPrevVertical</h3>
 <h3 id="def-isright">def isRight</h3>
@@ -3969,314 +3969,314 @@ is the margin to interpret point context lines to be parallel. Default is <b>sel
 <h3 id="def-isup">def isUp</h3>
 <h3 id="def-isvertical">def isVertical</h3>
 <h3 id="def-isverticalextreme">def isVerticalExtreme</h3>
-<p><doc>Is the point context a horizontal and extreme in y-direction?</doc></p>
+<p><doc>Is the point context a horizontal and extreme in y-direction?</doc>  </p>
 <h3 id="def-isverticalroundextreme">def isVerticalRoundExtreme</h3>
 <h3 id="def-maxx">def maxx</h3>
 <h3 id="def-maxy">def maxy</h3>
 <h3 id="def-middle">def middle</h3>
-<p>Answer the <b>Point</b> instance of the middle between the optional attribute points <i>p0</i> and <i>p1</i>.
-If the points are omitted, then use respectively <b>self.p</b> and <b>self.p1</b>.</p>
+<p>Answer the <b>Point</b> instance of the middle between the optional attribute points <i>p0</i> and <i>p1</i>.<br />
+If the points are omitted, then use respectively <b>self.p</b> and <b>self.p1</b>.  </p>
 <h3 id="def-minx">def minx</h3>
 <h3 id="def-miny">def miny</h3>
 <h3 id="property-nextoncurvepoint">property nextOnCurvePoint</h3>
 <h3 id="property-normalizedangle">property normalizedAngle</h3>
 <h3 id="property-prevoncurvepoint">property prevOnCurvePoint</h3>
 <h3 id="def-projectedonline">def projectedOnLine</h3>
-<p>Answer the point context <i>pc</i> projects on the line of <b>self</b>.</p>
+<p>Answer the point context <i>pc</i> projects on the line of <b>self</b>.  </p>
 <h3 id="property-rx">property rx</h3>
 <h3 id="property-ry">property ry</h3>
 <h3 id="property-x_1">property x</h3>
 <h3 id="property-y_1">property y</h3>
 <h3 id="int-spanstep">int SPANSTEP</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="dict-ss95accentscmb">dict SS_ACCENTSCMB</h3>
-<p>dict() -&gt; new empty dictionary
-dict(mapping) -&gt; new dictionary initialized from a mapping object's
-(key, value) pairs
-dict(iterable) -&gt; new dictionary initialized as if via:
-d = {}
-for k, v in iterable:
-d[k] = v
-dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
-in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<p>dict() -&gt; new empty dictionary<br />
+dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
+(key, value) pairs<br />
+dict(iterable) -&gt; new dictionary initialized as if via:<br />
+d = {}<br />
+for k, v in iterable:<br />
+d[k] = v<br />
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
+in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="class-stem">class Stem</h3>
-<p><doc>The <code>Stem</code> class instant takes the CVT related to this stem, and the  left and point <code>Vertical
-</code> instance that stem binds.</doc></p>
+<p><doc>The <code>Stem</code> class instant takes the CVT related to this stem, and the  left and point <code>Vertical<br />
+</code> instance that stem binds.</doc>  </p>
 <h3 id="int-fuzz_2">int FUZZ</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="class-9595class9595_5">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595delattr9595_5">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595_5">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595_4">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="method95descriptor-9595format9595_5">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_5">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="wrapper95descriptor-9595hash9595_4">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595_4">def __init__</h3>
 <h3 id="str-9595module9595_5">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595_5">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_5">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_5">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="def-9595repr9595_3">def __repr__</h3>
 <h3 id="wrapper95descriptor-9595setattr9595_5">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="method95descriptor-9595sizeof9595_5">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_5">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_5">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_5">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95get95nearestpoint">def _get_nearestPoint</h3>
-<p><doc>The <code>getNearestPoint</code> method gets the nearest point in the <code>self.point</code> point context
-to <code>self.parent</code>.</doc></p>
+<p><doc>The <code>getNearestPoint</code> method gets the nearest point in the <code>self.point</code> point context<br />
+to <code>self.parent</code>.</doc>  </p>
 <h3 id="def-95get95size">def _get_size</h3>
 <h3 id="def-95get95x_2">def _get_x</h3>
 <h3 id="def-95get95y_2">def _get_y</h3>
 <h3 id="def-addoffset">def addOffset</h3>
-<p>In case of multiple chained component reference, analyzer will add incremental offset this way.</p>
+<p>In case of multiple chained component reference, analyzer will add incremental offset this way.  </p>
 <h3 id="def-iscurve_2">def isCurve</h3>
 <h3 id="def-isinflection_2">def isInflection</h3>
-<p><doc>Answer the boolean flag if the point context has an inflection point between the current point and the next
-point.</doc></p>
+<p><doc>Answer the boolean flag if the point context has an inflection point between the current point and the next<br />
+point.</doc>  </p>
 <h3 id="def-isoffcurve_2">def isOffCurve</h3>
 <h3 id="def-isoncurve_2">def isOnCurve</h3>
 <h3 id="def-isterminal_1">def isTerminal</h3>
-<p>The stem is also a terminal, if the end of the parallel lines also are connected point contexts.</p>
+<p>The stem is also a terminal, if the end of the parallel lines also are connected point contexts.  </p>
 <h3 id="def-iswhite">def isWhite</h3>
 <h3 id="property-nearestpoint">property nearestPoint</h3>
-<p><doc>The <code>getNearestPoint</code> method gets the nearest point in the <code>self.point</code> point context
-to <code>self.parent</code>.</doc></p>
+<p><doc>The <code>getNearestPoint</code> method gets the nearest point in the <code>self.point</code> point context<br />
+to <code>self.parent</code>.</doc>  </p>
 <h3 id="property-x_2">property x</h3>
 <h3 id="property-y_2">property y</h3>
 <h3 id="classobj-tx">classobj TX</h3>
 <h3 id="int-undefined">int UNDEFINED</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="int-up">int UP</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
 <h3 id="class-vertical">class Vertical</h3>
-<p><doc>The <code>Vertical</code> class is a list of point contexts that share the same x-value
-self.append, self.x, self.y, self.alternates, self.minY, self.maxY
-</doc></p>
+<p><doc>The <code>Vertical</code> class is a list of point contexts that share the same x-value<br />
+self.append, self.x, self.y, self.alternates, self.minY, self.maxY<br />
+</doc>  </p>
 <h3 id="wrapper95descriptor-9595add9595_1">wrapper_descriptor __add__</h3>
-<p>x.<strong>add</strong>(y) &lt;==&gt; x+y</p>
+<p>x.<strong>add</strong>(y) &lt;==&gt; x+y  </p>
 <h3 id="class-9595class9595_6">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595contains9595_1">wrapper_descriptor __contains__</h3>
-<p>x.<strong>contains</strong>(y) &lt;==&gt; y in x</p>
+<p>x.<strong>contains</strong>(y) &lt;==&gt; y in x  </p>
 <h3 id="wrapper95descriptor-9595delattr9595_6">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="wrapper95descriptor-9595delitem9595_1">wrapper_descriptor __delitem__</h3>
-<p>x.<strong>delitem</strong>(y) &lt;==&gt; del x[y]</p>
+<p>x.<strong>delitem</strong>(y) &lt;==&gt; del x[y]  </p>
 <h3 id="wrapper95descriptor-9595delslice9595_1">wrapper_descriptor __delslice__</h3>
-<p>x.<strong>delslice</strong>(i, j) &lt;==&gt; del x[i:j]</p>
-<p>Use of negative indices is not supported.</p>
+<p>x.<strong>delslice</strong>(i, j) &lt;==&gt; del x[i:j]  </p>
+<p>Use of negative indices is not supported.  </p>
 <h3 id="dictproxy-9595dict9595_6">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595_5">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="wrapper95descriptor-9595eq9595_1">wrapper_descriptor __eq__</h3>
-<p>x.<strong>eq</strong>(y) &lt;==&gt; x==y</p>
+<p>x.<strong>eq</strong>(y) &lt;==&gt; x==y  </p>
 <h3 id="method95descriptor-9595format9595_6">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595ge9595_1">wrapper_descriptor __ge__</h3>
-<p>x.<strong>ge</strong>(y) &lt;==&gt; x&gt;=y</p>
+<p>x.<strong>ge</strong>(y) &lt;==&gt; x&gt;=y  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_6">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="method95descriptor-9595getitem9595_1">method_descriptor __getitem__</h3>
-<p>x.<strong>getitem</strong>(y) &lt;==&gt; x[y]</p>
+<p>x.<strong>getitem</strong>(y) &lt;==&gt; x[y]  </p>
 <h3 id="wrapper95descriptor-9595getslice9595_1">wrapper_descriptor __getslice__</h3>
-<p>x.<strong>getslice</strong>(i, j) &lt;==&gt; x[i:j]</p>
-<p>Use of negative indices is not supported.</p>
+<p>x.<strong>getslice</strong>(i, j) &lt;==&gt; x[i:j]  </p>
+<p>Use of negative indices is not supported.  </p>
 <h3 id="wrapper95descriptor-9595gt9595_1">wrapper_descriptor __gt__</h3>
-<p>x.<strong>gt</strong>(y) &lt;==&gt; x&gt;y</p>
+<p>x.<strong>gt</strong>(y) &lt;==&gt; x&gt;y  </p>
 <h3 id="9595hash9595_1">__hash__</h3>
 <h3 id="wrapper95descriptor-9595iadd9595_1">wrapper_descriptor __iadd__</h3>
-<p>x.<strong>iadd</strong>(y) &lt;==&gt; x+=y</p>
+<p>x.<strong>iadd</strong>(y) &lt;==&gt; x+=y  </p>
 <h3 id="wrapper95descriptor-9595imul9595_1">wrapper_descriptor __imul__</h3>
-<p>x.<strong>imul</strong>(y) &lt;==&gt; x*=y</p>
+<p>x.<strong>imul</strong>(y) &lt;==&gt; x*=y  </p>
 <h3 id="wrapper95descriptor-9595init9595_1">wrapper_descriptor __init__</h3>
-<p>x.<strong>init</strong>(...) initializes x; see help(type(x)) for signature</p>
+<p>x.<strong>init</strong>(...) initializes x; see help(type(x)) for signature  </p>
 <h3 id="wrapper95descriptor-9595iter9595_1">wrapper_descriptor __iter__</h3>
-<p>x.<strong>iter</strong>() &lt;==&gt; iter(x)</p>
+<p>x.<strong>iter</strong>() &lt;==&gt; iter(x)  </p>
 <h3 id="wrapper95descriptor-9595le9595_1">wrapper_descriptor __le__</h3>
-<p>x.<strong>le</strong>(y) &lt;==&gt; x&lt;=y</p>
+<p>x.<strong>le</strong>(y) &lt;==&gt; x&lt;=y  </p>
 <h3 id="wrapper95descriptor-9595len9595_1">wrapper_descriptor __len__</h3>
-<p>x.<strong>len</strong>() &lt;==&gt; len(x)</p>
+<p>x.<strong>len</strong>() &lt;==&gt; len(x)  </p>
 <h3 id="wrapper95descriptor-9595lt9595_1">wrapper_descriptor __lt__</h3>
-<p>x.<strong>lt</strong>(y) &lt;==&gt; x&lt;y</p>
+<p>x.<strong>lt</strong>(y) &lt;==&gt; x&lt;y  </p>
 <h3 id="str-9595module9595_6">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="wrapper95descriptor-9595mul9595_1">wrapper_descriptor __mul__</h3>
-<p>x.<strong>mul</strong>(n) &lt;==&gt; x*n</p>
+<p>x.<strong>mul</strong>(n) &lt;==&gt; x*n  </p>
 <h3 id="wrapper95descriptor-9595ne9595_1">wrapper_descriptor __ne__</h3>
-<p>x.<strong>ne</strong>(y) &lt;==&gt; x!=y</p>
+<p>x.<strong>ne</strong>(y) &lt;==&gt; x!=y  </p>
 <h3 id="builtin95function95or95method-9595new9595_6">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_6">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_6">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="def-9595repr9595_4">def __repr__</h3>
 <h3 id="method95descriptor-9595reversed9595_1">method_descriptor __reversed__</h3>
-<p>L.<strong>reversed</strong>() -- return a reverse iterator over the list</p>
+<p>L.<strong>reversed</strong>() -- return a reverse iterator over the list  </p>
 <h3 id="wrapper95descriptor-9595rmul9595_1">wrapper_descriptor __rmul__</h3>
-<p>x.<strong>rmul</strong>(n) &lt;==&gt; n*x</p>
+<p>x.<strong>rmul</strong>(n) &lt;==&gt; n*x  </p>
 <h3 id="wrapper95descriptor-9595setattr9595_6">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="wrapper95descriptor-9595setitem9595_1">wrapper_descriptor __setitem__</h3>
-<p>x.<strong>setitem</strong>(i, y) &lt;==&gt; x[i]=y</p>
+<p>x.<strong>setitem</strong>(i, y) &lt;==&gt; x[i]=y  </p>
 <h3 id="wrapper95descriptor-9595setslice9595_1">wrapper_descriptor __setslice__</h3>
-<p>x.<strong>setslice</strong>(i, j, y) &lt;==&gt; x[i:j]=y</p>
-<p>Use  of negative indices is not supported.</p>
+<p>x.<strong>setslice</strong>(i, j, y) &lt;==&gt; x[i:j]=y  </p>
+<p>Use  of negative indices is not supported.  </p>
 <h3 id="method95descriptor-9595sizeof9595_6">method_descriptor __sizeof__</h3>
-<p>L.<strong>sizeof</strong>() -- size of L in memory, in bytes</p>
+<p>L.<strong>sizeof</strong>() -- size of L in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_6">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_6">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_6">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95get95alternates_1">def _get_alternates</h3>
-<p>Answer the list of points that are not top or bottom.</p>
+<p>Answer the list of points that are not top or bottom.  </p>
 <h3 id="def-95get95maxypoint_1">def _get_maxYPoint</h3>
 <h3 id="def-95get95minypoint_1">def _get_minYPoint</h3>
 <h3 id="def-95get95x_3">def _get_x</h3>
 <h3 id="def-95get95y_3">def _get_y</h3>
 <h3 id="property-alternates_1">property alternates</h3>
-<p>Answer the list of points that are not top or bottom.</p>
+<p>Answer the list of points that are not top or bottom.  </p>
 <h3 id="def-append_1">def append</h3>
 <h3 id="method95descriptor-count_1">method_descriptor count</h3>
-<p>L.count(value) -&gt; integer -- return number of occurrences of value</p>
+<p>L.count(value) -&gt; integer -- return number of occurrences of value  </p>
 <h3 id="method95descriptor-extend_1">method_descriptor extend</h3>
-<p>L.extend(iterable) -- extend list by appending elements from the iterable</p>
+<p>L.extend(iterable) -- extend list by appending elements from the iterable  </p>
 <h3 id="method95descriptor-index_1">method_descriptor index</h3>
-<p>L.index(value, [start, [stop]]) -&gt; integer -- return first index of value.
-Raises ValueError if the value is not present.</p>
+<p>L.index(value, [start, [stop]]) -&gt; integer -- return first index of value.<br />
+Raises ValueError if the value is not present.  </p>
 <h3 id="method95descriptor-insert_1">method_descriptor insert</h3>
-<p>L.insert(index, object) -- insert object before index</p>
+<p>L.insert(index, object) -- insert object before index  </p>
 <h3 id="property-maxypoint_1">property maxYPoint</h3>
 <h3 id="property-minypoint_1">property minYPoint</h3>
 <h3 id="method95descriptor-pop_1">method_descriptor pop</h3>
-<p>L.pop([index]) -&gt; item -- remove and return item at index (default last).
-Raises IndexError if list is empty or index is out of range.</p>
+<p>L.pop([index]) -&gt; item -- remove and return item at index (default last).<br />
+Raises IndexError if list is empty or index is out of range.  </p>
 <h3 id="method95descriptor-remove_1">method_descriptor remove</h3>
-<p>L.remove(value) -- remove first occurrence of value.
-Raises ValueError if the value is not present.</p>
+<p>L.remove(value) -- remove first occurrence of value.<br />
+Raises ValueError if the value is not present.  </p>
 <h3 id="method95descriptor-reverse_1">method_descriptor reverse</h3>
-<p>L.reverse() -- reverse <em>IN PLACE</em></p>
+<p>L.reverse() -- reverse <em>IN PLACE</em>  </p>
 <h3 id="method95descriptor-sort_1">method_descriptor sort</h3>
-<p>L.sort(cmp=None, key=None, reverse=False) -- stable sort <em>IN PLACE</em>;
-cmp(x, y) -&gt; -1, 0, 1</p>
+<p>L.sort(cmp=None, key=None, reverse=False) -- stable sort <em>IN PLACE</em>;<br />
+cmp(x, y) -&gt; -1, 0, 1  </p>
 <h3 id="property-x_3">property x</h3>
 <h3 id="property-y_3">property y</h3>
 <h3 id="class-verticalcounter">class VerticalCounter</h3>
 <h3 id="class-width">class Width</h3>
 <h3 id="dict-9595builtins9595">dict __builtins__</h3>
-<p>dict() -&gt; new empty dictionary
-dict(mapping) -&gt; new dictionary initialized from a mapping object's
-(key, value) pairs
-dict(iterable) -&gt; new dictionary initialized as if via:
-d = {}
-for k, v in iterable:
-d[k] = v
-dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
-in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<p>dict() -&gt; new empty dictionary<br />
+dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
+(key, value) pairs<br />
+dict(iterable) -&gt; new dictionary initialized as if via:<br />
+d = {}<br />
+for k, v in iterable:<br />
+d[k] = v<br />
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
+in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="9595doc9595">__doc__</h3>
 <h3 id="str-9595file9595">str __file__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595name9595">str __name__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595package9595">str __package__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-getcomponents">def getComponents</h3>
-<p>Answer the list of components for this glyph.</p>
+<p>Answer the list of components for this glyph.  </p>
 <h3 id="def-getpoints">def getPoints</h3>
               
             </div>

@@ -900,106 +900,106 @@
               
                 <h1 id="toolboxmathematics">toolbox.mathematics</h1>
 <h3 id="dict-9595builtins9595">dict __builtins__</h3>
-<p>dict() -&gt; new empty dictionary
-dict(mapping) -&gt; new dictionary initialized from a mapping object's
-(key, value) pairs
-dict(iterable) -&gt; new dictionary initialized as if via:
-d = {}
-for k, v in iterable:
-d[k] = v
-dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
-in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<p>dict() -&gt; new empty dictionary<br />
+dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
+(key, value) pairs<br />
+dict(iterable) -&gt; new dictionary initialized as if via:<br />
+d = {}<br />
+for k, v in iterable:<br />
+d[k] = v<br />
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
+in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="9595doc9595">__doc__</h3>
 <h3 id="str-9595file9595">str __file__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595name9595">str __name__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595package9595">str __package__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-distance">def distance</h3>
-<p>Answers the distance between the points.</p>
+<p>Answers the distance between the points.  </p>
 <h3 id="def-dotproduct">def dotProduct</h3>
 <h3 id="def-insidecircle">def insideCircle</h3>
-<pre><code>&gt;&gt;&gt; insideCircle(1, 1, 5)
+<pre><code>&gt;&gt;&gt; insideCircle(1, 1, 5)  
 True
 
-&gt;&gt;&gt; insideCircle(3, 3, 3)
+&gt;&gt;&gt; insideCircle(3, 3, 3)  
 False
 </code></pre>
 <h3 id="def-intersection">def intersection</h3>
-<p>Returns 2D intersection point if it exists. Otherwise (None, None,
-None) is answered. Different from the RoboFont intersection tool, we
-intersect on infinite line lengths. See also:</p>
-<p>http://en.wikipedia.org/wiki/Line-line_intersection</p>
+<p>Returns 2D intersection point if it exists. Otherwise (None, None,<br />
+None) is answered. Different from the RoboFont intersection tool, we<br />
+intersect on infinite line lengths. See also:  </p>
+<p>http://en.wikipedia.org/wiki/Line-line_intersection  </p>
 <h3 id="def-isbetween">def isBetween</h3>
-<p>Checks if point is on line between line endpoints. Uses epsilon
-margin for float values, can be substituted by zero for integer
-values.</p>
+<p>Checks if point is on line between line endpoints. Uses epsilon<br />
+margin for float values, can be substituted by zero for integer<br />
+values.  </p>
 <h3 id="def-iseven">def isEven</h3>
-<pre><code>&gt;&gt;&gt; isEven(2)
+<pre><code>&gt;&gt;&gt; isEven(2)  
 True
 
-&gt;&gt;&gt; isEven(1)
+&gt;&gt;&gt; isEven(1)  
 False
 </code></pre>
 <h3 id="def-isodd">def isOdd</h3>
-<pre><code>&gt;&gt;&gt; isOdd(1)
+<pre><code>&gt;&gt;&gt; isOdd(1)  
 True
 
-&gt;&gt;&gt; isOdd(2)
+&gt;&gt;&gt; isOdd(2)  
 False
 </code></pre>
 <h3 id="def-lucasrange">def lucasRange</h3>
-<p>Answers the range stem widths for interpolation, according to
-Lucas’ formula.</p>
-<p>http://www.lucasfonts.com/about/interpolation-theory/
-a = minStem
-z = maxStem
-n = number of interpolated stems, including the two masters
-minN = optional minimum value if normalizing, e.g. 0-1000
-maxN = optional maximum value if normalizing</p>
-<p>print Mathematics.lucasRange(32, 212, 8)
-[32, 42, 55, 72, 94, 124, 162, 212]</p>
-<p>print Mathematics.lucasRange(32, 212, 8, 0, 1000)
-[0, 55, 127, 222, 346, 508, 721, 1000]</p>
-<p>print Mathematics.lucasRange(32, 212, 8, 100, 200)
-[100, 106, 113, 122, 135, 151, 172, 200]</p>
+<p>Answers the range stem widths for interpolation, according to<br />
+Lucas’ formula.  </p>
+<p>http://www.lucasfonts.com/about/interpolation-theory/<br />
+a = minStem<br />
+z = maxStem<br />
+n = number of interpolated stems, including the two masters<br />
+minN = optional minimum value if normalizing, e.g. 0-1000<br />
+maxN = optional maximum value if normalizing  </p>
+<p>print Mathematics.lucasRange(32, 212, 8)<br />
+[32, 42, 55, 72, 94, 124, 162, 212]  </p>
+<p>print Mathematics.lucasRange(32, 212, 8, 0, 1000)<br />
+[0, 55, 127, 222, 346, 508, 721, 1000]  </p>
+<p>print Mathematics.lucasRange(32, 212, 8, 100, 200)<br />
+[100, 106, 113, 122, 135, 151, 172, 200]  </p>
 <h3 id="def-normalize">def normalize</h3>
 <h3 id="classmethod-normalizedvector">classmethod normalizedVector</h3>
-<p>classmethod(function) -&gt; method</p>
-<p>Convert a function to be a class method.</p>
-<p>A class method receives the class as implicit first argument,
-just like an instance method receives the instance.
-To declare a class method, use this idiom:</p>
-<p>class C:
-  def f(cls, arg1, arg2, ...): ...
-  f = classmethod(f)</p>
-<p>It can be called either on the class (e.g. C.f()) or on an instance
-(e.g. C().f()).  The instance is ignored except for its class.
-If a class method is called for a derived class, the derived class
-object is passed as the implied first argument.</p>
-<p>Class methods are different than C++ or Java static methods.
-If you want those, see the staticmethod builtin.</p>
+<p>classmethod(function) -&gt; method  </p>
+<p>Convert a function to be a class method.  </p>
+<p>A class method receives the class as implicit first argument,<br />
+just like an instance method receives the instance.<br />
+To declare a class method, use this idiom:  </p>
+<p>class C:<br />
+  def f(cls, arg1, arg2, ...): ...<br />
+  f = classmethod(f)  </p>
+<p>It can be called either on the class (e.g. C.f()) or on an instance<br />
+(e.g. C().f()).  The instance is ignored except for its class.<br />
+If a class method is called for a derived class, the derived class<br />
+object is passed as the implied first argument.  </p>
+<p>Class methods are different than C++ or Java static methods.<br />
+If you want those, see the staticmethod builtin.  </p>
 <h3 id="def-point2d">def point2D</h3>
-<p>Answer the 2D origin as combination of p and offset.</p>
+<p>Answer the 2D origin as combination of p and offset.  </p>
 <h3 id="def-point2line">def point2Line</h3>
-<p>Answers the distance from point <i>(px, py)</i> to line <i>((x1,
-y1), (x2, y2))</i>.</p>
+<p>Answers the distance from point <i>(px, py)</i> to line <i>((x1,<br />
+y1), (x2, y2))</i>.  </p>
 <h3 id="def-pointprojectedonline">def pointProjectedOnLine</h3>
-<p>Answers the projected point <b>(px, py)</b> on line <b>((x1, y1), (x2,
-y2))</b>.  Answers <b>(x1, y1)</b> if there is not distance between the two
-points of the line.</p>
+<p>Answers the projected point <b>(px, py)</b> on line <b>((x1, y1), (x2,<br />
+y2))</b>.  Answers <b>(x1, y1)</b> if there is not distance between the two<br />
+points of the line.  </p>
 <h3 id="def-scalepointbyvector">def scalePointByVector</h3>
 <h3 id="def-scalexy">def scalexy</h3>
 <h3 id="def-squaredistance">def squareDistance</h3>
-<p>Answers the square of the distance for relative comparison and to
-save the time of the <b>sqrt</b>.</p>
+<p>Answers the square of the distance for relative comparison and to<br />
+save the time of the <b>sqrt</b>.  </p>
 <h3 id="def-test">def test</h3>
 <h3 id="def-vectorlength">def vectorLength</h3>
               

@@ -886,103 +886,103 @@
               
                 <h1 id="toolboxdating">toolbox.dating</h1>
 <h3 id="classobj-datetime">classobj DateTime</h3>
-<p>The <code>newdate</code> method answers a new <code>DateTime</code> instance. If the <code>date</code> is
-<code>None</code>, then answer <code>None</code>. If <code>date</code> is a string, then convert to
-<code>DateTime</code>. Check on the month and day boundaries.<br/>
-<list>
-<li>Initialize the current date if the <code>date</code> is equal to <code>now</code></li>
-<li>Initialize on first day of the week if year and week are defined</li>
-<li>Initialize from existing datetime if "dt" is defined</li>
-<li>Initialize from <code>date_time</code> string, date and time separated by white space.</li>
-<li>Initialize from <code>date</code> string (identical to the result of self.date) if defined</li>
-<li>Initialize from <code>time</code> string (identical to the result of self.time) if defined</li>
-<li>Initialize from (year, month, day) if all of them are defined.</li>
-<li>Otherwise raise an error</li>
-</list>
-If the <code>trimvalues</code> attribute is set to <code>False</code> (default is <code>True</code>) then the
-input values of the date are <em>not</em> trimmed to their minimum and maximum values. This checking is done in
-context for days in months and years.<br/>
-<python>
-DateTime(date='now')
-DateTime(date='2008-11-23')
-DateTime(date='2008-11-23', time='23:11')
-DateTime(date='2008-11-23', time='23:11:22')
-DateTime(2008, 11, 23)
-DateTime(2008, 11, 23, 23, 11, 22, 0)
-DateTime(2008, week=23)
-</python></p>
+<p>The <code>newdate</code> method answers a new <code>DateTime</code> instance. If the <code>date</code> is<br />
+<code>None</code>, then answer <code>None</code>. If <code>date</code> is a string, then convert to<br />
+<code>DateTime</code>. Check on the month and day boundaries.<br/><br />
+<list><br />
+<li>Initialize the current date if the <code>date</code> is equal to <code>now</code></li><br />
+<li>Initialize on first day of the week if year and week are defined</li><br />
+<li>Initialize from existing datetime if "dt" is defined</li><br />
+<li>Initialize from <code>date_time</code> string, date and time separated by white space.</li><br />
+<li>Initialize from <code>date</code> string (identical to the result of self.date) if defined</li><br />
+<li>Initialize from <code>time</code> string (identical to the result of self.time) if defined</li><br />
+<li>Initialize from (year, month, day) if all of them are defined.</li><br />
+<li>Otherwise raise an error</li><br />
+</list><br />
+If the <code>trimvalues</code> attribute is set to <code>False</code> (default is <code>True</code>) then the<br />
+input values of the date are <em>not</em> trimmed to their minimum and maximum values. This checking is done in<br />
+context for days in months and years.<br/><br />
+<python><br />
+DateTime(date='now')<br />
+DateTime(date='2008-11-23')<br />
+DateTime(date='2008-11-23', time='23:11')<br />
+DateTime(date='2008-11-23', time='23:11:22')<br />
+DateTime(2008, 11, 23)<br />
+DateTime(2008, 11, 23, 23, 11, 22, 0)<br />
+DateTime(2008, week=23)<br />
+</python>  </p>
 <h3 id="classobj-duration">classobj Duration</h3>
-<p>The <code>Duration</code> class contains a duration in time. It can e.g. be used to add to a <code>DateTime</code>
-instance with a new date as result.<br/>
-<python>
-Duration(3)<br/>
-Duration(seconds=10)<br/>
-Duration(td=timedelta)<br/>
-</python>
-All common arithmetic applies to a <code>Duration</code> instance. 
-<python>
-d = Duration(3)<br/>
-d * 3 is a duration of 6 days.<br/>
-</python></p>
+<p>The <code>Duration</code> class contains a duration in time. It can e.g. be used to add to a <code>DateTime</code><br />
+instance with a new date as result.<br/><br />
+<python><br />
+Duration(3)<br/><br />
+Duration(seconds=10)<br/><br />
+Duration(td=timedelta)<br/><br />
+</python><br />
+All common arithmetic applies to a <code>Duration</code> instance. <br />
+<python><br />
+d = Duration(3)<br/><br />
+d * 3 is a duration of 6 days.<br/><br />
+</python>  </p>
 <h3 id="classobj-period">classobj Period</h3>
-<p>The <code>Duration</code> class contains a duration in time. It can e.g. be used to add to a <code>DateTime</code>
-instance with a new date as result.<br/>
-<python>
-Duration(3)<br/>
-Duration(seconds=10)<br/>
-Duration(td=timedelta)<br/>
-</python>
-All common arithmetic applies to a <code>Duration</code> instance. 
-<python>
-d = Duration(3)<br/>
-d * 3 is a duration of 6 days.<br/>
-</python></p>
+<p>The <code>Duration</code> class contains a duration in time. It can e.g. be used to add to a <code>DateTime</code><br />
+instance with a new date as result.<br/><br />
+<python><br />
+Duration(3)<br/><br />
+Duration(seconds=10)<br/><br />
+Duration(td=timedelta)<br/><br />
+</python><br />
+All common arithmetic applies to a <code>Duration</code> instance. <br />
+<python><br />
+d = Duration(3)<br/><br />
+d * 3 is a duration of 6 days.<br/><br />
+</python>  </p>
 <h3 id="dict-9595builtins9595">dict __builtins__</h3>
-<p>dict() -&gt; new empty dictionary
-dict(mapping) -&gt; new dictionary initialized from a mapping object's
-(key, value) pairs
-dict(iterable) -&gt; new dictionary initialized as if via:
-d = {}
-for k, v in iterable:
-d[k] = v
-dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
-in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<p>dict() -&gt; new empty dictionary<br />
+dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
+(key, value) pairs<br />
+dict(iterable) -&gt; new dictionary initialized as if via:<br />
+d = {}<br />
+for k, v in iterable:<br />
+d[k] = v<br />
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
+in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="9595doc9595">__doc__</h3>
 <h3 id="str-9595file9595">str __file__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595name9595">str __name__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595package9595">str __package__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-checkdatetime">def checkdatetime</h3>
-<p>The <code>checkdatetime</code> answers the <code>date</code> if it is a date. If date is None, then answer None. If
-date is a string, then convert to DateTime. Check on the month and day boundaries. Answer the same type that date
-was. Note that we do not check if date was already a DateTime. This method is especially made to set database fields
-with dates, where that None will result in a NULL value for that field.</p>
+<p>The <code>checkdatetime</code> answers the <code>date</code> if it is a date. If date is None, then answer None. If<br />
+date is a string, then convert to DateTime. Check on the month and day boundaries. Answer the same type that date<br />
+was. Note that we do not check if date was already a DateTime. This method is especially made to set database fields<br />
+with dates, where that None will result in a NULL value for that field.  </p>
 <h3 id="def-leapyear">def leapyear</h3>
 <h3 id="builtin95function95or95method-localtime">builtin_function_or_method localtime</h3>
-<p>localtime([seconds]) -&gt; (tm_year,tm_mon,tm_mday,tm_hour,tm_min,
-  tm_sec,tm_wday,tm_yday,tm_isdst)</p>
-<p>Convert seconds since the Epoch to a time tuple expressing local time.
-When 'seconds' is not passed in, convert the current time instead.</p>
+<p>localtime([seconds]) -&gt; (tm_year,tm_mon,tm_mday,tm_hour,tm_min,<br />
+  tm_sec,tm_wday,tm_yday,tm_isdst)  </p>
+<p>Convert seconds since the Epoch to a time tuple expressing local time.<br />
+When 'seconds' is not passed in, convert the current time instead.  </p>
 <h3 id="def-monthdays">def monthdays</h3>
 <h3 id="def-newdatetime">def newdatetime</h3>
-<p>The <code>newdate</code> method answers a new <code>DateTime</code> instance. If the <code>date</code> is
-<code>None</code>, then answer <code>None</code>. If <code>date</code> is a string, then convert to
-<code>DateTime</code>. Check on the month and day boundaries.<br/></p>
+<p>The <code>newdate</code> method answers a new <code>DateTime</code> instance. If the <code>date</code> is<br />
+<code>None</code>, then answer <code>None</code>. If <code>date</code> is a string, then convert to<br />
+<code>DateTime</code>. Check on the month and day boundaries.<br/>  </p>
 <h3 id="def-timestamplong">def timestampLong</h3>
-<p>The <code>timestampLong</code> method answers the timestamp. This may not be unique.</p>
+<p>The <code>timestampLong</code> method answers the timestamp. This may not be unique.  </p>
 <h3 id="def-uniqueid">def uniqueId</h3>
-<p>The <code>uniqueId</code> method answers a unique number (as string) of <code>size</code> length concatenated
-timestamps. Minimum length of the number is 18 digits, or else string will not be unique.</p>
+<p>The <code>uniqueId</code> method answers a unique number (as string) of <code>size</code> length concatenated<br />
+timestamps. Minimum length of the number is 18 digits, or else string will not be unique.  </p>
 <h3 id="def-uniquelong">def uniqueLong</h3>
-<p>The <code>uniqueLong</code> method answers a unique number (as string) of 18 digits.</p>
+<p>The <code>uniqueLong</code> method answers a unique number (as string) of 18 digits.  </p>
               
             </div>
           </div>

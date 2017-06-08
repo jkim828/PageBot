@@ -962,132 +962,132 @@
                 <h1 id="fonttoolboxobjectsfamily">fonttoolbox.objects.family</h1>
 <h3 id="class-family">class Family</h3>
 <h3 id="class-font">class Font</h3>
-<p>Storage of font information while composing the pages.</p>
-<pre><code>&gt;&gt;&gt; import pagebot
-&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath
-&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')
-&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font
-&gt;&gt;&gt; f = Font(p, install=False)
-&gt;&gt;&gt; f.name
+<p>Storage of font information while composing the pages.  </p>
+<pre><code>&gt;&gt;&gt; import pagebot  
+&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath  
+&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')  
+&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font  
+&gt;&gt;&gt; f = Font(p, install=False)  
+&gt;&gt;&gt; f.name  
 u'BitcountGrid'
 
-&gt;&gt;&gt; len(f)
+&gt;&gt;&gt; len(f)  
 101
 
-&gt;&gt;&gt; f.keys()[-1]
+&gt;&gt;&gt; f.keys()[-1]  
 'y'
 
-&gt;&gt;&gt; f.axes
+&gt;&gt;&gt; f.axes  
 {'rndi': (0.0, 1000.0, 1000.0), 'rndo': (0.0, 1000.0, 1000.0), 'sqri': (0.0, 1000.0, 1000.0), 'sqro': (0.0, 1000.0, 1000.0), 'line': (0.0, 1000.0, 1000.0), 'open': (0.0, 0.0, 1000.0), 'wght': (0.0, 500.0, 1000.0)}
 
-&gt;&gt;&gt; variables = f.variables
-&gt;&gt;&gt; features = f.features
-&gt;&gt;&gt; f.groups
-&gt;&gt;&gt; f.designSpace
+&gt;&gt;&gt; variables = f.variables  
+&gt;&gt;&gt; features = f.features  
+&gt;&gt;&gt; f.groups  
+&gt;&gt;&gt; f.designSpace  
 {}
 
-&gt;&gt;&gt; f.install()
+&gt;&gt;&gt; f.install()  
 u'BitcountGrid-SingleCircleSquare-wght500rndi1000rndo1000line1000sqri1000sqro1000open0'
 
 &gt;&gt;&gt; f.save()
 </code></pre>
 <h3 id="class-glyph95class">class GLYPH_CLASS</h3>
-<p>The Glyph class wraps the glyph structure of a TrueType Font and
-extracts data from the raw glyph such as point sequence and type.</p>
-<pre><code>&gt;&gt;&gt; import pagebot
-&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath
-&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')
-&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font
-&gt;&gt;&gt; f = Font(p, install=False)
-&gt;&gt;&gt; g = f['a']
-&gt;&gt;&gt; g.name
+<p>The Glyph class wraps the glyph structure of a TrueType Font and<br />
+extracts data from the raw glyph such as point sequence and type.  </p>
+<pre><code>&gt;&gt;&gt; import pagebot  
+&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath  
+&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')  
+&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font  
+&gt;&gt;&gt; f = Font(p, install=False)  
+&gt;&gt;&gt; g = f['a']  
+&gt;&gt;&gt; g.name  
 'a'
 
-&gt;&gt;&gt; len(g.points)
+&gt;&gt;&gt; len(g.points)  
 40
 
-&gt;&gt;&gt; g.points[-1].onCurve
+&gt;&gt;&gt; g.points[-1].onCurve  
 False
 
-&gt;&gt;&gt; contours = g.contours
-&gt;&gt;&gt; len(contours)
+&gt;&gt;&gt; contours = g.contours  
+&gt;&gt;&gt; len(contours)  
 2
 
-&gt;&gt;&gt; path = g.path
-&gt;&gt;&gt; print path
+&gt;&gt;&gt; path = g.path  
+&gt;&gt;&gt; print path  
 &lt;BezierPath&gt;
 
-&gt;&gt;&gt; nspath = path.getNSBezierPath()
-&gt;&gt;&gt; bounds = nspath.bounds()
-&gt;&gt;&gt; print bounds
+&gt;&gt;&gt; nspath = path.getNSBezierPath()  
+&gt;&gt;&gt; bounds = nspath.bounds()  
+&gt;&gt;&gt; print bounds  
 &lt;NSRect origin=&lt;NSPoint x=38.0 y=-15.0&gt; size=&lt;NSSize width=948.0 height=1037.0&gt;&gt;
 
-&gt;&gt;&gt; len(bounds)
+&gt;&gt;&gt; len(bounds)  
 2
 
-&gt;&gt;&gt; len(bounds[0])
+&gt;&gt;&gt; len(bounds[0])  
 2
 
-&gt;&gt;&gt; len(bounds[1])
+&gt;&gt;&gt; len(bounds[1])  
 2
 
-&gt;&gt;&gt; print bounds[0]
+&gt;&gt;&gt; print bounds[0]  
 &lt;NSPoint x=38.0 y=-15.0&gt;
 
-&gt;&gt;&gt; bounds[0][0]
+&gt;&gt;&gt; bounds[0][0]  
 38.0
 </code></pre>
 <h3 id="class-9595class9595">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595delattr9595">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="method95descriptor-9595format9595">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="def-9595getitem9595">def __getitem__</h3>
 <h3 id="wrapper95descriptor-9595hash9595">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595">def __init__</h3>
-<p>Initialize the TTFont, for which Font is a wrapper. Default is to
-install the font in DrawBot.</p>
-<p>self.name is supported, in case the caller wants to use a different
-name than the DrawBot installing name.</p>
+<p>Initialize the TTFont, for which Font is a wrapper. Default is to<br />
+install the font in DrawBot.  </p>
+<p>self.name is supported, in case the caller wants to use a different<br />
+name than the DrawBot installing name.  </p>
 <h3 id="def-9595len9595">def __len__</h3>
 <h3 id="str-9595module9595">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="def-9595repr9595">def __repr__</h3>
 <h3 id="wrapper95descriptor-9595setattr9595">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="method95descriptor-9595sizeof9595">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95get95axes">def _get_axes</h3>
 <h3 id="def-95get95designspace">def _get_designSpace</h3>
 <h3 id="def-95get95features">def _get_features</h3>
@@ -1098,61 +1098,61 @@ overrides the normal algorithm (and the outcome is cached).</p>
 <h3 id="property-designspace">property designSpace</h3>
 <h3 id="property-features">property features</h3>
 <h3 id="def-getfeaturedstring">def getFeaturedString</h3>
-<p>Compile the string s into glyph names, corresponding to the
-settings in featureSettings.</p>
+<p>Compile the string s into glyph names, corresponding to the<br />
+settings in featureSettings.  </p>
 <h3 id="property-groups">property groups</h3>
 <h3 id="def-install">def install</h3>
-<p>Install the font in DrawBot, if not already there. Answer the
-DrawBot name.</p>
+<p>Install the font in DrawBot, if not already there. Answer the<br />
+DrawBot name.  </p>
 <h3 id="property-kerning">property kerning</h3>
 <h3 id="def-keys">def keys</h3>
 <h3 id="property-variables">property variables</h3>
 <h3 id="dict-9595builtins9595">dict __builtins__</h3>
-<p>dict() -&gt; new empty dictionary
-dict(mapping) -&gt; new dictionary initialized from a mapping object's
-(key, value) pairs
-dict(iterable) -&gt; new dictionary initialized as if via:
-d = {}
-for k, v in iterable:
-d[k] = v
-dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
-in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<p>dict() -&gt; new empty dictionary<br />
+dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
+(key, value) pairs<br />
+dict(iterable) -&gt; new dictionary initialized as if via:<br />
+d = {}<br />
+for k, v in iterable:<br />
+d[k] = v<br />
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
+in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="9595doc9595">__doc__</h3>
 <h3 id="str-9595file9595">str __file__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595name9595">str __name__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595package9595">str __package__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-getfamilies">def getFamilies</h3>
-<p>Construct a dictionary of Family instances from dictionary familyPaths. It is assumed that all paths
-are valied to font files. Force key in family from dictionary familyPaths, instead of font.info.styleName.
-What is best practice? Keep as option?</p>
-<p>Example format of familyPaths dictionary:
-LIB_PATH = '/Library/Fonts/'
-SOME_SYSTEM_FONTS = {</p>
+<p>Construct a dictionary of Family instances from dictionary familyPaths. It is assumed that all paths<br />
+are valied to font files. Force key in family from dictionary familyPaths, instead of font.info.styleName.<br />
+What is best practice? Keep as option?  </p>
+<p>Example format of familyPaths dictionary:<br />
+LIB_PATH = '/Library/Fonts/'<br />
+SOME_SYSTEM_FONTS = {  </p>
 <h1 id="lets-try-some-plain-osx-system-fonts-while-they-are-still-there-not-variable-yet">Let's try some plain OSX system fonts, while they are still there (not variable yet).</h1>
-<p>'Georgia': dict(regular=LIB_PATH+'Georgia.ttf', bold=LIB_PATH+'Georgia Bold.ttf', 
-italic=LIB_PATH+'Georgia Italic.ttf', boldItalic=LIB_PATH+'Georgia Bold Italic.ttf'),
-'Verdana': dict(regular=LIB_PATH+'Verdana.ttf', bold=LIB_PATH+'Verdana Bold.ttf', 
-italic=LIB_PATH+'Verdana Italic.ttf', boldItalic=LIB_PATH+'Verdana Bold Italic.ttf'),
-}</p>
+<p>'Georgia': dict(regular=LIB_PATH+'Georgia.ttf', bold=LIB_PATH+'Georgia Bold.ttf', <br />
+italic=LIB_PATH+'Georgia Italic.ttf', boldItalic=LIB_PATH+'Georgia Bold Italic.ttf'),<br />
+'Verdana': dict(regular=LIB_PATH+'Verdana.ttf', bold=LIB_PATH+'Verdana Bold.ttf', <br />
+italic=LIB_PATH+'Verdana Italic.ttf', boldItalic=LIB_PATH+'Verdana Bold Italic.ttf'),<br />
+}  </p>
 <h3 id="def-getfamilyfontpaths">def getFamilyFontPaths</h3>
 <h3 id="def-getfamilyfonts">def getFamilyFonts</h3>
 <h3 id="def-getfontpathoffont">def getFontPathOfFont</h3>
 <h3 id="def-getsystemfontpaths">def getSystemFontPaths</h3>
-<p>Answer the cleaned list of installed font names.</p>
+<p>Answer the cleaned list of installed font names.  </p>
 <h3 id="def-guessfamilies">def guessFamilies</h3>
-<p>Find the family relation of all fonts in the list. Note that this cannot be a 100% safe guess.
-Answer a dictionary with Family instances. Key is family name.</p>
+<p>Find the family relation of all fonts in the list. Note that this cannot be a 100% safe guess.<br />
+Answer a dictionary with Family instances. Key is family name.  </p>
 <h3 id="def-path2name">def path2Name</h3>
-<p><doc>Answers the file name part of the path.</doc></p>
+<p><doc>Answers the file name part of the path.</doc>  </p>
               
             </div>
           </div>

@@ -1264,144 +1264,144 @@
               
                 <h1 id="fonttoolboxobjectsfont">fonttoolbox.objects.font</h1>
 <h3 id="dict-axes">dict AXES</h3>
-<p>dict() -&gt; new empty dictionary
-dict(mapping) -&gt; new dictionary initialized from a mapping object's
-(key, value) pairs
-dict(iterable) -&gt; new dictionary initialized as if via:
-d = {}
-for k, v in iterable:
-d[k] = v
-dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
-in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<p>dict() -&gt; new empty dictionary<br />
+dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
+(key, value) pairs<br />
+dict(iterable) -&gt; new dictionary initialized as if via:<br />
+d = {}<br />
+for k, v in iterable:<br />
+d[k] = v<br />
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
+in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="objcfunction-ctfontdescriptorcopyattribute">objc.function CTFontDescriptorCopyAttribute</h3>
 <h3 id="objcfunction-ctfontdescriptorcreatewithnameandsize">objc.function CTFontDescriptorCreateWithNameAndSize</h3>
 <h3 id="class-font">class Font</h3>
-<p>Storage of font information while composing the pages.</p>
-<pre><code>&gt;&gt;&gt; import pagebot
-&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath
-&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')
-&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font
-&gt;&gt;&gt; f = Font(p, install=False)
-&gt;&gt;&gt; f.name
+<p>Storage of font information while composing the pages.  </p>
+<pre><code>&gt;&gt;&gt; import pagebot  
+&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath  
+&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')  
+&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font  
+&gt;&gt;&gt; f = Font(p, install=False)  
+&gt;&gt;&gt; f.name  
 u'BitcountGrid'
 
-&gt;&gt;&gt; len(f)
+&gt;&gt;&gt; len(f)  
 101
 
-&gt;&gt;&gt; f.keys()[-1]
+&gt;&gt;&gt; f.keys()[-1]  
 'y'
 
-&gt;&gt;&gt; f.axes
+&gt;&gt;&gt; f.axes  
 {'rndi': (0.0, 1000.0, 1000.0), 'rndo': (0.0, 1000.0, 1000.0), 'sqri': (0.0, 1000.0, 1000.0), 'sqro': (0.0, 1000.0, 1000.0), 'line': (0.0, 1000.0, 1000.0), 'open': (0.0, 0.0, 1000.0), 'wght': (0.0, 500.0, 1000.0)}
 
-&gt;&gt;&gt; variables = f.variables
-&gt;&gt;&gt; features = f.features
-&gt;&gt;&gt; f.groups
-&gt;&gt;&gt; f.designSpace
+&gt;&gt;&gt; variables = f.variables  
+&gt;&gt;&gt; features = f.features  
+&gt;&gt;&gt; f.groups  
+&gt;&gt;&gt; f.designSpace  
 {}
 
-&gt;&gt;&gt; f.install()
+&gt;&gt;&gt; f.install()  
 u'BitcountGrid-SingleCircleSquare-wght500rndi1000rndo1000line1000sqri1000sqro1000open0'
 
 &gt;&gt;&gt; f.save()
 </code></pre>
 <h3 id="class-glyph95class">class GLYPH_CLASS</h3>
-<p>The Glyph class wraps the glyph structure of a TrueType Font and
-extracts data from the raw glyph such as point sequence and type.</p>
-<pre><code>&gt;&gt;&gt; import pagebot
-&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath
-&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')
-&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font
-&gt;&gt;&gt; f = Font(p, install=False)
-&gt;&gt;&gt; g = f['a']
-&gt;&gt;&gt; g.name
+<p>The Glyph class wraps the glyph structure of a TrueType Font and<br />
+extracts data from the raw glyph such as point sequence and type.  </p>
+<pre><code>&gt;&gt;&gt; import pagebot  
+&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath  
+&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')  
+&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font  
+&gt;&gt;&gt; f = Font(p, install=False)  
+&gt;&gt;&gt; g = f['a']  
+&gt;&gt;&gt; g.name  
 'a'
 
-&gt;&gt;&gt; len(g.points)
+&gt;&gt;&gt; len(g.points)  
 40
 
-&gt;&gt;&gt; g.points[-1].onCurve
+&gt;&gt;&gt; g.points[-1].onCurve  
 False
 
-&gt;&gt;&gt; contours = g.contours
-&gt;&gt;&gt; len(contours)
+&gt;&gt;&gt; contours = g.contours  
+&gt;&gt;&gt; len(contours)  
 2
 
-&gt;&gt;&gt; path = g.path
-&gt;&gt;&gt; print path
+&gt;&gt;&gt; path = g.path  
+&gt;&gt;&gt; print path  
 &lt;BezierPath&gt;
 
-&gt;&gt;&gt; nspath = path.getNSBezierPath()
-&gt;&gt;&gt; bounds = nspath.bounds()
-&gt;&gt;&gt; print bounds
+&gt;&gt;&gt; nspath = path.getNSBezierPath()  
+&gt;&gt;&gt; bounds = nspath.bounds()  
+&gt;&gt;&gt; print bounds  
 &lt;NSRect origin=&lt;NSPoint x=38.0 y=-15.0&gt; size=&lt;NSSize width=948.0 height=1037.0&gt;&gt;
 
-&gt;&gt;&gt; len(bounds)
+&gt;&gt;&gt; len(bounds)  
 2
 
-&gt;&gt;&gt; len(bounds[0])
+&gt;&gt;&gt; len(bounds[0])  
 2
 
-&gt;&gt;&gt; len(bounds[1])
+&gt;&gt;&gt; len(bounds[1])  
 2
 
-&gt;&gt;&gt; print bounds[0]
+&gt;&gt;&gt; print bounds[0]  
 &lt;NSPoint x=38.0 y=-15.0&gt;
 
-&gt;&gt;&gt; bounds[0][0]
+&gt;&gt;&gt; bounds[0][0]  
 38.0
 </code></pre>
 <h3 id="class-9595class9595">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595delattr9595">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="method95descriptor-9595format9595">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="def-9595getitem9595">def __getitem__</h3>
 <h3 id="wrapper95descriptor-9595hash9595">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595">def __init__</h3>
-<p>Initialize the TTFont, for which Font is a wrapper. Default is to
-install the font in DrawBot.</p>
-<p>self.name is supported, in case the caller wants to use a different
-name than the DrawBot installing name.</p>
+<p>Initialize the TTFont, for which Font is a wrapper. Default is to<br />
+install the font in DrawBot.  </p>
+<p>self.name is supported, in case the caller wants to use a different<br />
+name than the DrawBot installing name.  </p>
 <h3 id="def-9595len9595">def __len__</h3>
 <h3 id="str-9595module9595">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="def-9595repr9595">def __repr__</h3>
 <h3 id="wrapper95descriptor-9595setattr9595">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="method95descriptor-9595sizeof9595">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95get95axes">def _get_axes</h3>
 <h3 id="def-95get95designspace">def _get_designSpace</h3>
 <h3 id="def-95get95features">def _get_features</h3>
@@ -1412,66 +1412,66 @@ overrides the normal algorithm (and the outcome is cached).</p>
 <h3 id="property-designspace">property designSpace</h3>
 <h3 id="property-features">property features</h3>
 <h3 id="def-getfeaturedstring">def getFeaturedString</h3>
-<p>Compile the string s into glyph names, corresponding to the
-settings in featureSettings.</p>
+<p>Compile the string s into glyph names, corresponding to the<br />
+settings in featureSettings.  </p>
 <h3 id="property-groups">property groups</h3>
 <h3 id="def-install">def install</h3>
-<p>Install the font in DrawBot, if not already there. Answer the
-DrawBot name.</p>
+<p>Install the font in DrawBot, if not already there. Answer the<br />
+DrawBot name.  </p>
 <h3 id="property-kerning">property kerning</h3>
 <h3 id="def-keys">def keys</h3>
 <h3 id="property-variables">property variables</h3>
 <h3 id="class-fontinfo">class FontInfo</h3>
-<p>Read-only access to font information, such as names, character set and supported
-OpenType features.</p>
+<p>Read-only access to font information, such as names, character set and supported<br />
+OpenType features.  </p>
 <h3 id="class-9595class9595_1">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595delattr9595_1">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595_1">dictproxy __dict__</h3>
 <h3 id="str-9595doc9595">str __doc__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="method95descriptor-9595format9595_1">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_1">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="wrapper95descriptor-9595hash9595_1">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595_1">def __init__</h3>
 <h3 id="str-9595module9595_1">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595_1">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_1">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_1">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
-<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)</p>
+<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
 <h3 id="wrapper95descriptor-9595setattr9595_1">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="method95descriptor-9595sizeof9595_1">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_1">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_1">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_1">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95getnametableentry">def _getNameTableEntry</h3>
 <h3 id="def-95getotlfeatures">def _getOTLFeatures</h3>
 <h3 id="def-95get95metrics">def _get_metrics</h3>
-<p>Small collection of font metrics info data as dictionary.</p>
+<p>Small collection of font metrics info data as dictionary.  </p>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-ascender">pagebot.fonttoolbox.objects.fontinfo.cached_property ascender</h3>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-capheight">pagebot.fonttoolbox.objects.fontinfo.cached_property capHeight</h3>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-charset">pagebot.fonttoolbox.objects.fontinfo.cached_property charSet</h3>
@@ -1487,7 +1487,7 @@ overrides the normal algorithm (and the outcome is cached).</p>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-license">pagebot.fonttoolbox.objects.fontinfo.cached_property license</h3>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-linegap">pagebot.fonttoolbox.objects.fontinfo.cached_property lineGap</h3>
 <h3 id="property-metrics">property metrics</h3>
-<p>Small collection of font metrics info data as dictionary.</p>
+<p>Small collection of font metrics info data as dictionary.  </p>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-psname">pagebot.fonttoolbox.objects.fontinfo.cached_property psName</h3>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-strikeoutposition">pagebot.fonttoolbox.objects.fontinfo.cached_property strikeoutPosition</h3>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-strikeoutsize">pagebot.fonttoolbox.objects.fontinfo.cached_property strikeoutSize</h3>
@@ -1507,119 +1507,119 @@ overrides the normal algorithm (and the outcome is cached).</p>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-widthclass">pagebot.fonttoolbox.objects.fontinfo.cached_property widthClass</h3>
 <h3 id="pagebotfonttoolboxobjectsfontinfocached95property-xheight">pagebot.fonttoolbox.objects.fontinfo.cached_property xHeight</h3>
 <h3 id="class-glyph">class Glyph</h3>
-<p>The Glyph class wraps the glyph structure of a TrueType Font and
-extracts data from the raw glyph such as point sequence and type.</p>
-<pre><code>&gt;&gt;&gt; import pagebot
-&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath
-&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')
-&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font
-&gt;&gt;&gt; f = Font(p, install=False)
-&gt;&gt;&gt; g = f['a']
-&gt;&gt;&gt; g.name
+<p>The Glyph class wraps the glyph structure of a TrueType Font and<br />
+extracts data from the raw glyph such as point sequence and type.  </p>
+<pre><code>&gt;&gt;&gt; import pagebot  
+&gt;&gt;&gt; from pagebot.toolbox.transformer import getFontPath  
+&gt;&gt;&gt; p = getFontPath('AmstelvarAlpha-VF')  
+&gt;&gt;&gt; from pagebot.fonttoolbox.objects.font import Font  
+&gt;&gt;&gt; f = Font(p, install=False)  
+&gt;&gt;&gt; g = f['a']  
+&gt;&gt;&gt; g.name  
 'a'
 
-&gt;&gt;&gt; len(g.points)
+&gt;&gt;&gt; len(g.points)  
 40
 
-&gt;&gt;&gt; g.points[-1].onCurve
+&gt;&gt;&gt; g.points[-1].onCurve  
 False
 
-&gt;&gt;&gt; contours = g.contours
-&gt;&gt;&gt; len(contours)
+&gt;&gt;&gt; contours = g.contours  
+&gt;&gt;&gt; len(contours)  
 2
 
-&gt;&gt;&gt; path = g.path
-&gt;&gt;&gt; print path
+&gt;&gt;&gt; path = g.path  
+&gt;&gt;&gt; print path  
 &lt;BezierPath&gt;
 
-&gt;&gt;&gt; nspath = path.getNSBezierPath()
-&gt;&gt;&gt; bounds = nspath.bounds()
-&gt;&gt;&gt; print bounds
+&gt;&gt;&gt; nspath = path.getNSBezierPath()  
+&gt;&gt;&gt; bounds = nspath.bounds()  
+&gt;&gt;&gt; print bounds  
 &lt;NSRect origin=&lt;NSPoint x=38.0 y=-15.0&gt; size=&lt;NSSize width=948.0 height=1037.0&gt;&gt;
 
-&gt;&gt;&gt; len(bounds)
+&gt;&gt;&gt; len(bounds)  
 2
 
-&gt;&gt;&gt; len(bounds[0])
+&gt;&gt;&gt; len(bounds[0])  
 2
 
-&gt;&gt;&gt; len(bounds[1])
+&gt;&gt;&gt; len(bounds[1])  
 2
 
-&gt;&gt;&gt; print bounds[0]
+&gt;&gt;&gt; print bounds[0]  
 &lt;NSPoint x=38.0 y=-15.0&gt;
 
-&gt;&gt;&gt; bounds[0][0]
+&gt;&gt;&gt; bounds[0][0]  
 38.0
 </code></pre>
 <h3 id="class-analyzer95class">class ANALYZER_CLASS</h3>
 <h3 id="class-9595class9595_2">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="wrapper95descriptor-9595delattr9595_2">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="dictproxy-9595dict9595_2">dictproxy __dict__</h3>
 <h3 id="unicode-9595doc9595_1">unicode __doc__</h3>
-<p>unicode(object='') -&gt; unicode object
-unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
-<p>Create a new Unicode object from the given encoded string.
-encoding defaults to the current default string encoding.
-errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<p>unicode(object='') -&gt; unicode object<br />
+unicode(string[, encoding[, errors]]) -&gt; unicode object  </p>
+<p>Create a new Unicode object from the given encoded string.<br />
+encoding defaults to the current default string encoding.<br />
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.  </p>
 <h3 id="def-9595eq9595">def __eq__</h3>
 <h3 id="method95descriptor-9595format9595_2">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_2">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="wrapper95descriptor-9595hash9595_2">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595_2">def __init__</h3>
 <h3 id="str-9595module9595_2">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-9595ne9595">def __ne__</h3>
 <h3 id="builtin95function95or95method-9595new9595_2">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_2">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_2">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="def-9595repr9595_1">def __repr__</h3>
 <h3 id="wrapper95descriptor-9595setattr9595_2">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="method95descriptor-9595sizeof9595_2">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_2">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_2">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_2">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95drawquadratic2cubic">def _drawQuadratic2Cubic</h3>
-<p>Converts a quatratic control point into a cubic.</p>
-<p>p0 = onCurve0
-p1 = offCurve
-p2 = onCurve1</p>
+<p>Converts a quatratic control point into a cubic.  </p>
+<p>p0 = onCurve0<br />
+p1 = offCurve<br />
+p2 = onCurve1  </p>
 <h3 id="def-95drawsegment">def _drawSegment</h3>
-<p>Draws the Segment instance into the path. It may contain multiple
-quadratics. Split into cubics and lines.</p>
+<p>Draws the Segment instance into the path. It may contain multiple<br />
+quadratics. Split into cubics and lines.  </p>
 <h3 id="def-95get95analyzer">def _get_analyzer</h3>
 <h3 id="def-95get95components">def _get_components</h3>
 <h3 id="def-95get95contours">def _get_contours</h3>
 <h3 id="def-95get95coordinates">def _get_coordinates</h3>
-<p>Answers the ttFont.coordinates, if it exists. Otherwise answer None.
-Note that this is the “raw” list of (x, y) positions, without
-information on contour index or if the point is on/off curve. This
-information is stored in ttFont.endPtsOfContours and ttFont.flags.
-This property is only for low-level access of the coordinates. For
-regular use, self.points and self.contours are available. Also notice
-that writing the list is at “own risk”, e.g hinting and related tables
-are not automatically updated.</p>
+<p>Answers the ttFont.coordinates, if it exists. Otherwise answer None.<br />
+Note that this is the “raw” list of (x, y) positions, without<br />
+information on contour index or if the point is on/off curve. This<br />
+information is stored in ttFont.endPtsOfContours and ttFont.flags.<br />
+This property is only for low-level access of the coordinates. For<br />
+regular use, self.points and self.contours are available. Also notice<br />
+that writing the list is at “own risk”, e.g hinting and related tables<br />
+are not automatically updated.  </p>
 <h3 id="def-95get95endptsofcontours">def _get_endPtsOfContours</h3>
 <h3 id="def-95get95flags">def _get_flags</h3>
 <h3 id="def-95get95parent">def _get_parent</h3>
@@ -1630,8 +1630,8 @@ are not automatically updated.</p>
 <h3 id="def-95get95ttglyph">def _get_ttGlyph</h3>
 <h3 id="def-95get95width">def _get_width</h3>
 <h3 id="def-95initialize">def _initialize</h3>
-<p>Initializes the cached data, such as self.points, self.contour,
-self.components and self.path.</p>
+<p>Initializes the cached data, such as self.points, self.contour,<br />
+self.components and self.path.  </p>
 <h3 id="def-95set95coordinates">def _set_coordinates</h3>
 <h3 id="def-95set95endptsofcontours">def _set_endPtsOfContours</h3>
 <h3 id="def-95set95flags">def _set_flags</h3>
@@ -1641,18 +1641,18 @@ self.components and self.path.</p>
 <h3 id="property-components">property components</h3>
 <h3 id="property-contours">property contours</h3>
 <h3 id="property-coordinates">property coordinates</h3>
-<p>Answers the ttFont.coordinates, if it exists. Otherwise answer None.
-Note that this is the “raw” list of (x, y) positions, without
-information on contour index or if the point is on/off curve. This
-information is stored in ttFont.endPtsOfContours and ttFont.flags.
-This property is only for low-level access of the coordinates. For
-regular use, self.points and self.contours are available. Also notice
-that writing the list is at “own risk”, e.g hinting and related tables
-are not automatically updated.</p>
+<p>Answers the ttFont.coordinates, if it exists. Otherwise answer None.<br />
+Note that this is the “raw” list of (x, y) positions, without<br />
+information on contour index or if the point is on/off curve. This<br />
+information is stored in ttFont.endPtsOfContours and ttFont.flags.<br />
+This property is only for low-level access of the coordinates. For<br />
+regular use, self.points and self.contours are available. Also notice<br />
+that writing the list is at “own risk”, e.g hinting and related tables<br />
+are not automatically updated.  </p>
 <h3 id="property-endptsofcontours">property endPtsOfContours</h3>
 <h3 id="property-flags">property flags</h3>
 <h3 id="def-onblack">def onBlack</h3>
-<p>Answers the boolean flag is the single point (x, y) is on black.</p>
+<p>Answers the boolean flag is the single point (x, y) is on black.  </p>
 <h3 id="property-parent">property parent</h3>
 <h3 id="property-path">property path</h3>
 <h3 id="property-pointcontexts">property pointContexts</h3>
@@ -1661,190 +1661,190 @@ are not automatically updated.</p>
 <h3 id="property-ttglyph">property ttGlyph</h3>
 <h3 id="class-otfkernreader">class OTFKernReader</h3>
 <h3 id="class-ttfont">class TTFont</h3>
-<p>The main font object. It manages file input and output, and offers
-    a convenient way of accessing tables.
-    Tables will be only decompiled when necessary, ie. when they're actually
-    accessed. This means that simple operations can be extremely fast.</p>
+<p>The main font object. It manages file input and output, and offers<br />
+    a convenient way of accessing tables.<br />
+    Tables will be only decompiled when necessary, ie. when they're actually<br />
+    accessed. This means that simple operations can be extremely fast.  </p>
 <h3 id="class-9595class9595_3">class __class__</h3>
-<p>type(object) -&gt; the object's type
-type(name, bases, dict) -&gt; a new type</p>
+<p>type(object) -&gt; the object's type<br />
+type(name, bases, dict) -&gt; a new type  </p>
 <h3 id="def-9595contains9595">def __contains__</h3>
 <h3 id="wrapper95descriptor-9595delattr9595_3">wrapper_descriptor __delattr__</h3>
-<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name  </p>
 <h3 id="def-9595delitem9595">def __delitem__</h3>
 <h3 id="dictproxy-9595dict9595_3">dictproxy __dict__</h3>
 <h3 id="str-9595doc9595_1">str __doc__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="method95descriptor-9595format9595_3">method_descriptor __format__</h3>
-<p>default object formatter</p>
+<p>default object formatter  </p>
 <h3 id="wrapper95descriptor-9595getattribute9595_3">wrapper_descriptor __getattribute__</h3>
-<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name  </p>
 <h3 id="def-9595getitem9595_1">def __getitem__</h3>
 <h3 id="wrapper95descriptor-9595hash9595_3">wrapper_descriptor __hash__</h3>
-<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)  </p>
 <h3 id="def-9595init9595_3">def __init__</h3>
-<p>The constructor can be called with a few different arguments.
-        When reading a font from disk, 'file' should be either a pathname
-        pointing to a file, or a readable file object.</p>
-<pre><code>    It we're running on a Macintosh, 'res_name_or_index' maybe an sfnt
-    resource name or an sfnt resource index number or zero. The latter
-    case will cause TTLib to autodetect whether the file is a flat file
-    or a suitcase. (If it's a suitcase, only the first 'sfnt' resource
+<p>The constructor can be called with a few different arguments.<br />
+        When reading a font from disk, 'file' should be either a pathname<br />
+        pointing to a file, or a readable file object.  </p>
+<pre><code>    It we're running on a Macintosh, 'res_name_or_index' maybe an sfnt  
+    resource name or an sfnt resource index number or zero. The latter  
+    case will cause TTLib to autodetect whether the file is a flat file  
+    or a suitcase. (If it's a suitcase, only the first 'sfnt' resource  
     will be read!)
 
-    The 'checkChecksums' argument is used to specify how sfnt
-    checksums are treated upon reading a file from disk:
-        0: don't check (default)
-        1: check, print warnings if a wrong checksum is found
+    The 'checkChecksums' argument is used to specify how sfnt  
+    checksums are treated upon reading a file from disk:  
+        0: don't check (default)  
+        1: check, print warnings if a wrong checksum is found  
         2: check, raise an exception if a wrong checksum is found.
 
-    The TTFont constructor can also be called without a 'file'
-    argument: this is the way to create a new empty font.
-    In this case you can optionally supply the 'sfntVersion' argument,
+    The TTFont constructor can also be called without a 'file'  
+    argument: this is the way to create a new empty font.  
+    In this case you can optionally supply the 'sfntVersion' argument,  
     and a 'flavor' which can be None, 'woff', or 'woff2'.
 
-    If the recalcBBoxes argument is false, a number of things will *not*
-    be recalculated upon save/compile:
-        1) glyph bounding boxes
-        2) maxp font bounding box
-        3) hhea min/max values
-    (1) is needed for certain kinds of CJK fonts (ask Werner Lemberg ;-).
-    Additionally, upon importing an TTX file, this option cause glyphs
-    to be compiled right away. This should reduce memory consumption
-    greatly, and therefore should have some impact on the time needed
+    If the recalcBBoxes argument is false, a number of things will *not*  
+    be recalculated upon save/compile:  
+        1) glyph bounding boxes  
+        2) maxp font bounding box  
+        3) hhea min/max values  
+    (1) is needed for certain kinds of CJK fonts (ask Werner Lemberg ;-).  
+    Additionally, upon importing an TTX file, this option cause glyphs  
+    to be compiled right away. This should reduce memory consumption  
+    greatly, and therefore should have some impact on the time needed  
     to parse/compile large fonts.
 
-    If the recalcTimestamp argument is false, the modified timestamp in the
+    If the recalcTimestamp argument is false, the modified timestamp in the  
     'head' table will *not* be recalculated upon save/compile.
 
-    If the allowVID argument is set to true, then virtual GID's are
-    supported. Asking for a glyph ID with a glyph name or GID that is not in
-    the font will return a virtual GID.   This is valid for GSUB and cmap
-    tables. For SING glyphlets, the cmap table is used to specify Unicode
-    values for virtual GI's used in GSUB/GPOS rules. If the gid N is requested
-    and does not exist in the font, or the glyphname has the form glyphN
-    and does not exist in the font, then N is used as the virtual GID.
-    Else, the first virtual GID is assigned as 0x1000 -1; for subsequent new
+    If the allowVID argument is set to true, then virtual GID's are  
+    supported. Asking for a glyph ID with a glyph name or GID that is not in  
+    the font will return a virtual GID.   This is valid for GSUB and cmap  
+    tables. For SING glyphlets, the cmap table is used to specify Unicode  
+    values for virtual GI's used in GSUB/GPOS rules. If the gid N is requested  
+    and does not exist in the font, or the glyphname has the form glyphN  
+    and does not exist in the font, then N is used as the virtual GID.  
+    Else, the first virtual GID is assigned as 0x1000 -1; for subsequent new  
     virtual GIDs, the next is one less than the previous.
 
-    If ignoreDecompileErrors is set to True, exceptions raised in
-    individual tables during decompilation will be ignored, falling
-    back to the DefaultTable implementation, which simply keeps the
+    If ignoreDecompileErrors is set to True, exceptions raised in  
+    individual tables during decompilation will be ignored, falling  
+    back to the DefaultTable implementation, which simply keeps the  
     binary data.
 
-    If lazy is set to True, many data structures are loaded lazily, upon
-    access only.  If it is set to False, many data structures are loaded
+    If lazy is set to True, many data structures are loaded lazily, upon  
+    access only.  If it is set to False, many data structures are loaded  
     immediately.  The default is lazy=None which is somewhere in between.
 </code></pre>
 <h3 id="def-9595len9595_1">def __len__</h3>
 <h3 id="str-9595module9595_3">str __module__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="builtin95function95or95method-9595new9595_3">builtin_function_or_method __new__</h3>
-<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T  </p>
 <h3 id="method95descriptor-9595reduce9595_3">method_descriptor __reduce__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="method95descriptor-9595reduce95ex9595_3">method_descriptor __reduce_ex__</h3>
-<p>helper for pickle</p>
+<p>helper for pickle  </p>
 <h3 id="wrapper95descriptor-9595repr9595_1">wrapper_descriptor __repr__</h3>
-<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)</p>
+<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
 <h3 id="wrapper95descriptor-9595setattr9595_3">wrapper_descriptor __setattr__</h3>
-<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value  </p>
 <h3 id="def-9595setitem9595">def __setitem__</h3>
 <h3 id="method95descriptor-9595sizeof9595_3">method_descriptor __sizeof__</h3>
-<p><strong>sizeof</strong>() -&gt; int
-size of object in memory, in bytes</p>
+<p><strong>sizeof</strong>() -&gt; int<br />
+size of object in memory, in bytes  </p>
 <h3 id="wrapper95descriptor-9595str9595_3">wrapper_descriptor __str__</h3>
-<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)  </p>
 <h3 id="builtin95function95or95method-9595subclasshook9595_3">builtin_function_or_method __subclasshook__</h3>
-<p>Abstract classes can override this to customize issubclass().</p>
-<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
-It should return True, False or NotImplemented.  If it returns
-NotImplemented, the normal algorithm is used.  Otherwise, it
-overrides the normal algorithm (and the outcome is cached).</p>
+<p>Abstract classes can override this to customize issubclass().  </p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().<br />
+It should return True, False or NotImplemented.  If it returns<br />
+NotImplemented, the normal algorithm is used.  Otherwise, it<br />
+overrides the normal algorithm (and the outcome is cached).  </p>
 <h3 id="getset95descriptor-9595weakref9595_3">getset_descriptor __weakref__</h3>
-<p>list of weak references to the object (if defined)</p>
+<p>list of weak references to the object (if defined)  </p>
 <h3 id="def-95buildreverseglyphorderdict">def _buildReverseGlyphOrderDict</h3>
 <h3 id="def-95getglyphnamesfromcmap">def _getGlyphNamesFromCmap</h3>
 <h3 id="def-95makeglyphname">def _makeGlyphName</h3>
 <h3 id="def-95tabletoxml">def _tableToXML</h3>
 <h3 id="def-95writetable">def _writeTable</h3>
-<p>Internal helper function for self.save(). Keeps track of
-        inter-table dependencies.</p>
+<p>Internal helper function for self.save(). Keeps track of<br />
+        inter-table dependencies.  </p>
 <h3 id="def-close">def close</h3>
-<p>If we still have a reader object, close it.</p>
+<p>If we still have a reader object, close it.  </p>
 <h3 id="def-get">def get</h3>
 <h3 id="def-getglyphid">def getGlyphID</h3>
 <h3 id="def-getglyphname">def getGlyphName</h3>
 <h3 id="def-getglyphnames">def getGlyphNames</h3>
-<p>Get a list of glyph names, sorted alphabetically.</p>
+<p>Get a list of glyph names, sorted alphabetically.  </p>
 <h3 id="def-getglyphnames2">def getGlyphNames2</h3>
-<p>Get a list of glyph names, sorted alphabetically,
-        but not case sensitive.</p>
+<p>Get a list of glyph names, sorted alphabetically,<br />
+        but not case sensitive.  </p>
 <h3 id="def-getglyphorder">def getGlyphOrder</h3>
 <h3 id="def-getglyphset">def getGlyphSet</h3>
-<p>Return a generic GlyphSet, which is a dict-like object
-        mapping glyph names to glyph objects. The returned glyph objects
-        have a .draw() method that supports the Pen protocol, and will
-        have an attribute named 'width'.</p>
-<pre><code>    If the font is CFF-based, the outlines will be taken from the 'CFF '
-    table. Otherwise the outlines will be taken from the 'glyf' table.
-    If the font contains both a 'CFF ' and a 'glyf' table, you can use
+<p>Return a generic GlyphSet, which is a dict-like object<br />
+        mapping glyph names to glyph objects. The returned glyph objects<br />
+        have a .draw() method that supports the Pen protocol, and will<br />
+        have an attribute named 'width'.  </p>
+<pre><code>    If the font is CFF-based, the outlines will be taken from the 'CFF '  
+    table. Otherwise the outlines will be taken from the 'glyf' table.  
+    If the font contains both a 'CFF ' and a 'glyf' table, you can use  
     the 'preferCFF' argument to specify which one should be taken.
 </code></pre>
 <h3 id="def-getreverseglyphmap">def getReverseGlyphMap</h3>
 <h3 id="def-gettabledata">def getTableData</h3>
-<p>Returns raw table data, whether compiled or directly read from disk.</p>
+<p>Returns raw table data, whether compiled or directly read from disk.  </p>
 <h3 id="def-has95key">def has_key</h3>
 <h3 id="def-importxml">def importXML</h3>
-<p>Import a TTX file (an XML-based text format), so as to recreate
-        a font object.</p>
+<p>Import a TTX file (an XML-based text format), so as to recreate<br />
+        a font object.  </p>
 <h3 id="def-isloaded">def isLoaded</h3>
-<p>Return true if the table identified by 'tag' has been
-        decompiled and loaded into memory.</p>
+<p>Return true if the table identified by 'tag' has been<br />
+        decompiled and loaded into memory.  </p>
 <h3 id="def-keys_1">def keys</h3>
 <h3 id="def-savexml">def saveXML</h3>
-<p>Export the font as TTX (an XML-based text file), or as a series of text
-        files when splitTables is true. In the latter case, the 'fileOrPath'
-        argument should be a path to a directory.
-        The 'tables' argument must either be false (dump all tables) or a
-        list of tables to dump. The 'skipTables' argument may be a list of tables
-        to skip, but only when the 'tables' argument is false.</p>
+<p>Export the font as TTX (an XML-based text file), or as a series of text<br />
+        files when splitTables is true. In the latter case, the 'fileOrPath'<br />
+        argument should be a path to a directory.<br />
+        The 'tables' argument must either be false (dump all tables) or a<br />
+        list of tables to dump. The 'skipTables' argument may be a list of tables<br />
+        to skip, but only when the 'tables' argument is false.  </p>
 <h3 id="def-setglyphorder">def setGlyphOrder</h3>
 <h3 id="class-ttliberror">class TTLibError</h3>
 <h3 id="dict-9595builtins9595">dict __builtins__</h3>
-<p>dict() -&gt; new empty dictionary
-dict(mapping) -&gt; new dictionary initialized from a mapping object's
-(key, value) pairs
-dict(iterable) -&gt; new dictionary initialized as if via:
-d = {}
-for k, v in iterable:
-d[k] = v
-dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
-in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<p>dict() -&gt; new empty dictionary<br />
+dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
+(key, value) pairs<br />
+dict(iterable) -&gt; new dictionary initialized as if via:<br />
+d = {}<br />
+for k, v in iterable:<br />
+d[k] = v<br />
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
+in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="9595doc9595">__doc__</h3>
 <h3 id="str-9595file9595">str __file__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595name9595">str __name__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="str-9595package9595">str __package__</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
 <h3 id="def-getfontpathoffont">def getFontPathOfFont</h3>
 <h3 id="unicode-kctfonturlattribute">unicode kCTFontURLAttribute</h3>
-<p>objc.pyobjc_unicode</p>
-<p>Subclass of unicode for representing NSString values. Use 
-the method nsstring to access the NSString. 
-Note that instances are immutable and won't be updated when
-the value of the NSString changes.</p>
+<p>objc.pyobjc_unicode  </p>
+<p>Subclass of unicode for representing NSString values. Use <br />
+the method nsstring to access the NSString. <br />
+Note that instances are immutable and won't be updated when<br />
+the value of the NSString changes.  </p>
               
             </div>
           </div>
