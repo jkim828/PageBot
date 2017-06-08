@@ -59,11 +59,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../../../about/">About</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <span class="caption-text">pagebot</span>
     <ul class="subnav">
                 <li class="">
@@ -184,7 +179,31 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+            <li><a class="toctree-l4" href="#int-default95height">int DEFAULT_HEIGHT</a></li>
+        
+            <li><a class="toctree-l4" href="#int-default95width">int DEFAULT_WIDTH</a></li>
+        
+            <li><a class="toctree-l4" href="#class-glyphpath">class GlyphPath</a></li>
+        
+            <li><a class="toctree-l4" href="#int-no95color">int NO_COLOR</a></li>
+        
+            <li><a class="toctree-l4" href="#class-path">class Path</a></li>
+        
+            <li><a class="toctree-l4" href="#dict-9595builtins9595">dict __builtins__</a></li>
+        
+            <li><a class="toctree-l4" href="#9595doc9595">__doc__</a></li>
+        
+            <li><a class="toctree-l4" href="#str-9595file9595">str __file__</a></li>
+        
+            <li><a class="toctree-l4" href="#str-9595name9595">str __name__</a></li>
+        
+            <li><a class="toctree-l4" href="#str-9595package9595">str __package__</a></li>
+        
+            <li><a class="toctree-l4" href="#def-pointoffset">def pointOffset</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setfillcolor">def setFillColor</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setstrokecolor">def setStrokeColor</a></li>
         
         </ul>
     
@@ -816,6 +835,11 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../../license/">License</a>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -855,8 +879,7 @@
             <div class="section">
               
                 <h1 id="elementspathsglyphpath">elements.paths.glyphpath</h1>
-<h2 id="functions">Functions</h2>
-<h3 id="default_width">DEFAULT_WIDTH</h3>
+<h3 id="int-default95height">int DEFAULT_HEIGHT</h3>
 <p>int(x=0) -&gt; int or long
 int(x, base=10) -&gt; int or long</p>
 <p>Convert a number or string to an integer, or return 0 if no arguments
@@ -870,41 +893,64 @@ interpret the base from the string as an integer literal.</p>
 <pre><code>&gt;&gt;&gt; int('0b100', base=0)
 4
 </code></pre>
-<h3 id="glyphpath">GlyphPath</h3>
-<h3 id="function-pointoffset">function pointOffset</h3>
+<h3 id="int-default95width">int DEFAULT_WIDTH</h3>
+<p>int(x=0) -&gt; int or long
+int(x, base=10) -&gt; int or long</p>
+<p>Convert a number or string to an integer, or return 0 if no arguments
+are given.  If x is floating point, the conversion truncates towards zero.
+If x is outside the integer range, the function returns a long instead.</p>
+<p>If x is not a number or if base is given, then x must be a string or
+Unicode object representing an integer literal in the given base.  The
+literal can be preceded by '+' or '-' and be surrounded by whitespace.
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
+interpret the base from the string as an integer literal.</p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+4
+</code></pre>
+<h3 id="class-glyphpath">class GlyphPath</h3>
+<h3 id="int-no95color">int NO_COLOR</h3>
+<p>int(x=0) -&gt; int or long
+int(x, base=10) -&gt; int or long</p>
+<p>Convert a number or string to an integer, or return 0 if no arguments
+are given.  If x is floating point, the conversion truncates towards zero.
+If x is outside the integer range, the function returns a long instead.</p>
+<p>If x is not a number or if base is given, then x must be a string or
+Unicode object representing an integer literal in the given base.  The
+literal can be preceded by '+' or '-' and be surrounded by whitespace.
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
+interpret the base from the string as an integer literal.</p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)
+4
+</code></pre>
+<h3 id="class-path">class Path</h3>
+<h3 id="dict-9595builtins9595">dict __builtins__</h3>
+<p>dict() -&gt; new empty dictionary
+dict(mapping) -&gt; new dictionary initialized from a mapping object's
+(key, value) pairs
+dict(iterable) -&gt; new dictionary initialized as if via:
+d = {}
+for k, v in iterable:
+d[k] = v
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
+in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<h3 id="9595doc9595">__doc__</h3>
+<h3 id="str-9595file9595">str __file__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-9595name9595">str __name__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-9595package9595">str __package__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="def-pointoffset">def pointOffset</h3>
 <p>Answer new 3D point, shifted by offset.</p>
-<h3 id="default_height">DEFAULT_HEIGHT</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
-4
-</code></pre>
-<h3 id="function-setfillcolor">function setFillColor</h3>
+<h3 id="def-setfillcolor">def setFillColor</h3>
 <p>Set the color for global or the color of the formatted string.</p>
-<h3 id="no_color">NO_COLOR</h3>
-<p>int(x=0) -&gt; int or long
-int(x, base=10) -&gt; int or long</p>
-<p>Convert a number or string to an integer, or return 0 if no arguments
-are given.  If x is floating point, the conversion truncates towards zero.
-If x is outside the integer range, the function returns a long instead.</p>
-<p>If x is not a number or if base is given, then x must be a string or
-Unicode object representing an integer literal in the given base.  The
-literal can be preceded by '+' or '-' and be surrounded by whitespace.
-The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to
-interpret the base from the string as an integer literal.</p>
-<pre><code>&gt;&gt;&gt; int('0b100', base=0)
-4
-</code></pre>
-<h3 id="path">Path</h3>
-<h3 id="function-setstrokecolor">function setStrokeColor</h3>
+<h3 id="def-setstrokecolor">def setStrokeColor</h3>
 <p>Set global stroke color or the color of the formatted string.</p>
               
             </div>

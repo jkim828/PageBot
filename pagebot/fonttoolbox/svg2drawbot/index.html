@@ -59,11 +59,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../../about/">About</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <span class="caption-text">pagebot</span>
     <ul class="subnav">
                 <li class="">
@@ -678,7 +673,27 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+            <li><a class="toctree-l4" href="#dict-9595builtins9595">dict __builtins__</a></li>
+        
+            <li><a class="toctree-l4" href="#9595doc9595">__doc__</a></li>
+        
+            <li><a class="toctree-l4" href="#str-9595file9595">str __file__</a></li>
+        
+            <li><a class="toctree-l4" href="#str-9595name9595">str __name__</a></li>
+        
+            <li><a class="toctree-l4" href="#str-9595package9595">str __package__</a></li>
+        
+            <li><a class="toctree-l4" href="#def-addvaluetopoints">def addValueToPoints</a></li>
+        
+            <li><a class="toctree-l4" href="#def-contourtopath">def contourToPath</a></li>
+        
+            <li><a class="toctree-l4" href="#def-copypoint">def copyPoint</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getrelative">def getRelative</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getsvgpaths">def getSvgPaths</a></li>
+        
+            <li><a class="toctree-l4" href="#module-minidom">module minidom</a></li>
         
         </ul>
     
@@ -687,21 +702,9 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#function-addvaluetopoints">function addValueToPoints</a></li>
+            <li><a class="toctree-l4" href="#def-parsesvg">def parseSVG</a></li>
         
-            <li><a class="toctree-l4" href="#function-copypoint">function copyPoint</a></li>
-        
-            <li><a class="toctree-l4" href="#function-parsesvg">function parseSVG</a></li>
-        
-            <li><a class="toctree-l4" href="#function-reflect">function reflect</a></li>
-        
-            <li><a class="toctree-l4" href="#function-contourtopath">function contourToPath</a></li>
-        
-            <li><a class="toctree-l4" href="#nspoint">NSPoint</a></li>
-        
-            <li><a class="toctree-l4" href="#function-getsvgpaths">function getSvgPaths</a></li>
-        
-            <li><a class="toctree-l4" href="#function-getrelative">function getRelative</a></li>
+            <li><a class="toctree-l4" href="#def-reflect">def reflect</a></li>
         
         </ul>
     
@@ -839,6 +842,11 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../license/">License</a>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -878,8 +886,42 @@
             <div class="section">
               
                 <h1 id="fonttoolboxsvg2drawbot">fonttoolbox.svg2drawbot</h1>
-<h2 id="functions">Functions</h2>
-<h3 id="minidom">minidom</h3>
+<h3 id="dict-9595builtins9595">dict __builtins__</h3>
+<p>dict() -&gt; new empty dictionary
+dict(mapping) -&gt; new dictionary initialized from a mapping object's
+(key, value) pairs
+dict(iterable) -&gt; new dictionary initialized as if via:
+d = {}
+for k, v in iterable:
+d[k] = v
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
+in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<h3 id="9595doc9595">__doc__</h3>
+<h3 id="str-9595file9595">str __file__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-9595name9595">str __name__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-9595package9595">str __package__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="def-addvaluetopoints">def addValueToPoints</h3>
+<p>Adds the collected character string to the last coordinate in the points
+list.</p>
+<h3 id="def-contourtopath">def contourToPath</h3>
+<p>Converts SVG contour to a path in DrawBot.</p>
+<h3 id="def-copypoint">def copyPoint</h3>
+<p>Deep copies previous point.</p>
+<h3 id="def-getrelative">def getRelative</h3>
+<p>Calculates absolute coordinates by adding the previous point to the
+relative coordinates.</p>
+<h3 id="def-getsvgpaths">def getSvgPaths</h3>
+<p>Extracts path strings from XML.</p>
+<h3 id="module-minidom">module minidom</h3>
 <p>Simple implementation of the Level 1 DOM.</p>
 <p>Namespaces and other minor Level 2 features are also supported.</p>
 <p>parse("foo.xml")</p>
@@ -892,25 +934,12 @@
 interface</li>
 <li>SAX 2 namespaces</li>
 </ul>
-<h3 id="function-addvaluetopoints">function addValueToPoints</h3>
-<p>Adds the collected character string to the last coordinate in the points
-list.</p>
-<h3 id="function-copypoint">function copyPoint</h3>
-<p>Deep copies previous point.</p>
-<h3 id="function-parsesvg">function parseSVG</h3>
+<h3 id="def-parsesvg">def parseSVG</h3>
 <p>Takes a list of path strings and converts them to a list of SVG-command
 tuples.</p>
-<h3 id="function-reflect">function reflect</h3>
+<h3 id="def-reflect">def reflect</h3>
 <p>Reflects off-curve control point in relation to on-curve one. Used for
 smooth curves.</p>
-<h3 id="function-contourtopath">function contourToPath</h3>
-<p>Converts SVG contour to a path in DrawBot.</p>
-<h3 id="nspoint">NSPoint</h3>
-<h3 id="function-getsvgpaths">function getSvgPaths</h3>
-<p>Extracts path strings from XML.</p>
-<h3 id="function-getrelative">function getRelative</h3>
-<p>Calculates absolute coordinates by adding the previous point to the
-relative coordinates.</p>
               
             </div>
           </div>

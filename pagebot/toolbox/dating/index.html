@@ -59,11 +59,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../../about/">About</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <span class="caption-text">pagebot</span>
     <ul class="subnav">
                 <li class="">
@@ -631,7 +626,37 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+            <li><a class="toctree-l4" href="#classobj-datetime">classobj DateTime</a></li>
+        
+            <li><a class="toctree-l4" href="#classobj-duration">classobj Duration</a></li>
+        
+            <li><a class="toctree-l4" href="#classobj-period">classobj Period</a></li>
+        
+            <li><a class="toctree-l4" href="#dict-9595builtins9595">dict __builtins__</a></li>
+        
+            <li><a class="toctree-l4" href="#9595doc9595">__doc__</a></li>
+        
+            <li><a class="toctree-l4" href="#str-9595file9595">str __file__</a></li>
+        
+            <li><a class="toctree-l4" href="#str-9595name9595">str __name__</a></li>
+        
+            <li><a class="toctree-l4" href="#str-9595package9595">str __package__</a></li>
+        
+            <li><a class="toctree-l4" href="#def-checkdatetime">def checkdatetime</a></li>
+        
+            <li><a class="toctree-l4" href="#def-leapyear">def leapyear</a></li>
+        
+            <li><a class="toctree-l4" href="#builtin95function95or95method-localtime">builtin_function_or_method localtime</a></li>
+        
+            <li><a class="toctree-l4" href="#def-monthdays">def monthdays</a></li>
+        
+            <li><a class="toctree-l4" href="#def-newdatetime">def newdatetime</a></li>
+        
+            <li><a class="toctree-l4" href="#def-timestamplong">def timestampLong</a></li>
+        
+            <li><a class="toctree-l4" href="#def-uniqueid">def uniqueId</a></li>
+        
+            <li><a class="toctree-l4" href="#def-uniquelong">def uniqueLong</a></li>
         
         </ul>
     
@@ -816,6 +841,11 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../license/">License</a>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -855,8 +885,7 @@
             <div class="section">
               
                 <h1 id="toolboxdating">toolbox.dating</h1>
-<h2 id="functions">Functions</h2>
-<h3 id="class-datetime">class DateTime</h3>
+<h3 id="classobj-datetime">classobj DateTime</h3>
 <p>The <code>newdate</code> method answers a new <code>DateTime</code> instance. If the <code>date</code> is
 <code>None</code>, then answer <code>None</code>. If <code>date</code> is a string, then convert to
 <code>DateTime</code>. Check on the month and day boundaries.<br/>
@@ -882,55 +911,78 @@ DateTime(2008, 11, 23)
 DateTime(2008, 11, 23, 23, 11, 22, 0)
 DateTime(2008, week=23)
 </python></p>
-<h3 id="function-uniquelong">function uniqueLong</h3>
-<p>The <code>uniqueLong</code> method answers a unique number (as string) of 18 digits.</p>
-<h3 id="function-monthdays">function monthdays</h3>
-<h3 id="function-timestamplong">function timestampLong</h3>
-<p>The <code>timestampLong</code> method answers the timestamp. This may not be unique.</p>
-<h3 id="function-leapyear">function leapyear</h3>
-<h3 id="function-checkdatetime">function checkdatetime</h3>
+<h3 id="classobj-duration">classobj Duration</h3>
+<p>The <code>Duration</code> class contains a duration in time. It can e.g. be used to add to a <code>DateTime</code>
+instance with a new date as result.<br/>
+<python>
+Duration(3)<br/>
+Duration(seconds=10)<br/>
+Duration(td=timedelta)<br/>
+</python>
+All common arithmetic applies to a <code>Duration</code> instance. 
+<python>
+d = Duration(3)<br/>
+d * 3 is a duration of 6 days.<br/>
+</python></p>
+<h3 id="classobj-period">classobj Period</h3>
+<p>The <code>Duration</code> class contains a duration in time. It can e.g. be used to add to a <code>DateTime</code>
+instance with a new date as result.<br/>
+<python>
+Duration(3)<br/>
+Duration(seconds=10)<br/>
+Duration(td=timedelta)<br/>
+</python>
+All common arithmetic applies to a <code>Duration</code> instance. 
+<python>
+d = Duration(3)<br/>
+d * 3 is a duration of 6 days.<br/>
+</python></p>
+<h3 id="dict-9595builtins9595">dict __builtins__</h3>
+<p>dict() -&gt; new empty dictionary
+dict(mapping) -&gt; new dictionary initialized from a mapping object's
+(key, value) pairs
+dict(iterable) -&gt; new dictionary initialized as if via:
+d = {}
+for k, v in iterable:
+d[k] = v
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
+in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<h3 id="9595doc9595">__doc__</h3>
+<h3 id="str-9595file9595">str __file__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-9595name9595">str __name__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-9595package9595">str __package__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="def-checkdatetime">def checkdatetime</h3>
 <p>The <code>checkdatetime</code> answers the <code>date</code> if it is a date. If date is None, then answer None. If
 date is a string, then convert to DateTime. Check on the month and day boundaries. Answer the same type that date
 was. Note that we do not check if date was already a DateTime. This method is especially made to set database fields
 with dates, where that None will result in a NULL value for that field.</p>
-<h3 id="function-uniqueid">function uniqueId</h3>
-<p>The <code>uniqueId</code> method answers a unique number (as string) of <code>size</code> length concatenated
-timestamps. Minimum length of the number is 18 digits, or else string will not be unique.</p>
-<h3 id="class-period">class Period</h3>
-<p>The <code>Duration</code> class contains a duration in time. It can e.g. be used to add to a <code>DateTime</code>
-instance with a new date as result.<br/>
-<python>
-Duration(3)<br/>
-Duration(seconds=10)<br/>
-Duration(td=timedelta)<br/>
-</python>
-All common arithmetic applies to a <code>Duration</code> instance. 
-<python>
-d = Duration(3)<br/>
-d * 3 is a duration of 6 days.<br/>
-</python></p>
-<h3 id="class-duration">class Duration</h3>
-<p>The <code>Duration</code> class contains a duration in time. It can e.g. be used to add to a <code>DateTime</code>
-instance with a new date as result.<br/>
-<python>
-Duration(3)<br/>
-Duration(seconds=10)<br/>
-Duration(td=timedelta)<br/>
-</python>
-All common arithmetic applies to a <code>Duration</code> instance. 
-<python>
-d = Duration(3)<br/>
-d * 3 is a duration of 6 days.<br/>
-</python></p>
-<h3 id="function-newdatetime">function newdatetime</h3>
-<p>The <code>newdate</code> method answers a new <code>DateTime</code> instance. If the <code>date</code> is
-<code>None</code>, then answer <code>None</code>. If <code>date</code> is a string, then convert to
-<code>DateTime</code>. Check on the month and day boundaries.<br/></p>
-<h3 id="localtime">localtime</h3>
+<h3 id="def-leapyear">def leapyear</h3>
+<h3 id="builtin95function95or95method-localtime">builtin_function_or_method localtime</h3>
 <p>localtime([seconds]) -&gt; (tm_year,tm_mon,tm_mday,tm_hour,tm_min,
   tm_sec,tm_wday,tm_yday,tm_isdst)</p>
 <p>Convert seconds since the Epoch to a time tuple expressing local time.
 When 'seconds' is not passed in, convert the current time instead.</p>
+<h3 id="def-monthdays">def monthdays</h3>
+<h3 id="def-newdatetime">def newdatetime</h3>
+<p>The <code>newdate</code> method answers a new <code>DateTime</code> instance. If the <code>date</code> is
+<code>None</code>, then answer <code>None</code>. If <code>date</code> is a string, then convert to
+<code>DateTime</code>. Check on the month and day boundaries.<br/></p>
+<h3 id="def-timestamplong">def timestampLong</h3>
+<p>The <code>timestampLong</code> method answers the timestamp. This may not be unique.</p>
+<h3 id="def-uniqueid">def uniqueId</h3>
+<p>The <code>uniqueId</code> method answers a unique number (as string) of <code>size</code> length concatenated
+timestamps. Minimum length of the number is 18 digits, or else string will not be unique.</p>
+<h3 id="def-uniquelong">def uniqueLong</h3>
+<p>The <code>uniqueLong</code> method answers a unique number (as string) of 18 digits.</p>
               
             </div>
           </div>

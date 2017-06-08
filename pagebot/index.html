@@ -59,11 +59,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../about/">About</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <span class="caption-text">pagebot</span>
     <ul class="subnav">
                 <li class=" current">
@@ -75,11 +70,9 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#classes">Classes</a></li>
+            <li><a class="toctree-l4" href="#related-classes">Related Classes</a></li>
         
-            <li><a class="toctree-l4" href="#modules">Modules</a></li>
-        
-            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+            <li><a class="toctree-l4" href="#related-modules">Related Modules</a></li>
         
         </ul>
     
@@ -820,6 +813,11 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../license/">License</a>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -859,14 +857,14 @@
             <div class="section">
               
                 <h1 id="pagebot">pagebot</h1>
-<h2 id="classes">Classes</h2>
+<h2 id="related-classes">Related Classes</h2>
 <ul>
 <li><a href="./composer">pagebot.composer</a></li>
 <li><a href="./document">pagebot.document</a></li>
 <li><a href="./style">pagebot.style</a></li>
 <li><a href="./typesetter">pagebot.typesetter</a></li>
 </ul>
-<h2 id="modules">Modules</h2>
+<h2 id="related-modules">Related Modules</h2>
 <ul>
 <li><a href="./md">pagebot.md</a></li>
 <li><a href="./elements">pagebot.elements</a></li>
@@ -878,18 +876,11 @@
 <li><a href="./fonttoolbox">pagebot.fonttoolbox</a></li>
 <li><a href="./conditions">pagebot.conditions</a></li>
 </ul>
-<h2 id="functions">Functions</h2>
-<h3 id="function-h2ch">function h2ch</h3>
-<h3 id="function-getrootpath">function getRootPath</h3>
-<p>Answer the root path of the pagebot module.</p>
-<h3 id="function-setstrokecolor">function setStrokeColor</h3>
-<p>Set global stroke color or the color of the formatted string.</p>
-<h3 id="function-newfs">function newFS</h3>
-<p>Answer a formatted string from valid attributes in Style. Set the all values after testing
-their existence, so they can inherit from previous style formats.</p>
-<h3 id="function-cy2y">function cy2y</h3>
-<p>Transform from column y value to y value, using the e.css for colunn values.</p>
-<h3 id="gradient">Gradient</h3>
+<h3 id="class-basecontext">class BaseContext</h3>
+<h3 id="95sresre95pattern-find95fs95markers">_sre.SRE_Pattern FIND_FS_MARKERS</h3>
+<p>Compiled regular expression objects</p>
+<h3 id="class-globals">class Globals</h3>
+<h3 id="class-gradient">class Gradient</h3>
 <p>As linear gradient (startRadius or endRadius not set):
 startPoint as (x, y)
 endPoint as (x, y)
@@ -904,13 +895,65 @@ locations of each color as a list of floats. (optionally)
 startRadius radius around the startPoint in degrees (optionally)
 endRadius radius around the endPoint in degrees (optionally)
 Setting a gradient will ignore the fill.</p>
-<h3 id="function-cd2d">function cd2d</h3>
-<h3 id="function-d2cd">function d2cd</h3>
-<h3 id="function-find">function find</h3>
-<p>Perform a dynamic find the named element(s) in self.elements. Don't include self.
-Either name or pattern should be defined.</p>
-<h3 id="basecontext">BaseContext</h3>
-<h3 id="no_color">NO_COLOR</h3>
+<h3 id="class-9595class9595">class __class__</h3>
+<p>type(object) -&gt; the object's type
+type(name, bases, dict) -&gt; a new type</p>
+<h3 id="wrapper95descriptor-9595delattr9595">wrapper_descriptor __delattr__</h3>
+<p>x.<strong>delattr</strong>('name') &lt;==&gt; del x.name</p>
+<h3 id="dictproxy-9595dict9595">dictproxy __dict__</h3>
+<h3 id="unicode-9595doc9595">unicode __doc__</h3>
+<p>unicode(object='') -&gt; unicode object
+unicode(string[, encoding[, errors]]) -&gt; unicode object</p>
+<p>Create a new Unicode object from the given encoded string.
+encoding defaults to the current default string encoding.
+errors can be 'strict', 'replace' or 'ignore' and defaults to 'strict'.</p>
+<h3 id="method95descriptor-9595format9595">method_descriptor __format__</h3>
+<p>default object formatter</p>
+<h3 id="wrapper95descriptor-9595getattribute9595">wrapper_descriptor __getattribute__</h3>
+<p>x.<strong>getattribute</strong>('name') &lt;==&gt; x.name</p>
+<h3 id="wrapper95descriptor-9595hash9595">wrapper_descriptor __hash__</h3>
+<p>x.<strong>hash</strong>() &lt;==&gt; hash(x)</p>
+<h3 id="def-9595init9595">def __init__</h3>
+<h3 id="str-9595module9595">str __module__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="builtin95function95or95method-9595new9595">builtin_function_or_method __new__</h3>
+<p>T.<strong>new</strong>(S, ...) -&gt; a new object with type S, a subtype of T</p>
+<h3 id="method95descriptor-9595reduce9595">method_descriptor __reduce__</h3>
+<p>helper for pickle</p>
+<h3 id="method95descriptor-9595reduce95ex9595">method_descriptor __reduce_ex__</h3>
+<p>helper for pickle</p>
+<h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
+<p>x.<strong>repr</strong>() &lt;==&gt; repr(x)</p>
+<h3 id="wrapper95descriptor-9595setattr9595">wrapper_descriptor __setattr__</h3>
+<p>x.<strong>setattr</strong>('name', value) &lt;==&gt; x.name = value</p>
+<h3 id="method95descriptor-9595sizeof9595">method_descriptor __sizeof__</h3>
+<p><strong>sizeof</strong>() -&gt; int
+size of object in memory, in bytes</p>
+<h3 id="wrapper95descriptor-9595str9595">wrapper_descriptor __str__</h3>
+<p>x.<strong>str</strong>() &lt;==&gt; str(x)</p>
+<h3 id="builtin95function95or95method-9595subclasshook9595">builtin_function_or_method __subclasshook__</h3>
+<p>Abstract classes can override this to customize issubclass().</p>
+<p>This is invoked early on by abc.ABCMeta.<strong>subclasscheck</strong>().
+It should return True, False or NotImplemented.  If it returns
+NotImplemented, the normal algorithm is used.  Otherwise, it
+overrides the normal algorithm (and the outcome is cached).</p>
+<h3 id="getset95descriptor-9595weakref9595">getset_descriptor __weakref__</h3>
+<p>list of weak references to the object (if defined)</p>
+<h3 id="def-95get95linear">def _get_linear</h3>
+<h3 id="def-95get95radial">def _get_radial</h3>
+<h3 id="property-linear">property linear</h3>
+<h3 id="property-radial">property radial</h3>
+<h3 id="str-left">str LEFT</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-marker95pattern">str MARKER_PATTERN</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="int-no95color">int NO_COLOR</h3>
 <p>int(x=0) -&gt; int or long
 int(x, base=10) -&gt; int or long</p>
 <p>Convert a number or string to an integer, or return 0 if no arguments
@@ -924,12 +967,68 @@ interpret the base from the string as an integer literal.</p>
 <pre><code>&gt;&gt;&gt; int('0b100', base=0)
 4
 </code></pre>
-<h3 id="function-cz2z">function cz2z</h3>
-<h3 id="function-textboxbaselines">function textBoxBaseLines</h3>
-<p>Answer a list of (x,y) positions of all line starts in the box. This function may become part
-of standard DrawBot in the near future.</p>
-<h3 id="function-ch2h">function ch2h</h3>
-<h3 id="function-getmarker">function getMarker</h3>
+<h3 id="class-shadow">class Shadow</h3>
+<h3 id="dict-9595builtins9595">dict __builtins__</h3>
+<p>dict() -&gt; new empty dictionary
+dict(mapping) -&gt; new dictionary initialized from a mapping object's
+(key, value) pairs
+dict(iterable) -&gt; new dictionary initialized as if via:
+d = {}
+for k, v in iterable:
+d[k] = v
+dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
+in the keyword argument list.  For example:  dict(one=1, two=2)</p>
+<h3 id="str-9595doc9595">str __doc__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-9595file9595">str __file__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-9595name9595">str __name__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="str-9595package9595">str __package__</h3>
+<p>str(object='') -&gt; string</p>
+<p>Return a nice string representation of the object.
+If the argument is a string, the return value is the same object.</p>
+<h3 id="list-9595path9595">list __path__</h3>
+<p>list() -&gt; new empty list
+list(iterable) -&gt; new list initialized from iterable's items</p>
+<h3 id="def-baseline2y">def baseline2y</h3>
+<p>Convert columns index and line index to page position. Answered (x, y) is point position based on
+marginTop + yIndex*baseLine.</p>
+<h3 id="def-cd2d">def cd2d</h3>
+<h3 id="def-ch2h">def ch2h</h3>
+<h3 id="def-css">def css</h3>
+<p>Answer the named style values. Search in optional style dict first, otherwise up the
+parent tree of styles in element e. Both e and style can be None. In that case None is answered.</p>
+<h3 id="def-cw2w">def cw2w</h3>
+<h3 id="def-cx2x">def cx2x</h3>
+<h3 id="def-cy2y">def cy2y</h3>
+<p>Transform from column y value to y value, using the e.css for colunn values.</p>
+<h3 id="def-cz2z">def cz2z</h3>
+<h3 id="def-d2cd">def d2cd</h3>
+<h3 id="def-deepfind">def deepFind</h3>
+<p>Perform a dynamic deep find the for all elements with the name. Don't include self.
+Either name or pattern should be defined.</p>
+<h3 id="instance-division">instance division</h3>
+<h3 id="def-find">def find</h3>
+<p>Perform a dynamic find the named element(s) in self.elements. Don't include self.
+Either name or pattern should be defined.</p>
+<h3 id="def-findmarkers">def findMarkers</h3>
+<p>Answer a dictionary of markers with their arguments in a given FormattedString.</p>
+<h3 id="def-getfontpath">def getFontPath</h3>
+<p>Answer the standard font path of the pagebot module.</p>
+<h3 id="def-getglobals">def getGlobals</h3>
+<p>In order to let PageBot scripts and/applications exchange information, without the
+need to save as files, the pbglobals module supports the storage of non-persistent information.
+This way, applications with Vanilla windows can be used as UI for scripts that perform as batch process.
+Note that it is up to the responsibilty of individual scripts to create uniqued ids for
+attributes. Also they need to know from each other, in case information is exchanged.</p>
+<h3 id="def-getmarker">def getMarker</h3>
 <p>Answer a formatted string with markerId that can be used as non-display marker.
 This way the Composer can find the position of markers in text boxes, after
 FS-slicing has been done. Note there is always a very small "white-space"
@@ -941,45 +1040,13 @@ Note that there is a potential problem of slicing through the argument string at
 the end of a textBox. That is another reason to keep the length of the arguments short.
 And not to use any spaces, etc. inside the markerId.
 Possible slicing through line-endings is not a problem, as the raw string ignores them.</p>
-<h3 id="function-textpositionsearch">function textPositionSearch</h3>
-<h3 id="function-setgradient">function setGradient</h3>
-<p>Define the gradient call to match the size of element e., Gradient position
-is from the origin of the page, so we need the current origin of e.</p>
-<h3 id="marker_pattern">MARKER_PATTERN</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
-<h3 id="function-getglobals">function getGlobals</h3>
-<p>In order to let PageBot scripts and/applications exchange information, without the
-need to save as files, the pbglobals module supports the storage of non-persistent information.
-This way, applications with Vanilla windows can be used as UI for scripts that perform as batch process.
-Note that it is up to the responsibilty of individual scripts to create uniqued ids for
-attributes. Also they need to know from each other, in case information is exchanged.</p>
-<h3 id="function-css">function css</h3>
-<p>Answer the named style values. Search in optional style dict first, otherwise up the
-parent tree of styles in element e. Both e and style can be None. In that case None is answered.</p>
-<h3 id="left">LEFT</h3>
-<p>str(object='') -&gt; string</p>
-<p>Return a nice string representation of the object.
-If the argument is a string, the return value is the same object.</p>
-<h3 id="division">division</h3>
-<h3 id="function-y2cy">function y2cy</h3>
-<p>Transform from y value to column y value, using the e.css for colunn values.</p>
-<h3 id="function-deepfind">function deepFind</h3>
-<p>Perform a dynamic deep find the for all elements with the name. Don't include self.
-Either name or pattern should be defined.</p>
-<h3 id="function-cw2w">function cw2w</h3>
-<h3 id="function-setfillcolor">function setFillColor</h3>
-<p>Set the color for global or the color of the formatted string.</p>
-<h3 id="function-z2cz">function z2cz</h3>
-<p>Transform from z value to column z value, using the e.css for colunn values.</p>
-<h3 id="shadow">Shadow</h3>
-<h3 id="function-point2d">function point2D</h3>
-<p>Answer the 2D origin as combination of p and offset.</p>
-<h3 id="function-setshadow">function setShadow</h3>
-<h3 id="function-findmarkers">function findMarkers</h3>
-<p>Answer a dictionary of markers with their arguments in a given FormattedString.</p>
-<h3 id="pbglobals">pbGlobals</h3>
+<h3 id="def-getrootpath">def getRootPath</h3>
+<p>Answer the root path of the pagebot module.</p>
+<h3 id="def-h2ch">def h2ch</h3>
+<h3 id="def-newfs">def newFS</h3>
+<p>Answer a formatted string from valid attributes in Style. Set the all values after testing
+their existence, so they can inherit from previous style formats.</p>
+<h3 id="dict-pbglobals">dict pbGlobals</h3>
 <p>dict() -&gt; new empty dictionary
 dict(mapping) -&gt; new dictionary initialized from a mapping object's
 (key, value) pairs
@@ -989,18 +1056,27 @@ for k, v in iterable:
 d[k] = v
 dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs
 in the keyword argument list.  For example:  dict(one=1, two=2)</p>
-<h3 id="function-baseline2y">function baseline2y</h3>
-<p>Convert columns index and line index to page position. Answered (x, y) is point position based on
-marginTop + yIndex*baseLine.</p>
-<h3 id="find_fs_markers">FIND_FS_MARKERS</h3>
-<p>Compiled regular expression objects</p>
-<h3 id="globals">Globals</h3>
-<h3 id="function-x2cx">function x2cx</h3>
+<h3 id="def-point2d">def point2D</h3>
+<p>Answer the 2D origin as combination of p and offset.</p>
+<h3 id="def-setfillcolor">def setFillColor</h3>
+<p>Set the color for global or the color of the formatted string.</p>
+<h3 id="def-setgradient">def setGradient</h3>
+<p>Define the gradient call to match the size of element e., Gradient position
+is from the origin of the page, so we need the current origin of e.</p>
+<h3 id="def-setshadow">def setShadow</h3>
+<h3 id="def-setstrokecolor">def setStrokeColor</h3>
+<p>Set global stroke color or the color of the formatted string.</p>
+<h3 id="def-textboxbaselines">def textBoxBaseLines</h3>
+<p>Answer a list of (x,y) positions of all line starts in the box. This function may become part
+of standard DrawBot in the near future.</p>
+<h3 id="def-textpositionsearch">def textPositionSearch</h3>
+<h3 id="def-w2cw">def w2cw</h3>
+<h3 id="def-x2cx">def x2cx</h3>
 <p>Transform from y value to column y value, using the e.css for colunn values.</p>
-<h3 id="function-getfontpath">function getFontPath</h3>
-<p>Answer the standard font path of the pagebot module.</p>
-<h3 id="function-w2cw">function w2cw</h3>
-<h3 id="function-cx2x">function cx2x</h3>
+<h3 id="def-y2cy">def y2cy</h3>
+<p>Transform from y value to column y value, using the e.css for colunn values.</p>
+<h3 id="def-z2cz">def z2cz</h3>
+<p>Transform from z value to column z value, using the e.css for colunn values.</p>
               
             </div>
           </div>
@@ -1011,7 +1087,7 @@ marginTop + yIndex*baseLine.</p>
         <a href="composer/" class="btn btn-neutral float-right" title="Composer">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../about/" class="btn btn-neutral" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../howto/" class="btn btn-neutral" title="How To"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1037,7 +1113,7 @@ marginTop + yIndex*baseLine.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../about/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../howto/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="composer/" style="color: #fcfcfc">Next &raquo;</a></span>
