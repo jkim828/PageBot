@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../../../img/favicon.ico">
-  <title>Kirbyview - PageBot</title>
+  <title>Spreadview - PageBot</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Kirbyview";
-    var mkdocs_page_input_path = "pagebot/elements/views/kirbyview.md";
-    var mkdocs_page_url = "/pagebot/elements/views/kirbyview/";
+    var mkdocs_page_name = "Spreadview";
+    var mkdocs_page_input_path = "pagebot/elements/views/spreadview.md";
+    var mkdocs_page_url = "/pagebot/elements/views/spreadview/";
   </script>
   
   <script src="../../../../js/jquery-2.1.1.min.js"></script>
@@ -224,18 +224,24 @@
                     
     <a class="" href="../htmlcssview/">Htmlcssview</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../kirbyview/">Kirbyview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../singleview/">Singleview</a>
+                </li>
                 <li class=" current">
                     
-    <a class="current" href="./">Kirbyview</a>
+    <a class="current" href="./">Spreadview</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#elementsviewskirbyview">elements.views.kirbyview</a></li>
+    <li class="toctree-l3"><a href="#elementsviewsspreadview">elements.views.spreadview</a></li>
     
         <ul>
         
-            <li><a class="toctree-l4" href="#class-kirbyview">class KirbyView</a></li>
-        
-            <li><a class="toctree-l4" href="#class-view">class View</a></li>
+            <li><a class="toctree-l4" href="#class-spreadview">class SpreadView</a></li>
         
             <li><a class="toctree-l4" href="#class-cssbuilder95class">class CSSBUILDER_CLASS</a></li>
         
@@ -1261,18 +1267,1040 @@
         
             <li><a class="toctree-l4" href="#property-zalign">property zAlign</a></li>
         
+            <li><a class="toctree-l4" href="#class-view">class View</a></li>
+        
+            <li><a class="toctree-l4" href="#class-cssbuilder95class_1">class CSSBUILDER_CLASS</a></li>
+        
+            <li><a class="toctree-l4" href="#int-min95padding_1">int MIN_PADDING</a></li>
+        
+            <li><a class="toctree-l4" href="#def-notnow95getexpandedtimemarks_1">def NOTNOW_getExpandedTimeMarks</a></li>
+        
+            <li><a class="toctree-l4" href="#def-notnow95getflows_1">def NOTNOW_getFlows</a></li>
+        
+            <li><a class="toctree-l4" href="#def-notnow95getnextflowbox_1">def NOTNOW_getNextFlowBox</a></li>
+        
+            <li><a class="toctree-l4" href="#def-9595getitem9595_1">def __getitem__</a></li>
+        
+            <li><a class="toctree-l4" href="#def-9595init9595_1">def __init__</a></li>
+        
+            <li><a class="toctree-l4" href="#def-9595len9595_1">def __len__</a></li>
+        
+            <li><a class="toctree-l4" href="#def-9595repr9595_1">def __repr__</a></li>
+        
+            <li><a class="toctree-l4" href="#def-9595setitem9595_1">def __setitem__</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95applyalignment_1">def _applyAlignment</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95applyorigin_1">def _applyOrigin</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95applyrotation_1">def _applyRotation</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95applyscale_1">def _applyScale</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95borderdict_1">def _borderDict</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95drawelements_1">def _drawElements</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95drawelementsneedinginfo_1">def _drawElementsNeedingInfo</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95drawpageregistrationmark_1">def _drawPageRegistrationMark</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95ancestors_1">def _get_ancestors</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95back_1">def _get_back</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95baselinegrid_1">def _get_baselineGrid</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95baselinegridstart_1">def _get_baselineGridStart</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95block_1">def _get_block</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95block3d_1">def _get_block3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95borderbottom_1">def _get_borderBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95borderleft_1">def _get_borderLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95borderright_1">def _get_borderRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95bordertop_1">def _get_borderTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95borders_1">def _get_borders</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95bottom_1">def _get_bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95box_1">def _get_box</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95box3d_1">def _get_box3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95cd_1">def _get_cd</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95center_1">def _get_center</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95ch_1">def _get_ch</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95cw_1">def _get_cw</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95cx_1">def _get_cx</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95cy_1">def _get_cy</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95cz_1">def _get_cz</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95d_1">def _get_d</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95doc_1">def _get_doc</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95eid_1">def _get_eId</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95elementids_1">def _get_elementIds</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95elements_1">def _get_elements</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95front_1">def _get_front</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95gd_1">def _get_gd</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95gh_1">def _get_gh</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95gradient_1">def _get_gradient</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95gutter_1">def _get_gutter</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95gutter3d_1">def _get_gutter3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95gw_1">def _get_gw</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95h_1">def _get_h</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95left_1">def _get_left</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95lib_1">def _get_lib</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mback_1">def _get_mBack</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mbottom_1">def _get_mBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mfront_1">def _get_mFront</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mleft_1">def _get_mLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mright_1">def _get_mRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mtop_1">def _get_mTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95margin_1">def _get_margin</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95margin3d_1">def _get_margin3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95marginblock3d_1">def _get_marginBlock3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95marginbox_1">def _get_marginBox</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95maxd_1">def _get_maxD</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95maxh_1">def _get_maxH</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95maxw_1">def _get_maxW</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mb_1">def _get_mb</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95md_1">def _get_md</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mh_1">def _get_mh</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95middle_1">def _get_middle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mind_1">def _get_minD</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95minh_1">def _get_minH</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95minw_1">def _get_minW</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95ml_1">def _get_ml</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mr_1">def _get_mr</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mt_1">def _get_mt</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mw_1">def _get_mw</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mzb_1">def _get_mzb</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95mzf_1">def _get_mzf</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95opoint_1">def _get_oPoint</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95origintop_1">def _get_originTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95originsblock_1">def _get_originsBlock</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95originsblock3d_1">def _get_originsBlock3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95paddedblock3d_1">def _get_paddedBlock3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95paddedbox_1">def _get_paddedBox</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95paddedbox3d_1">def _get_paddedBox3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95padding_1">def _get_padding</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95padding3d_1">def _get_padding3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95parent_1">def _get_parent</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95pb_1">def _get_pb</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95pd_1">def _get_pd</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95ph_1">def _get_ph</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95pl_1">def _get_pl</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95point_1">def _get_point</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95point3d_1">def _get_point3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95pr_1">def _get_pr</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95pt_1">def _get_pt</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95pw_1">def _get_pw</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95pzb_1">def _get_pzb</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95pzf_1">def _get_pzf</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95right_1">def _get_right</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95rootx_1">def _get_rootX</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95rooty_1">def _get_rootY</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95rootz_1">def _get_rootZ</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95scalex_1">def _get_scaleX</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95scaley_1">def _get_scaleY</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95scalez_1">def _get_scaleZ</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95shadow_1">def _get_shadow</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95show_1">def _get_show</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95siblings_1">def _get_siblings</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95size_1">def _get_size</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95t_1">def _get_t</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95template_1">def _get_template</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95textgradient_1">def _get_textGradient</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95textshadow_1">def _get_textShadow</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95top_1">def _get_top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95w_1">def _get_w</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95x_1">def _get_x</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95xalign_1">def _get_xAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95y_1">def _get_y</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95yalign_1">def _get_yAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95z_1">def _get_z</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95get95zalign_1">def _get_zAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95initializecontrols_1">def _initializeControls</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95restorerotation_1">def _restoreRotation</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95restorescale_1">def _restoreScale</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95back_1">def _set_back</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95baselinegrid_1">def _set_baselineGrid</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95baselinegridstart_1">def _set_baselineGridStart</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95borderbottom_1">def _set_borderBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95borderleft_1">def _set_borderLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95borderright_1">def _set_borderRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95bordertop_1">def _set_borderTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95borders_1">def _set_borders</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95bottom_1">def _set_bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95cd_1">def _set_cd</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95center_1">def _set_center</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95ch_1">def _set_ch</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95cw_1">def _set_cw</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95cx_1">def _set_cx</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95cy_1">def _set_cy</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95cz_1">def _set_cz</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95d_1">def _set_d</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95elements_1">def _set_elements</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95front_1">def _set_front</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95gd_1">def _set_gd</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95gh_1">def _set_gh</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95gradient_1">def _set_gradient</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95gutter_1">def _set_gutter</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95gutter3d_1">def _set_gutter3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95gw_1">def _set_gw</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95h_1">def _set_h</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95left_1">def _set_left</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mback_1">def _set_mBack</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mbottom_1">def _set_mBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mfront_1">def _set_mFront</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mleft_1">def _set_mLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mright_1">def _set_mRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mtop_1">def _set_mTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95margin_1">def _set_margin</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95maxd_1">def _set_maxD</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95maxh_1">def _set_maxH</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95maxw_1">def _set_maxW</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mb_1">def _set_mb</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95md_1">def _set_md</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mh_1">def _set_mh</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95middle_1">def _set_middle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mind_1">def _set_minD</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95minh_1">def _set_minH</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95minw_1">def _set_minW</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95ml_1">def _set_ml</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mr_1">def _set_mr</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mt_1">def _set_mt</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mw_1">def _set_mw</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mzb_1">def _set_mzb</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95mzf_1">def _set_mzf</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95origintop_1">def _set_originTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95padding_1">def _set_padding</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95parent_1">def _set_parent</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95pb_1">def _set_pb</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95pl_1">def _set_pl</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95point_1">def _set_point</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95point3d_1">def _set_point3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95pr_1">def _set_pr</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95pt_1">def _set_pt</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95pzb_1">def _set_pzb</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95pzf_1">def _set_pzf</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95right_1">def _set_right</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95scalex_1">def _set_scaleX</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95scaley_1">def _set_scaleY</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95scalez_1">def _set_scaleZ</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95shadow_1">def _set_shadow</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95show_1">def _set_show</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95size_1">def _set_size</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95t_1">def _set_t</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95template_1">def _set_template</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95textgradient_1">def _set_textGradient</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95textshadow_1">def _set_textShadow</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95top_1">def _set_top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95w_1">def _set_w</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95x_1">def _set_x</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95xalign_1">def _set_xAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95y_1">def _set_y</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95yalign_1">def _set_yAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95z_1">def _set_z</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95set95zalign_1">def _set_zAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95validatexalign_1">def _validateXAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95validateyalign_1">def _validateYAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#def-95validatezalign_1">def _validateZAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#property-ancestors_1">property ancestors</a></li>
+        
+            <li><a class="toctree-l4" href="#def-appendelement_1">def appendElement</a></li>
+        
+            <li><a class="toctree-l4" href="#def-appendtimemark_1">def appendTimeMark</a></li>
+        
+            <li><a class="toctree-l4" href="#def-applytemplate_1">def applyTemplate</a></li>
+        
+            <li><a class="toctree-l4" href="#property-back_1">property back</a></li>
+        
+            <li><a class="toctree-l4" href="#def-baseline2bottom_1">def baseline2Bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-baseline2top_1">def baseline2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#property-baselinegrid_1">property baselineGrid</a></li>
+        
+            <li><a class="toctree-l4" href="#property-baselinegridstart_1">property baselineGridStart</a></li>
+        
+            <li><a class="toctree-l4" href="#property-block_1">property block</a></li>
+        
+            <li><a class="toctree-l4" href="#property-block3d_1">property block3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-border_1">property border</a></li>
+        
+            <li><a class="toctree-l4" href="#property-borderbottom_1">property borderBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#property-borderleft_1">property borderLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#property-borderright_1">property borderRight</a></li>
+        
+            <li><a class="toctree-l4" href="#property-bordertop_1">property borderTop</a></li>
+        
+            <li><a class="toctree-l4" href="#property-borders_1">property borders</a></li>
+        
+            <li><a class="toctree-l4" href="#property-bottom_1">property bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-bottom2bottom_1">def bottom2Bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-bottom2bottomside_1">def bottom2BottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-bottom2middle_1">def bottom2Middle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-bottom2middlesides_1">def bottom2MiddleSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-bottom2top_1">def bottom2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#property-box_1">property box</a></li>
+        
+            <li><a class="toctree-l4" href="#property-box3d_1">property box3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-cd_1">property cd</a></li>
+        
+            <li><a class="toctree-l4" href="#property-center_1">property center</a></li>
+        
+            <li><a class="toctree-l4" href="#def-center2center_1">def center2Center</a></li>
+        
+            <li><a class="toctree-l4" href="#def-center2centersides_1">def center2CenterSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-center2left_1">def center2Left</a></li>
+        
+            <li><a class="toctree-l4" href="#def-center2leftside_1">def center2LeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-center2right_1">def center2Right</a></li>
+        
+            <li><a class="toctree-l4" href="#def-center2rightside_1">def center2RightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#property-ch_1">property ch</a></li>
+        
+            <li><a class="toctree-l4" href="#def-clearelements_1">def clearElements</a></li>
+        
+            <li><a class="toctree-l4" href="#def-css_1">def css</a></li>
+        
+            <li><a class="toctree-l4" href="#property-cw_1">property cw</a></li>
+        
+            <li><a class="toctree-l4" href="#property-cx_1">property cx</a></li>
+        
+            <li><a class="toctree-l4" href="#property-cy_1">property cy</a></li>
+        
+            <li><a class="toctree-l4" href="#property-cz_1">property cz</a></li>
+        
+            <li><a class="toctree-l4" href="#property-d_1">property d</a></li>
+        
+            <li><a class="toctree-l4" href="#def-deepcopy_1">def deepCopy</a></li>
+        
+            <li><a class="toctree-l4" href="#property-doc_1">property doc</a></li>
+        
+            <li><a class="toctree-l4" href="#def-draw_1">def draw</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawarrow_1">def drawArrow</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawbaselinegrid_1">def drawBaselineGrid</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawelementframe_1">def drawElementFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawelementinfo_1">def drawElementInfo</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawelementmetainfo_1">def drawElementMetaInfo</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawelementorigin_1">def drawElementOrigin</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawflowconnections_1">def drawFlowConnections</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawframe_1">def drawFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawgrid_1">def drawGrid</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawmissingelementrect_1">def drawMissingElementRect</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawpagecropmarks_1">def drawPageCropMarks</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawpageframe_1">def drawPageFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawpagemetainfo_1">def drawPageMetaInfo</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawpagenameinfo_1">def drawPageNameInfo</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawpagepadding_1">def drawPagePadding</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawpageregistrationmarks_1">def drawPageRegistrationMarks</a></li>
+        
+            <li><a class="toctree-l4" href="#def-drawpages_1">def drawPages</a></li>
+        
+            <li><a class="toctree-l4" href="#property-eid_1">property eId</a></li>
+        
+            <li><a class="toctree-l4" href="#property-elementids_1">property elementIds</a></li>
+        
+            <li><a class="toctree-l4" href="#def-evaluate_1">def evaluate</a></li>
+        
+            <li><a class="toctree-l4" href="#def-export_1">def export</a></li>
+        
+            <li><a class="toctree-l4" href="#def-fit2bottom_1">def fit2Bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-fit2bottomside_1">def fit2BottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-fit2left_1">def fit2Left</a></li>
+        
+            <li><a class="toctree-l4" href="#def-fit2leftside_1">def fit2LeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-fit2right_1">def fit2Right</a></li>
+        
+            <li><a class="toctree-l4" href="#def-fit2rightside_1">def fit2RightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-fit2top_1">def fit2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-fit2topside_1">def fit2TopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-float2bottom_1">def float2Bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-float2bottomside_1">def float2BottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-float2left_1">def float2Left</a></li>
+        
+            <li><a class="toctree-l4" href="#def-float2leftside_1">def float2LeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-float2right_1">def float2Right</a></li>
+        
+            <li><a class="toctree-l4" href="#def-float2rightside_1">def float2RightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-float2top_1">def float2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-float2topside_1">def float2TopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-floatascender2top_1">def floatAscender2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-floatbaseline2top_1">def floatBaseline2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-floatcapheight2top_1">def floatCapHeight2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-floatxheight2top_1">def floatXHeight2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#property-front_1">property front</a></li>
+        
+            <li><a class="toctree-l4" href="#property-gd_1">property gd</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getelement_1">def getElement</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getelementbyname_1">def getElementByName</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getelementinfostring_1">def getElementInfoString</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getelementpage_1">def getElementPage</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getelementsatpoint_1">def getElementsAtPoint</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getelementsposition_1">def getElementsPosition</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getfloatbottomside_1">def getFloatBottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getfloatleftside_1">def getFloatLeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getfloatrightside_1">def getFloatRightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getfloattopside_1">def getFloatTopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getmaxsize_1">def getMaxSize</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getminsize_1">def getMinSize</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getminsize3d_1">def getMinSize3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getnamedstyle_1">def getNamedStyle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getpositions_1">def getPositions</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getsize_1">def getSize</a></li>
+        
+            <li><a class="toctree-l4" href="#def-getsize3d_1">def getSize3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-gh_1">property gh</a></li>
+        
+            <li><a class="toctree-l4" href="#property-gradient_1">property gradient</a></li>
+        
+            <li><a class="toctree-l4" href="#property-gutter_1">property gutter</a></li>
+        
+            <li><a class="toctree-l4" href="#property-gutter3d_1">property gutter3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-gw_1">property gw</a></li>
+        
+            <li><a class="toctree-l4" href="#property-h_1">property h</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isascenderontop_1">def isAscenderOnTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isbaselineonbottom_1">def isBaselineOnBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isbaselineontop_1">def isBaselineOnTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isbottomonbottom_1">def isBottomOnBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isbottomonbottomside_1">def isBottomOnBottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isbottomonmiddle_1">def isBottomOnMiddle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isbottomonmiddlesides_1">def isBottomOnMiddleSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isbottomontop_1">def isBottomOnTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-iscapheightontop_1">def isCapHeightOnTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-iscenteroncenter_1">def isCenterOnCenter</a></li>
+        
+            <li><a class="toctree-l4" href="#def-iscenteroncentersides_1">def isCenterOnCenterSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-iscenteronleft_1">def isCenterOnLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-iscenteronleftside_1">def isCenterOnLeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-iscenteronright_1">def isCenterOnRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-iscenteronrightside_1">def isCenterOnRightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isfloatonbottom_1">def isFloatOnBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isfloatonbottomside_1">def isFloatOnBottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isfloatonleft_1">def isFloatOnLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isfloatonleftside_1">def isFloatOnLeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isfloatonright_1">def isFloatOnRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isfloatonrightside_1">def isFloatOnRightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isfloatontop_1">def isFloatOnTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isfloatontopside_1">def isFloatOnTopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#int-isflow_1">int isFlow</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isleftoncenter_1">def isLeftOnCenter</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isleftoncentersides_1">def isLeftOnCenterSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isleftonleft_1">def isLeftOnLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isleftonleftside_1">def isLeftOnLeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isleftonright_1">def isLeftOnRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-ismiddleonbottom_1">def isMiddleOnBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-ismiddleonbottomside_1">def isMiddleOnBottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-ismiddleonmiddle_1">def isMiddleOnMiddle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-ismiddleonmiddlesides_1">def isMiddleOnMiddleSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-ismiddleontop_1">def isMiddleOnTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-ismiddleontopside_1">def isMiddleOnTopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginonbottom_1">def isOriginOnBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginonbottomside_1">def isOriginOnBottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginoncenter_1">def isOriginOnCenter</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginoncentersides_1">def isOriginOnCenterSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginonleft_1">def isOriginOnLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginonleftside_1">def isOriginOnLeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginonmiddle_1">def isOriginOnMiddle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginonmiddlesides_1">def isOriginOnMiddleSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginonright_1">def isOriginOnRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginonrightside_1">def isOriginOnRightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginontop_1">def isOriginOnTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoriginontopside_1">def isOriginOnTopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isoverflow_1">def isOverflow</a></li>
+        
+            <li><a class="toctree-l4" href="#int-ispage_1">int isPage</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isrightoncenter_1">def isRightOnCenter</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isrightoncentersides_1">def isRightOnCenterSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isrightonleft_1">def isRightOnLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isrightonright_1">def isRightOnRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isrightonrightside_1">def isRightOnRightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isschrunkonblockleft_1">def isSchrunkOnBlockLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isshrunkonblockbottom_1">def isShrunkOnBlockBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isshrunkonblockbottomside_1">def isShrunkOnBlockBottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isshrunkonblockleftside_1">def isShrunkOnBlockLeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isshrunkonblockright_1">def isShrunkOnBlockRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isshrunkonblockrightside_1">def isShrunkOnBlockRightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isshrunkonblocktop_1">def isShrunkOnBlockTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isshrunkonblocktopside_1">def isShrunkOnBlockTopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#int-istext_1">int isText</a></li>
+        
+            <li><a class="toctree-l4" href="#int-istextbox_1">int isTextBox</a></li>
+        
+            <li><a class="toctree-l4" href="#def-istoponbottom_1">def isTopOnBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-istoponmiddle_1">def isTopOnMiddle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-istoponmiddlesides_1">def isTopOnMiddleSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-istopontop_1">def isTopOnTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-istopontopside_1">def isTopOnTopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#int-isview_1">int isView</a></li>
+        
+            <li><a class="toctree-l4" href="#def-isxheightontop_1">def isXHeightOnTop</a></li>
+        
+            <li><a class="toctree-l4" href="#property-left_1">property left</a></li>
+        
+            <li><a class="toctree-l4" href="#def-left2center_1">def left2Center</a></li>
+        
+            <li><a class="toctree-l4" href="#def-left2centersides_1">def left2CenterSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-left2left_1">def left2Left</a></li>
+        
+            <li><a class="toctree-l4" href="#def-left2leftside_1">def left2LeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-left2right_1">def left2Right</a></li>
+        
+            <li><a class="toctree-l4" href="#property-lib_1">property lib</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mback_1">property mBack</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mbottom_1">property mBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mfront_1">property mFront</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mleft_1">property mLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mright_1">property mRight</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mtop_1">property mTop</a></li>
+        
+            <li><a class="toctree-l4" href="#property-margin_1">property margin</a></li>
+        
+            <li><a class="toctree-l4" href="#property-margin3d_1">property margin3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-marginblock3d_1">property marginBlock3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-marginbox_1">property marginBox</a></li>
+        
+            <li><a class="toctree-l4" href="#property-maxd_1">property maxD</a></li>
+        
+            <li><a class="toctree-l4" href="#property-maxh_1">property maxH</a></li>
+        
+            <li><a class="toctree-l4" href="#property-maxw_1">property maxW</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mb_1">property mb</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mh_1">property mh</a></li>
+        
+            <li><a class="toctree-l4" href="#property-middle_1">property middle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-middle2bottom_1">def middle2Bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-middle2bottomside_1">def middle2BottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-middle2middle_1">def middle2Middle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-middle2middlesides_1">def middle2MiddleSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-middle2top_1">def middle2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-middle2topside_1">def middle2TopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mind_1">property minD</a></li>
+        
+            <li><a class="toctree-l4" href="#property-minh_1">property minH</a></li>
+        
+            <li><a class="toctree-l4" href="#property-minw_1">property minW</a></li>
+        
+            <li><a class="toctree-l4" href="#property-ml_1">property ml</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mr_1">property mr</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mt_1">property mt</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mw_1">property mw</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mzb_1">property mzb</a></li>
+        
+            <li><a class="toctree-l4" href="#property-mzf_1">property mzf</a></li>
+        
+            <li><a class="toctree-l4" href="#property-opoint_1">property oPoint</a></li>
+        
+            <li><a class="toctree-l4" href="#property-opoint3d_1">property oPoint3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2bottom_1">def origin2Bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2bottomside_1">def origin2BottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2center_1">def origin2Center</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2centersides_1">def origin2CenterSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2left_1">def origin2Left</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2leftside_1">def origin2LeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2middle_1">def origin2Middle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2middlesides_1">def origin2MiddleSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2right_1">def origin2Right</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2rightside_1">def origin2RightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2top_1">def origin2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-origin2topside_1">def origin2TopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#property-origintop_1">property originTop</a></li>
+        
+            <li><a class="toctree-l4" href="#property-originsblock_1">property originsBlock</a></li>
+        
+            <li><a class="toctree-l4" href="#property-originsblock3d_1">property originsBlock3D</a></li>
+        
+            <li><a class="toctree-l4" href="#def-overflow2next_1">def overflow2Next</a></li>
+        
+            <li><a class="toctree-l4" href="#property-paddedblock3d_1">property paddedBlock3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-paddedbox_1">property paddedBox</a></li>
+        
+            <li><a class="toctree-l4" href="#property-paddedbox3d_1">property paddedBox3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-padding_1">property padding</a></li>
+        
+            <li><a class="toctree-l4" href="#property-padding3d_1">property padding3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-parent_1">property parent</a></li>
+        
+            <li><a class="toctree-l4" href="#property-pb_1">property pb</a></li>
+        
+            <li><a class="toctree-l4" href="#property-pd_1">property pd</a></li>
+        
+            <li><a class="toctree-l4" href="#property-ph_1">property ph</a></li>
+        
+            <li><a class="toctree-l4" href="#property-pl_1">property pl</a></li>
+        
+            <li><a class="toctree-l4" href="#property-point_1">property point</a></li>
+        
+            <li><a class="toctree-l4" href="#property-point3d_1">property point3D</a></li>
+        
+            <li><a class="toctree-l4" href="#property-pr_1">property pr</a></li>
+        
+            <li><a class="toctree-l4" href="#property-pt_1">property pt</a></li>
+        
+            <li><a class="toctree-l4" href="#property-pw_1">property pw</a></li>
+        
+            <li><a class="toctree-l4" href="#property-pzb_1">property pzb</a></li>
+        
+            <li><a class="toctree-l4" href="#property-pzf_1">property pzf</a></li>
+        
+            <li><a class="toctree-l4" href="#def-removeelement_1">def removeElement</a></li>
+        
+            <li><a class="toctree-l4" href="#def-resetshadow_1">def resetShadow</a></li>
+        
+            <li><a class="toctree-l4" href="#property-right_1">property right</a></li>
+        
+            <li><a class="toctree-l4" href="#def-right2center_1">def right2Center</a></li>
+        
+            <li><a class="toctree-l4" href="#def-right2centersides_1">def right2CenterSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-right2left_1">def right2Left</a></li>
+        
+            <li><a class="toctree-l4" href="#def-right2right_1">def right2Right</a></li>
+        
+            <li><a class="toctree-l4" href="#def-right2rightside_1">def right2RightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#property-rootx_1">property rootX</a></li>
+        
+            <li><a class="toctree-l4" href="#property-rooty_1">property rootY</a></li>
+        
+            <li><a class="toctree-l4" href="#property-rootz_1">property rootZ</a></li>
+        
+            <li><a class="toctree-l4" href="#property-scalex_1">property scaleX</a></li>
+        
+            <li><a class="toctree-l4" href="#property-scaley_1">property scaleY</a></li>
+        
+            <li><a class="toctree-l4" href="#property-scalez_1">property scaleZ</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setcontrols_1">def setControls</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setelementbyindex_1">def setElementByIndex</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setmaxsize_1">def setMaxSize</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setminsize_1">def setMinSize</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setshadow_1">def setShadow</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setsize_1">def setSize</a></li>
+        
+            <li><a class="toctree-l4" href="#property-show_1">property show</a></li>
+        
+            <li><a class="toctree-l4" href="#def-shrink2blockbottom_1">def shrink2BlockBottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-shrink2blockbottomside_1">def shrink2BlockBottomSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-shrink2blockleft_1">def shrink2BlockLeft</a></li>
+        
+            <li><a class="toctree-l4" href="#def-shrink2blockleftside_1">def shrink2BlockLeftSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-shrink2blockright_1">def shrink2BlockRight</a></li>
+        
+            <li><a class="toctree-l4" href="#def-shrink2blockrightside_1">def shrink2BlockRightSide</a></li>
+        
+            <li><a class="toctree-l4" href="#def-shrink2blocktop_1">def shrink2BlockTop</a></li>
+        
+            <li><a class="toctree-l4" href="#def-shrink2blocktopside_1">def shrink2BlockTopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#property-siblings_1">property siblings</a></li>
+        
+            <li><a class="toctree-l4" href="#def-solve_1">def solve</a></li>
+        
+            <li><a class="toctree-l4" href="#property-template_1">property template</a></li>
+        
+            <li><a class="toctree-l4" href="#property-textgradient_1">property textGradient</a></li>
+        
+            <li><a class="toctree-l4" href="#property-textshadow_1">property textShadow</a></li>
+        
+            <li><a class="toctree-l4" href="#property-top_1">property top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-top2bottom_1">def top2Bottom</a></li>
+        
+            <li><a class="toctree-l4" href="#def-top2middle_1">def top2Middle</a></li>
+        
+            <li><a class="toctree-l4" href="#def-top2middlesides_1">def top2MiddleSides</a></li>
+        
+            <li><a class="toctree-l4" href="#def-top2top_1">def top2Top</a></li>
+        
+            <li><a class="toctree-l4" href="#def-top2topside_1">def top2TopSide</a></li>
+        
+            <li><a class="toctree-l4" href="#str-viewid_1">str viewId</a></li>
+        
+            <li><a class="toctree-l4" href="#property-w_1">property w</a></li>
+        
+            <li><a class="toctree-l4" href="#property-x_1">property x</a></li>
+        
+            <li><a class="toctree-l4" href="#property-xalign_1">property xAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#property-y_1">property y</a></li>
+        
+            <li><a class="toctree-l4" href="#property-yalign_1">property yAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#property-z_1">property z</a></li>
+        
+            <li><a class="toctree-l4" href="#property-zalign_1">property zAlign</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setfillcolor">def setFillColor</a></li>
+        
+            <li><a class="toctree-l4" href="#def-setstrokecolor">def setStrokeColor</a></li>
+        
         </ul>
     
 
     </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../singleview/">Singleview</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../spreadview/">Spreadview</a>
                 </li>
                 <li class="">
                     
@@ -1560,7 +2588,7 @@
         
       
     
-    <li>Kirbyview</li>
+    <li>Spreadview</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/typenetwork/PageBot/"> Edit on PageBot</a>
@@ -1572,9 +2600,8 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="elementsviewskirbyview">elements.views.kirbyview</h1>
-<h3 id="class-kirbyview">class KirbyView</h3>
-<h3 id="class-view">class View</h3>
+                <h1 id="elementsviewsspreadview">elements.views.spreadview</h1>
+<h3 id="class-spreadview">class SpreadView</h3>
 <p>A View is just another kind of container, kept by document to make a certain presentation of the page tree.  </p>
 <h3 id="class-cssbuilder95class">class CSSBUILDER_CLASS</h3>
 <h3 id="int-min95padding">int MIN_PADDING</h3>
@@ -2317,6 +3344,753 @@ If the argument is a string, the return value is the same object.  </p>
 <h3 id="property-z">property z</h3>
 <p>Answer the z position of self.  </p>
 <h3 id="property-zalign">property zAlign</h3>
+<h3 id="class-view">class View</h3>
+<p>A View is just another kind of container, kept by document to make a certain presentation of the page tree.  </p>
+<h3 id="class-cssbuilder95class_1">class CSSBUILDER_CLASS</h3>
+<h3 id="int-min95padding_1">int MIN_PADDING</h3>
+<p>int(x=0) -&gt; int or long<br />
+int(x, base=10) -&gt; int or long  </p>
+<p>Convert a number or string to an integer, or return 0 if no arguments<br />
+are given.  If x is floating point, the conversion truncates towards zero.<br />
+If x is outside the integer range, the function returns a long instead.  </p>
+<p>If x is not a number or if base is given, then x must be a string or<br />
+Unicode object representing an integer literal in the given base.  The<br />
+literal can be preceded by '+' or '-' and be surrounded by whitespace.<br />
+The base defaults to 10.  Valid bases are 0 and 2-36.  Base 0 means to<br />
+interpret the base from the string as an integer literal.  </p>
+<pre><code>&gt;&gt;&gt; int('0b100', base=0)  
+4
+</code></pre>
+<h3 id="def-notnow95getexpandedtimemarks_1">def NOTNOW_getExpandedTimeMarks</h3>
+<p>Answer a new interpolated TimeState instance, from the enclosing time states for t.  </p>
+<h3 id="def-notnow95getflows_1">def NOTNOW_getFlows</h3>
+<p>Answer the set of flow element sequences on the page.  </p>
+<h3 id="def-notnow95getnextflowbox_1">def NOTNOW_getNextFlowBox</h3>
+<p>Answer the next textBox that tb is pointing to. This can be on the same page or a next<br />
+page, depending how the page (and probably its template) is defined.  </p>
+<h3 id="def-9595getitem9595_1">def __getitem__</h3>
+<p>Answer the element with eId. Raise a KeyError if the element does not exist.  </p>
+<h3 id="def-9595init9595_1">def __init__</h3>
+<h3 id="def-9595len9595_1">def __len__</h3>
+<p>Answer total amount of elements, placed or not.  </p>
+<h3 id="def-9595repr9595_1">def __repr__</h3>
+<h3 id="def-9595setitem9595_1">def __setitem__</h3>
+<h3 id="def-95applyalignment_1">def _applyAlignment</h3>
+<p>Answer the p according to the alignment status in the css.  </p>
+<h3 id="def-95applyorigin_1">def _applyOrigin</h3>
+<p>If self.originTop is False, then the y-value is interpreted as mathematics, <br />
+starting at the bottom of the parent element, moving up.<br />
+If the flag is True, then move from top down, where the origin of the element becomes<br />
+top-left of the parent.  </p>
+<h3 id="def-95applyrotation_1">def _applyRotation</h3>
+<p>Apply the rotation for angle, where (mx, my) is the rotation center.  </p>
+<h3 id="def-95applyscale_1">def _applyScale</h3>
+<p>Apply the scale, if both self.scaleX and self.scaleY are set. Use this<br />
+method paired with self._restoreScale(). The (x, y) answered as reversed scaled tuple,<br />
+so drawing elements can still draw on "real size", while the other element is in scaled mode.  </p>
+<h3 id="def-95borderdict_1">def _borderDict</h3>
+<h3 id="def-95drawelements_1">def _drawElements</h3>
+<p>Recursively draw all elements of self on their own relative position in the main canvas,  </p>
+<h3 id="def-95drawelementsneedinginfo_1">def _drawElementsNeedingInfo</h3>
+<h3 id="def-95drawpageregistrationmark_1">def _drawPageRegistrationMark</h3>
+<p>Draw registration mark as position x, y.  </p>
+<h3 id="def-95get95ancestors_1">def _get_ancestors</h3>
+<p>Answer the list of anscestors of self, including the document root. Self is not included.  </p>
+<h3 id="def-95get95back_1">def _get_back</h3>
+<h3 id="def-95get95baselinegrid_1">def _get_baselineGrid</h3>
+<h3 id="def-95get95baselinegridstart_1">def _get_baselineGridStart</h3>
+<h3 id="def-95get95block_1">def _get_block</h3>
+<p>Answer the vacuum bounding box around all child elements in 2D  </p>
+<h3 id="def-95get95block3d_1">def _get_block3D</h3>
+<p>Answer the vacuum 3D bounding box around all child elements.  </p>
+<h3 id="def-95get95borderbottom_1">def _get_borderBottom</h3>
+<h3 id="def-95get95borderleft_1">def _get_borderLeft</h3>
+<h3 id="def-95get95borderright_1">def _get_borderRight</h3>
+<h3 id="def-95get95bordertop_1">def _get_borderTop</h3>
+<h3 id="def-95get95borders_1">def _get_borders</h3>
+<h3 id="def-95get95bottom_1">def _get_bottom</h3>
+<h3 id="def-95get95box_1">def _get_box</h3>
+<p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
+<h3 id="def-95get95box3d_1">def _get_box3D</h3>
+<p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.  </p>
+<h3 id="def-95get95cd_1">def _get_cd</h3>
+<h3 id="def-95get95center_1">def _get_center</h3>
+<h3 id="def-95get95ch_1">def _get_ch</h3>
+<h3 id="def-95get95cw_1">def _get_cw</h3>
+<h3 id="def-95get95cx_1">def _get_cx</h3>
+<h3 id="def-95get95cy_1">def _get_cy</h3>
+<h3 id="def-95get95cz_1">def _get_cz</h3>
+<h3 id="def-95get95d_1">def _get_d</h3>
+<h3 id="def-95get95doc_1">def _get_doc</h3>
+<p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
+<h3 id="def-95get95eid_1">def _get_eId</h3>
+<h3 id="def-95get95elementids_1">def _get_elementIds</h3>
+<h3 id="def-95get95elements_1">def _get_elements</h3>
+<h3 id="def-95get95front_1">def _get_front</h3>
+<h3 id="def-95get95gd_1">def _get_gd</h3>
+<h3 id="def-95get95gh_1">def _get_gh</h3>
+<h3 id="def-95get95gradient_1">def _get_gradient</h3>
+<h3 id="def-95get95gutter_1">def _get_gutter</h3>
+<h3 id="def-95get95gutter3d_1">def _get_gutter3D</h3>
+<h3 id="def-95get95gw_1">def _get_gw</h3>
+<h3 id="def-95get95h_1">def _get_h</h3>
+<h3 id="def-95get95left_1">def _get_left</h3>
+<h3 id="def-95get95lib_1">def _get_lib</h3>
+<p>Answer the shared document.lib dictionary by property, used for share global entry by elements.<br />
+Elements query their self.parent.lib until the root document is reached.  </p>
+<h3 id="def-95get95mback_1">def _get_mBack</h3>
+<h3 id="def-95get95mbottom_1">def _get_mBottom</h3>
+<h3 id="def-95get95mfront_1">def _get_mFront</h3>
+<h3 id="def-95get95mleft_1">def _get_mLeft</h3>
+<h3 id="def-95get95mright_1">def _get_mRight</h3>
+<h3 id="def-95get95mtop_1">def _get_mTop</h3>
+<h3 id="def-95get95margin_1">def _get_margin</h3>
+<h3 id="def-95get95margin3d_1">def _get_margin3D</h3>
+<h3 id="def-95get95marginblock3d_1">def _get_marginBlock3D</h3>
+<p>Answer the vacuum 3D bounding box around all child elements.  </p>
+<h3 id="def-95get95marginbox_1">def _get_marginBox</h3>
+<p>Calculate the margin position and margin resized box of the element, after applying the<br />
+option style margin.  </p>
+<h3 id="def-95get95maxd_1">def _get_maxD</h3>
+<h3 id="def-95get95maxh_1">def _get_maxH</h3>
+<h3 id="def-95get95maxw_1">def _get_maxW</h3>
+<h3 id="def-95get95mb_1">def _get_mb</h3>
+<h3 id="def-95get95md_1">def _get_md</h3>
+<h3 id="def-95get95mh_1">def _get_mh</h3>
+<h3 id="def-95get95middle_1">def _get_middle</h3>
+<h3 id="def-95get95mind_1">def _get_minD</h3>
+<h3 id="def-95get95minh_1">def _get_minH</h3>
+<h3 id="def-95get95minw_1">def _get_minW</h3>
+<h3 id="def-95get95ml_1">def _get_ml</h3>
+<h3 id="def-95get95mr_1">def _get_mr</h3>
+<h3 id="def-95get95mt_1">def _get_mt</h3>
+<h3 id="def-95get95mw_1">def _get_mw</h3>
+<h3 id="def-95get95mzb_1">def _get_mzb</h3>
+<h3 id="def-95get95mzf_1">def _get_mzf</h3>
+<h3 id="def-95get95opoint_1">def _get_oPoint</h3>
+<p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
+<h3 id="def-95get95origintop_1">def _get_originTop</h3>
+<p>Answer the style flag if all point y values should measure top-down (typographic page<br />
+orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
+The axes in X and Z directions are fixed.  </p>
+<h3 id="def-95get95originsblock_1">def _get_originsBlock</h3>
+<h3 id="def-95get95originsblock3d_1">def _get_originsBlock3D</h3>
+<p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
+<h3 id="def-95get95paddedblock3d_1">def _get_paddedBlock3D</h3>
+<p>Answer the vacuum 3D bounding box around all child elements, <br />
+subtracting their paddings. Sizes cannot become nextive.  </p>
+<h3 id="def-95get95paddedbox_1">def _get_paddedBox</h3>
+<p>Calculate the padded position and padded resized box of the element, after applying the<br />
+style padding. Answered format (x, y, w, h).  </p>
+<h3 id="def-95get95paddedbox3d_1">def _get_paddedBox3D</h3>
+<p>Calculate the padded position and padded resized box in 3D of the lement, after applying<br />
+the style padding. Answered format (x, y, z, w, h, d).  </p>
+<h3 id="def-95get95padding_1">def _get_padding</h3>
+<h3 id="def-95get95padding3d_1">def _get_padding3D</h3>
+<h3 id="def-95get95parent_1">def _get_parent</h3>
+<p>Answer the parent of the element, if it exists, by weakref reference. Answer None of there<br />
+is not parent defined or if the parent not longer exists.  </p>
+<h3 id="def-95get95pb_1">def _get_pb</h3>
+<h3 id="def-95get95pd_1">def _get_pd</h3>
+<h3 id="def-95get95ph_1">def _get_ph</h3>
+<h3 id="def-95get95pl_1">def _get_pl</h3>
+<h3 id="def-95get95point_1">def _get_point</h3>
+<p>Answer the 2D point tuple of the relative local position of self.  </p>
+<h3 id="def-95get95point3d_1">def _get_point3D</h3>
+<p>Answer the 3D point tuple of the relative local position of self.  </p>
+<h3 id="def-95get95pr_1">def _get_pr</h3>
+<h3 id="def-95get95pt_1">def _get_pt</h3>
+<h3 id="def-95get95pw_1">def _get_pw</h3>
+<h3 id="def-95get95pzb_1">def _get_pzb</h3>
+<h3 id="def-95get95pzf_1">def _get_pzf</h3>
+<h3 id="def-95get95right_1">def _get_right</h3>
+<h3 id="def-95get95rootx_1">def _get_rootX</h3>
+<h3 id="def-95get95rooty_1">def _get_rootY</h3>
+<h3 id="def-95get95rootz_1">def _get_rootZ</h3>
+<h3 id="def-95get95scalex_1">def _get_scaleX</h3>
+<h3 id="def-95get95scaley_1">def _get_scaleY</h3>
+<h3 id="def-95get95scalez_1">def _get_scaleZ</h3>
+<h3 id="def-95get95shadow_1">def _get_shadow</h3>
+<h3 id="def-95get95show_1">def _get_show</h3>
+<h3 id="def-95get95siblings_1">def _get_siblings</h3>
+<p>Answer all elements that share self.parent, not including self in the list.  </p>
+<h3 id="def-95get95size_1">def _get_size</h3>
+<h3 id="def-95get95t_1">def _get_t</h3>
+<p>The self._t status is the time status, interpolating between the values in <br />
+self.tStyles[t1] and self.tStyles[t2] where t1 &lt;= t &lt;= t2 and these styles contain<br />
+the requested parameters.  </p>
+<h3 id="def-95get95template_1">def _get_template</h3>
+<h3 id="def-95get95textgradient_1">def _get_textGradient</h3>
+<h3 id="def-95get95textshadow_1">def _get_textShadow</h3>
+<h3 id="def-95get95top_1">def _get_top</h3>
+<p>Answer the top position (relative to self.parent) of self.  </p>
+<h3 id="def-95get95w_1">def _get_w</h3>
+<h3 id="def-95get95x_1">def _get_x</h3>
+<p>Answer the x position of self.  </p>
+<h3 id="def-95get95xalign_1">def _get_xAlign</h3>
+<h3 id="def-95get95y_1">def _get_y</h3>
+<p>Answer the y position of self.  </p>
+<h3 id="def-95get95yalign_1">def _get_yAlign</h3>
+<h3 id="def-95get95z_1">def _get_z</h3>
+<p>Answer the z position of self.  </p>
+<h3 id="def-95get95zalign_1">def _get_zAlign</h3>
+<h3 id="def-95initializecontrols_1">def _initializeControls</h3>
+<h3 id="def-95restorerotation_1">def _restoreRotation</h3>
+<p>Reset graphics state from rotation mode.  </p>
+<h3 id="def-95restorescale_1">def _restoreScale</h3>
+<p>Reset graphics state from svaed scale mode. Make sure to match the call of self._applyScale.<br />
+If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the restore.  </p>
+<h3 id="def-95set95back_1">def _set_back</h3>
+<h3 id="def-95set95baselinegrid_1">def _set_baselineGrid</h3>
+<h3 id="def-95set95baselinegridstart_1">def _set_baselineGridStart</h3>
+<h3 id="def-95set95borderbottom_1">def _set_borderBottom</h3>
+<h3 id="def-95set95borderleft_1">def _set_borderLeft</h3>
+<h3 id="def-95set95borderright_1">def _set_borderRight</h3>
+<h3 id="def-95set95bordertop_1">def _set_borderTop</h3>
+<h3 id="def-95set95borders_1">def _set_borders</h3>
+<h3 id="def-95set95bottom_1">def _set_bottom</h3>
+<h3 id="def-95set95cd_1">def _set_cd</h3>
+<h3 id="def-95set95center_1">def _set_center</h3>
+<h3 id="def-95set95ch_1">def _set_ch</h3>
+<h3 id="def-95set95cw_1">def _set_cw</h3>
+<h3 id="def-95set95cx_1">def _set_cx</h3>
+<h3 id="def-95set95cy_1">def _set_cy</h3>
+<h3 id="def-95set95cz_1">def _set_cz</h3>
+<h3 id="def-95set95d_1">def _set_d</h3>
+<h3 id="def-95set95elements_1">def _set_elements</h3>
+<h3 id="def-95set95front_1">def _set_front</h3>
+<h3 id="def-95set95gd_1">def _set_gd</h3>
+<h3 id="def-95set95gh_1">def _set_gh</h3>
+<h3 id="def-95set95gradient_1">def _set_gradient</h3>
+<h3 id="def-95set95gutter_1">def _set_gutter</h3>
+<h3 id="def-95set95gutter3d_1">def _set_gutter3D</h3>
+<h3 id="def-95set95gw_1">def _set_gw</h3>
+<h3 id="def-95set95h_1">def _set_h</h3>
+<h3 id="def-95set95left_1">def _set_left</h3>
+<h3 id="def-95set95mback_1">def _set_mBack</h3>
+<h3 id="def-95set95mbottom_1">def _set_mBottom</h3>
+<h3 id="def-95set95mfront_1">def _set_mFront</h3>
+<h3 id="def-95set95mleft_1">def _set_mLeft</h3>
+<h3 id="def-95set95mright_1">def _set_mRight</h3>
+<h3 id="def-95set95mtop_1">def _set_mTop</h3>
+<h3 id="def-95set95margin_1">def _set_margin</h3>
+<h3 id="def-95set95maxd_1">def _set_maxD</h3>
+<h3 id="def-95set95maxh_1">def _set_maxH</h3>
+<h3 id="def-95set95maxw_1">def _set_maxW</h3>
+<h3 id="def-95set95mb_1">def _set_mb</h3>
+<h3 id="def-95set95md_1">def _set_md</h3>
+<h3 id="def-95set95mh_1">def _set_mh</h3>
+<h3 id="def-95set95middle_1">def _set_middle</h3>
+<h3 id="def-95set95mind_1">def _set_minD</h3>
+<h3 id="def-95set95minh_1">def _set_minH</h3>
+<h3 id="def-95set95minw_1">def _set_minW</h3>
+<h3 id="def-95set95ml_1">def _set_ml</h3>
+<h3 id="def-95set95mr_1">def _set_mr</h3>
+<h3 id="def-95set95mt_1">def _set_mt</h3>
+<h3 id="def-95set95mw_1">def _set_mw</h3>
+<h3 id="def-95set95mzb_1">def _set_mzb</h3>
+<h3 id="def-95set95mzf_1">def _set_mzf</h3>
+<h3 id="def-95set95origintop_1">def _set_originTop</h3>
+<h3 id="def-95set95padding_1">def _set_padding</h3>
+<h3 id="def-95set95parent_1">def _set_parent</h3>
+<h3 id="def-95set95pb_1">def _set_pb</h3>
+<h3 id="def-95set95pl_1">def _set_pl</h3>
+<h3 id="def-95set95point_1">def _set_point</h3>
+<h3 id="def-95set95point3d_1">def _set_point3D</h3>
+<h3 id="def-95set95pr_1">def _set_pr</h3>
+<h3 id="def-95set95pt_1">def _set_pt</h3>
+<h3 id="def-95set95pzb_1">def _set_pzb</h3>
+<h3 id="def-95set95pzf_1">def _set_pzf</h3>
+<h3 id="def-95set95right_1">def _set_right</h3>
+<h3 id="def-95set95scalex_1">def _set_scaleX</h3>
+<h3 id="def-95set95scaley_1">def _set_scaleY</h3>
+<h3 id="def-95set95scalez_1">def _set_scaleZ</h3>
+<h3 id="def-95set95shadow_1">def _set_shadow</h3>
+<h3 id="def-95set95show_1">def _set_show</h3>
+<h3 id="def-95set95size_1">def _set_size</h3>
+<h3 id="def-95set95t_1">def _set_t</h3>
+<h3 id="def-95set95template_1">def _set_template</h3>
+<h3 id="def-95set95textgradient_1">def _set_textGradient</h3>
+<h3 id="def-95set95textshadow_1">def _set_textShadow</h3>
+<h3 id="def-95set95top_1">def _set_top</h3>
+<p>Shift the element so self.top == y.  </p>
+<h3 id="def-95set95w_1">def _set_w</h3>
+<h3 id="def-95set95x_1">def _set_x</h3>
+<h3 id="def-95set95xalign_1">def _set_xAlign</h3>
+<h3 id="def-95set95y_1">def _set_y</h3>
+<h3 id="def-95set95yalign_1">def _set_yAlign</h3>
+<h3 id="def-95set95z_1">def _set_z</h3>
+<h3 id="def-95set95zalign_1">def _set_zAlign</h3>
+<h3 id="def-95validatexalign_1">def _validateXAlign</h3>
+<h3 id="def-95validateyalign_1">def _validateYAlign</h3>
+<h3 id="def-95validatezalign_1">def _validateZAlign</h3>
+<h3 id="property-ancestors_1">property ancestors</h3>
+<p>Answer the list of anscestors of self, including the document root. Self is not included.  </p>
+<h3 id="def-appendelement_1">def appendElement</h3>
+<p>Add element to the list of child elements. Note that elements can be added multiple times.<br />
+If the element is alread placed in another container, then remove it from its current parent.<br />
+This relation and position is lost. The position e is supposed to be filled already in local position.  </p>
+<h3 id="def-appendtimemark_1">def appendTimeMark</h3>
+<h3 id="def-applytemplate_1">def applyTemplate</h3>
+<p>Copy relevant info from template: w, h, elements, style, conditions when element is created.<br />
+Don't call later.  </p>
+<h3 id="property-back_1">property back</h3>
+<h3 id="def-baseline2bottom_1">def baseline2Bottom</h3>
+<h3 id="def-baseline2top_1">def baseline2Top</h3>
+<h3 id="property-baselinegrid_1">property baselineGrid</h3>
+<h3 id="property-baselinegridstart_1">property baselineGridStart</h3>
+<h3 id="property-block_1">property block</h3>
+<p>Answer the vacuum bounding box around all child elements in 2D  </p>
+<h3 id="property-block3d_1">property block3D</h3>
+<p>Answer the vacuum 3D bounding box around all child elements.  </p>
+<h3 id="property-border_1">property border</h3>
+<h3 id="property-borderbottom_1">property borderBottom</h3>
+<h3 id="property-borderleft_1">property borderLeft</h3>
+<h3 id="property-borderright_1">property borderRight</h3>
+<h3 id="property-bordertop_1">property borderTop</h3>
+<h3 id="property-borders_1">property borders</h3>
+<h3 id="property-bottom_1">property bottom</h3>
+<h3 id="def-bottom2bottom_1">def bottom2Bottom</h3>
+<h3 id="def-bottom2bottomside_1">def bottom2BottomSide</h3>
+<h3 id="def-bottom2middle_1">def bottom2Middle</h3>
+<h3 id="def-bottom2middlesides_1">def bottom2MiddleSides</h3>
+<h3 id="def-bottom2top_1">def bottom2Top</h3>
+<h3 id="property-box_1">property box</h3>
+<p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
+<h3 id="property-box3d_1">property box3D</h3>
+<p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.  </p>
+<h3 id="property-cd_1">property cd</h3>
+<h3 id="property-center_1">property center</h3>
+<h3 id="def-center2center_1">def center2Center</h3>
+<h3 id="def-center2centersides_1">def center2CenterSides</h3>
+<h3 id="def-center2left_1">def center2Left</h3>
+<h3 id="def-center2leftside_1">def center2LeftSide</h3>
+<h3 id="def-center2right_1">def center2Right</h3>
+<h3 id="def-center2rightside_1">def center2RightSide</h3>
+<h3 id="property-ch_1">property ch</h3>
+<h3 id="def-clearelements_1">def clearElements</h3>
+<p>Properly initializes self._elements and self._eIds. <br />
+Any existing elements get their parent weakrefs become None and will garbage collect.  </p>
+<h3 id="def-css_1">def css</h3>
+<p>In case we are looking for a plain css value, cascading from the main ancestor styles<br />
+of self, then follow the parent links until document or root, if self does not contain<br />
+the requested value.  </p>
+<h3 id="property-cw_1">property cw</h3>
+<h3 id="property-cx_1">property cx</h3>
+<h3 id="property-cy_1">property cy</h3>
+<h3 id="property-cz_1">property cz</h3>
+<h3 id="property-d_1">property d</h3>
+<h3 id="def-deepcopy_1">def deepCopy</h3>
+<p>Answer a copy of self, where the "unique" fields are set to default. Also perform a deep copy<br />
+on all child elements.  </p>
+<h3 id="property-doc_1">property doc</h3>
+<p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
+<h3 id="def-draw_1">def draw</h3>
+<p>Default drawing method just drawing the frame. <br />
+Probably will be redefined by inheriting element classes.  </p>
+<h3 id="def-drawarrow_1">def drawArrow</h3>
+<p>Draw curved arrow marker between the two points.<br />
+TODO: Add drawing of real arrow-heads, rotated in the right direction.  </p>
+<h3 id="def-drawbaselinegrid_1">def drawBaselineGrid</h3>
+<p>Draw baseline grid if line color is set in the style.<br />
+TODO: Make fixed values part of calculation or part of grid style.<br />
+Normally px and py will be 0, but it's possible to give them a fixed offset.  </p>
+<h3 id="def-drawelementframe_1">def drawElementFrame</h3>
+<h3 id="def-drawelementinfo_1">def drawElementInfo</h3>
+<p>For debugging this will make the elements show their info. The css flag "showElementOrigin"<br />
+defines if the origin marker of an element is drawn. Collect the (e, origin), so we can later<br />
+draw all info, after the main drawing has been done.  </p>
+<h3 id="def-drawelementmetainfo_1">def drawElementMetaInfo</h3>
+<h3 id="def-drawelementorigin_1">def drawElementOrigin</h3>
+<h3 id="def-drawflowconnections_1">def drawFlowConnections</h3>
+<p>If rootStyle.showFlowConnections is True, then draw the flow connections<br />
+on the page, using their stroke/width settings of the style.  </p>
+<h3 id="def-drawframe_1">def drawFrame</h3>
+<p>Draw fill of the rectangular element space.<br />
+The self.css('fill') defines the color of the element background.<br />
+Instead of the DrawBot stroke and strokeWidth attributes, use<br />
+borders or (borderTop, borderRight, borderBottom, borderLeft) attributes.  </p>
+<h3 id="def-drawgrid_1">def drawGrid</h3>
+<p>Draw grid of lines and/or rectangles if colors are set in the style.<br />
+Normally px and py will be 0, but it's possible to give them a fixed offset.  </p>
+<h3 id="def-drawmissingelementrect_1">def drawMissingElementRect</h3>
+<p>When designing templates and pages, this will draw a filled rectangle on the element<br />
+bounding box (if self.css('missingElementFill' is defined) and a cross, indicating<br />
+that this element has missing content (as in unused image frames).<br />
+Only draw if self.css('showGrid') is True.  </p>
+<h3 id="def-drawpagecropmarks_1">def drawPageCropMarks</h3>
+<p>If the show flag is set, then draw the cropmarks or page frame.  </p>
+<h3 id="def-drawpageframe_1">def drawPageFrame</h3>
+<p>Draw the page frame if the the flag is on and  if there ie padding enough to show other meta info.<br />
+Otherwise the padding is truncated to 0: no use to draw the frame.  </p>
+<h3 id="def-drawpagemetainfo_1">def drawPageMetaInfo</h3>
+<h3 id="def-drawpagenameinfo_1">def drawPageNameInfo</h3>
+<p>Draw additional document information, color markers, page number, date, version, etc.<br />
+outside the page frame, if drawing crop marks.  </p>
+<h3 id="def-drawpagepadding_1">def drawPagePadding</h3>
+<p>Draw the page frame of its current padding.  </p>
+<h3 id="def-drawpageregistrationmarks_1">def drawPageRegistrationMarks</h3>
+<p>Draw standard registration mark, to show registration of CMYK colors.<br />
+https://en.wikipedia.org/wiki/Printing_registration.  </p>
+<h3 id="def-drawpages_1">def drawPages</h3>
+<p>Draw the selected pages. pageSelection is an optional set of y-pageNumbers to draw.  </p>
+<h3 id="property-eid_1">property eId</h3>
+<h3 id="property-elementids_1">property elementIds</h3>
+<h3 id="def-evaluate_1">def evaluate</h3>
+<p>Evaluate the content of element e with the total sum of conditions.  </p>
+<h3 id="def-export_1">def export</h3>
+<p>Export the document to fileName for all pages in sequential order.<br />
+If pageSelection is defined, it must be a list with page numbers to<br />
+export. This allows the order to be changed and pages to be omitted.<br />
+The fileName can have extensions ['pdf', 'svg', 'png', 'gif'] to direct<br />
+the type of drawing and export that needs to be done.  </p>
+<p>The multiPage value is passed on to the DrawBot saveImage call.<br />
+document.export(...) is the most common way to export documents. But in<br />
+special cases, there is not straighforward (or sequential) export of<br />
+pages, e.g. when generating HTML/CSS. In that case use<br />
+MyBuilder(document).export(fileName), the builder is responsible to<br />
+query the document, pages, elements and styles.  </p>
+<h3 id="def-fit2bottom_1">def fit2Bottom</h3>
+<h3 id="def-fit2bottomside_1">def fit2BottomSide</h3>
+<h3 id="def-fit2left_1">def fit2Left</h3>
+<h3 id="def-fit2leftside_1">def fit2LeftSide</h3>
+<h3 id="def-fit2right_1">def fit2Right</h3>
+<h3 id="def-fit2rightside_1">def fit2RightSide</h3>
+<h3 id="def-fit2top_1">def fit2Top</h3>
+<h3 id="def-fit2topside_1">def fit2TopSide</h3>
+<h3 id="def-float2bottom_1">def float2Bottom</h3>
+<h3 id="def-float2bottomside_1">def float2BottomSide</h3>
+<h3 id="def-float2left_1">def float2Left</h3>
+<h3 id="def-float2leftside_1">def float2LeftSide</h3>
+<h3 id="def-float2right_1">def float2Right</h3>
+<h3 id="def-float2rightside_1">def float2RightSide</h3>
+<h3 id="def-float2top_1">def float2Top</h3>
+<p>Float the element upward, until top hits the parent top padding.<br />
+Include margin to decide if it fits.  </p>
+<h3 id="def-float2topside_1">def float2TopSide</h3>
+<h3 id="def-floatascender2top_1">def floatAscender2Top</h3>
+<h3 id="def-floatbaseline2top_1">def floatBaseline2Top</h3>
+<h3 id="def-floatcapheight2top_1">def floatCapHeight2Top</h3>
+<h3 id="def-floatxheight2top_1">def floatXHeight2Top</h3>
+<h3 id="property-front_1">property front</h3>
+<h3 id="property-gd_1">property gd</h3>
+<h3 id="def-getelement_1">def getElement</h3>
+<p>Answer the page element, if it has a unique element Id. Answer None if the eId does not exist as child.  </p>
+<h3 id="def-getelementbyname_1">def getElementByName</h3>
+<p>Answer the first element in the offspring list that fits the name. Answer None if it cannot be found  </p>
+<h3 id="def-getelementinfostring_1">def getElementInfoString</h3>
+<p>Answer a single string with info about the element. Default is to show the posiiton<br />
+and size (in points and columns). This method can be redefined by inheriting elements<br />
+that want to show additional information.  </p>
+<h3 id="def-getelementpage_1">def getElementPage</h3>
+<p>Recursively answer the page of this element. This can be several layers above self.  </p>
+<h3 id="def-getelementsatpoint_1">def getElementsAtPoint</h3>
+<p>Answer the list with elements that fit the point. Note None in the point will match any<br />
+value in the element position. Where None in the element position with not fit any xyz of the point.  </p>
+<h3 id="def-getelementsposition_1">def getElementsPosition</h3>
+<p>Answer the dictionary of elements that have eIds and their positions.  </p>
+<h3 id="def-getfloatbottomside_1">def getFloatBottomSide</h3>
+<p>Answer the max y that can float to bottom, without overlapping previous sibling elements.<br />
+This means we are just looking at the vertical projection of (self.left, self.right).<br />
+Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
+Comparison of available spave, includes the margins of the elements.  </p>
+<h3 id="def-getfloatleftside_1">def getFloatLeftSide</h3>
+<p>Answer the max x that can float to the left, without overlapping previous sibling elements.<br />
+This means we are just looking at the horizontal projection of (self.top, self.bottom).<br />
+Note that the x may be outside the parent box. Only elements with identical z-value are compared.<br />
+Comparison of available spave, includes the margins of the elements.  </p>
+<h3 id="def-getfloatrightside_1">def getFloatRightSide</h3>
+<p>Answer the max Y that can float to the right, without overlapping previous sibling elements.<br />
+This means we are just looking at the vertical projection of (self.left, self.right).<br />
+Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
+Comparison of available spave, includes the margins of the elements.  </p>
+<h3 id="def-getfloattopside_1">def getFloatTopSide</h3>
+<p>Answer the max y that can float to top, without overlapping previous sibling elements.<br />
+This means we are just looking at the vertical projection between (self.left, self.right).<br />
+Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
+Comparison of available spave, includes the margins of the elements.  </p>
+<h3 id="def-getmaxsize_1">def getMaxSize</h3>
+<h3 id="def-getminsize_1">def getMinSize</h3>
+<p>Answer the (minW, minH) of this element.  </p>
+<h3 id="def-getminsize3d_1">def getMinSize3D</h3>
+<p>Answer the (minW, minH, minD) of this element.  </p>
+<h3 id="def-getnamedstyle_1">def getNamedStyle</h3>
+<p>In case we are looking for a named style (e.g. used by the Typesetter to build a stack<br />
+of cascading tag style, then query the ancestors for the named style. Default behavior<br />
+of all elements is that they pass the request on to the root, which is nornally the document.  </p>
+<h3 id="def-getpositions_1">def getPositions</h3>
+<p>"Answer the dictionary of positions of elements. <br />
+Key is the local point of the child element. Value is list of elements.  </p>
+<h3 id="def-getsize_1">def getSize</h3>
+<p>Answer the size of the element by calling properties self.w and self.h.<br />
+This allows element to dynamically calculate the size if necessary, by redefining the<br />
+self.w and/or self.h properties.  </p>
+<h3 id="def-getsize3d_1">def getSize3D</h3>
+<p>Answer the 3D size of the element.  </p>
+<h3 id="property-gh_1">property gh</h3>
+<h3 id="property-gradient_1">property gradient</h3>
+<h3 id="property-gutter_1">property gutter</h3>
+<h3 id="property-gutter3d_1">property gutter3D</h3>
+<h3 id="property-gw_1">property gw</h3>
+<h3 id="property-h_1">property h</h3>
+<h3 id="def-isascenderontop_1">def isAscenderOnTop</h3>
+<h3 id="def-isbaselineonbottom_1">def isBaselineOnBottom</h3>
+<h3 id="def-isbaselineontop_1">def isBaselineOnTop</h3>
+<h3 id="def-isbottomonbottom_1">def isBottomOnBottom</h3>
+<h3 id="def-isbottomonbottomside_1">def isBottomOnBottomSide</h3>
+<h3 id="def-isbottomonmiddle_1">def isBottomOnMiddle</h3>
+<h3 id="def-isbottomonmiddlesides_1">def isBottomOnMiddleSides</h3>
+<h3 id="def-isbottomontop_1">def isBottomOnTop</h3>
+<h3 id="def-iscapheightontop_1">def isCapHeightOnTop</h3>
+<h3 id="def-iscenteroncenter_1">def isCenterOnCenter</h3>
+<h3 id="def-iscenteroncentersides_1">def isCenterOnCenterSides</h3>
+<h3 id="def-iscenteronleft_1">def isCenterOnLeft</h3>
+<h3 id="def-iscenteronleftside_1">def isCenterOnLeftSide</h3>
+<h3 id="def-iscenteronright_1">def isCenterOnRight</h3>
+<h3 id="def-iscenteronrightside_1">def isCenterOnRightSide</h3>
+<h3 id="def-isfloatonbottom_1">def isFloatOnBottom</h3>
+<h3 id="def-isfloatonbottomside_1">def isFloatOnBottomSide</h3>
+<h3 id="def-isfloatonleft_1">def isFloatOnLeft</h3>
+<h3 id="def-isfloatonleftside_1">def isFloatOnLeftSide</h3>
+<h3 id="def-isfloatonright_1">def isFloatOnRight</h3>
+<h3 id="def-isfloatonrightside_1">def isFloatOnRightSide</h3>
+<h3 id="def-isfloatontop_1">def isFloatOnTop</h3>
+<h3 id="def-isfloatontopside_1">def isFloatOnTopSide</h3>
+<h3 id="int-isflow_1">int isFlow</h3>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
+<h3 id="def-isleftoncenter_1">def isLeftOnCenter</h3>
+<h3 id="def-isleftoncentersides_1">def isLeftOnCenterSides</h3>
+<h3 id="def-isleftonleft_1">def isLeftOnLeft</h3>
+<h3 id="def-isleftonleftside_1">def isLeftOnLeftSide</h3>
+<h3 id="def-isleftonright_1">def isLeftOnRight</h3>
+<h3 id="def-ismiddleonbottom_1">def isMiddleOnBottom</h3>
+<h3 id="def-ismiddleonbottomside_1">def isMiddleOnBottomSide</h3>
+<h3 id="def-ismiddleonmiddle_1">def isMiddleOnMiddle</h3>
+<h3 id="def-ismiddleonmiddlesides_1">def isMiddleOnMiddleSides</h3>
+<h3 id="def-ismiddleontop_1">def isMiddleOnTop</h3>
+<h3 id="def-ismiddleontopside_1">def isMiddleOnTopSide</h3>
+<h3 id="def-isoriginonbottom_1">def isOriginOnBottom</h3>
+<h3 id="def-isoriginonbottomside_1">def isOriginOnBottomSide</h3>
+<h3 id="def-isoriginoncenter_1">def isOriginOnCenter</h3>
+<h3 id="def-isoriginoncentersides_1">def isOriginOnCenterSides</h3>
+<h3 id="def-isoriginonleft_1">def isOriginOnLeft</h3>
+<h3 id="def-isoriginonleftside_1">def isOriginOnLeftSide</h3>
+<h3 id="def-isoriginonmiddle_1">def isOriginOnMiddle</h3>
+<h3 id="def-isoriginonmiddlesides_1">def isOriginOnMiddleSides</h3>
+<h3 id="def-isoriginonright_1">def isOriginOnRight</h3>
+<h3 id="def-isoriginonrightside_1">def isOriginOnRightSide</h3>
+<h3 id="def-isoriginontop_1">def isOriginOnTop</h3>
+<h3 id="def-isoriginontopside_1">def isOriginOnTopSide</h3>
+<h3 id="def-isoverflow_1">def isOverflow</h3>
+<h3 id="int-ispage_1">int isPage</h3>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
+<h3 id="def-isrightoncenter_1">def isRightOnCenter</h3>
+<h3 id="def-isrightoncentersides_1">def isRightOnCenterSides</h3>
+<h3 id="def-isrightonleft_1">def isRightOnLeft</h3>
+<h3 id="def-isrightonright_1">def isRightOnRight</h3>
+<h3 id="def-isrightonrightside_1">def isRightOnRightSide</h3>
+<h3 id="def-isschrunkonblockleft_1">def isSchrunkOnBlockLeft</h3>
+<h3 id="def-isshrunkonblockbottom_1">def isShrunkOnBlockBottom</h3>
+<p>Test if the bottom of self is shrunk to the bottom position of the block.  </p>
+<h3 id="def-isshrunkonblockbottomside_1">def isShrunkOnBlockBottomSide</h3>
+<h3 id="def-isshrunkonblockleftside_1">def isShrunkOnBlockLeftSide</h3>
+<h3 id="def-isshrunkonblockright_1">def isShrunkOnBlockRight</h3>
+<h3 id="def-isshrunkonblockrightside_1">def isShrunkOnBlockRightSide</h3>
+<h3 id="def-isshrunkonblocktop_1">def isShrunkOnBlockTop</h3>
+<h3 id="def-isshrunkonblocktopside_1">def isShrunkOnBlockTopSide</h3>
+<h3 id="int-istext_1">int isText</h3>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
+<h3 id="int-istextbox_1">int isTextBox</h3>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
+<h3 id="def-istoponbottom_1">def isTopOnBottom</h3>
+<h3 id="def-istoponmiddle_1">def isTopOnMiddle</h3>
+<h3 id="def-istoponmiddlesides_1">def isTopOnMiddleSides</h3>
+<h3 id="def-istopontop_1">def isTopOnTop</h3>
+<h3 id="def-istopontopside_1">def isTopOnTopSide</h3>
+<h3 id="int-isview_1">int isView</h3>
+<p>bool(x) -&gt; bool  </p>
+<p>Returns True when the argument x is true, False otherwise.<br />
+The builtins True and False are the only two instances of the class bool.<br />
+The class bool is a subclass of the class int, and cannot be subclassed.  </p>
+<h3 id="def-isxheightontop_1">def isXHeightOnTop</h3>
+<h3 id="property-left_1">property left</h3>
+<h3 id="def-left2center_1">def left2Center</h3>
+<h3 id="def-left2centersides_1">def left2CenterSides</h3>
+<h3 id="def-left2left_1">def left2Left</h3>
+<h3 id="def-left2leftside_1">def left2LeftSide</h3>
+<h3 id="def-left2right_1">def left2Right</h3>
+<h3 id="property-lib_1">property lib</h3>
+<p>Answer the shared document.lib dictionary by property, used for share global entry by elements.<br />
+Elements query their self.parent.lib until the root document is reached.  </p>
+<h3 id="property-mback_1">property mBack</h3>
+<h3 id="property-mbottom_1">property mBottom</h3>
+<h3 id="property-mfront_1">property mFront</h3>
+<h3 id="property-mleft_1">property mLeft</h3>
+<h3 id="property-mright_1">property mRight</h3>
+<h3 id="property-mtop_1">property mTop</h3>
+<h3 id="property-margin_1">property margin</h3>
+<h3 id="property-margin3d_1">property margin3D</h3>
+<h3 id="property-marginblock3d_1">property marginBlock3D</h3>
+<p>Answer the vacuum 3D bounding box around all child elements.  </p>
+<h3 id="property-marginbox_1">property marginBox</h3>
+<p>Calculate the margin position and margin resized box of the element, after applying the<br />
+option style margin.  </p>
+<h3 id="property-maxd_1">property maxD</h3>
+<h3 id="property-maxh_1">property maxH</h3>
+<h3 id="property-maxw_1">property maxW</h3>
+<h3 id="property-mb_1">property mb</h3>
+<h3 id="property-mh_1">property mh</h3>
+<h3 id="property-middle_1">property middle</h3>
+<h3 id="def-middle2bottom_1">def middle2Bottom</h3>
+<h3 id="def-middle2bottomside_1">def middle2BottomSide</h3>
+<h3 id="def-middle2middle_1">def middle2Middle</h3>
+<h3 id="def-middle2middlesides_1">def middle2MiddleSides</h3>
+<h3 id="def-middle2top_1">def middle2Top</h3>
+<h3 id="def-middle2topside_1">def middle2TopSide</h3>
+<h3 id="property-mind_1">property minD</h3>
+<h3 id="property-minh_1">property minH</h3>
+<h3 id="property-minw_1">property minW</h3>
+<h3 id="property-ml_1">property ml</h3>
+<h3 id="property-mr_1">property mr</h3>
+<h3 id="property-mt_1">property mt</h3>
+<h3 id="property-mw_1">property mw</h3>
+<h3 id="property-mzb_1">property mzb</h3>
+<h3 id="property-mzf_1">property mzf</h3>
+<h3 id="property-opoint_1">property oPoint</h3>
+<p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
+<h3 id="property-opoint3d_1">property oPoint3D</h3>
+<p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
+<h3 id="def-origin2bottom_1">def origin2Bottom</h3>
+<h3 id="def-origin2bottomside_1">def origin2BottomSide</h3>
+<h3 id="def-origin2center_1">def origin2Center</h3>
+<h3 id="def-origin2centersides_1">def origin2CenterSides</h3>
+<h3 id="def-origin2left_1">def origin2Left</h3>
+<h3 id="def-origin2leftside_1">def origin2LeftSide</h3>
+<h3 id="def-origin2middle_1">def origin2Middle</h3>
+<h3 id="def-origin2middlesides_1">def origin2MiddleSides</h3>
+<h3 id="def-origin2right_1">def origin2Right</h3>
+<h3 id="def-origin2rightside_1">def origin2RightSide</h3>
+<h3 id="def-origin2top_1">def origin2Top</h3>
+<h3 id="def-origin2topside_1">def origin2TopSide</h3>
+<h3 id="property-origintop_1">property originTop</h3>
+<p>Answer the style flag if all point y values should measure top-down (typographic page<br />
+orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
+The axes in X and Z directions are fixed.  </p>
+<h3 id="property-originsblock_1">property originsBlock</h3>
+<h3 id="property-originsblock3d_1">property originsBlock3D</h3>
+<p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
+<h3 id="def-overflow2next_1">def overflow2Next</h3>
+<p>Try to fix if there is overflow. Default behavior is to do nothing. This method<br />
+is redefined by inheriting classed, such as TextBox, that can have overflow of text.  </p>
+<h3 id="property-paddedblock3d_1">property paddedBlock3D</h3>
+<p>Answer the vacuum 3D bounding box around all child elements, <br />
+subtracting their paddings. Sizes cannot become nextive.  </p>
+<h3 id="property-paddedbox_1">property paddedBox</h3>
+<p>Calculate the padded position and padded resized box of the element, after applying the<br />
+style padding. Answered format (x, y, w, h).  </p>
+<h3 id="property-paddedbox3d_1">property paddedBox3D</h3>
+<p>Calculate the padded position and padded resized box in 3D of the lement, after applying<br />
+the style padding. Answered format (x, y, z, w, h, d).  </p>
+<h3 id="property-padding_1">property padding</h3>
+<h3 id="property-padding3d_1">property padding3D</h3>
+<h3 id="property-parent_1">property parent</h3>
+<p>Answer the parent of the element, if it exists, by weakref reference. Answer None of there<br />
+is not parent defined or if the parent not longer exists.  </p>
+<h3 id="property-pb_1">property pb</h3>
+<h3 id="property-pd_1">property pd</h3>
+<h3 id="property-ph_1">property ph</h3>
+<h3 id="property-pl_1">property pl</h3>
+<h3 id="property-point_1">property point</h3>
+<p>Answer the 2D point tuple of the relative local position of self.  </p>
+<h3 id="property-point3d_1">property point3D</h3>
+<p>Answer the 3D point tuple of the relative local position of self.  </p>
+<h3 id="property-pr_1">property pr</h3>
+<h3 id="property-pt_1">property pt</h3>
+<h3 id="property-pw_1">property pw</h3>
+<h3 id="property-pzb_1">property pzb</h3>
+<h3 id="property-pzf_1">property pzf</h3>
+<h3 id="def-removeelement_1">def removeElement</h3>
+<p>If the element is placed in self, then remove it. Don't touch the position.  </p>
+<h3 id="def-resetshadow_1">def resetShadow</h3>
+<p>Restore the shadow mode of DrawBot. Should be paired with call self._setShadow().  </p>
+<h3 id="property-right_1">property right</h3>
+<h3 id="def-right2center_1">def right2Center</h3>
+<h3 id="def-right2centersides_1">def right2CenterSides</h3>
+<h3 id="def-right2left_1">def right2Left</h3>
+<h3 id="def-right2right_1">def right2Right</h3>
+<h3 id="def-right2rightside_1">def right2RightSide</h3>
+<h3 id="property-rootx_1">property rootX</h3>
+<h3 id="property-rooty_1">property rootY</h3>
+<h3 id="property-rootz_1">property rootZ</h3>
+<h3 id="property-scalex_1">property scaleX</h3>
+<h3 id="property-scaley_1">property scaleY</h3>
+<h3 id="property-scalez_1">property scaleZ</h3>
+<h3 id="def-setcontrols_1">def setControls</h3>
+<p>Inheriting views can redefine to alter showing parameters.  </p>
+<h3 id="def-setelementbyindex_1">def setElementByIndex</h3>
+<p>Replace the element, if there is already one at index. Otherwise append it to self.elements<br />
+and answer the index number that it got.  </p>
+<h3 id="def-setmaxsize_1">def setMaxSize</h3>
+<h3 id="def-setminsize_1">def setMinSize</h3>
+<h3 id="def-setshadow_1">def setShadow</h3>
+<p>Set the DrawBot graphics state for shadow if all parameters are set. Pair the call of this<br />
+method with self._resetShadow()  </p>
+<h3 id="def-setsize_1">def setSize</h3>
+<p>Set the size of the element by calling by properties self.w and self.h. <br />
+If set, then overwrite access from style width and height. self.d is optional attribute.  </p>
+<h3 id="property-show_1">property show</h3>
+<h3 id="def-shrink2blockbottom_1">def shrink2BlockBottom</h3>
+<h3 id="def-shrink2blockbottomside_1">def shrink2BlockBottomSide</h3>
+<h3 id="def-shrink2blockleft_1">def shrink2BlockLeft</h3>
+<h3 id="def-shrink2blockleftside_1">def shrink2BlockLeftSide</h3>
+<h3 id="def-shrink2blockright_1">def shrink2BlockRight</h3>
+<h3 id="def-shrink2blockrightside_1">def shrink2BlockRightSide</h3>
+<h3 id="def-shrink2blocktop_1">def shrink2BlockTop</h3>
+<h3 id="def-shrink2blocktopside_1">def shrink2BlockTopSide</h3>
+<h3 id="property-siblings_1">property siblings</h3>
+<p>Answer all elements that share self.parent, not including self in the list.  </p>
+<h3 id="def-solve_1">def solve</h3>
+<p>Evaluate the content of element e with the total sum of conditions.  </p>
+<h3 id="property-template_1">property template</h3>
+<h3 id="property-textgradient_1">property textGradient</h3>
+<h3 id="property-textshadow_1">property textShadow</h3>
+<h3 id="property-top_1">property top</h3>
+<p>Answer the top position (relative to self.parent) of self.  </p>
+<h3 id="def-top2bottom_1">def top2Bottom</h3>
+<h3 id="def-top2middle_1">def top2Middle</h3>
+<h3 id="def-top2middlesides_1">def top2MiddleSides</h3>
+<h3 id="def-top2top_1">def top2Top</h3>
+<h3 id="def-top2topside_1">def top2TopSide</h3>
+<h3 id="str-viewid_1">str viewId</h3>
+<p>str(object='') -&gt; string  </p>
+<p>Return a nice string representation of the object.<br />
+If the argument is a string, the return value is the same object.  </p>
+<h3 id="property-w_1">property w</h3>
+<h3 id="property-x_1">property x</h3>
+<p>Answer the x position of self.  </p>
+<h3 id="property-xalign_1">property xAlign</h3>
+<h3 id="property-y_1">property y</h3>
+<p>Answer the y position of self.  </p>
+<h3 id="property-yalign_1">property yAlign</h3>
+<h3 id="property-z_1">property z</h3>
+<p>Answer the z position of self.  </p>
+<h3 id="property-zalign_1">property zAlign</h3>
+<h3 id="def-setfillcolor">def setFillColor</h3>
+<p>Set the color for global or the color of the formatted string.  </p>
+<h3 id="def-setstrokecolor">def setStrokeColor</h3>
+<p>Set global stroke color or the color of the formatted string.  </p>
               
             </div>
           </div>
@@ -2324,10 +4098,10 @@ If the argument is a string, the return value is the same object.  </p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../singleview/" class="btn btn-neutral float-right" title="Singleview">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../thumbview/" class="btn btn-neutral float-right" title="Thumbview">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../htmlcssview/" class="btn btn-neutral" title="Htmlcssview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../singleview/" class="btn btn-neutral" title="Singleview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -2353,10 +4127,10 @@ If the argument is a string, the return value is the same object.  </p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../htmlcssview/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../singleview/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../singleview/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../thumbview/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
