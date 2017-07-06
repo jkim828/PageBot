@@ -322,19 +322,19 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#def-distance">def distance</a></li>
+            <li><a class="toctree-l4" href="#def-distancep1-p2">def distance(p1, p2)</a></li>
         
-            <li><a class="toctree-l4" href="#def-dotproduct">def dotProduct</a></li>
+            <li><a class="toctree-l4" href="#def-dotproductv1-v2">def dotProduct(v1, v2)</a></li>
         
-            <li><a class="toctree-l4" href="#def-insidecircle">def insideCircle</a></li>
+            <li><a class="toctree-l4" href="#def-insidecircledx-dy-r">def insideCircle(dx, dy, r)</a></li>
         
-            <li><a class="toctree-l4" href="#def-intersection">def intersection</a></li>
+            <li><a class="toctree-l4" href="#def-intersectionp1-p2-p3-p4">def intersection(p1, p2, p3, p4)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isbetween">def isBetween</a></li>
+            <li><a class="toctree-l4" href="#def-isbetweenp1-p2-p">def isBetween(p1, p2, p)</a></li>
         
-            <li><a class="toctree-l4" href="#def-iseven">def isEven</a></li>
+            <li><a class="toctree-l4" href="#def-isevenv">def isEven(v)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isodd">def isOdd</a></li>
+            <li><a class="toctree-l4" href="#def-isoddv">def isOdd(v)</a></li>
         
             <li><a class="toctree-l4" href="#def-lucasrangea-z-n-minnnone-maxnnone">def lucasRange(a, z, n, minN=None, maxN=None)</a></li>
         
@@ -342,21 +342,21 @@
         
             <li><a class="toctree-l4" href="#classmethod-normalizedvector">classmethod normalizedVector</a></li>
         
-            <li><a class="toctree-l4" href="#def-point2d">def point2D</a></li>
+            <li><a class="toctree-l4" href="#def-point2dp">def point2D(p)</a></li>
         
-            <li><a class="toctree-l4" href="#def-point2line">def point2Line</a></li>
+            <li><a class="toctree-l4" href="#def-point2linep1-p2-p">def point2Line(p1, p2, p)</a></li>
         
-            <li><a class="toctree-l4" href="#def-pointprojectedonline">def pointProjectedOnLine</a></li>
+            <li><a class="toctree-l4" href="#def-pointprojectedonlinecls-p1-p2-p">def pointProjectedOnLine(cls, p1, p2, p)</a></li>
         
-            <li><a class="toctree-l4" href="#def-scalepointbyvector">def scalePointByVector</a></li>
+            <li><a class="toctree-l4" href="#def-scalepointbyvectorp-v">def scalePointByVector(p, v)</a></li>
         
-            <li><a class="toctree-l4" href="#def-scalexy">def scalexy</a></li>
+            <li><a class="toctree-l4" href="#def-scalexyp-scalep">def scalexy(p, scaleP)</a></li>
         
-            <li><a class="toctree-l4" href="#def-squaredistance">def squareDistance</a></li>
+            <li><a class="toctree-l4" href="#def-squaredistancep1-p2">def squareDistance(p1, p2)</a></li>
         
-            <li><a class="toctree-l4" href="#def-test">def test</a></li>
+            <li><a class="toctree-l4" href="#def-testcondition-error">def test(condition, error)</a></li>
         
-            <li><a class="toctree-l4" href="#def-vectorlength">def vectorLength</a></li>
+            <li><a class="toctree-l4" href="#def-vectorlengthv">def vectorLength(v)</a></li>
         
         </ul>
     
@@ -581,26 +581,26 @@
             <div class="section">
               
                 <h1 id="toolboxmathematics">toolbox.mathematics</h1>
-<h3 id="def-distance">def distance</h3>
+<h3 id="def-distancep1-p2">def distance(p1, p2)</h3>
 <p>Answers the distance between the points.  </p>
-<h3 id="def-dotproduct">def dotProduct</h3>
-<h3 id="def-insidecircle">def insideCircle</h3>
+<h3 id="def-dotproductv1-v2">def dotProduct(v1, v2)</h3>
+<h3 id="def-insidecircledx-dy-r">def insideCircle(dx, dy, r)</h3>
 <pre><code>&gt;&gt;&gt; insideCircle(1, 1, 5)  
 True
 
 &gt;&gt;&gt; insideCircle(3, 3, 3)  
 False
 </code></pre>
-<h3 id="def-intersection">def intersection</h3>
+<h3 id="def-intersectionp1-p2-p3-p4">def intersection(p1, p2, p3, p4)</h3>
 <p>Returns 2D intersection point if it exists. Otherwise (None, None,<br />
 None) is answered. Different from the RoboFont intersection tool, we<br />
 intersect on infinite line lengths. See also:  </p>
 <p>http://en.wikipedia.org/wiki/Line-line_intersection  </p>
-<h3 id="def-isbetween">def isBetween</h3>
+<h3 id="def-isbetweenp1-p2-p">def isBetween(p1, p2, p)</h3>
 <p>Checks if point is on line between line endpoints. Uses epsilon<br />
 margin for float values, can be substituted by zero for integer<br />
 values.  </p>
-<h3 id="def-iseven">def isEven</h3>
+<h3 id="def-isevenv">def isEven(v)</h3>
 <p>import pagebot.toolbox.mathematics.*  </p>
 <pre><code>&gt;&gt;&gt; isEven(2)  
 True
@@ -608,7 +608,7 @@ True
 &gt;&gt;&gt; isEven(1)  
 False
 </code></pre>
-<h3 id="def-isodd">def isOdd</h3>
+<h3 id="def-isoddv">def isOdd(v)</h3>
 <pre><code>&gt;&gt;&gt; isOdd(1)  
 True
 
@@ -646,22 +646,22 @@ If a class method is called for a derived class, the derived class<br />
 object is passed as the implied first argument.  </p>
 <p>Class methods are different than C++ or Java static methods.<br />
 If you want those, see the staticmethod builtin.  </p>
-<h3 id="def-point2d">def point2D</h3>
+<h3 id="def-point2dp">def point2D(p)</h3>
 <p>Answer the 2D origin as combination of p and offset.  </p>
-<h3 id="def-point2line">def point2Line</h3>
+<h3 id="def-point2linep1-p2-p">def point2Line(p1, p2, p)</h3>
 <p>Answers the distance from point <i>(px, py)</i> to line <i>((x1,<br />
 y1), (x2, y2))</i>.  </p>
-<h3 id="def-pointprojectedonline">def pointProjectedOnLine</h3>
+<h3 id="def-pointprojectedonlinecls-p1-p2-p">def pointProjectedOnLine(cls, p1, p2, p)</h3>
 <p>Answers the projected point <b>(px, py)</b> on line <b>((x1, y1), (x2,<br />
 y2))</b>.  Answers <b>(x1, y1)</b> if there is not distance between the two<br />
 points of the line.  </p>
-<h3 id="def-scalepointbyvector">def scalePointByVector</h3>
-<h3 id="def-scalexy">def scalexy</h3>
-<h3 id="def-squaredistance">def squareDistance</h3>
+<h3 id="def-scalepointbyvectorp-v">def scalePointByVector(p, v)</h3>
+<h3 id="def-scalexyp-scalep">def scalexy(p, scaleP)</h3>
+<h3 id="def-squaredistancep1-p2">def squareDistance(p1, p2)</h3>
 <p>Answers the square of the distance for relative comparison and to<br />
 save the time of the <b>sqrt</b>.  </p>
-<h3 id="def-test">def test</h3>
-<h3 id="def-vectorlength">def vectorLength</h3>
+<h3 id="def-testcondition-error">def test(condition, error)</h3>
+<h3 id="def-vectorlengthv">def vectorLength(v)</h3>
               
             </div>
           </div>

@@ -433,25 +433,25 @@
         
             <li><a class="toctree-l4" href="#class-glyph95class">class GLYPH_CLASS</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595getitem9595">def __getitem__</a></li>
+            <li><a class="toctree-l4" href="#def-9595getitem9595self-glyphname">def __getitem__(self, glyphName)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595init9595self-path-namenone-installtrue">def __init__(self, path, name=None, install=True)</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595len9595">def __len__</a></li>
+            <li><a class="toctree-l4" href="#def-9595len9595self">def __len__(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595repr9595">def __repr__</a></li>
+            <li><a class="toctree-l4" href="#def-9595repr9595self">def __repr__(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95get95axes">def _get_axes</a></li>
+            <li><a class="toctree-l4" href="#def-95get95axesself">def _get_axes(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95get95designspace">def _get_designSpace</a></li>
+            <li><a class="toctree-l4" href="#def-95get95designspaceself">def _get_designSpace(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95get95features">def _get_features</a></li>
+            <li><a class="toctree-l4" href="#def-95get95featuresself">def _get_features(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95get95groups">def _get_groups</a></li>
+            <li><a class="toctree-l4" href="#def-95get95groupsself">def _get_groups(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95get95kerning">def _get_kerning</a></li>
+            <li><a class="toctree-l4" href="#def-95get95kerningself">def _get_kerning(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95get95variables">def _get_variables</a></li>
+            <li><a class="toctree-l4" href="#def-95get95variablesself">def _get_variables(self)</a></li>
         
             <li><a class="toctree-l4" href="#property-axes">property axes</a></li>
         
@@ -459,19 +459,19 @@
         
             <li><a class="toctree-l4" href="#property-features">property features</a></li>
         
-            <li><a class="toctree-l4" href="#def-getfeaturedstring">def getFeaturedString</a></li>
+            <li><a class="toctree-l4" href="#def-getfeaturedstringself-s-featuresettings">def getFeaturedString(self, s, featureSettings)</a></li>
         
             <li><a class="toctree-l4" href="#property-groups">property groups</a></li>
         
-            <li><a class="toctree-l4" href="#def-install">def install</a></li>
+            <li><a class="toctree-l4" href="#def-installself">def install(self)</a></li>
         
             <li><a class="toctree-l4" href="#property-kerning">property kerning</a></li>
         
-            <li><a class="toctree-l4" href="#def-keys">def keys</a></li>
+            <li><a class="toctree-l4" href="#def-keysself">def keys(self)</a></li>
         
             <li><a class="toctree-l4" href="#property-variables">property variables</a></li>
         
-            <li><a class="toctree-l4" href="#def-getfamilies">def getFamilies</a></li>
+            <li><a class="toctree-l4" href="#def-getfamiliesfamilypaths">def getFamilies(familyPaths)</a></li>
         
         </ul>
     
@@ -480,17 +480,17 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#def-getfamilyfontpaths">def getFamilyFontPaths</a></li>
+            <li><a class="toctree-l4" href="#def-getfamilyfontpathsfamilyname">def getFamilyFontPaths(familyName)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getfamilyfonts">def getFamilyFonts</a></li>
+            <li><a class="toctree-l4" href="#def-getfamilyfontsfamilyname">def getFamilyFonts(familyName)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getfontpathoffont">def getFontPathOfFont</a></li>
+            <li><a class="toctree-l4" href="#def-getfontpathoffontfontname">def getFontPathOfFont(fontName)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getsystemfontpaths">def getSystemFontPaths</a></li>
+            <li><a class="toctree-l4" href="#def-getsystemfontpaths">def getSystemFontPaths()</a></li>
         
-            <li><a class="toctree-l4" href="#def-guessfamilies">def guessFamilies</a></li>
+            <li><a class="toctree-l4" href="#def-guessfamiliesstylenames">def guessFamilies(styleNames)</a></li>
         
-            <li><a class="toctree-l4" href="#def-path2name">def path2Name</a></li>
+            <li><a class="toctree-l4" href="#def-path2namepath">def path2Name(path)</a></li>
         
         </ul>
     
@@ -689,34 +689,34 @@ False
 &gt;&gt;&gt; bounds[0][0]  
 38.0
 </code></pre>
-<h3 id="def-9595getitem9595">def __getitem__</h3>
+<h3 id="def-9595getitem9595self-glyphname">def __getitem__(self, glyphName)</h3>
 <h3 id="def-9595init9595self-path-namenone-installtrue">def __init__(self, path, name=None, install=True)</h3>
 <p>Initialize the TTFont, for which Font is a wrapper. Default is to<br />
 install the font in DrawBot.  </p>
 <p>self.name is supported, in case the caller wants to use a different<br />
 name than the DrawBot installing name.  </p>
-<h3 id="def-9595len9595">def __len__</h3>
-<h3 id="def-9595repr9595">def __repr__</h3>
-<h3 id="def-95get95axes">def _get_axes</h3>
-<h3 id="def-95get95designspace">def _get_designSpace</h3>
-<h3 id="def-95get95features">def _get_features</h3>
-<h3 id="def-95get95groups">def _get_groups</h3>
-<h3 id="def-95get95kerning">def _get_kerning</h3>
-<h3 id="def-95get95variables">def _get_variables</h3>
+<h3 id="def-9595len9595self">def __len__(self)</h3>
+<h3 id="def-9595repr9595self">def __repr__(self)</h3>
+<h3 id="def-95get95axesself">def _get_axes(self)</h3>
+<h3 id="def-95get95designspaceself">def _get_designSpace(self)</h3>
+<h3 id="def-95get95featuresself">def _get_features(self)</h3>
+<h3 id="def-95get95groupsself">def _get_groups(self)</h3>
+<h3 id="def-95get95kerningself">def _get_kerning(self)</h3>
+<h3 id="def-95get95variablesself">def _get_variables(self)</h3>
 <h3 id="property-axes">property axes</h3>
 <h3 id="property-designspace">property designSpace</h3>
 <h3 id="property-features">property features</h3>
-<h3 id="def-getfeaturedstring">def getFeaturedString</h3>
+<h3 id="def-getfeaturedstringself-s-featuresettings">def getFeaturedString(self, s, featureSettings)</h3>
 <p>Compile the string s into glyph names, corresponding to the<br />
 settings in featureSettings.  </p>
 <h3 id="property-groups">property groups</h3>
-<h3 id="def-install">def install</h3>
+<h3 id="def-installself">def install(self)</h3>
 <p>Install the font in DrawBot, if not already there. Answer the<br />
 DrawBot name.  </p>
 <h3 id="property-kerning">property kerning</h3>
-<h3 id="def-keys">def keys</h3>
+<h3 id="def-keysself">def keys(self)</h3>
 <h3 id="property-variables">property variables</h3>
-<h3 id="def-getfamilies">def getFamilies</h3>
+<h3 id="def-getfamiliesfamilypaths">def getFamilies(familyPaths)</h3>
 <p>Construct a dictionary of Family instances from dictionary familyPaths. It is assumed that all paths<br />
 are valied to font files. Force key in family from dictionary familyPaths, instead of font.info.styleName.<br />
 What is best practice? Keep as option?  </p>
@@ -729,15 +729,15 @@ italic=LIB_PATH+'Georgia Italic.ttf', boldItalic=LIB_PATH+'Georgia Bold Italic.t
 'Verdana': dict(regular=LIB_PATH+'Verdana.ttf', bold=LIB_PATH+'Verdana Bold.ttf', <br />
 italic=LIB_PATH+'Verdana Italic.ttf', boldItalic=LIB_PATH+'Verdana Bold Italic.ttf'),<br />
 }  </p>
-<h3 id="def-getfamilyfontpaths">def getFamilyFontPaths</h3>
-<h3 id="def-getfamilyfonts">def getFamilyFonts</h3>
-<h3 id="def-getfontpathoffont">def getFontPathOfFont</h3>
-<h3 id="def-getsystemfontpaths">def getSystemFontPaths</h3>
+<h3 id="def-getfamilyfontpathsfamilyname">def getFamilyFontPaths(familyName)</h3>
+<h3 id="def-getfamilyfontsfamilyname">def getFamilyFonts(familyName)</h3>
+<h3 id="def-getfontpathoffontfontname">def getFontPathOfFont(fontName)</h3>
+<h3 id="def-getsystemfontpaths">def getSystemFontPaths()</h3>
 <p>Answer the cleaned list of installed font names.  </p>
-<h3 id="def-guessfamilies">def guessFamilies</h3>
+<h3 id="def-guessfamiliesstylenames">def guessFamilies(styleNames)</h3>
 <p>Find the family relation of all fonts in the list. Note that this cannot be a 100% safe guess.<br />
 Answer a dictionary with Family instances. Key is family name.  </p>
-<h3 id="def-path2name">def path2Name</h3>
+<h3 id="def-path2namepath">def path2Name(path)</h3>
 <p><doc>Answers the file name part of the path.</doc>  </p>
               
             </div>

@@ -278,11 +278,11 @@
         
             <li><a class="toctree-l4" href="#dict-drawbotsizes">dict drawBotSizes</a></li>
         
-            <li><a class="toctree-l4" href="#def-getrootstyleu7-w595275912-h792">def getRootStyle(u=7, w=595.275912, h=792)</a></li>
+            <li><a class="toctree-l4" href="#def-getrootstyleu7-w595275912-h792-4242kwargs">def getRootStyle(u=7, w=595.275912, h=792, **kwargs)</a></li>
         
-            <li><a class="toctree-l4" href="#def-makestylestylenone">def makeStyle(style=None)</a></li>
+            <li><a class="toctree-l4" href="#def-makestylestylenone-4242kwargs">def makeStyle(style=None, **kwargs)</a></li>
         
-            <li><a class="toctree-l4" href="#def-newstyle">def newStyle</a></li>
+            <li><a class="toctree-l4" href="#def-newstyle4242kwargs">def newStyle(**kwargs)</a></li>
         
         </ul>
     
@@ -1293,20 +1293,20 @@ for k, v in iterable:<br />
 d[k] = v<br />
 dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
 in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
-<h3 id="def-getrootstyleu7-w595275912-h792">def getRootStyle(u=7, w=595.275912, h=792)</h3>
+<h3 id="def-getrootstyleu7-w595275912-h792-4242kwargs">def getRootStyle(u=7, w=595.275912, h=792, **kwargs)</h3>
 <p>Answer the main root style tha contains all default style attributes of PageBot.<br />
 To be overwritten when needed by calling applications.<br />
 CAPITALIZED attribute names are for reference only. Not used directly from styles.<br />
 They can be copied on other style attributes.<br />
 Note that if the overall unit style.u is changed by the calling application, also the<br />
 U-based values must be recalculated for proper measures.  </p>
-<h3 id="def-makestylestylenone">def makeStyle(style=None)</h3>
+<h3 id="def-makestylestylenone-4242kwargs">def makeStyle(style=None, **kwargs)</h3>
 <p>Make style from a copy of style dict (providing all necessary default values for the<br />
 element to operate) and then overwrite these values with any specific arguments.<br />
 If style is None, then create a new style dict. In that case all the element style values need<br />
 to be defined by argument. The calling element must test if its minimum set<br />
 (such as self.w and self.h) are properly defined.  </p>
-<h3 id="def-newstyle">def newStyle</h3>
+<h3 id="def-newstyle4242kwargs">def newStyle(**kwargs)</h3>
               
             </div>
           </div>

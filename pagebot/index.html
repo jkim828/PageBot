@@ -588,8 +588,8 @@ Setting a gradient will ignore the fill.  </p>
 <h3 id="def-9595init9595self-startnone-endnone-colorsnone-cmykcolorsnone-locationsnone-startradiusnone-endradiusnone">def __init__(self, start=None, end=None, colors=None, cmykColors=None, locations=None, startRadius=None, endRadius=None)</h3>
 <h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
 <p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
-<h3 id="def-95get95linear">def _get_linear</h3>
-<h3 id="def-95get95radial">def _get_radial</h3>
+<h3 id="def-95get95linearself">def _get_linear(self)</h3>
+<h3 id="def-95get95radialself">def _get_radial(self)</h3>
 <h3 id="property-linear">property linear</h3>
 <h3 id="property-radial">property radial</h3>
 <h3 id="str-left">str LEFT</h3>
@@ -615,22 +615,22 @@ interpret the base from the string as an integer literal.  </p>
 4
 </code></pre>
 <h3 id="class-shadow">class Shadow</h3>
-<h3 id="def-baseline2y">def baseline2y</h3>
+<h3 id="def-baseline2yyindex-e">def baseline2y(yIndex, e)</h3>
 <p>Convert columns index and line index to page position. Answered (x, y) is point position based on<br />
 marginTop + yIndex*baseLine.  </p>
 <h3 id="module-builders">module builders</h3>
-<h3 id="def-cd2d">def cd2d</h3>
-<h3 id="def-ch2h">def ch2h</h3>
+<h3 id="def-cd2dcd-e">def cd2d(cd, e)</h3>
+<h3 id="def-ch2hch-e">def ch2h(ch, e)</h3>
 <h3 id="module-contributions">module contributions</h3>
 <h3 id="def-cssname-e-stylesnone-defaultnone">def css(name, e, styles=None, default=None)</h3>
 <p>Answer the named style values. Search in optional style dict first, otherwise up the<br />
 parent tree of styles in element e. Both e and style can be None. In that case None is answered.  </p>
-<h3 id="def-cw2w">def cw2w</h3>
-<h3 id="def-cx2x">def cx2x</h3>
-<h3 id="def-cy2y">def cy2y</h3>
+<h3 id="def-cw2wcw-e">def cw2w(cw, e)</h3>
+<h3 id="def-cx2xcx-e">def cx2x(cx, e)</h3>
+<h3 id="def-cy2ycy-e">def cy2y(cy, e)</h3>
 <p>Transform from column y value to y value, using the e.css for colunn values.  </p>
-<h3 id="def-cz2z">def cz2z</h3>
-<h3 id="def-d2cd">def d2cd</h3>
+<h3 id="def-cz2zcz-e">def cz2z(cz, e)</h3>
+<h3 id="def-d2cdd-e">def d2cd(d, e)</h3>
 <h3 id="def-deepfindelements-namenone-patternnone-resultnone">def deepFind(elements, name=None, pattern=None, result=None)</h3>
 <p>Perform a dynamic deep find the for all elements with the name. Don't include self.<br />
 Either name or pattern should be defined.  </p>
@@ -640,9 +640,9 @@ Either name or pattern should be defined.  </p>
 Either name or pattern should be defined.  </p>
 <h3 id="def-findmarkersfs-recompilednone">def findMarkers(fs, reCompiled=None)</h3>
 <p>Answer a dictionary of markers with their arguments in a given FormattedString.  </p>
-<h3 id="def-getfontpath">def getFontPath</h3>
+<h3 id="def-getfontpath">def getFontPath()</h3>
 <p>Answer the standard font path of the pagebot module.  </p>
-<h3 id="def-getglobals">def getGlobals</h3>
+<h3 id="def-getglobalsscriptid">def getGlobals(scriptId)</h3>
 <p>In order to let PageBot scripts and/applications exchange information, without the<br />
 need to save as files, the pbglobals module supports the storage of non-persistent information.<br />
 This way, applications with Vanilla windows can be used as UI for scripts that perform as batch process.<br />
@@ -660,9 +660,9 @@ Note that there is a potential problem of slicing through the argument string at
 the end of a textBox. That is another reason to keep the length of the arguments short.<br />
 And not to use any spaces, etc. inside the markerId.<br />
 Possible slicing through line-endings is not a problem, as the raw string ignores them.  </p>
-<h3 id="def-getrootpath">def getRootPath</h3>
+<h3 id="def-getrootpath">def getRootPath()</h3>
 <p>Answer the root path of the pagebot module.  </p>
-<h3 id="def-h2ch">def h2ch</h3>
+<h3 id="def-h2chh-e">def h2ch(h, e)</h3>
 <h3 id="def-newfst-enone-stylenone-wnone-hnone-fontsizenone">def newFS(t, e=None, style=None, w=None, h=None, fontSize=None)</h3>
 <p>Answer a formatted string from valid attributes in Style. Set all values after testing<br />
 their existence, so they can inherit from previous style formats.<br />
@@ -677,26 +677,26 @@ for k, v in iterable:<br />
 d[k] = v<br />
 dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
 in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
-<h3 id="def-point2d">def point2D</h3>
+<h3 id="def-point2dp">def point2D(p)</h3>
 <p>Answer the 2D origin as combination of p and offset.  </p>
 <h3 id="def-setfillcolorc-fsnone-cmykfalse">def setFillColor(c, fs=None, cmyk=False)</h3>
 <p>Set the color for global or the color of the formatted string.  </p>
-<h3 id="def-setgradient">def setGradient</h3>
+<h3 id="def-setgradientgradient-origin-e">def setGradient(gradient, origin, e)</h3>
 <p>Define the gradient call to match the size of element e., Gradient position<br />
 is from the origin of the page, so we need the current origin of e.  </p>
-<h3 id="def-setshadow">def setShadow</h3>
+<h3 id="def-setshadoweshadow">def setShadow(eShadow)</h3>
 <h3 id="def-setstrokecolorc-w1-fsnone-cmykfalse">def setStrokeColor(c, w=1, fs=None, cmyk=False)</h3>
 <p>Set global stroke color or the color of the formatted string.  </p>
-<h3 id="def-textboxbaselines">def textBoxBaseLines</h3>
+<h3 id="def-textboxbaselinestxt-box">def textBoxBaseLines(txt, box)</h3>
 <p>Answer a list of (x,y) positions of all line starts in the box. This function may become part<br />
 of standard DrawBot in the near future.  </p>
 <h3 id="def-textpositionsearchfs-w-h-search-xtextalignleft-hyphenationtrue">def textPositionSearch(fs, w, h, search, xTextAlign=left, hyphenation=True)</h3>
-<h3 id="def-w2cw">def w2cw</h3>
-<h3 id="def-x2cx">def x2cx</h3>
+<h3 id="def-w2cww-e">def w2cw(w, e)</h3>
+<h3 id="def-x2cxx-e">def x2cx(x, e)</h3>
 <p>Transform from y value to column y value, using the e.css for colunn values.  </p>
-<h3 id="def-y2cy">def y2cy</h3>
+<h3 id="def-y2cyy-e">def y2cy(y, e)</h3>
 <p>Transform from y value to column y value, using the e.css for colunn values.  </p>
-<h3 id="def-z2cz">def z2cz</h3>
+<h3 id="def-z2czz-e">def z2cz(z, e)</h3>
 <p>Transform from z value to column z value, using the e.css for colunn values.  </p>
               
             </div>

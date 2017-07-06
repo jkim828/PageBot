@@ -579,9 +579,9 @@ elements may change width/height at any time during the composition process.<br 
 Also the sequence may change by slicing, adding or removing elements by the Composer.<br />
 Since the Galley is a full compatible Element, it can contain other galley instances<br />
 recursively.  </p>
-<h3 id="def-notnow95getexpandedtimemarks">def NOTNOW_getExpandedTimeMarks</h3>
+<h3 id="def-notnow95getexpandedtimemarkst">def NOTNOW_getExpandedTimeMarks(t)</h3>
 <p>Answer a new interpolated TimeState instance, from the enclosing time states for t.  </p>
-<h3 id="def-notnow95getflows">def NOTNOW_getFlows</h3>
+<h3 id="def-notnow95getflowsself">def NOTNOW_getFlows(self)</h3>
 <p>Answer the set of flow element sequences on the page.  </p>
 <h3 id="def-notnow95getnextflowboxself-tb-makenewtrue">def NOTNOW_getNextFlowBox(self, tb, makeNew=True)</h3>
 <p>Answer the next textBox that tb is pointing to. This can be on the same page or a next<br />
@@ -594,277 +594,277 @@ tuple(iterable) -&gt; tuple initialized from iterable's items  </p>
 <h3 id="class-ruler">class Ruler</h3>
 <h3 id="class-textbox95class">class TEXTBOX_CLASS</h3>
 <h3 id="class-textbox">class TextBox</h3>
-<h3 id="def-9595getitem9595">def __getitem__</h3>
+<h3 id="def-9595getitem9595self-eid">def __getitem__(self, eId)</h3>
 <p>Answer the element with eId. Raise a KeyError if the element does not exist.  </p>
-<h3 id="def-9595init9595self-pointnone-x0-y0-z0-w100-h100-d0-t0-parentnone-namenone-titlenone-stylenone-conditionsnone-elementsnone-templatenone-nextelementnone-prevelementnone-nextpagenone-prevpagenone-paddingnone-marginnone-pt0-pr0-pb0-pl0-pzf0-pzb0-mt0-mr0-mb0-ml0-mzf0-mzb0-bordersnone-bordertopnone-borderrightnone-borderbottomnone-borderleftnone-shadownone-gradientnone-drawbeforenone-drawafternone-framepathnone">def __init__(self, point=None, x=0, y=0, z=0, w=100, h=100, d=0, t=0, parent=None, name=None, title=None, style=None, conditions=None, elements=None, template=None, nextElement=None, prevElement=None, nextPage=None, prevPage=None, padding=None, margin=None, pt=0, pr=0, pb=0, pl=0, pzf=0, pzb=0, mt=0, mr=0, mb=0, ml=0, mzf=0, mzb=0, borders=None, borderTop=None, borderRight=None, borderBottom=None, borderLeft=None, shadow=None, gradient=None, drawBefore=None, drawAfter=None, framePath=None)</h3>
+<h3 id="def-9595init9595self-pointnone-x0-y0-z0-w100-h100-d0-t0-parentnone-namenone-titlenone-stylenone-conditionsnone-elementsnone-templatenone-nextelementnone-prevelementnone-nextpagenone-prevpagenone-paddingnone-marginnone-pt0-pr0-pb0-pl0-pzf0-pzb0-mt0-mr0-mb0-ml0-mzf0-mzb0-bordersnone-bordertopnone-borderrightnone-borderbottomnone-borderleftnone-shadownone-gradientnone-drawbeforenone-drawafternone-framepathnone-4242kwargs">def __init__(self, point=None, x=0, y=0, z=0, w=100, h=100, d=0, t=0, parent=None, name=None, title=None, style=None, conditions=None, elements=None, template=None, nextElement=None, prevElement=None, nextPage=None, prevPage=None, padding=None, margin=None, pt=0, pr=0, pb=0, pl=0, pzf=0, pzb=0, mt=0, mr=0, mb=0, ml=0, mzf=0, mzb=0, borders=None, borderTop=None, borderRight=None, borderBottom=None, borderLeft=None, shadow=None, gradient=None, drawBefore=None, drawAfter=None, framePath=None, **kwargs)</h3>
 <p>Basic initialize for every Element constructor. Element always have a location, even if not defined here.<br />
 If values are added to the contructor parameter, instead of part in **kwargs, this forces them to have values,<br />
 not inheriting from one of the parent styles.<br />
 Ignore setting of setting eId as attribute, guaranteed to be unique.  </p>
-<h3 id="def-9595len9595">def __len__</h3>
+<h3 id="def-9595len9595self">def __len__(self)</h3>
 <p>Answer total amount of elements, placed or not.  </p>
-<h3 id="def-9595repr9595">def __repr__</h3>
-<h3 id="def-9595setitem9595">def __setitem__</h3>
-<h3 id="def-95applyalignment">def _applyAlignment</h3>
+<h3 id="def-9595repr9595self">def __repr__(self)</h3>
+<h3 id="def-9595setitem9595self-eid-e">def __setitem__(self, eId, e)</h3>
+<h3 id="def-95applyalignmentself-p">def _applyAlignment(self, p)</h3>
 <p>Answer the p according to the alignment status in the css.  </p>
-<h3 id="def-95applyorigin">def _applyOrigin</h3>
+<h3 id="def-95applyoriginself-p">def _applyOrigin(self, p)</h3>
 <p>If self.originTop is False, then the y-value is interpreted as mathematics, <br />
 starting at the bottom of the parent element, moving up.<br />
 If the flag is True, then move from top down, where the origin of the element becomes<br />
 top-left of the parent.  </p>
-<h3 id="def-95applyrotation">def _applyRotation</h3>
+<h3 id="def-95applyrotationself-mx-my-angle">def _applyRotation(self, mx, my, angle)</h3>
 <p>Apply the rotation for angle, where (mx, my) is the rotation center.  </p>
-<h3 id="def-95applyscale">def _applyScale</h3>
+<h3 id="def-95applyscaleself-p">def _applyScale(self, p)</h3>
 <p>Apply the scale, if both self.scaleX and self.scaleY are set. Use this<br />
 method paired with self._restoreScale(). The (x, y) answered as reversed scaled tuple,<br />
 so drawing elements can still draw on "real size", while the other element is in scaled mode.  </p>
-<h3 id="def-95borderdict">def _borderDict</h3>
-<h3 id="def-95drawelements">def _drawElements</h3>
+<h3 id="def-95borderdictself-borderdata">def _borderDict(self, borderData)</h3>
+<h3 id="def-95drawelementsself-origin-view">def _drawElements(self, origin, view)</h3>
 <p>Recursively draw all elements of self on their own relative position in the main canvas,  </p>
-<h3 id="def-95get95ancestors">def _get_ancestors</h3>
+<h3 id="def-95get95ancestorsself">def _get_ancestors(self)</h3>
 <p>Answer the list of anscestors of self, including the document root. Self is not included.  </p>
-<h3 id="def-95get95back">def _get_back</h3>
-<h3 id="def-95get95baselinegrid">def _get_baselineGrid</h3>
-<h3 id="def-95get95baselinegridstart">def _get_baselineGridStart</h3>
-<h3 id="def-95get95block">def _get_block</h3>
+<h3 id="def-95get95backself">def _get_back(self)</h3>
+<h3 id="def-95get95baselinegridself">def _get_baselineGrid(self)</h3>
+<h3 id="def-95get95baselinegridstartself">def _get_baselineGridStart(self)</h3>
+<h3 id="def-95get95blockself">def _get_block(self)</h3>
 <p>Answer the vacuum bounding box around all child elements in 2D  </p>
-<h3 id="def-95get95block3d">def _get_block3D</h3>
+<h3 id="def-95get95block3dself">def _get_block3D(self)</h3>
 <p>Answer the vacuum 3D bounding box around all child elements.  </p>
-<h3 id="def-95get95borderbottom">def _get_borderBottom</h3>
-<h3 id="def-95get95borderleft">def _get_borderLeft</h3>
-<h3 id="def-95get95borderright">def _get_borderRight</h3>
-<h3 id="def-95get95bordertop">def _get_borderTop</h3>
-<h3 id="def-95get95borders">def _get_borders</h3>
-<h3 id="def-95get95bottom">def _get_bottom</h3>
-<h3 id="def-95get95box">def _get_box</h3>
+<h3 id="def-95get95borderbottomself">def _get_borderBottom(self)</h3>
+<h3 id="def-95get95borderleftself">def _get_borderLeft(self)</h3>
+<h3 id="def-95get95borderrightself">def _get_borderRight(self)</h3>
+<h3 id="def-95get95bordertopself">def _get_borderTop(self)</h3>
+<h3 id="def-95get95bordersself">def _get_borders(self)</h3>
+<h3 id="def-95get95bottomself">def _get_bottom(self)</h3>
+<h3 id="def-95get95boxself">def _get_box(self)</h3>
 <p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
-<h3 id="def-95get95box3d">def _get_box3D</h3>
+<h3 id="def-95get95box3dself">def _get_box3D(self)</h3>
 <p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.  </p>
-<h3 id="def-95get95cd">def _get_cd</h3>
-<h3 id="def-95get95center">def _get_center</h3>
-<h3 id="def-95get95ch">def _get_ch</h3>
-<h3 id="def-95get95cw">def _get_cw</h3>
-<h3 id="def-95get95cx">def _get_cx</h3>
-<h3 id="def-95get95cy">def _get_cy</h3>
-<h3 id="def-95get95cz">def _get_cz</h3>
-<h3 id="def-95get95d">def _get_d</h3>
-<h3 id="def-95get95doc">def _get_doc</h3>
+<h3 id="def-95get95cdself">def _get_cd(self)</h3>
+<h3 id="def-95get95centerself">def _get_center(self)</h3>
+<h3 id="def-95get95chself">def _get_ch(self)</h3>
+<h3 id="def-95get95cwself">def _get_cw(self)</h3>
+<h3 id="def-95get95cxself">def _get_cx(self)</h3>
+<h3 id="def-95get95cyself">def _get_cy(self)</h3>
+<h3 id="def-95get95czself">def _get_cz(self)</h3>
+<h3 id="def-95get95dself">def _get_d(self)</h3>
+<h3 id="def-95get95docself">def _get_doc(self)</h3>
 <p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
-<h3 id="def-95get95eid">def _get_eId</h3>
-<h3 id="def-95get95elementids">def _get_elementIds</h3>
-<h3 id="def-95get95elements">def _get_elements</h3>
-<h3 id="def-95get95front">def _get_front</h3>
-<h3 id="def-95get95gd">def _get_gd</h3>
-<h3 id="def-95get95gh">def _get_gh</h3>
-<h3 id="def-95get95gradient">def _get_gradient</h3>
-<h3 id="def-95get95gutter">def _get_gutter</h3>
-<h3 id="def-95get95gutter3d">def _get_gutter3D</h3>
-<h3 id="def-95get95gw">def _get_gw</h3>
-<h3 id="def-95get95h">def _get_h</h3>
-<h3 id="def-95get95left">def _get_left</h3>
-<h3 id="def-95get95lib">def _get_lib</h3>
+<h3 id="def-95get95eidself">def _get_eId(self)</h3>
+<h3 id="def-95get95elementidsself">def _get_elementIds(self)</h3>
+<h3 id="def-95get95elementsself">def _get_elements(self)</h3>
+<h3 id="def-95get95frontself">def _get_front(self)</h3>
+<h3 id="def-95get95gdself">def _get_gd(self)</h3>
+<h3 id="def-95get95ghself">def _get_gh(self)</h3>
+<h3 id="def-95get95gradientself">def _get_gradient(self)</h3>
+<h3 id="def-95get95gutterself">def _get_gutter(self)</h3>
+<h3 id="def-95get95gutter3dself">def _get_gutter3D(self)</h3>
+<h3 id="def-95get95gwself">def _get_gw(self)</h3>
+<h3 id="def-95get95hself">def _get_h(self)</h3>
+<h3 id="def-95get95leftself">def _get_left(self)</h3>
+<h3 id="def-95get95libself">def _get_lib(self)</h3>
 <p>Answer the shared document.lib dictionary by property, used for share global entry by elements.<br />
 Elements query their self.parent.lib until the root document is reached.  </p>
-<h3 id="def-95get95mback">def _get_mBack</h3>
-<h3 id="def-95get95mbottom">def _get_mBottom</h3>
-<h3 id="def-95get95mfront">def _get_mFront</h3>
-<h3 id="def-95get95mleft">def _get_mLeft</h3>
-<h3 id="def-95get95mright">def _get_mRight</h3>
-<h3 id="def-95get95mtop">def _get_mTop</h3>
-<h3 id="def-95get95margin">def _get_margin</h3>
-<h3 id="def-95get95margin3d">def _get_margin3D</h3>
-<h3 id="def-95get95marginblock3d">def _get_marginBlock3D</h3>
+<h3 id="def-95get95mbackself">def _get_mBack(self)</h3>
+<h3 id="def-95get95mbottomself">def _get_mBottom(self)</h3>
+<h3 id="def-95get95mfrontself">def _get_mFront(self)</h3>
+<h3 id="def-95get95mleftself">def _get_mLeft(self)</h3>
+<h3 id="def-95get95mrightself">def _get_mRight(self)</h3>
+<h3 id="def-95get95mtopself">def _get_mTop(self)</h3>
+<h3 id="def-95get95marginself">def _get_margin(self)</h3>
+<h3 id="def-95get95margin3dself">def _get_margin3D(self)</h3>
+<h3 id="def-95get95marginblock3dself">def _get_marginBlock3D(self)</h3>
 <p>Answer the vacuum 3D bounding box around all child elements.  </p>
-<h3 id="def-95get95marginbox">def _get_marginBox</h3>
+<h3 id="def-95get95marginboxself">def _get_marginBox(self)</h3>
 <p>Calculate the margin position and margin resized box of the element, after applying the<br />
 option style margin.  </p>
-<h3 id="def-95get95maxd">def _get_maxD</h3>
-<h3 id="def-95get95maxh">def _get_maxH</h3>
-<h3 id="def-95get95maxw">def _get_maxW</h3>
-<h3 id="def-95get95mb">def _get_mb</h3>
-<h3 id="def-95get95md">def _get_md</h3>
-<h3 id="def-95get95mh">def _get_mh</h3>
-<h3 id="def-95get95middle">def _get_middle</h3>
-<h3 id="def-95get95mind">def _get_minD</h3>
-<h3 id="def-95get95minh">def _get_minH</h3>
-<h3 id="def-95get95minw">def _get_minW</h3>
-<h3 id="def-95get95ml">def _get_ml</h3>
-<h3 id="def-95get95mr">def _get_mr</h3>
-<h3 id="def-95get95mt">def _get_mt</h3>
-<h3 id="def-95get95mw">def _get_mw</h3>
-<h3 id="def-95get95mzb">def _get_mzb</h3>
-<h3 id="def-95get95mzf">def _get_mzf</h3>
-<h3 id="def-95get95opoint">def _get_oPoint</h3>
+<h3 id="def-95get95maxdself">def _get_maxD(self)</h3>
+<h3 id="def-95get95maxhself">def _get_maxH(self)</h3>
+<h3 id="def-95get95maxwself">def _get_maxW(self)</h3>
+<h3 id="def-95get95mbself">def _get_mb(self)</h3>
+<h3 id="def-95get95mdself">def _get_md(self)</h3>
+<h3 id="def-95get95mhself">def _get_mh(self)</h3>
+<h3 id="def-95get95middleself">def _get_middle(self)</h3>
+<h3 id="def-95get95mindself">def _get_minD(self)</h3>
+<h3 id="def-95get95minhself">def _get_minH(self)</h3>
+<h3 id="def-95get95minwself">def _get_minW(self)</h3>
+<h3 id="def-95get95mlself">def _get_ml(self)</h3>
+<h3 id="def-95get95mrself">def _get_mr(self)</h3>
+<h3 id="def-95get95mtself">def _get_mt(self)</h3>
+<h3 id="def-95get95mwself">def _get_mw(self)</h3>
+<h3 id="def-95get95mzbself">def _get_mzb(self)</h3>
+<h3 id="def-95get95mzfself">def _get_mzf(self)</h3>
+<h3 id="def-95get95opointself">def _get_oPoint(self)</h3>
 <p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
-<h3 id="def-95get95origintop">def _get_originTop</h3>
+<h3 id="def-95get95origintopself">def _get_originTop(self)</h3>
 <p>Answer the style flag if all point y values should measure top-down (typographic page<br />
 orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
 The axes in X and Z directions are fixed.  </p>
-<h3 id="def-95get95originsblock">def _get_originsBlock</h3>
-<h3 id="def-95get95originsblock3d">def _get_originsBlock3D</h3>
+<h3 id="def-95get95originsblockself">def _get_originsBlock(self)</h3>
+<h3 id="def-95get95originsblock3dself">def _get_originsBlock3D(self)</h3>
 <p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
-<h3 id="def-95get95paddedblock3d">def _get_paddedBlock3D</h3>
+<h3 id="def-95get95paddedblock3dself">def _get_paddedBlock3D(self)</h3>
 <p>Answer the vacuum 3D bounding box around all child elements, <br />
 subtracting their paddings. Sizes cannot become nextive.  </p>
-<h3 id="def-95get95paddedbox">def _get_paddedBox</h3>
+<h3 id="def-95get95paddedboxself">def _get_paddedBox(self)</h3>
 <p>Calculate the padded position and padded resized box of the element, after applying the<br />
 style padding. Answered format (x, y, w, h).  </p>
-<h3 id="def-95get95paddedbox3d">def _get_paddedBox3D</h3>
+<h3 id="def-95get95paddedbox3dself">def _get_paddedBox3D(self)</h3>
 <p>Calculate the padded position and padded resized box in 3D of the lement, after applying<br />
 the style padding. Answered format (x, y, z, w, h, d).  </p>
-<h3 id="def-95get95padding">def _get_padding</h3>
-<h3 id="def-95get95padding3d">def _get_padding3D</h3>
-<h3 id="def-95get95parent">def _get_parent</h3>
+<h3 id="def-95get95paddingself">def _get_padding(self)</h3>
+<h3 id="def-95get95padding3dself">def _get_padding3D(self)</h3>
+<h3 id="def-95get95parentself">def _get_parent(self)</h3>
 <p>Answer the parent of the element, if it exists, by weakref reference. Answer None of there<br />
 is not parent defined or if the parent not longer exists.  </p>
-<h3 id="def-95get95pb">def _get_pb</h3>
-<h3 id="def-95get95pd">def _get_pd</h3>
-<h3 id="def-95get95ph">def _get_ph</h3>
-<h3 id="def-95get95pl">def _get_pl</h3>
-<h3 id="def-95get95point">def _get_point</h3>
+<h3 id="def-95get95pbself">def _get_pb(self)</h3>
+<h3 id="def-95get95pdself">def _get_pd(self)</h3>
+<h3 id="def-95get95phself">def _get_ph(self)</h3>
+<h3 id="def-95get95plself">def _get_pl(self)</h3>
+<h3 id="def-95get95pointself">def _get_point(self)</h3>
 <p>Answer the 2D point tuple of the relative local position of self.  </p>
-<h3 id="def-95get95point3d">def _get_point3D</h3>
+<h3 id="def-95get95point3dself">def _get_point3D(self)</h3>
 <p>Answer the 3D point tuple of the relative local position of self.  </p>
-<h3 id="def-95get95pr">def _get_pr</h3>
-<h3 id="def-95get95pt">def _get_pt</h3>
-<h3 id="def-95get95pw">def _get_pw</h3>
-<h3 id="def-95get95pzb">def _get_pzb</h3>
-<h3 id="def-95get95pzf">def _get_pzf</h3>
-<h3 id="def-95get95right">def _get_right</h3>
-<h3 id="def-95get95rootx">def _get_rootX</h3>
-<h3 id="def-95get95rooty">def _get_rootY</h3>
-<h3 id="def-95get95rootz">def _get_rootZ</h3>
-<h3 id="def-95get95scalex">def _get_scaleX</h3>
-<h3 id="def-95get95scaley">def _get_scaleY</h3>
-<h3 id="def-95get95scalez">def _get_scaleZ</h3>
-<h3 id="def-95get95shadow">def _get_shadow</h3>
-<h3 id="def-95get95show">def _get_show</h3>
-<h3 id="def-95get95siblings">def _get_siblings</h3>
+<h3 id="def-95get95prself">def _get_pr(self)</h3>
+<h3 id="def-95get95ptself">def _get_pt(self)</h3>
+<h3 id="def-95get95pwself">def _get_pw(self)</h3>
+<h3 id="def-95get95pzbself">def _get_pzb(self)</h3>
+<h3 id="def-95get95pzfself">def _get_pzf(self)</h3>
+<h3 id="def-95get95rightself">def _get_right(self)</h3>
+<h3 id="def-95get95rootxself">def _get_rootX(self)</h3>
+<h3 id="def-95get95rootyself">def _get_rootY(self)</h3>
+<h3 id="def-95get95rootzself">def _get_rootZ(self)</h3>
+<h3 id="def-95get95scalexself">def _get_scaleX(self)</h3>
+<h3 id="def-95get95scaleyself">def _get_scaleY(self)</h3>
+<h3 id="def-95get95scalezself">def _get_scaleZ(self)</h3>
+<h3 id="def-95get95shadowself">def _get_shadow(self)</h3>
+<h3 id="def-95get95showself">def _get_show(self)</h3>
+<h3 id="def-95get95siblingsself">def _get_siblings(self)</h3>
 <p>Answer all elements that share self.parent, not including self in the list.  </p>
-<h3 id="def-95get95size">def _get_size</h3>
-<h3 id="def-95get95t">def _get_t</h3>
+<h3 id="def-95get95sizeself">def _get_size(self)</h3>
+<h3 id="def-95get95tself">def _get_t(self)</h3>
 <p>The self._t status is the time status, interpolating between the values in <br />
 self.tStyles[t1] and self.tStyles[t2] where t1 &lt;= t &lt;= t2 and these styles contain<br />
 the requested parameters.  </p>
-<h3 id="def-95get95template">def _get_template</h3>
-<h3 id="def-95get95textgradient">def _get_textGradient</h3>
-<h3 id="def-95get95textshadow">def _get_textShadow</h3>
-<h3 id="def-95get95top">def _get_top</h3>
+<h3 id="def-95get95templateself">def _get_template(self)</h3>
+<h3 id="def-95get95textgradientself">def _get_textGradient(self)</h3>
+<h3 id="def-95get95textshadowself">def _get_textShadow(self)</h3>
+<h3 id="def-95get95topself">def _get_top(self)</h3>
 <p>Answer the top position (relative to self.parent) of self.  </p>
-<h3 id="def-95get95w">def _get_w</h3>
-<h3 id="def-95get95x">def _get_x</h3>
+<h3 id="def-95get95wself">def _get_w(self)</h3>
+<h3 id="def-95get95xself">def _get_x(self)</h3>
 <p>Answer the x position of self.  </p>
-<h3 id="def-95get95xalign">def _get_xAlign</h3>
-<h3 id="def-95get95y">def _get_y</h3>
+<h3 id="def-95get95xalignself">def _get_xAlign(self)</h3>
+<h3 id="def-95get95yself">def _get_y(self)</h3>
 <p>Answer the y position of self.  </p>
-<h3 id="def-95get95yalign">def _get_yAlign</h3>
-<h3 id="def-95get95z">def _get_z</h3>
+<h3 id="def-95get95yalignself">def _get_yAlign(self)</h3>
+<h3 id="def-95get95zself">def _get_z(self)</h3>
 <p>Answer the z position of self.  </p>
-<h3 id="def-95get95zalign">def _get_zAlign</h3>
-<h3 id="def-95restorerotation">def _restoreRotation</h3>
+<h3 id="def-95get95zalignself">def _get_zAlign(self)</h3>
+<h3 id="def-95restorerotationself">def _restoreRotation(self)</h3>
 <p>Reset graphics state from rotation mode.  </p>
-<h3 id="def-95restorescale">def _restoreScale</h3>
+<h3 id="def-95restorescaleself">def _restoreScale(self)</h3>
 <p>Reset graphics state from svaed scale mode. Make sure to match the call of self._applyScale.<br />
 If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the restore.  </p>
-<h3 id="def-95set95back">def _set_back</h3>
-<h3 id="def-95set95baselinegrid">def _set_baselineGrid</h3>
-<h3 id="def-95set95baselinegridstart">def _set_baselineGridStart</h3>
-<h3 id="def-95set95borderbottom">def _set_borderBottom</h3>
-<h3 id="def-95set95borderleft">def _set_borderLeft</h3>
-<h3 id="def-95set95borderright">def _set_borderRight</h3>
-<h3 id="def-95set95bordertop">def _set_borderTop</h3>
-<h3 id="def-95set95borders">def _set_borders</h3>
-<h3 id="def-95set95bottom">def _set_bottom</h3>
-<h3 id="def-95set95cd">def _set_cd</h3>
-<h3 id="def-95set95center">def _set_center</h3>
-<h3 id="def-95set95ch">def _set_ch</h3>
-<h3 id="def-95set95cw">def _set_cw</h3>
-<h3 id="def-95set95cx">def _set_cx</h3>
-<h3 id="def-95set95cy">def _set_cy</h3>
-<h3 id="def-95set95cz">def _set_cz</h3>
-<h3 id="def-95set95d">def _set_d</h3>
-<h3 id="def-95set95elements">def _set_elements</h3>
-<h3 id="def-95set95front">def _set_front</h3>
-<h3 id="def-95set95gd">def _set_gd</h3>
-<h3 id="def-95set95gh">def _set_gh</h3>
-<h3 id="def-95set95gradient">def _set_gradient</h3>
-<h3 id="def-95set95gutter">def _set_gutter</h3>
-<h3 id="def-95set95gutter3d">def _set_gutter3D</h3>
-<h3 id="def-95set95gw">def _set_gw</h3>
-<h3 id="def-95set95h">def _set_h</h3>
-<h3 id="def-95set95left">def _set_left</h3>
-<h3 id="def-95set95mback">def _set_mBack</h3>
-<h3 id="def-95set95mbottom">def _set_mBottom</h3>
-<h3 id="def-95set95mfront">def _set_mFront</h3>
-<h3 id="def-95set95mleft">def _set_mLeft</h3>
-<h3 id="def-95set95mright">def _set_mRight</h3>
-<h3 id="def-95set95mtop">def _set_mTop</h3>
-<h3 id="def-95set95margin">def _set_margin</h3>
-<h3 id="def-95set95maxd">def _set_maxD</h3>
-<h3 id="def-95set95maxh">def _set_maxH</h3>
-<h3 id="def-95set95maxw">def _set_maxW</h3>
-<h3 id="def-95set95mb">def _set_mb</h3>
-<h3 id="def-95set95md">def _set_md</h3>
-<h3 id="def-95set95mh">def _set_mh</h3>
-<h3 id="def-95set95middle">def _set_middle</h3>
-<h3 id="def-95set95mind">def _set_minD</h3>
-<h3 id="def-95set95minh">def _set_minH</h3>
-<h3 id="def-95set95minw">def _set_minW</h3>
-<h3 id="def-95set95ml">def _set_ml</h3>
-<h3 id="def-95set95mr">def _set_mr</h3>
-<h3 id="def-95set95mt">def _set_mt</h3>
-<h3 id="def-95set95mw">def _set_mw</h3>
-<h3 id="def-95set95mzb">def _set_mzb</h3>
-<h3 id="def-95set95mzf">def _set_mzf</h3>
-<h3 id="def-95set95origintop">def _set_originTop</h3>
-<h3 id="def-95set95padding">def _set_padding</h3>
-<h3 id="def-95set95parent">def _set_parent</h3>
-<h3 id="def-95set95pb">def _set_pb</h3>
-<h3 id="def-95set95pl">def _set_pl</h3>
-<h3 id="def-95set95point">def _set_point</h3>
-<h3 id="def-95set95point3d">def _set_point3D</h3>
-<h3 id="def-95set95pr">def _set_pr</h3>
-<h3 id="def-95set95pt">def _set_pt</h3>
-<h3 id="def-95set95pzb">def _set_pzb</h3>
-<h3 id="def-95set95pzf">def _set_pzf</h3>
-<h3 id="def-95set95right">def _set_right</h3>
-<h3 id="def-95set95scalex">def _set_scaleX</h3>
-<h3 id="def-95set95scaley">def _set_scaleY</h3>
-<h3 id="def-95set95scalez">def _set_scaleZ</h3>
-<h3 id="def-95set95shadow">def _set_shadow</h3>
-<h3 id="def-95set95show">def _set_show</h3>
-<h3 id="def-95set95size">def _set_size</h3>
-<h3 id="def-95set95t">def _set_t</h3>
-<h3 id="def-95set95template">def _set_template</h3>
-<h3 id="def-95set95textgradient">def _set_textGradient</h3>
-<h3 id="def-95set95textshadow">def _set_textShadow</h3>
-<h3 id="def-95set95top">def _set_top</h3>
+<h3 id="def-95set95backself-z">def _set_back(self, z)</h3>
+<h3 id="def-95set95baselinegridself-baselinegrid">def _set_baselineGrid(self, baselineGrid)</h3>
+<h3 id="def-95set95baselinegridstartself-baselinegridstart">def _set_baselineGridStart(self, baselineGridStart)</h3>
+<h3 id="def-95set95borderbottomself-border">def _set_borderBottom(self, border)</h3>
+<h3 id="def-95set95borderleftself-border">def _set_borderLeft(self, border)</h3>
+<h3 id="def-95set95borderrightself-border">def _set_borderRight(self, border)</h3>
+<h3 id="def-95set95bordertopself-border">def _set_borderTop(self, border)</h3>
+<h3 id="def-95set95bordersself-borders">def _set_borders(self, borders)</h3>
+<h3 id="def-95set95bottomself-y">def _set_bottom(self, y)</h3>
+<h3 id="def-95set95cdself-cd">def _set_cd(self, cd)</h3>
+<h3 id="def-95set95centerself-x">def _set_center(self, x)</h3>
+<h3 id="def-95set95chself-ch">def _set_ch(self, ch)</h3>
+<h3 id="def-95set95cwself-cw">def _set_cw(self, cw)</h3>
+<h3 id="def-95set95cxself-cx">def _set_cx(self, cx)</h3>
+<h3 id="def-95set95cyself-cy">def _set_cy(self, cy)</h3>
+<h3 id="def-95set95czself-cz">def _set_cz(self, cz)</h3>
+<h3 id="def-95set95dself-d">def _set_d(self, d)</h3>
+<h3 id="def-95set95elementsself-elements">def _set_elements(self, elements)</h3>
+<h3 id="def-95set95frontself-z">def _set_front(self, z)</h3>
+<h3 id="def-95set95gdself-gd">def _set_gd(self, gd)</h3>
+<h3 id="def-95set95ghself-gh">def _set_gh(self, gh)</h3>
+<h3 id="def-95set95gradientself-gradient">def _set_gradient(self, gradient)</h3>
+<h3 id="def-95set95gutterself-gutter">def _set_gutter(self, gutter)</h3>
+<h3 id="def-95set95gutter3dself-gutter3d">def _set_gutter3D(self, gutter3D)</h3>
+<h3 id="def-95set95gwself-gw">def _set_gw(self, gw)</h3>
+<h3 id="def-95set95hself-h">def _set_h(self, h)</h3>
+<h3 id="def-95set95leftself-x">def _set_left(self, x)</h3>
+<h3 id="def-95set95mbackself-z">def _set_mBack(self, z)</h3>
+<h3 id="def-95set95mbottomself-y">def _set_mBottom(self, y)</h3>
+<h3 id="def-95set95mfrontself-z">def _set_mFront(self, z)</h3>
+<h3 id="def-95set95mleftself-x">def _set_mLeft(self, x)</h3>
+<h3 id="def-95set95mrightself-x">def _set_mRight(self, x)</h3>
+<h3 id="def-95set95mtopself-y">def _set_mTop(self, y)</h3>
+<h3 id="def-95set95marginself-margin">def _set_margin(self, margin)</h3>
+<h3 id="def-95set95maxdself-maxd">def _set_maxD(self, maxD)</h3>
+<h3 id="def-95set95maxhself-maxh">def _set_maxH(self, maxH)</h3>
+<h3 id="def-95set95maxwself-maxw">def _set_maxW(self, maxW)</h3>
+<h3 id="def-95set95mbself-mb">def _set_mb(self, mb)</h3>
+<h3 id="def-95set95mdself-d">def _set_md(self, d)</h3>
+<h3 id="def-95set95mhself-h">def _set_mh(self, h)</h3>
+<h3 id="def-95set95middleself-y">def _set_middle(self, y)</h3>
+<h3 id="def-95set95mindself-mind">def _set_minD(self, minD)</h3>
+<h3 id="def-95set95minhself-minh">def _set_minH(self, minH)</h3>
+<h3 id="def-95set95minwself-minw">def _set_minW(self, minW)</h3>
+<h3 id="def-95set95mlself-ml">def _set_ml(self, ml)</h3>
+<h3 id="def-95set95mrself-mr">def _set_mr(self, mr)</h3>
+<h3 id="def-95set95mtself-mt">def _set_mt(self, mt)</h3>
+<h3 id="def-95set95mwself-w">def _set_mw(self, w)</h3>
+<h3 id="def-95set95mzbself-mzb">def _set_mzb(self, mzb)</h3>
+<h3 id="def-95set95mzfself-mzf">def _set_mzf(self, mzf)</h3>
+<h3 id="def-95set95origintopself-flag">def _set_originTop(self, flag)</h3>
+<h3 id="def-95set95paddingself-padding">def _set_padding(self, padding)</h3>
+<h3 id="def-95set95parentself-parent">def _set_parent(self, parent)</h3>
+<h3 id="def-95set95pbself-pb">def _set_pb(self, pb)</h3>
+<h3 id="def-95set95plself-pl">def _set_pl(self, pl)</h3>
+<h3 id="def-95set95pointself-point">def _set_point(self, point)</h3>
+<h3 id="def-95set95point3dself-point">def _set_point3D(self, point)</h3>
+<h3 id="def-95set95prself-pr">def _set_pr(self, pr)</h3>
+<h3 id="def-95set95ptself-pt">def _set_pt(self, pt)</h3>
+<h3 id="def-95set95pzbself-pzb">def _set_pzb(self, pzb)</h3>
+<h3 id="def-95set95pzfself-pzf">def _set_pzf(self, pzf)</h3>
+<h3 id="def-95set95rightself-x">def _set_right(self, x)</h3>
+<h3 id="def-95set95scalexself-scalex">def _set_scaleX(self, scaleX)</h3>
+<h3 id="def-95set95scaleyself-scaley">def _set_scaleY(self, scaleY)</h3>
+<h3 id="def-95set95scalezself-scaley">def _set_scaleZ(self, scaleY)</h3>
+<h3 id="def-95set95shadowself-shadow">def _set_shadow(self, shadow)</h3>
+<h3 id="def-95set95showself-showflag">def _set_show(self, showFlag)</h3>
+<h3 id="def-95set95sizeself-size">def _set_size(self, size)</h3>
+<h3 id="def-95set95tself-t">def _set_t(self, t)</h3>
+<h3 id="def-95set95templateself-template">def _set_template(self, template)</h3>
+<h3 id="def-95set95textgradientself-textgradient">def _set_textGradient(self, textGradient)</h3>
+<h3 id="def-95set95textshadowself-textshadow">def _set_textShadow(self, textShadow)</h3>
+<h3 id="def-95set95topself-y">def _set_top(self, y)</h3>
 <p>Shift the element so self.top == y.  </p>
-<h3 id="def-95set95w">def _set_w</h3>
-<h3 id="def-95set95x">def _set_x</h3>
-<h3 id="def-95set95xalign">def _set_xAlign</h3>
-<h3 id="def-95set95y">def _set_y</h3>
-<h3 id="def-95set95yalign">def _set_yAlign</h3>
-<h3 id="def-95set95z">def _set_z</h3>
-<h3 id="def-95set95zalign">def _set_zAlign</h3>
-<h3 id="def-95validatexalign">def _validateXAlign</h3>
-<h3 id="def-95validateyalign">def _validateYAlign</h3>
-<h3 id="def-95validatezalign">def _validateZAlign</h3>
+<h3 id="def-95set95wself-w">def _set_w(self, w)</h3>
+<h3 id="def-95set95xself-x">def _set_x(self, x)</h3>
+<h3 id="def-95set95xalignself-xalign">def _set_xAlign(self, xAlign)</h3>
+<h3 id="def-95set95yself-y">def _set_y(self, y)</h3>
+<h3 id="def-95set95yalignself-yalign">def _set_yAlign(self, yAlign)</h3>
+<h3 id="def-95set95zself-z">def _set_z(self, z)</h3>
+<h3 id="def-95set95zalignself-zalign">def _set_zAlign(self, zAlign)</h3>
+<h3 id="def-95validatexalignself-xalign">def _validateXAlign(self, xAlign)</h3>
+<h3 id="def-95validateyalignself-yalign">def _validateYAlign(self, yAlign)</h3>
+<h3 id="def-95validatezalignself-zalign">def _validateZAlign(self, zAlign)</h3>
 <h3 id="property-ancestors">property ancestors</h3>
 <p>Answer the list of anscestors of self, including the document root. Self is not included.  </p>
-<h3 id="def-appendelement">def appendElement</h3>
+<h3 id="def-appendelementself-e">def appendElement(self, e)</h3>
 <p>Add element to the list of child elements. Note that elements can be added multiple times.<br />
 If the element is alread placed in another container, then remove it from its current parent.<br />
 This relation and position is lost. The position e is supposed to be filled already in local position.  </p>
-<h3 id="def-appendstring">def appendString</h3>
+<h3 id="def-appendstringself-fs">def appendString(self, fs)</h3>
 <p>Add the string to the laat text box. Create a new textbox if not found.  </p>
-<h3 id="def-appendtimemark">def appendTimeMark</h3>
+<h3 id="def-appendtimemarkself-tm">def appendTimeMark(self, tm)</h3>
 <h3 id="def-applytemplateself-template-elementsnone">def applyTemplate(self, template, elements=None)</h3>
 <p>Copy relevant info from template: w, h, elements, style, conditions when element is created.<br />
 Don't call later.  </p>
 <h3 id="property-back">property back</h3>
-<h3 id="def-baseline2bottom">def baseline2Bottom</h3>
-<h3 id="def-baseline2top">def baseline2Top</h3>
+<h3 id="def-baseline2bottomself">def baseline2Bottom(self)</h3>
+<h3 id="def-baseline2topself">def baseline2Top(self)</h3>
 <h3 id="property-baselinegrid">property baselineGrid</h3>
 <h3 id="property-baselinegridstart">property baselineGridStart</h3>
 <h3 id="property-block">property block</h3>
@@ -878,25 +878,25 @@ Don't call later.  </p>
 <h3 id="property-bordertop">property borderTop</h3>
 <h3 id="property-borders">property borders</h3>
 <h3 id="property-bottom">property bottom</h3>
-<h3 id="def-bottom2bottom">def bottom2Bottom</h3>
-<h3 id="def-bottom2bottomside">def bottom2BottomSide</h3>
-<h3 id="def-bottom2middle">def bottom2Middle</h3>
-<h3 id="def-bottom2middlesides">def bottom2MiddleSides</h3>
-<h3 id="def-bottom2top">def bottom2Top</h3>
+<h3 id="def-bottom2bottomself">def bottom2Bottom(self)</h3>
+<h3 id="def-bottom2bottomsideself">def bottom2BottomSide(self)</h3>
+<h3 id="def-bottom2middleself">def bottom2Middle(self)</h3>
+<h3 id="def-bottom2middlesidesself">def bottom2MiddleSides(self)</h3>
+<h3 id="def-bottom2topself">def bottom2Top(self)</h3>
 <h3 id="property-box">property box</h3>
 <p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
 <h3 id="property-box3d">property box3D</h3>
 <p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.  </p>
 <h3 id="property-cd">property cd</h3>
 <h3 id="property-center">property center</h3>
-<h3 id="def-center2center">def center2Center</h3>
-<h3 id="def-center2centersides">def center2CenterSides</h3>
-<h3 id="def-center2left">def center2Left</h3>
-<h3 id="def-center2leftside">def center2LeftSide</h3>
-<h3 id="def-center2right">def center2Right</h3>
-<h3 id="def-center2rightside">def center2RightSide</h3>
+<h3 id="def-center2centerself">def center2Center(self)</h3>
+<h3 id="def-center2centersidesself">def center2CenterSides(self)</h3>
+<h3 id="def-center2leftself">def center2Left(self)</h3>
+<h3 id="def-center2leftsideself">def center2LeftSide(self)</h3>
+<h3 id="def-center2rightself">def center2Right(self)</h3>
+<h3 id="def-center2rightsideself">def center2RightSide(self)</h3>
 <h3 id="property-ch">property ch</h3>
-<h3 id="def-clearelements">def clearElements</h3>
+<h3 id="def-clearelementsself">def clearElements(self)</h3>
 <p>Properly initializes self._elements and self._eIds. <br />
 Any existing elements get their parent weakrefs become None and will garbage collect.  </p>
 <h3 id="def-cssself-name-defaultnone">def css(self, name, default=None)</h3>
@@ -908,17 +908,17 @@ the requested value.  </p>
 <h3 id="property-cy">property cy</h3>
 <h3 id="property-cz">property cz</h3>
 <h3 id="property-d">property d</h3>
-<h3 id="def-deepcopy">def deepCopy</h3>
+<h3 id="def-deepcopyself">def deepCopy(self)</h3>
 <p>Answer a copy of self, where the "unique" fields are set to default. Also perform a deep copy<br />
 on all child elements.  </p>
 <h3 id="property-doc">property doc</h3>
 <p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
-<h3 id="def-draw">def draw</h3>
+<h3 id="def-drawself-origin-view">def draw(self, origin, view)</h3>
 <p>Like "rolled pasteboard" galleys can draw themselves, if the Composer decides to keep<br />
 them in tact, instead of select, pick &amp; choose elements, until the are all<br />
 part of a page. In that case the w/h must have been set by the Composer to fit the<br />
 containing page.  </p>
-<h3 id="def-drawframe">def drawFrame</h3>
+<h3 id="def-drawframeself-p-view">def drawFrame(self, p, view)</h3>
 <p>Draw fill of the rectangular element space.<br />
 The self.css('fill') defines the color of the element background.<br />
 Instead of the DrawBot stroke and strokeWidth attributes, use<br />
@@ -927,44 +927,44 @@ borders or (borderTop, borderRight, borderBottom, borderLeft) attributes.  </p>
 <h3 id="property-elementids">property elementIds</h3>
 <h3 id="def-evaluateself-scorenone">def evaluate(self, score=None)</h3>
 <p>Evaluate the content of element e with the total sum of conditions.  </p>
-<h3 id="def-fit2bottom">def fit2Bottom</h3>
-<h3 id="def-fit2bottomside">def fit2BottomSide</h3>
-<h3 id="def-fit2left">def fit2Left</h3>
-<h3 id="def-fit2leftside">def fit2LeftSide</h3>
-<h3 id="def-fit2right">def fit2Right</h3>
-<h3 id="def-fit2rightside">def fit2RightSide</h3>
-<h3 id="def-fit2top">def fit2Top</h3>
-<h3 id="def-fit2topside">def fit2TopSide</h3>
-<h3 id="def-float2bottom">def float2Bottom</h3>
-<h3 id="def-float2bottomside">def float2BottomSide</h3>
-<h3 id="def-float2left">def float2Left</h3>
-<h3 id="def-float2leftside">def float2LeftSide</h3>
-<h3 id="def-float2right">def float2Right</h3>
-<h3 id="def-float2rightside">def float2RightSide</h3>
-<h3 id="def-float2top">def float2Top</h3>
+<h3 id="def-fit2bottomself">def fit2Bottom(self)</h3>
+<h3 id="def-fit2bottomsideself">def fit2BottomSide(self)</h3>
+<h3 id="def-fit2leftself">def fit2Left(self)</h3>
+<h3 id="def-fit2leftsideself">def fit2LeftSide(self)</h3>
+<h3 id="def-fit2rightself">def fit2Right(self)</h3>
+<h3 id="def-fit2rightsideself">def fit2RightSide(self)</h3>
+<h3 id="def-fit2topself">def fit2Top(self)</h3>
+<h3 id="def-fit2topsideself">def fit2TopSide(self)</h3>
+<h3 id="def-float2bottomself">def float2Bottom(self)</h3>
+<h3 id="def-float2bottomsideself">def float2BottomSide(self)</h3>
+<h3 id="def-float2leftself">def float2Left(self)</h3>
+<h3 id="def-float2leftsideself">def float2LeftSide(self)</h3>
+<h3 id="def-float2rightself">def float2Right(self)</h3>
+<h3 id="def-float2rightsideself">def float2RightSide(self)</h3>
+<h3 id="def-float2topself">def float2Top(self)</h3>
 <p>Float the element upward, until top hits the parent top padding.<br />
 Include margin to decide if it fits.  </p>
-<h3 id="def-float2topside">def float2TopSide</h3>
-<h3 id="def-floatascender2top">def floatAscender2Top</h3>
-<h3 id="def-floatbaseline2top">def floatBaseline2Top</h3>
-<h3 id="def-floatcapheight2top">def floatCapHeight2Top</h3>
-<h3 id="def-floatxheight2top">def floatXHeight2Top</h3>
+<h3 id="def-float2topsideself">def float2TopSide(self)</h3>
+<h3 id="def-floatascender2topself">def floatAscender2Top(self)</h3>
+<h3 id="def-floatbaseline2topself">def floatBaseline2Top(self)</h3>
+<h3 id="def-floatcapheight2topself">def floatCapHeight2Top(self)</h3>
+<h3 id="def-floatxheight2topself">def floatXHeight2Top(self)</h3>
 <h3 id="property-front">property front</h3>
 <h3 id="property-gd">property gd</h3>
-<h3 id="def-getelement">def getElement</h3>
+<h3 id="def-getelementself-eid">def getElement(self, eId)</h3>
 <p>Answer the page element, if it has a unique element Id. Answer None if the eId does not exist as child.  </p>
-<h3 id="def-getelementbyname">def getElementByName</h3>
+<h3 id="def-getelementbynameself-name">def getElementByName(self, name)</h3>
 <p>Answer the first element in the offspring list that fits the name. Answer None if it cannot be found  </p>
-<h3 id="def-getelementinfostring">def getElementInfoString</h3>
+<h3 id="def-getelementinfostringself">def getElementInfoString(self)</h3>
 <p>Answer a single string with info about the element. Default is to show the posiiton<br />
 and size (in points and columns). This method can be redefined by inheriting elements<br />
 that want to show additional information.  </p>
-<h3 id="def-getelementpage">def getElementPage</h3>
+<h3 id="def-getelementpageself">def getElementPage(self)</h3>
 <p>Recursively answer the page of this element. This can be several layers above self.  </p>
-<h3 id="def-getelementsatpoint">def getElementsAtPoint</h3>
+<h3 id="def-getelementsatpointself-point">def getElementsAtPoint(self, point)</h3>
 <p>Answer the list with elements that fit the point. Note None in the point will match any<br />
 value in the element position. Where None in the element position with not fit any xyz of the point.  </p>
-<h3 id="def-getelementsposition">def getElementsPosition</h3>
+<h3 id="def-getelementspositionself">def getElementsPosition(self)</h3>
 <p>Answer the dictionary of elements that have eIds and their positions.  </p>
 <h3 id="def-getfloatbottomsideself-previousonlytrue-tolerance0">def getFloatBottomSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max y that can float to bottom, without overlapping previous sibling elements.<br />
@@ -986,46 +986,46 @@ Comparison of available spave, includes the margins of the elements.  </p>
 This means we are just looking at the vertical projection between (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getheight">def getHeight</h3>
-<h3 id="def-getlastelement">def getLastElement</h3>
+<h3 id="def-getheightself">def getHeight(self)</h3>
+<h3 id="def-getlastelementself">def getLastElement(self)</h3>
 <p>Answer the last element in the sequence.  </p>
-<h3 id="def-getlasttextbox">def getLastTextBox</h3>
+<h3 id="def-getlasttextboxself">def getLastTextBox(self)</h3>
 <p>Answer the last text box in the sequence, so we can copy that style.  </p>
-<h3 id="def-getmaxsize">def getMaxSize</h3>
-<h3 id="def-getminsize">def getMinSize</h3>
+<h3 id="def-getmaxsizeself">def getMaxSize(self)</h3>
+<h3 id="def-getminsizeself">def getMinSize(self)</h3>
 <p>Cumulation of the maximum minSize of all enclosed elements.  </p>
-<h3 id="def-getminsize3d">def getMinSize3D</h3>
+<h3 id="def-getminsize3dself">def getMinSize3D(self)</h3>
 <p>Answer the (minW, minH, minD) of this element.  </p>
-<h3 id="def-getnamedstyle">def getNamedStyle</h3>
+<h3 id="def-getnamedstyleself-stylename">def getNamedStyle(self, styleName)</h3>
 <p>In case we are looking for a named style (e.g. used by the Typesetter to build a stack<br />
 of cascading tag style, then query the ancestors for the named style. Default behavior<br />
 of all elements is that they pass the request on to the root, which is nornally the document.  </p>
-<h3 id="def-getpositions">def getPositions</h3>
+<h3 id="def-getpositionsself">def getPositions(self)</h3>
 <p>"Answer the dictionary of positions of elements. <br />
 Key is the local point of the child element. Value is list of elements.  </p>
-<h3 id="def-getsize">def getSize</h3>
+<h3 id="def-getsizeself">def getSize(self)</h3>
 <p>Answer the enclosing rectangle of all elements in the galley.  </p>
-<h3 id="def-getsize3d">def getSize3D</h3>
+<h3 id="def-getsize3dself">def getSize3D(self)</h3>
 <p>Answer the 3D size of the element.  </p>
 <h3 id="def-gettextboxself-stylenone">def getTextBox(self, style=None)</h3>
 <p>If the last element is a TextBox, answer it. Otherwise create a new textBox with self.style<br />
 and answer that.  </p>
-<h3 id="def-getwidth">def getWidth</h3>
+<h3 id="def-getwidthself">def getWidth(self)</h3>
 <h3 id="property-gh">property gh</h3>
 <h3 id="property-gradient">property gradient</h3>
 <h3 id="property-gutter">property gutter</h3>
 <h3 id="property-gutter3d">property gutter3D</h3>
 <h3 id="property-gw">property gw</h3>
 <h3 id="property-h">property h</h3>
-<h3 id="def-isascenderontop">def isAscenderOnTop</h3>
-<h3 id="def-isbaselineonbottom">def isBaselineOnBottom</h3>
-<h3 id="def-isbaselineontop">def isBaselineOnTop</h3>
+<h3 id="def-isascenderontopself-tolerance">def isAscenderOnTop(self, tolerance)</h3>
+<h3 id="def-isbaselineonbottomself-tolerance">def isBaselineOnBottom(self, tolerance)</h3>
+<h3 id="def-isbaselineontopself-tolerance">def isBaselineOnTop(self, tolerance)</h3>
 <h3 id="def-isbottomonbottomself-tolerance0">def isBottomOnBottom(self, tolerance=0)</h3>
 <h3 id="def-isbottomonbottomsideself-tolerance0">def isBottomOnBottomSide(self, tolerance=0)</h3>
 <h3 id="def-isbottomonmiddleself-tolerance0">def isBottomOnMiddle(self, tolerance=0)</h3>
 <h3 id="def-isbottomonmiddlesidesself-tolerance0">def isBottomOnMiddleSides(self, tolerance=0)</h3>
 <h3 id="def-isbottomontopself-tolerance0">def isBottomOnTop(self, tolerance=0)</h3>
-<h3 id="def-iscapheightontop">def isCapHeightOnTop</h3>
+<h3 id="def-iscapheightontopself-tolerance">def isCapHeightOnTop(self, tolerance)</h3>
 <h3 id="def-iscenteroncenterself-tolerance0">def isCenterOnCenter(self, tolerance=0)</h3>
 <h3 id="def-iscenteroncentersidesself-tolerance0">def isCenterOnCenterSides(self, tolerance=0)</h3>
 <h3 id="def-iscenteronleftself-tolerance0">def isCenterOnLeft(self, tolerance=0)</h3>
@@ -1068,7 +1068,7 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="def-isoriginonrightsideself-tolerance0">def isOriginOnRightSide(self, tolerance=0)</h3>
 <h3 id="def-isoriginontopself-tolerance0">def isOriginOnTop(self, tolerance=0)</h3>
 <h3 id="def-isoriginontopsideself-tolerance0">def isOriginOnTopSide(self, tolerance=0)</h3>
-<h3 id="def-isoverflow">def isOverflow</h3>
+<h3 id="def-isoverflowself-tolerance">def isOverflow(self, tolerance)</h3>
 <h3 id="int-ispage">int isPage</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
@@ -1079,15 +1079,15 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="def-isrightonleftself-tolerance0">def isRightOnLeft(self, tolerance=0)</h3>
 <h3 id="def-isrightonrightself-tolerance0">def isRightOnRight(self, tolerance=0)</h3>
 <h3 id="def-isrightonrightsideself-tolerance0">def isRightOnRightSide(self, tolerance=0)</h3>
-<h3 id="def-isschrunkonblockleft">def isSchrunkOnBlockLeft</h3>
-<h3 id="def-isshrunkonblockbottom">def isShrunkOnBlockBottom</h3>
+<h3 id="def-isschrunkonblockleftself-tolerance">def isSchrunkOnBlockLeft(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockbottomself-tolerance">def isShrunkOnBlockBottom(self, tolerance)</h3>
 <p>Test if the bottom of self is shrunk to the bottom position of the block.  </p>
-<h3 id="def-isshrunkonblockbottomside">def isShrunkOnBlockBottomSide</h3>
-<h3 id="def-isshrunkonblockleftside">def isShrunkOnBlockLeftSide</h3>
-<h3 id="def-isshrunkonblockright">def isShrunkOnBlockRight</h3>
-<h3 id="def-isshrunkonblockrightside">def isShrunkOnBlockRightSide</h3>
-<h3 id="def-isshrunkonblocktop">def isShrunkOnBlockTop</h3>
-<h3 id="def-isshrunkonblocktopside">def isShrunkOnBlockTopSide</h3>
+<h3 id="def-isshrunkonblockbottomsideself-tolerance">def isShrunkOnBlockBottomSide(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockleftsideself-tolerance">def isShrunkOnBlockLeftSide(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockrightself-tolerance">def isShrunkOnBlockRight(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockrightsideself-tolerance">def isShrunkOnBlockRightSide(self, tolerance)</h3>
+<h3 id="def-isshrunkonblocktopself-tolerance">def isShrunkOnBlockTop(self, tolerance)</h3>
+<h3 id="def-isshrunkonblocktopsideself-tolerance">def isShrunkOnBlockTopSide(self, tolerance)</h3>
 <h3 id="int-istext">int isText</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
@@ -1108,13 +1108,13 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-isxheightontop">def isXHeightOnTop</h3>
+<h3 id="def-isxheightontopself-tolerance">def isXHeightOnTop(self, tolerance)</h3>
 <h3 id="property-left">property left</h3>
-<h3 id="def-left2center">def left2Center</h3>
-<h3 id="def-left2centersides">def left2CenterSides</h3>
-<h3 id="def-left2left">def left2Left</h3>
-<h3 id="def-left2leftside">def left2LeftSide</h3>
-<h3 id="def-left2right">def left2Right</h3>
+<h3 id="def-left2centerself">def left2Center(self)</h3>
+<h3 id="def-left2centersidesself">def left2CenterSides(self)</h3>
+<h3 id="def-left2leftself">def left2Left(self)</h3>
+<h3 id="def-left2leftsideself">def left2LeftSide(self)</h3>
+<h3 id="def-left2rightself">def left2Right(self)</h3>
 <h3 id="property-lib">property lib</h3>
 <p>Answer the shared document.lib dictionary by property, used for share global entry by elements.<br />
 Elements query their self.parent.lib until the root document is reached.  </p>
@@ -1137,12 +1137,12 @@ option style margin.  </p>
 <h3 id="property-mb">property mb</h3>
 <h3 id="property-mh">property mh</h3>
 <h3 id="property-middle">property middle</h3>
-<h3 id="def-middle2bottom">def middle2Bottom</h3>
-<h3 id="def-middle2bottomside">def middle2BottomSide</h3>
-<h3 id="def-middle2middle">def middle2Middle</h3>
-<h3 id="def-middle2middlesides">def middle2MiddleSides</h3>
-<h3 id="def-middle2top">def middle2Top</h3>
-<h3 id="def-middle2topside">def middle2TopSide</h3>
+<h3 id="def-middle2bottomself">def middle2Bottom(self)</h3>
+<h3 id="def-middle2bottomsideself">def middle2BottomSide(self)</h3>
+<h3 id="def-middle2middleself">def middle2Middle(self)</h3>
+<h3 id="def-middle2middlesidesself">def middle2MiddleSides(self)</h3>
+<h3 id="def-middle2topself">def middle2Top(self)</h3>
+<h3 id="def-middle2topsideself">def middle2TopSide(self)</h3>
 <h3 id="property-mind">property minD</h3>
 <h3 id="property-minh">property minH</h3>
 <h3 id="property-minw">property minW</h3>
@@ -1152,24 +1152,24 @@ option style margin.  </p>
 <h3 id="property-mw">property mw</h3>
 <h3 id="property-mzb">property mzb</h3>
 <h3 id="property-mzf">property mzf</h3>
-<h3 id="def-newruler">def newRuler</h3>
+<h3 id="def-newrulerself-style">def newRuler(self, style)</h3>
 <p>Add a new Ruler instance, depending on style.  </p>
 <h3 id="property-opoint">property oPoint</h3>
 <p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
 <h3 id="property-opoint3d">property oPoint3D</h3>
 <p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
-<h3 id="def-origin2bottom">def origin2Bottom</h3>
-<h3 id="def-origin2bottomside">def origin2BottomSide</h3>
-<h3 id="def-origin2center">def origin2Center</h3>
-<h3 id="def-origin2centersides">def origin2CenterSides</h3>
-<h3 id="def-origin2left">def origin2Left</h3>
-<h3 id="def-origin2leftside">def origin2LeftSide</h3>
-<h3 id="def-origin2middle">def origin2Middle</h3>
-<h3 id="def-origin2middlesides">def origin2MiddleSides</h3>
-<h3 id="def-origin2right">def origin2Right</h3>
-<h3 id="def-origin2rightside">def origin2RightSide</h3>
-<h3 id="def-origin2top">def origin2Top</h3>
-<h3 id="def-origin2topside">def origin2TopSide</h3>
+<h3 id="def-origin2bottomself">def origin2Bottom(self)</h3>
+<h3 id="def-origin2bottomsideself">def origin2BottomSide(self)</h3>
+<h3 id="def-origin2centerself">def origin2Center(self)</h3>
+<h3 id="def-origin2centersidesself">def origin2CenterSides(self)</h3>
+<h3 id="def-origin2leftself">def origin2Left(self)</h3>
+<h3 id="def-origin2leftsideself">def origin2LeftSide(self)</h3>
+<h3 id="def-origin2middleself">def origin2Middle(self)</h3>
+<h3 id="def-origin2middlesidesself">def origin2MiddleSides(self)</h3>
+<h3 id="def-origin2rightself">def origin2Right(self)</h3>
+<h3 id="def-origin2rightsideself">def origin2RightSide(self)</h3>
+<h3 id="def-origin2topself">def origin2Top(self)</h3>
+<h3 id="def-origin2topsideself">def origin2TopSide(self)</h3>
 <h3 id="property-origintop">property originTop</h3>
 <p>Answer the style flag if all point y values should measure top-down (typographic page<br />
 orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
@@ -1177,7 +1177,7 @@ The axes in X and Z directions are fixed.  </p>
 <h3 id="property-originsblock">property originsBlock</h3>
 <h3 id="property-originsblock3d">property originsBlock3D</h3>
 <p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
-<h3 id="def-overflow2next">def overflow2Next</h3>
+<h3 id="def-overflow2nextself">def overflow2Next(self)</h3>
 <p>Try to fix if there is overflow. Default behavior is to do nothing. This method<br />
 is redefined by inheriting classed, such as TextBox, that can have overflow of text.  </p>
 <h3 id="property-paddedblock3d">property paddedBlock3D</h3>
@@ -1207,21 +1207,21 @@ is not parent defined or if the parent not longer exists.  </p>
 <h3 id="property-pw">property pw</h3>
 <h3 id="property-pzb">property pzb</h3>
 <h3 id="property-pzf">property pzf</h3>
-<h3 id="def-removeelement">def removeElement</h3>
+<h3 id="def-removeelementself-e">def removeElement(self, e)</h3>
 <p>If the element is placed in self, then remove it. Don't touch the position.  </p>
 <h3 id="property-right">property right</h3>
-<h3 id="def-right2center">def right2Center</h3>
-<h3 id="def-right2centersides">def right2CenterSides</h3>
-<h3 id="def-right2left">def right2Left</h3>
-<h3 id="def-right2right">def right2Right</h3>
-<h3 id="def-right2rightside">def right2RightSide</h3>
+<h3 id="def-right2centerself">def right2Center(self)</h3>
+<h3 id="def-right2centersidesself">def right2CenterSides(self)</h3>
+<h3 id="def-right2leftself">def right2Left(self)</h3>
+<h3 id="def-right2rightself">def right2Right(self)</h3>
+<h3 id="def-right2rightsideself">def right2RightSide(self)</h3>
 <h3 id="property-rootx">property rootX</h3>
 <h3 id="property-rooty">property rootY</h3>
 <h3 id="property-rootz">property rootZ</h3>
 <h3 id="property-scalex">property scaleX</h3>
 <h3 id="property-scaley">property scaleY</h3>
 <h3 id="property-scalez">property scaleZ</h3>
-<h3 id="def-setelementbyindex">def setElementByIndex</h3>
+<h3 id="def-setelementbyindexself-e-index">def setElementByIndex(self, e, index)</h3>
 <p>Replace the element, if there is already one at index. Otherwise append it to self.elements<br />
 and answer the index number that it got.  </p>
 <h3 id="def-setmaxsizeself-maxw-maxhnone-maxdnone">def setMaxSize(self, maxW, maxH=None, maxD=None)</h3>
@@ -1230,14 +1230,14 @@ and answer the index number that it got.  </p>
 <p>Set the size of the element by calling by properties self.w and self.h. <br />
 If set, then overwrite access from style width and height. self.d is optional attribute.  </p>
 <h3 id="property-show">property show</h3>
-<h3 id="def-shrink2blockbottom">def shrink2BlockBottom</h3>
-<h3 id="def-shrink2blockbottomside">def shrink2BlockBottomSide</h3>
-<h3 id="def-shrink2blockleft">def shrink2BlockLeft</h3>
-<h3 id="def-shrink2blockleftside">def shrink2BlockLeftSide</h3>
-<h3 id="def-shrink2blockright">def shrink2BlockRight</h3>
-<h3 id="def-shrink2blockrightside">def shrink2BlockRightSide</h3>
-<h3 id="def-shrink2blocktop">def shrink2BlockTop</h3>
-<h3 id="def-shrink2blocktopside">def shrink2BlockTopSide</h3>
+<h3 id="def-shrink2blockbottomself">def shrink2BlockBottom(self)</h3>
+<h3 id="def-shrink2blockbottomsideself">def shrink2BlockBottomSide(self)</h3>
+<h3 id="def-shrink2blockleftself">def shrink2BlockLeft(self)</h3>
+<h3 id="def-shrink2blockleftsideself">def shrink2BlockLeftSide(self)</h3>
+<h3 id="def-shrink2blockrightself">def shrink2BlockRight(self)</h3>
+<h3 id="def-shrink2blockrightsideself">def shrink2BlockRightSide(self)</h3>
+<h3 id="def-shrink2blocktopself">def shrink2BlockTop(self)</h3>
+<h3 id="def-shrink2blocktopsideself">def shrink2BlockTopSide(self)</h3>
 <h3 id="property-siblings">property siblings</h3>
 <p>Answer all elements that share self.parent, not including self in the list.  </p>
 <h3 id="def-solveself-scorenone">def solve(self, score=None)</h3>
@@ -1247,11 +1247,11 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="property-textshadow">property textShadow</h3>
 <h3 id="property-top">property top</h3>
 <p>Answer the top position (relative to self.parent) of self.  </p>
-<h3 id="def-top2bottom">def top2Bottom</h3>
-<h3 id="def-top2middle">def top2Middle</h3>
-<h3 id="def-top2middlesides">def top2MiddleSides</h3>
-<h3 id="def-top2top">def top2Top</h3>
-<h3 id="def-top2topside">def top2TopSide</h3>
+<h3 id="def-top2bottomself">def top2Bottom(self)</h3>
+<h3 id="def-top2middleself">def top2Middle(self)</h3>
+<h3 id="def-top2middlesidesself">def top2MiddleSides(self)</h3>
+<h3 id="def-top2topself">def top2Top(self)</h3>
+<h3 id="def-top2topsideself">def top2TopSide(self)</h3>
 <h3 id="property-w">property w</h3>
 <h3 id="property-x">property x</h3>
 <p>Answer the x position of self.  </p>
@@ -1268,284 +1268,284 @@ If set, then overwrite access from style width and height. self.d is optional at
 caption or other elements. This way the user can add mulitple PixelMaps, a title elements, etc. <br />
 The layout of the Image elements is defined in the same way as any other layout. Conditional rules can be <br />
 applied (e.g. if the image element changes size), or the child elements can be put on fixed positions.  </p>
-<h3 id="def-notnow95getexpandedtimemarks_1">def NOTNOW_getExpandedTimeMarks</h3>
+<h3 id="def-notnow95getexpandedtimemarkst_1">def NOTNOW_getExpandedTimeMarks(t)</h3>
 <p>Answer a new interpolated TimeState instance, from the enclosing time states for t.  </p>
-<h3 id="def-notnow95getflows_1">def NOTNOW_getFlows</h3>
+<h3 id="def-notnow95getflowsself_1">def NOTNOW_getFlows(self)</h3>
 <p>Answer the set of flow element sequences on the page.  </p>
 <h3 id="def-notnow95getnextflowboxself-tb-makenewtrue_1">def NOTNOW_getNextFlowBox(self, tb, makeNew=True)</h3>
 <p>Answer the next textBox that tb is pointing to. This can be on the same page or a next<br />
 page, depending how the page (and probably its template) is defined.  </p>
-<h3 id="def-9595getitem9595_1">def __getitem__</h3>
+<h3 id="def-9595getitem9595self-eid_1">def __getitem__(self, eId)</h3>
 <p>Answer the element with eId. Raise a KeyError if the element does not exist.  </p>
-<h3 id="def-9595init9595self-pathnone-stylenone-pixelmapnone-titlenone-captionnone-cliprectnone-masknone-imonone-wnone-hnone-imageconditionsnone-conditionsnone">def __init__(self, path=None, style=None, pixelMap=None, title=None, caption=None, clipRect=None, mask=None, imo=None, w=None, h=None, imageConditions=None, conditions=None)</h3>
-<h3 id="def-9595len9595_1">def __len__</h3>
+<h3 id="def-9595init9595self-pathnone-stylenone-pixelmapnone-titlenone-captionnone-cliprectnone-masknone-imonone-wnone-hnone-imageconditionsnone-conditionsnone-4242kwargs">def __init__(self, path=None, style=None, pixelMap=None, title=None, caption=None, clipRect=None, mask=None, imo=None, w=None, h=None, imageConditions=None, conditions=None, **kwargs)</h3>
+<h3 id="def-9595len9595self_1">def __len__(self)</h3>
 <p>Answer total amount of elements, placed or not.  </p>
-<h3 id="def-9595repr9595_1">def __repr__</h3>
-<h3 id="def-9595setitem9595_1">def __setitem__</h3>
-<h3 id="def-95applyalignment_1">def _applyAlignment</h3>
+<h3 id="def-9595repr9595self_1">def __repr__(self)</h3>
+<h3 id="def-9595setitem9595self-eid-e_1">def __setitem__(self, eId, e)</h3>
+<h3 id="def-95applyalignmentself-p_1">def _applyAlignment(self, p)</h3>
 <p>Answer the p according to the alignment status in the css.  </p>
-<h3 id="def-95applyorigin_1">def _applyOrigin</h3>
+<h3 id="def-95applyoriginself-p_1">def _applyOrigin(self, p)</h3>
 <p>If self.originTop is False, then the y-value is interpreted as mathematics, <br />
 starting at the bottom of the parent element, moving up.<br />
 If the flag is True, then move from top down, where the origin of the element becomes<br />
 top-left of the parent.  </p>
-<h3 id="def-95applyrotation_1">def _applyRotation</h3>
+<h3 id="def-95applyrotationself-mx-my-angle_1">def _applyRotation(self, mx, my, angle)</h3>
 <p>Apply the rotation for angle, where (mx, my) is the rotation center.  </p>
-<h3 id="def-95applyscale_1">def _applyScale</h3>
+<h3 id="def-95applyscaleself-p_1">def _applyScale(self, p)</h3>
 <p>Apply the scale, if both self.scaleX and self.scaleY are set. Use this<br />
 method paired with self._restoreScale(). The (x, y) answered as reversed scaled tuple,<br />
 so drawing elements can still draw on "real size", while the other element is in scaled mode.  </p>
-<h3 id="def-95borderdict_1">def _borderDict</h3>
-<h3 id="def-95drawelements_1">def _drawElements</h3>
+<h3 id="def-95borderdictself-borderdata_1">def _borderDict(self, borderData)</h3>
+<h3 id="def-95drawelementsself-origin-view_1">def _drawElements(self, origin, view)</h3>
 <p>Recursively draw all elements of self on their own relative position in the main canvas,  </p>
-<h3 id="def-95get95ancestors_1">def _get_ancestors</h3>
+<h3 id="def-95get95ancestorsself_1">def _get_ancestors(self)</h3>
 <p>Answer the list of anscestors of self, including the document root. Self is not included.  </p>
-<h3 id="def-95get95back_1">def _get_back</h3>
-<h3 id="def-95get95baselinegrid_1">def _get_baselineGrid</h3>
-<h3 id="def-95get95baselinegridstart_1">def _get_baselineGridStart</h3>
-<h3 id="def-95get95block_1">def _get_block</h3>
+<h3 id="def-95get95backself_1">def _get_back(self)</h3>
+<h3 id="def-95get95baselinegridself_1">def _get_baselineGrid(self)</h3>
+<h3 id="def-95get95baselinegridstartself_1">def _get_baselineGridStart(self)</h3>
+<h3 id="def-95get95blockself_1">def _get_block(self)</h3>
 <p>Answer the vacuum bounding box around all child elements in 2D  </p>
-<h3 id="def-95get95block3d_1">def _get_block3D</h3>
+<h3 id="def-95get95block3dself_1">def _get_block3D(self)</h3>
 <p>Answer the vacuum 3D bounding box around all child elements.  </p>
-<h3 id="def-95get95borderbottom_1">def _get_borderBottom</h3>
-<h3 id="def-95get95borderleft_1">def _get_borderLeft</h3>
-<h3 id="def-95get95borderright_1">def _get_borderRight</h3>
-<h3 id="def-95get95bordertop_1">def _get_borderTop</h3>
-<h3 id="def-95get95borders_1">def _get_borders</h3>
-<h3 id="def-95get95bottom_1">def _get_bottom</h3>
-<h3 id="def-95get95box_1">def _get_box</h3>
+<h3 id="def-95get95borderbottomself_1">def _get_borderBottom(self)</h3>
+<h3 id="def-95get95borderleftself_1">def _get_borderLeft(self)</h3>
+<h3 id="def-95get95borderrightself_1">def _get_borderRight(self)</h3>
+<h3 id="def-95get95bordertopself_1">def _get_borderTop(self)</h3>
+<h3 id="def-95get95bordersself_1">def _get_borders(self)</h3>
+<h3 id="def-95get95bottomself_1">def _get_bottom(self)</h3>
+<h3 id="def-95get95boxself_1">def _get_box(self)</h3>
 <p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
-<h3 id="def-95get95box3d_1">def _get_box3D</h3>
+<h3 id="def-95get95box3dself_1">def _get_box3D(self)</h3>
 <p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.  </p>
-<h3 id="def-95get95caption">def _get_caption</h3>
-<h3 id="def-95get95cd_1">def _get_cd</h3>
-<h3 id="def-95get95center_1">def _get_center</h3>
-<h3 id="def-95get95ch_1">def _get_ch</h3>
-<h3 id="def-95get95cw_1">def _get_cw</h3>
-<h3 id="def-95get95cx_1">def _get_cx</h3>
-<h3 id="def-95get95cy_1">def _get_cy</h3>
-<h3 id="def-95get95cz_1">def _get_cz</h3>
-<h3 id="def-95get95d_1">def _get_d</h3>
-<h3 id="def-95get95doc_1">def _get_doc</h3>
+<h3 id="def-95get95captionself">def _get_caption(self)</h3>
+<h3 id="def-95get95cdself_1">def _get_cd(self)</h3>
+<h3 id="def-95get95centerself_1">def _get_center(self)</h3>
+<h3 id="def-95get95chself_1">def _get_ch(self)</h3>
+<h3 id="def-95get95cwself_1">def _get_cw(self)</h3>
+<h3 id="def-95get95cxself_1">def _get_cx(self)</h3>
+<h3 id="def-95get95cyself_1">def _get_cy(self)</h3>
+<h3 id="def-95get95czself_1">def _get_cz(self)</h3>
+<h3 id="def-95get95dself_1">def _get_d(self)</h3>
+<h3 id="def-95get95docself_1">def _get_doc(self)</h3>
 <p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
-<h3 id="def-95get95eid_1">def _get_eId</h3>
-<h3 id="def-95get95elementids_1">def _get_elementIds</h3>
-<h3 id="def-95get95elements_1">def _get_elements</h3>
-<h3 id="def-95get95front_1">def _get_front</h3>
-<h3 id="def-95get95gd_1">def _get_gd</h3>
-<h3 id="def-95get95gh_1">def _get_gh</h3>
-<h3 id="def-95get95gradient_1">def _get_gradient</h3>
-<h3 id="def-95get95gutter_1">def _get_gutter</h3>
-<h3 id="def-95get95gutter3d_1">def _get_gutter3D</h3>
-<h3 id="def-95get95gw_1">def _get_gw</h3>
-<h3 id="def-95get95h_1">def _get_h</h3>
-<h3 id="def-95get95image">def _get_image</h3>
-<h3 id="def-95get95left_1">def _get_left</h3>
-<h3 id="def-95get95lib_1">def _get_lib</h3>
+<h3 id="def-95get95eidself_1">def _get_eId(self)</h3>
+<h3 id="def-95get95elementidsself_1">def _get_elementIds(self)</h3>
+<h3 id="def-95get95elementsself_1">def _get_elements(self)</h3>
+<h3 id="def-95get95frontself_1">def _get_front(self)</h3>
+<h3 id="def-95get95gdself_1">def _get_gd(self)</h3>
+<h3 id="def-95get95ghself_1">def _get_gh(self)</h3>
+<h3 id="def-95get95gradientself_1">def _get_gradient(self)</h3>
+<h3 id="def-95get95gutterself_1">def _get_gutter(self)</h3>
+<h3 id="def-95get95gutter3dself_1">def _get_gutter3D(self)</h3>
+<h3 id="def-95get95gwself_1">def _get_gw(self)</h3>
+<h3 id="def-95get95hself_1">def _get_h(self)</h3>
+<h3 id="def-95get95imageself">def _get_image(self)</h3>
+<h3 id="def-95get95leftself_1">def _get_left(self)</h3>
+<h3 id="def-95get95libself_1">def _get_lib(self)</h3>
 <p>Answer the shared document.lib dictionary by property, used for share global entry by elements.<br />
 Elements query their self.parent.lib until the root document is reached.  </p>
-<h3 id="def-95get95mback_1">def _get_mBack</h3>
-<h3 id="def-95get95mbottom_1">def _get_mBottom</h3>
-<h3 id="def-95get95mfront_1">def _get_mFront</h3>
-<h3 id="def-95get95mleft_1">def _get_mLeft</h3>
-<h3 id="def-95get95mright_1">def _get_mRight</h3>
-<h3 id="def-95get95mtop_1">def _get_mTop</h3>
-<h3 id="def-95get95margin_1">def _get_margin</h3>
-<h3 id="def-95get95margin3d_1">def _get_margin3D</h3>
-<h3 id="def-95get95marginblock3d_1">def _get_marginBlock3D</h3>
+<h3 id="def-95get95mbackself_1">def _get_mBack(self)</h3>
+<h3 id="def-95get95mbottomself_1">def _get_mBottom(self)</h3>
+<h3 id="def-95get95mfrontself_1">def _get_mFront(self)</h3>
+<h3 id="def-95get95mleftself_1">def _get_mLeft(self)</h3>
+<h3 id="def-95get95mrightself_1">def _get_mRight(self)</h3>
+<h3 id="def-95get95mtopself_1">def _get_mTop(self)</h3>
+<h3 id="def-95get95marginself_1">def _get_margin(self)</h3>
+<h3 id="def-95get95margin3dself_1">def _get_margin3D(self)</h3>
+<h3 id="def-95get95marginblock3dself_1">def _get_marginBlock3D(self)</h3>
 <p>Answer the vacuum 3D bounding box around all child elements.  </p>
-<h3 id="def-95get95marginbox_1">def _get_marginBox</h3>
+<h3 id="def-95get95marginboxself_1">def _get_marginBox(self)</h3>
 <p>Calculate the margin position and margin resized box of the element, after applying the<br />
 option style margin.  </p>
-<h3 id="def-95get95maxd_1">def _get_maxD</h3>
-<h3 id="def-95get95maxh_1">def _get_maxH</h3>
-<h3 id="def-95get95maxw_1">def _get_maxW</h3>
-<h3 id="def-95get95mb_1">def _get_mb</h3>
-<h3 id="def-95get95md_1">def _get_md</h3>
-<h3 id="def-95get95mh_1">def _get_mh</h3>
-<h3 id="def-95get95middle_1">def _get_middle</h3>
-<h3 id="def-95get95mind_1">def _get_minD</h3>
-<h3 id="def-95get95minh_1">def _get_minH</h3>
-<h3 id="def-95get95minw_1">def _get_minW</h3>
-<h3 id="def-95get95ml_1">def _get_ml</h3>
-<h3 id="def-95get95mr_1">def _get_mr</h3>
-<h3 id="def-95get95mt_1">def _get_mt</h3>
-<h3 id="def-95get95mw_1">def _get_mw</h3>
-<h3 id="def-95get95mzb_1">def _get_mzb</h3>
-<h3 id="def-95get95mzf_1">def _get_mzf</h3>
-<h3 id="def-95get95opoint_1">def _get_oPoint</h3>
+<h3 id="def-95get95maxdself_1">def _get_maxD(self)</h3>
+<h3 id="def-95get95maxhself_1">def _get_maxH(self)</h3>
+<h3 id="def-95get95maxwself_1">def _get_maxW(self)</h3>
+<h3 id="def-95get95mbself_1">def _get_mb(self)</h3>
+<h3 id="def-95get95mdself_1">def _get_md(self)</h3>
+<h3 id="def-95get95mhself_1">def _get_mh(self)</h3>
+<h3 id="def-95get95middleself_1">def _get_middle(self)</h3>
+<h3 id="def-95get95mindself_1">def _get_minD(self)</h3>
+<h3 id="def-95get95minhself_1">def _get_minH(self)</h3>
+<h3 id="def-95get95minwself_1">def _get_minW(self)</h3>
+<h3 id="def-95get95mlself_1">def _get_ml(self)</h3>
+<h3 id="def-95get95mrself_1">def _get_mr(self)</h3>
+<h3 id="def-95get95mtself_1">def _get_mt(self)</h3>
+<h3 id="def-95get95mwself_1">def _get_mw(self)</h3>
+<h3 id="def-95get95mzbself_1">def _get_mzb(self)</h3>
+<h3 id="def-95get95mzfself_1">def _get_mzf(self)</h3>
+<h3 id="def-95get95opointself_1">def _get_oPoint(self)</h3>
 <p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
-<h3 id="def-95get95origintop_1">def _get_originTop</h3>
+<h3 id="def-95get95origintopself_1">def _get_originTop(self)</h3>
 <p>Answer the style flag if all point y values should measure top-down (typographic page<br />
 orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
 The axes in X and Z directions are fixed.  </p>
-<h3 id="def-95get95originsblock_1">def _get_originsBlock</h3>
-<h3 id="def-95get95originsblock3d_1">def _get_originsBlock3D</h3>
+<h3 id="def-95get95originsblockself_1">def _get_originsBlock(self)</h3>
+<h3 id="def-95get95originsblock3dself_1">def _get_originsBlock3D(self)</h3>
 <p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
-<h3 id="def-95get95paddedblock3d_1">def _get_paddedBlock3D</h3>
+<h3 id="def-95get95paddedblock3dself_1">def _get_paddedBlock3D(self)</h3>
 <p>Answer the vacuum 3D bounding box around all child elements, <br />
 subtracting their paddings. Sizes cannot become nextive.  </p>
-<h3 id="def-95get95paddedbox_1">def _get_paddedBox</h3>
+<h3 id="def-95get95paddedboxself_1">def _get_paddedBox(self)</h3>
 <p>Calculate the padded position and padded resized box of the element, after applying the<br />
 style padding. Answered format (x, y, w, h).  </p>
-<h3 id="def-95get95paddedbox3d_1">def _get_paddedBox3D</h3>
+<h3 id="def-95get95paddedbox3dself_1">def _get_paddedBox3D(self)</h3>
 <p>Calculate the padded position and padded resized box in 3D of the lement, after applying<br />
 the style padding. Answered format (x, y, z, w, h, d).  </p>
-<h3 id="def-95get95padding_1">def _get_padding</h3>
-<h3 id="def-95get95padding3d_1">def _get_padding3D</h3>
-<h3 id="def-95get95parent_1">def _get_parent</h3>
+<h3 id="def-95get95paddingself_1">def _get_padding(self)</h3>
+<h3 id="def-95get95padding3dself_1">def _get_padding3D(self)</h3>
+<h3 id="def-95get95parentself_1">def _get_parent(self)</h3>
 <p>Answer the parent of the element, if it exists, by weakref reference. Answer None of there<br />
 is not parent defined or if the parent not longer exists.  </p>
-<h3 id="def-95get95pb_1">def _get_pb</h3>
-<h3 id="def-95get95pd_1">def _get_pd</h3>
-<h3 id="def-95get95ph_1">def _get_ph</h3>
-<h3 id="def-95get95pl_1">def _get_pl</h3>
-<h3 id="def-95get95point_1">def _get_point</h3>
+<h3 id="def-95get95pbself_1">def _get_pb(self)</h3>
+<h3 id="def-95get95pdself_1">def _get_pd(self)</h3>
+<h3 id="def-95get95phself_1">def _get_ph(self)</h3>
+<h3 id="def-95get95plself_1">def _get_pl(self)</h3>
+<h3 id="def-95get95pointself_1">def _get_point(self)</h3>
 <p>Answer the 2D point tuple of the relative local position of self.  </p>
-<h3 id="def-95get95point3d_1">def _get_point3D</h3>
+<h3 id="def-95get95point3dself_1">def _get_point3D(self)</h3>
 <p>Answer the 3D point tuple of the relative local position of self.  </p>
-<h3 id="def-95get95pr_1">def _get_pr</h3>
-<h3 id="def-95get95pt_1">def _get_pt</h3>
-<h3 id="def-95get95pw_1">def _get_pw</h3>
-<h3 id="def-95get95pzb_1">def _get_pzb</h3>
-<h3 id="def-95get95pzf_1">def _get_pzf</h3>
-<h3 id="def-95get95right_1">def _get_right</h3>
-<h3 id="def-95get95rootx_1">def _get_rootX</h3>
-<h3 id="def-95get95rooty_1">def _get_rootY</h3>
-<h3 id="def-95get95rootz_1">def _get_rootZ</h3>
-<h3 id="def-95get95scalex_1">def _get_scaleX</h3>
-<h3 id="def-95get95scaley_1">def _get_scaleY</h3>
-<h3 id="def-95get95scalez_1">def _get_scaleZ</h3>
-<h3 id="def-95get95shadow_1">def _get_shadow</h3>
-<h3 id="def-95get95show_1">def _get_show</h3>
-<h3 id="def-95get95siblings_1">def _get_siblings</h3>
+<h3 id="def-95get95prself_1">def _get_pr(self)</h3>
+<h3 id="def-95get95ptself_1">def _get_pt(self)</h3>
+<h3 id="def-95get95pwself_1">def _get_pw(self)</h3>
+<h3 id="def-95get95pzbself_1">def _get_pzb(self)</h3>
+<h3 id="def-95get95pzfself_1">def _get_pzf(self)</h3>
+<h3 id="def-95get95rightself_1">def _get_right(self)</h3>
+<h3 id="def-95get95rootxself_1">def _get_rootX(self)</h3>
+<h3 id="def-95get95rootyself_1">def _get_rootY(self)</h3>
+<h3 id="def-95get95rootzself_1">def _get_rootZ(self)</h3>
+<h3 id="def-95get95scalexself_1">def _get_scaleX(self)</h3>
+<h3 id="def-95get95scaleyself_1">def _get_scaleY(self)</h3>
+<h3 id="def-95get95scalezself_1">def _get_scaleZ(self)</h3>
+<h3 id="def-95get95shadowself_1">def _get_shadow(self)</h3>
+<h3 id="def-95get95showself_1">def _get_show(self)</h3>
+<h3 id="def-95get95siblingsself_1">def _get_siblings(self)</h3>
 <p>Answer all elements that share self.parent, not including self in the list.  </p>
-<h3 id="def-95get95size_1">def _get_size</h3>
-<h3 id="def-95get95t_1">def _get_t</h3>
+<h3 id="def-95get95sizeself_1">def _get_size(self)</h3>
+<h3 id="def-95get95tself_1">def _get_t(self)</h3>
 <p>The self._t status is the time status, interpolating between the values in <br />
 self.tStyles[t1] and self.tStyles[t2] where t1 &lt;= t &lt;= t2 and these styles contain<br />
 the requested parameters.  </p>
-<h3 id="def-95get95template_1">def _get_template</h3>
-<h3 id="def-95get95textgradient_1">def _get_textGradient</h3>
-<h3 id="def-95get95textshadow_1">def _get_textShadow</h3>
-<h3 id="def-95get95title">def _get_title</h3>
-<h3 id="def-95get95top_1">def _get_top</h3>
+<h3 id="def-95get95templateself_1">def _get_template(self)</h3>
+<h3 id="def-95get95textgradientself_1">def _get_textGradient(self)</h3>
+<h3 id="def-95get95textshadowself_1">def _get_textShadow(self)</h3>
+<h3 id="def-95get95titleself">def _get_title(self)</h3>
+<h3 id="def-95get95topself_1">def _get_top(self)</h3>
 <p>Answer the top position (relative to self.parent) of self.  </p>
-<h3 id="def-95get95w_1">def _get_w</h3>
-<h3 id="def-95get95x_1">def _get_x</h3>
+<h3 id="def-95get95wself_1">def _get_w(self)</h3>
+<h3 id="def-95get95xself_1">def _get_x(self)</h3>
 <p>Answer the x position of self.  </p>
-<h3 id="def-95get95xalign_1">def _get_xAlign</h3>
-<h3 id="def-95get95y_1">def _get_y</h3>
+<h3 id="def-95get95xalignself_1">def _get_xAlign(self)</h3>
+<h3 id="def-95get95yself_1">def _get_y(self)</h3>
 <p>Answer the y position of self.  </p>
-<h3 id="def-95get95yalign_1">def _get_yAlign</h3>
-<h3 id="def-95get95z_1">def _get_z</h3>
+<h3 id="def-95get95yalignself_1">def _get_yAlign(self)</h3>
+<h3 id="def-95get95zself_1">def _get_z(self)</h3>
 <p>Answer the z position of self.  </p>
-<h3 id="def-95get95zalign_1">def _get_zAlign</h3>
-<h3 id="def-95restorerotation_1">def _restoreRotation</h3>
+<h3 id="def-95get95zalignself_1">def _get_zAlign(self)</h3>
+<h3 id="def-95restorerotationself_1">def _restoreRotation(self)</h3>
 <p>Reset graphics state from rotation mode.  </p>
-<h3 id="def-95restorescale_1">def _restoreScale</h3>
+<h3 id="def-95restorescaleself_1">def _restoreScale(self)</h3>
 <p>Reset graphics state from svaed scale mode. Make sure to match the call of self._applyScale.<br />
 If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the restore.  </p>
-<h3 id="def-95set95back_1">def _set_back</h3>
-<h3 id="def-95set95baselinegrid_1">def _set_baselineGrid</h3>
-<h3 id="def-95set95baselinegridstart_1">def _set_baselineGridStart</h3>
-<h3 id="def-95set95borderbottom_1">def _set_borderBottom</h3>
-<h3 id="def-95set95borderleft_1">def _set_borderLeft</h3>
-<h3 id="def-95set95borderright_1">def _set_borderRight</h3>
-<h3 id="def-95set95bordertop_1">def _set_borderTop</h3>
-<h3 id="def-95set95borders_1">def _set_borders</h3>
-<h3 id="def-95set95bottom_1">def _set_bottom</h3>
-<h3 id="def-95set95caption">def _set_caption</h3>
-<h3 id="def-95set95cd_1">def _set_cd</h3>
-<h3 id="def-95set95center_1">def _set_center</h3>
-<h3 id="def-95set95ch_1">def _set_ch</h3>
-<h3 id="def-95set95cw_1">def _set_cw</h3>
-<h3 id="def-95set95cx_1">def _set_cx</h3>
-<h3 id="def-95set95cy_1">def _set_cy</h3>
-<h3 id="def-95set95cz_1">def _set_cz</h3>
-<h3 id="def-95set95d_1">def _set_d</h3>
-<h3 id="def-95set95elements_1">def _set_elements</h3>
-<h3 id="def-95set95front_1">def _set_front</h3>
-<h3 id="def-95set95gd_1">def _set_gd</h3>
-<h3 id="def-95set95gh_1">def _set_gh</h3>
-<h3 id="def-95set95gradient_1">def _set_gradient</h3>
-<h3 id="def-95set95gutter_1">def _set_gutter</h3>
-<h3 id="def-95set95gutter3d_1">def _set_gutter3D</h3>
-<h3 id="def-95set95gw_1">def _set_gw</h3>
-<h3 id="def-95set95h_1">def _set_h</h3>
-<h3 id="def-95set95image">def _set_image</h3>
-<h3 id="def-95set95left_1">def _set_left</h3>
-<h3 id="def-95set95mback_1">def _set_mBack</h3>
-<h3 id="def-95set95mbottom_1">def _set_mBottom</h3>
-<h3 id="def-95set95mfront_1">def _set_mFront</h3>
-<h3 id="def-95set95mleft_1">def _set_mLeft</h3>
-<h3 id="def-95set95mright_1">def _set_mRight</h3>
-<h3 id="def-95set95mtop_1">def _set_mTop</h3>
-<h3 id="def-95set95margin_1">def _set_margin</h3>
-<h3 id="def-95set95maxd_1">def _set_maxD</h3>
-<h3 id="def-95set95maxh_1">def _set_maxH</h3>
-<h3 id="def-95set95maxw_1">def _set_maxW</h3>
-<h3 id="def-95set95mb_1">def _set_mb</h3>
-<h3 id="def-95set95md_1">def _set_md</h3>
-<h3 id="def-95set95mh_1">def _set_mh</h3>
-<h3 id="def-95set95middle_1">def _set_middle</h3>
-<h3 id="def-95set95mind_1">def _set_minD</h3>
-<h3 id="def-95set95minh_1">def _set_minH</h3>
-<h3 id="def-95set95minw_1">def _set_minW</h3>
-<h3 id="def-95set95ml_1">def _set_ml</h3>
-<h3 id="def-95set95mr_1">def _set_mr</h3>
-<h3 id="def-95set95mt_1">def _set_mt</h3>
-<h3 id="def-95set95mw_1">def _set_mw</h3>
-<h3 id="def-95set95mzb_1">def _set_mzb</h3>
-<h3 id="def-95set95mzf_1">def _set_mzf</h3>
-<h3 id="def-95set95origintop_1">def _set_originTop</h3>
-<h3 id="def-95set95padding_1">def _set_padding</h3>
-<h3 id="def-95set95parent_1">def _set_parent</h3>
-<h3 id="def-95set95pb_1">def _set_pb</h3>
-<h3 id="def-95set95pl_1">def _set_pl</h3>
-<h3 id="def-95set95point_1">def _set_point</h3>
-<h3 id="def-95set95point3d_1">def _set_point3D</h3>
-<h3 id="def-95set95pr_1">def _set_pr</h3>
-<h3 id="def-95set95pt_1">def _set_pt</h3>
-<h3 id="def-95set95pzb_1">def _set_pzb</h3>
-<h3 id="def-95set95pzf_1">def _set_pzf</h3>
-<h3 id="def-95set95right_1">def _set_right</h3>
-<h3 id="def-95set95scalex_1">def _set_scaleX</h3>
-<h3 id="def-95set95scaley_1">def _set_scaleY</h3>
-<h3 id="def-95set95scalez_1">def _set_scaleZ</h3>
-<h3 id="def-95set95shadow_1">def _set_shadow</h3>
-<h3 id="def-95set95show_1">def _set_show</h3>
-<h3 id="def-95set95size_1">def _set_size</h3>
-<h3 id="def-95set95t_1">def _set_t</h3>
-<h3 id="def-95set95template_1">def _set_template</h3>
-<h3 id="def-95set95textgradient_1">def _set_textGradient</h3>
-<h3 id="def-95set95textshadow_1">def _set_textShadow</h3>
-<h3 id="def-95set95title">def _set_title</h3>
-<h3 id="def-95set95top_1">def _set_top</h3>
+<h3 id="def-95set95backself-z_1">def _set_back(self, z)</h3>
+<h3 id="def-95set95baselinegridself-baselinegrid_1">def _set_baselineGrid(self, baselineGrid)</h3>
+<h3 id="def-95set95baselinegridstartself-baselinegridstart_1">def _set_baselineGridStart(self, baselineGridStart)</h3>
+<h3 id="def-95set95borderbottomself-border_1">def _set_borderBottom(self, border)</h3>
+<h3 id="def-95set95borderleftself-border_1">def _set_borderLeft(self, border)</h3>
+<h3 id="def-95set95borderrightself-border_1">def _set_borderRight(self, border)</h3>
+<h3 id="def-95set95bordertopself-border_1">def _set_borderTop(self, border)</h3>
+<h3 id="def-95set95bordersself-borders_1">def _set_borders(self, borders)</h3>
+<h3 id="def-95set95bottomself-y_1">def _set_bottom(self, y)</h3>
+<h3 id="def-95set95captionself-e">def _set_caption(self, e)</h3>
+<h3 id="def-95set95cdself-cd_1">def _set_cd(self, cd)</h3>
+<h3 id="def-95set95centerself-x_1">def _set_center(self, x)</h3>
+<h3 id="def-95set95chself-ch_1">def _set_ch(self, ch)</h3>
+<h3 id="def-95set95cwself-cw_1">def _set_cw(self, cw)</h3>
+<h3 id="def-95set95cxself-cx_1">def _set_cx(self, cx)</h3>
+<h3 id="def-95set95cyself-cy_1">def _set_cy(self, cy)</h3>
+<h3 id="def-95set95czself-cz_1">def _set_cz(self, cz)</h3>
+<h3 id="def-95set95dself-d_1">def _set_d(self, d)</h3>
+<h3 id="def-95set95elementsself-elements_1">def _set_elements(self, elements)</h3>
+<h3 id="def-95set95frontself-z_1">def _set_front(self, z)</h3>
+<h3 id="def-95set95gdself-gd_1">def _set_gd(self, gd)</h3>
+<h3 id="def-95set95ghself-gh_1">def _set_gh(self, gh)</h3>
+<h3 id="def-95set95gradientself-gradient_1">def _set_gradient(self, gradient)</h3>
+<h3 id="def-95set95gutterself-gutter_1">def _set_gutter(self, gutter)</h3>
+<h3 id="def-95set95gutter3dself-gutter3d_1">def _set_gutter3D(self, gutter3D)</h3>
+<h3 id="def-95set95gwself-gw_1">def _set_gw(self, gw)</h3>
+<h3 id="def-95set95hself-h_1">def _set_h(self, h)</h3>
+<h3 id="def-95set95imageself-pixelmap">def _set_image(self, pixelMap)</h3>
+<h3 id="def-95set95leftself-x_1">def _set_left(self, x)</h3>
+<h3 id="def-95set95mbackself-z_1">def _set_mBack(self, z)</h3>
+<h3 id="def-95set95mbottomself-y_1">def _set_mBottom(self, y)</h3>
+<h3 id="def-95set95mfrontself-z_1">def _set_mFront(self, z)</h3>
+<h3 id="def-95set95mleftself-x_1">def _set_mLeft(self, x)</h3>
+<h3 id="def-95set95mrightself-x_1">def _set_mRight(self, x)</h3>
+<h3 id="def-95set95mtopself-y_1">def _set_mTop(self, y)</h3>
+<h3 id="def-95set95marginself-margin_1">def _set_margin(self, margin)</h3>
+<h3 id="def-95set95maxdself-maxd_1">def _set_maxD(self, maxD)</h3>
+<h3 id="def-95set95maxhself-maxh_1">def _set_maxH(self, maxH)</h3>
+<h3 id="def-95set95maxwself-maxw_1">def _set_maxW(self, maxW)</h3>
+<h3 id="def-95set95mbself-mb_1">def _set_mb(self, mb)</h3>
+<h3 id="def-95set95mdself-d_1">def _set_md(self, d)</h3>
+<h3 id="def-95set95mhself-h_1">def _set_mh(self, h)</h3>
+<h3 id="def-95set95middleself-y_1">def _set_middle(self, y)</h3>
+<h3 id="def-95set95mindself-mind_1">def _set_minD(self, minD)</h3>
+<h3 id="def-95set95minhself-minh_1">def _set_minH(self, minH)</h3>
+<h3 id="def-95set95minwself-minw_1">def _set_minW(self, minW)</h3>
+<h3 id="def-95set95mlself-ml_1">def _set_ml(self, ml)</h3>
+<h3 id="def-95set95mrself-mr_1">def _set_mr(self, mr)</h3>
+<h3 id="def-95set95mtself-mt_1">def _set_mt(self, mt)</h3>
+<h3 id="def-95set95mwself-w_1">def _set_mw(self, w)</h3>
+<h3 id="def-95set95mzbself-mzb_1">def _set_mzb(self, mzb)</h3>
+<h3 id="def-95set95mzfself-mzf_1">def _set_mzf(self, mzf)</h3>
+<h3 id="def-95set95origintopself-flag_1">def _set_originTop(self, flag)</h3>
+<h3 id="def-95set95paddingself-padding_1">def _set_padding(self, padding)</h3>
+<h3 id="def-95set95parentself-parent_1">def _set_parent(self, parent)</h3>
+<h3 id="def-95set95pbself-pb_1">def _set_pb(self, pb)</h3>
+<h3 id="def-95set95plself-pl_1">def _set_pl(self, pl)</h3>
+<h3 id="def-95set95pointself-point_1">def _set_point(self, point)</h3>
+<h3 id="def-95set95point3dself-point_1">def _set_point3D(self, point)</h3>
+<h3 id="def-95set95prself-pr_1">def _set_pr(self, pr)</h3>
+<h3 id="def-95set95ptself-pt_1">def _set_pt(self, pt)</h3>
+<h3 id="def-95set95pzbself-pzb_1">def _set_pzb(self, pzb)</h3>
+<h3 id="def-95set95pzfself-pzf_1">def _set_pzf(self, pzf)</h3>
+<h3 id="def-95set95rightself-x_1">def _set_right(self, x)</h3>
+<h3 id="def-95set95scalexself-scalex_1">def _set_scaleX(self, scaleX)</h3>
+<h3 id="def-95set95scaleyself-scaley_1">def _set_scaleY(self, scaleY)</h3>
+<h3 id="def-95set95scalezself-scaley_1">def _set_scaleZ(self, scaleY)</h3>
+<h3 id="def-95set95shadowself-shadow_1">def _set_shadow(self, shadow)</h3>
+<h3 id="def-95set95showself-showflag_1">def _set_show(self, showFlag)</h3>
+<h3 id="def-95set95sizeself-size_1">def _set_size(self, size)</h3>
+<h3 id="def-95set95tself-t_1">def _set_t(self, t)</h3>
+<h3 id="def-95set95templateself-template_1">def _set_template(self, template)</h3>
+<h3 id="def-95set95textgradientself-textgradient_1">def _set_textGradient(self, textGradient)</h3>
+<h3 id="def-95set95textshadowself-textshadow_1">def _set_textShadow(self, textShadow)</h3>
+<h3 id="def-95set95titleself-e">def _set_title(self, e)</h3>
+<h3 id="def-95set95topself-y_1">def _set_top(self, y)</h3>
 <p>Shift the element so self.top == y.  </p>
-<h3 id="def-95set95w_1">def _set_w</h3>
-<h3 id="def-95set95x_1">def _set_x</h3>
-<h3 id="def-95set95xalign_1">def _set_xAlign</h3>
-<h3 id="def-95set95y_1">def _set_y</h3>
-<h3 id="def-95set95yalign_1">def _set_yAlign</h3>
-<h3 id="def-95set95z_1">def _set_z</h3>
-<h3 id="def-95set95zalign_1">def _set_zAlign</h3>
-<h3 id="def-95validatexalign_1">def _validateXAlign</h3>
-<h3 id="def-95validateyalign_1">def _validateYAlign</h3>
-<h3 id="def-95validatezalign_1">def _validateZAlign</h3>
+<h3 id="def-95set95wself-w_1">def _set_w(self, w)</h3>
+<h3 id="def-95set95xself-x_1">def _set_x(self, x)</h3>
+<h3 id="def-95set95xalignself-xalign_1">def _set_xAlign(self, xAlign)</h3>
+<h3 id="def-95set95yself-y_1">def _set_y(self, y)</h3>
+<h3 id="def-95set95yalignself-yalign_1">def _set_yAlign(self, yAlign)</h3>
+<h3 id="def-95set95zself-z_1">def _set_z(self, z)</h3>
+<h3 id="def-95set95zalignself-zalign_1">def _set_zAlign(self, zAlign)</h3>
+<h3 id="def-95validatexalignself-xalign_1">def _validateXAlign(self, xAlign)</h3>
+<h3 id="def-95validateyalignself-yalign_1">def _validateYAlign(self, yAlign)</h3>
+<h3 id="def-95validatezalignself-zalign_1">def _validateZAlign(self, zAlign)</h3>
 <h3 id="property-ancestors_1">property ancestors</h3>
 <p>Answer the list of anscestors of self, including the document root. Self is not included.  </p>
-<h3 id="def-appendelement_1">def appendElement</h3>
+<h3 id="def-appendelementself-e_1">def appendElement(self, e)</h3>
 <p>Add element to the list of child elements. Note that elements can be added multiple times.<br />
 If the element is alread placed in another container, then remove it from its current parent.<br />
 This relation and position is lost. The position e is supposed to be filled already in local position.  </p>
-<h3 id="def-appendtimemark_1">def appendTimeMark</h3>
+<h3 id="def-appendtimemarkself-tm_1">def appendTimeMark(self, tm)</h3>
 <h3 id="def-applytemplateself-template-elementsnone_1">def applyTemplate(self, template, elements=None)</h3>
 <p>Copy relevant info from template: w, h, elements, style, conditions when element is created.<br />
 Don't call later.  </p>
 <h3 id="property-back_1">property back</h3>
-<h3 id="def-baseline2bottom_1">def baseline2Bottom</h3>
-<h3 id="def-baseline2top_1">def baseline2Top</h3>
+<h3 id="def-baseline2bottomself_1">def baseline2Bottom(self)</h3>
+<h3 id="def-baseline2topself_1">def baseline2Top(self)</h3>
 <h3 id="property-baselinegrid_1">property baselineGrid</h3>
 <h3 id="property-baselinegridstart_1">property baselineGridStart</h3>
 <h3 id="property-block_1">property block</h3>
@@ -1559,11 +1559,11 @@ Don't call later.  </p>
 <h3 id="property-bordertop_1">property borderTop</h3>
 <h3 id="property-borders_1">property borders</h3>
 <h3 id="property-bottom_1">property bottom</h3>
-<h3 id="def-bottom2bottom_1">def bottom2Bottom</h3>
-<h3 id="def-bottom2bottomside_1">def bottom2BottomSide</h3>
-<h3 id="def-bottom2middle_1">def bottom2Middle</h3>
-<h3 id="def-bottom2middlesides_1">def bottom2MiddleSides</h3>
-<h3 id="def-bottom2top_1">def bottom2Top</h3>
+<h3 id="def-bottom2bottomself_1">def bottom2Bottom(self)</h3>
+<h3 id="def-bottom2bottomsideself_1">def bottom2BottomSide(self)</h3>
+<h3 id="def-bottom2middleself_1">def bottom2Middle(self)</h3>
+<h3 id="def-bottom2middlesidesself_1">def bottom2MiddleSides(self)</h3>
+<h3 id="def-bottom2topself_1">def bottom2Top(self)</h3>
 <h3 id="property-box_1">property box</h3>
 <p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
 <h3 id="property-box3d_1">property box3D</h3>
@@ -1571,14 +1571,14 @@ Don't call later.  </p>
 <h3 id="property-caption">property caption</h3>
 <h3 id="property-cd_1">property cd</h3>
 <h3 id="property-center_1">property center</h3>
-<h3 id="def-center2center_1">def center2Center</h3>
-<h3 id="def-center2centersides_1">def center2CenterSides</h3>
-<h3 id="def-center2left_1">def center2Left</h3>
-<h3 id="def-center2leftside_1">def center2LeftSide</h3>
-<h3 id="def-center2right_1">def center2Right</h3>
-<h3 id="def-center2rightside_1">def center2RightSide</h3>
+<h3 id="def-center2centerself_1">def center2Center(self)</h3>
+<h3 id="def-center2centersidesself_1">def center2CenterSides(self)</h3>
+<h3 id="def-center2leftself_1">def center2Left(self)</h3>
+<h3 id="def-center2leftsideself_1">def center2LeftSide(self)</h3>
+<h3 id="def-center2rightself_1">def center2Right(self)</h3>
+<h3 id="def-center2rightsideself_1">def center2RightSide(self)</h3>
 <h3 id="property-ch_1">property ch</h3>
-<h3 id="def-clearelements_1">def clearElements</h3>
+<h3 id="def-clearelementsself_1">def clearElements(self)</h3>
 <p>Properly initializes self._elements and self._eIds. <br />
 Any existing elements get their parent weakrefs become None and will garbage collect.  </p>
 <h3 id="def-cssself-name-defaultnone_1">def css(self, name, default=None)</h3>
@@ -1590,7 +1590,7 @@ the requested value.  </p>
 <h3 id="property-cy_1">property cy</h3>
 <h3 id="property-cz_1">property cz</h3>
 <h3 id="property-d_1">property d</h3>
-<h3 id="def-deepcopy_1">def deepCopy</h3>
+<h3 id="def-deepcopyself_1">def deepCopy(self)</h3>
 <p>Answer a copy of self, where the "unique" fields are set to default. Also perform a deep copy<br />
 on all child elements.  </p>
 <h3 id="property-doc_1">property doc</h3>
@@ -1598,7 +1598,7 @@ on all child elements.  </p>
 <h3 id="def-drawself-origin-view-drawelementstrue">def draw(self, origin, view, drawElements=True)</h3>
 <p>Default drawing method just drawing the frame. <br />
 Probably will be redefined by inheriting element classes.  </p>
-<h3 id="def-drawframe_1">def drawFrame</h3>
+<h3 id="def-drawframeself-p-view_1">def drawFrame(self, p, view)</h3>
 <p>Draw fill of the rectangular element space.<br />
 The self.css('fill') defines the color of the element background.<br />
 Instead of the DrawBot stroke and strokeWidth attributes, use<br />
@@ -1607,44 +1607,44 @@ borders or (borderTop, borderRight, borderBottom, borderLeft) attributes.  </p>
 <h3 id="property-elementids_1">property elementIds</h3>
 <h3 id="def-evaluateself-scorenone_1">def evaluate(self, score=None)</h3>
 <p>Evaluate the content of element e with the total sum of conditions.  </p>
-<h3 id="def-fit2bottom_1">def fit2Bottom</h3>
-<h3 id="def-fit2bottomside_1">def fit2BottomSide</h3>
-<h3 id="def-fit2left_1">def fit2Left</h3>
-<h3 id="def-fit2leftside_1">def fit2LeftSide</h3>
-<h3 id="def-fit2right_1">def fit2Right</h3>
-<h3 id="def-fit2rightside_1">def fit2RightSide</h3>
-<h3 id="def-fit2top_1">def fit2Top</h3>
-<h3 id="def-fit2topside_1">def fit2TopSide</h3>
-<h3 id="def-float2bottom_1">def float2Bottom</h3>
-<h3 id="def-float2bottomside_1">def float2BottomSide</h3>
-<h3 id="def-float2left_1">def float2Left</h3>
-<h3 id="def-float2leftside_1">def float2LeftSide</h3>
-<h3 id="def-float2right_1">def float2Right</h3>
-<h3 id="def-float2rightside_1">def float2RightSide</h3>
-<h3 id="def-float2top_1">def float2Top</h3>
+<h3 id="def-fit2bottomself_1">def fit2Bottom(self)</h3>
+<h3 id="def-fit2bottomsideself_1">def fit2BottomSide(self)</h3>
+<h3 id="def-fit2leftself_1">def fit2Left(self)</h3>
+<h3 id="def-fit2leftsideself_1">def fit2LeftSide(self)</h3>
+<h3 id="def-fit2rightself_1">def fit2Right(self)</h3>
+<h3 id="def-fit2rightsideself_1">def fit2RightSide(self)</h3>
+<h3 id="def-fit2topself_1">def fit2Top(self)</h3>
+<h3 id="def-fit2topsideself_1">def fit2TopSide(self)</h3>
+<h3 id="def-float2bottomself_1">def float2Bottom(self)</h3>
+<h3 id="def-float2bottomsideself_1">def float2BottomSide(self)</h3>
+<h3 id="def-float2leftself_1">def float2Left(self)</h3>
+<h3 id="def-float2leftsideself_1">def float2LeftSide(self)</h3>
+<h3 id="def-float2rightself_1">def float2Right(self)</h3>
+<h3 id="def-float2rightsideself_1">def float2RightSide(self)</h3>
+<h3 id="def-float2topself_1">def float2Top(self)</h3>
 <p>Float the element upward, until top hits the parent top padding.<br />
 Include margin to decide if it fits.  </p>
-<h3 id="def-float2topside_1">def float2TopSide</h3>
-<h3 id="def-floatascender2top_1">def floatAscender2Top</h3>
-<h3 id="def-floatbaseline2top_1">def floatBaseline2Top</h3>
-<h3 id="def-floatcapheight2top_1">def floatCapHeight2Top</h3>
-<h3 id="def-floatxheight2top_1">def floatXHeight2Top</h3>
+<h3 id="def-float2topsideself_1">def float2TopSide(self)</h3>
+<h3 id="def-floatascender2topself_1">def floatAscender2Top(self)</h3>
+<h3 id="def-floatbaseline2topself_1">def floatBaseline2Top(self)</h3>
+<h3 id="def-floatcapheight2topself_1">def floatCapHeight2Top(self)</h3>
+<h3 id="def-floatxheight2topself_1">def floatXHeight2Top(self)</h3>
 <h3 id="property-front_1">property front</h3>
 <h3 id="property-gd_1">property gd</h3>
-<h3 id="def-getelement_1">def getElement</h3>
+<h3 id="def-getelementself-eid_1">def getElement(self, eId)</h3>
 <p>Answer the page element, if it has a unique element Id. Answer None if the eId does not exist as child.  </p>
-<h3 id="def-getelementbyname_1">def getElementByName</h3>
+<h3 id="def-getelementbynameself-name_1">def getElementByName(self, name)</h3>
 <p>Answer the first element in the offspring list that fits the name. Answer None if it cannot be found  </p>
-<h3 id="def-getelementinfostring_1">def getElementInfoString</h3>
+<h3 id="def-getelementinfostringself_1">def getElementInfoString(self)</h3>
 <p>Answer a single string with info about the element. Default is to show the posiiton<br />
 and size (in points and columns). This method can be redefined by inheriting elements<br />
 that want to show additional information.  </p>
-<h3 id="def-getelementpage_1">def getElementPage</h3>
+<h3 id="def-getelementpageself_1">def getElementPage(self)</h3>
 <p>Recursively answer the page of this element. This can be several layers above self.  </p>
-<h3 id="def-getelementsatpoint_1">def getElementsAtPoint</h3>
+<h3 id="def-getelementsatpointself-point_1">def getElementsAtPoint(self, point)</h3>
 <p>Answer the list with elements that fit the point. Note None in the point will match any<br />
 value in the element position. Where None in the element position with not fit any xyz of the point.  </p>
-<h3 id="def-getelementsposition_1">def getElementsPosition</h3>
+<h3 id="def-getelementspositionself_1">def getElementsPosition(self)</h3>
 <p>Answer the dictionary of elements that have eIds and their positions.  </p>
 <h3 id="def-getfloatbottomsideself-previousonlytrue-tolerance0_1">def getFloatBottomSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max y that can float to bottom, without overlapping previous sibling elements.<br />
@@ -1666,23 +1666,23 @@ Comparison of available spave, includes the margins of the elements.  </p>
 This means we are just looking at the vertical projection between (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getmaxsize_1">def getMaxSize</h3>
-<h3 id="def-getminsize_1">def getMinSize</h3>
+<h3 id="def-getmaxsizeself_1">def getMaxSize(self)</h3>
+<h3 id="def-getminsizeself_1">def getMinSize(self)</h3>
 <p>Answer the (minW, minH) of this element.  </p>
-<h3 id="def-getminsize3d_1">def getMinSize3D</h3>
+<h3 id="def-getminsize3dself_1">def getMinSize3D(self)</h3>
 <p>Answer the (minW, minH, minD) of this element.  </p>
-<h3 id="def-getnamedstyle_1">def getNamedStyle</h3>
+<h3 id="def-getnamedstyleself-stylename_1">def getNamedStyle(self, styleName)</h3>
 <p>In case we are looking for a named style (e.g. used by the Typesetter to build a stack<br />
 of cascading tag style, then query the ancestors for the named style. Default behavior<br />
 of all elements is that they pass the request on to the root, which is nornally the document.  </p>
-<h3 id="def-getpositions_1">def getPositions</h3>
+<h3 id="def-getpositionsself_1">def getPositions(self)</h3>
 <p>"Answer the dictionary of positions of elements. <br />
 Key is the local point of the child element. Value is list of elements.  </p>
-<h3 id="def-getsize_1">def getSize</h3>
+<h3 id="def-getsizeself_1">def getSize(self)</h3>
 <p>Answer the size of the element by calling properties self.w and self.h.<br />
 This allows element to dynamically calculate the size if necessary, by redefining the<br />
 self.w and/or self.h properties.  </p>
-<h3 id="def-getsize3d_1">def getSize3D</h3>
+<h3 id="def-getsize3dself_1">def getSize3D(self)</h3>
 <p>Answer the 3D size of the element.  </p>
 <h3 id="property-gh_1">property gh</h3>
 <h3 id="property-gradient_1">property gradient</h3>
@@ -1690,15 +1690,15 @@ self.w and/or self.h properties.  </p>
 <h3 id="property-gutter3d_1">property gutter3D</h3>
 <h3 id="property-gw_1">property gw</h3>
 <h3 id="property-h_1">property h</h3>
-<h3 id="def-isascenderontop_1">def isAscenderOnTop</h3>
-<h3 id="def-isbaselineonbottom_1">def isBaselineOnBottom</h3>
-<h3 id="def-isbaselineontop_1">def isBaselineOnTop</h3>
+<h3 id="def-isascenderontopself-tolerance_1">def isAscenderOnTop(self, tolerance)</h3>
+<h3 id="def-isbaselineonbottomself-tolerance_1">def isBaselineOnBottom(self, tolerance)</h3>
+<h3 id="def-isbaselineontopself-tolerance_1">def isBaselineOnTop(self, tolerance)</h3>
 <h3 id="def-isbottomonbottomself-tolerance0_1">def isBottomOnBottom(self, tolerance=0)</h3>
 <h3 id="def-isbottomonbottomsideself-tolerance0_1">def isBottomOnBottomSide(self, tolerance=0)</h3>
 <h3 id="def-isbottomonmiddleself-tolerance0_1">def isBottomOnMiddle(self, tolerance=0)</h3>
 <h3 id="def-isbottomonmiddlesidesself-tolerance0_1">def isBottomOnMiddleSides(self, tolerance=0)</h3>
 <h3 id="def-isbottomontopself-tolerance0_1">def isBottomOnTop(self, tolerance=0)</h3>
-<h3 id="def-iscapheightontop_1">def isCapHeightOnTop</h3>
+<h3 id="def-iscapheightontopself-tolerance_1">def isCapHeightOnTop(self, tolerance)</h3>
 <h3 id="def-iscenteroncenterself-tolerance0_1">def isCenterOnCenter(self, tolerance=0)</h3>
 <h3 id="def-iscenteroncentersidesself-tolerance0_1">def isCenterOnCenterSides(self, tolerance=0)</h3>
 <h3 id="def-iscenteronleftself-tolerance0_1">def isCenterOnLeft(self, tolerance=0)</h3>
@@ -1741,7 +1741,7 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="def-isoriginonrightsideself-tolerance0_1">def isOriginOnRightSide(self, tolerance=0)</h3>
 <h3 id="def-isoriginontopself-tolerance0_1">def isOriginOnTop(self, tolerance=0)</h3>
 <h3 id="def-isoriginontopsideself-tolerance0_1">def isOriginOnTopSide(self, tolerance=0)</h3>
-<h3 id="def-isoverflow_1">def isOverflow</h3>
+<h3 id="def-isoverflowself-tolerance_1">def isOverflow(self, tolerance)</h3>
 <h3 id="int-ispage_1">int isPage</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
@@ -1752,15 +1752,15 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="def-isrightonleftself-tolerance0_1">def isRightOnLeft(self, tolerance=0)</h3>
 <h3 id="def-isrightonrightself-tolerance0_1">def isRightOnRight(self, tolerance=0)</h3>
 <h3 id="def-isrightonrightsideself-tolerance0_1">def isRightOnRightSide(self, tolerance=0)</h3>
-<h3 id="def-isschrunkonblockleft_1">def isSchrunkOnBlockLeft</h3>
-<h3 id="def-isshrunkonblockbottom_1">def isShrunkOnBlockBottom</h3>
+<h3 id="def-isschrunkonblockleftself-tolerance_1">def isSchrunkOnBlockLeft(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockbottomself-tolerance_1">def isShrunkOnBlockBottom(self, tolerance)</h3>
 <p>Test if the bottom of self is shrunk to the bottom position of the block.  </p>
-<h3 id="def-isshrunkonblockbottomside_1">def isShrunkOnBlockBottomSide</h3>
-<h3 id="def-isshrunkonblockleftside_1">def isShrunkOnBlockLeftSide</h3>
-<h3 id="def-isshrunkonblockright_1">def isShrunkOnBlockRight</h3>
-<h3 id="def-isshrunkonblockrightside_1">def isShrunkOnBlockRightSide</h3>
-<h3 id="def-isshrunkonblocktop_1">def isShrunkOnBlockTop</h3>
-<h3 id="def-isshrunkonblocktopside_1">def isShrunkOnBlockTopSide</h3>
+<h3 id="def-isshrunkonblockbottomsideself-tolerance_1">def isShrunkOnBlockBottomSide(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockleftsideself-tolerance_1">def isShrunkOnBlockLeftSide(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockrightself-tolerance_1">def isShrunkOnBlockRight(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockrightsideself-tolerance_1">def isShrunkOnBlockRightSide(self, tolerance)</h3>
+<h3 id="def-isshrunkonblocktopself-tolerance_1">def isShrunkOnBlockTop(self, tolerance)</h3>
+<h3 id="def-isshrunkonblocktopsideself-tolerance_1">def isShrunkOnBlockTopSide(self, tolerance)</h3>
 <h3 id="int-istext_1">int isText</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
@@ -1781,13 +1781,13 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-isxheightontop_1">def isXHeightOnTop</h3>
+<h3 id="def-isxheightontopself-tolerance_1">def isXHeightOnTop(self, tolerance)</h3>
 <h3 id="property-left_1">property left</h3>
-<h3 id="def-left2center_1">def left2Center</h3>
-<h3 id="def-left2centersides_1">def left2CenterSides</h3>
-<h3 id="def-left2left_1">def left2Left</h3>
-<h3 id="def-left2leftside_1">def left2LeftSide</h3>
-<h3 id="def-left2right_1">def left2Right</h3>
+<h3 id="def-left2centerself_1">def left2Center(self)</h3>
+<h3 id="def-left2centersidesself_1">def left2CenterSides(self)</h3>
+<h3 id="def-left2leftself_1">def left2Left(self)</h3>
+<h3 id="def-left2leftsideself_1">def left2LeftSide(self)</h3>
+<h3 id="def-left2rightself_1">def left2Right(self)</h3>
 <h3 id="property-lib_1">property lib</h3>
 <p>Answer the shared document.lib dictionary by property, used for share global entry by elements.<br />
 Elements query their self.parent.lib until the root document is reached.  </p>
@@ -1810,12 +1810,12 @@ option style margin.  </p>
 <h3 id="property-mb_1">property mb</h3>
 <h3 id="property-mh_1">property mh</h3>
 <h3 id="property-middle_1">property middle</h3>
-<h3 id="def-middle2bottom_1">def middle2Bottom</h3>
-<h3 id="def-middle2bottomside_1">def middle2BottomSide</h3>
-<h3 id="def-middle2middle_1">def middle2Middle</h3>
-<h3 id="def-middle2middlesides_1">def middle2MiddleSides</h3>
-<h3 id="def-middle2top_1">def middle2Top</h3>
-<h3 id="def-middle2topside_1">def middle2TopSide</h3>
+<h3 id="def-middle2bottomself_1">def middle2Bottom(self)</h3>
+<h3 id="def-middle2bottomsideself_1">def middle2BottomSide(self)</h3>
+<h3 id="def-middle2middleself_1">def middle2Middle(self)</h3>
+<h3 id="def-middle2middlesidesself_1">def middle2MiddleSides(self)</h3>
+<h3 id="def-middle2topself_1">def middle2Top(self)</h3>
+<h3 id="def-middle2topsideself_1">def middle2TopSide(self)</h3>
 <h3 id="property-mind_1">property minD</h3>
 <h3 id="property-minh_1">property minH</h3>
 <h3 id="property-minw_1">property minW</h3>
@@ -1829,18 +1829,18 @@ option style margin.  </p>
 <p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
 <h3 id="property-opoint3d_1">property oPoint3D</h3>
 <p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
-<h3 id="def-origin2bottom_1">def origin2Bottom</h3>
-<h3 id="def-origin2bottomside_1">def origin2BottomSide</h3>
-<h3 id="def-origin2center_1">def origin2Center</h3>
-<h3 id="def-origin2centersides_1">def origin2CenterSides</h3>
-<h3 id="def-origin2left_1">def origin2Left</h3>
-<h3 id="def-origin2leftside_1">def origin2LeftSide</h3>
-<h3 id="def-origin2middle_1">def origin2Middle</h3>
-<h3 id="def-origin2middlesides_1">def origin2MiddleSides</h3>
-<h3 id="def-origin2right_1">def origin2Right</h3>
-<h3 id="def-origin2rightside_1">def origin2RightSide</h3>
-<h3 id="def-origin2top_1">def origin2Top</h3>
-<h3 id="def-origin2topside_1">def origin2TopSide</h3>
+<h3 id="def-origin2bottomself_1">def origin2Bottom(self)</h3>
+<h3 id="def-origin2bottomsideself_1">def origin2BottomSide(self)</h3>
+<h3 id="def-origin2centerself_1">def origin2Center(self)</h3>
+<h3 id="def-origin2centersidesself_1">def origin2CenterSides(self)</h3>
+<h3 id="def-origin2leftself_1">def origin2Left(self)</h3>
+<h3 id="def-origin2leftsideself_1">def origin2LeftSide(self)</h3>
+<h3 id="def-origin2middleself_1">def origin2Middle(self)</h3>
+<h3 id="def-origin2middlesidesself_1">def origin2MiddleSides(self)</h3>
+<h3 id="def-origin2rightself_1">def origin2Right(self)</h3>
+<h3 id="def-origin2rightsideself_1">def origin2RightSide(self)</h3>
+<h3 id="def-origin2topself_1">def origin2Top(self)</h3>
+<h3 id="def-origin2topsideself_1">def origin2TopSide(self)</h3>
 <h3 id="property-origintop_1">property originTop</h3>
 <p>Answer the style flag if all point y values should measure top-down (typographic page<br />
 orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
@@ -1848,7 +1848,7 @@ The axes in X and Z directions are fixed.  </p>
 <h3 id="property-originsblock_1">property originsBlock</h3>
 <h3 id="property-originsblock3d_1">property originsBlock3D</h3>
 <p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
-<h3 id="def-overflow2next_1">def overflow2Next</h3>
+<h3 id="def-overflow2nextself_1">def overflow2Next(self)</h3>
 <p>Try to fix if there is overflow. Default behavior is to do nothing. This method<br />
 is redefined by inheriting classed, such as TextBox, that can have overflow of text.  </p>
 <h3 id="property-paddedblock3d_1">property paddedBlock3D</h3>
@@ -1878,21 +1878,21 @@ is not parent defined or if the parent not longer exists.  </p>
 <h3 id="property-pw_1">property pw</h3>
 <h3 id="property-pzb_1">property pzb</h3>
 <h3 id="property-pzf_1">property pzf</h3>
-<h3 id="def-removeelement_1">def removeElement</h3>
+<h3 id="def-removeelementself-e_1">def removeElement(self, e)</h3>
 <p>If the element is placed in self, then remove it. Don't touch the position.  </p>
 <h3 id="property-right_1">property right</h3>
-<h3 id="def-right2center_1">def right2Center</h3>
-<h3 id="def-right2centersides_1">def right2CenterSides</h3>
-<h3 id="def-right2left_1">def right2Left</h3>
-<h3 id="def-right2right_1">def right2Right</h3>
-<h3 id="def-right2rightside_1">def right2RightSide</h3>
+<h3 id="def-right2centerself_1">def right2Center(self)</h3>
+<h3 id="def-right2centersidesself_1">def right2CenterSides(self)</h3>
+<h3 id="def-right2leftself_1">def right2Left(self)</h3>
+<h3 id="def-right2rightself_1">def right2Right(self)</h3>
+<h3 id="def-right2rightsideself_1">def right2RightSide(self)</h3>
 <h3 id="property-rootx_1">property rootX</h3>
 <h3 id="property-rooty_1">property rootY</h3>
 <h3 id="property-rootz_1">property rootZ</h3>
 <h3 id="property-scalex_1">property scaleX</h3>
 <h3 id="property-scaley_1">property scaleY</h3>
 <h3 id="property-scalez_1">property scaleZ</h3>
-<h3 id="def-setelementbyindex_1">def setElementByIndex</h3>
+<h3 id="def-setelementbyindexself-e-index_1">def setElementByIndex(self, e, index)</h3>
 <p>Replace the element, if there is already one at index. Otherwise append it to self.elements<br />
 and answer the index number that it got.  </p>
 <h3 id="def-setmaxsizeself-maxw-maxhnone-maxdnone_1">def setMaxSize(self, maxW, maxH=None, maxD=None)</h3>
@@ -1901,14 +1901,14 @@ and answer the index number that it got.  </p>
 <p>Set the size of the element by calling by properties self.w and self.h. <br />
 If set, then overwrite access from style width and height. self.d is optional attribute.  </p>
 <h3 id="property-show_1">property show</h3>
-<h3 id="def-shrink2blockbottom_1">def shrink2BlockBottom</h3>
-<h3 id="def-shrink2blockbottomside_1">def shrink2BlockBottomSide</h3>
-<h3 id="def-shrink2blockleft_1">def shrink2BlockLeft</h3>
-<h3 id="def-shrink2blockleftside_1">def shrink2BlockLeftSide</h3>
-<h3 id="def-shrink2blockright_1">def shrink2BlockRight</h3>
-<h3 id="def-shrink2blockrightside_1">def shrink2BlockRightSide</h3>
-<h3 id="def-shrink2blocktop_1">def shrink2BlockTop</h3>
-<h3 id="def-shrink2blocktopside_1">def shrink2BlockTopSide</h3>
+<h3 id="def-shrink2blockbottomself_1">def shrink2BlockBottom(self)</h3>
+<h3 id="def-shrink2blockbottomsideself_1">def shrink2BlockBottomSide(self)</h3>
+<h3 id="def-shrink2blockleftself_1">def shrink2BlockLeft(self)</h3>
+<h3 id="def-shrink2blockleftsideself_1">def shrink2BlockLeftSide(self)</h3>
+<h3 id="def-shrink2blockrightself_1">def shrink2BlockRight(self)</h3>
+<h3 id="def-shrink2blockrightsideself_1">def shrink2BlockRightSide(self)</h3>
+<h3 id="def-shrink2blocktopself_1">def shrink2BlockTop(self)</h3>
+<h3 id="def-shrink2blocktopsideself_1">def shrink2BlockTopSide(self)</h3>
 <h3 id="property-siblings_1">property siblings</h3>
 <p>Answer all elements that share self.parent, not including self in the list.  </p>
 <h3 id="def-solveself-scorenone_1">def solve(self, score=None)</h3>
@@ -1919,11 +1919,11 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="property-title">property title</h3>
 <h3 id="property-top_1">property top</h3>
 <p>Answer the top position (relative to self.parent) of self.  </p>
-<h3 id="def-top2bottom_1">def top2Bottom</h3>
-<h3 id="def-top2middle_1">def top2Middle</h3>
-<h3 id="def-top2middlesides_1">def top2MiddleSides</h3>
-<h3 id="def-top2top_1">def top2Top</h3>
-<h3 id="def-top2topside_1">def top2TopSide</h3>
+<h3 id="def-top2bottomself_1">def top2Bottom(self)</h3>
+<h3 id="def-top2middleself_1">def top2Middle(self)</h3>
+<h3 id="def-top2middlesidesself_1">def top2MiddleSides(self)</h3>
+<h3 id="def-top2topself_1">def top2Top(self)</h3>
+<h3 id="def-top2topsideself_1">def top2TopSide(self)</h3>
 <h3 id="property-w_1">property w</h3>
 <h3 id="property-x_1">property x</h3>
 <p>Answer the x position of self.  </p>
@@ -1941,280 +1941,280 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="class-polygon">class Polygon</h3>
 <p>The Polygon element is a simple implementation of the polygon DrawBot function.<br />
 More complex path-like elements inherit from the Path element.  </p>
-<h3 id="def-notnow95getexpandedtimemarks_2">def NOTNOW_getExpandedTimeMarks</h3>
+<h3 id="def-notnow95getexpandedtimemarkst_2">def NOTNOW_getExpandedTimeMarks(t)</h3>
 <p>Answer a new interpolated TimeState instance, from the enclosing time states for t.  </p>
-<h3 id="def-notnow95getflows_2">def NOTNOW_getFlows</h3>
+<h3 id="def-notnow95getflowsself_2">def NOTNOW_getFlows(self)</h3>
 <p>Answer the set of flow element sequences on the page.  </p>
 <h3 id="def-notnow95getnextflowboxself-tb-makenewtrue_2">def NOTNOW_getNextFlowBox(self, tb, makeNew=True)</h3>
 <p>Answer the next textBox that tb is pointing to. This can be on the same page or a next<br />
 page, depending how the page (and probably its template) is defined.  </p>
-<h3 id="def-9595getitem9595_2">def __getitem__</h3>
+<h3 id="def-9595getitem9595self-eid_2">def __getitem__(self, eId)</h3>
 <p>Answer the element with eId. Raise a KeyError if the element does not exist.  </p>
-<h3 id="def-9595init9595self-fs-pointsnone">def __init__(self, fs, points=None)</h3>
-<h3 id="def-9595len9595_2">def __len__</h3>
+<h3 id="def-9595init9595self-fs-pointsnone-4242kwargs">def __init__(self, fs, points=None, **kwargs)</h3>
+<h3 id="def-9595len9595self_2">def __len__(self)</h3>
 <p>Answer total amount of elements, placed or not.  </p>
-<h3 id="def-9595repr9595_2">def __repr__</h3>
-<h3 id="def-9595setitem9595_2">def __setitem__</h3>
-<h3 id="def-95applyalignment_2">def _applyAlignment</h3>
+<h3 id="def-9595repr9595self_2">def __repr__(self)</h3>
+<h3 id="def-9595setitem9595self-eid-e_2">def __setitem__(self, eId, e)</h3>
+<h3 id="def-95applyalignmentself-p_2">def _applyAlignment(self, p)</h3>
 <p>Answer the p according to the alignment status in the css.  </p>
-<h3 id="def-95applyorigin_2">def _applyOrigin</h3>
+<h3 id="def-95applyoriginself-p_2">def _applyOrigin(self, p)</h3>
 <p>If self.originTop is False, then the y-value is interpreted as mathematics, <br />
 starting at the bottom of the parent element, moving up.<br />
 If the flag is True, then move from top down, where the origin of the element becomes<br />
 top-left of the parent.  </p>
-<h3 id="def-95applyrotation_2">def _applyRotation</h3>
+<h3 id="def-95applyrotationself-mx-my-angle_2">def _applyRotation(self, mx, my, angle)</h3>
 <p>Apply the rotation for angle, where (mx, my) is the rotation center.  </p>
-<h3 id="def-95applyscale_2">def _applyScale</h3>
+<h3 id="def-95applyscaleself-p_2">def _applyScale(self, p)</h3>
 <p>Apply the scale, if both self.scaleX and self.scaleY are set. Use this<br />
 method paired with self._restoreScale(). The (x, y) answered as reversed scaled tuple,<br />
 so drawing elements can still draw on "real size", while the other element is in scaled mode.  </p>
-<h3 id="def-95borderdict_2">def _borderDict</h3>
-<h3 id="def-95drawelements_2">def _drawElements</h3>
+<h3 id="def-95borderdictself-borderdata_2">def _borderDict(self, borderData)</h3>
+<h3 id="def-95drawelementsself-origin-view_2">def _drawElements(self, origin, view)</h3>
 <p>Recursively draw all elements of self on their own relative position in the main canvas,  </p>
-<h3 id="def-95get95ancestors_2">def _get_ancestors</h3>
+<h3 id="def-95get95ancestorsself_2">def _get_ancestors(self)</h3>
 <p>Answer the list of anscestors of self, including the document root. Self is not included.  </p>
-<h3 id="def-95get95back_2">def _get_back</h3>
-<h3 id="def-95get95baselinegrid_2">def _get_baselineGrid</h3>
-<h3 id="def-95get95baselinegridstart_2">def _get_baselineGridStart</h3>
-<h3 id="def-95get95block_2">def _get_block</h3>
+<h3 id="def-95get95backself_2">def _get_back(self)</h3>
+<h3 id="def-95get95baselinegridself_2">def _get_baselineGrid(self)</h3>
+<h3 id="def-95get95baselinegridstartself_2">def _get_baselineGridStart(self)</h3>
+<h3 id="def-95get95blockself_2">def _get_block(self)</h3>
 <p>Answer the vacuum bounding box around all child elements in 2D  </p>
-<h3 id="def-95get95block3d_2">def _get_block3D</h3>
+<h3 id="def-95get95block3dself_2">def _get_block3D(self)</h3>
 <p>Answer the vacuum 3D bounding box around all child elements.  </p>
-<h3 id="def-95get95borderbottom_2">def _get_borderBottom</h3>
-<h3 id="def-95get95borderleft_2">def _get_borderLeft</h3>
-<h3 id="def-95get95borderright_2">def _get_borderRight</h3>
-<h3 id="def-95get95bordertop_2">def _get_borderTop</h3>
-<h3 id="def-95get95borders_2">def _get_borders</h3>
-<h3 id="def-95get95bottom_2">def _get_bottom</h3>
-<h3 id="def-95get95box_2">def _get_box</h3>
+<h3 id="def-95get95borderbottomself_2">def _get_borderBottom(self)</h3>
+<h3 id="def-95get95borderleftself_2">def _get_borderLeft(self)</h3>
+<h3 id="def-95get95borderrightself_2">def _get_borderRight(self)</h3>
+<h3 id="def-95get95bordertopself_2">def _get_borderTop(self)</h3>
+<h3 id="def-95get95bordersself_2">def _get_borders(self)</h3>
+<h3 id="def-95get95bottomself_2">def _get_bottom(self)</h3>
+<h3 id="def-95get95boxself_2">def _get_box(self)</h3>
 <p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
-<h3 id="def-95get95box3d_2">def _get_box3D</h3>
+<h3 id="def-95get95box3dself_2">def _get_box3D(self)</h3>
 <p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.  </p>
-<h3 id="def-95get95cd_2">def _get_cd</h3>
-<h3 id="def-95get95center_2">def _get_center</h3>
-<h3 id="def-95get95ch_2">def _get_ch</h3>
-<h3 id="def-95get95cw_2">def _get_cw</h3>
-<h3 id="def-95get95cx_2">def _get_cx</h3>
-<h3 id="def-95get95cy_2">def _get_cy</h3>
-<h3 id="def-95get95cz_2">def _get_cz</h3>
-<h3 id="def-95get95d_2">def _get_d</h3>
-<h3 id="def-95get95doc_2">def _get_doc</h3>
+<h3 id="def-95get95cdself_2">def _get_cd(self)</h3>
+<h3 id="def-95get95centerself_2">def _get_center(self)</h3>
+<h3 id="def-95get95chself_2">def _get_ch(self)</h3>
+<h3 id="def-95get95cwself_2">def _get_cw(self)</h3>
+<h3 id="def-95get95cxself_2">def _get_cx(self)</h3>
+<h3 id="def-95get95cyself_2">def _get_cy(self)</h3>
+<h3 id="def-95get95czself_2">def _get_cz(self)</h3>
+<h3 id="def-95get95dself_2">def _get_d(self)</h3>
+<h3 id="def-95get95docself_2">def _get_doc(self)</h3>
 <p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
-<h3 id="def-95get95eid_2">def _get_eId</h3>
-<h3 id="def-95get95elementids_2">def _get_elementIds</h3>
-<h3 id="def-95get95elements_2">def _get_elements</h3>
-<h3 id="def-95get95front_2">def _get_front</h3>
-<h3 id="def-95get95gd_2">def _get_gd</h3>
-<h3 id="def-95get95gh_2">def _get_gh</h3>
-<h3 id="def-95get95gradient_2">def _get_gradient</h3>
-<h3 id="def-95get95gutter_2">def _get_gutter</h3>
-<h3 id="def-95get95gutter3d_2">def _get_gutter3D</h3>
-<h3 id="def-95get95gw_2">def _get_gw</h3>
-<h3 id="def-95get95h_2">def _get_h</h3>
-<h3 id="def-95get95left_2">def _get_left</h3>
-<h3 id="def-95get95lib_2">def _get_lib</h3>
+<h3 id="def-95get95eidself_2">def _get_eId(self)</h3>
+<h3 id="def-95get95elementidsself_2">def _get_elementIds(self)</h3>
+<h3 id="def-95get95elementsself_2">def _get_elements(self)</h3>
+<h3 id="def-95get95frontself_2">def _get_front(self)</h3>
+<h3 id="def-95get95gdself_2">def _get_gd(self)</h3>
+<h3 id="def-95get95ghself_2">def _get_gh(self)</h3>
+<h3 id="def-95get95gradientself_2">def _get_gradient(self)</h3>
+<h3 id="def-95get95gutterself_2">def _get_gutter(self)</h3>
+<h3 id="def-95get95gutter3dself_2">def _get_gutter3D(self)</h3>
+<h3 id="def-95get95gwself_2">def _get_gw(self)</h3>
+<h3 id="def-95get95hself_2">def _get_h(self)</h3>
+<h3 id="def-95get95leftself_2">def _get_left(self)</h3>
+<h3 id="def-95get95libself_2">def _get_lib(self)</h3>
 <p>Answer the shared document.lib dictionary by property, used for share global entry by elements.<br />
 Elements query their self.parent.lib until the root document is reached.  </p>
-<h3 id="def-95get95mback_2">def _get_mBack</h3>
-<h3 id="def-95get95mbottom_2">def _get_mBottom</h3>
-<h3 id="def-95get95mfront_2">def _get_mFront</h3>
-<h3 id="def-95get95mleft_2">def _get_mLeft</h3>
-<h3 id="def-95get95mright_2">def _get_mRight</h3>
-<h3 id="def-95get95mtop_2">def _get_mTop</h3>
-<h3 id="def-95get95margin_2">def _get_margin</h3>
-<h3 id="def-95get95margin3d_2">def _get_margin3D</h3>
-<h3 id="def-95get95marginblock3d_2">def _get_marginBlock3D</h3>
+<h3 id="def-95get95mbackself_2">def _get_mBack(self)</h3>
+<h3 id="def-95get95mbottomself_2">def _get_mBottom(self)</h3>
+<h3 id="def-95get95mfrontself_2">def _get_mFront(self)</h3>
+<h3 id="def-95get95mleftself_2">def _get_mLeft(self)</h3>
+<h3 id="def-95get95mrightself_2">def _get_mRight(self)</h3>
+<h3 id="def-95get95mtopself_2">def _get_mTop(self)</h3>
+<h3 id="def-95get95marginself_2">def _get_margin(self)</h3>
+<h3 id="def-95get95margin3dself_2">def _get_margin3D(self)</h3>
+<h3 id="def-95get95marginblock3dself_2">def _get_marginBlock3D(self)</h3>
 <p>Answer the vacuum 3D bounding box around all child elements.  </p>
-<h3 id="def-95get95marginbox_2">def _get_marginBox</h3>
+<h3 id="def-95get95marginboxself_2">def _get_marginBox(self)</h3>
 <p>Calculate the margin position and margin resized box of the element, after applying the<br />
 option style margin.  </p>
-<h3 id="def-95get95maxd_2">def _get_maxD</h3>
-<h3 id="def-95get95maxh_2">def _get_maxH</h3>
-<h3 id="def-95get95maxw_2">def _get_maxW</h3>
-<h3 id="def-95get95mb_2">def _get_mb</h3>
-<h3 id="def-95get95md_2">def _get_md</h3>
-<h3 id="def-95get95mh_2">def _get_mh</h3>
-<h3 id="def-95get95middle_2">def _get_middle</h3>
-<h3 id="def-95get95mind_2">def _get_minD</h3>
-<h3 id="def-95get95minh_2">def _get_minH</h3>
-<h3 id="def-95get95minw_2">def _get_minW</h3>
-<h3 id="def-95get95ml_2">def _get_ml</h3>
-<h3 id="def-95get95mr_2">def _get_mr</h3>
-<h3 id="def-95get95mt_2">def _get_mt</h3>
-<h3 id="def-95get95mw_2">def _get_mw</h3>
-<h3 id="def-95get95mzb_2">def _get_mzb</h3>
-<h3 id="def-95get95mzf_2">def _get_mzf</h3>
-<h3 id="def-95get95opoint_2">def _get_oPoint</h3>
+<h3 id="def-95get95maxdself_2">def _get_maxD(self)</h3>
+<h3 id="def-95get95maxhself_2">def _get_maxH(self)</h3>
+<h3 id="def-95get95maxwself_2">def _get_maxW(self)</h3>
+<h3 id="def-95get95mbself_2">def _get_mb(self)</h3>
+<h3 id="def-95get95mdself_2">def _get_md(self)</h3>
+<h3 id="def-95get95mhself_2">def _get_mh(self)</h3>
+<h3 id="def-95get95middleself_2">def _get_middle(self)</h3>
+<h3 id="def-95get95mindself_2">def _get_minD(self)</h3>
+<h3 id="def-95get95minhself_2">def _get_minH(self)</h3>
+<h3 id="def-95get95minwself_2">def _get_minW(self)</h3>
+<h3 id="def-95get95mlself_2">def _get_ml(self)</h3>
+<h3 id="def-95get95mrself_2">def _get_mr(self)</h3>
+<h3 id="def-95get95mtself_2">def _get_mt(self)</h3>
+<h3 id="def-95get95mwself_2">def _get_mw(self)</h3>
+<h3 id="def-95get95mzbself_2">def _get_mzb(self)</h3>
+<h3 id="def-95get95mzfself_2">def _get_mzf(self)</h3>
+<h3 id="def-95get95opointself_2">def _get_oPoint(self)</h3>
 <p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
-<h3 id="def-95get95origintop_2">def _get_originTop</h3>
+<h3 id="def-95get95origintopself_2">def _get_originTop(self)</h3>
 <p>Answer the style flag if all point y values should measure top-down (typographic page<br />
 orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
 The axes in X and Z directions are fixed.  </p>
-<h3 id="def-95get95originsblock_2">def _get_originsBlock</h3>
-<h3 id="def-95get95originsblock3d_2">def _get_originsBlock3D</h3>
+<h3 id="def-95get95originsblockself_2">def _get_originsBlock(self)</h3>
+<h3 id="def-95get95originsblock3dself_2">def _get_originsBlock3D(self)</h3>
 <p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
-<h3 id="def-95get95paddedblock3d_2">def _get_paddedBlock3D</h3>
+<h3 id="def-95get95paddedblock3dself_2">def _get_paddedBlock3D(self)</h3>
 <p>Answer the vacuum 3D bounding box around all child elements, <br />
 subtracting their paddings. Sizes cannot become nextive.  </p>
-<h3 id="def-95get95paddedbox_2">def _get_paddedBox</h3>
+<h3 id="def-95get95paddedboxself_2">def _get_paddedBox(self)</h3>
 <p>Calculate the padded position and padded resized box of the element, after applying the<br />
 style padding. Answered format (x, y, w, h).  </p>
-<h3 id="def-95get95paddedbox3d_2">def _get_paddedBox3D</h3>
+<h3 id="def-95get95paddedbox3dself_2">def _get_paddedBox3D(self)</h3>
 <p>Calculate the padded position and padded resized box in 3D of the lement, after applying<br />
 the style padding. Answered format (x, y, z, w, h, d).  </p>
-<h3 id="def-95get95padding_2">def _get_padding</h3>
-<h3 id="def-95get95padding3d_2">def _get_padding3D</h3>
-<h3 id="def-95get95parent_2">def _get_parent</h3>
+<h3 id="def-95get95paddingself_2">def _get_padding(self)</h3>
+<h3 id="def-95get95padding3dself_2">def _get_padding3D(self)</h3>
+<h3 id="def-95get95parentself_2">def _get_parent(self)</h3>
 <p>Answer the parent of the element, if it exists, by weakref reference. Answer None of there<br />
 is not parent defined or if the parent not longer exists.  </p>
-<h3 id="def-95get95pb_2">def _get_pb</h3>
-<h3 id="def-95get95pd_2">def _get_pd</h3>
-<h3 id="def-95get95ph_2">def _get_ph</h3>
-<h3 id="def-95get95pl_2">def _get_pl</h3>
-<h3 id="def-95get95point_2">def _get_point</h3>
+<h3 id="def-95get95pbself_2">def _get_pb(self)</h3>
+<h3 id="def-95get95pdself_2">def _get_pd(self)</h3>
+<h3 id="def-95get95phself_2">def _get_ph(self)</h3>
+<h3 id="def-95get95plself_2">def _get_pl(self)</h3>
+<h3 id="def-95get95pointself_2">def _get_point(self)</h3>
 <p>Answer the 2D point tuple of the relative local position of self.  </p>
-<h3 id="def-95get95point3d_2">def _get_point3D</h3>
+<h3 id="def-95get95point3dself_2">def _get_point3D(self)</h3>
 <p>Answer the 3D point tuple of the relative local position of self.  </p>
-<h3 id="def-95get95points">def _get_points</h3>
-<h3 id="def-95get95pr_2">def _get_pr</h3>
-<h3 id="def-95get95pt_2">def _get_pt</h3>
-<h3 id="def-95get95pw_2">def _get_pw</h3>
-<h3 id="def-95get95pzb_2">def _get_pzb</h3>
-<h3 id="def-95get95pzf_2">def _get_pzf</h3>
-<h3 id="def-95get95right_2">def _get_right</h3>
-<h3 id="def-95get95rootx_2">def _get_rootX</h3>
-<h3 id="def-95get95rooty_2">def _get_rootY</h3>
-<h3 id="def-95get95rootz_2">def _get_rootZ</h3>
-<h3 id="def-95get95scalex_2">def _get_scaleX</h3>
-<h3 id="def-95get95scaley_2">def _get_scaleY</h3>
-<h3 id="def-95get95scalez_2">def _get_scaleZ</h3>
-<h3 id="def-95get95shadow_2">def _get_shadow</h3>
-<h3 id="def-95get95show_2">def _get_show</h3>
-<h3 id="def-95get95siblings_2">def _get_siblings</h3>
+<h3 id="def-95get95pointsself">def _get_points(self)</h3>
+<h3 id="def-95get95prself_2">def _get_pr(self)</h3>
+<h3 id="def-95get95ptself_2">def _get_pt(self)</h3>
+<h3 id="def-95get95pwself_2">def _get_pw(self)</h3>
+<h3 id="def-95get95pzbself_2">def _get_pzb(self)</h3>
+<h3 id="def-95get95pzfself_2">def _get_pzf(self)</h3>
+<h3 id="def-95get95rightself_2">def _get_right(self)</h3>
+<h3 id="def-95get95rootxself_2">def _get_rootX(self)</h3>
+<h3 id="def-95get95rootyself_2">def _get_rootY(self)</h3>
+<h3 id="def-95get95rootzself_2">def _get_rootZ(self)</h3>
+<h3 id="def-95get95scalexself_2">def _get_scaleX(self)</h3>
+<h3 id="def-95get95scaleyself_2">def _get_scaleY(self)</h3>
+<h3 id="def-95get95scalezself_2">def _get_scaleZ(self)</h3>
+<h3 id="def-95get95shadowself_2">def _get_shadow(self)</h3>
+<h3 id="def-95get95showself_2">def _get_show(self)</h3>
+<h3 id="def-95get95siblingsself_2">def _get_siblings(self)</h3>
 <p>Answer all elements that share self.parent, not including self in the list.  </p>
-<h3 id="def-95get95size_2">def _get_size</h3>
-<h3 id="def-95get95t_2">def _get_t</h3>
+<h3 id="def-95get95sizeself_2">def _get_size(self)</h3>
+<h3 id="def-95get95tself_2">def _get_t(self)</h3>
 <p>The self._t status is the time status, interpolating between the values in <br />
 self.tStyles[t1] and self.tStyles[t2] where t1 &lt;= t &lt;= t2 and these styles contain<br />
 the requested parameters.  </p>
-<h3 id="def-95get95template_2">def _get_template</h3>
-<h3 id="def-95get95textgradient_2">def _get_textGradient</h3>
-<h3 id="def-95get95textshadow_2">def _get_textShadow</h3>
-<h3 id="def-95get95top_2">def _get_top</h3>
+<h3 id="def-95get95templateself_2">def _get_template(self)</h3>
+<h3 id="def-95get95textgradientself_2">def _get_textGradient(self)</h3>
+<h3 id="def-95get95textshadowself_2">def _get_textShadow(self)</h3>
+<h3 id="def-95get95topself_2">def _get_top(self)</h3>
 <p>Answer the top position (relative to self.parent) of self.  </p>
-<h3 id="def-95get95w_2">def _get_w</h3>
-<h3 id="def-95get95x_2">def _get_x</h3>
+<h3 id="def-95get95wself_2">def _get_w(self)</h3>
+<h3 id="def-95get95xself_2">def _get_x(self)</h3>
 <p>Answer the x position of self.  </p>
-<h3 id="def-95get95xalign_2">def _get_xAlign</h3>
-<h3 id="def-95get95y_2">def _get_y</h3>
+<h3 id="def-95get95xalignself_2">def _get_xAlign(self)</h3>
+<h3 id="def-95get95yself_2">def _get_y(self)</h3>
 <p>Answer the y position of self.  </p>
-<h3 id="def-95get95yalign_2">def _get_yAlign</h3>
-<h3 id="def-95get95z_2">def _get_z</h3>
+<h3 id="def-95get95yalignself_2">def _get_yAlign(self)</h3>
+<h3 id="def-95get95zself_2">def _get_z(self)</h3>
 <p>Answer the z position of self.  </p>
-<h3 id="def-95get95zalign_2">def _get_zAlign</h3>
-<h3 id="def-95restorerotation_2">def _restoreRotation</h3>
+<h3 id="def-95get95zalignself_2">def _get_zAlign(self)</h3>
+<h3 id="def-95restorerotationself_2">def _restoreRotation(self)</h3>
 <p>Reset graphics state from rotation mode.  </p>
-<h3 id="def-95restorescale_2">def _restoreScale</h3>
+<h3 id="def-95restorescaleself_2">def _restoreScale(self)</h3>
 <p>Reset graphics state from svaed scale mode. Make sure to match the call of self._applyScale.<br />
 If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the restore.  </p>
-<h3 id="def-95set95back_2">def _set_back</h3>
-<h3 id="def-95set95baselinegrid_2">def _set_baselineGrid</h3>
-<h3 id="def-95set95baselinegridstart_2">def _set_baselineGridStart</h3>
-<h3 id="def-95set95borderbottom_2">def _set_borderBottom</h3>
-<h3 id="def-95set95borderleft_2">def _set_borderLeft</h3>
-<h3 id="def-95set95borderright_2">def _set_borderRight</h3>
-<h3 id="def-95set95bordertop_2">def _set_borderTop</h3>
-<h3 id="def-95set95borders_2">def _set_borders</h3>
-<h3 id="def-95set95bottom_2">def _set_bottom</h3>
-<h3 id="def-95set95cd_2">def _set_cd</h3>
-<h3 id="def-95set95center_2">def _set_center</h3>
-<h3 id="def-95set95ch_2">def _set_ch</h3>
-<h3 id="def-95set95cw_2">def _set_cw</h3>
-<h3 id="def-95set95cx_2">def _set_cx</h3>
-<h3 id="def-95set95cy_2">def _set_cy</h3>
-<h3 id="def-95set95cz_2">def _set_cz</h3>
-<h3 id="def-95set95d_2">def _set_d</h3>
-<h3 id="def-95set95elements_2">def _set_elements</h3>
-<h3 id="def-95set95front_2">def _set_front</h3>
-<h3 id="def-95set95gd_2">def _set_gd</h3>
-<h3 id="def-95set95gh_2">def _set_gh</h3>
-<h3 id="def-95set95gradient_2">def _set_gradient</h3>
-<h3 id="def-95set95gutter_2">def _set_gutter</h3>
-<h3 id="def-95set95gutter3d_2">def _set_gutter3D</h3>
-<h3 id="def-95set95gw_2">def _set_gw</h3>
-<h3 id="def-95set95h_2">def _set_h</h3>
-<h3 id="def-95set95left_2">def _set_left</h3>
-<h3 id="def-95set95mback_2">def _set_mBack</h3>
-<h3 id="def-95set95mbottom_2">def _set_mBottom</h3>
-<h3 id="def-95set95mfront_2">def _set_mFront</h3>
-<h3 id="def-95set95mleft_2">def _set_mLeft</h3>
-<h3 id="def-95set95mright_2">def _set_mRight</h3>
-<h3 id="def-95set95mtop_2">def _set_mTop</h3>
-<h3 id="def-95set95margin_2">def _set_margin</h3>
-<h3 id="def-95set95maxd_2">def _set_maxD</h3>
-<h3 id="def-95set95maxh_2">def _set_maxH</h3>
-<h3 id="def-95set95maxw_2">def _set_maxW</h3>
-<h3 id="def-95set95mb_2">def _set_mb</h3>
-<h3 id="def-95set95md_2">def _set_md</h3>
-<h3 id="def-95set95mh_2">def _set_mh</h3>
-<h3 id="def-95set95middle_2">def _set_middle</h3>
-<h3 id="def-95set95mind_2">def _set_minD</h3>
-<h3 id="def-95set95minh_2">def _set_minH</h3>
-<h3 id="def-95set95minw_2">def _set_minW</h3>
-<h3 id="def-95set95ml_2">def _set_ml</h3>
-<h3 id="def-95set95mr_2">def _set_mr</h3>
-<h3 id="def-95set95mt_2">def _set_mt</h3>
-<h3 id="def-95set95mw_2">def _set_mw</h3>
-<h3 id="def-95set95mzb_2">def _set_mzb</h3>
-<h3 id="def-95set95mzf_2">def _set_mzf</h3>
-<h3 id="def-95set95origintop_2">def _set_originTop</h3>
-<h3 id="def-95set95padding_2">def _set_padding</h3>
-<h3 id="def-95set95parent_2">def _set_parent</h3>
-<h3 id="def-95set95pb_2">def _set_pb</h3>
-<h3 id="def-95set95pl_2">def _set_pl</h3>
-<h3 id="def-95set95point_2">def _set_point</h3>
-<h3 id="def-95set95point3d_2">def _set_point3D</h3>
-<h3 id="def-95set95points">def _set_points</h3>
-<h3 id="def-95set95pr_2">def _set_pr</h3>
-<h3 id="def-95set95pt_2">def _set_pt</h3>
-<h3 id="def-95set95pzb_2">def _set_pzb</h3>
-<h3 id="def-95set95pzf_2">def _set_pzf</h3>
-<h3 id="def-95set95right_2">def _set_right</h3>
-<h3 id="def-95set95scalex_2">def _set_scaleX</h3>
-<h3 id="def-95set95scaley_2">def _set_scaleY</h3>
-<h3 id="def-95set95scalez_2">def _set_scaleZ</h3>
-<h3 id="def-95set95shadow_2">def _set_shadow</h3>
-<h3 id="def-95set95show_2">def _set_show</h3>
-<h3 id="def-95set95size_2">def _set_size</h3>
-<h3 id="def-95set95t_2">def _set_t</h3>
-<h3 id="def-95set95template_2">def _set_template</h3>
-<h3 id="def-95set95textgradient_2">def _set_textGradient</h3>
-<h3 id="def-95set95textshadow_2">def _set_textShadow</h3>
-<h3 id="def-95set95top_2">def _set_top</h3>
+<h3 id="def-95set95backself-z_2">def _set_back(self, z)</h3>
+<h3 id="def-95set95baselinegridself-baselinegrid_2">def _set_baselineGrid(self, baselineGrid)</h3>
+<h3 id="def-95set95baselinegridstartself-baselinegridstart_2">def _set_baselineGridStart(self, baselineGridStart)</h3>
+<h3 id="def-95set95borderbottomself-border_2">def _set_borderBottom(self, border)</h3>
+<h3 id="def-95set95borderleftself-border_2">def _set_borderLeft(self, border)</h3>
+<h3 id="def-95set95borderrightself-border_2">def _set_borderRight(self, border)</h3>
+<h3 id="def-95set95bordertopself-border_2">def _set_borderTop(self, border)</h3>
+<h3 id="def-95set95bordersself-borders_2">def _set_borders(self, borders)</h3>
+<h3 id="def-95set95bottomself-y_2">def _set_bottom(self, y)</h3>
+<h3 id="def-95set95cdself-cd_2">def _set_cd(self, cd)</h3>
+<h3 id="def-95set95centerself-x_2">def _set_center(self, x)</h3>
+<h3 id="def-95set95chself-ch_2">def _set_ch(self, ch)</h3>
+<h3 id="def-95set95cwself-cw_2">def _set_cw(self, cw)</h3>
+<h3 id="def-95set95cxself-cx_2">def _set_cx(self, cx)</h3>
+<h3 id="def-95set95cyself-cy_2">def _set_cy(self, cy)</h3>
+<h3 id="def-95set95czself-cz_2">def _set_cz(self, cz)</h3>
+<h3 id="def-95set95dself-d_2">def _set_d(self, d)</h3>
+<h3 id="def-95set95elementsself-elements_2">def _set_elements(self, elements)</h3>
+<h3 id="def-95set95frontself-z_2">def _set_front(self, z)</h3>
+<h3 id="def-95set95gdself-gd_2">def _set_gd(self, gd)</h3>
+<h3 id="def-95set95ghself-gh_2">def _set_gh(self, gh)</h3>
+<h3 id="def-95set95gradientself-gradient_2">def _set_gradient(self, gradient)</h3>
+<h3 id="def-95set95gutterself-gutter_2">def _set_gutter(self, gutter)</h3>
+<h3 id="def-95set95gutter3dself-gutter3d_2">def _set_gutter3D(self, gutter3D)</h3>
+<h3 id="def-95set95gwself-gw_2">def _set_gw(self, gw)</h3>
+<h3 id="def-95set95hself-h_2">def _set_h(self, h)</h3>
+<h3 id="def-95set95leftself-x_2">def _set_left(self, x)</h3>
+<h3 id="def-95set95mbackself-z_2">def _set_mBack(self, z)</h3>
+<h3 id="def-95set95mbottomself-y_2">def _set_mBottom(self, y)</h3>
+<h3 id="def-95set95mfrontself-z_2">def _set_mFront(self, z)</h3>
+<h3 id="def-95set95mleftself-x_2">def _set_mLeft(self, x)</h3>
+<h3 id="def-95set95mrightself-x_2">def _set_mRight(self, x)</h3>
+<h3 id="def-95set95mtopself-y_2">def _set_mTop(self, y)</h3>
+<h3 id="def-95set95marginself-margin_2">def _set_margin(self, margin)</h3>
+<h3 id="def-95set95maxdself-maxd_2">def _set_maxD(self, maxD)</h3>
+<h3 id="def-95set95maxhself-maxh_2">def _set_maxH(self, maxH)</h3>
+<h3 id="def-95set95maxwself-maxw_2">def _set_maxW(self, maxW)</h3>
+<h3 id="def-95set95mbself-mb_2">def _set_mb(self, mb)</h3>
+<h3 id="def-95set95mdself-d_2">def _set_md(self, d)</h3>
+<h3 id="def-95set95mhself-h_2">def _set_mh(self, h)</h3>
+<h3 id="def-95set95middleself-y_2">def _set_middle(self, y)</h3>
+<h3 id="def-95set95mindself-mind_2">def _set_minD(self, minD)</h3>
+<h3 id="def-95set95minhself-minh_2">def _set_minH(self, minH)</h3>
+<h3 id="def-95set95minwself-minw_2">def _set_minW(self, minW)</h3>
+<h3 id="def-95set95mlself-ml_2">def _set_ml(self, ml)</h3>
+<h3 id="def-95set95mrself-mr_2">def _set_mr(self, mr)</h3>
+<h3 id="def-95set95mtself-mt_2">def _set_mt(self, mt)</h3>
+<h3 id="def-95set95mwself-w_2">def _set_mw(self, w)</h3>
+<h3 id="def-95set95mzbself-mzb_2">def _set_mzb(self, mzb)</h3>
+<h3 id="def-95set95mzfself-mzf_2">def _set_mzf(self, mzf)</h3>
+<h3 id="def-95set95origintopself-flag_2">def _set_originTop(self, flag)</h3>
+<h3 id="def-95set95paddingself-padding_2">def _set_padding(self, padding)</h3>
+<h3 id="def-95set95parentself-parent_2">def _set_parent(self, parent)</h3>
+<h3 id="def-95set95pbself-pb_2">def _set_pb(self, pb)</h3>
+<h3 id="def-95set95plself-pl_2">def _set_pl(self, pl)</h3>
+<h3 id="def-95set95pointself-point_2">def _set_point(self, point)</h3>
+<h3 id="def-95set95point3dself-point_2">def _set_point3D(self, point)</h3>
+<h3 id="def-95set95pointsself-points">def _set_points(self, points)</h3>
+<h3 id="def-95set95prself-pr_2">def _set_pr(self, pr)</h3>
+<h3 id="def-95set95ptself-pt_2">def _set_pt(self, pt)</h3>
+<h3 id="def-95set95pzbself-pzb_2">def _set_pzb(self, pzb)</h3>
+<h3 id="def-95set95pzfself-pzf_2">def _set_pzf(self, pzf)</h3>
+<h3 id="def-95set95rightself-x_2">def _set_right(self, x)</h3>
+<h3 id="def-95set95scalexself-scalex_2">def _set_scaleX(self, scaleX)</h3>
+<h3 id="def-95set95scaleyself-scaley_2">def _set_scaleY(self, scaleY)</h3>
+<h3 id="def-95set95scalezself-scaley_2">def _set_scaleZ(self, scaleY)</h3>
+<h3 id="def-95set95shadowself-shadow_2">def _set_shadow(self, shadow)</h3>
+<h3 id="def-95set95showself-showflag_2">def _set_show(self, showFlag)</h3>
+<h3 id="def-95set95sizeself-size_2">def _set_size(self, size)</h3>
+<h3 id="def-95set95tself-t_2">def _set_t(self, t)</h3>
+<h3 id="def-95set95templateself-template_2">def _set_template(self, template)</h3>
+<h3 id="def-95set95textgradientself-textgradient_2">def _set_textGradient(self, textGradient)</h3>
+<h3 id="def-95set95textshadowself-textshadow_2">def _set_textShadow(self, textShadow)</h3>
+<h3 id="def-95set95topself-y_2">def _set_top(self, y)</h3>
 <p>Shift the element so self.top == y.  </p>
-<h3 id="def-95set95w_2">def _set_w</h3>
-<h3 id="def-95set95x_2">def _set_x</h3>
-<h3 id="def-95set95xalign_2">def _set_xAlign</h3>
-<h3 id="def-95set95y_2">def _set_y</h3>
-<h3 id="def-95set95yalign_2">def _set_yAlign</h3>
-<h3 id="def-95set95z_2">def _set_z</h3>
-<h3 id="def-95set95zalign_2">def _set_zAlign</h3>
-<h3 id="def-95validatexalign_2">def _validateXAlign</h3>
-<h3 id="def-95validateyalign_2">def _validateYAlign</h3>
-<h3 id="def-95validatezalign_2">def _validateZAlign</h3>
+<h3 id="def-95set95wself-w_2">def _set_w(self, w)</h3>
+<h3 id="def-95set95xself-x_2">def _set_x(self, x)</h3>
+<h3 id="def-95set95xalignself-xalign_2">def _set_xAlign(self, xAlign)</h3>
+<h3 id="def-95set95yself-y_2">def _set_y(self, y)</h3>
+<h3 id="def-95set95yalignself-yalign_2">def _set_yAlign(self, yAlign)</h3>
+<h3 id="def-95set95zself-z_2">def _set_z(self, z)</h3>
+<h3 id="def-95set95zalignself-zalign_2">def _set_zAlign(self, zAlign)</h3>
+<h3 id="def-95validatexalignself-xalign_2">def _validateXAlign(self, xAlign)</h3>
+<h3 id="def-95validateyalignself-yalign_2">def _validateYAlign(self, yAlign)</h3>
+<h3 id="def-95validatezalignself-zalign_2">def _validateZAlign(self, zAlign)</h3>
 <h3 id="property-ancestors_2">property ancestors</h3>
 <p>Answer the list of anscestors of self, including the document root. Self is not included.  </p>
-<h3 id="def-appendelement_2">def appendElement</h3>
+<h3 id="def-appendelementself-e_2">def appendElement(self, e)</h3>
 <p>Add element to the list of child elements. Note that elements can be added multiple times.<br />
 If the element is alread placed in another container, then remove it from its current parent.<br />
 This relation and position is lost. The position e is supposed to be filled already in local position.  </p>
-<h3 id="def-appendtimemark_2">def appendTimeMark</h3>
+<h3 id="def-appendtimemarkself-tm_2">def appendTimeMark(self, tm)</h3>
 <h3 id="def-applytemplateself-template-elementsnone_2">def applyTemplate(self, template, elements=None)</h3>
 <p>Copy relevant info from template: w, h, elements, style, conditions when element is created.<br />
 Don't call later.  </p>
 <h3 id="property-back_2">property back</h3>
-<h3 id="def-baseline2bottom_2">def baseline2Bottom</h3>
-<h3 id="def-baseline2top_2">def baseline2Top</h3>
+<h3 id="def-baseline2bottomself_2">def baseline2Bottom(self)</h3>
+<h3 id="def-baseline2topself_2">def baseline2Top(self)</h3>
 <h3 id="property-baselinegrid_2">property baselineGrid</h3>
 <h3 id="property-baselinegridstart_2">property baselineGridStart</h3>
 <h3 id="property-block_2">property block</h3>
@@ -2228,25 +2228,25 @@ Don't call later.  </p>
 <h3 id="property-bordertop_2">property borderTop</h3>
 <h3 id="property-borders_2">property borders</h3>
 <h3 id="property-bottom_2">property bottom</h3>
-<h3 id="def-bottom2bottom_2">def bottom2Bottom</h3>
-<h3 id="def-bottom2bottomside_2">def bottom2BottomSide</h3>
-<h3 id="def-bottom2middle_2">def bottom2Middle</h3>
-<h3 id="def-bottom2middlesides_2">def bottom2MiddleSides</h3>
-<h3 id="def-bottom2top_2">def bottom2Top</h3>
+<h3 id="def-bottom2bottomself_2">def bottom2Bottom(self)</h3>
+<h3 id="def-bottom2bottomsideself_2">def bottom2BottomSide(self)</h3>
+<h3 id="def-bottom2middleself_2">def bottom2Middle(self)</h3>
+<h3 id="def-bottom2middlesidesself_2">def bottom2MiddleSides(self)</h3>
+<h3 id="def-bottom2topself_2">def bottom2Top(self)</h3>
 <h3 id="property-box_2">property box</h3>
 <p>Construct the bounding box from (self.x, self.y, self.w, self.h) properties.  </p>
 <h3 id="property-box3d_2">property box3D</h3>
 <p>Answer the 3D bounding box of self from (self.x, self.y, self.w, self.h) properties.  </p>
 <h3 id="property-cd_2">property cd</h3>
 <h3 id="property-center_2">property center</h3>
-<h3 id="def-center2center_2">def center2Center</h3>
-<h3 id="def-center2centersides_2">def center2CenterSides</h3>
-<h3 id="def-center2left_2">def center2Left</h3>
-<h3 id="def-center2leftside_2">def center2LeftSide</h3>
-<h3 id="def-center2right_2">def center2Right</h3>
-<h3 id="def-center2rightside_2">def center2RightSide</h3>
+<h3 id="def-center2centerself_2">def center2Center(self)</h3>
+<h3 id="def-center2centersidesself_2">def center2CenterSides(self)</h3>
+<h3 id="def-center2leftself_2">def center2Left(self)</h3>
+<h3 id="def-center2leftsideself_2">def center2LeftSide(self)</h3>
+<h3 id="def-center2rightself_2">def center2Right(self)</h3>
+<h3 id="def-center2rightsideself_2">def center2RightSide(self)</h3>
 <h3 id="property-ch_2">property ch</h3>
-<h3 id="def-clearelements_2">def clearElements</h3>
+<h3 id="def-clearelementsself_2">def clearElements(self)</h3>
 <p>Properly initializes self._elements and self._eIds. <br />
 Any existing elements get their parent weakrefs become None and will garbage collect.  </p>
 <h3 id="def-cssself-name-defaultnone_2">def css(self, name, default=None)</h3>
@@ -2258,13 +2258,13 @@ the requested value.  </p>
 <h3 id="property-cy_2">property cy</h3>
 <h3 id="property-cz_2">property cz</h3>
 <h3 id="property-d_2">property d</h3>
-<h3 id="def-deepcopy_2">def deepCopy</h3>
+<h3 id="def-deepcopyself_2">def deepCopy(self)</h3>
 <p>Answer a copy of self, where the "unique" fields are set to default. Also perform a deep copy<br />
 on all child elements.  </p>
 <h3 id="property-doc_2">property doc</h3>
 <p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
-<h3 id="def-draw_1">def draw</h3>
-<h3 id="def-drawframe_2">def drawFrame</h3>
+<h3 id="def-drawself-origin-view_1">def draw(self, origin, view)</h3>
+<h3 id="def-drawframeself-p-view_2">def drawFrame(self, p, view)</h3>
 <p>Draw fill of the rectangular element space.<br />
 The self.css('fill') defines the color of the element background.<br />
 Instead of the DrawBot stroke and strokeWidth attributes, use<br />
@@ -2273,44 +2273,44 @@ borders or (borderTop, borderRight, borderBottom, borderLeft) attributes.  </p>
 <h3 id="property-elementids_2">property elementIds</h3>
 <h3 id="def-evaluateself-scorenone_2">def evaluate(self, score=None)</h3>
 <p>Evaluate the content of element e with the total sum of conditions.  </p>
-<h3 id="def-fit2bottom_2">def fit2Bottom</h3>
-<h3 id="def-fit2bottomside_2">def fit2BottomSide</h3>
-<h3 id="def-fit2left_2">def fit2Left</h3>
-<h3 id="def-fit2leftside_2">def fit2LeftSide</h3>
-<h3 id="def-fit2right_2">def fit2Right</h3>
-<h3 id="def-fit2rightside_2">def fit2RightSide</h3>
-<h3 id="def-fit2top_2">def fit2Top</h3>
-<h3 id="def-fit2topside_2">def fit2TopSide</h3>
-<h3 id="def-float2bottom_2">def float2Bottom</h3>
-<h3 id="def-float2bottomside_2">def float2BottomSide</h3>
-<h3 id="def-float2left_2">def float2Left</h3>
-<h3 id="def-float2leftside_2">def float2LeftSide</h3>
-<h3 id="def-float2right_2">def float2Right</h3>
-<h3 id="def-float2rightside_2">def float2RightSide</h3>
-<h3 id="def-float2top_2">def float2Top</h3>
+<h3 id="def-fit2bottomself_2">def fit2Bottom(self)</h3>
+<h3 id="def-fit2bottomsideself_2">def fit2BottomSide(self)</h3>
+<h3 id="def-fit2leftself_2">def fit2Left(self)</h3>
+<h3 id="def-fit2leftsideself_2">def fit2LeftSide(self)</h3>
+<h3 id="def-fit2rightself_2">def fit2Right(self)</h3>
+<h3 id="def-fit2rightsideself_2">def fit2RightSide(self)</h3>
+<h3 id="def-fit2topself_2">def fit2Top(self)</h3>
+<h3 id="def-fit2topsideself_2">def fit2TopSide(self)</h3>
+<h3 id="def-float2bottomself_2">def float2Bottom(self)</h3>
+<h3 id="def-float2bottomsideself_2">def float2BottomSide(self)</h3>
+<h3 id="def-float2leftself_2">def float2Left(self)</h3>
+<h3 id="def-float2leftsideself_2">def float2LeftSide(self)</h3>
+<h3 id="def-float2rightself_2">def float2Right(self)</h3>
+<h3 id="def-float2rightsideself_2">def float2RightSide(self)</h3>
+<h3 id="def-float2topself_2">def float2Top(self)</h3>
 <p>Float the element upward, until top hits the parent top padding.<br />
 Include margin to decide if it fits.  </p>
-<h3 id="def-float2topside_2">def float2TopSide</h3>
-<h3 id="def-floatascender2top_2">def floatAscender2Top</h3>
-<h3 id="def-floatbaseline2top_2">def floatBaseline2Top</h3>
-<h3 id="def-floatcapheight2top_2">def floatCapHeight2Top</h3>
-<h3 id="def-floatxheight2top_2">def floatXHeight2Top</h3>
+<h3 id="def-float2topsideself_2">def float2TopSide(self)</h3>
+<h3 id="def-floatascender2topself_2">def floatAscender2Top(self)</h3>
+<h3 id="def-floatbaseline2topself_2">def floatBaseline2Top(self)</h3>
+<h3 id="def-floatcapheight2topself_2">def floatCapHeight2Top(self)</h3>
+<h3 id="def-floatxheight2topself_2">def floatXHeight2Top(self)</h3>
 <h3 id="property-front_2">property front</h3>
 <h3 id="property-gd_2">property gd</h3>
-<h3 id="def-getelement_2">def getElement</h3>
+<h3 id="def-getelementself-eid_2">def getElement(self, eId)</h3>
 <p>Answer the page element, if it has a unique element Id. Answer None if the eId does not exist as child.  </p>
-<h3 id="def-getelementbyname_2">def getElementByName</h3>
+<h3 id="def-getelementbynameself-name_2">def getElementByName(self, name)</h3>
 <p>Answer the first element in the offspring list that fits the name. Answer None if it cannot be found  </p>
-<h3 id="def-getelementinfostring_2">def getElementInfoString</h3>
+<h3 id="def-getelementinfostringself_2">def getElementInfoString(self)</h3>
 <p>Answer a single string with info about the element. Default is to show the posiiton<br />
 and size (in points and columns). This method can be redefined by inheriting elements<br />
 that want to show additional information.  </p>
-<h3 id="def-getelementpage_2">def getElementPage</h3>
+<h3 id="def-getelementpageself_2">def getElementPage(self)</h3>
 <p>Recursively answer the page of this element. This can be several layers above self.  </p>
-<h3 id="def-getelementsatpoint_2">def getElementsAtPoint</h3>
+<h3 id="def-getelementsatpointself-point_2">def getElementsAtPoint(self, point)</h3>
 <p>Answer the list with elements that fit the point. Note None in the point will match any<br />
 value in the element position. Where None in the element position with not fit any xyz of the point.  </p>
-<h3 id="def-getelementsposition_2">def getElementsPosition</h3>
+<h3 id="def-getelementspositionself_2">def getElementsPosition(self)</h3>
 <p>Answer the dictionary of elements that have eIds and their positions.  </p>
 <h3 id="def-getfloatbottomsideself-previousonlytrue-tolerance0_2">def getFloatBottomSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max y that can float to bottom, without overlapping previous sibling elements.<br />
@@ -2332,23 +2332,23 @@ Comparison of available spave, includes the margins of the elements.  </p>
 This means we are just looking at the vertical projection between (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getmaxsize_2">def getMaxSize</h3>
-<h3 id="def-getminsize_2">def getMinSize</h3>
+<h3 id="def-getmaxsizeself_2">def getMaxSize(self)</h3>
+<h3 id="def-getminsizeself_2">def getMinSize(self)</h3>
 <p>Answer the (minW, minH) of this element.  </p>
-<h3 id="def-getminsize3d_2">def getMinSize3D</h3>
+<h3 id="def-getminsize3dself_2">def getMinSize3D(self)</h3>
 <p>Answer the (minW, minH, minD) of this element.  </p>
-<h3 id="def-getnamedstyle_2">def getNamedStyle</h3>
+<h3 id="def-getnamedstyleself-stylename_2">def getNamedStyle(self, styleName)</h3>
 <p>In case we are looking for a named style (e.g. used by the Typesetter to build a stack<br />
 of cascading tag style, then query the ancestors for the named style. Default behavior<br />
 of all elements is that they pass the request on to the root, which is nornally the document.  </p>
-<h3 id="def-getpositions_2">def getPositions</h3>
+<h3 id="def-getpositionsself_2">def getPositions(self)</h3>
 <p>"Answer the dictionary of positions of elements. <br />
 Key is the local point of the child element. Value is list of elements.  </p>
-<h3 id="def-getsize_2">def getSize</h3>
+<h3 id="def-getsizeself_2">def getSize(self)</h3>
 <p>Answer the size of the element by calling properties self.w and self.h.<br />
 This allows element to dynamically calculate the size if necessary, by redefining the<br />
 self.w and/or self.h properties.  </p>
-<h3 id="def-getsize3d_2">def getSize3D</h3>
+<h3 id="def-getsize3dself_2">def getSize3D(self)</h3>
 <p>Answer the 3D size of the element.  </p>
 <h3 id="property-gh_2">property gh</h3>
 <h3 id="property-gradient_2">property gradient</h3>
@@ -2356,15 +2356,15 @@ self.w and/or self.h properties.  </p>
 <h3 id="property-gutter3d_2">property gutter3D</h3>
 <h3 id="property-gw_2">property gw</h3>
 <h3 id="property-h_2">property h</h3>
-<h3 id="def-isascenderontop_2">def isAscenderOnTop</h3>
-<h3 id="def-isbaselineonbottom_2">def isBaselineOnBottom</h3>
-<h3 id="def-isbaselineontop_2">def isBaselineOnTop</h3>
+<h3 id="def-isascenderontopself-tolerance_2">def isAscenderOnTop(self, tolerance)</h3>
+<h3 id="def-isbaselineonbottomself-tolerance_2">def isBaselineOnBottom(self, tolerance)</h3>
+<h3 id="def-isbaselineontopself-tolerance_2">def isBaselineOnTop(self, tolerance)</h3>
 <h3 id="def-isbottomonbottomself-tolerance0_2">def isBottomOnBottom(self, tolerance=0)</h3>
 <h3 id="def-isbottomonbottomsideself-tolerance0_2">def isBottomOnBottomSide(self, tolerance=0)</h3>
 <h3 id="def-isbottomonmiddleself-tolerance0_2">def isBottomOnMiddle(self, tolerance=0)</h3>
 <h3 id="def-isbottomonmiddlesidesself-tolerance0_2">def isBottomOnMiddleSides(self, tolerance=0)</h3>
 <h3 id="def-isbottomontopself-tolerance0_2">def isBottomOnTop(self, tolerance=0)</h3>
-<h3 id="def-iscapheightontop_2">def isCapHeightOnTop</h3>
+<h3 id="def-iscapheightontopself-tolerance_2">def isCapHeightOnTop(self, tolerance)</h3>
 <h3 id="def-iscenteroncenterself-tolerance0_2">def isCenterOnCenter(self, tolerance=0)</h3>
 <h3 id="def-iscenteroncentersidesself-tolerance0_2">def isCenterOnCenterSides(self, tolerance=0)</h3>
 <h3 id="def-iscenteronleftself-tolerance0_2">def isCenterOnLeft(self, tolerance=0)</h3>
@@ -2407,7 +2407,7 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="def-isoriginonrightsideself-tolerance0_2">def isOriginOnRightSide(self, tolerance=0)</h3>
 <h3 id="def-isoriginontopself-tolerance0_2">def isOriginOnTop(self, tolerance=0)</h3>
 <h3 id="def-isoriginontopsideself-tolerance0_2">def isOriginOnTopSide(self, tolerance=0)</h3>
-<h3 id="def-isoverflow_2">def isOverflow</h3>
+<h3 id="def-isoverflowself-tolerance_2">def isOverflow(self, tolerance)</h3>
 <h3 id="int-ispage_2">int isPage</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
@@ -2418,15 +2418,15 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <h3 id="def-isrightonleftself-tolerance0_2">def isRightOnLeft(self, tolerance=0)</h3>
 <h3 id="def-isrightonrightself-tolerance0_2">def isRightOnRight(self, tolerance=0)</h3>
 <h3 id="def-isrightonrightsideself-tolerance0_2">def isRightOnRightSide(self, tolerance=0)</h3>
-<h3 id="def-isschrunkonblockleft_2">def isSchrunkOnBlockLeft</h3>
-<h3 id="def-isshrunkonblockbottom_2">def isShrunkOnBlockBottom</h3>
+<h3 id="def-isschrunkonblockleftself-tolerance_2">def isSchrunkOnBlockLeft(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockbottomself-tolerance_2">def isShrunkOnBlockBottom(self, tolerance)</h3>
 <p>Test if the bottom of self is shrunk to the bottom position of the block.  </p>
-<h3 id="def-isshrunkonblockbottomside_2">def isShrunkOnBlockBottomSide</h3>
-<h3 id="def-isshrunkonblockleftside_2">def isShrunkOnBlockLeftSide</h3>
-<h3 id="def-isshrunkonblockright_2">def isShrunkOnBlockRight</h3>
-<h3 id="def-isshrunkonblockrightside_2">def isShrunkOnBlockRightSide</h3>
-<h3 id="def-isshrunkonblocktop_2">def isShrunkOnBlockTop</h3>
-<h3 id="def-isshrunkonblocktopside_2">def isShrunkOnBlockTopSide</h3>
+<h3 id="def-isshrunkonblockbottomsideself-tolerance_2">def isShrunkOnBlockBottomSide(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockleftsideself-tolerance_2">def isShrunkOnBlockLeftSide(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockrightself-tolerance_2">def isShrunkOnBlockRight(self, tolerance)</h3>
+<h3 id="def-isshrunkonblockrightsideself-tolerance_2">def isShrunkOnBlockRightSide(self, tolerance)</h3>
+<h3 id="def-isshrunkonblocktopself-tolerance_2">def isShrunkOnBlockTop(self, tolerance)</h3>
+<h3 id="def-isshrunkonblocktopsideself-tolerance_2">def isShrunkOnBlockTopSide(self, tolerance)</h3>
 <h3 id="int-istext_2">int isText</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
@@ -2447,13 +2447,13 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-isxheightontop_2">def isXHeightOnTop</h3>
+<h3 id="def-isxheightontopself-tolerance_2">def isXHeightOnTop(self, tolerance)</h3>
 <h3 id="property-left_2">property left</h3>
-<h3 id="def-left2center_2">def left2Center</h3>
-<h3 id="def-left2centersides_2">def left2CenterSides</h3>
-<h3 id="def-left2left_2">def left2Left</h3>
-<h3 id="def-left2leftside_2">def left2LeftSide</h3>
-<h3 id="def-left2right_2">def left2Right</h3>
+<h3 id="def-left2centerself_2">def left2Center(self)</h3>
+<h3 id="def-left2centersidesself_2">def left2CenterSides(self)</h3>
+<h3 id="def-left2leftself_2">def left2Left(self)</h3>
+<h3 id="def-left2leftsideself_2">def left2LeftSide(self)</h3>
+<h3 id="def-left2rightself_2">def left2Right(self)</h3>
 <h3 id="property-lib_2">property lib</h3>
 <p>Answer the shared document.lib dictionary by property, used for share global entry by elements.<br />
 Elements query their self.parent.lib until the root document is reached.  </p>
@@ -2476,12 +2476,12 @@ option style margin.  </p>
 <h3 id="property-mb_2">property mb</h3>
 <h3 id="property-mh_2">property mh</h3>
 <h3 id="property-middle_2">property middle</h3>
-<h3 id="def-middle2bottom_2">def middle2Bottom</h3>
-<h3 id="def-middle2bottomside_2">def middle2BottomSide</h3>
-<h3 id="def-middle2middle_2">def middle2Middle</h3>
-<h3 id="def-middle2middlesides_2">def middle2MiddleSides</h3>
-<h3 id="def-middle2top_2">def middle2Top</h3>
-<h3 id="def-middle2topside_2">def middle2TopSide</h3>
+<h3 id="def-middle2bottomself_2">def middle2Bottom(self)</h3>
+<h3 id="def-middle2bottomsideself_2">def middle2BottomSide(self)</h3>
+<h3 id="def-middle2middleself_2">def middle2Middle(self)</h3>
+<h3 id="def-middle2middlesidesself_2">def middle2MiddleSides(self)</h3>
+<h3 id="def-middle2topself_2">def middle2Top(self)</h3>
+<h3 id="def-middle2topsideself_2">def middle2TopSide(self)</h3>
 <h3 id="property-mind_2">property minD</h3>
 <h3 id="property-minh_2">property minH</h3>
 <h3 id="property-minw_2">property minW</h3>
@@ -2495,18 +2495,18 @@ option style margin.  </p>
 <p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
 <h3 id="property-opoint3d_2">property oPoint3D</h3>
 <p>Answer the self.point, where y can be flipped, depending on the self.originTop flag.  </p>
-<h3 id="def-origin2bottom_2">def origin2Bottom</h3>
-<h3 id="def-origin2bottomside_2">def origin2BottomSide</h3>
-<h3 id="def-origin2center_2">def origin2Center</h3>
-<h3 id="def-origin2centersides_2">def origin2CenterSides</h3>
-<h3 id="def-origin2left_2">def origin2Left</h3>
-<h3 id="def-origin2leftside_2">def origin2LeftSide</h3>
-<h3 id="def-origin2middle_2">def origin2Middle</h3>
-<h3 id="def-origin2middlesides_2">def origin2MiddleSides</h3>
-<h3 id="def-origin2right_2">def origin2Right</h3>
-<h3 id="def-origin2rightside_2">def origin2RightSide</h3>
-<h3 id="def-origin2top_2">def origin2Top</h3>
-<h3 id="def-origin2topside_2">def origin2TopSide</h3>
+<h3 id="def-origin2bottomself_2">def origin2Bottom(self)</h3>
+<h3 id="def-origin2bottomsideself_2">def origin2BottomSide(self)</h3>
+<h3 id="def-origin2centerself_2">def origin2Center(self)</h3>
+<h3 id="def-origin2centersidesself_2">def origin2CenterSides(self)</h3>
+<h3 id="def-origin2leftself_2">def origin2Left(self)</h3>
+<h3 id="def-origin2leftsideself_2">def origin2LeftSide(self)</h3>
+<h3 id="def-origin2middleself_2">def origin2Middle(self)</h3>
+<h3 id="def-origin2middlesidesself_2">def origin2MiddleSides(self)</h3>
+<h3 id="def-origin2rightself_2">def origin2Right(self)</h3>
+<h3 id="def-origin2rightsideself_2">def origin2RightSide(self)</h3>
+<h3 id="def-origin2topself_2">def origin2Top(self)</h3>
+<h3 id="def-origin2topsideself_2">def origin2TopSide(self)</h3>
 <h3 id="property-origintop_2">property originTop</h3>
 <p>Answer the style flag if all point y values should measure top-down (typographic page<br />
 orientation), instead of bottom-up (mathematical orientation). For Y-axis only. <br />
@@ -2514,7 +2514,7 @@ The axes in X and Z directions are fixed.  </p>
 <h3 id="property-originsblock_2">property originsBlock</h3>
 <h3 id="property-originsblock3d_2">property originsBlock3D</h3>
 <p>Answer (minX, minY, maxX, maxY, minZ, maxZ) for all element origins.  </p>
-<h3 id="def-overflow2next_2">def overflow2Next</h3>
+<h3 id="def-overflow2nextself_2">def overflow2Next(self)</h3>
 <p>Try to fix if there is overflow. Default behavior is to do nothing. This method<br />
 is redefined by inheriting classed, such as TextBox, that can have overflow of text.  </p>
 <h3 id="property-paddedblock3d_2">property paddedBlock3D</h3>
@@ -2544,21 +2544,21 @@ is not parent defined or if the parent not longer exists.  </p>
 <h3 id="property-pw_2">property pw</h3>
 <h3 id="property-pzb_2">property pzb</h3>
 <h3 id="property-pzf_2">property pzf</h3>
-<h3 id="def-removeelement_2">def removeElement</h3>
+<h3 id="def-removeelementself-e_2">def removeElement(self, e)</h3>
 <p>If the element is placed in self, then remove it. Don't touch the position.  </p>
 <h3 id="property-right_2">property right</h3>
-<h3 id="def-right2center_2">def right2Center</h3>
-<h3 id="def-right2centersides_2">def right2CenterSides</h3>
-<h3 id="def-right2left_2">def right2Left</h3>
-<h3 id="def-right2right_2">def right2Right</h3>
-<h3 id="def-right2rightside_2">def right2RightSide</h3>
+<h3 id="def-right2centerself_2">def right2Center(self)</h3>
+<h3 id="def-right2centersidesself_2">def right2CenterSides(self)</h3>
+<h3 id="def-right2leftself_2">def right2Left(self)</h3>
+<h3 id="def-right2rightself_2">def right2Right(self)</h3>
+<h3 id="def-right2rightsideself_2">def right2RightSide(self)</h3>
 <h3 id="property-rootx_2">property rootX</h3>
 <h3 id="property-rooty_2">property rootY</h3>
 <h3 id="property-rootz_2">property rootZ</h3>
 <h3 id="property-scalex_2">property scaleX</h3>
 <h3 id="property-scaley_2">property scaleY</h3>
 <h3 id="property-scalez_2">property scaleZ</h3>
-<h3 id="def-setelementbyindex_2">def setElementByIndex</h3>
+<h3 id="def-setelementbyindexself-e-index_2">def setElementByIndex(self, e, index)</h3>
 <p>Replace the element, if there is already one at index. Otherwise append it to self.elements<br />
 and answer the index number that it got.  </p>
 <h3 id="def-setmaxsizeself-maxw-maxhnone-maxdnone_2">def setMaxSize(self, maxW, maxH=None, maxD=None)</h3>
@@ -2567,14 +2567,14 @@ and answer the index number that it got.  </p>
 <p>Set the size of the element by calling by properties self.w and self.h. <br />
 If set, then overwrite access from style width and height. self.d is optional attribute.  </p>
 <h3 id="property-show_2">property show</h3>
-<h3 id="def-shrink2blockbottom_2">def shrink2BlockBottom</h3>
-<h3 id="def-shrink2blockbottomside_2">def shrink2BlockBottomSide</h3>
-<h3 id="def-shrink2blockleft_2">def shrink2BlockLeft</h3>
-<h3 id="def-shrink2blockleftside_2">def shrink2BlockLeftSide</h3>
-<h3 id="def-shrink2blockright_2">def shrink2BlockRight</h3>
-<h3 id="def-shrink2blockrightside_2">def shrink2BlockRightSide</h3>
-<h3 id="def-shrink2blocktop_2">def shrink2BlockTop</h3>
-<h3 id="def-shrink2blocktopside_2">def shrink2BlockTopSide</h3>
+<h3 id="def-shrink2blockbottomself_2">def shrink2BlockBottom(self)</h3>
+<h3 id="def-shrink2blockbottomsideself_2">def shrink2BlockBottomSide(self)</h3>
+<h3 id="def-shrink2blockleftself_2">def shrink2BlockLeft(self)</h3>
+<h3 id="def-shrink2blockleftsideself_2">def shrink2BlockLeftSide(self)</h3>
+<h3 id="def-shrink2blockrightself_2">def shrink2BlockRight(self)</h3>
+<h3 id="def-shrink2blockrightsideself_2">def shrink2BlockRightSide(self)</h3>
+<h3 id="def-shrink2blocktopself_2">def shrink2BlockTop(self)</h3>
+<h3 id="def-shrink2blocktopsideself_2">def shrink2BlockTopSide(self)</h3>
 <h3 id="property-siblings_2">property siblings</h3>
 <p>Answer all elements that share self.parent, not including self in the list.  </p>
 <h3 id="def-solveself-scorenone_2">def solve(self, score=None)</h3>
@@ -2584,11 +2584,11 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="property-textshadow_2">property textShadow</h3>
 <h3 id="property-top_2">property top</h3>
 <p>Answer the top position (relative to self.parent) of self.  </p>
-<h3 id="def-top2bottom_2">def top2Bottom</h3>
-<h3 id="def-top2middle_2">def top2Middle</h3>
-<h3 id="def-top2middlesides_2">def top2MiddleSides</h3>
-<h3 id="def-top2top_2">def top2Top</h3>
-<h3 id="def-top2topside_2">def top2TopSide</h3>
+<h3 id="def-top2bottomself_2">def top2Bottom(self)</h3>
+<h3 id="def-top2middleself_2">def top2Middle(self)</h3>
+<h3 id="def-top2middlesidesself_2">def top2MiddleSides(self)</h3>
+<h3 id="def-top2topself_2">def top2Top(self)</h3>
+<h3 id="def-top2topsideself_2">def top2TopSide(self)</h3>
 <h3 id="property-w_2">property w</h3>
 <h3 id="property-x_2">property x</h3>
 <p>Answer the x position of self.  </p>
@@ -2605,41 +2605,41 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="class-template">class Template</h3>
 <h3 id="class-text">class Text</h3>
 <h3 id="class-textbox_1">class TextBox</h3>
-<h3 id="def-newcolimagepath-cxnone-cynone-cwnone-chnone-parentnone">def newColImage(path, cx=None, cy=None, cw=None, ch=None, parent=None)</h3>
+<h3 id="def-newcolimagepath-cxnone-cynone-cwnone-chnone-parentnone-4242kwargs">def newColImage(path, cx=None, cy=None, cw=None, ch=None, parent=None, **kwargs)</h3>
 <p>Convert the column size into point size, depending on the column settings of the <br />
 current template, when drawing images "hard-coded" directly on a certain page.<br />
 The optional imo attribute is an ImageObject() with filters in place. <br />
 The Image element is answered for convenience of the caller  </p>
-<h3 id="def-newcollinecxnone-cynone-cwnone-chnone">def newColLine(cx=None, cy=None, cw=None, ch=None)</h3>
-<h3 id="def-newcolovalcxnone-cynone-cwnone-chnone">def newColOval(cx=None, cy=None, cw=None, ch=None)</h3>
-<h3 id="def-newcolrectcxnone-cynone-cwnone-chnone">def newColRect(cx=None, cy=None, cw=None, ch=None)</h3>
-<h3 id="def-newcoltextfs-cxnone-cynone-cwnone-chnone">def newColText(fs, cx=None, cy=None, cw=None, ch=None)</h3>
+<h3 id="def-newcollinecxnone-cynone-cwnone-chnone-4242kwargs">def newColLine(cx=None, cy=None, cw=None, ch=None, **kwargs)</h3>
+<h3 id="def-newcolovalcxnone-cynone-cwnone-chnone-4242kwargs">def newColOval(cx=None, cy=None, cw=None, ch=None, **kwargs)</h3>
+<h3 id="def-newcolrectcxnone-cynone-cwnone-chnone-4242kwargs">def newColRect(cx=None, cy=None, cw=None, ch=None, **kwargs)</h3>
+<h3 id="def-newcoltextfs-cxnone-cynone-cwnone-chnone-4242kwargs">def newColText(fs, cx=None, cy=None, cw=None, ch=None, **kwargs)</h3>
 <p>Draw formatted string.<br />
 We don't need w and h here, as it is made by the text and style combinations.<br />
 Caller must supply formatted string.  </p>
-<h3 id="def-newcoltextboxfs-cxnone-cynone-cwnone-chnone">def newColTextBox(fs, cx=None, cy=None, cw=None, ch=None)</h3>
+<h3 id="def-newcoltextboxfs-cxnone-cynone-cwnone-chnone-4242kwargs">def newColTextBox(fs, cx=None, cy=None, cw=None, ch=None, **kwargs)</h3>
 <p>Caller must supply formatted string.  </p>
-<h3 id="def-newimagepath-pointnone">def newImage(path, point=None)</h3>
+<h3 id="def-newimagepath-pointnone-4242kwargs">def newImage(path, point=None, **kwargs)</h3>
 <p>Create Image element as position (x, y) and optional width, height (w, h) of which<br />
 at least one of them should be defined. The path can be None, to be filled later.<br />
 If the image is drawn with an empty path, a missingImage cross-frame is shown.<br />
 The optional imo attribute is an ImageObject() with filters in place. <br />
 The Image element is answered for convenience of the caller.  </p>
-<h3 id="def-newlinepointnone">def newLine(point=None)</h3>
-<h3 id="def-newovalpointnone">def newOval(point=None)</h3>
+<h3 id="def-newlinepointnone-4242kwargs">def newLine(point=None, **kwargs)</h3>
+<h3 id="def-newovalpointnone-4242kwargs">def newOval(point=None, **kwargs)</h3>
 <p>Draw the oval. Note that w and h can also be defined in the style. In case h is omitted,<br />
 a circle is drawn.  </p>
-<h3 id="def-newpolygonpointnone">def newPolygon(point=None)</h3>
-<h3 id="def-newrectpointnone">def newRect(point=None)</h3>
+<h3 id="def-newpolygonpointnone-4242kwargs">def newPolygon(point=None, **kwargs)</h3>
+<h3 id="def-newrectpointnone-4242kwargs">def newRect(point=None, **kwargs)</h3>
 <p>Draw the rectangle. Note that w and h can also be defined in the style. In case h is omitted,<br />
 a square is drawn.  </p>
-<h3 id="def-newtablecols1-rows1">def newTable(cols=1, rows=1)</h3>
-<h3 id="def-newtextfs-pointnone">def newText(fs, point=None)</h3>
+<h3 id="def-newtablecols1-rows1-4242kwargs">def newTable(cols=1, rows=1, **kwargs)</h3>
+<h3 id="def-newtextfs-pointnone-4242kwargs">def newText(fs, point=None, **kwargs)</h3>
 <p>Draw formatted string. Normally we don't need w and h here, as it is made by the text and <br />
 style combinations. But in case the defined font is a Variable Font, then we can use the<br />
 width and height to interpolate a font that fits the space for the given string and weight.<br />
 Caller must supply formatted string. Support both (x, y) and x, y as position.  </p>
-<h3 id="def-newtextboxfs-pointnone">def newTextBox(fs, point=None)</h3>
+<h3 id="def-newtextboxfs-pointnone-4242kwargs">def newTextBox(fs, point=None, **kwargs)</h3>
 <p>Caller must supply formatted string. Note that w and h can also be defined in the style.  </p>
               
             </div>

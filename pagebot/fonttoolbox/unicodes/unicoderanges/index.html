@@ -454,7 +454,7 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#def-95buildbybitdict">def _buildByBitDict</a></li>
+            <li><a class="toctree-l4" href="#def-95buildbybitdict">def _buildByBitDict()</a></li>
         
             <li><a class="toctree-l4" href="#dict-95bybit">dict _byBit</a></li>
         
@@ -464,45 +464,45 @@
         
             <li><a class="toctree-l4" href="#def-95countcoverageunicodes-bynamefalse">def _countCoverage(unicodes, byName=False)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95distributeunicodes95referenceimplementation">def _distributeUnicodes_ReferenceImplementation</a></li>
+            <li><a class="toctree-l4" href="#def-95distributeunicodes95referenceimplementationunicodes">def _distributeUnicodes_ReferenceImplementation(unicodes)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95getunicoderangebits95referenceimplementation">def _getUnicodeRangeBits_ReferenceImplementation</a></li>
+            <li><a class="toctree-l4" href="#def-95getunicoderangebits95referenceimplementationunicodes">def _getUnicodeRangeBits_ReferenceImplementation(unicodes)</a></li>
         
             <li><a class="toctree-l4" href="#dict-95opentypescripttounicoderangenamemapping">dict _openTypeScriptToUnicodeRangeNameMapping</a></li>
         
             <li><a class="toctree-l4" href="#list-95rangeminimums">list _rangeMinimums</a></li>
         
-            <li><a class="toctree-l4" href="#def-95rundoctests">def _runDocTests</a></li>
+            <li><a class="toctree-l4" href="#def-95rundoctests">def _runDocTests()</a></li>
         
-            <li><a class="toctree-l4" href="#def-95testall">def _testAll</a></li>
+            <li><a class="toctree-l4" href="#def-95testall">def _testAll()</a></li>
         
             <li><a class="toctree-l4" href="#builtin95function95or95method-bisect95left">builtin_function_or_method bisect_left</a></li>
         
             <li><a class="toctree-l4" href="#builtin95function95or95method-bisect95right">builtin_function_or_method bisect_right</a></li>
         
-            <li><a class="toctree-l4" href="#def-countcoveragebyrangebit">def countCoverageByRangeBit</a></li>
+            <li><a class="toctree-l4" href="#def-countcoveragebyrangebitunicodes">def countCoverageByRangeBit(unicodes)</a></li>
         
-            <li><a class="toctree-l4" href="#def-countcoveragebyrangename">def countCoverageByRangeName</a></li>
+            <li><a class="toctree-l4" href="#def-countcoveragebyrangenameunicodes">def countCoverageByRangeName(unicodes)</a></li>
         
-            <li><a class="toctree-l4" href="#def-distributeunicodes">def distributeUnicodes</a></li>
+            <li><a class="toctree-l4" href="#def-distributeunicodesunicodes">def distributeUnicodes(unicodes)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getunicoderange">def getUnicodeRange</a></li>
+            <li><a class="toctree-l4" href="#def-getunicoderangeuni">def getUnicodeRange(uni)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getunicoderangebits">def getUnicodeRangeBits</a></li>
+            <li><a class="toctree-l4" href="#def-getunicoderangebitsunicodes">def getUnicodeRangeBits(unicodes)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getunicoderangebybit">def getUnicodeRangeByBit</a></li>
+            <li><a class="toctree-l4" href="#def-getunicoderangebybitbit">def getUnicodeRangeByBit(bit)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getunicoderangebyname">def getUnicodeRangeByName</a></li>
+            <li><a class="toctree-l4" href="#def-getunicoderangebynamename">def getUnicodeRangeByName(name)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getunicoderangesbyscripttag">def getUnicodeRangesByScriptTag</a></li>
+            <li><a class="toctree-l4" href="#def-getunicoderangesbyscripttagscripttag">def getUnicodeRangesByScriptTag(scriptTag)</a></li>
         
             <li><a class="toctree-l4" href="#dict-otscripttags">dict otScriptTags</a></li>
         
-            <li><a class="toctree-l4" href="#def-packrangebits">def packRangeBits</a></li>
+            <li><a class="toctree-l4" href="#def-packrangebitsbitset">def packRangeBits(bitSet)</a></li>
         
             <li><a class="toctree-l4" href="#list-unicoderanges">list unicodeRanges</a></li>
         
-            <li><a class="toctree-l4" href="#def-unpackrangebits">def unpackRangeBits</a></li>
+            <li><a class="toctree-l4" href="#def-unpackrangebitsur1-ur2-ur3-ur4">def unpackRangeBits(ur1, ur2, ur3, ur4)</a></li>
         
         </ul>
     
@@ -595,7 +595,7 @@
             <div class="section">
               
                 <h1 id="fonttoolboxunicodesunicoderanges">fonttoolbox.unicodes.unicoderanges</h1>
-<h3 id="def-95buildbybitdict">def _buildByBitDict</h3>
+<h3 id="def-95buildbybitdict">def _buildByBitDict()</h3>
 <h3 id="dict-95bybit">dict _byBit</h3>
 <p>dict() -&gt; new empty dictionary<br />
 dict(mapping) -&gt; new dictionary initialized from a mapping object's<br />
@@ -642,7 +642,7 @@ in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 &gt;&gt;&gt; _countCoverage([8192], byName=False)  
 {31: (1, 240)}
 </code></pre>
-<h3 id="def-95distributeunicodes95referenceimplementation">def _distributeUnicodes_ReferenceImplementation</h3>
+<h3 id="def-95distributeunicodes95referenceimplementationunicodes">def _distributeUnicodes_ReferenceImplementation(unicodes)</h3>
 <pre><code>&gt;&gt;&gt; unicodes = range(3000)  
 &gt;&gt;&gt; assert distributeUnicodes(unicodes) == _distributeUnicodes_ReferenceImplementation(unicodes)  
 &gt;&gt;&gt; unicodes = range(10, 3000)  
@@ -664,7 +664,7 @@ in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <pre><code>&gt;&gt;&gt; all.sort()  
 &gt;&gt;&gt; assert all == unicodes
 </code></pre>
-<h3 id="def-95getunicoderangebits95referenceimplementation">def _getUnicodeRangeBits_ReferenceImplementation</h3>
+<h3 id="def-95getunicoderangebits95referenceimplementationunicodes">def _getUnicodeRangeBits_ReferenceImplementation(unicodes)</h3>
 <pre><code>&gt;&gt;&gt; unicodes = range(3000)  
 &gt;&gt;&gt; assert getUnicodeRangeBits(unicodes) == _getUnicodeRangeBits_ReferenceImplementation(unicodes)  
 &gt;&gt;&gt; unicodes = range(10, 3000)  
@@ -691,8 +691,8 @@ in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="list-95rangeminimums">list _rangeMinimums</h3>
 <p>list() -&gt; new empty list<br />
 list(iterable) -&gt; new list initialized from iterable's items  </p>
-<h3 id="def-95rundoctests">def _runDocTests</h3>
-<h3 id="def-95testall">def _testAll</h3>
+<h3 id="def-95rundoctests">def _runDocTests()</h3>
+<h3 id="def-95testall">def _testAll()</h3>
 <pre><code>&gt;&gt;&gt; count = 0  
 &gt;&gt;&gt; for bit, name, rangeMinimum, rangeMaximum in unicodeRanges:  
 ... for uni in range(rangeMinimum, rangeMaximum+1):
@@ -720,7 +720,7 @@ a[i:] have e &gt; x.  So if x already appears in the list, i points just<br />
 beyond the rightmost x already there  </p>
 <p>Optional args lo (default 0) and hi (default len(a)) bound the<br />
 slice of a to be searched.  </p>
-<h3 id="def-countcoveragebyrangebit">def countCoverageByRangeBit</h3>
+<h3 id="def-countcoveragebyrangebitunicodes">def countCoverageByRangeBit(unicodes)</h3>
 <p>Given a set of characters, count how many characters are present in each (used) range.<br />
 The return value is a dict with range bits as keys, and (count, size) tuples as values.<br />
 'count' is the number of characters used in the range, 'size' is the total amount of<br />
@@ -740,7 +740,7 @@ will be (count, None).  </p>
 &gt;&gt;&gt; countCoverageByRangeBit([100000])  
 {None: (1, None)}
 </code></pre>
-<h3 id="def-countcoveragebyrangename">def countCoverageByRangeName</h3>
+<h3 id="def-countcoveragebyrangenameunicodes">def countCoverageByRangeName(unicodes)</h3>
 <p>Given a set of characters, count how many characters are present in each (used) range.<br />
 The return value is a dict with range names as keys, and (count, size) tuples as values.<br />
 'count' is the number of characters used in the range, 'size' is the total amount of<br />
@@ -760,7 +760,7 @@ will be (count, None).  </p>
 &gt;&gt;&gt; countCoverageByRangeName([100000])  
 {None: (1, None)}
 </code></pre>
-<h3 id="def-distributeunicodes">def distributeUnicodes</h3>
+<h3 id="def-distributeunicodesunicodes">def distributeUnicodes(unicodes)</h3>
 <p>Return a dictionary with range names as keys, and subsets of unicodes<br />
 belonging to the respective range as values. None is used as a key for<br />
 characters that don't fall into any range.  </p>
@@ -785,7 +785,7 @@ characters that don't fall into any range.  </p>
 <p>...  </p>
 <pre><code>&gt;&gt;&gt; assert all == set(unicodes)
 </code></pre>
-<h3 id="def-getunicoderange">def getUnicodeRange</h3>
+<h3 id="def-getunicoderangeuni">def getUnicodeRange(uni)</h3>
 <p>Return the unicode range that uni belongs to, if any. If a range is found,<br />
 a (bit, name, rangeMinimum, rangeMaximum) tuple is returned. If no range is found,<br />
 (None, None, None, None) is returned.  </p>
@@ -819,7 +819,7 @@ a (bit, name, rangeMinimum, rangeMaximum) tuple is returned. If no range is foun
 &gt;&gt;&gt; print getUnicodeRange(0x10840)  
 (None, None, None, None)
 </code></pre>
-<h3 id="def-getunicoderangebits">def getUnicodeRangeBits</h3>
+<h3 id="def-getunicoderangebitsunicodes">def getUnicodeRangeBits(unicodes)</h3>
 <p>Return a set of range bits. Each bit number represents the presence of<br />
 at least one character in that range.  </p>
 <pre><code>&gt;&gt;&gt; sorted(getUnicodeRangeBits(range(32, 500)))  
@@ -831,7 +831,7 @@ at least one character in that range.  </p>
 &gt;&gt;&gt; sorted(getUnicodeRangeBits([6399]))  # not in any range  
 []
 </code></pre>
-<h3 id="def-getunicoderangebybit">def getUnicodeRangeByBit</h3>
+<h3 id="def-getunicoderangebybitbit">def getUnicodeRangeByBit(bit)</h3>
 <p>Given a bit number for a OS/2 unicode range, return a list of (name, rangeMinimum, rangeMaximum) tuples.  </p>
 <pre><code>&gt;&gt;&gt; getUnicodeRangeByBit(100)  
 [('Syloti Nagri', 43008, 43055)]
@@ -844,7 +844,7 @@ Traceback (most recent call last):
 </code></pre>
 <p>...<br />
 KeyError: 999  </p>
-<h3 id="def-getunicoderangebyname">def getUnicodeRangeByName</h3>
+<h3 id="def-getunicoderangebynamename">def getUnicodeRangeByName(name)</h3>
 <p>Given the name for a OS/2 unicode range, return a (bit, rangeMinimum, rangeMaximum) tuple.  </p>
 <pre><code>&gt;&gt;&gt; getUnicodeRangeByName("Basic Latin")  
 (0, 0, 127)
@@ -857,7 +857,7 @@ Traceback (most recent call last):
 </code></pre>
 <p>...<br />
 KeyError: 'Bad Name'  </p>
-<h3 id="def-getunicoderangesbyscripttag">def getUnicodeRangesByScriptTag</h3>
+<h3 id="def-getunicoderangesbyscripttagscripttag">def getUnicodeRangesByScriptTag(scriptTag)</h3>
 <p>Given an OpenType script tag, return a list of unicode ranges, expressed as<br />
 (bit, name, rangeMinimum, rangeMaximum) tuples. Raise KeyError if no matching<br />
 range is found.  </p>
@@ -905,7 +905,7 @@ for k, v in iterable:<br />
 d[k] = v<br />
 dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
 in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
-<h3 id="def-packrangebits">def packRangeBits</h3>
+<h3 id="def-packrangebitsbitset">def packRangeBits(bitSet)</h3>
 <p>Given a set of bit numbers, return the corresponding ulUnicodeRange1, ulUnicodeRange2,<br />
 ulUnicodeRange3 and ulUnicodeRange4 for the OS/2 table.  </p>
 <pre><code>&gt;&gt;&gt; packRangeBits(set([0]))  
@@ -929,7 +929,7 @@ ulUnicodeRange3 and ulUnicodeRange4 for the OS/2 table.  </p>
 <h3 id="list-unicoderanges">list unicodeRanges</h3>
 <p>list() -&gt; new empty list<br />
 list(iterable) -&gt; new list initialized from iterable's items  </p>
-<h3 id="def-unpackrangebits">def unpackRangeBits</h3>
+<h3 id="def-unpackrangebitsur1-ur2-ur3-ur4">def unpackRangeBits(ur1, ur2, ur3, ur4)</h3>
 <p>Given the ulUnicodeRange1, ulUnicodeRange2, ulUnicodeRange3, ulUnicodeRange4 values<br />
 from the OS/2 table, return a set of bit numbers.  </p>
 <pre><code>&gt;&gt;&gt; unpackRangeBits(0x0, 0x0, 0x0, 0x0)  

@@ -164,9 +164,9 @@
         
             <li><a class="toctree-l4" href="#class-timemark">class TimeMark</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-t-style">def __init__(self, t, style)</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595repr9595">def __repr__</a></li>
+            <li><a class="toctree-l4" href="#def-9595repr9595self">def __repr__(self)</a></li>
         
             <li><a class="toctree-l4" href="#set-xaligns">set XALIGNS</a></li>
         
@@ -178,51 +178,51 @@
         
             <li><a class="toctree-l4" href="#def-asformattedvalue-defaultnone">def asFormatted(value, default=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-cd2d">def cd2d</a></li>
+            <li><a class="toctree-l4" href="#def-cd2dcd-e">def cd2d(cd, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-ch2h">def ch2h</a></li>
+            <li><a class="toctree-l4" href="#def-ch2hch-e">def ch2h(ch, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-cw2w">def cw2w</a></li>
+            <li><a class="toctree-l4" href="#def-cw2wcw-e">def cw2w(cw, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-cx2x">def cx2x</a></li>
+            <li><a class="toctree-l4" href="#def-cx2xcx-e">def cx2x(cx, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-cy2y">def cy2y</a></li>
+            <li><a class="toctree-l4" href="#def-cy2ycy-e">def cy2y(cy, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-cz2z">def cz2z</a></li>
+            <li><a class="toctree-l4" href="#def-cz2zcz-e">def cz2z(cz, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-d2cd">def d2cd</a></li>
+            <li><a class="toctree-l4" href="#def-d2cdd-e">def d2cd(d, e)</a></li>
         
             <li><a class="toctree-l4" href="#instance-division">instance division</a></li>
         
-            <li><a class="toctree-l4" href="#def-h2ch">def h2ch</a></li>
+            <li><a class="toctree-l4" href="#def-h2chh-e">def h2ch(h, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-makestylestylenone">def makeStyle(style=None)</a></li>
+            <li><a class="toctree-l4" href="#def-makestylestylenone-4242kwargs">def makeStyle(style=None, **kwargs)</a></li>
         
             <li><a class="toctree-l4" href="#def-newfst-enone-stylenone-wnone-hnone-fontsizenone">def newFS(t, e=None, style=None, w=None, h=None, fontSize=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-point2d">def point2D</a></li>
+            <li><a class="toctree-l4" href="#def-point2dp">def point2D(p)</a></li>
         
-            <li><a class="toctree-l4" href="#def-point3d">def point3D</a></li>
+            <li><a class="toctree-l4" href="#def-point3dp">def point3D(p)</a></li>
         
-            <li><a class="toctree-l4" href="#def-pointoffset">def pointOffset</a></li>
+            <li><a class="toctree-l4" href="#def-pointoffsetpoint-offset">def pointOffset(point, offset)</a></li>
         
             <li><a class="toctree-l4" href="#def-setfillcolorc-fsnone-cmykfalse">def setFillColor(c, fs=None, cmyk=False)</a></li>
         
-            <li><a class="toctree-l4" href="#def-setgradient">def setGradient</a></li>
+            <li><a class="toctree-l4" href="#def-setgradientgradient-origin-e">def setGradient(gradient, origin, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-setshadow">def setShadow</a></li>
+            <li><a class="toctree-l4" href="#def-setshadoweshadow">def setShadow(eShadow)</a></li>
         
             <li><a class="toctree-l4" href="#def-setstrokecolorc-w1-fsnone-cmykfalse">def setStrokeColor(c, w=1, fs=None, cmyk=False)</a></li>
         
             <li><a class="toctree-l4" href="#def-uniqueidobjnone">def uniqueID(obj=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-w2cw">def w2cw</a></li>
+            <li><a class="toctree-l4" href="#def-w2cww-e">def w2cw(w, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-x2cx">def x2cx</a></li>
+            <li><a class="toctree-l4" href="#def-x2cxx-e">def x2cx(x, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-y2cy">def y2cy</a></li>
+            <li><a class="toctree-l4" href="#def-y2cyy-e">def y2cy(y, e)</a></li>
         
-            <li><a class="toctree-l4" href="#def-z2cz">def z2cz</a></li>
+            <li><a class="toctree-l4" href="#def-z2czz-e">def z2cz(z, e)</a></li>
         
         </ul>
     
@@ -853,8 +853,8 @@ If the argument is a string, the return value is the same object.  </p>
 If the argument is a string, the return value is the same object.  </p>
 <h3 id="class-timemark">class TimeMark</h3>
 <p>TimeMarks are used by elements to keep style attributes sorted in a time line.  </p>
-<h3 id="def-9595init9595">def __init__</h3>
-<h3 id="def-9595repr9595">def __repr__</h3>
+<h3 id="def-9595init9595self-t-style">def __init__(self, t, style)</h3>
+<h3 id="def-9595repr9595self">def __repr__(self)</h3>
 <h3 id="set-xaligns">set XALIGNS</h3>
 <p>set() -&gt; new empty set object<br />
 set(iterable) -&gt; new set object  </p>
@@ -882,17 +882,17 @@ set(iterable) -&gt; new set object  </p>
 set(iterable) -&gt; new set object  </p>
 <p>Build an unordered collection of unique elements.  </p>
 <h3 id="def-asformattedvalue-defaultnone">def asFormatted(value, default=None)</h3>
-<h3 id="def-cd2d">def cd2d</h3>
-<h3 id="def-ch2h">def ch2h</h3>
-<h3 id="def-cw2w">def cw2w</h3>
-<h3 id="def-cx2x">def cx2x</h3>
-<h3 id="def-cy2y">def cy2y</h3>
+<h3 id="def-cd2dcd-e">def cd2d(cd, e)</h3>
+<h3 id="def-ch2hch-e">def ch2h(ch, e)</h3>
+<h3 id="def-cw2wcw-e">def cw2w(cw, e)</h3>
+<h3 id="def-cx2xcx-e">def cx2x(cx, e)</h3>
+<h3 id="def-cy2ycy-e">def cy2y(cy, e)</h3>
 <p>Transform from column y value to y value, using the e.css for colunn values.  </p>
-<h3 id="def-cz2z">def cz2z</h3>
-<h3 id="def-d2cd">def d2cd</h3>
+<h3 id="def-cz2zcz-e">def cz2z(cz, e)</h3>
+<h3 id="def-d2cdd-e">def d2cd(d, e)</h3>
 <h3 id="instance-division">instance division</h3>
-<h3 id="def-h2ch">def h2ch</h3>
-<h3 id="def-makestylestylenone">def makeStyle(style=None)</h3>
+<h3 id="def-h2chh-e">def h2ch(h, e)</h3>
+<h3 id="def-makestylestylenone-4242kwargs">def makeStyle(style=None, **kwargs)</h3>
 <p>Make style from a copy of style dict (providing all necessary default values for the<br />
 element to operate) and then overwrite these values with any specific arguments.<br />
 If style is None, then create a new style dict. In that case all the element style values need<br />
@@ -902,28 +902,28 @@ to be defined by argument. The calling element must test if its minimum set<br /
 <p>Answer a formatted string from valid attributes in Style. Set all values after testing<br />
 their existence, so they can inherit from previous style formats.<br />
 If target width w or height w is defined, then the fontSize is scaled to make the string fit w or h.  </p>
-<h3 id="def-point2d">def point2D</h3>
+<h3 id="def-point2dp">def point2D(p)</h3>
 <p>Answer the 2D origin as combination of p and offset.  </p>
-<h3 id="def-point3d">def point3D</h3>
+<h3 id="def-point3dp">def point3D(p)</h3>
 <p>Answer p as 3D point. If it already is a list of 3 elements, then don't change<br />
 and answer the original.  </p>
-<h3 id="def-pointoffset">def pointOffset</h3>
+<h3 id="def-pointoffsetpoint-offset">def pointOffset(point, offset)</h3>
 <p>Answer new 3D point, shifted by offset.  </p>
 <h3 id="def-setfillcolorc-fsnone-cmykfalse">def setFillColor(c, fs=None, cmyk=False)</h3>
 <p>Set the color for global or the color of the formatted string.  </p>
-<h3 id="def-setgradient">def setGradient</h3>
+<h3 id="def-setgradientgradient-origin-e">def setGradient(gradient, origin, e)</h3>
 <p>Define the gradient call to match the size of element e., Gradient position<br />
 is from the origin of the page, so we need the current origin of e.  </p>
-<h3 id="def-setshadow">def setShadow</h3>
+<h3 id="def-setshadoweshadow">def setShadow(eShadow)</h3>
 <h3 id="def-setstrokecolorc-w1-fsnone-cmykfalse">def setStrokeColor(c, w=1, fs=None, cmyk=False)</h3>
 <p>Set global stroke color or the color of the formatted string.  </p>
 <h3 id="def-uniqueidobjnone">def uniqueID(obj=None)</h3>
-<h3 id="def-w2cw">def w2cw</h3>
-<h3 id="def-x2cx">def x2cx</h3>
+<h3 id="def-w2cww-e">def w2cw(w, e)</h3>
+<h3 id="def-x2cxx-e">def x2cx(x, e)</h3>
 <p>Transform from y value to column y value, using the e.css for colunn values.  </p>
-<h3 id="def-y2cy">def y2cy</h3>
+<h3 id="def-y2cyy-e">def y2cy(y, e)</h3>
 <p>Transform from y value to column y value, using the e.css for colunn values.  </p>
-<h3 id="def-z2cz">def z2cz</h3>
+<h3 id="def-z2czz-e">def z2cz(z, e)</h3>
 <p>Transform from z value to column z value, using the e.css for colunn values.  </p>
               
             </div>

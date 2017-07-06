@@ -437,15 +437,15 @@
         
             <li><a class="toctree-l4" href="#class-fontinfo">class FontInfo</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-ttfont">def __init__(self, ttFont)</a></li>
         
             <li><a class="toctree-l4" href="#wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</a></li>
         
-            <li><a class="toctree-l4" href="#def-95getnametableentry">def _getNameTableEntry</a></li>
+            <li><a class="toctree-l4" href="#def-95getnametableentryself-nameid">def _getNameTableEntry(self, nameId)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95getotlfeatures">def _getOTLFeatures</a></li>
+            <li><a class="toctree-l4" href="#def-95getotlfeaturesself-tabletag">def _getOTLFeatures(self, tableTag)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95get95metrics">def _get_metrics</a></li>
+            <li><a class="toctree-l4" href="#def-95get95metricsself">def _get_metrics(self)</a></li>
         
             <li><a class="toctree-l4" href="#fonttoolboxobjectsfontinfocached95property-ascender">fonttoolbox.objects.fontinfo.cached_property ascender</a></li>
         
@@ -515,27 +515,27 @@
         
             <li><a class="toctree-l4" href="#class-ttfont">class TTFont</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595getitem9595">def __getitem__</a></li>
+            <li><a class="toctree-l4" href="#def-9595getitem9595self-tag">def __getitem__(self, tag)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595init9595self-filenone-res_name_or_indexnone-sfntversion-flavornone-checkchecksumsfalse-verbosenone-recalcbboxestrue-allowvidfalse-ignoredecompileerrorsfalse-recalctimestamptrue-fontnumber-1-lazynone-quietnone">def __init__(self, file=None, res_name_or_index=None, sfntVersion=   , flavor=None, checkChecksums=False, verbose=None, recalcBBoxes=True, allowVID=False, ignoreDecompileErrors=False, recalcTimestamp=True, fontNumber=-1, lazy=None, quiet=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595len9595">def __len__</a></li>
+            <li><a class="toctree-l4" href="#def-9595len9595self">def __len__(self)</a></li>
         
             <li><a class="toctree-l4" href="#wrapper95descriptor-9595repr9595_1">wrapper_descriptor __repr__</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595setitem9595">def __setitem__</a></li>
+            <li><a class="toctree-l4" href="#def-9595setitem9595self-tag-table">def __setitem__(self, tag, table)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95buildreverseglyphorderdict">def _buildReverseGlyphOrderDict</a></li>
+            <li><a class="toctree-l4" href="#def-95buildreverseglyphorderdictself">def _buildReverseGlyphOrderDict(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95getglyphnamesfromcmap">def _getGlyphNamesFromCmap</a></li>
+            <li><a class="toctree-l4" href="#def-95getglyphnamesfromcmapself">def _getGlyphNamesFromCmap(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95makeglyphname">def _makeGlyphName</a></li>
+            <li><a class="toctree-l4" href="#def-95makeglyphnamecodepoint">def _makeGlyphName(codepoint)</a></li>
         
             <li><a class="toctree-l4" href="#def-95tabletoxmlself-writer-tag-progress-quietnone">def _tableToXML(self, writer, tag, progress, quiet=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-95writetable">def _writeTable</a></li>
+            <li><a class="toctree-l4" href="#def-95writetableself-tag-writer-done">def _writeTable(self, tag, writer, done)</a></li>
         
-            <li><a class="toctree-l4" href="#def-close">def close</a></li>
+            <li><a class="toctree-l4" href="#def-closeself">def close(self)</a></li>
         
             <li><a class="toctree-l4" href="#def-getself-tag-defaultnone">def get(self, tag, default=None)</a></li>
         
@@ -543,33 +543,33 @@
         
             <li><a class="toctree-l4" href="#def-getglyphnameself-glyphid-requirerealfalse">def getGlyphName(self, glyphID, requireReal=False)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getglyphnames">def getGlyphNames</a></li>
+            <li><a class="toctree-l4" href="#def-getglyphnamesself">def getGlyphNames(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getglyphnames2">def getGlyphNames2</a></li>
+            <li><a class="toctree-l4" href="#def-getglyphnames2self">def getGlyphNames2(self)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getglyphorder">def getGlyphOrder</a></li>
+            <li><a class="toctree-l4" href="#def-getglyphorderself">def getGlyphOrder(self)</a></li>
         
             <li><a class="toctree-l4" href="#def-getglyphsetself-prefercfftrue">def getGlyphSet(self, preferCFF=True)</a></li>
         
             <li><a class="toctree-l4" href="#def-getreverseglyphmapself-rebuildfalse">def getReverseGlyphMap(self, rebuild=False)</a></li>
         
-            <li><a class="toctree-l4" href="#def-gettabledata">def getTableData</a></li>
+            <li><a class="toctree-l4" href="#def-gettabledataself-tag">def getTableData(self, tag)</a></li>
         
-            <li><a class="toctree-l4" href="#def-has95key">def has_key</a></li>
+            <li><a class="toctree-l4" href="#def-has95keyself-tag">def has_key(self, tag)</a></li>
         
             <li><a class="toctree-l4" href="#def-importxmlself-fileorpath-progressnone-quietnone">def importXML(self, fileOrPath, progress=None, quiet=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isloaded">def isLoaded</a></li>
+            <li><a class="toctree-l4" href="#def-isloadedself-tag">def isLoaded(self, tag)</a></li>
         
-            <li><a class="toctree-l4" href="#def-keys">def keys</a></li>
+            <li><a class="toctree-l4" href="#def-keysself">def keys(self)</a></li>
         
             <li><a class="toctree-l4" href="#def-savexmlself-fileorpath-progressnone-quietnone-tablesnone-skiptablesnone-splittablesfalse-disassembleinstructionstrue-bitmapglyphdataformatraw-newlinestrnone">def saveXML(self, fileOrPath, progress=None, quiet=None, tables=None, skipTables=None, splitTables=False, disassembleInstructions=True, bitmapGlyphDataFormat=raw, newlinestr=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-setglyphorder">def setGlyphOrder</a></li>
+            <li><a class="toctree-l4" href="#def-setglyphorderself-glyphorder">def setGlyphOrder(self, glyphOrder)</a></li>
         
             <li><a class="toctree-l4" href="#class-cached95property">class cached_property</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595_1">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-func">def __init__(self, func)</a></li>
         
             <li><a class="toctree-l4" href="#wrapper95descriptor-9595repr9595_2">wrapper_descriptor __repr__</a></li>
         
@@ -688,12 +688,12 @@
 <h3 id="class-fontinfo">class FontInfo</h3>
 <p>Read-only access to font information, such as names, character set and supported<br />
 OpenType features.  </p>
-<h3 id="def-9595init9595">def __init__</h3>
+<h3 id="def-9595init9595self-ttfont">def __init__(self, ttFont)</h3>
 <h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
 <p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
-<h3 id="def-95getnametableentry">def _getNameTableEntry</h3>
-<h3 id="def-95getotlfeatures">def _getOTLFeatures</h3>
-<h3 id="def-95get95metrics">def _get_metrics</h3>
+<h3 id="def-95getnametableentryself-nameid">def _getNameTableEntry(self, nameId)</h3>
+<h3 id="def-95getotlfeaturesself-tabletag">def _getOTLFeatures(self, tableTag)</h3>
+<h3 id="def-95get95metricsself">def _get_metrics(self)</h3>
 <p>Small collection of font metrics info data as dictionary.  </p>
 <h3 id="fonttoolboxobjectsfontinfocached95property-ascender">fonttoolbox.objects.fontinfo.cached_property ascender</h3>
 <h3 id="fonttoolboxobjectsfontinfocached95property-capheight">fonttoolbox.objects.fontinfo.cached_property capHeight</h3>
@@ -734,7 +734,7 @@ OpenType features.  </p>
     a convenient way of accessing tables.<br />
     Tables will be only decompiled when necessary, ie. when they're actually<br />
     accessed. This means that simple operations can be extremely fast.  </p>
-<h3 id="def-9595getitem9595">def __getitem__</h3>
+<h3 id="def-9595getitem9595self-tag">def __getitem__(self, tag)</h3>
 <h3 id="def-9595init9595self-filenone-res_name_or_indexnone-sfntversion-flavornone-checkchecksumsfalse-verbosenone-recalcbboxestrue-allowvidfalse-ignoredecompileerrorsfalse-recalctimestamptrue-fontnumber-1-lazynone-quietnone">def __init__(self, file=None, res_name_or_index=None, sfntVersion=   , flavor=None, checkChecksums=False, verbose=None, recalcBBoxes=True, allowVID=False, ignoreDecompileErrors=False, recalcTimestamp=True, fontNumber=-1, lazy=None, quiet=None)</h3>
 <p>The constructor can be called with a few different arguments.<br />
         When reading a font from disk, 'file' should be either a pathname<br />
@@ -789,28 +789,28 @@ OpenType features.  </p>
     access only.  If it is set to False, many data structures are loaded  
     immediately.  The default is lazy=None which is somewhere in between.
 </code></pre>
-<h3 id="def-9595len9595">def __len__</h3>
+<h3 id="def-9595len9595self">def __len__(self)</h3>
 <h3 id="wrapper95descriptor-9595repr9595_1">wrapper_descriptor __repr__</h3>
 <p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
-<h3 id="def-9595setitem9595">def __setitem__</h3>
-<h3 id="def-95buildreverseglyphorderdict">def _buildReverseGlyphOrderDict</h3>
-<h3 id="def-95getglyphnamesfromcmap">def _getGlyphNamesFromCmap</h3>
-<h3 id="def-95makeglyphname">def _makeGlyphName</h3>
+<h3 id="def-9595setitem9595self-tag-table">def __setitem__(self, tag, table)</h3>
+<h3 id="def-95buildreverseglyphorderdictself">def _buildReverseGlyphOrderDict(self)</h3>
+<h3 id="def-95getglyphnamesfromcmapself">def _getGlyphNamesFromCmap(self)</h3>
+<h3 id="def-95makeglyphnamecodepoint">def _makeGlyphName(codepoint)</h3>
 <h3 id="def-95tabletoxmlself-writer-tag-progress-quietnone">def _tableToXML(self, writer, tag, progress, quiet=None)</h3>
-<h3 id="def-95writetable">def _writeTable</h3>
+<h3 id="def-95writetableself-tag-writer-done">def _writeTable(self, tag, writer, done)</h3>
 <p>Internal helper function for self.save(). Keeps track of<br />
         inter-table dependencies.  </p>
-<h3 id="def-close">def close</h3>
+<h3 id="def-closeself">def close(self)</h3>
 <p>If we still have a reader object, close it.  </p>
 <h3 id="def-getself-tag-defaultnone">def get(self, tag, default=None)</h3>
 <h3 id="def-getglyphidself-glyphname-requirerealfalse">def getGlyphID(self, glyphName, requireReal=False)</h3>
 <h3 id="def-getglyphnameself-glyphid-requirerealfalse">def getGlyphName(self, glyphID, requireReal=False)</h3>
-<h3 id="def-getglyphnames">def getGlyphNames</h3>
+<h3 id="def-getglyphnamesself">def getGlyphNames(self)</h3>
 <p>Get a list of glyph names, sorted alphabetically.  </p>
-<h3 id="def-getglyphnames2">def getGlyphNames2</h3>
+<h3 id="def-getglyphnames2self">def getGlyphNames2(self)</h3>
 <p>Get a list of glyph names, sorted alphabetically,<br />
         but not case sensitive.  </p>
-<h3 id="def-getglyphorder">def getGlyphOrder</h3>
+<h3 id="def-getglyphorderself">def getGlyphOrder(self)</h3>
 <h3 id="def-getglyphsetself-prefercfftrue">def getGlyphSet(self, preferCFF=True)</h3>
 <p>Return a generic GlyphSet, which is a dict-like object<br />
         mapping glyph names to glyph objects. The returned glyph objects<br />
@@ -822,16 +822,16 @@ OpenType features.  </p>
     the 'preferCFF' argument to specify which one should be taken.
 </code></pre>
 <h3 id="def-getreverseglyphmapself-rebuildfalse">def getReverseGlyphMap(self, rebuild=False)</h3>
-<h3 id="def-gettabledata">def getTableData</h3>
+<h3 id="def-gettabledataself-tag">def getTableData(self, tag)</h3>
 <p>Returns raw table data, whether compiled or directly read from disk.  </p>
-<h3 id="def-has95key">def has_key</h3>
+<h3 id="def-has95keyself-tag">def has_key(self, tag)</h3>
 <h3 id="def-importxmlself-fileorpath-progressnone-quietnone">def importXML(self, fileOrPath, progress=None, quiet=None)</h3>
 <p>Import a TTX file (an XML-based text format), so as to recreate<br />
         a font object.  </p>
-<h3 id="def-isloaded">def isLoaded</h3>
+<h3 id="def-isloadedself-tag">def isLoaded(self, tag)</h3>
 <p>Return true if the table identified by 'tag' has been<br />
         decompiled and loaded into memory.  </p>
-<h3 id="def-keys">def keys</h3>
+<h3 id="def-keysself">def keys(self)</h3>
 <h3 id="def-savexmlself-fileorpath-progressnone-quietnone-tablesnone-skiptablesnone-splittablesfalse-disassembleinstructionstrue-bitmapglyphdataformatraw-newlinestrnone">def saveXML(self, fileOrPath, progress=None, quiet=None, tables=None, skipTables=None, splitTables=False, disassembleInstructions=True, bitmapGlyphDataFormat=raw, newlinestr=None)</h3>
 <p>Export the font as TTX (an XML-based text file), or as a series of text<br />
         files when splitTables is true. In the latter case, the 'fileOrPath'<br />
@@ -839,12 +839,12 @@ OpenType features.  </p>
         The 'tables' argument must either be false (dump all tables) or a<br />
         list of tables to dump. The 'skipTables' argument may be a list of tables<br />
         to skip, but only when the 'tables' argument is false.  </p>
-<h3 id="def-setglyphorder">def setGlyphOrder</h3>
+<h3 id="def-setglyphorderself-glyphorder">def setGlyphOrder(self, glyphOrder)</h3>
 <h3 id="class-cached95property">class cached_property</h3>
 <p>A property that is only computed once per instance and then replaces itself<br />
 with an ordinary attribute. Deleting the attribute resets the property.<br />
 Source: https://github.com/bottlepy/bottle/commit/fa7733e075da0d790d809aa3d2f53071897e6f76  </p>
-<h3 id="def-9595init9595_1">def __init__</h3>
+<h3 id="def-9595init9595self-func">def __init__(self, func)</h3>
 <h3 id="wrapper95descriptor-9595repr9595_2">wrapper_descriptor __repr__</h3>
 <p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
 <h3 id="def-getbestcmapfont-cmappreferences3-10-3-1-0-3">def getBestCmap(font, cmapPreferences=((3, 10), (3, 1), (0, 3)))</h3>

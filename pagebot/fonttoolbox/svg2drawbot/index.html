@@ -361,15 +361,15 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#def-addvaluetopoints">def addValueToPoints</a></li>
+            <li><a class="toctree-l4" href="#def-addvaluetopointsvaluestring-points">def addValueToPoints(valuestring, points)</a></li>
         
-            <li><a class="toctree-l4" href="#def-contourtopath">def contourToPath</a></li>
+            <li><a class="toctree-l4" href="#def-contourtopathcontour">def contourToPath(contour)</a></li>
         
-            <li><a class="toctree-l4" href="#def-copypoint">def copyPoint</a></li>
+            <li><a class="toctree-l4" href="#def-copypointpreviouspoint-currentpoint">def copyPoint(previousPoint, currentPoint)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getrelative">def getRelative</a></li>
+            <li><a class="toctree-l4" href="#def-getrelativepoints-pprevious">def getRelative(points, pPrevious)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getsvgpaths">def getSvgPaths</a></li>
+            <li><a class="toctree-l4" href="#def-getsvgpathsfilename">def getSvgPaths(fileName)</a></li>
         
             <li><a class="toctree-l4" href="#module-minidom">module minidom</a></li>
         
@@ -380,9 +380,9 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#def-parsesvg">def parseSVG</a></li>
+            <li><a class="toctree-l4" href="#def-parsesvgstrings">def parseSVG(strings)</a></li>
         
-            <li><a class="toctree-l4" href="#def-reflect">def reflect</a></li>
+            <li><a class="toctree-l4" href="#def-reflectpoint0-point1">def reflect(point0, point1)</a></li>
         
         </ul>
     
@@ -568,17 +568,17 @@
             <div class="section">
               
                 <h1 id="fonttoolboxsvg2drawbot">fonttoolbox.svg2drawbot</h1>
-<h3 id="def-addvaluetopoints">def addValueToPoints</h3>
+<h3 id="def-addvaluetopointsvaluestring-points">def addValueToPoints(valuestring, points)</h3>
 <p>Adds the collected character string to the last coordinate in the points<br />
 list.  </p>
-<h3 id="def-contourtopath">def contourToPath</h3>
+<h3 id="def-contourtopathcontour">def contourToPath(contour)</h3>
 <p>Converts SVG contour to a path in DrawBot.  </p>
-<h3 id="def-copypoint">def copyPoint</h3>
+<h3 id="def-copypointpreviouspoint-currentpoint">def copyPoint(previousPoint, currentPoint)</h3>
 <p>Deep copies previous point.  </p>
-<h3 id="def-getrelative">def getRelative</h3>
+<h3 id="def-getrelativepoints-pprevious">def getRelative(points, pPrevious)</h3>
 <p>Calculates absolute coordinates by adding the previous point to the<br />
 relative coordinates.  </p>
-<h3 id="def-getsvgpaths">def getSvgPaths</h3>
+<h3 id="def-getsvgpathsfilename">def getSvgPaths(fileName)</h3>
 <p>Extracts path strings from XML.  </p>
 <h3 id="module-minidom">module minidom</h3>
 <p>Simple implementation of the Level 1 DOM.  </p>
@@ -593,10 +593,10 @@ relative coordinates.  </p>
 interface  </li>
 <li>SAX 2 namespaces  </li>
 </ul>
-<h3 id="def-parsesvg">def parseSVG</h3>
+<h3 id="def-parsesvgstrings">def parseSVG(strings)</h3>
 <p>Takes a list of path strings and converts them to a list of SVG-command<br />
 tuples.  </p>
-<h3 id="def-reflect">def reflect</h3>
+<h3 id="def-reflectpoint0-point1">def reflect(point0, point1)</h3>
 <p>Reflects off-curve control point in relation to on-curve one. Used for<br />
 smooth curves.  </p>
               
