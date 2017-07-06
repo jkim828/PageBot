@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/howto/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,31 +21,31 @@
         
     <url>
      <loc>/pagebot/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/composer/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/document/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/style/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/typesetter/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -55,7 +55,7 @@
         
     <url>
      <loc>/pagebot/md/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -65,79 +65,79 @@
         
     <url>
      <loc>/pagebot/elements/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/element/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbgalley/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbimage/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbline/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pboval/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbpage/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbpolygon/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbrect/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbruler/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbtable/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbtext/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/pbtextbox/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -147,19 +147,19 @@
         
     <url>
      <loc>/pagebot/elements/paths/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/paths/glyphpath/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/paths/pbpath/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -169,43 +169,43 @@
         
     <url>
      <loc>/pagebot/elements/variablefonts/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/variablefonts/variablecircle/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/variablefonts/variablecube/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/variablefonts/variablecube2/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/variablefonts/variableeditor/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/variablefonts/variableglyphs/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/variablefonts/variablescatter/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -215,49 +215,49 @@
         
     <url>
      <loc>/pagebot/elements/views/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/views/defaultview/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/views/htmlcssview/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/views/kirbyview/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/views/singleview/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/views/spreadview/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/views/thumbview/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/elements/views/view/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -267,13 +267,13 @@
         
     <url>
      <loc>/pagebot/interaction/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/interaction/variables/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -283,37 +283,37 @@
         
     <url>
      <loc>/pagebot/publications/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/publications/pagebotdoc/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/publications/poster/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/publications/publication/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/publications/singlepage/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/publications/typespecimen/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -323,49 +323,49 @@
         
     <url>
      <loc>/pagebot/toolbox/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/toolbox/dating/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/toolbox/drawparts/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/toolbox/markers/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/toolbox/mathematics/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/toolbox/timemark/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/toolbox/transform3d/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/toolbox/transformer/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -375,49 +375,49 @@
         
     <url>
      <loc>/pagebot/fonttoolbox/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/designspacemodel/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/installfont/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/otlTools/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/svg2drawbot/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/ttftools/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/varfontdesignspace/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/variablefontbuilder/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -427,49 +427,49 @@
         
     <url>
      <loc>/pagebot/fonttoolbox/analyzers/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/analyzers/contour/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/analyzers/glyphanalyzer-TNBITS/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/analyzers/glyphanalyzer/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/analyzers/point/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/analyzers/pointcontext/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/analyzers/pointcontextlist/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/analyzers/segment/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -479,31 +479,31 @@
         
     <url>
      <loc>/pagebot/fonttoolbox/objects/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/objects/family/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/objects/font/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/objects/fontinfo/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/objects/glyph/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -513,19 +513,19 @@
         
     <url>
      <loc>/pagebot/fonttoolbox/unicodes/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/unicodes/unicoderanges/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/fonttoolbox/unicodes/unicoderangesdata/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -535,43 +535,43 @@
         
     <url>
      <loc>/pagebot/conditions/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/conditions/align/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/conditions/condition/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/conditions/floating/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/conditions/flow/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/conditions/score/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/pagebot/conditions/text/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -580,7 +580,7 @@
     
     <url>
      <loc>/license/</loc>
-     <lastmod>2017-07-05</lastmod>
+     <lastmod>2017-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

@@ -176,7 +176,7 @@
         
             <li><a class="toctree-l4" href="#set-zaligns">set ZALIGNS</a></li>
         
-            <li><a class="toctree-l4" href="#def-asformatted">def asFormatted</a></li>
+            <li><a class="toctree-l4" href="#def-asformattedvalue-defaultnone">def asFormatted(value, default=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-cd2d">def cd2d</a></li>
         
@@ -196,9 +196,9 @@
         
             <li><a class="toctree-l4" href="#def-h2ch">def h2ch</a></li>
         
-            <li><a class="toctree-l4" href="#def-makestyle">def makeStyle</a></li>
+            <li><a class="toctree-l4" href="#def-makestylestylenone">def makeStyle(style=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-newfs">def newFS</a></li>
+            <li><a class="toctree-l4" href="#def-newfst-enone-stylenone-wnone-hnone-fontsizenone">def newFS(t, e=None, style=None, w=None, h=None, fontSize=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-point2d">def point2D</a></li>
         
@@ -206,15 +206,15 @@
         
             <li><a class="toctree-l4" href="#def-pointoffset">def pointOffset</a></li>
         
-            <li><a class="toctree-l4" href="#def-setfillcolor">def setFillColor</a></li>
+            <li><a class="toctree-l4" href="#def-setfillcolorc-fsnone-cmykfalse">def setFillColor(c, fs=None, cmyk=False)</a></li>
         
             <li><a class="toctree-l4" href="#def-setgradient">def setGradient</a></li>
         
             <li><a class="toctree-l4" href="#def-setshadow">def setShadow</a></li>
         
-            <li><a class="toctree-l4" href="#def-setstrokecolor">def setStrokeColor</a></li>
+            <li><a class="toctree-l4" href="#def-setstrokecolorc-w1-fsnone-cmykfalse">def setStrokeColor(c, w=1, fs=None, cmyk=False)</a></li>
         
-            <li><a class="toctree-l4" href="#def-uniqueid">def uniqueID</a></li>
+            <li><a class="toctree-l4" href="#def-uniqueidobjnone">def uniqueID(obj=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-w2cw">def w2cw</a></li>
         
@@ -881,7 +881,7 @@ set(iterable) -&gt; new set object  </p>
 <p>set() -&gt; new empty set object<br />
 set(iterable) -&gt; new set object  </p>
 <p>Build an unordered collection of unique elements.  </p>
-<h3 id="def-asformatted">def asFormatted</h3>
+<h3 id="def-asformattedvalue-defaultnone">def asFormatted(value, default=None)</h3>
 <h3 id="def-cd2d">def cd2d</h3>
 <h3 id="def-ch2h">def ch2h</h3>
 <h3 id="def-cw2w">def cw2w</h3>
@@ -892,13 +892,13 @@ set(iterable) -&gt; new set object  </p>
 <h3 id="def-d2cd">def d2cd</h3>
 <h3 id="instance-division">instance division</h3>
 <h3 id="def-h2ch">def h2ch</h3>
-<h3 id="def-makestyle">def makeStyle</h3>
+<h3 id="def-makestylestylenone">def makeStyle(style=None)</h3>
 <p>Make style from a copy of style dict (providing all necessary default values for the<br />
 element to operate) and then overwrite these values with any specific arguments.<br />
 If style is None, then create a new style dict. In that case all the element style values need<br />
 to be defined by argument. The calling element must test if its minimum set<br />
 (such as self.w and self.h) are properly defined.  </p>
-<h3 id="def-newfs">def newFS</h3>
+<h3 id="def-newfst-enone-stylenone-wnone-hnone-fontsizenone">def newFS(t, e=None, style=None, w=None, h=None, fontSize=None)</h3>
 <p>Answer a formatted string from valid attributes in Style. Set all values after testing<br />
 their existence, so they can inherit from previous style formats.<br />
 If target width w or height w is defined, then the fontSize is scaled to make the string fit w or h.  </p>
@@ -909,15 +909,15 @@ If target width w or height w is defined, then the fontSize is scaled to make th
 and answer the original.  </p>
 <h3 id="def-pointoffset">def pointOffset</h3>
 <p>Answer new 3D point, shifted by offset.  </p>
-<h3 id="def-setfillcolor">def setFillColor</h3>
+<h3 id="def-setfillcolorc-fsnone-cmykfalse">def setFillColor(c, fs=None, cmyk=False)</h3>
 <p>Set the color for global or the color of the formatted string.  </p>
 <h3 id="def-setgradient">def setGradient</h3>
 <p>Define the gradient call to match the size of element e., Gradient position<br />
 is from the origin of the page, so we need the current origin of e.  </p>
 <h3 id="def-setshadow">def setShadow</h3>
-<h3 id="def-setstrokecolor">def setStrokeColor</h3>
+<h3 id="def-setstrokecolorc-w1-fsnone-cmykfalse">def setStrokeColor(c, w=1, fs=None, cmyk=False)</h3>
 <p>Set global stroke color or the color of the formatted string.  </p>
-<h3 id="def-uniqueid">def uniqueID</h3>
+<h3 id="def-uniqueidobjnone">def uniqueID(obj=None)</h3>
 <h3 id="def-w2cw">def w2cw</h3>
 <h3 id="def-x2cx">def x2cx</h3>
 <p>Transform from y value to column y value, using the e.css for colunn values.  </p>

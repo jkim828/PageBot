@@ -62,6 +62,8 @@
         
             <li><a class="toctree-l3" href="#functions">Functions</a></li>
         
+            <li><a class="toctree-l3" href="#sub-functions">Sub-functions</a></li>
+        
             <li><a class="toctree-l3" href="#license">License</a></li>
         
             <li><a class="toctree-l3" href="#future-developments">Future developments</a></li>
@@ -554,8 +556,10 @@
               
                 <h1 id="pagebot-version-05">PageBot Version 0.5</h1>
 <h2 id="what-is-pagebot">What is PageBot?</h2>
-<p>As short description PageBot is a scripted page layout program, available as Python library inside <a href="http:/drawbot.com">@DrawBotApp</a> and as a collection of stand-alone desktop applications that can be created from it.
-PageBot is an initiative of <a href="http:/typenetwork.com">Type Network</a> to create a system for scriptable applications generating high quality typographic documents.</p>
+<p>As short description PageBot is a scripted page layout program, available as Python library inside <a href="http:/drawbot.com">@DrawBotApp</a> and as a collection of stand-alone desktop applications that can be created from it.</p>
+<p>PageBot is an initiative of <a href="http:/typenetwork.com">Type Network</a> to create a system for scriptable applications generating high quality typographic documents, supporting high quality fonts.</p>
+<p>PageBot is available under MIT Open Source license from <a href="https://github.com/TypeNetwork/PageBot">github.com/TypeNetwork/PageBot</a>.</p>
+<p>An automatic generated manual is at <a href="https://typenetwork.github.io/PageBot/">typenetwork.github.io/PageBot</a>.</p>
 <h2 id="current-status">Current status</h2>
 <p>Although released as Open Source under MIT license, PageBot is still in testing alpha phase. More examples need to be created to fully test all functions. For further development the contribution of others is highly appreciated.</p>
 <p>Known bugs and missing functions are:</p>
@@ -564,16 +568,18 @@ PageBot is an initiative of <a href="http:/typenetwork.com">Type Network</a> to 
 <li>Reading XML text from markdown is missing Document styles.</li>
 <li>Better management of text baselines on pages and throughout documents.</li>
 <li>More useful views (representations of Documents) need to be developed and tested.</li>
-<li>Not all examples currently work properly.</li>
+<li>Not all scripts in the Examples currently work properly, due to late changes in the PageBot core.</li>
 </ul>
 <h2 id="functions">Functions</h2>
-<p>An overview of functions reads like this:</p>
+<p>An overview of PageBot functions reads like this:</p>
 <ul>
 <li>Various types of Element objects can be placed on a page or inside other Element objects.</li>
 <li>Grids can be defined through style measurements and views.</li>
 <li>Page templates (or templates for any other element combination) can be defined and applied.</li>
 <li>Automatic layout conditions for elements, like even distribution across or floating down parent elements.</li>
+<li>Specialized views on a Document, such as plain pages, spreads and other layout of page groups, optional with crop-marks, registration-mark, color-strips, file name, etc. The result of all views can be placed on pages as illustration.</li>
 <li>Graphics - using all Drawbot drawing tools.</li>
+<li>All image filtering supplied by Drawbot ImageObject.</li>
 <li>Access and modify images on pixel-level.</li>
 <li>Cascading styles, where Element values inherit from parent Elements, similar to CSS behavior.   </li>
 <li>Text flows are using the OSX FormattedString for all typographic parameters.</li>
@@ -585,12 +591,18 @@ PageBot is an initiative of <a href="http:/typenetwork.com">Type Network</a> to 
 <li>Tabular setting</li>
 <li>Text Flow from one element to another. </li>
 <li>Variable Font UI access and instance creation, all of Python library "fonttools" available.</li>
+<li>Access to all font metrics.</li>
 <li>Outline Font access modification.</li>
-<li>Space and kern access and modifcation.</li>
+<li>Space, groups and kerning access and modifcation.</li>
 <li>OT layout and feature access and modification.</li>
 <li>3D Positioning of points, for future usage.</li>
 <li>Motion Graphics, export as animated .gif and .mov files, keyframing timeline, </li>
 <li>Export to PDF, PNG, JPG, SVG, (animated) GIF, MOV, XML, through programmable views.</li>
+</ul>
+<h2 id="sub-functions">Sub-functions</h2>
+<ul>
+<li>Building online documents, pre-compiles all used images into formats that can be displayed by browsers, such as PNG, JPG or SVG.</li>
+<li>Creating automatic table of contents, image reference, quote reference, etc. from composed documents.</li>
 </ul>
 <h2 id="license">License</h2>
 <p>Code, Open source under MIT conditions &amp; All source code available.</p>
@@ -599,11 +611,14 @@ PageBot is an initiative of <a href="http:/typenetwork.com">Type Network</a> to 
 <li>Element classes supporting various types of graphs, info-graphics, maps, PageBot document layout, Variable Font axes layout, font metrics.</li>
 <li>Views for thumbnail page overview, combined booklet-sheets for print, site-maps, etc.</li>
 <li>Add export of text to MarkDown .md files.</li>
-<li>Add export to HTML/CSS/JS for specific designs of web pages, such as Kirby.</li>
-<li>Export to Ruby/Sketchup data files.</li>
-<li>Add export to Angular files.</li>
-<li>Export to InDesign® and Illustrator®, as close as possible to the native file format.</li>
+<li>Add export to online documents, such as HTML/CSS/JS for specific designs of web pages, such as Kirby.</li>
+<li>Export to WordPress® PHP sites.</li>
+<li>Export to Ruby®/Sketchup® data files.</li>
+<li>Add export to Angular® files.</li>
+<li>Export to InDesign® and Illustrator®, as close as possible translating PageBot elements to the native file format of these applications.</li>
 <li>Time line, definition and editing, length and fps.</li>
+<li>Integrate the PageBot manual builder with other export functions of the library.</li>
+<li>Add more unit-tests to guarantee the integrity of the library and output consistency.</li>
 </ul>
 <h2 id="types-of-publications-to-develop">Types of publications to develop</h2>
 <ul>
@@ -616,7 +631,7 @@ PageBot is an initiative of <a href="http:/typenetwork.com">Type Network</a> to 
 <li>Books</li>
 <li>Parametric corporate identities, including their styleguides, stationary and business card templates.</li>
 <li>Parametric advertizements (connecting to existing ad-systems)</li>
-<li>Single page websites</li>
+<li>Online documents, such as single page websites</li>
 <li>Wayfindng templates for signs and maps</li>
 <li>T-Shirt templates</li>
 <li>Templates with embedded information for graphic- and typographic education.</li>
@@ -667,5 +682,5 @@ PageBot is an initiative of <a href="http:/typenetwork.com">Type Network</a> to 
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-07-05 13:26:40
+Build Date UTC : 2017-07-06 11:50:30
 -->

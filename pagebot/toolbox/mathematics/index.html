@@ -336,9 +336,9 @@
         
             <li><a class="toctree-l4" href="#def-isodd">def isOdd</a></li>
         
-            <li><a class="toctree-l4" href="#def-lucasrange">def lucasRange</a></li>
+            <li><a class="toctree-l4" href="#def-lucasrangea-z-n-minnnone-maxnnone">def lucasRange(a, z, n, minN=None, maxN=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-normalize">def normalize</a></li>
+            <li><a class="toctree-l4" href="#def-normalizep-length1">def normalize(p, length=1)</a></li>
         
             <li><a class="toctree-l4" href="#classmethod-normalizedvector">classmethod normalizedVector</a></li>
         
@@ -601,6 +601,7 @@ intersect on infinite line lengths. See also:  </p>
 margin for float values, can be substituted by zero for integer<br />
 values.  </p>
 <h3 id="def-iseven">def isEven</h3>
+<p>import pagebot.toolbox.mathematics.*  </p>
 <pre><code>&gt;&gt;&gt; isEven(2)  
 True
 
@@ -614,7 +615,7 @@ True
 &gt;&gt;&gt; isOdd(2)  
 False
 </code></pre>
-<h3 id="def-lucasrange">def lucasRange</h3>
+<h3 id="def-lucasrangea-z-n-minnnone-maxnnone">def lucasRange(a, z, n, minN=None, maxN=None)</h3>
 <p>Answers the range stem widths for interpolation, according to<br />
 Lucas’ formula.  </p>
 <p>http://www.lucasfonts.com/about/interpolation-theory/<br />
@@ -629,7 +630,7 @@ maxN = optional maximum value if normalizing  </p>
 [0, 55, 127, 222, 346, 508, 721, 1000]  </p>
 <p>print Mathematics.lucasRange(32, 212, 8, 100, 200)<br />
 [100, 106, 113, 122, 135, 151, 172, 200]  </p>
-<h3 id="def-normalize">def normalize</h3>
+<h3 id="def-normalizep-length1">def normalize(p, length=1)</h3>
 <h3 id="classmethod-normalizedvector">classmethod normalizedVector</h3>
 <p>classmethod(function) -&gt; method  </p>
 <p>Convert a function to be a class method.  </p>

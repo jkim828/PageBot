@@ -257,11 +257,11 @@
         
             <li><a class="toctree-l4" href="#def-notnow95getflows">def NOTNOW_getFlows</a></li>
         
-            <li><a class="toctree-l4" href="#def-notnow95getnextflowbox">def NOTNOW_getNextFlowBox</a></li>
+            <li><a class="toctree-l4" href="#def-notnow95getnextflowboxself-tb-makenewtrue">def NOTNOW_getNextFlowBox(self, tb, makeNew=True)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595getitem9595">def __getitem__</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-wnone-hnone-parentnone">def __init__(self, w=None, h=None, parent=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595len9595">def __len__</a></li>
         
@@ -675,7 +675,7 @@
         
             <li><a class="toctree-l4" href="#def-appendtimemark">def appendTimeMark</a></li>
         
-            <li><a class="toctree-l4" href="#def-applytemplate">def applyTemplate</a></li>
+            <li><a class="toctree-l4" href="#def-applytemplateself-template-elementsnone">def applyTemplate(self, template, elements=None)</a></li>
         
             <li><a class="toctree-l4" href="#property-back">property back</a></li>
         
@@ -739,7 +739,7 @@
         
             <li><a class="toctree-l4" href="#def-clearelements">def clearElements</a></li>
         
-            <li><a class="toctree-l4" href="#def-css">def css</a></li>
+            <li><a class="toctree-l4" href="#def-cssself-name-defaultnone">def css(self, name, default=None)</a></li>
         
             <li><a class="toctree-l4" href="#property-cw">property cw</a></li>
         
@@ -755,9 +755,9 @@
         
             <li><a class="toctree-l4" href="#property-doc">property doc</a></li>
         
-            <li><a class="toctree-l4" href="#def-draw">def draw</a></li>
+            <li><a class="toctree-l4" href="#def-drawself-origin-view-drawelementstrue">def draw(self, origin, view, drawElements=True)</a></li>
         
-            <li><a class="toctree-l4" href="#def-drawarrow">def drawArrow</a></li>
+            <li><a class="toctree-l4" href="#def-drawarrowself-e-xs-ys-xt-yt-ontext1-startmarkerfalse-endmarkerfalse-fmsnone-fmfnone-fillnone-strokenone-strokewidthnone">def drawArrow(self, e, xs, ys, xt, yt, onText=1, startMarker=False, endMarker=False, fms=None, fmf=None, fill=None, stroke=None, strokeWidth=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-drawbaselinegrid">def drawBaselineGrid</a></li>
         
@@ -789,15 +789,15 @@
         
             <li><a class="toctree-l4" href="#def-drawpageregistrationmarks">def drawPageRegistrationMarks</a></li>
         
-            <li><a class="toctree-l4" href="#def-drawpages">def drawPages</a></li>
+            <li><a class="toctree-l4" href="#def-drawpagesself-pageselectionnone">def drawPages(self, pageSelection=None)</a></li>
         
             <li><a class="toctree-l4" href="#property-eid">property eId</a></li>
         
             <li><a class="toctree-l4" href="#property-elementids">property elementIds</a></li>
         
-            <li><a class="toctree-l4" href="#def-evaluate">def evaluate</a></li>
+            <li><a class="toctree-l4" href="#def-evaluateself-scorenone">def evaluate(self, score=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-export">def export</a></li>
+            <li><a class="toctree-l4" href="#def-exportself-filename-pageselectionnone-multipagetrue">def export(self, fileName, pageSelection=None, multiPage=True)</a></li>
         
             <li><a class="toctree-l4" href="#def-fit2bottom">def fit2Bottom</a></li>
         
@@ -855,13 +855,13 @@
         
             <li><a class="toctree-l4" href="#def-getelementsposition">def getElementsPosition</a></li>
         
-            <li><a class="toctree-l4" href="#def-getfloatbottomside">def getFloatBottomSide</a></li>
+            <li><a class="toctree-l4" href="#def-getfloatbottomsideself-previousonlytrue-tolerance0">def getFloatBottomSide(self, previousOnly=True, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getfloatleftside">def getFloatLeftSide</a></li>
+            <li><a class="toctree-l4" href="#def-getfloatleftsideself-previousonlytrue-tolerance0">def getFloatLeftSide(self, previousOnly=True, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getfloatrightside">def getFloatRightSide</a></li>
+            <li><a class="toctree-l4" href="#def-getfloatrightsideself-previousonlytrue-tolerance0">def getFloatRightSide(self, previousOnly=True, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-getfloattopside">def getFloatTopSide</a></li>
+            <li><a class="toctree-l4" href="#def-getfloattopsideself-previousonlytrue-tolerance0">def getFloatTopSide(self, previousOnly=True, tolerance=0)</a></li>
         
             <li><a class="toctree-l4" href="#def-getmaxsize">def getMaxSize</a></li>
         
@@ -895,107 +895,107 @@
         
             <li><a class="toctree-l4" href="#def-isbaselineontop">def isBaselineOnTop</a></li>
         
-            <li><a class="toctree-l4" href="#def-isbottomonbottom">def isBottomOnBottom</a></li>
+            <li><a class="toctree-l4" href="#def-isbottomonbottomself-tolerance0">def isBottomOnBottom(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isbottomonbottomside">def isBottomOnBottomSide</a></li>
+            <li><a class="toctree-l4" href="#def-isbottomonbottomsideself-tolerance0">def isBottomOnBottomSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isbottomonmiddle">def isBottomOnMiddle</a></li>
+            <li><a class="toctree-l4" href="#def-isbottomonmiddleself-tolerance0">def isBottomOnMiddle(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isbottomonmiddlesides">def isBottomOnMiddleSides</a></li>
+            <li><a class="toctree-l4" href="#def-isbottomonmiddlesidesself-tolerance0">def isBottomOnMiddleSides(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isbottomontop">def isBottomOnTop</a></li>
+            <li><a class="toctree-l4" href="#def-isbottomontopself-tolerance0">def isBottomOnTop(self, tolerance=0)</a></li>
         
             <li><a class="toctree-l4" href="#def-iscapheightontop">def isCapHeightOnTop</a></li>
         
-            <li><a class="toctree-l4" href="#def-iscenteroncenter">def isCenterOnCenter</a></li>
+            <li><a class="toctree-l4" href="#def-iscenteroncenterself-tolerance0">def isCenterOnCenter(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-iscenteroncentersides">def isCenterOnCenterSides</a></li>
+            <li><a class="toctree-l4" href="#def-iscenteroncentersidesself-tolerance0">def isCenterOnCenterSides(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-iscenteronleft">def isCenterOnLeft</a></li>
+            <li><a class="toctree-l4" href="#def-iscenteronleftself-tolerance0">def isCenterOnLeft(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-iscenteronleftside">def isCenterOnLeftSide</a></li>
+            <li><a class="toctree-l4" href="#def-iscenteronleftsideself-tolerance0">def isCenterOnLeftSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-iscenteronright">def isCenterOnRight</a></li>
+            <li><a class="toctree-l4" href="#def-iscenteronrightself-tolerance0">def isCenterOnRight(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-iscenteronrightside">def isCenterOnRightSide</a></li>
+            <li><a class="toctree-l4" href="#def-iscenteronrightsideself-tolerance0">def isCenterOnRightSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isfloatonbottom">def isFloatOnBottom</a></li>
+            <li><a class="toctree-l4" href="#def-isfloatonbottomself-tolerance0">def isFloatOnBottom(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isfloatonbottomside">def isFloatOnBottomSide</a></li>
+            <li><a class="toctree-l4" href="#def-isfloatonbottomsideself-tolerance0">def isFloatOnBottomSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isfloatonleft">def isFloatOnLeft</a></li>
+            <li><a class="toctree-l4" href="#def-isfloatonleftself-tolerance0">def isFloatOnLeft(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isfloatonleftside">def isFloatOnLeftSide</a></li>
+            <li><a class="toctree-l4" href="#def-isfloatonleftsideself-tolerance0">def isFloatOnLeftSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isfloatonright">def isFloatOnRight</a></li>
+            <li><a class="toctree-l4" href="#def-isfloatonrightself-tolerance0">def isFloatOnRight(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isfloatonrightside">def isFloatOnRightSide</a></li>
+            <li><a class="toctree-l4" href="#def-isfloatonrightsideself-tolerance0">def isFloatOnRightSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isfloatontop">def isFloatOnTop</a></li>
+            <li><a class="toctree-l4" href="#def-isfloatontopself-tolerance0">def isFloatOnTop(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isfloatontopside">def isFloatOnTopSide</a></li>
+            <li><a class="toctree-l4" href="#def-isfloatontopsideself-tolerance0">def isFloatOnTopSide(self, tolerance=0)</a></li>
         
             <li><a class="toctree-l4" href="#int-isflow">int isFlow</a></li>
         
-            <li><a class="toctree-l4" href="#def-isleftoncenter">def isLeftOnCenter</a></li>
+            <li><a class="toctree-l4" href="#def-isleftoncenterself-tolerance0">def isLeftOnCenter(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isleftoncentersides">def isLeftOnCenterSides</a></li>
+            <li><a class="toctree-l4" href="#def-isleftoncentersidesself-tolerance0">def isLeftOnCenterSides(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isleftonleft">def isLeftOnLeft</a></li>
+            <li><a class="toctree-l4" href="#def-isleftonleftself-tolerance0">def isLeftOnLeft(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isleftonleftside">def isLeftOnLeftSide</a></li>
+            <li><a class="toctree-l4" href="#def-isleftonleftsideself-tolerance0">def isLeftOnLeftSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isleftonright">def isLeftOnRight</a></li>
+            <li><a class="toctree-l4" href="#def-isleftonrightself-tolerance0">def isLeftOnRight(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-ismiddleonbottom">def isMiddleOnBottom</a></li>
+            <li><a class="toctree-l4" href="#def-ismiddleonbottomself-tolerance0">def isMiddleOnBottom(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-ismiddleonbottomside">def isMiddleOnBottomSide</a></li>
+            <li><a class="toctree-l4" href="#def-ismiddleonbottomsideself-tolerance0">def isMiddleOnBottomSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-ismiddleonmiddle">def isMiddleOnMiddle</a></li>
+            <li><a class="toctree-l4" href="#def-ismiddleonmiddleself-tolerance0">def isMiddleOnMiddle(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-ismiddleonmiddlesides">def isMiddleOnMiddleSides</a></li>
+            <li><a class="toctree-l4" href="#def-ismiddleonmiddlesidesself-tolerance0">def isMiddleOnMiddleSides(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-ismiddleontop">def isMiddleOnTop</a></li>
+            <li><a class="toctree-l4" href="#def-ismiddleontopself-tolerance0">def isMiddleOnTop(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-ismiddleontopside">def isMiddleOnTopSide</a></li>
+            <li><a class="toctree-l4" href="#def-ismiddleontopsideself-tolerance0">def isMiddleOnTopSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginonbottom">def isOriginOnBottom</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginonbottomself-tolerance0">def isOriginOnBottom(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginonbottomside">def isOriginOnBottomSide</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginonbottomsideself-tolerance0">def isOriginOnBottomSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginoncenter">def isOriginOnCenter</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginoncenterself-tolerance0">def isOriginOnCenter(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginoncentersides">def isOriginOnCenterSides</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginoncentersidesself-tolerance0">def isOriginOnCenterSides(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginonleft">def isOriginOnLeft</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginonleftself-tolerance0">def isOriginOnLeft(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginonleftside">def isOriginOnLeftSide</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginonleftsideself-tolerance0">def isOriginOnLeftSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginonmiddle">def isOriginOnMiddle</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginonmiddleself-tolerance0">def isOriginOnMiddle(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginonmiddlesides">def isOriginOnMiddleSides</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginonmiddlesidesself-tolerance0">def isOriginOnMiddleSides(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginonright">def isOriginOnRight</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginonrightself-tolerance0">def isOriginOnRight(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginonrightside">def isOriginOnRightSide</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginonrightsideself-tolerance0">def isOriginOnRightSide(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginontop">def isOriginOnTop</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginontopself-tolerance0">def isOriginOnTop(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoriginontopside">def isOriginOnTopSide</a></li>
+            <li><a class="toctree-l4" href="#def-isoriginontopsideself-tolerance0">def isOriginOnTopSide(self, tolerance=0)</a></li>
         
             <li><a class="toctree-l4" href="#def-isoverflow">def isOverflow</a></li>
         
             <li><a class="toctree-l4" href="#int-ispage">int isPage</a></li>
         
-            <li><a class="toctree-l4" href="#def-isrightoncenter">def isRightOnCenter</a></li>
+            <li><a class="toctree-l4" href="#def-isrightoncenterself-tolerance0">def isRightOnCenter(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isrightoncentersides">def isRightOnCenterSides</a></li>
+            <li><a class="toctree-l4" href="#def-isrightoncentersidesself-tolerance0">def isRightOnCenterSides(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isrightonleft">def isRightOnLeft</a></li>
+            <li><a class="toctree-l4" href="#def-isrightonleftself-tolerance0">def isRightOnLeft(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isrightonright">def isRightOnRight</a></li>
+            <li><a class="toctree-l4" href="#def-isrightonrightself-tolerance0">def isRightOnRight(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isrightonrightside">def isRightOnRightSide</a></li>
+            <li><a class="toctree-l4" href="#def-isrightonrightsideself-tolerance0">def isRightOnRightSide(self, tolerance=0)</a></li>
         
             <li><a class="toctree-l4" href="#def-isschrunkonblockleft">def isSchrunkOnBlockLeft</a></li>
         
@@ -1017,15 +1017,15 @@
         
             <li><a class="toctree-l4" href="#int-istextbox">int isTextBox</a></li>
         
-            <li><a class="toctree-l4" href="#def-istoponbottom">def isTopOnBottom</a></li>
+            <li><a class="toctree-l4" href="#def-istoponbottomself-tolerance0">def isTopOnBottom(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-istoponmiddle">def isTopOnMiddle</a></li>
+            <li><a class="toctree-l4" href="#def-istoponmiddleself-tolerance0">def isTopOnMiddle(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-istoponmiddlesides">def isTopOnMiddleSides</a></li>
+            <li><a class="toctree-l4" href="#def-istoponmiddlesidesself-tolerance0">def isTopOnMiddleSides(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-istopontop">def isTopOnTop</a></li>
+            <li><a class="toctree-l4" href="#def-istopontopself-tolerance0">def isTopOnTop(self, tolerance=0)</a></li>
         
-            <li><a class="toctree-l4" href="#def-istopontopside">def isTopOnTopSide</a></li>
+            <li><a class="toctree-l4" href="#def-istopontopsideself-tolerance0">def isTopOnTopSide(self, tolerance=0)</a></li>
         
             <li><a class="toctree-l4" href="#int-isview">int isView</a></li>
         
@@ -1209,13 +1209,13 @@
         
             <li><a class="toctree-l4" href="#def-setelementbyindex">def setElementByIndex</a></li>
         
-            <li><a class="toctree-l4" href="#def-setmaxsize">def setMaxSize</a></li>
+            <li><a class="toctree-l4" href="#def-setmaxsizeself-maxw-maxhnone-maxdnone">def setMaxSize(self, maxW, maxH=None, maxD=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-setminsize">def setMinSize</a></li>
+            <li><a class="toctree-l4" href="#def-setminsizeself-minw-minhnone-mindnone">def setMinSize(self, minW, minH=None, minD=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-setshadow">def setShadow</a></li>
         
-            <li><a class="toctree-l4" href="#def-setsize">def setSize</a></li>
+            <li><a class="toctree-l4" href="#def-setsizeself-w-h0-d0">def setSize(self, w, h=0, d=0)</a></li>
         
             <li><a class="toctree-l4" href="#property-show">property show</a></li>
         
@@ -1237,7 +1237,7 @@
         
             <li><a class="toctree-l4" href="#property-siblings">property siblings</a></li>
         
-            <li><a class="toctree-l4" href="#def-solve">def solve</a></li>
+            <li><a class="toctree-l4" href="#def-solveself-scorenone">def solve(self, score=None)</a></li>
         
             <li><a class="toctree-l4" href="#property-template">property template</a></li>
         
@@ -1595,12 +1595,12 @@ interpret the base from the string as an integer literal.  </p>
 <p>Answer a new interpolated TimeState instance, from the enclosing time states for t.  </p>
 <h3 id="def-notnow95getflows">def NOTNOW_getFlows</h3>
 <p>Answer the set of flow element sequences on the page.  </p>
-<h3 id="def-notnow95getnextflowbox">def NOTNOW_getNextFlowBox</h3>
+<h3 id="def-notnow95getnextflowboxself-tb-makenewtrue">def NOTNOW_getNextFlowBox(self, tb, makeNew=True)</h3>
 <p>Answer the next textBox that tb is pointing to. This can be on the same page or a next<br />
 page, depending how the page (and probably its template) is defined.  </p>
 <h3 id="def-9595getitem9595">def __getitem__</h3>
 <p>Answer the element with eId. Raise a KeyError if the element does not exist.  </p>
-<h3 id="def-9595init9595">def __init__</h3>
+<h3 id="def-9595init9595self-wnone-hnone-parentnone">def __init__(self, w=None, h=None, parent=None)</h3>
 <h3 id="def-9595len9595">def __len__</h3>
 <p>Answer total amount of elements, placed or not.  </p>
 <h3 id="def-9595repr9595">def __repr__</h3>
@@ -1861,7 +1861,7 @@ If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the res
 If the element is alread placed in another container, then remove it from its current parent.<br />
 This relation and position is lost. The position e is supposed to be filled already in local position.  </p>
 <h3 id="def-appendtimemark">def appendTimeMark</h3>
-<h3 id="def-applytemplate">def applyTemplate</h3>
+<h3 id="def-applytemplateself-template-elementsnone">def applyTemplate(self, template, elements=None)</h3>
 <p>Copy relevant info from template: w, h, elements, style, conditions when element is created.<br />
 Don't call later.  </p>
 <h3 id="property-back">property back</h3>
@@ -1901,7 +1901,7 @@ Don't call later.  </p>
 <h3 id="def-clearelements">def clearElements</h3>
 <p>Properly initializes self._elements and self._eIds. <br />
 Any existing elements get their parent weakrefs become None and will garbage collect.  </p>
-<h3 id="def-css">def css</h3>
+<h3 id="def-cssself-name-defaultnone">def css(self, name, default=None)</h3>
 <p>In case we are looking for a plain css value, cascading from the main ancestor styles<br />
 of self, then follow the parent links until document or root, if self does not contain<br />
 the requested value.  </p>
@@ -1915,10 +1915,10 @@ the requested value.  </p>
 on all child elements.  </p>
 <h3 id="property-doc">property doc</h3>
 <p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
-<h3 id="def-draw">def draw</h3>
+<h3 id="def-drawself-origin-view-drawelementstrue">def draw(self, origin, view, drawElements=True)</h3>
 <p>Default drawing method just drawing the frame. <br />
 Probably will be redefined by inheriting element classes.  </p>
-<h3 id="def-drawarrow">def drawArrow</h3>
+<h3 id="def-drawarrowself-e-xs-ys-xt-yt-ontext1-startmarkerfalse-endmarkerfalse-fmsnone-fmfnone-fillnone-strokenone-strokewidthnone">def drawArrow(self, e, xs, ys, xt, yt, onText=1, startMarker=False, endMarker=False, fms=None, fmf=None, fill=None, stroke=None, strokeWidth=None)</h3>
 <p>Draw curved arrow marker between the two points.<br />
 TODO: Add drawing of real arrow-heads, rotated in the right direction.  </p>
 <h3 id="def-drawbaselinegrid">def drawBaselineGrid</h3>
@@ -1962,13 +1962,13 @@ outside the page frame, if drawing crop marks.  </p>
 <h3 id="def-drawpageregistrationmarks">def drawPageRegistrationMarks</h3>
 <p>Draw standard registration mark, to show registration of CMYK colors.<br />
 https://en.wikipedia.org/wiki/Printing_registration.  </p>
-<h3 id="def-drawpages">def drawPages</h3>
+<h3 id="def-drawpagesself-pageselectionnone">def drawPages(self, pageSelection=None)</h3>
 <p>Draw the selected pages. pageSelection is an optional set of y-pageNumbers to draw.  </p>
 <h3 id="property-eid">property eId</h3>
 <h3 id="property-elementids">property elementIds</h3>
-<h3 id="def-evaluate">def evaluate</h3>
+<h3 id="def-evaluateself-scorenone">def evaluate(self, score=None)</h3>
 <p>Evaluate the content of element e with the total sum of conditions.  </p>
-<h3 id="def-export">def export</h3>
+<h3 id="def-exportself-filename-pageselectionnone-multipagetrue">def export(self, fileName, pageSelection=None, multiPage=True)</h3>
 <p>Export the document to fileName for all pages in sequential order.<br />
 If pageSelection is defined, it must be a list with page numbers to<br />
 export. This allows the order to be changed and pages to be omitted.<br />
@@ -2019,22 +2019,22 @@ that want to show additional information.  </p>
 value in the element position. Where None in the element position with not fit any xyz of the point.  </p>
 <h3 id="def-getelementsposition">def getElementsPosition</h3>
 <p>Answer the dictionary of elements that have eIds and their positions.  </p>
-<h3 id="def-getfloatbottomside">def getFloatBottomSide</h3>
+<h3 id="def-getfloatbottomsideself-previousonlytrue-tolerance0">def getFloatBottomSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max y that can float to bottom, without overlapping previous sibling elements.<br />
 This means we are just looking at the vertical projection of (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getfloatleftside">def getFloatLeftSide</h3>
+<h3 id="def-getfloatleftsideself-previousonlytrue-tolerance0">def getFloatLeftSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max x that can float to the left, without overlapping previous sibling elements.<br />
 This means we are just looking at the horizontal projection of (self.top, self.bottom).<br />
 Note that the x may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getfloatrightside">def getFloatRightSide</h3>
+<h3 id="def-getfloatrightsideself-previousonlytrue-tolerance0">def getFloatRightSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max Y that can float to the right, without overlapping previous sibling elements.<br />
 This means we are just looking at the vertical projection of (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getfloattopside">def getFloatTopSide</h3>
+<h3 id="def-getfloattopsideself-previousonlytrue-tolerance0">def getFloatTopSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max y that can float to top, without overlapping previous sibling elements.<br />
 This means we are just looking at the vertical projection between (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
@@ -2066,65 +2066,65 @@ self.w and/or self.h properties.  </p>
 <h3 id="def-isascenderontop">def isAscenderOnTop</h3>
 <h3 id="def-isbaselineonbottom">def isBaselineOnBottom</h3>
 <h3 id="def-isbaselineontop">def isBaselineOnTop</h3>
-<h3 id="def-isbottomonbottom">def isBottomOnBottom</h3>
-<h3 id="def-isbottomonbottomside">def isBottomOnBottomSide</h3>
-<h3 id="def-isbottomonmiddle">def isBottomOnMiddle</h3>
-<h3 id="def-isbottomonmiddlesides">def isBottomOnMiddleSides</h3>
-<h3 id="def-isbottomontop">def isBottomOnTop</h3>
+<h3 id="def-isbottomonbottomself-tolerance0">def isBottomOnBottom(self, tolerance=0)</h3>
+<h3 id="def-isbottomonbottomsideself-tolerance0">def isBottomOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-isbottomonmiddleself-tolerance0">def isBottomOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-isbottomonmiddlesidesself-tolerance0">def isBottomOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-isbottomontopself-tolerance0">def isBottomOnTop(self, tolerance=0)</h3>
 <h3 id="def-iscapheightontop">def isCapHeightOnTop</h3>
-<h3 id="def-iscenteroncenter">def isCenterOnCenter</h3>
-<h3 id="def-iscenteroncentersides">def isCenterOnCenterSides</h3>
-<h3 id="def-iscenteronleft">def isCenterOnLeft</h3>
-<h3 id="def-iscenteronleftside">def isCenterOnLeftSide</h3>
-<h3 id="def-iscenteronright">def isCenterOnRight</h3>
-<h3 id="def-iscenteronrightside">def isCenterOnRightSide</h3>
-<h3 id="def-isfloatonbottom">def isFloatOnBottom</h3>
-<h3 id="def-isfloatonbottomside">def isFloatOnBottomSide</h3>
-<h3 id="def-isfloatonleft">def isFloatOnLeft</h3>
-<h3 id="def-isfloatonleftside">def isFloatOnLeftSide</h3>
-<h3 id="def-isfloatonright">def isFloatOnRight</h3>
-<h3 id="def-isfloatonrightside">def isFloatOnRightSide</h3>
-<h3 id="def-isfloatontop">def isFloatOnTop</h3>
-<h3 id="def-isfloatontopside">def isFloatOnTopSide</h3>
+<h3 id="def-iscenteroncenterself-tolerance0">def isCenterOnCenter(self, tolerance=0)</h3>
+<h3 id="def-iscenteroncentersidesself-tolerance0">def isCenterOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-iscenteronleftself-tolerance0">def isCenterOnLeft(self, tolerance=0)</h3>
+<h3 id="def-iscenteronleftsideself-tolerance0">def isCenterOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-iscenteronrightself-tolerance0">def isCenterOnRight(self, tolerance=0)</h3>
+<h3 id="def-iscenteronrightsideself-tolerance0">def isCenterOnRightSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatonbottomself-tolerance0">def isFloatOnBottom(self, tolerance=0)</h3>
+<h3 id="def-isfloatonbottomsideself-tolerance0">def isFloatOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatonleftself-tolerance0">def isFloatOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isfloatonleftsideself-tolerance0">def isFloatOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatonrightself-tolerance0">def isFloatOnRight(self, tolerance=0)</h3>
+<h3 id="def-isfloatonrightsideself-tolerance0">def isFloatOnRightSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatontopself-tolerance0">def isFloatOnTop(self, tolerance=0)</h3>
+<h3 id="def-isfloatontopsideself-tolerance0">def isFloatOnTopSide(self, tolerance=0)</h3>
 <h3 id="int-isflow">int isFlow</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-isleftoncenter">def isLeftOnCenter</h3>
-<h3 id="def-isleftoncentersides">def isLeftOnCenterSides</h3>
-<h3 id="def-isleftonleft">def isLeftOnLeft</h3>
-<h3 id="def-isleftonleftside">def isLeftOnLeftSide</h3>
-<h3 id="def-isleftonright">def isLeftOnRight</h3>
-<h3 id="def-ismiddleonbottom">def isMiddleOnBottom</h3>
-<h3 id="def-ismiddleonbottomside">def isMiddleOnBottomSide</h3>
-<h3 id="def-ismiddleonmiddle">def isMiddleOnMiddle</h3>
-<h3 id="def-ismiddleonmiddlesides">def isMiddleOnMiddleSides</h3>
-<h3 id="def-ismiddleontop">def isMiddleOnTop</h3>
-<h3 id="def-ismiddleontopside">def isMiddleOnTopSide</h3>
-<h3 id="def-isoriginonbottom">def isOriginOnBottom</h3>
-<h3 id="def-isoriginonbottomside">def isOriginOnBottomSide</h3>
-<h3 id="def-isoriginoncenter">def isOriginOnCenter</h3>
-<h3 id="def-isoriginoncentersides">def isOriginOnCenterSides</h3>
-<h3 id="def-isoriginonleft">def isOriginOnLeft</h3>
-<h3 id="def-isoriginonleftside">def isOriginOnLeftSide</h3>
-<h3 id="def-isoriginonmiddle">def isOriginOnMiddle</h3>
-<h3 id="def-isoriginonmiddlesides">def isOriginOnMiddleSides</h3>
-<h3 id="def-isoriginonright">def isOriginOnRight</h3>
-<h3 id="def-isoriginonrightside">def isOriginOnRightSide</h3>
-<h3 id="def-isoriginontop">def isOriginOnTop</h3>
-<h3 id="def-isoriginontopside">def isOriginOnTopSide</h3>
+<h3 id="def-isleftoncenterself-tolerance0">def isLeftOnCenter(self, tolerance=0)</h3>
+<h3 id="def-isleftoncentersidesself-tolerance0">def isLeftOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-isleftonleftself-tolerance0">def isLeftOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isleftonleftsideself-tolerance0">def isLeftOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-isleftonrightself-tolerance0">def isLeftOnRight(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonbottomself-tolerance0">def isMiddleOnBottom(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonbottomsideself-tolerance0">def isMiddleOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonmiddleself-tolerance0">def isMiddleOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonmiddlesidesself-tolerance0">def isMiddleOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-ismiddleontopself-tolerance0">def isMiddleOnTop(self, tolerance=0)</h3>
+<h3 id="def-ismiddleontopsideself-tolerance0">def isMiddleOnTopSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginonbottomself-tolerance0">def isOriginOnBottom(self, tolerance=0)</h3>
+<h3 id="def-isoriginonbottomsideself-tolerance0">def isOriginOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginoncenterself-tolerance0">def isOriginOnCenter(self, tolerance=0)</h3>
+<h3 id="def-isoriginoncentersidesself-tolerance0">def isOriginOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-isoriginonleftself-tolerance0">def isOriginOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isoriginonleftsideself-tolerance0">def isOriginOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginonmiddleself-tolerance0">def isOriginOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-isoriginonmiddlesidesself-tolerance0">def isOriginOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-isoriginonrightself-tolerance0">def isOriginOnRight(self, tolerance=0)</h3>
+<h3 id="def-isoriginonrightsideself-tolerance0">def isOriginOnRightSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginontopself-tolerance0">def isOriginOnTop(self, tolerance=0)</h3>
+<h3 id="def-isoriginontopsideself-tolerance0">def isOriginOnTopSide(self, tolerance=0)</h3>
 <h3 id="def-isoverflow">def isOverflow</h3>
 <h3 id="int-ispage">int isPage</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-isrightoncenter">def isRightOnCenter</h3>
-<h3 id="def-isrightoncentersides">def isRightOnCenterSides</h3>
-<h3 id="def-isrightonleft">def isRightOnLeft</h3>
-<h3 id="def-isrightonright">def isRightOnRight</h3>
-<h3 id="def-isrightonrightside">def isRightOnRightSide</h3>
+<h3 id="def-isrightoncenterself-tolerance0">def isRightOnCenter(self, tolerance=0)</h3>
+<h3 id="def-isrightoncentersidesself-tolerance0">def isRightOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-isrightonleftself-tolerance0">def isRightOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isrightonrightself-tolerance0">def isRightOnRight(self, tolerance=0)</h3>
+<h3 id="def-isrightonrightsideself-tolerance0">def isRightOnRightSide(self, tolerance=0)</h3>
 <h3 id="def-isschrunkonblockleft">def isSchrunkOnBlockLeft</h3>
 <h3 id="def-isshrunkonblockbottom">def isShrunkOnBlockBottom</h3>
 <p>Test if the bottom of self is shrunk to the bottom position of the block.  </p>
@@ -2144,11 +2144,11 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-istoponbottom">def isTopOnBottom</h3>
-<h3 id="def-istoponmiddle">def isTopOnMiddle</h3>
-<h3 id="def-istoponmiddlesides">def isTopOnMiddleSides</h3>
-<h3 id="def-istopontop">def isTopOnTop</h3>
-<h3 id="def-istopontopside">def isTopOnTopSide</h3>
+<h3 id="def-istoponbottomself-tolerance0">def isTopOnBottom(self, tolerance=0)</h3>
+<h3 id="def-istoponmiddleself-tolerance0">def isTopOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-istoponmiddlesidesself-tolerance0">def isTopOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-istopontopself-tolerance0">def isTopOnTop(self, tolerance=0)</h3>
+<h3 id="def-istopontopsideself-tolerance0">def isTopOnTopSide(self, tolerance=0)</h3>
 <h3 id="int-isview">int isView</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
@@ -2272,12 +2272,12 @@ is not parent defined or if the parent not longer exists.  </p>
 <h3 id="def-setelementbyindex">def setElementByIndex</h3>
 <p>Replace the element, if there is already one at index. Otherwise append it to self.elements<br />
 and answer the index number that it got.  </p>
-<h3 id="def-setmaxsize">def setMaxSize</h3>
-<h3 id="def-setminsize">def setMinSize</h3>
+<h3 id="def-setmaxsizeself-maxw-maxhnone-maxdnone">def setMaxSize(self, maxW, maxH=None, maxD=None)</h3>
+<h3 id="def-setminsizeself-minw-minhnone-mindnone">def setMinSize(self, minW, minH=None, minD=None)</h3>
 <h3 id="def-setshadow">def setShadow</h3>
 <p>Set the DrawBot graphics state for shadow if all parameters are set. Pair the call of this<br />
 method with self._resetShadow()  </p>
-<h3 id="def-setsize">def setSize</h3>
+<h3 id="def-setsizeself-w-h0-d0">def setSize(self, w, h=0, d=0)</h3>
 <p>Set the size of the element by calling by properties self.w and self.h. <br />
 If set, then overwrite access from style width and height. self.d is optional attribute.  </p>
 <h3 id="property-show">property show</h3>
@@ -2291,7 +2291,7 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="def-shrink2blocktopside">def shrink2BlockTopSide</h3>
 <h3 id="property-siblings">property siblings</h3>
 <p>Answer all elements that share self.parent, not including self in the list.  </p>
-<h3 id="def-solve">def solve</h3>
+<h3 id="def-solveself-scorenone">def solve(self, score=None)</h3>
 <p>Evaluate the content of element e with the total sum of conditions.  </p>
 <h3 id="property-template">property template</h3>
 <h3 id="property-textgradient">property textGradient</h3>

@@ -76,11 +76,11 @@
         
             <li><a class="toctree-l4" href="#class-composer">class Composer</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-validatorsnone-makenewpagefalse">def __init__(self, validators=None, makeNewPage=False)</a></li>
         
             <li><a class="toctree-l4" href="#wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</a></li>
         
-            <li><a class="toctree-l4" href="#def-compose">def compose</a></li>
+            <li><a class="toctree-l4" href="#def-composeself-galley-page-flowidnone">def compose(self, galley, page, flowId=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-tryplacement">def tryPlacement</a></li>
         
@@ -561,14 +561,14 @@ by taking the elements from the galley pasteboard and finding the best place in 
 page-flows that are copied from their templates.<br />
 If necessary elements can be split, new elements can be made on the page and element can be<br />
 reshaped byt width and height, if that results in better placements.  </p>
-<h3 id="def-9595init9595">def __init__</h3>
+<h3 id="def-9595init9595self-validatorsnone-makenewpagefalse">def __init__(self, validators=None, makeNewPage=False)</h3>
 <p>The page, document includes<br />
 the pages that already exist, and it defined the baseStyle for all other cascading styles.<br />
 The style of all document pages and elements may contain conditions that define the weigh<br />
 value for the quality if their status.  </p>
 <h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
 <p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
-<h3 id="def-compose">def compose</h3>
+<h3 id="def-composeself-galley-page-flowidnone">def compose(self, galley, page, flowId=None)</h3>
 <p>Compose the galley element, starting with the flowId text box on page.<br />
 The composer negotiates between what the galley needs a sequential space<br />
 for its elements, and what the page has to offer.<br />

@@ -585,7 +585,7 @@ locations of each color as a list of floats. (optionally)<br />
 startRadius radius around the startPoint in degrees (optionally)<br />
 endRadius radius around the endPoint in degrees (optionally)<br />
 Setting a gradient will ignore the fill.  </p>
-<h3 id="def-9595init9595">def __init__</h3>
+<h3 id="def-9595init9595self-startnone-endnone-colorsnone-cmykcolorsnone-locationsnone-startradiusnone-endradiusnone">def __init__(self, start=None, end=None, colors=None, cmykColors=None, locations=None, startRadius=None, endRadius=None)</h3>
 <h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
 <p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
 <h3 id="def-95get95linear">def _get_linear</h3>
@@ -622,7 +622,7 @@ marginTop + yIndex*baseLine.  </p>
 <h3 id="def-cd2d">def cd2d</h3>
 <h3 id="def-ch2h">def ch2h</h3>
 <h3 id="module-contributions">module contributions</h3>
-<h3 id="def-css">def css</h3>
+<h3 id="def-cssname-e-stylesnone-defaultnone">def css(name, e, styles=None, default=None)</h3>
 <p>Answer the named style values. Search in optional style dict first, otherwise up the<br />
 parent tree of styles in element e. Both e and style can be None. In that case None is answered.  </p>
 <h3 id="def-cw2w">def cw2w</h3>
@@ -631,14 +631,14 @@ parent tree of styles in element e. Both e and style can be None. In that case N
 <p>Transform from column y value to y value, using the e.css for colunn values.  </p>
 <h3 id="def-cz2z">def cz2z</h3>
 <h3 id="def-d2cd">def d2cd</h3>
-<h3 id="def-deepfind">def deepFind</h3>
+<h3 id="def-deepfindelements-namenone-patternnone-resultnone">def deepFind(elements, name=None, pattern=None, result=None)</h3>
 <p>Perform a dynamic deep find the for all elements with the name. Don't include self.<br />
 Either name or pattern should be defined.  </p>
 <h3 id="instance-division">instance division</h3>
-<h3 id="def-find">def find</h3>
+<h3 id="def-findelements-namenone-patternnone-resultnone">def find(elements, name=None, pattern=None, result=None)</h3>
 <p>Perform a dynamic find the named element(s) in self.elements. Don't include self.<br />
 Either name or pattern should be defined.  </p>
-<h3 id="def-findmarkers">def findMarkers</h3>
+<h3 id="def-findmarkersfs-recompilednone">def findMarkers(fs, reCompiled=None)</h3>
 <p>Answer a dictionary of markers with their arguments in a given FormattedString.  </p>
 <h3 id="def-getfontpath">def getFontPath</h3>
 <p>Answer the standard font path of the pagebot module.  </p>
@@ -648,7 +648,7 @@ need to save as files, the pbglobals module supports the storage of non-persiste
 This way, applications with Vanilla windows can be used as UI for scripts that perform as batch process.<br />
 Note that it is up to the responsibilty of individual scripts to create uniqued ids for<br />
 attributes. Also they need to know from each other, in case information is exchanged.  </p>
-<h3 id="def-getmarker">def getMarker</h3>
+<h3 id="def-getmarkermarkerid-argnone">def getMarker(markerId, arg=None)</h3>
 <p>Answer a formatted string with markerId that can be used as non-display marker.<br />
 This way the Composer can find the position of markers in text boxes, after<br />
 FS-slicing has been done. Note there is always a very small "white-space"<br />
@@ -663,7 +663,7 @@ Possible slicing through line-endings is not a problem, as the raw string ignore
 <h3 id="def-getrootpath">def getRootPath</h3>
 <p>Answer the root path of the pagebot module.  </p>
 <h3 id="def-h2ch">def h2ch</h3>
-<h3 id="def-newfs">def newFS</h3>
+<h3 id="def-newfst-enone-stylenone-wnone-hnone-fontsizenone">def newFS(t, e=None, style=None, w=None, h=None, fontSize=None)</h3>
 <p>Answer a formatted string from valid attributes in Style. Set all values after testing<br />
 their existence, so they can inherit from previous style formats.<br />
 If target width w or height w is defined, then the fontSize is scaled to make the string fit w or h.  </p>
@@ -679,18 +679,18 @@ dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs<br />
 in the keyword argument list.  For example:  dict(one=1, two=2)  </p>
 <h3 id="def-point2d">def point2D</h3>
 <p>Answer the 2D origin as combination of p and offset.  </p>
-<h3 id="def-setfillcolor">def setFillColor</h3>
+<h3 id="def-setfillcolorc-fsnone-cmykfalse">def setFillColor(c, fs=None, cmyk=False)</h3>
 <p>Set the color for global or the color of the formatted string.  </p>
 <h3 id="def-setgradient">def setGradient</h3>
 <p>Define the gradient call to match the size of element e., Gradient position<br />
 is from the origin of the page, so we need the current origin of e.  </p>
 <h3 id="def-setshadow">def setShadow</h3>
-<h3 id="def-setstrokecolor">def setStrokeColor</h3>
+<h3 id="def-setstrokecolorc-w1-fsnone-cmykfalse">def setStrokeColor(c, w=1, fs=None, cmyk=False)</h3>
 <p>Set global stroke color or the color of the formatted string.  </p>
 <h3 id="def-textboxbaselines">def textBoxBaseLines</h3>
 <p>Answer a list of (x,y) positions of all line starts in the box. This function may become part<br />
 of standard DrawBot in the near future.  </p>
-<h3 id="def-textpositionsearch">def textPositionSearch</h3>
+<h3 id="def-textpositionsearchfs-w-h-search-xtextalignleft-hyphenationtrue">def textPositionSearch(fs, w, h, search, xTextAlign=left, hyphenation=True)</h3>
 <h3 id="def-w2cw">def w2cw</h3>
 <h3 id="def-x2cx">def x2cx</h3>
 <p>Transform from y value to column y value, using the e.css for colunn values.  </p>

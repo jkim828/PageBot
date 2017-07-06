@@ -613,15 +613,29 @@ The script shows the different alignment conditions. <em>Left2Left()</em> goes t
 </code></pre>
 
 <h3 id="clear">Clear</h3>
-<p>Clears all <code>.pyc</code> files to make sure no old compiles  are left.</p>
+<p>Clears all <code>.pyc</code> files to make sure no old compiles are left.</p>
 <h3 id="write">Write</h3>
-<p>The <code>-w</code> option formats and writes the docstrings to markdown files. It will generate the <code>mkdocs.yml</code> file next to the <code>Docs</code> folder. Run</p>
+<p>The <code>-w</code> option formats and writes the docstrings to markdown files and copies handwritten markdown files to the folder that serves the documentation files, <code>Docs</code>. It will also generate the <code>mkdocs.yml</code> file next to the <code>Docs</code> folder. If the script finishes without errors, you should be ready to run</p>
 <pre><code>mkdocs serve
 </code></pre>
-<p>To preview the results on <a href="http://localhost:8000">http://localhost:8000</a>. Finally, deploy them to GitHub using this command:</p>
+<p>To preview the results on <a href="http://localhost:8000">http://localhost:8000</a>. This will return something like this:</p>
+<pre><code>INFO    -  Building documentation... 
+INFO    -  Cleaning site directory 
+[I 170705 13:14:15 server:283] Serving on http://127.0.0.1:8000
+[I 170705 13:14:15 handlers:60] Start watching changes
+[I 170705 13:14:15 handlers:62] Start detecting changes
+</code></pre>
+
+<p>Changes to the files will be updated live. Since they are generated, this means running the builddoc script again. Finally, you can deploy them to GitHub using this command:</p>
 <pre><code>mkdocs gh-deploy
 </code></pre>
-<p>If all goes well, you should be able to view the updated documentation at <a href="https://typenetwork.github.io/PageBot/">https://typenetwork.github.io/PageBot/</a> (case sensitive).</p>
+<p>If all goes well, you should be able to view the updated documentation at <a href="https://typenetwork.github.io/PageBot/">https://typenetwork.github.io/PageBot/</a> (case sensitive):</p>
+<pre><code>INFO    -  Cleaning site directory 
+INFO    -  Building documentation to directory: /Users/michiel/Code/PageBot/site 
+INFO    -  Copying '/Users/michiel/Code/PageBot/site' to 'gh-pages' branch and pushing to GitHub. 
+INFO    -  Your documentation should shortly be available at: https://TypeNetwork.github.io/PageBot/ 
+</code></pre>
+
 <h3 id="doctest">Doctest</h3>
 <p>See Use Doctests.</p>
 <h3 id="log">Log</h3>

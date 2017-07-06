@@ -409,15 +409,15 @@
         
             <li><a class="toctree-l4" href="#def-95setuppost">def _setupPost</a></li>
         
-            <li><a class="toctree-l4" href="#def-convertfonttottf">def convertFontToTTF</a></li>
+            <li><a class="toctree-l4" href="#def-convertfonttottffont-quaderrormargin05-cubictoquadconverternone">def convertFontToTTF(font, quadErrorMargin=0.5, cubicToQuadConverter=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-findcomponentglyphs">def findComponentGlyphs</a></li>
         
             <li><a class="toctree-l4" href="#def-findglyphsbyunicode">def findGlyphsByUnicode</a></li>
         
-            <li><a class="toctree-l4" href="#def-getbestcmap">def getBestCmap</a></li>
+            <li><a class="toctree-l4" href="#def-getbestcmapfont-cmappreferences3-10-3-1-0-3">def getBestCmap(font, cmapPreferences=((3, 10), (3, 1), (0, 3)))</a></li>
         
-            <li><a class="toctree-l4" href="#def-mergefonts">def mergeFonts</a></li>
+            <li><a class="toctree-l4" href="#def-mergefontsfont-otherfont-overwritecodepointsfalse">def mergeFonts(font, otherFont, overWriteCodePoints=False)</a></li>
         
             <li><a class="toctree-l4" href="#module-otltools">module otlTools</a></li>
         
@@ -669,7 +669,7 @@ in the font. It should not be used in production code, but only for debugging.  
 <h3 id="def-95rundoctests">def _runDocTests</h3>
 <h3 id="def-95setupmaxp">def _setupMaxp</h3>
 <h3 id="def-95setuppost">def _setupPost</h3>
-<h3 id="def-convertfonttottf">def convertFontToTTF</h3>
+<h3 id="def-convertfonttottffont-quaderrormargin05-cubictoquadconverternone">def convertFontToTTF(font, quadErrorMargin=0.5, cubicToQuadConverter=None)</h3>
 <p>Convert a CFF-based OTF to a glyf-based TTF.  </p>
 <pre><code>&gt;&gt;&gt; from cStringIO import StringIO  
 &gt;&gt;&gt; from fontTools.ttLib import TTFont  
@@ -722,7 +722,7 @@ set(['bar'])
 &gt;&gt;&gt; sorted(findGlyphsByUnicode(font, [224]))  
 ['a', 'agrave', 'grave']
 </code></pre>
-<h3 id="def-getbestcmap">def getBestCmap</h3>
+<h3 id="def-getbestcmapfont-cmappreferences3-10-3-1-0-3">def getBestCmap(font, cmapPreferences=((3, 10), (3, 1), (0, 3)))</h3>
 <p>Return a unicode -&gt; glyphName dictionary from the 'best' unicode cmap that the font<br />
 contains. In order of preference, the font will be searched for cmaps 3,10, 3,1 and 0,3.  </p>
 <pre><code>&gt;&gt;&gt; from fontTools.ttLib import TTFont  
@@ -750,7 +750,7 @@ Traceback (most recent call last):
 </code></pre>
 <p>...<br />
 ValueError: None of the requested cmap subtables were found  </p>
-<h3 id="def-mergefonts">def mergeFonts</h3>
+<h3 id="def-mergefontsfont-otherfont-overwritecodepointsfalse">def mergeFonts(font, otherFont, overWriteCodePoints=False)</h3>
 <p>Merge all glyphs from otherFont into font. Glyphs from font B that are<br />
 present in font A will be ignored. If font B defines a code point that also<br />
 exists in font A, the code point from font A will be kept, unless<br />

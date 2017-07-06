@@ -580,12 +580,12 @@ interpret the base from the string as an integer literal.  </p>
 <p>Answer a new interpolated TimeState instance, from the enclosing time states for t.  </p>
 <h3 id="def-notnow95getflows">def NOTNOW_getFlows</h3>
 <p>Answer the set of flow element sequences on the page.  </p>
-<h3 id="def-notnow95getnextflowbox">def NOTNOW_getNextFlowBox</h3>
+<h3 id="def-notnow95getnextflowboxself-tb-makenewtrue">def NOTNOW_getNextFlowBox(self, tb, makeNew=True)</h3>
 <p>Answer the next textBox that tb is pointing to. This can be on the same page or a next<br />
 page, depending how the page (and probably its template) is defined.  </p>
 <h3 id="def-9595getitem9595">def __getitem__</h3>
 <p>Answer the element with eId. Raise a KeyError if the element does not exist.  </p>
-<h3 id="def-9595init9595">def __init__</h3>
+<h3 id="def-9595init9595self-wnone-hnone-parentnone">def __init__(self, w=None, h=None, parent=None)</h3>
 <h3 id="def-9595len9595">def __len__</h3>
 <p>Answer total amount of elements, placed or not.  </p>
 <h3 id="def-9595repr9595">def __repr__</h3>
@@ -846,7 +846,7 @@ If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the res
 If the element is alread placed in another container, then remove it from its current parent.<br />
 This relation and position is lost. The position e is supposed to be filled already in local position.  </p>
 <h3 id="def-appendtimemark">def appendTimeMark</h3>
-<h3 id="def-applytemplate">def applyTemplate</h3>
+<h3 id="def-applytemplateself-template-elementsnone">def applyTemplate(self, template, elements=None)</h3>
 <p>Copy relevant info from template: w, h, elements, style, conditions when element is created.<br />
 Don't call later.  </p>
 <h3 id="property-back">property back</h3>
@@ -886,7 +886,7 @@ Don't call later.  </p>
 <h3 id="def-clearelements">def clearElements</h3>
 <p>Properly initializes self._elements and self._eIds. <br />
 Any existing elements get their parent weakrefs become None and will garbage collect.  </p>
-<h3 id="def-css">def css</h3>
+<h3 id="def-cssself-name-defaultnone">def css(self, name, default=None)</h3>
 <p>In case we are looking for a plain css value, cascading from the main ancestor styles<br />
 of self, then follow the parent links until document or root, if self does not contain<br />
 the requested value.  </p>
@@ -900,10 +900,10 @@ the requested value.  </p>
 on all child elements.  </p>
 <h3 id="property-doc">property doc</h3>
 <p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
-<h3 id="def-draw">def draw</h3>
+<h3 id="def-drawself-origin-view-drawelementstrue">def draw(self, origin, view, drawElements=True)</h3>
 <p>Default drawing method just drawing the frame. <br />
 Probably will be redefined by inheriting element classes.  </p>
-<h3 id="def-drawarrow">def drawArrow</h3>
+<h3 id="def-drawarrowself-e-xs-ys-xt-yt-ontext1-startmarkerfalse-endmarkerfalse-fmsnone-fmfnone-fillnone-strokenone-strokewidthnone">def drawArrow(self, e, xs, ys, xt, yt, onText=1, startMarker=False, endMarker=False, fms=None, fmf=None, fill=None, stroke=None, strokeWidth=None)</h3>
 <p>Draw curved arrow marker between the two points.<br />
 TODO: Add drawing of real arrow-heads, rotated in the right direction.  </p>
 <h3 id="def-drawbaselinegrid">def drawBaselineGrid</h3>
@@ -947,13 +947,13 @@ outside the page frame, if drawing crop marks.  </p>
 <h3 id="def-drawpageregistrationmarks">def drawPageRegistrationMarks</h3>
 <p>Draw standard registration mark, to show registration of CMYK colors.<br />
 https://en.wikipedia.org/wiki/Printing_registration.  </p>
-<h3 id="def-drawpages">def drawPages</h3>
+<h3 id="def-drawpagesself-pageselectionnone">def drawPages(self, pageSelection=None)</h3>
 <p>Draw the selected pages. pageSelection is an optional set of y-pageNumbers to draw.  </p>
 <h3 id="property-eid">property eId</h3>
 <h3 id="property-elementids">property elementIds</h3>
-<h3 id="def-evaluate">def evaluate</h3>
+<h3 id="def-evaluateself-scorenone">def evaluate(self, score=None)</h3>
 <p>Evaluate the content of element e with the total sum of conditions.  </p>
-<h3 id="def-export">def export</h3>
+<h3 id="def-exportself-filename-pageselectionnone-multipagetrue">def export(self, fileName, pageSelection=None, multiPage=True)</h3>
 <p>Export the document to fileName for all pages in sequential order.<br />
 If pageSelection is defined, it must be a list with page numbers to<br />
 export. This allows the order to be changed and pages to be omitted.<br />
@@ -1004,22 +1004,22 @@ that want to show additional information.  </p>
 value in the element position. Where None in the element position with not fit any xyz of the point.  </p>
 <h3 id="def-getelementsposition">def getElementsPosition</h3>
 <p>Answer the dictionary of elements that have eIds and their positions.  </p>
-<h3 id="def-getfloatbottomside">def getFloatBottomSide</h3>
+<h3 id="def-getfloatbottomsideself-previousonlytrue-tolerance0">def getFloatBottomSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max y that can float to bottom, without overlapping previous sibling elements.<br />
 This means we are just looking at the vertical projection of (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getfloatleftside">def getFloatLeftSide</h3>
+<h3 id="def-getfloatleftsideself-previousonlytrue-tolerance0">def getFloatLeftSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max x that can float to the left, without overlapping previous sibling elements.<br />
 This means we are just looking at the horizontal projection of (self.top, self.bottom).<br />
 Note that the x may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getfloatrightside">def getFloatRightSide</h3>
+<h3 id="def-getfloatrightsideself-previousonlytrue-tolerance0">def getFloatRightSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max Y that can float to the right, without overlapping previous sibling elements.<br />
 This means we are just looking at the vertical projection of (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getfloattopside">def getFloatTopSide</h3>
+<h3 id="def-getfloattopsideself-previousonlytrue-tolerance0">def getFloatTopSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max y that can float to top, without overlapping previous sibling elements.<br />
 This means we are just looking at the vertical projection between (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
@@ -1051,65 +1051,65 @@ self.w and/or self.h properties.  </p>
 <h3 id="def-isascenderontop">def isAscenderOnTop</h3>
 <h3 id="def-isbaselineonbottom">def isBaselineOnBottom</h3>
 <h3 id="def-isbaselineontop">def isBaselineOnTop</h3>
-<h3 id="def-isbottomonbottom">def isBottomOnBottom</h3>
-<h3 id="def-isbottomonbottomside">def isBottomOnBottomSide</h3>
-<h3 id="def-isbottomonmiddle">def isBottomOnMiddle</h3>
-<h3 id="def-isbottomonmiddlesides">def isBottomOnMiddleSides</h3>
-<h3 id="def-isbottomontop">def isBottomOnTop</h3>
+<h3 id="def-isbottomonbottomself-tolerance0">def isBottomOnBottom(self, tolerance=0)</h3>
+<h3 id="def-isbottomonbottomsideself-tolerance0">def isBottomOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-isbottomonmiddleself-tolerance0">def isBottomOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-isbottomonmiddlesidesself-tolerance0">def isBottomOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-isbottomontopself-tolerance0">def isBottomOnTop(self, tolerance=0)</h3>
 <h3 id="def-iscapheightontop">def isCapHeightOnTop</h3>
-<h3 id="def-iscenteroncenter">def isCenterOnCenter</h3>
-<h3 id="def-iscenteroncentersides">def isCenterOnCenterSides</h3>
-<h3 id="def-iscenteronleft">def isCenterOnLeft</h3>
-<h3 id="def-iscenteronleftside">def isCenterOnLeftSide</h3>
-<h3 id="def-iscenteronright">def isCenterOnRight</h3>
-<h3 id="def-iscenteronrightside">def isCenterOnRightSide</h3>
-<h3 id="def-isfloatonbottom">def isFloatOnBottom</h3>
-<h3 id="def-isfloatonbottomside">def isFloatOnBottomSide</h3>
-<h3 id="def-isfloatonleft">def isFloatOnLeft</h3>
-<h3 id="def-isfloatonleftside">def isFloatOnLeftSide</h3>
-<h3 id="def-isfloatonright">def isFloatOnRight</h3>
-<h3 id="def-isfloatonrightside">def isFloatOnRightSide</h3>
-<h3 id="def-isfloatontop">def isFloatOnTop</h3>
-<h3 id="def-isfloatontopside">def isFloatOnTopSide</h3>
+<h3 id="def-iscenteroncenterself-tolerance0">def isCenterOnCenter(self, tolerance=0)</h3>
+<h3 id="def-iscenteroncentersidesself-tolerance0">def isCenterOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-iscenteronleftself-tolerance0">def isCenterOnLeft(self, tolerance=0)</h3>
+<h3 id="def-iscenteronleftsideself-tolerance0">def isCenterOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-iscenteronrightself-tolerance0">def isCenterOnRight(self, tolerance=0)</h3>
+<h3 id="def-iscenteronrightsideself-tolerance0">def isCenterOnRightSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatonbottomself-tolerance0">def isFloatOnBottom(self, tolerance=0)</h3>
+<h3 id="def-isfloatonbottomsideself-tolerance0">def isFloatOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatonleftself-tolerance0">def isFloatOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isfloatonleftsideself-tolerance0">def isFloatOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatonrightself-tolerance0">def isFloatOnRight(self, tolerance=0)</h3>
+<h3 id="def-isfloatonrightsideself-tolerance0">def isFloatOnRightSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatontopself-tolerance0">def isFloatOnTop(self, tolerance=0)</h3>
+<h3 id="def-isfloatontopsideself-tolerance0">def isFloatOnTopSide(self, tolerance=0)</h3>
 <h3 id="int-isflow">int isFlow</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-isleftoncenter">def isLeftOnCenter</h3>
-<h3 id="def-isleftoncentersides">def isLeftOnCenterSides</h3>
-<h3 id="def-isleftonleft">def isLeftOnLeft</h3>
-<h3 id="def-isleftonleftside">def isLeftOnLeftSide</h3>
-<h3 id="def-isleftonright">def isLeftOnRight</h3>
-<h3 id="def-ismiddleonbottom">def isMiddleOnBottom</h3>
-<h3 id="def-ismiddleonbottomside">def isMiddleOnBottomSide</h3>
-<h3 id="def-ismiddleonmiddle">def isMiddleOnMiddle</h3>
-<h3 id="def-ismiddleonmiddlesides">def isMiddleOnMiddleSides</h3>
-<h3 id="def-ismiddleontop">def isMiddleOnTop</h3>
-<h3 id="def-ismiddleontopside">def isMiddleOnTopSide</h3>
-<h3 id="def-isoriginonbottom">def isOriginOnBottom</h3>
-<h3 id="def-isoriginonbottomside">def isOriginOnBottomSide</h3>
-<h3 id="def-isoriginoncenter">def isOriginOnCenter</h3>
-<h3 id="def-isoriginoncentersides">def isOriginOnCenterSides</h3>
-<h3 id="def-isoriginonleft">def isOriginOnLeft</h3>
-<h3 id="def-isoriginonleftside">def isOriginOnLeftSide</h3>
-<h3 id="def-isoriginonmiddle">def isOriginOnMiddle</h3>
-<h3 id="def-isoriginonmiddlesides">def isOriginOnMiddleSides</h3>
-<h3 id="def-isoriginonright">def isOriginOnRight</h3>
-<h3 id="def-isoriginonrightside">def isOriginOnRightSide</h3>
-<h3 id="def-isoriginontop">def isOriginOnTop</h3>
-<h3 id="def-isoriginontopside">def isOriginOnTopSide</h3>
+<h3 id="def-isleftoncenterself-tolerance0">def isLeftOnCenter(self, tolerance=0)</h3>
+<h3 id="def-isleftoncentersidesself-tolerance0">def isLeftOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-isleftonleftself-tolerance0">def isLeftOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isleftonleftsideself-tolerance0">def isLeftOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-isleftonrightself-tolerance0">def isLeftOnRight(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonbottomself-tolerance0">def isMiddleOnBottom(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonbottomsideself-tolerance0">def isMiddleOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonmiddleself-tolerance0">def isMiddleOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonmiddlesidesself-tolerance0">def isMiddleOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-ismiddleontopself-tolerance0">def isMiddleOnTop(self, tolerance=0)</h3>
+<h3 id="def-ismiddleontopsideself-tolerance0">def isMiddleOnTopSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginonbottomself-tolerance0">def isOriginOnBottom(self, tolerance=0)</h3>
+<h3 id="def-isoriginonbottomsideself-tolerance0">def isOriginOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginoncenterself-tolerance0">def isOriginOnCenter(self, tolerance=0)</h3>
+<h3 id="def-isoriginoncentersidesself-tolerance0">def isOriginOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-isoriginonleftself-tolerance0">def isOriginOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isoriginonleftsideself-tolerance0">def isOriginOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginonmiddleself-tolerance0">def isOriginOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-isoriginonmiddlesidesself-tolerance0">def isOriginOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-isoriginonrightself-tolerance0">def isOriginOnRight(self, tolerance=0)</h3>
+<h3 id="def-isoriginonrightsideself-tolerance0">def isOriginOnRightSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginontopself-tolerance0">def isOriginOnTop(self, tolerance=0)</h3>
+<h3 id="def-isoriginontopsideself-tolerance0">def isOriginOnTopSide(self, tolerance=0)</h3>
 <h3 id="def-isoverflow">def isOverflow</h3>
 <h3 id="int-ispage">int isPage</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-isrightoncenter">def isRightOnCenter</h3>
-<h3 id="def-isrightoncentersides">def isRightOnCenterSides</h3>
-<h3 id="def-isrightonleft">def isRightOnLeft</h3>
-<h3 id="def-isrightonright">def isRightOnRight</h3>
-<h3 id="def-isrightonrightside">def isRightOnRightSide</h3>
+<h3 id="def-isrightoncenterself-tolerance0">def isRightOnCenter(self, tolerance=0)</h3>
+<h3 id="def-isrightoncentersidesself-tolerance0">def isRightOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-isrightonleftself-tolerance0">def isRightOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isrightonrightself-tolerance0">def isRightOnRight(self, tolerance=0)</h3>
+<h3 id="def-isrightonrightsideself-tolerance0">def isRightOnRightSide(self, tolerance=0)</h3>
 <h3 id="def-isschrunkonblockleft">def isSchrunkOnBlockLeft</h3>
 <h3 id="def-isshrunkonblockbottom">def isShrunkOnBlockBottom</h3>
 <p>Test if the bottom of self is shrunk to the bottom position of the block.  </p>
@@ -1129,11 +1129,11 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-istoponbottom">def isTopOnBottom</h3>
-<h3 id="def-istoponmiddle">def isTopOnMiddle</h3>
-<h3 id="def-istoponmiddlesides">def isTopOnMiddleSides</h3>
-<h3 id="def-istopontop">def isTopOnTop</h3>
-<h3 id="def-istopontopside">def isTopOnTopSide</h3>
+<h3 id="def-istoponbottomself-tolerance0">def isTopOnBottom(self, tolerance=0)</h3>
+<h3 id="def-istoponmiddleself-tolerance0">def isTopOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-istoponmiddlesidesself-tolerance0">def isTopOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-istopontopself-tolerance0">def isTopOnTop(self, tolerance=0)</h3>
+<h3 id="def-istopontopsideself-tolerance0">def isTopOnTopSide(self, tolerance=0)</h3>
 <h3 id="int-isview">int isView</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
@@ -1257,12 +1257,12 @@ is not parent defined or if the parent not longer exists.  </p>
 <h3 id="def-setelementbyindex">def setElementByIndex</h3>
 <p>Replace the element, if there is already one at index. Otherwise append it to self.elements<br />
 and answer the index number that it got.  </p>
-<h3 id="def-setmaxsize">def setMaxSize</h3>
-<h3 id="def-setminsize">def setMinSize</h3>
+<h3 id="def-setmaxsizeself-maxw-maxhnone-maxdnone">def setMaxSize(self, maxW, maxH=None, maxD=None)</h3>
+<h3 id="def-setminsizeself-minw-minhnone-mindnone">def setMinSize(self, minW, minH=None, minD=None)</h3>
 <h3 id="def-setshadow">def setShadow</h3>
 <p>Set the DrawBot graphics state for shadow if all parameters are set. Pair the call of this<br />
 method with self._resetShadow()  </p>
-<h3 id="def-setsize">def setSize</h3>
+<h3 id="def-setsizeself-w-h0-d0">def setSize(self, w, h=0, d=0)</h3>
 <p>Set the size of the element by calling by properties self.w and self.h. <br />
 If set, then overwrite access from style width and height. self.d is optional attribute.  </p>
 <h3 id="property-show">property show</h3>
@@ -1276,7 +1276,7 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="def-shrink2blocktopside">def shrink2BlockTopSide</h3>
 <h3 id="property-siblings">property siblings</h3>
 <p>Answer all elements that share self.parent, not including self in the list.  </p>
-<h3 id="def-solve">def solve</h3>
+<h3 id="def-solveself-scorenone">def solve(self, score=None)</h3>
 <p>Evaluate the content of element e with the total sum of conditions.  </p>
 <h3 id="property-template">property template</h3>
 <h3 id="property-textgradient">property textGradient</h3>
@@ -1324,12 +1324,12 @@ interpret the base from the string as an integer literal.  </p>
 <p>Answer a new interpolated TimeState instance, from the enclosing time states for t.  </p>
 <h3 id="def-notnow95getflows_1">def NOTNOW_getFlows</h3>
 <p>Answer the set of flow element sequences on the page.  </p>
-<h3 id="def-notnow95getnextflowbox_1">def NOTNOW_getNextFlowBox</h3>
+<h3 id="def-notnow95getnextflowboxself-tb-makenewtrue_1">def NOTNOW_getNextFlowBox(self, tb, makeNew=True)</h3>
 <p>Answer the next textBox that tb is pointing to. This can be on the same page or a next<br />
 page, depending how the page (and probably its template) is defined.  </p>
 <h3 id="def-9595getitem9595_1">def __getitem__</h3>
 <p>Answer the element with eId. Raise a KeyError if the element does not exist.  </p>
-<h3 id="def-9595init9595_1">def __init__</h3>
+<h3 id="def-9595init9595self-wnone-hnone-parentnone_1">def __init__(self, w=None, h=None, parent=None)</h3>
 <h3 id="def-9595len9595_1">def __len__</h3>
 <p>Answer total amount of elements, placed or not.  </p>
 <h3 id="def-9595repr9595_1">def __repr__</h3>
@@ -1590,7 +1590,7 @@ If one of (self.scaleX, self.scaleY, self.scaleZ) is not 0 or 1, then do the res
 If the element is alread placed in another container, then remove it from its current parent.<br />
 This relation and position is lost. The position e is supposed to be filled already in local position.  </p>
 <h3 id="def-appendtimemark_1">def appendTimeMark</h3>
-<h3 id="def-applytemplate_1">def applyTemplate</h3>
+<h3 id="def-applytemplateself-template-elementsnone_1">def applyTemplate(self, template, elements=None)</h3>
 <p>Copy relevant info from template: w, h, elements, style, conditions when element is created.<br />
 Don't call later.  </p>
 <h3 id="property-back_1">property back</h3>
@@ -1630,7 +1630,7 @@ Don't call later.  </p>
 <h3 id="def-clearelements_1">def clearElements</h3>
 <p>Properly initializes self._elements and self._eIds. <br />
 Any existing elements get their parent weakrefs become None and will garbage collect.  </p>
-<h3 id="def-css_1">def css</h3>
+<h3 id="def-cssself-name-defaultnone_1">def css(self, name, default=None)</h3>
 <p>In case we are looking for a plain css value, cascading from the main ancestor styles<br />
 of self, then follow the parent links until document or root, if self does not contain<br />
 the requested value.  </p>
@@ -1644,10 +1644,10 @@ the requested value.  </p>
 on all child elements.  </p>
 <h3 id="property-doc_1">property doc</h3>
 <p>Answer the root Document of this element by property, looking upward in the ancestor tree.  </p>
-<h3 id="def-draw_1">def draw</h3>
+<h3 id="def-drawself-origin-view-drawelementstrue_1">def draw(self, origin, view, drawElements=True)</h3>
 <p>Default drawing method just drawing the frame. <br />
 Probably will be redefined by inheriting element classes.  </p>
-<h3 id="def-drawarrow_1">def drawArrow</h3>
+<h3 id="def-drawarrowself-e-xs-ys-xt-yt-ontext1-startmarkerfalse-endmarkerfalse-fmsnone-fmfnone-fillnone-strokenone-strokewidthnone_1">def drawArrow(self, e, xs, ys, xt, yt, onText=1, startMarker=False, endMarker=False, fms=None, fmf=None, fill=None, stroke=None, strokeWidth=None)</h3>
 <p>Draw curved arrow marker between the two points.<br />
 TODO: Add drawing of real arrow-heads, rotated in the right direction.  </p>
 <h3 id="def-drawbaselinegrid_1">def drawBaselineGrid</h3>
@@ -1691,13 +1691,13 @@ outside the page frame, if drawing crop marks.  </p>
 <h3 id="def-drawpageregistrationmarks_1">def drawPageRegistrationMarks</h3>
 <p>Draw standard registration mark, to show registration of CMYK colors.<br />
 https://en.wikipedia.org/wiki/Printing_registration.  </p>
-<h3 id="def-drawpages_1">def drawPages</h3>
+<h3 id="def-drawpagesself-pageselectionnone_1">def drawPages(self, pageSelection=None)</h3>
 <p>Draw the selected pages. pageSelection is an optional set of y-pageNumbers to draw.  </p>
 <h3 id="property-eid_1">property eId</h3>
 <h3 id="property-elementids_1">property elementIds</h3>
-<h3 id="def-evaluate_1">def evaluate</h3>
+<h3 id="def-evaluateself-scorenone_1">def evaluate(self, score=None)</h3>
 <p>Evaluate the content of element e with the total sum of conditions.  </p>
-<h3 id="def-export_1">def export</h3>
+<h3 id="def-exportself-filename-pageselectionnone-multipagetrue_1">def export(self, fileName, pageSelection=None, multiPage=True)</h3>
 <p>Export the document to fileName for all pages in sequential order.<br />
 If pageSelection is defined, it must be a list with page numbers to<br />
 export. This allows the order to be changed and pages to be omitted.<br />
@@ -1748,22 +1748,22 @@ that want to show additional information.  </p>
 value in the element position. Where None in the element position with not fit any xyz of the point.  </p>
 <h3 id="def-getelementsposition_1">def getElementsPosition</h3>
 <p>Answer the dictionary of elements that have eIds and their positions.  </p>
-<h3 id="def-getfloatbottomside_1">def getFloatBottomSide</h3>
+<h3 id="def-getfloatbottomsideself-previousonlytrue-tolerance0_1">def getFloatBottomSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max y that can float to bottom, without overlapping previous sibling elements.<br />
 This means we are just looking at the vertical projection of (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getfloatleftside_1">def getFloatLeftSide</h3>
+<h3 id="def-getfloatleftsideself-previousonlytrue-tolerance0_1">def getFloatLeftSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max x that can float to the left, without overlapping previous sibling elements.<br />
 This means we are just looking at the horizontal projection of (self.top, self.bottom).<br />
 Note that the x may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getfloatrightside_1">def getFloatRightSide</h3>
+<h3 id="def-getfloatrightsideself-previousonlytrue-tolerance0_1">def getFloatRightSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max Y that can float to the right, without overlapping previous sibling elements.<br />
 This means we are just looking at the vertical projection of (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
 Comparison of available spave, includes the margins of the elements.  </p>
-<h3 id="def-getfloattopside_1">def getFloatTopSide</h3>
+<h3 id="def-getfloattopsideself-previousonlytrue-tolerance0_1">def getFloatTopSide(self, previousOnly=True, tolerance=0)</h3>
 <p>Answer the max y that can float to top, without overlapping previous sibling elements.<br />
 This means we are just looking at the vertical projection between (self.left, self.right).<br />
 Note that the y may be outside the parent box. Only elements with identical z-value are compared.<br />
@@ -1795,65 +1795,65 @@ self.w and/or self.h properties.  </p>
 <h3 id="def-isascenderontop_1">def isAscenderOnTop</h3>
 <h3 id="def-isbaselineonbottom_1">def isBaselineOnBottom</h3>
 <h3 id="def-isbaselineontop_1">def isBaselineOnTop</h3>
-<h3 id="def-isbottomonbottom_1">def isBottomOnBottom</h3>
-<h3 id="def-isbottomonbottomside_1">def isBottomOnBottomSide</h3>
-<h3 id="def-isbottomonmiddle_1">def isBottomOnMiddle</h3>
-<h3 id="def-isbottomonmiddlesides_1">def isBottomOnMiddleSides</h3>
-<h3 id="def-isbottomontop_1">def isBottomOnTop</h3>
+<h3 id="def-isbottomonbottomself-tolerance0_1">def isBottomOnBottom(self, tolerance=0)</h3>
+<h3 id="def-isbottomonbottomsideself-tolerance0_1">def isBottomOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-isbottomonmiddleself-tolerance0_1">def isBottomOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-isbottomonmiddlesidesself-tolerance0_1">def isBottomOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-isbottomontopself-tolerance0_1">def isBottomOnTop(self, tolerance=0)</h3>
 <h3 id="def-iscapheightontop_1">def isCapHeightOnTop</h3>
-<h3 id="def-iscenteroncenter_1">def isCenterOnCenter</h3>
-<h3 id="def-iscenteroncentersides_1">def isCenterOnCenterSides</h3>
-<h3 id="def-iscenteronleft_1">def isCenterOnLeft</h3>
-<h3 id="def-iscenteronleftside_1">def isCenterOnLeftSide</h3>
-<h3 id="def-iscenteronright_1">def isCenterOnRight</h3>
-<h3 id="def-iscenteronrightside_1">def isCenterOnRightSide</h3>
-<h3 id="def-isfloatonbottom_1">def isFloatOnBottom</h3>
-<h3 id="def-isfloatonbottomside_1">def isFloatOnBottomSide</h3>
-<h3 id="def-isfloatonleft_1">def isFloatOnLeft</h3>
-<h3 id="def-isfloatonleftside_1">def isFloatOnLeftSide</h3>
-<h3 id="def-isfloatonright_1">def isFloatOnRight</h3>
-<h3 id="def-isfloatonrightside_1">def isFloatOnRightSide</h3>
-<h3 id="def-isfloatontop_1">def isFloatOnTop</h3>
-<h3 id="def-isfloatontopside_1">def isFloatOnTopSide</h3>
+<h3 id="def-iscenteroncenterself-tolerance0_1">def isCenterOnCenter(self, tolerance=0)</h3>
+<h3 id="def-iscenteroncentersidesself-tolerance0_1">def isCenterOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-iscenteronleftself-tolerance0_1">def isCenterOnLeft(self, tolerance=0)</h3>
+<h3 id="def-iscenteronleftsideself-tolerance0_1">def isCenterOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-iscenteronrightself-tolerance0_1">def isCenterOnRight(self, tolerance=0)</h3>
+<h3 id="def-iscenteronrightsideself-tolerance0_1">def isCenterOnRightSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatonbottomself-tolerance0_1">def isFloatOnBottom(self, tolerance=0)</h3>
+<h3 id="def-isfloatonbottomsideself-tolerance0_1">def isFloatOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatonleftself-tolerance0_1">def isFloatOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isfloatonleftsideself-tolerance0_1">def isFloatOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatonrightself-tolerance0_1">def isFloatOnRight(self, tolerance=0)</h3>
+<h3 id="def-isfloatonrightsideself-tolerance0_1">def isFloatOnRightSide(self, tolerance=0)</h3>
+<h3 id="def-isfloatontopself-tolerance0_1">def isFloatOnTop(self, tolerance=0)</h3>
+<h3 id="def-isfloatontopsideself-tolerance0_1">def isFloatOnTopSide(self, tolerance=0)</h3>
 <h3 id="int-isflow_1">int isFlow</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-isleftoncenter_1">def isLeftOnCenter</h3>
-<h3 id="def-isleftoncentersides_1">def isLeftOnCenterSides</h3>
-<h3 id="def-isleftonleft_1">def isLeftOnLeft</h3>
-<h3 id="def-isleftonleftside_1">def isLeftOnLeftSide</h3>
-<h3 id="def-isleftonright_1">def isLeftOnRight</h3>
-<h3 id="def-ismiddleonbottom_1">def isMiddleOnBottom</h3>
-<h3 id="def-ismiddleonbottomside_1">def isMiddleOnBottomSide</h3>
-<h3 id="def-ismiddleonmiddle_1">def isMiddleOnMiddle</h3>
-<h3 id="def-ismiddleonmiddlesides_1">def isMiddleOnMiddleSides</h3>
-<h3 id="def-ismiddleontop_1">def isMiddleOnTop</h3>
-<h3 id="def-ismiddleontopside_1">def isMiddleOnTopSide</h3>
-<h3 id="def-isoriginonbottom_1">def isOriginOnBottom</h3>
-<h3 id="def-isoriginonbottomside_1">def isOriginOnBottomSide</h3>
-<h3 id="def-isoriginoncenter_1">def isOriginOnCenter</h3>
-<h3 id="def-isoriginoncentersides_1">def isOriginOnCenterSides</h3>
-<h3 id="def-isoriginonleft_1">def isOriginOnLeft</h3>
-<h3 id="def-isoriginonleftside_1">def isOriginOnLeftSide</h3>
-<h3 id="def-isoriginonmiddle_1">def isOriginOnMiddle</h3>
-<h3 id="def-isoriginonmiddlesides_1">def isOriginOnMiddleSides</h3>
-<h3 id="def-isoriginonright_1">def isOriginOnRight</h3>
-<h3 id="def-isoriginonrightside_1">def isOriginOnRightSide</h3>
-<h3 id="def-isoriginontop_1">def isOriginOnTop</h3>
-<h3 id="def-isoriginontopside_1">def isOriginOnTopSide</h3>
+<h3 id="def-isleftoncenterself-tolerance0_1">def isLeftOnCenter(self, tolerance=0)</h3>
+<h3 id="def-isleftoncentersidesself-tolerance0_1">def isLeftOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-isleftonleftself-tolerance0_1">def isLeftOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isleftonleftsideself-tolerance0_1">def isLeftOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-isleftonrightself-tolerance0_1">def isLeftOnRight(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonbottomself-tolerance0_1">def isMiddleOnBottom(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonbottomsideself-tolerance0_1">def isMiddleOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonmiddleself-tolerance0_1">def isMiddleOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-ismiddleonmiddlesidesself-tolerance0_1">def isMiddleOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-ismiddleontopself-tolerance0_1">def isMiddleOnTop(self, tolerance=0)</h3>
+<h3 id="def-ismiddleontopsideself-tolerance0_1">def isMiddleOnTopSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginonbottomself-tolerance0_1">def isOriginOnBottom(self, tolerance=0)</h3>
+<h3 id="def-isoriginonbottomsideself-tolerance0_1">def isOriginOnBottomSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginoncenterself-tolerance0_1">def isOriginOnCenter(self, tolerance=0)</h3>
+<h3 id="def-isoriginoncentersidesself-tolerance0_1">def isOriginOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-isoriginonleftself-tolerance0_1">def isOriginOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isoriginonleftsideself-tolerance0_1">def isOriginOnLeftSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginonmiddleself-tolerance0_1">def isOriginOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-isoriginonmiddlesidesself-tolerance0_1">def isOriginOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-isoriginonrightself-tolerance0_1">def isOriginOnRight(self, tolerance=0)</h3>
+<h3 id="def-isoriginonrightsideself-tolerance0_1">def isOriginOnRightSide(self, tolerance=0)</h3>
+<h3 id="def-isoriginontopself-tolerance0_1">def isOriginOnTop(self, tolerance=0)</h3>
+<h3 id="def-isoriginontopsideself-tolerance0_1">def isOriginOnTopSide(self, tolerance=0)</h3>
 <h3 id="def-isoverflow_1">def isOverflow</h3>
 <h3 id="int-ispage_1">int isPage</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-isrightoncenter_1">def isRightOnCenter</h3>
-<h3 id="def-isrightoncentersides_1">def isRightOnCenterSides</h3>
-<h3 id="def-isrightonleft_1">def isRightOnLeft</h3>
-<h3 id="def-isrightonright_1">def isRightOnRight</h3>
-<h3 id="def-isrightonrightside_1">def isRightOnRightSide</h3>
+<h3 id="def-isrightoncenterself-tolerance0_1">def isRightOnCenter(self, tolerance=0)</h3>
+<h3 id="def-isrightoncentersidesself-tolerance0_1">def isRightOnCenterSides(self, tolerance=0)</h3>
+<h3 id="def-isrightonleftself-tolerance0_1">def isRightOnLeft(self, tolerance=0)</h3>
+<h3 id="def-isrightonrightself-tolerance0_1">def isRightOnRight(self, tolerance=0)</h3>
+<h3 id="def-isrightonrightsideself-tolerance0_1">def isRightOnRightSide(self, tolerance=0)</h3>
 <h3 id="def-isschrunkonblockleft_1">def isSchrunkOnBlockLeft</h3>
 <h3 id="def-isshrunkonblockbottom_1">def isShrunkOnBlockBottom</h3>
 <p>Test if the bottom of self is shrunk to the bottom position of the block.  </p>
@@ -1873,11 +1873,11 @@ The class bool is a subclass of the class int, and cannot be subclassed.  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
 The builtins True and False are the only two instances of the class bool.<br />
 The class bool is a subclass of the class int, and cannot be subclassed.  </p>
-<h3 id="def-istoponbottom_1">def isTopOnBottom</h3>
-<h3 id="def-istoponmiddle_1">def isTopOnMiddle</h3>
-<h3 id="def-istoponmiddlesides_1">def isTopOnMiddleSides</h3>
-<h3 id="def-istopontop_1">def isTopOnTop</h3>
-<h3 id="def-istopontopside_1">def isTopOnTopSide</h3>
+<h3 id="def-istoponbottomself-tolerance0_1">def isTopOnBottom(self, tolerance=0)</h3>
+<h3 id="def-istoponmiddleself-tolerance0_1">def isTopOnMiddle(self, tolerance=0)</h3>
+<h3 id="def-istoponmiddlesidesself-tolerance0_1">def isTopOnMiddleSides(self, tolerance=0)</h3>
+<h3 id="def-istopontopself-tolerance0_1">def isTopOnTop(self, tolerance=0)</h3>
+<h3 id="def-istopontopsideself-tolerance0_1">def isTopOnTopSide(self, tolerance=0)</h3>
 <h3 id="int-isview_1">int isView</h3>
 <p>bool(x) -&gt; bool  </p>
 <p>Returns True when the argument x is true, False otherwise.<br />
@@ -2001,12 +2001,12 @@ is not parent defined or if the parent not longer exists.  </p>
 <h3 id="def-setelementbyindex_1">def setElementByIndex</h3>
 <p>Replace the element, if there is already one at index. Otherwise append it to self.elements<br />
 and answer the index number that it got.  </p>
-<h3 id="def-setmaxsize_1">def setMaxSize</h3>
-<h3 id="def-setminsize_1">def setMinSize</h3>
+<h3 id="def-setmaxsizeself-maxw-maxhnone-maxdnone_1">def setMaxSize(self, maxW, maxH=None, maxD=None)</h3>
+<h3 id="def-setminsizeself-minw-minhnone-mindnone_1">def setMinSize(self, minW, minH=None, minD=None)</h3>
 <h3 id="def-setshadow_1">def setShadow</h3>
 <p>Set the DrawBot graphics state for shadow if all parameters are set. Pair the call of this<br />
 method with self._resetShadow()  </p>
-<h3 id="def-setsize_1">def setSize</h3>
+<h3 id="def-setsizeself-w-h0-d0_1">def setSize(self, w, h=0, d=0)</h3>
 <p>Set the size of the element by calling by properties self.w and self.h. <br />
 If set, then overwrite access from style width and height. self.d is optional attribute.  </p>
 <h3 id="property-show_1">property show</h3>
@@ -2020,7 +2020,7 @@ If set, then overwrite access from style width and height. self.d is optional at
 <h3 id="def-shrink2blocktopside_1">def shrink2BlockTopSide</h3>
 <h3 id="property-siblings_1">property siblings</h3>
 <p>Answer all elements that share self.parent, not including self in the list.  </p>
-<h3 id="def-solve_1">def solve</h3>
+<h3 id="def-solveself-scorenone_1">def solve(self, score=None)</h3>
 <p>Evaluate the content of element e with the total sum of conditions.  </p>
 <h3 id="property-template_1">property template</h3>
 <h3 id="property-textgradient_1">property textGradient</h3>

@@ -464,7 +464,7 @@
         
             <li><a class="toctree-l4" href="#int-parallel95tolerance">int PARALLEL_TOLERANCE</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-points-index-contourindex-clockwise-glyphnamenone">def __init__(self, points, index, contourIndex, clockwise, glyphName=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595repr9595_1">def __repr__</a></li>
         
@@ -524,11 +524,11 @@
         
             <li><a class="toctree-l4" href="#def-isnextvertical">def isNextVertical</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoffcurve">def isOffCurve</a></li>
+            <li><a class="toctree-l4" href="#def-isoffcurveself-pnone">def isOffCurve(self, p=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isoncurve">def isOnCurve</a></li>
+            <li><a class="toctree-l4" href="#def-isoncurveself-pnone">def isOnCurve(self, p=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-isparallel">def isParallel</a></li>
+            <li><a class="toctree-l4" href="#def-isparallelself-pc-tolerancenone">def isParallel(self, pc, tolerance=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-isprevhorizontal">def isPrevHorizontal</a></li>
         
@@ -560,7 +560,7 @@
         
             <li><a class="toctree-l4" href="#def-maxy">def maxy</a></li>
         
-            <li><a class="toctree-l4" href="#def-middle">def middle</a></li>
+            <li><a class="toctree-l4" href="#def-middleself-p1none">def middle(self, p1=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-minx">def minx</a></li>
         
@@ -870,7 +870,7 @@ interpret the base from the string as an integer literal.  </p>
 <pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
-<h3 id="def-9595init9595">def __init__</h3>
+<h3 id="def-9595init9595self-points-index-contourindex-clockwise-glyphnamenone">def __init__(self, points, index, contourIndex, clockwise, glyphName=None)</h3>
 <p>Points list is supposed to contain Point instances, not point lists.<br />
 We need the extra storage, e.g. for point type that Point holds.  </p>
 <h3 id="def-9595repr9595_1">def __repr__</h3>
@@ -944,9 +944,9 @@ p.minx--------p.maxx  </p>
 <h3 id="def-isleftroundextreme">def isLeftRoundExtreme</h3>
 <h3 id="def-isnexthorizontal">def isNextHorizontal</h3>
 <h3 id="def-isnextvertical">def isNextVertical</h3>
-<h3 id="def-isoffcurve">def isOffCurve</h3>
-<h3 id="def-isoncurve">def isOnCurve</h3>
-<h3 id="def-isparallel">def isParallel</h3>
+<h3 id="def-isoffcurveself-pnone">def isOffCurve(self, p=None)</h3>
+<h3 id="def-isoncurveself-pnone">def isOnCurve(self, p=None)</h3>
+<h3 id="def-isparallelself-pc-tolerancenone">def isParallel(self, pc, tolerance=None)</h3>
 <p>Answer the boolean flag if self is parallel to pc point context. <br />
 Optional attribute tolerance<br />
 is the margin to interpret point context lines to be parallel. Default is self.PARALLEL_TOLERANCE.  </p>
@@ -970,7 +970,7 @@ Also there should be overlap in horizontal direction and the point context shoul
 <h3 id="def-isverticalroundextreme">def isVerticalRoundExtreme</h3>
 <h3 id="def-maxx">def maxx</h3>
 <h3 id="def-maxy">def maxy</h3>
-<h3 id="def-middle">def middle</h3>
+<h3 id="def-middleself-p1none">def middle(self, p1=None)</h3>
 <p>Answer the Point instance of the middle between the optional attribute points p0 and p1.<br />
 If the points are omitted, then use respectively self.p and self.p1.  </p>
 <h3 id="def-minx">def minx</h3>

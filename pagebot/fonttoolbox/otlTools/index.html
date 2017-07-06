@@ -365,7 +365,7 @@
         
             <li><a class="toctree-l4" href="#def-95buildlookupname">def _buildLookupName</a></li>
         
-            <li><a class="toctree-l4" href="#def-findalternateglyphsandfeatures">def findAlternateGlyphsAndFeatures</a></li>
+            <li><a class="toctree-l4" href="#def-findalternateglyphsandfeaturesself-onlydirectsinglesubstfalse">def findAlternateGlyphsAndFeatures(self, onlyDirectSingleSubst=False)</a></li>
         
             <li><a class="toctree-l4" href="#def-findalternateglyphsandfeatures95alternatesubstformat1">def findAlternateGlyphsAndFeatures_AlternateSubstFormat1</a></li>
         
@@ -425,7 +425,7 @@
         
             <li><a class="toctree-l4" href="#class-objectidset">class ObjectIdSet</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595_2">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-seqnone">def __init__(self, seq=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595len9595">def __len__</a></li>
         
@@ -475,7 +475,7 @@
         
             <li><a class="toctree-l4" href="#def-findalternateglyphs">def findAlternateGlyphs</a></li>
         
-            <li><a class="toctree-l4" href="#def-findalternateglyphsandfeatures_1">def findAlternateGlyphsAndFeatures</a></li>
+            <li><a class="toctree-l4" href="#def-findalternateglyphsandfeaturesotltable-onlydirectsinglesubstfalse">def findAlternateGlyphsAndFeatures(otlTable, onlyDirectSingleSubst=False)</a></li>
         
             <li><a class="toctree-l4" href="#def-findlookuptypes">def findLookupTypes</a></li>
         
@@ -687,7 +687,7 @@
 <h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
 <p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
 <h3 id="def-95buildlookupname">def _buildLookupName</h3>
-<h3 id="def-findalternateglyphsandfeatures">def findAlternateGlyphsAndFeatures</h3>
+<h3 id="def-findalternateglyphsandfeaturesself-onlydirectsinglesubstfalse">def findAlternateGlyphsAndFeatures(self, onlyDirectSingleSubst=False)</h3>
 <h3 id="def-findalternateglyphsandfeatures95alternatesubstformat1">def findAlternateGlyphsAndFeatures_AlternateSubstFormat1</h3>
 <h3 id="def-findalternateglyphsandfeatures95chaincontextsubstformat2">def findAlternateGlyphsAndFeatures_ChainContextSubstFormat2</h3>
 <h3 id="def-findalternateglyphsandfeatures95chaincontextsubstformat3">def findAlternateGlyphsAndFeatures_ChainContextSubstFormat3</h3>
@@ -778,7 +778,7 @@ False
 &gt;&gt;&gt; sorted(s)  
 [1, 2, 4, 8, 16, 32, 64]
 </code></pre>
-<h3 id="def-9595init9595_2">def __init__</h3>
+<h3 id="def-9595init9595self-seqnone">def __init__(self, seq=None)</h3>
 <h3 id="def-9595len9595">def __len__</h3>
 <h3 id="def-9595repr9595">def __repr__</h3>
 <h3 id="def-add">def add</h3>
@@ -954,7 +954,7 @@ as the result of GSUB glyph substitutions.  </p>
 &gt;&gt;&gt; sorted(findAlternateGlyphs(font["GSUB"], ["f"]))  
 ['f.swash', 'f_b.swash', 'f_f', 'f_f.swash', 'f_f_i', 'f_f_i.swash', 'f_f_ij', 'f_f_ij.swash', 'f_f_l', 'f_f_l.swash', 'f_i', 'f_i.swash', 'f_ij', 'f_ij.swash', 'f_j.swash', 'f_k.swash', 'f_l', 'f_l.swash', 'f_t.swash']
 </code></pre>
-<h3 id="def-findalternateglyphsandfeatures_1">def findAlternateGlyphsAndFeatures</h3>
+<h3 id="def-findalternateglyphsandfeaturesotltable-onlydirectsinglesubstfalse">def findAlternateGlyphsAndFeatures(otlTable, onlyDirectSingleSubst=False)</h3>
 <p>Find all alternate glyphs that can be accessed through GSUB features, listing which<br />
 feature(s) may trigger the substitution.  </p>
 <pre><code>&gt;&gt;&gt; from fontTools.ttLib import TTFont  

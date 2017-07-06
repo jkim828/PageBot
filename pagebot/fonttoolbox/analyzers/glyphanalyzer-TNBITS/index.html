@@ -412,7 +412,7 @@
         
             <li><a class="toctree-l4" href="#def-9595getitem9595">def __getitem__</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-layernone-contourclassnone-pointclassnone-componentclassnone-anchorclassnone-guidelineclassnone-libclassnone-imageclassnone">def __init__(self, layer=None, contourClass=None, pointClass=None, componentClass=None, anchorClass=None, guidelineClass=None, libClass=None, imageClass=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595len9595">def __len__</a></li>
         
@@ -514,7 +514,7 @@
         
             <li><a class="toctree-l4" href="#def-95makerepresentationsubkey">def _makeRepresentationSubKey</a></li>
         
-            <li><a class="toctree-l4" href="#def-95serialize">def _serialize</a></li>
+            <li><a class="toctree-l4" href="#def-95serializeself-getters-whitelistnone-blacklistnone">def _serialize(self, getters, whitelist=None, blacklist=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-95set95anchors">def _set_anchors</a></li>
         
@@ -626,15 +626,15 @@
         
             <li><a class="toctree-l4" href="#def-decomposecomponent">def decomposeComponent</a></li>
         
-            <li><a class="toctree-l4" href="#def-deserialize">def deserialize</a></li>
+            <li><a class="toctree-l4" href="#def-deserializeself-data-loadfuncnone">def deserialize(self, data, loadFunc=None)</a></li>
         
-            <li><a class="toctree-l4" href="#def-destroyallrepresentations">def destroyAllRepresentations</a></li>
+            <li><a class="toctree-l4" href="#def-destroyallrepresentationsself-notificationnone">def destroyAllRepresentations(self, notification=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-destroyrepresentation">def destroyRepresentation</a></li>
         
             <li><a class="toctree-l4" href="#property-dirty">property dirty</a></li>
         
-            <li><a class="toctree-l4" href="#def-disablenotifications">def disableNotifications</a></li>
+            <li><a class="toctree-l4" href="#def-disablenotificationsself-notificationnone-observernone">def disableNotifications(self, notification=None, observer=None)</a></li>
         
             <li><a class="toctree-l4" href="#property-dispatcher">property dispatcher</a></li>
         
@@ -642,7 +642,7 @@
         
             <li><a class="toctree-l4" href="#def-drawpoints">def drawPoints</a></li>
         
-            <li><a class="toctree-l4" href="#def-enablenotifications">def enableNotifications</a></li>
+            <li><a class="toctree-l4" href="#def-enablenotificationsself-notificationnone-observernone">def enableNotifications(self, notification=None, observer=None)</a></li>
         
             <li><a class="toctree-l4" href="#str-endredonotificationname">str endRedoNotificationName</a></li>
         
@@ -682,7 +682,7 @@
         
             <li><a class="toctree-l4" href="#def-hasobserver">def hasObserver</a></li>
         
-            <li><a class="toctree-l4" href="#def-holdnotifications">def holdNotifications</a></li>
+            <li><a class="toctree-l4" href="#def-holdnotificationsself-notificationnone">def holdNotifications(self, notification=None)</a></li>
         
             <li><a class="toctree-l4" href="#property-identifiers">property identifiers</a></li>
         
@@ -696,13 +696,13 @@
         
             <li><a class="toctree-l4" href="#def-insertguideline">def insertGuideline</a></li>
         
-            <li><a class="toctree-l4" href="#def-instantiateanchor">def instantiateAnchor</a></li>
+            <li><a class="toctree-l4" href="#def-instantiateanchorself-anchordictnone">def instantiateAnchor(self, anchorDict=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-instantiatecomponent">def instantiateComponent</a></li>
         
             <li><a class="toctree-l4" href="#def-instantiatecontour">def instantiateContour</a></li>
         
-            <li><a class="toctree-l4" href="#def-instantiateguideline">def instantiateGuideline</a></li>
+            <li><a class="toctree-l4" href="#def-instantiateguidelineself-guidelinedictnone">def instantiateGuideline(self, guidelineDict=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-instantiateimage">def instantiateImage</a></li>
         
@@ -728,13 +728,13 @@
         
             <li><a class="toctree-l4" href="#property-pointclass">property pointClass</a></li>
         
-            <li><a class="toctree-l4" href="#def-pointinside">def pointInside</a></li>
+            <li><a class="toctree-l4" href="#def-pointinsideself-coordinates-evenoddfalse">def pointInside(self, coordinates, evenOdd=False)</a></li>
         
-            <li><a class="toctree-l4" href="#def-postnotification">def postNotification</a></li>
+            <li><a class="toctree-l4" href="#def-postnotificationself-notification-datanone">def postNotification(self, notification, data=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-redo">def redo</a></li>
         
-            <li><a class="toctree-l4" href="#def-releaseheldnotifications">def releaseHeldNotifications</a></li>
+            <li><a class="toctree-l4" href="#def-releaseheldnotificationsself-notificationnone">def releaseHeldNotifications(self, notification=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-removeanchor">def removeAnchor</a></li>
         
@@ -754,7 +754,7 @@
         
             <li><a class="toctree-l4" href="#def-selfnotificationcallback">def selfNotificationCallback</a></li>
         
-            <li><a class="toctree-l4" href="#def-serialize">def serialize</a></li>
+            <li><a class="toctree-l4" href="#def-serializeself-dumpfuncnone-whitelistnone-blacklistnone">def serialize(self, dumpFunc=None, whitelist=None, blacklist=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-setdatafromserialization">def setDataFromSerialization</a></li>
         
@@ -806,11 +806,11 @@
         
             <li><a class="toctree-l4" href="#str-95">str _</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595_1">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-parent-name-fuzznone">def __init__(self, parent, name, fuzz=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595repr9595">def __repr__</a></li>
         
-            <li><a class="toctree-l4" href="#def-95getdecomposedbasename">def _getDecomposedBaseName</a></li>
+            <li><a class="toctree-l4" href="#def-95getdecomposedbasenameself-name-resultnone">def _getDecomposedBaseName(self, name, result=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-95getpointbynamedvalue95leftmargin">def _getPointByNamedValue_leftMargin</a></li>
         
@@ -866,7 +866,7 @@
         
             <li><a class="toctree-l4" href="#def-95get95diagonals">def _get_diagonals</a></li>
         
-            <li><a class="toctree-l4" href="#def-95get95glyph">def _get_glyph</a></li>
+            <li><a class="toctree-l4" href="#def-95get95glyphself-namenone">def _get_glyph(self, name=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-95get95glyphpath">def _get_glyphPath</a></li>
         
@@ -958,7 +958,7 @@
         
             <li><a class="toctree-l4" href="#def-95get95unitsperem">def _get_unitsPerEm</a></li>
         
-            <li><a class="toctree-l4" href="#def-95get95vacuumebox">def _get_vacuumeBox</a></li>
+            <li><a class="toctree-l4" href="#def-95get95vacuumeboxself-minx-10000000-miny-10000000-maxx10000000-maxy10000000">def _get_vacuumeBox(self, minX=-10000000, minY=-10000000, maxX=10000000, maxY=10000000)</a></li>
         
             <li><a class="toctree-l4" href="#def-95get95verticals">def _get_verticals</a></li>
         
@@ -1056,7 +1056,7 @@
         
             <li><a class="toctree-l4" href="#def-findinflections">def findInflections</a></li>
         
-            <li><a class="toctree-l4" href="#def-findnearestblack">def findNearestBlack</a></li>
+            <li><a class="toctree-l4" href="#def-findnearestblackself-x-y-radius2">def findNearestBlack(self, x, y, radius=2)</a></li>
         
             <li><a class="toctree-l4" href="#def-findserifs">def findSerifs</a></li>
         
@@ -1082,7 +1082,7 @@
         
             <li><a class="toctree-l4" href="#def-getpointcontextbyid">def getPointContextByID</a></li>
         
-            <li><a class="toctree-l4" href="#def-getvacuumebox">def getVacuumeBox</a></li>
+            <li><a class="toctree-l4" href="#def-getvacuumeboxself-minx-10000000-miny-10000000-maxx10000000-maxy10000000">def getVacuumeBox(self, minX=-10000000, minY=-10000000, maxX=10000000, maxY=10000000)</a></li>
         
             <li><a class="toctree-l4" href="#property-glyph">property glyph</a></li>
         
@@ -1100,7 +1100,7 @@
         
             <li><a class="toctree-l4" href="#property-horizontals">property horizontals</a></li>
         
-            <li><a class="toctree-l4" href="#def-infuzzrange">def inFuzzRange</a></li>
+            <li><a class="toctree-l4" href="#def-infuzzrangeself-value-reference-factor1">def inFuzzRange(self, value, reference, factor=1)</a></li>
         
             <li><a class="toctree-l4" href="#property-inflectionpoints">property inflectionPoints</a></li>
         
@@ -1116,11 +1116,11 @@
         
             <li><a class="toctree-l4" href="#def-initializepointcontexts">def initializePointContexts</a></li>
         
-            <li><a class="toctree-l4" href="#def-intersect">def intersect</a></li>
+            <li><a class="toctree-l4" href="#def-intersectself-pc0-pc1-nextpfalse">def intersect(self, pc0, pc1, nextP=False)</a></li>
         
-            <li><a class="toctree-l4" href="#def-intersectline">def intersectLine</a></li>
+            <li><a class="toctree-l4" href="#def-intersectlineself-p1-p2-canhavecomponentfalse">def intersectLine(self, p1, p2, canHaveComponent=False)</a></li>
         
-            <li><a class="toctree-l4" href="#def-intersectwithline">def intersectWithLine</a></li>
+            <li><a class="toctree-l4" href="#def-intersectwithlineself-glyph-line-canhavecomponentfalse">def intersectWithLine(self, glyph, line, canHaveComponent=False)</a></li>
         
             <li><a class="toctree-l4" href="#def-isascender">def isAscender</a></li>
         
@@ -1174,13 +1174,13 @@
         
             <li><a class="toctree-l4" href="#property-leftmargin_1">property leftMargin</a></li>
         
-            <li><a class="toctree-l4" href="#def-lineinblack">def lineInBlack</a></li>
+            <li><a class="toctree-l4" href="#def-lineinblackself-pc0-pc1none-step4">def lineInBlack(self, pc0, pc1=None, step=4)</a></li>
         
-            <li><a class="toctree-l4" href="#def-lineinwhite">def lineInWhite</a></li>
+            <li><a class="toctree-l4" href="#def-lineinwhiteself-pc0-pc1none-step4">def lineInWhite(self, pc0, pc1=None, step=4)</a></li>
         
-            <li><a class="toctree-l4" href="#def-lineonblack">def lineOnBlack</a></li>
+            <li><a class="toctree-l4" href="#def-lineonblackself-pc0-pc1none-step4">def lineOnBlack(self, pc0, pc1=None, step=4)</a></li>
         
-            <li><a class="toctree-l4" href="#def-lineonwhite">def lineOnWhite</a></li>
+            <li><a class="toctree-l4" href="#def-lineonwhiteself-pc0-pc1none-step4">def lineOnWhite(self, pc0, pc1=None, step=4)</a></li>
         
             <li><a class="toctree-l4" href="#def-matchbar">def matchBar</a></li>
         
@@ -1206,7 +1206,7 @@
         
             <li><a class="toctree-l4" href="#property-maxypoint">property maxYPoint</a></li>
         
-            <li><a class="toctree-l4" href="#def-middlelineonblack">def middleLineOnBlack</a></li>
+            <li><a class="toctree-l4" href="#def-middlelineonblackself-pc0-pc1-step4">def middleLineOnBlack(self, pc0, pc1, step=4)</a></li>
         
             <li><a class="toctree-l4" href="#property-minbar">property minBar</a></li>
         
@@ -1224,15 +1224,15 @@
         
             <li><a class="toctree-l4" href="#property-minypoint">property minYPoint</a></li>
         
-            <li><a class="toctree-l4" href="#def-nointersect">def noIntersect</a></li>
+            <li><a class="toctree-l4" href="#def-nointersectself-pc0-pc1-nextpfalse">def noIntersect(self, pc0, pc1, nextP=False)</a></li>
         
             <li><a class="toctree-l4" href="#def-onblack">def onBlack</a></li>
         
             <li><a class="toctree-l4" href="#def-onwhite">def onWhite</a></li>
         
-            <li><a class="toctree-l4" href="#def-overlappinglinesinwindowonblack">def overlappingLinesInWindowOnBlack</a></li>
+            <li><a class="toctree-l4" href="#def-overlappinglinesinwindowonblackself-pc0-pc1-step4">def overlappingLinesInWindowOnBlack(self, pc0, pc1, step=4)</a></li>
         
-            <li><a class="toctree-l4" href="#def-overlappinglinesinwindowonwhite">def overlappingLinesInWindowOnWhite</a></li>
+            <li><a class="toctree-l4" href="#def-overlappinglinesinwindowonwhiteself-pc0-pc1-step4">def overlappingLinesInWindowOnWhite(self, pc0, pc1, step=4)</a></li>
         
             <li><a class="toctree-l4" href="#property-overlappingpoints">property overlappingPoints</a></li>
         
@@ -1276,11 +1276,11 @@
         
             <li><a class="toctree-l4" href="#property-sidebearings">property sideBearings</a></li>
         
-            <li><a class="toctree-l4" href="#def-spanblack">def spanBlack</a></li>
+            <li><a class="toctree-l4" href="#def-spanblackself-x1-y1-x2-y2-step4">def spanBlack(self, x1, y1, x2, y2, step=4)</a></li>
         
             <li><a class="toctree-l4" href="#def-spanroundsonblack">def spanRoundsOnBlack</a></li>
         
-            <li><a class="toctree-l4" href="#def-spanwhite">def spanWhite</a></li>
+            <li><a class="toctree-l4" href="#def-spanwhiteself-x1-y1-x2-y2-step4">def spanWhite(self, x1, y1, x2, y2, step=4)</a></li>
         
             <li><a class="toctree-l4" href="#property-stem">property stem</a></li>
         
@@ -1354,7 +1354,7 @@
         
             <li><a class="toctree-l4" href="#class-nakedwrapper">class NakedWrapper</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595_2">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595">def __init__</a></li>
         
             <li><a class="toctree-l4" href="#wrapper95descriptor-9595repr9595_1">wrapper_descriptor __repr__</a></li>
         
@@ -1368,7 +1368,7 @@
         
             <li><a class="toctree-l4" href="#int-parallel95tolerance">int PARALLEL_TOLERANCE</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595_3">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-p_3-p_2-p_1-p-p1-p2-p3-index-contourindex-clockwise-glyphnamenone">def __init__(self, p_3, p_2, p_1, p, p1, p2, p3, index, contourIndex, clockwise, glyphName=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595repr9595_2">def __repr__</a></li>
         
@@ -1434,7 +1434,7 @@
         
             <li><a class="toctree-l4" href="#def-isoncurve_1">def isOnCurve</a></li>
         
-            <li><a class="toctree-l4" href="#def-isparallel">def isParallel</a></li>
+            <li><a class="toctree-l4" href="#def-isparallelself-pc-tolerancenone">def isParallel(self, pc, tolerance=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-isprevhorizontal">def isPrevHorizontal</a></li>
         
@@ -1464,7 +1464,7 @@
         
             <li><a class="toctree-l4" href="#def-maxy">def maxy</a></li>
         
-            <li><a class="toctree-l4" href="#def-middle">def middle</a></li>
+            <li><a class="toctree-l4" href="#def-middleself-p1none">def middle(self, p1=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-minx">def minx</a></li>
         
@@ -1494,7 +1494,7 @@
         
             <li><a class="toctree-l4" href="#int-fuzz_2">int FUZZ</a></li>
         
-            <li><a class="toctree-l4" href="#def-9595init9595_4">def __init__</a></li>
+            <li><a class="toctree-l4" href="#def-9595init9595self-parent-point-glyphnamenone-offsetnone">def __init__(self, parent, point, glyphName=None, offset=None)</a></li>
         
             <li><a class="toctree-l4" href="#def-9595repr9595_3">def __repr__</a></li>
         
@@ -1817,7 +1817,7 @@ with contour data directly. For example, to get a particular contour::  </p>
 <p>To interact with components or anchors in a similar way,<br />
 use the <code>components</code> and <code>anchors</code> attributes.  </p>
 <h3 id="def-9595getitem9595">def __getitem__</h3>
-<h3 id="def-9595init9595">def __init__</h3>
+<h3 id="def-9595init9595self-layernone-contourclassnone-pointclassnone-componentclassnone-anchorclassnone-guidelineclassnone-libclassnone-imageclassnone">def __init__(self, layer=None, contourClass=None, pointClass=None, componentClass=None, anchorClass=None, guidelineClass=None, libClass=None, imageClass=None)</h3>
 <h3 id="def-9595len9595">def __len__</h3>
 <h3 id="wrapper95descriptor-9595repr9595">wrapper_descriptor __repr__</h3>
 <p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
@@ -1869,7 +1869,7 @@ use the <code>components</code> and <code>anchors</code> attributes.  </p>
 <h3 id="def-95init">def _init</h3>
 <h3 id="def-95libcontentchanged">def _libContentChanged</h3>
 <h3 id="def-95makerepresentationsubkey">def _makeRepresentationSubKey</h3>
-<h3 id="def-95serialize">def _serialize</h3>
+<h3 id="def-95serializeself-getters-whitelistnone-blacklistnone">def _serialize(self, getters, whitelist=None, blacklist=None)</h3>
 <p>A helper function for the defcon objects.  </p>
 <p>Return a dict where the keys are the keys in getters and the values<br />
 are the results of the getter functions  </p>
@@ -2028,8 +2028,8 @@ in the incoming contours and points unless there is a conflict.<br />
 In that case, the conflicting incoming identifier will be discarded.  </p>
 <p>This posts <em>Glyph.ComponentsChanged</em>, <em>Glyph.ContoursChanged</em><br />
 and <em>Glyph.Changed</em> notifications.  </p>
-<h3 id="def-deserialize">def deserialize</h3>
-<h3 id="def-destroyallrepresentations">def destroyAllRepresentations</h3>
+<h3 id="def-deserializeself-data-loadfuncnone">def deserialize(self, data, loadFunc=None)</h3>
+<h3 id="def-destroyallrepresentationsself-notificationnone">def destroyAllRepresentations(self, notification=None)</h3>
 <p>Destroy all representations.  </p>
 <h3 id="def-destroyrepresentation">def destroyRepresentation</h3>
 <p>Destroy the stored representation for <strong>name</strong><br />
@@ -2039,7 +2039,7 @@ regardless of the <strong>kwargs</strong> passed when the<br />
 representation was created.  </p>
 <h3 id="property-dirty">property dirty</h3>
 <p>The dirty state of the object. True if the object has been changed. False if not. Setting this to True will cause the base changed notification to be posted. The object will automatically maintain this attribute and update it as you change the object.  </p>
-<h3 id="def-disablenotifications">def disableNotifications</h3>
+<h3 id="def-disablenotificationsself-notificationnone-observernone">def disableNotifications(self, notification=None, observer=None)</h3>
 <p>Disable this object's notifications until told to resume them.  </p>
 <ul>
 <li><strong>notification</strong> The specific notification to disable. This is optional.<br />
@@ -2055,7 +2055,7 @@ observable=anObject, notification=notification, observer=observer)  </p>
 <p>Draw the glyph with <strong>pen</strong>.  </p>
 <h3 id="def-drawpoints">def drawPoints</h3>
 <p>Draw the glyph with <strong>pointPen</strong>.  </p>
-<h3 id="def-enablenotifications">def enableNotifications</h3>
+<h3 id="def-enablenotificationsself-notificationnone-observernone">def enableNotifications(self, notification=None, observer=None)</h3>
 <p>Enable this object's notifications.  </p>
 <ul>
 <li><strong>notification</strong> The specific notification to enable. This is optional.  </li>
@@ -2104,7 +2104,7 @@ to the appropriate representation factory.  </p>
 <p>dispatcher = anObject.dispatcher<br />
 dispatcher.hasObserver(observer=observer,<br />
 notification=notification, observable=anObject)  </p>
-<h3 id="def-holdnotifications">def holdNotifications</h3>
+<h3 id="def-holdnotificationsself-notificationnone">def holdNotifications(self, notification=None)</h3>
 <p>Hold this object's notifications until told to release them.  </p>
 <ul>
 <li><strong>notification</strong> The specific notification to hold. This is optional.<br />
@@ -2146,10 +2146,10 @@ of that object. An error will be raised if the guideline's<br />
 identifier conflicts with any of the identifiers within<br />
 the glyph.  </p>
 <p>This will post a <em>Glyph.Changed</em> notification.  </p>
-<h3 id="def-instantiateanchor">def instantiateAnchor</h3>
+<h3 id="def-instantiateanchorself-anchordictnone">def instantiateAnchor(self, anchorDict=None)</h3>
 <h3 id="def-instantiatecomponent">def instantiateComponent</h3>
 <h3 id="def-instantiatecontour">def instantiateContour</h3>
-<h3 id="def-instantiateguideline">def instantiateGuideline</h3>
+<h3 id="def-instantiateguidelineself-guidelinedictnone">def instantiateGuideline(self, guidelineDict=None)</h3>
 <h3 id="def-instantiateimage">def instantiateImage</h3>
 <h3 id="def-instantiatelib">def instantiateLib</h3>
 <h3 id="property-layer">property layer</h3>
@@ -2174,10 +2174,10 @@ by <strong>(x, y)</strong>.  </p>
 <p>An arbitrary note for the glyph. Setting this will post a <em>Glyph.Changed</em> notification.  </p>
 <h3 id="property-pointclass">property pointClass</h3>
 <p>The class used for points.  </p>
-<h3 id="def-pointinside">def pointInside</h3>
+<h3 id="def-pointinsideself-coordinates-evenoddfalse">def pointInside(self, coordinates, evenOdd=False)</h3>
 <p>Returns a boolean indicating if <strong>(x, y)</strong> is in the<br />
 "black" area of the glyph.  </p>
-<h3 id="def-postnotification">def postNotification</h3>
+<h3 id="def-postnotificationself-notification-datanone">def postNotification(self, notification, data=None)</h3>
 <p>Post a <strong>notification</strong> through this object's notification dispatcher.  </p>
 <ul>
 <li><strong>notification</strong> The name of the notification.  </li>
@@ -2190,7 +2190,7 @@ notification=notification, observable=anObject, data=data)  </p>
 <h3 id="def-redo">def redo</h3>
 <p>Perform a redo if possible, or return.<br />
 If redo is performed, this will post <em>BaseObject.BeginRedo</em> and <em>BaseObject.EndRedo</em> notifications.  </p>
-<h3 id="def-releaseheldnotifications">def releaseHeldNotifications</h3>
+<h3 id="def-releaseheldnotificationsself-notificationnone">def releaseHeldNotifications(self, notification=None)</h3>
 <p>Release this object's held notifications.  </p>
 <ul>
 <li><strong>notification</strong> The specific notification to hold. This is optional.  </li>
@@ -2238,7 +2238,7 @@ currently cached.  </p>
 <h3 id="property-rightmargin">property rightMargin</h3>
 <p>The right margin of the glyph. Setting this posts <em>Glyph.WidthChanged</em> and <em>Glyph.Changed</em> notifications among others.  </p>
 <h3 id="def-selfnotificationcallback">def selfNotificationCallback</h3>
-<h3 id="def-serialize">def serialize</h3>
+<h3 id="def-serializeself-dumpfuncnone-whitelistnone-blacklistnone">def serialize(self, dumpFunc=None, whitelist=None, blacklist=None)</h3>
 <h3 id="def-setdatafromserialization">def setDataFromSerialization</h3>
 <h3 id="property-topmargin">property topMargin</h3>
 <p>The top margin of the glyph. Setting this posts <em>Glyph.HeightChanged</em>, <em>Glyph.VerticalOriginChanged</em> and <em>Glyph.Changed</em> notifications among others.  </p>
@@ -2309,9 +2309,9 @@ self.append, self.x, self.y, self.alternates, self.minY, self.maxY<br />
 <p>str(object='') -&gt; string  </p>
 <p>Return a nice string representation of the object.<br />
 If the argument is a string, the return value is the same object.  </p>
-<h3 id="def-9595init9595_1">def __init__</h3>
+<h3 id="def-9595init9595self-parent-name-fuzznone">def __init__(self, parent, name, fuzz=None)</h3>
 <h3 id="def-9595repr9595">def __repr__</h3>
-<h3 id="def-95getdecomposedbasename">def _getDecomposedBaseName</h3>
+<h3 id="def-95getdecomposedbasenameself-name-resultnone">def _getDecomposedBaseName(self, name, result=None)</h3>
 <p>Deconstructs the name, starting from the right side, recognizing<br />
 chunks that are diacritics names. Recursively adds as many as possible.<br />
 Once there is no match, the remaining left part must be the base name<br />
@@ -2367,7 +2367,7 @@ glyph/accent name patterns. Exceptions to this method are ('Thorn' and<br />
 <h3 id="def-95get95diagonalrun">def _get_diagonalRun</h3>
 <h3 id="def-95get95diagonalstems">def _get_diagonalStems</h3>
 <h3 id="def-95get95diagonals">def _get_diagonals</h3>
-<h3 id="def-95get95glyph">def _get_glyph</h3>
+<h3 id="def-95get95glyphself-namenone">def _get_glyph(self, name=None)</h3>
 <h3 id="def-95get95glyphpath">def _get_glyphPath</h3>
 <p>Cache the path for fast point inside/outside query.  </p>
 <h3 id="def-95get95hints">def _get_hints</h3>
@@ -2459,7 +2459,7 @@ side.  </p>
 <h3 id="def-95get95unitsperem">def _get_unitsPerEm</h3>
 <p>Answers the units per em for this font. Identical to<br />
 <b>self.style.info.unitsPerEm</b>.  </p>
-<h3 id="def-95get95vacuumebox">def _get_vacuumeBox</h3>
+<h3 id="def-95get95vacuumeboxself-minx-10000000-miny-10000000-maxx10000000-maxy10000000">def _get_vacuumeBox(self, minX=-10000000, minY=-10000000, maxX=10000000, maxY=10000000)</h3>
 <p>The @getVacuumeBox@ answers the vacuumed box around all points<br />
 that are located in the rectangle @(minX, minY, maxX, maxY)@. This way<br />
 it is possible to get the vacuume box for all points, but also from a<br />
@@ -2571,7 +2571,7 @@ current glyph and assigns them as dictionary to @self._hints@.  </p>
 <p>The @findHorizontals@ method answers a list of horizontals where the<br />
 main point is on curve.  </p>
 <h3 id="def-findinflections">def findInflections</h3>
-<h3 id="def-findnearestblack">def findNearestBlack</h3>
+<h3 id="def-findnearestblackself-x-y-radius2">def findNearestBlack(self, x, y, radius=2)</h3>
 <p>Make a horizontal beam, and measure the distances to the nearest black, if (x, y) is not black<br />
 from itself.  </p>
 <h3 id="def-findserifs">def findSerifs</h3>
@@ -2638,7 +2638,7 @@ as indicated by name.  </p>
 <p>Answers the point context indicated by <i>index</i>. If the index<br />
 is out of range, then answer <b>None</b>.  </p>
 <h3 id="def-getpointcontextbyid">def getPointContextByID</h3>
-<h3 id="def-getvacuumebox">def getVacuumeBox</h3>
+<h3 id="def-getvacuumeboxself-minx-10000000-miny-10000000-maxx10000000-maxy10000000">def getVacuumeBox(self, minX=-10000000, minY=-10000000, maxX=10000000, maxY=10000000)</h3>
 <p>The @getVacuumeBox@ answers the vacuumed box around all points<br />
 that are located in the rectangle @(minX, minY, maxX, maxY)@. This way<br />
 it is possible to get the vacuume box for all points, but also from a<br />
@@ -2672,7 +2672,7 @@ measure is done by counting the length and position of horizontal<br />
 <p>Answers the boolean flag if the glyph has contours.  </p>
 <h3 id="property-hints">property hints</h3>
 <h3 id="property-horizontals">property horizontals</h3>
-<h3 id="def-infuzzrange">def inFuzzRange</h3>
+<h3 id="def-infuzzrangeself-value-reference-factor1">def inFuzzRange(self, value, reference, factor=1)</h3>
 <h3 id="property-inflectionpoints">property inflectionPoints</h3>
 <h3 id="property-inflections">property inflections</h3>
 <h3 id="def-initialize">def initialize</h3>
@@ -2684,17 +2684,17 @@ cached values.  </p>
 <p>The @initializeFuzz@ method answers the @FUZZ@ value: the amount<br />
 that values can be off and still be treated as the same.  </p>
 <h3 id="def-initializepointcontexts">def initializePointContexts</h3>
-<h3 id="def-intersect">def intersect</h3>
+<h3 id="def-intersectself-pc0-pc1-nextpfalse">def intersect(self, pc0, pc1, nextP=False)</h3>
 <p>The @intersect@ method test if the line from @pc0.p@ to @pc1.p@ is<br />
 intersecting with other lines of the glyph. The amount of intersection<br />
 is answered. Since the line also intersects with it’s own points, no<br />
 intersection answers a set of two elements. If optional attribute<br />
 <i>next<i> is @True@ (default is @False@ then test on the next point of<br />
 the point contexts.  </p>
-<h3 id="def-intersectline">def intersectLine</h3>
+<h3 id="def-intersectlineself-p1-p2-canhavecomponentfalse">def intersectLine(self, p1, p2, canHaveComponent=False)</h3>
 <p>The @intersectLine@ method answers the intersection points of the<br />
 glyph with the line @ (p1, p2)@.  </p>
-<h3 id="def-intersectwithline">def intersectWithLine</h3>
+<h3 id="def-intersectwithlineself-glyph-line-canhavecomponentfalse">def intersectWithLine(self, glyph, line, canHaveComponent=False)</h3>
 <h3 id="def-isascender">def isAscender</h3>
 <h3 id="def-isbar">def isBar</h3>
 <p>The <b>isBar</b> method takes the point contexts <i>pc0</i> and<br />
@@ -2777,19 +2777,19 @@ the point contexts involved can be queried. If there are no outlines<br />
 (<b>self.boundingBox is None</b>, then answer 0 by definition<br />
 (compatible with RoboFont)). Answers default 0 if glyph does not exist<br />
 in the style.  </p>
-<h3 id="def-lineinblack">def lineInBlack</h3>
+<h3 id="def-lineinblackself-pc0-pc1none-step4">def lineInBlack(self, pc0, pc1=None, step=4)</h3>
 <p>Answers the boolean flag if the line (including the points) is<br />
 totally covered in black.  </p>
-<h3 id="def-lineinwhite">def lineInWhite</h3>
+<h3 id="def-lineinwhiteself-pc0-pc1none-step4">def lineInWhite(self, pc0, pc1=None, step=4)</h3>
 <p>Answers the boolean flag if the line (including the points) is<br />
 totally covered in white.  </p>
-<h3 id="def-lineonblack">def lineOnBlack</h3>
+<h3 id="def-lineonblackself-pc0-pc1none-step4">def lineOnBlack(self, pc0, pc1=None, step=4)</h3>
 <p>Answers the boolean flag if the line betweep <i>pc0</i> and<br />
 <i>pc1</i> is entirely running on black, except for the end point. To<br />
 test if the line is entirely on black, use <b>self.lineInBlack()</b>.<br />
 If <i>pc1</i> is omitted, then test the line between <i>pc0</i> and the<br />
 next point on the contour.  </p>
-<h3 id="def-lineonwhite">def lineOnWhite</h3>
+<h3 id="def-lineonwhiteself-pc0-pc1none-step4">def lineOnWhite(self, pc0, pc1=None, step=4)</h3>
 <p>Answers the boolean flag if the line is just spanning white area.  </p>
 <h3 id="def-matchbar">def matchBar</h3>
 <p>Find the matching bar that is located on the y positions of p0 and<br />
@@ -2816,7 +2816,7 @@ glyph.  </p>
 <h3 id="property-maxxpoint">property maxXPoint</h3>
 <h3 id="property-maxy">property maxY</h3>
 <h3 id="property-maxypoint">property maxYPoint</h3>
-<h3 id="def-middlelineonblack">def middleLineOnBlack</h3>
+<h3 id="def-middlelineonblackself-pc0-pc1-step4">def middleLineOnBlack(self, pc0, pc1, step=4)</h3>
 <h3 id="property-minbar">property minBar</h3>
 <p>Answers the minimal bar of all bars found in the glyph.  </p>
 <h3 id="property-minroundbar">property minRoundBar</h3>
@@ -2830,14 +2830,14 @@ glyph.  </p>
 <h3 id="property-minxpoint">property minXPoint</h3>
 <h3 id="property-miny">property minY</h3>
 <h3 id="property-minypoint">property minYPoint</h3>
-<h3 id="def-nointersect">def noIntersect</h3>
+<h3 id="def-nointersectself-pc0-pc1-nextpfalse">def noIntersect(self, pc0, pc1, nextP=False)</h3>
 <h3 id="def-onblack">def onBlack</h3>
 <p>Answers the boolean flag is the single point <b>(x, y)</b> is on<br />
 black.  </p>
 <h3 id="def-onwhite">def onWhite</h3>
 <p>Answers the boolean flag if the single point <b>(x, y)</b> is on<br />
 white.  </p>
-<h3 id="def-overlappinglinesinwindowonblack">def overlappingLinesInWindowOnBlack</h3>
+<h3 id="def-overlappinglinesinwindowonblackself-pc0-pc1-step4">def overlappingLinesInWindowOnBlack(self, pc0, pc1, step=4)</h3>
 <p>Answers the boolean flag if the vertical span between <i>pc0</i><br />
 and <i>pc1</i> just spans black area, by stepping from a point on one<br />
 line to a point on the other line. The trick is to fine the right<br />
@@ -2847,7 +2847,7 @@ trick with testing on the blackness the 4 one-unit points around a<br />
 point fails, when the segments is tested close to one of the main<br />
 points. So we need to test on from the middle of the overlapping window<br />
 perpendicular to the other line.  </p>
-<h3 id="def-overlappinglinesinwindowonwhite">def overlappingLinesInWindowOnWhite</h3>
+<h3 id="def-overlappinglinesinwindowonwhiteself-pc0-pc1-step4">def overlappingLinesInWindowOnWhite(self, pc0, pc1, step=4)</h3>
 <p>See <b>self.overlappingLinesInWindowOnBlack</b>.  </p>
 <h3 id="property-overlappingpoints">property overlappingPoints</h3>
 <h3 id="property-parent">property parent</h3>
@@ -2888,7 +2888,7 @@ in the style.  </p>
 <h3 id="property-serifs">property serifs</h3>
 <h3 id="def-show">def show</h3>
 <h3 id="property-sidebearings">property sideBearings</h3>
-<h3 id="def-spanblack">def spanBlack</h3>
+<h3 id="def-spanblackself-x1-y1-x2-y2-step4">def spanBlack(self, x1, y1, x2, y2, step=4)</h3>
 <p>The <b>spanBlack</b> method answers the boolean flag if the number<br />
 of recursive steps between <i>pc0</i> and <i>pc1</i> are on black area<br />
 of the glyph. If step is smaller than the distance between the points,<br />
@@ -2898,7 +2898,7 @@ through <b>self.onBlack</b> or <b>self.coveredInBlack</b>.  </p>
 <h3 id="def-spanroundsonblack">def spanRoundsOnBlack</h3>
 <p>Answers the boolean flag if the line between <i>pc0</i> and<br />
 <i>pc1</i> just spans black area.  </p>
-<h3 id="def-spanwhite">def spanWhite</h3>
+<h3 id="def-spanwhiteself-x1-y1-x2-y2-step4">def spanWhite(self, x1, y1, x2, y2, step=4)</h3>
 <p>The <b>spanWhite</b> method answers the boolean flag if the number<br />
 of recursive steps between <i>pc0</i> and <i>pc1</i> are all on white<br />
 area of the glyph. If step is smaller than the distance between the<br />
@@ -2979,7 +2979,7 @@ cmp(x, y) -&gt; -1, 0, 1  </p>
 <h3 id="class-nakedwrapper">class NakedWrapper</h3>
 <p>Simple wrapper to call RoboFont methods that assume a RoboFont wrapper, where we only<br />
 have the defcon glyph available.  </p>
-<h3 id="def-9595init9595_2">def __init__</h3>
+<h3 id="def-9595init9595">def __init__</h3>
 <h3 id="wrapper95descriptor-9595repr9595_1">wrapper_descriptor __repr__</h3>
 <p>x.<strong>repr</strong>() &lt;==&gt; repr(x)  </p>
 <h3 id="def-naked">def naked</h3>
@@ -3018,7 +3018,7 @@ interpret the base from the string as an integer literal.  </p>
 <pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
-<h3 id="def-9595init9595_3">def __init__</h3>
+<h3 id="def-9595init9595self-p_3-p_2-p_1-p-p1-p2-p3-index-contourindex-clockwise-glyphnamenone">def __init__(self, p_3, p_2, p_1, p, p1, p2, p3, index, contourIndex, clockwise, glyphName=None)</h3>
 <h3 id="def-9595repr9595_2">def __repr__</h3>
 <h3 id="def-95get95angle">def _get_angle</h3>
 <h3 id="def-95get95nextoncurvepoint">def _get_nextOnCurvePoint</h3>
@@ -3091,7 +3091,7 @@ p.minx--------p.maxx  </p>
 <h3 id="def-isnextvertical">def isNextVertical</h3>
 <h3 id="def-isoffcurve_1">def isOffCurve</h3>
 <h3 id="def-isoncurve_1">def isOnCurve</h3>
-<h3 id="def-isparallel">def isParallel</h3>
+<h3 id="def-isparallelself-pc-tolerancenone">def isParallel(self, pc, tolerance=None)</h3>
 <p>Answer the boolean flag if self is parallel to <i>pc</i> point context. Optional attribute <i>tolerance</i><br />
 is the margin to interpret point context lines to be parallel. Default is <b>self.PARALLEL_TOLERANCE<b>.  </p>
 <h3 id="def-isprevhorizontal">def isPrevHorizontal</h3>
@@ -3109,7 +3109,7 @@ is the margin to interpret point context lines to be parallel. Default is <b>sel
 <h3 id="def-isverticalroundextreme">def isVerticalRoundExtreme</h3>
 <h3 id="def-maxx">def maxx</h3>
 <h3 id="def-maxy">def maxy</h3>
-<h3 id="def-middle">def middle</h3>
+<h3 id="def-middleself-p1none">def middle(self, p1=None)</h3>
 <p>Answer the <b>Point</b> instance of the middle between the optional attribute points <i>p0</i> and <i>p1</i>.<br />
 If the points are omitted, then use respectively <b>self.p</b> and <b>self.p1</b>.  </p>
 <h3 id="def-minx">def minx</h3>
@@ -3164,7 +3164,7 @@ interpret the base from the string as an integer literal.  </p>
 <pre><code>&gt;&gt;&gt; int('0b100', base=0)  
 4
 </code></pre>
-<h3 id="def-9595init9595_4">def __init__</h3>
+<h3 id="def-9595init9595self-parent-point-glyphnamenone-offsetnone">def __init__(self, parent, point, glyphName=None, offset=None)</h3>
 <h3 id="def-9595repr9595_3">def __repr__</h3>
 <h3 id="def-95get95nearestpoint">def _get_nearestPoint</h3>
 <p><doc>The <code>getNearestPoint</code> method gets the nearest point in the <code>self.point</code> point context<br />
